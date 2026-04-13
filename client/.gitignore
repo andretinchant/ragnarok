@@ -1,0 +1,7 @@
+# Binários do client (proprietários - não versionar)
+*.exe
+*.dll
+*.grf
+
+# Outputs do WARP
+*_patched.*

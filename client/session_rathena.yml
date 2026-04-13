@@ -1,0 +1,18 @@
+# WARP Session for rAthena Local Server
+# Packetver: 20211103
+
+Patches:
+    RestoreLoginWindow: true
+    UseOldLogin: true
+    EnableDnsSupport: true
+    NoNagle: true
+    SendClientFlags: true
+    NoPacketEncr: true
+    NoEncrForLC: true
+    NoLoginEncr: true
+    NoHShield: true
+    NoFilenameCheck: true
+    SkipServiceSelect: true
+    RestoreClientInfo: true
+    NoLoginOTP: true
+    EnableProxy: true
