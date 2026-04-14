@@ -1,0 +1,12 @@
+// Level 99 Cap - Ajustes de balanceamento
+// 2nd classes sao mais fracas que 3rd, entao ajustamos dificuldade
+
+// Monster HP: +20% para compensar falta de poder de 3rd classes
+monster_hp_rate: 120
+
+// MVP HP: -20% pois MVPs foram projetados para parties de 3rd classes
+mvp_hp_rate: 80
+
+// EXP: reduzido pois conteudo 100-265 foi comprimido em 80-99
+base_exp_rate: 75
+job_exp_rate: 75
