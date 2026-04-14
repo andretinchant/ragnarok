@@ -35,7 +35,7 @@ aldeba_in,96,181,4	script	Kafra Service	113,{
 	mes "Headquarters. Did you";
 	mes "need something?";
 	next;
-	switch(select("Save:Use Storage:Rent a Pushcart:Cancel")) {
+	switch(select("Save:Use Storage:Buy Kafra Items:Rent a Pushcart:Cancel")) {
 	case 1:
 		mes "[Kafra Leilah]";
 		mes "Your Respawn Point has";
@@ -81,6 +81,10 @@ aldeba_in,96,181,4	script	Kafra Service	113,{
 		openstorage;
 		break;
 	case 3:
+		callfunc "F_KafBuyCard";
+		close2;
+		break;
+	case 4:
 		mes "[Kafra Leilah]";
 		mes "My apologies, but I'm";
 		mes "not on duty. I'd assist you";
@@ -97,7 +101,7 @@ aldeba_in,96,181,4	script	Kafra Service	113,{
 		mes "plenty outside in Al De Baran.";
 		close2;
 		break;
-	case 4:
+	case 5:
 		mes "[Kafra Leilah]";
 		mes "^666666*Whew...*^000000";
 		mes "Great, because I'm";

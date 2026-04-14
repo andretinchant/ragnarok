@@ -34,7 +34,12 @@ alde_alche,24,188,3	script	Guild Dealer	740,{
 	mes "Alchemist Union.";
 	mes "How can I assist you today?";
 	next;
-	switch(select("Purchase materials.:Purchase a production manual.:Quit.")) {
+	.@can_experiment = (BaseJob == Job_Alchemist || getgroupid() == 99);
+	.@menu$ = "Purchase materials.:Purchase a production manual.:";
+	if (.@can_experiment)
+		.@menu$ += "Conduct an experiment.:";
+	.@menu$ += "Quit.";
+	switch(select(.@menu$)) {
 	case 1:
 		mes "[Gever Al Sharp]";
 		mes "What would you like?";
@@ -133,11 +138,70 @@ alde_alche,24,188,3	script	Guild Dealer	740,{
 			close;
 		}
 	case 3:
+		if (.@can_experiment)
+			goto S_ConductExperiment;
+		mes "[Gever Al Sharp]";
+		mes "Alright then,";
+		mes "have a good day.";
+		close;
+	case 4:
 		mes "[Gever Al Sharp]";
 		mes "Alright then,";
 		mes "have a good day.";
 		close;
 	}
+
+S_ConductExperiment:
+	.@success_rate = 75;
+	.@weight_success = getiteminfo(6417, ITEMINFO_WEIGHT);
+	.@weight_fail = getiteminfo(522, ITEMINFO_WEIGHT) + getiteminfo(12050, ITEMINFO_WEIGHT);
+	.@required_weight = (.@weight_success > .@weight_fail) ? .@weight_success : .@weight_fail;
+
+	mes "[Gever Al Sharp]";
+	mes "I can conduct a controlled experiment for you.";
+	mes "The success rate is " + .@success_rate + "%.";
+	mes "I will need 1 " + getitemname(607) + " and 1 " + getitemname(974) + ".";
+	next;
+	mes "[Gever Al Sharp]";
+	mes "If it succeeds, you will receive 1 " + getitemname(6417) + ".";
+	mes "If it fails, you will receive 1 " + getitemname(522) + " and 1 " + getitemname(12050) + ".";
+	next;
+	if (select("Conduct the experiment.:Quit.") == 2) {
+		mes "[Gever Al Sharp]";
+		mes "Very well.";
+		mes "Come back if you change your mind.";
+		close;
+	}
+	if (countitem(607) < 1 || countitem(974) < 1) {
+		mes "[Gever Al Sharp]";
+		mes "You do not have the required materials.";
+		mes "Bring me 1 " + getitemname(607) + " and 1 " + getitemname(974) + ".";
+		close;
+	}
+	if (!checkweight(6417,1) || !checkweight(522,1) || !checkweight(12050,1) || (MaxWeight - Weight) < .@required_weight) {
+		mes "[Gever Al Sharp]";
+		mes "You do not have enough room";
+		mes "to carry the experiment result.";
+		close;
+	}
+
+	delitem 607,1;
+	delitem 974,1;
+
+	if (rand(100) < .@success_rate) {
+		getitem 6417,1;
+		mes "[Gever Al Sharp]";
+		mes "Excellent.";
+		mes "The experiment was a success.";
+		close;
+	}
+
+	getitem 522,1;
+	getitem 12050,1;
+	mes "[Gever Al Sharp]";
+	mes "The experiment failed.";
+	mes "Take these byproducts.";
+	close;
 
 S_SellManual:
 	.@item_id = getarg(0);

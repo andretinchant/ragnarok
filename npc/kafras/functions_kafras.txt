@@ -116,30 +116,30 @@ function	script	F_Kafra	{
 	}
 	next;
 	if (.@welcome == 2)// Guild Kafra Menu override (free Teleport, free Storage, Free Cart)
-		setarray .@K_Menu0$[0], "Use Storage", "Use Guild Storage", "Rent a Pushcart", "Use Teleport Service", "Cancel";
+		setarray .@K_Menu0$[0], "Use Storage", "Use Guild Storage", "Buy Kafra Items", "Rent a Pushcart", "Use Teleport Service", "Cancel";
 	else {
 		switch(.@menu_num) {
 			// Save and Storage only
-			case 1:	setarray .@K_Menu0$[0],"Save","Use Storage","Cancel"; break;
+			case 1:	setarray .@K_Menu0$[0],"Save","Use Storage","Buy Kafra Items","Cancel"; break;
 			// Storage only
-			case 2:	setarray .@K_Menu0$[0],"Use Storage","Cancel"; break;
+			case 2:	setarray .@K_Menu0$[0],"Use Storage","Buy Kafra Items","Cancel"; break;
 			// No Teleport (Common)
-			case 3: setarray .@K_Menu0$[0],"Save","Use Storage","Rent a Pushcart","Check Other Information","Cancel"; break;
+			case 3: setarray .@K_Menu0$[0],"Save","Use Storage","Buy Kafra Items","Rent a Pushcart","Check Other Information","Cancel"; break;
 			// Case 4 is Einbroch no tele message.
 			// No save, or teleport. (Common)
-			case 5:	setarray .@K_Menu0$[0],"Use Storage","Rent a Pushcart","Check Other Information","Cancel"; break;
+			case 5:	setarray .@K_Menu0$[0],"Use Storage","Buy Kafra Items","Rent a Pushcart","Check Other Information","Cancel"; break;
 			// Storage and Check Other Information only.
-			case 6:	setarray .@K_Menu0$[0],"Use Storage","Check Other Information","Cancel"; break;
+			case 6:	setarray .@K_Menu0$[0],"Use Storage","Buy Kafra Items","Check Other Information","Cancel"; break;
 			// Save, Storage, and Pushcart only (Kafra Warehouse)
-			case 7:	setarray .@K_Menu0$[0],"Save","Use Storage","Rent a Pushcart","Cancel"; break;
+			case 7:	setarray .@K_Menu0$[0],"Save","Use Storage","Buy Kafra Items","Rent a Pushcart","Cancel"; break;
 			// Save, Storage, Other Check information. (Turbo track)
-			case 8: setarray .@K_Menu0$[0],"Save","Use Storage","Check Other Information","Cancel"; break;
+			case 8: setarray .@K_Menu0$[0],"Save","Use Storage","Buy Kafra Items","Check Other Information","Cancel"; break;
 			// No Save (Rune Knight)
-			case 9: setarray .@K_Menu0$[0],"Use Storage","Rent a Pushcart","Use Teleport Service","Check Other Information","Cancel"; break;
+			case 9: setarray .@K_Menu0$[0],"Use Storage","Buy Kafra Items","Rent a Pushcart","Use Teleport Service","Check Other Information","Cancel"; break;
 			// Storage, Save, and Pushcart (Dewata, reorder of case 7)
-			case 10: setarray .@K_Menu0$[0],"Use Storage","Save","Rent a Pushcart","Cancel"; break;
+			case 10: setarray .@K_Menu0$[0],"Use Storage","Save","Buy Kafra Items","Rent a Pushcart","Cancel"; break;
 			// Default message (obsolete)
-			default: setarray .@K_Menu0$[0],"Save","Use Storage","Use Teleport Service","Rent a Pushcart","Check Other Information","Cancel"; break;
+			default: setarray .@K_Menu0$[0],"Save","Use Storage","Buy Kafra Items","Use Teleport Service","Rent a Pushcart","Check Other Information","Cancel"; break;
 		}
 	}
 	.@menu$ = implode(.@K_Menu0$,":");
@@ -152,6 +152,10 @@ function	script	F_Kafra	{
 				callfunc "F_KafStor",2,0,0;
 			else
 				callfunc "F_KafStor",0,getarg(3),.@welcome;
+			next;
+		}
+		else if (.@K_Menu0$[.@j] == "Buy Kafra Items") {
+			callfunc "F_KafBuyCard";
 			next;
 		}
 		else if (.@K_Menu0$[.@j] == "Use Teleport Service") {
@@ -190,6 +194,83 @@ function	script	F_Kafra	{
 			next;
 		}
 	}
+}
+
+//===================================================
+// Kafra Item Purchase Function
+//===================================================
+function	script	F_KafBuyCard	{
+	.@item_count = 1;
+	.@item_id[0] = 12211;
+	.@item_name$[0] = getitemname(12211);
+	.@price[0] = 5000;
+	.@price[1] = 47500;
+	.@price[2] = 450000;
+	.@amount[0] = 1;
+	.@amount[1] = 10;
+	.@amount[2] = 100;
+
+	if (checkre(0)) {
+		.@item_id[1] = 25464;
+		.@item_name$[1] = "Passaporte";
+		.@item_count = 2;
+	}
+
+	mes "[Kafra Employee]";
+	mes "I can sell you some";
+	mes "Kafra convenience items.";
+	next;
+
+	for (.@i = 0; .@i < .@item_count; .@i++)
+		.@item_menu$ += .@item_name$[.@i] + ":";
+	.@item_menu$ += "Cancel";
+
+	.@item_choice = select(.@item_menu$) - 1;
+	if (.@item_choice >= .@item_count)
+		return;
+
+	.@selected_id = .@item_id[.@item_choice];
+	.@selected_name$ = .@item_name$[.@item_choice];
+
+	mes "[Kafra Employee]";
+	mes "Which package of ^0055FF" + .@selected_name$ + "^000000 would you like?";
+	next;
+
+	.@pack_menu$ =
+		"1 unit -> " + .@price[0] + " zeny:" +
+		"10 units -> " + .@price[1] + " zeny:" +
+		"100 units -> " + .@price[2] + " zeny:" +
+		"Cancel";
+	.@pack_choice = select(.@pack_menu$) - 1;
+
+	if (.@pack_choice > 2)
+		return;
+
+	.@selected_amount = .@amount[.@pack_choice];
+	.@selected_price = .@price[.@pack_choice];
+
+	if (!checkweight(.@selected_id,.@selected_amount)) {
+		mes "[Kafra Employee]";
+		mes "It seems you are carrying too much";
+		mes "to take this package with you.";
+		return;
+	}
+
+	if (Zeny < .@selected_price) {
+		mes "[Kafra Employee]";
+		mes "I'm sorry, but you don't";
+		mes "have enough zeny.";
+		mes "That package costs " + .@selected_price + " zeny.";
+		return;
+	}
+
+	Zeny -= .@selected_price;
+	getitem .@selected_id,.@selected_amount;
+
+	mes "[Kafra Employee]";
+	mes "Here is your package of";
+	mes "^0055FF" + .@selected_amount + " " + .@selected_name$ + "^000000.";
+	return;
 }
 
 //===================================================
