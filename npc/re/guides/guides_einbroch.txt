@@ -25,11 +25,11 @@ einbroch,72,202,4	script	Einbroch Guide#ein01::GuideEinbroch	852,{
 	F_Navi("[Einbroch Guide]");
 	next;
 	while (1) {
-		switch(select("[ Main Facilities ]:[ Merchants & Helpers ]:Remove Marks from Mini-Map:Cancel")) {
+		switch(select("[ Main Facilities ]:[ Comerciantes e Ajudantes ]:Remover Marcas do Mini-Mapa:Cancelar")) {
 		case 1:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ Airport ]:[ Factory ]:[ Plaza ]:[ Hotel ]:[ Train Station ]:[ Weapon Shop ]:[ Laboratory ]:[ Monument ]:[ Blacksmith Guild ]:[ Gunslinger Guild ]:Previous Menu")) {
+				switch(select("[ Airport ]:[ Factory ]:[ Plaza ]:[ Hotel ]:[ Train Station ]:[ Weapon Shop ]:[ Laboratory ]:[ Monument ]:[ Blacksmith Guild ]:[ Gunslinger Guild ]:Menu Anterior")) {
 				case 1:
 					mes "[Einbroch Guide]";
 					mes "The "+F_Navi("Airport","einbroch,64,204","^FF0000")+" is located";
@@ -80,7 +80,7 @@ einbroch,72,202,4	script	Einbroch Guide#ein01::GuideEinbroch	852,{
 					break;
 				case 6:
 					mes "[Einbroch Guide]";
-					mes "The "+F_Navi("Weapon Shop","einbroch,216,211")+" is";
+					mes "The "+F_Navi("Loja de Armas","einbroch,216,211")+" is";
 					mes "located north from the";
 					mes "Plaza. There you can";
 					mes "purchase weapons for";
@@ -92,7 +92,7 @@ einbroch,72,202,4	script	Einbroch Guide#ein01::GuideEinbroch	852,{
 					mes "[Einbroch Guide]";
 					mes "The "+F_Navi("Laboratory","einbroch,55,52")+" is an";
 					mes "annex of the Factory and";
-					mes "is located in the southwest";
+					mes "esta localizado in the southwest";
 					mes "sector of Einbroch.";
 					viewpoint 1,55,52,6,0x800080;
 					next;
@@ -101,8 +101,8 @@ einbroch,72,202,4	script	Einbroch Guide#ein01::GuideEinbroch	852,{
 					mes "[Einbroch Guide]";
 					mes "I will mark the location";
 					mes "of the "+F_Navi("Monument","einbroch,178,173","^808080");
-					mes "on your mini-map.";
-					mes "Would you like to check any other locations?";
+					mes "no seu mini-mapa.";
+					mes "Gostaria de verificar outros locais?";
 					viewpoint 1,178,173,7,0x808080;
 					next;
 					break;
@@ -120,8 +120,8 @@ einbroch,72,202,4	script	Einbroch Guide#ein01::GuideEinbroch	852,{
 					mes "[Einbroch Guide]";
 					mes "I will mark the location";
 					mes "of the "+F_Navi("Gunslinger Guild","einbroch,130,197","^008080");
-					mes "on your mini-map.";
-					mes "Would you like to check any other locations?";
+					mes "no seu mini-mapa.";
+					mes "Gostaria de verificar outros locais?";
 					viewpoint 1,130,197,9,0x008080;
 					next;
 					break;
@@ -134,7 +134,7 @@ einbroch,72,202,4	script	Einbroch Guide#ein01::GuideEinbroch	852,{
 		case 2:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ Armsmith ]:[ Kafra Employees ]:[ Eden Teleport Officer ]:Previous Menu")) {
+				switch(select("[ Armsmith ]:[ Kafra Employees ]:[ Eden Teleport Officer ]:Menu Anterior")) {
 				case 1:
 					mes "[Einbroch Guide]";
 					mes "You may go to ^FF1493Manthasman^000000,";
@@ -145,16 +145,16 @@ einbroch,72,202,4	script	Einbroch Guide#ein01::GuideEinbroch	852,{
 					mes "[Einbroch Guide]";
 					mes "I will mark the location";
 					mes "of the "+F_Navi("Armsmith","einbroch,255,110","^FF1493");
-					mes "on your mini-map.";
-					mes "Would you like to check any other locations?";
+					mes "no seu mini-mapa.";
+					mes "Gostaria de verificar outros locais?";
 					next;
 					break;
 				case 2:
 					mes "[Einbroch Guide]";
 					mes "I will mark the locations";
 					mes "of the ^DA70D6Kafra Employees^000000";
-					mes "on your mini-map.";
-					mes "Would you like to check any other locations?";
+					mes "no seu mini-mapa.";
+					mes "Gostaria de verificar outros locais?";
 					viewpoint 1,242,205,11,0xDA70D6;
 					viewpoint 1,59,203,12,0xDA70D6;
 					next;
@@ -169,8 +169,8 @@ einbroch,72,202,4	script	Einbroch Guide#ein01::GuideEinbroch	852,{
 					mes "[Einbroch Guide]";
 					mes "I will mark the location";
 					mes "of the "+F_Navi("Eden Teleport Officer","einbroch,130,197","^CD1039");
-					mes "on your mini-map.";
-					mes "Would you like to check any other locations?";
+					mes "no seu mini-mapa.";
+					mes "Gostaria de verificar outros locais?";
 					next;
 					break;
 				case 4:
@@ -215,7 +215,7 @@ einbroch,252,320,3	duplicate(GuideEinbroch)	Einbroch Guide#ein04	852
 einbech,67,37,4	script	Einbech Guide#einbech01::GuideEinbech	852,{
 	cutin "ein_soldier",2;
 	mes "[Einbech Guide]";
-	mes "Welcome to ^8B4513Einbech^000000,";
+	mes "Bem-vindo a ^8B4513Einbech^000000,";
 	mes "the Mining Town. We're";
 	mes "here to assist tourists,";
 	mes "so if you have any questions,";
@@ -223,7 +223,7 @@ einbech,67,37,4	script	Einbech Guide#einbech01::GuideEinbech	852,{
 	F_Navi("[Einbech Guide]");
 	next;
 	while (1) {
-		switch(select("[ Tavern ]:[ Tool Shop ]:[ Train Station ]:[ Mine ]:[ Kafra Employee ]:Remove Marks from Mini-Map:Cancel")) {
+		switch(select("[ Tavern ]:[ Tool Shop ]:[ Train Station ]:[ Mine ]:[ Kafra Employee ]:Remover Marcas do Mini-Mapa:Cancelar")) {
 		case 1:
 			mes "[Einbech Guide]";
 			mes "The "+F_Navi("Tavern","einbech,157,106")+" is located";
@@ -235,7 +235,7 @@ einbech,67,37,4	script	Einbech Guide#einbech01::GuideEinbech	852,{
 			break;
 		case 2:
 			mes "[Einbech Guide]";
-			mes "You can find the "+F_Navi("Tool Shop","einbech,177,133")+" in the center of";
+			mes "You can find the "+F_Navi("Loja de Ferramentas","einbech,177,133")+" in the center of";
 			mes "Einbech. There, you can";
 			mes "purchase any tools you";
 			mes "might need for your travels.";
@@ -256,7 +256,7 @@ einbech,67,37,4	script	Einbech Guide#einbech01::GuideEinbech	852,{
 			mes "[Einbech Guide]";
 			mes "The "+F_Navi("Mine","einbech,137,248")+", which is";
 			mes "Einbech's major industry,";
-			mes "is located in the northern";
+			mes "esta localizado in the northern";
 			mes "part of this town. It's where";
 			mes "we get all our ores, although monsters get in the miners' way.";
 			viewpoint 1,137,248,3,0xDA70D6;
@@ -266,8 +266,8 @@ einbech,67,37,4	script	Einbech Guide#einbech01::GuideEinbech	852,{
 			mes "[Einbech Guide]";
 			mes "I will mark the location";
 			mes "of the ^FF1493Kafra Employee^000000";
-			mes "on your mini-map.";
-			mes "Would you like to check any other locations?";
+			mes "no seu mini-mapa.";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,181,132,4,0xFF1493;
 			next;
 			break;

@@ -1,4 +1,4 @@
-//===== rAthena Script ======================================= 
+//===== rAthena Script =======================================
 //= Mysterious Cookie Shop
 //===== Changelogs: ==========================================
 //= 1.0 Initial version from replays. [Capuche]
@@ -6,44 +6,44 @@
 
 malangdo,124,152,3	script	Mysterious Cookie Shop#stone	4_COOKIEHOUSE,{
 	mes "[Mysterious Cookie Shop]";
-	mes "" + mesitemlink(7000) + " can be exchanged for anything you crave.";
+	mes "" + mesitemlink(7000) + " pode ser trocado por qualquer coisa que voce deseje.";
 	next;
-	switch( select( "^4d4dffTop^000000 Stones", "^1C8008Middle^000000 Stones", "^ff0000Lower^000000 Stones", "^9905d8Garment^000000 Stones", "^8B4513Dual and effect^000000 Stones", "^9905d8Costumes^000000 on the ¡Ùclo¡Úthe¡Ùsline¡Ú" ) ) {
+	switch( select( "Pedras de ^4d4dffTopo^000000", "Pedras do ^1C8008Meio^000000", "Pedras ^ff0000Inferiores^000000", "Pedras de ^9905d8Manto^000000", "Pedras ^8B4513Duplas e de efeito^000000", "^9905d8Costumes^000000 no va~~ral~~" ) ) {
 	case 1:
 		mes "[Mysterious Cookie Shop]";
-		mes "Let's see what stones you can turn into with your mileage!";
+		mes "Vamos ver em quais pedras voce pode transformar com sua milhagem!";
 		close2;
 		callshop( "barter_stone_top" );
 		end;
 	case 2:
 		mes "[Mysterious Cookie Shop]";
-		mes "Let's see what stones you can turn into with your mileage!";
+		mes "Vamos ver em quais pedras voce pode transformar com sua milhagem!";
 		close2;
 		callshop( "barter_stone_mid" );
 		end;
 	case 3:
 		mes "[Mysterious Cookie Shop]";
-		mes "Let's see what stones you can turn into with your mileage!";
+		mes "Vamos ver em quais pedras voce pode transformar com sua milhagem!";
 		close2;
 		callshop( "barter_stone_low" );
 		end;
 	case 4:
 		mes "[Mysterious Cookie Shop]";
-		mes "Let's see what stones you can turn into with your mileage!";
+		mes "Vamos ver em quais pedras voce pode transformar com sua milhagem!";
 		close2;
 		callshop( "barter_stone_garment" );
 		end;
 	case 5:
 		mes "[Mysterious Cookie Shop]";
-		mes "Let's see what stones you can turn into with your mileage!";
+		mes "Vamos ver em quais pedras voce pode transformar com sua milhagem!";
 		close2;
 		callshop( "barter_stone_dual" );
 		end;
 	case 6:
 		mes "[Mysterious Cookie Shop]";
-		mes "Use the mileage you have to shake off the clothesline where all kinds of clothes are hanging!";
+		mes "Use a milhagem que voce tem para sacudir o varal onde todo tipo de roupa esta pendurada!";
 		next;
-		switch( select( "First clothesline", "Second clothesline" ) ) {
+		switch( select( "Primeiro varal", "Segundo varal" ) ) {
 		case 1:
 			callshop( "barter_costume_1" );
 			end;

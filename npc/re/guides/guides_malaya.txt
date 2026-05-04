@@ -15,13 +15,13 @@
 
 malaya,71,72,4	script	Port Malaya Guide#01::GuideMalaya	579,{
 	mes "[Port Malaya Guide]";
-	mes "Welcome to ^8B4513Port Malaya^000000, the Breathing Village.";
+	mes "Bem-vindo a ^8B4513Port Malaya^000000, the Breathing Village.";
 	mes "Where cultures and legends come to life!";
 	mes "Do you need help navigating the village?";
 	F_Navi("[Port Malaya Guide]");
 	while(1) {
 		next;
-		switch(select("[ Kafra Employees ]:[ Inn & Tavern ]:[ Weapon & Armor Shop ]:[ Tool Shop ]:[ Hospital ]:[ Park ]:[ Harbor ]:Remove marks from Mini-Map:Cancel")) {
+		switch(select("[ Kafra Employees ]:[ Inn & Tavern ]:[ Weapon & Armor Shop ]:[ Tool Shop ]:[ Hospital ]:[ Park ]:[ Harbor ]:Remove marks from Mini-Map:Cancelar")) {
 		case 1:
 			callsub L_Mark, "^0000FFKafra Employees^000000",1;
 			viewpoint 1,71,79,0,0x0A82FF;
@@ -36,7 +36,7 @@ malaya,71,72,4	script	Port Malaya Guide#01::GuideMalaya	579,{
 			viewpoint 1,114,212,3,0x4F543C;
 			break;
 		case 4:
-			callsub L_Mark, F_Navi("Tool Shop","malaya,297,167","^FF1493");
+			callsub L_Mark, F_Navi("Loja de Ferramentas","malaya,297,167","^FF1493");
 			viewpoint 1,297,167,4,0xFF1493;
 			break;
 		case 5:
@@ -66,7 +66,7 @@ malaya,71,72,4	script	Port Malaya Guide#01::GuideMalaya	579,{
 			break;
 		case 9:
 			mes "[Port Malaya Guide]";
-			mes "I hope you enjoy your journey.";
+			mes "Espero que aproveite your journey.";
 			close;
 		}
 	}
@@ -74,8 +74,8 @@ malaya,71,72,4	script	Port Malaya Guide#01::GuideMalaya	579,{
 L_Mark:
 	mes "[Port Malaya Guide]";
 	mes "The "+getarg(0)+" "+((getarg(1,0))?"are":"is");
-	mes "marked on your mini-map.";
-	mes "Check your mini-map.";
+	mes "marked no seu mini-mapa.";
+	mes "Verifique seu mini-mapa.";
 	mes "Is there anything else I can do for you?";
 	return;
 }

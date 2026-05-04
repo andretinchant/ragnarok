@@ -13,17 +13,17 @@
 
 c_tower1,232,222,5	script	Belljamin Button#ct	968,{
 	mes "[Belljamin Button]";
-	mes "The monsters here are able to control time.";
+	mes "O monstros aqui are capaz de control tempo.";
 	if( BaseLevel < 150 ){
-		mes "Come back when you've reached ^0000FFLevel 150^000000.";
+		mes "Volte when voce tem reached ^0000FFLevel 150^000000.";
 		close;
 	}
-	mes "Time, memories, environments... all can become warped here.";
+	mes "Tempo, memorias, environments... todos cum se tornar warped aqui.";
 	next;
 	mes "[Belljamin Button]";
-	mes "I'm begging you not to ask more about it. It might put your life in danger.";
+	mes "Eu sou begging you nao to ask mais sobre it. It might colocar seu vidum in perigo.";
 	next;
-	.@menu = select("Don't ask:Go to 2nd floor of warped tower:Go to 3rd floor of warped tower");
+	.@menu = select("Nao ask:Ir to 2nd floou of warped torre:Ir to 3rd floou of warped torre");
 	switch(.@menu){
 		case 1:
 			break;
@@ -39,68 +39,68 @@ c_tower1,232,222,5	script	Belljamin Button#ct	968,{
 				.@y = 147;
 			}
 			mes "[Belljamin Button]";
-			mes "Be careful with your choice.";
+			mes "Tenhum cuidado com seu choice.";
 			next;
 			mes "[Belljamin Button]";
-			mes "I need ^0000FF10,000z^000000 to let you in. It's a pretty dangerous place to be.";
+			mes "Eu precientao de ^0000FF10,000z^000000 to let you in. E um pretty perigoentao lugar to be.";
 			next;
-			switch( select( "Quit:Pay 10,000z:Why do you need money?" ) ){
+			switch( select( "Quit:Pagar 10,000z:Pou que voce precisum dinheiro?" ) ){
 				case 1:
 					break;
 				case 2:
 					if( Zeny < 10000 ){
 						mes "[Belljamin Button]";
-						mes "Really? You don't have the money and asked me to take you there?";
+						mes "Realmente? Voce nao have o dinheiro e perguntou me to pegar you la?";
 						close;
 					}
 					Zeny -= 10000;
 					mes "[Belljamin Button]";
-					mes "I'm not sure how you'll keep track of time in there but be as careful as you can.";
+					mes "Eu sou nao sure how voce vai manter track of tempo in lum mas be as cuidadoentao as you can.";
 					close2;
 					warp .@map$, .@x, .@y;
 					end;
 				case 3:
 					mes "[Belljamin Button]";
-					mes "I am here all day for the safety of adventurers. I always alert them about the danger. That's why I need some form of payment.";
+					mes "Eu sou aqui todos dium fou o segurancum of aventureiros. I sempre alert them sobre o perigo. That's why Eu precientao de alguns form of pagamento.";
 					emotion ET_SWEAT;
 					close;
 			}
 			break;
 	}
 	mes "[Belljamin Button]";
-	mes "Phew...You've made a good choice. This place is brutal so you should probably get back to a safe area.";
+	mes "Phew...Voce tem made um bom choice. Este lugar is brutal entao voce deverium provavelmente pegar back to um seguro area.";
 	close;
 }
 
 c_tower2_,274,26,3	script	Belljamin Button#nct1	962,{
 	mes "[Belljamin Button]";
-	mes "Perhaps you've seen me before?";
+	mes "Talvez voce tem visto me antes?";
 	next;
 	mes "[Belljamin Button]";
-	mes "You saw me in a different place, with a different look.";
+	mes "You saw me in um diferente lugar, com um diferente olhar.";
 	next;
-	if( select( "Who are you?:Get me out of here!" ) == 1 ){
+	if( select( "Quem sao you?:Pegar me out of aqui!" ) == 1 ){
 		mes "[Belljamin Button]";
-		mes "Can you explain to me what you've seen, what you've done?";
+		mes "Voce pode explain to me what voce tem visto, what voce tem done?";
 		next;
 		mes "[Belljamin Button]";
-		mes "Me too. You might also be a missing one. Unaware, with no purpose nor idea.";
+		mes "Me tambem. Voce pode tambem be um missing one. Unaware, com no purpose nou idea.";
 		next;
 		mes "[Belljamin Button]";
-		mes "It's time to go back. Please cherish your time some more.";
+		mes "E tempo to ir back. Pou favou cherish seu tempo alguns mais.";
 		next;
-		if( select( "Stay a little bit more:Please take me back" ) == 1 ){
+		if( select( "Ficar um pequeno bit mais:Pou favou pegar me back" ) == 1 ){
 			mes "[Belljamin Button]";
-			mes "You must really like this place. Well, do whatever you want.";
+			mes "Voce deve realmente like este lugar. Bem, do whatever you querer.";
 			close;
 		}
 	}else{
 		mes "[Belljamin Button]";
-		mes "It's time to move on. Do you have a favorite drink?";
+		mes "E tempo to mover on. Voce have um favorite drink?";
 		next;
 	}
 	mes "[Belljamin Button]";
-	mes "Think about the drink in a cup. Slowly stir the cup with a spoon and peer through as the drink changes color.";
+	mes "Pensar sobre o drink in um cup. Slowly stir o cup com um spoon e peer atraves as o drink changes color.";
 	close2;
 	warp "c_tower1", 235, 223;
 	end;

@@ -1065,7 +1065,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					mes "So what did you";
 					mes "want to ask me...?";
 					next;
-					switch(select("Ingredients:Skills:Tools:Cancel")) {
+					switch(select("Ingredients:Skills:Tools:Cancelar")) {
 					case 1:
 						mes "[Uwe]";
 						mes "Now for beginners,";
@@ -1306,7 +1306,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					mes "So what did you";
 					mes "want to ask me...?";
 					next;
-					switch(select("Heart:Ingredients:Tools:Cancel")) {
+					switch(select("Heart:Ingredients:Tools:Cancelar")) {
 					case 1:
 						mes "[Uwe]";
 						mes "Ah, heart. Just like forging,";
@@ -1779,7 +1779,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 			mes "So how's the weapon";
 			mes "forging coming along?";
 			next;
-			switch(select("Talk about Cooking:Talk about Einbroch:Talk about Cooking Utensils:Cancel")) {
+			switch(select("Talk about Cooking:Talk about Einbroch:Talk about Cooking Utensils:Cancelar")) {
 			case 1:
 				mes "[Uwe]";
 				mes "Ooh, cooking!";
@@ -5690,7 +5690,7 @@ OnTouch_:
 		mes "Please identify yourself";
 		mes "through the system.";
 		next;
-		switch(select("Identify.:Information:Cancel")) {
+		switch(select("Identify.:Information:Cancelar")) {
 		case 1:
 			mes "[Security System]";
 			mes "Enter the following";

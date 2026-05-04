@@ -21,7 +21,7 @@
 
 rachel,138,146,5	script	Rachel Guide	934,{
 	mes "[Rachel Guide]";
-	mes "Welcome to the capital of";
+	mes "Bem-vindo a the capital of";
 	mes "Arunafeltz, Rachel where a warm";
 	mes "breath of goddess Freya reaches.";
 	mes "If this is the first time for you";
@@ -30,24 +30,24 @@ rachel,138,146,5	script	Rachel Guide	934,{
 	set .@loop1,1;
 	while(.@loop1) {
 		next;
-		switch(select("Village Guide:Remove Marks from Mini-Map:Notice:Cancel")) {
+		switch(select("Village Guide:Remover Marcas do Mini-Mapa:Aviso:Cancelar")) {
 		case 1:
 			mes "[Rachel Guide]";
 			mes "I can tell you any building location as long as it is in Rachel.";
 			mes "So where do you want to go?";
 			if (.@compass_check == 0) {
-				mes "Would you like me";
-				mes "to mark locations";
-				mes "on your Mini-Map?";
+				mes "Gostaria que eu";
+				mes "marcasse locais";
+				mes "no seu Mini-Mapa?";
 				next;
-				if (select("Yes:No") == 1) set .@compass_check,1;
+				if (select("Sim:Nao") == 1) set .@compass_check,1;
 			}
 			set .@loop2,1;
 			while(.@loop2) {
 				if (.@wait_button_chk == 0) set .@wait_button_chk,1;
 				else next;
 
-				switch(select("Cheshrumnir:Inn:Weapon Shop:Tool Shop:Airport:Cancel")) {
+				switch(select("Cheshrumnir:Inn:Loja de Armas:Loja de Ferramentas:Airport:Cancelar")) {
 				case 1:
 					mes "[Rachel Guide]";
 					mes "Cheshrumnir is a holy ground where pope, the incarnation of goddess Freya stays.";

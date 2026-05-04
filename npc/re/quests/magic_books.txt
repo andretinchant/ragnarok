@@ -25,518 +25,518 @@
 //============================================================
 geffen_in,176,105,4	script	Master Velofos	1_M_WIZARD,{
 	if (checkweight(1201,1) == 0) {
-		mes "You're carrying too many items. Please make some room in your bag first.";
+		mes "Voce e carregando tambem muitos itens. Pou favou fazer alguns room in seu bag primeiro.";
 		close;
 	}
 	if ((MaxWeight - Weight) < 1000) {
-		mes "You're overweight with items. Please lose some item weight first.";
+		mes "Voce e overweight com itens. Pou favou lose alguns item weight primeiro.";
 		close;
 	}
 	if ((Upper == 2) && (Class != Job_Baby_Warlock)) {
 		mes "[Master Velofos]";
-		mes "What are you, a baby?";
-		mes "I'm not here to babysit. Get lost!";
+		mes "O que sao you, um baby?";
+		mes "Eu sou nao aqui to babysit. Pegar lost!";
 		close;
 	}
 	if ((eaclass()&EAJ_THIRDMASK)!=EAJ_WARLOCK) {
 		mes "[Master Velofos]";
-		mes "Ha ha, are you also seeking new knowledge?";
+		mes "Hum ha, voce e tambem seeking novo knowledge?";
 		next;
 		mes "[Master Velofos]";
-		mes "I'm sorry, but my knowledge doesn't concern you.";
+		mes "Eu sou desculpe, mas meu knowledge nao concern you.";
 		close;
 	}
 	if (getskilllv(2230) < 1) {
 		mes "[Master Velofos]";
-		mes "Well, you've met all the qualifications except one: you need the Release spell.";
+		mes "Bem, voce tem met todos o qualifications except one: voce precisum o Release feitico.";
 		next;
 		mes "[Master Velofos]";
-		mes "Learn the spell first. I've got so many things to tell you.";
+		mes "Aprender o feitico primeiro. Eu tenho got entao muitos coisas to tell you.";
 		close;
 	}
 	mes "[Master Velofos]";
-	mes "Welcome, my friend.";
-	mes "Congratulations on entering a brand new world of magic.";
+	mes "Bem-vindo, meu amigo.";
+	mes "Congratulations on entering um bre novo mundo of magia.";
 	next;
 	mes "[Master Velofos]";
-	mes "We magic practitioners are always thirsty for new knowledge and power.";
+	mes "We magium practitioners are sempre thirsty fou novo knowledge e poder.";
 	next;
 	mes "[Master Velofos]";
-	mes "We endure great hardship and pain to achieve what we want. When we finally do, the sense of accomplishment defies description. That's why both you and I have chosen the way of magic.";
+	mes "We endure otimo hardship e dor to achieve what we querer. When we finalmente do, o sense of accomplishment defies description. That's why both you e Eu tenho chosen o caminho of magia.";
 	next;
 	mes "[Master Velofos]";
-	mes "By the way, what brings you to me today?";
+	mes "By o caminho, what brings you to me hoje?";
 	next;
-	switch (select("Nothing.:Do you know the Reading Spell Book?:What's the Freezing Spell?:Can I have a Magic Book?:Can I use the Reading Spell Book without the Freezing Spell?:About the Ultimate Magic Book")) {
+	switch (select("Nada.:Do voce sabe o Reading Feitico Book?:O que e o Freezing Feitico?:Cum Eu tenho um Magium Book?:Cum I usar o Reading Feitico Book sem o Freezing Feitico?:Sobre o Ultimate Magium Book")) {
 	case 1:
 		mes "[Master Velofos]";
-		mes "Hah! You're silly.";
+		mes "Hah! Voce e silly.";
 		close;
 	case 2:
 		mes "[Master Velofos]";
-		mes "Reading Spell Book literally means 'read a spell book.' Do you know how to use Magic Books?";
+		mes "Reading Feitico Book literally significum 'read um feitico book.' Do voce sabe how to usar Magium Books?";
 		next;
-		switch (select("Yes, I do.:No, I don't.")) {
+		switch (select("Yes, I do.:No, I nao.")) {
 		case 1:
 			mes "[Master Velofos]";
-			mes "Well then, you don't need an additional lecture.";
+			mes "Bem entao, voce nao precisar um additional lecture.";
 			close;
 		case 2:
 			mes "[Master Velofos]";
-			mes "Magic Books are an advanced type of magic scroll. While spells on scrolls disappear after one use, the ones in Magic Books can be cast multiple times.";
+			mes "Magium Books are um advanced type of magium scroll. While feiticos on scrolls desaparecer depois one usar, o ones in Magium Books cum be cast multiple times.";
 			next;
 			mes "[Master Velofos]";
-			mes "Let's compare a spell on a scroll to a wire. When the wire is used to open a door or do something else, it's bent and crushed, losing its original shape. A spell from a Magic Book is more like a shape memory alloy.";
+			mes "Vamos compare um feitico on um scroll to um wire. When o wire is usou to abrir um portum ou do algo else, e bent e crushed, perdendo seu original shape. A feitico de um Magium Book is mais like um shape memorium alloy.";
 			next;
 			mes "[Master Velofos]";
-			mes "Huh, don't you now what shape memory alloy is? Eh, just remember this: a wire made from shape memory alloy restores its shape over time.";
+			mes "Huh, voce nao agorum what shape memorium alloy is? Eh, apenas lembrar this: um wire made de shape memorium alloy restores seu shape sobre tempo.";
 			next;
 			mes "[Master Velofos]";
-			mes "Like the alloy, a spell on a Magic Book remains after a use, although reusing the spell has a downtime for its restoration.";
+			mes "Like o alloy, um feitico on um Magium Book remains depois um usar, emborum reusing o feitico has um downtime fou seu restoration.";
 			next;
 			mes "[Master Velofos]";
-			mes "...Oh, I didn't mean to talk for too long. Anyways, you can use Magic Books to cast spells that you've learned. Its concept is different from normal spells.";
+			mes "...Oh, I nao significum to conversar fou tambem long. Anyways, voce pode usar Magium Books to cast feiticos esse voce tem aprendeu. Its concept is diferente de normal feiticos.";
 			next;
-			select("What's the difference?");
+			select("O que e o difference?");
 			mes "[Master Velofos]";
-			mes "Why do you have to write your existing spells in Magic Books, you asked?";
-			next;
-			mes "[Master Velofos]";
-			mes "That's a good question. It's related to Magic Binding.";
+			mes "Pou que you tem que write seu existing feiticos in Magium Books, you perguntou?";
 			next;
 			mes "[Master Velofos]";
-			mes "You already learned Release, which allows you to hold the energy of the four different elements before the actual casting. Magic Binding is similar to Release.";
+			mes "That's um bom pergunta. E related to Magium Binding.";
 			next;
 			mes "[Master Velofos]";
-			mes "Since you've learned Release, you're capable of using Magic Binding as well. Well, let's talk about that later.";
+			mes "You jum aprendeu Release, which allows you to hold o energy of o fnosso diferente elements antes o actual casting. Magium Binding is similar to Release.";
 			next;
 			mes "[Master Velofos]";
-			mes "You know how to hold an existing spell, and then cast it at a desired timing via Release.";
+			mes "Since voce tem aprendeu Release, voce e capable of usando Magium Binding as bem. Bem, vamos conversar sobre esse later.";
 			next;
 			mes "[Master Velofos]";
-			mes "Carrying the globes of the four elements is also related to Magic Binding.";
+			mes "Voce sabe how to hold um existing feitico, e entao cast it at um desired timing vium Release.";
 			next;
 			mes "[Master Velofos]";
-			mes "As you know, the four elements are Fire, Water, Wind, and Earth. Being able to employ them freely is the essential principle of magic.";
+			mes "Carrying o globes of o fnosso elements is tambem related to Magium Binding.";
 			next;
 			mes "[Master Velofos]";
-			mes "We Humans use torches to keep fire, fans to blow wind, and bowls to hold water. We also use clay to make earthenware.";
+			mes "As voce sabe, o fnosso elements are Fogo, Agua, Vento, e Terra. Being capaz de employ them freely is o essential principle of magia.";
 			next;
 			mes "[Master Velofos]";
-			mes "Those activities may differ from magic, but both are the same in the sense of employing the four elements.";
+			mes "We Humans usar torches to manter fogo, fans to blow vento, e bowls to hold agua. We tambem usar clay to fazer earthenware.";
 			next;
 			mes "[Master Velofos]";
-			mes "When you use complex magic spells to summon a storm, drop lightning, or burn an area, that consumes a lot of your energy, both physically and mentally.";
+			mes "Esses activities may differ de magia, mas both are o mesmo in o sense of employing o fnosso elements.";
 			next;
 			mes "[Master Velofos]";
-			mes "When you fail to bind such powerful magic spells or fail to control them, you can receive irreparable damage to your mind and body.";
+			mes "When you usar complex magium feiticos to summon um storm, drop lightning, ou burn um area, esse consumes um lot of seu energy, both physically e mentally.";
 			next;
 			mes "[Master Velofos]";
-			mes "That's why we use Magic Books to reduce that burden. It helps summon pre-cast spells while you're focusing on binding their magic power.";
+			mes "When you falhar to bind such poderoentao magium feiticos ou falhar to control them, voce pode receber irreparable damage to seu mente e corpo.";
 			next;
 			mes "[Master Velofos]";
-			mes "There's one downside though: Magic Books cannot be used for spells that you haven't learned.";
+			mes "That's why we usar Magium Books to reduce esse burden. It helps summon pre-cast feiticos while voce e focusing on binding o magium poder.";
 			next;
 			mes "[Master Velofos]";
-			mes "As I said earlier, spells in Magic Books tend to go back to what they are.";
+			mes "Hum one downside though: Magium Books nao pode be usou fou feiticos esse you nao tenho aprendeu.";
 			next;
 			mes "[Master Velofos]";
-			mes "That said, as a Circler, you cannot change or create spells in Magic Books.";
+			mes "As I disse earlier, feiticos in Magium Books tend to ir back to what they are.";
 			next;
 			mes "[Master Velofos]";
-			mes "Even if you create one, its power will be beyond your capacity.";
+			mes "Esse disse, as um Circler, you nao pode mudar ou criar feiticos in Magium Books.";
 			next;
 			mes "[Master Velofos]";
-			mes "In order to use the Reading Spell Book, you must learn the Freezing Spell to bind magic.";
+			mes "Even se you criar one, seu poder sera beyond seu capacity.";
+			next;
+			mes "[Master Velofos]";
+			mes "In order to usar o Reading Feitico Book, voce deve aprender o Freezing Feitico to bind magia.";
 			close;
 		}
 	case 3:
 		mes "[Master Velofos]";
-		mes "The Freezing Spell is used for Magic Binding. It helps you to insert a magic spell to a circle.";
+		mes "O Freezing Feitico is usou fou Magium Binding. It helps you to insert um magium feitico to um circle.";
 		next;
 		mes "[Master Velofos]";
-		mes "Circles of magic work organically with each other. When you use the Freezing Spell to bind a spell, the spell won't activate until you cast the release spell.";
+		mes "Circles of magium trabalhar organically com each outro. When you usar o Freezing Feitico to bind um feitico, o feitico nao vai activate ate you cast o release feitico.";
 		next;
 		mes "[Master Velofos]";
-		mes "Of course, binding a spell continuously consumes your mana, but it consumes less mana than conventional magic spells.";
+		mes "E claro, binding um feitico continuously consumes seu mana, mas it consumes menos manum que conventional magium feiticos.";
 		next;
 		mes "[Master Velofos]";
-		mes "Magic Binding becomes more difficult when you use more powerful magic spells.";
+		mes "Magium Binding becomes mais dificil when you usar mais poderoentao magium feiticos.";
 		next;
 		mes "[Master Velofos]";
-		mes "For weak spells, you can bind two to three of them with your circle. For more powerful spells, maybe one or two is possible.";
+		mes "Fou fraco feiticos, voce pode bind two to three of them com seu circle. Fou mais poderoentao feiticos, talvez one ou two is possivel.";
 		next;
 		mes "[Master Velofos]";
-		mes "That all depends on your ability to control your spells. You'll have to try and experience Magic Binding after you first learn it to really understand.";
+		mes "Esse todos depends on seu ability to control seu feiticos. Voce vai tem que tentar e experiencium Magium Binding depois you primeiro aprender it to realmente entender.";
 		close;
 	case 4:
 		mes "[Master Velofos]";
-		mes "I'm sorry, but I only have Magic Books for beginners, but they're obviously not suitable for you. Do you still want one?";
+		mes "Eu sou desculpe, mas I apenas have Magium Books fou beginners, mas eles sao obviamente nao suitable fou you. Voce aindum querer one?";
 		next;
-		switch (select("Sure thing.:Where can I find advanced books?")) {
+		switch (select("Sure coisa.:Where cum I encontrar advanced books?")) {
 		case 1:
 			mes "[Master Velofos]";
-			mes "Please go talk to [Lea] in the Archive. Tell her that you need one of the Magic Books that I've stored in there.";
+			mes "Pou favou ir conversar to [Lea] in o Archive. Tell a esse voce precisum one of o Magium Books esse Eu tenho stored in la.";
 			next;
 			mes "[Master Velofos]";
-			mes "For your information, she won't give it to you without anything in return. Expect her to ask you for something!";
+			mes "Fou seu informacao, she nao vai dar it to you sem anything in retornar. Expect a to ask you fou algo!";
 			if (wm_book < 1) set wm_book, 1;
 			close;
 		case 2:
 			mes "[Master Velofos]";
-			mes "I'm sorry, but our management has recently decided to limit the availability of Magic Books for Multi Circlers. It's because their numbers are increasing more quickly than we expected.";
+			mes "Eu sou desculpe, mas nosso management has recentemente decided to limit o availability of Magium Books fou Multi Circlers. E porque o numbers are aumentando mais rapidamente que we expected.";
 			next;
 			mes "[Master Velofos]";
-			mes "You could find one if you try hard, but I don't have any with me.";
+			mes "You could encontrar one se you tentar dificil, mas Eu nao have any com me.";
 			next;
 			mes "[Master Velofos]";
-			mes "If our management releases the restriction, you'll be the first one to know. Don't worry.";
+			mes "Se nosso management releases o restriction, voce vai be o primeiro one to saber. Nao preocupar.";
 			close;
 		}
 	case 5:
 		mes "[Master Velofos]";
-		mes "Nothing will happen when you try to bind magic without using Magic Binding because you have nothing to hold magic.";
+		mes "Nadum will acontecer when you tentar to bind magium sem usando Magium Binding porque you have nadum to hold magia.";
 		next;
 		mes "[Master Velofos]";
-		mes "It's like water that needs a bowl to stay in place.";
+		mes "E like aguum esse needs um bowl to ficar in lugar.";
 		next;
 		mes "[Master Velofos]";
-		mes "The problem is when you try to forcefully cast a spell that you haven't learned. It'll definitely backfire on you.";
+		mes "O problemum is when you tentar to forcefully cast um feitico esse you nao tenho aprendeu. It'll definitivamente backfire on you.";
 		next;
 		mes "[Master Velofos]";
-		mes "Of course, the damage won't be severe: you'll fall asleep or be thrown into confusion. This is all because there's a conflict between your Magic Book and the force of Magic Binding when you're trying to summon and hold a unlearned spell.";
+		mes "E claro, o damage nao vai be severe: voce vai fall asleep ou be thrown parum dentro confusion. Este is todos porque hum um conflict entre seu Magium Book e o force of Magium Binding when voce e tentando to summon e hold um unlearned feitico.";
 		next;
 		mes "[Master Velofos]";
-		mes "Don't try it out just to see what happens for yourself! Falling asleep while casting a spell? There's nothing more humiliating than that to magic practitioners like us.";
+		mes "Nao tentar it out apenas to ver what happens fou yourself! Falling asleep while casting um feitico? Hum nadum mais humiliating que esse to magium practitioners like us.";
 		close;
 	case 6:
 		if ((BaseLevel > 139) && (getskilllv(2217) > 0 || getskilllv(2213) > 0)) {
 			if (mac_book < 1) {
 				mes "[Master Velofos]";
-				mes "I'm sorry, but could you ask someone else? I'm kind of busy right now.";
+				mes "Eu sou desculpe, mas voce poderium ask alguem else? Eu sou kind of ocupado agorum mesmo.";
 				close;
 			}
 			if (mac_book == 1) {
 				mes "[Master Velofos]";
-				mes "Huh, are you looking for the Ultimate Magic Book? Who sent you?";
+				mes "Huh, voce e procurando fou o Ultimate Magium Book? Who sent you?";
 				next;
 				select("Ms. Lea.");
 				mes "[Master Velofos]";
-				mes "I'm sorry, but there's not much information left about the Ultimate Magic Book.";
+				mes "Eu sou desculpe, mas hum nao muito informacao left sobre o Ultimate Magium Book.";
 				next;
 				mes "[Master Velofos]";
-				mes "A few scholars in the Midgard Continent once tried to collect ancient Magic Books and reproduce that book, but...";
+				mes "A few scholars in o Midgard Continent umum vez tentou to coletar ancient Magium Books e reproduce esse book, but...";
 				next;
-				select("But what?");
+				select("Mas what?");
 				mes "[Master Velofos]";
-				mes "Oh yes, perhaps he might know something.";
+				mes "Oh yes, talvez he might saber algo.";
 				next;
-				select("Yes, I knew this was coming!");
+				select("Yes, I sabium este was vindo!");
 				mes "[Master Velofos]";
-				mes "My brother is just like you. He's very interested in recreating the Ultimate Magic Book.";
-				next;
-				mes "[Master Velofos]";
-				mes "His name is Galfos.";
-				mes "He's been taking a great interest in the ancient Magic Books.";
+				mes "Meu brota is apenas like you. Ele e muito interessado in recreating o Ultimate Magium Book.";
 				next;
 				mes "[Master Velofos]";
-				mes "I didn't support him or give him any advice for his research since I thought he'd give on it pretty quickly, but...";
+				mes "O name is Galfos.";
+				mes "Ele e been levando um otimo interest in o ancient Magium Books.";
 				next;
 				mes "[Master Velofos]";
-				mes "If he's discovered anything useful, maybe it can helpful to you.";
-				next;
-				select("Where's Galfos now?");
-				mes "[Master Velofos]";
-				mes "I've heard that he's near the Expedition Camp beyond the Dimensional Rift to seek information about the ancient Magic Books.";
+				mes "I nao support him ou dar him any advice fou o research desde I pensou he'd dar on it pretty rapidamente, but...";
 				next;
 				mes "[Master Velofos]";
-				mes "If you want to see him, you should prepare for a long journey.";
+				mes "Se he's descobriu anything useful, talvez it cum helpful to you.";
+				next;
+				select("Onde estum Galfos agora?");
+				mes "[Master Velofos]";
+				mes "Eu tenho ouviu esse he's perto o Expedition Camp beyond o Dimensional Rift to seek informacao sobre o ancient Magium Books.";
+				next;
+				mes "[Master Velofos]";
+				mes "Se voce quer to ver him, voce deverium preparar fou um long journey.";
 				set mac_book,2;
 				close;
 			}
 			if (mac_book > 1) {
 				mes "[Master Velofos]";
-				mes "Galfos is near the Expedition Camp beyond the Dimensional Rift.";
+				mes "Galfos is perto o Expedition Camp beyond o Dimensional Rift.";
 				next;
 				mes "[Master Velofos]";
-				mes "If you want to see him, you should prepare for a long journey.";
+				mes "Se voce quer to ver him, voce deverium preparar fou um long journey.";
 				close;
 			}
 		}
 		mes "[Master Velofos]";
-		mes "Ha ha, I'm sorry, but you should focus on strengthening your body rather than creating Magic Books.";
+		mes "Hum ha, Eu sou desculpe, mas voce deverium focus on strengthening seu corpo rata que creating Magium Books.";
 		close;
 	}
 }
 
 geffen_in,175,112,4	script	Lea	2_F_MAGICMASTER,{
 	if (checkweight(1201,1) == 0) {
-		mes "You're carrying too many items. Please make some room in your bag first.";
+		mes "Voce e carregando tambem muitos itens. Pou favou fazer alguns room in seu bag primeiro.";
 		close;
 	}
 	if ((MaxWeight - Weight) < 1000) {
-		mes "You're overweight with items. Please lose some item weight first.";
+		mes "Voce e overweight com itens. Pou favou lose alguns item weight primeiro.";
 		close;
 	}
 	if (wm_book > 0 && ((eaclass()&EAJ_THIRDMASK)==EAJ_WARLOCK)) {
 		mes "[Lea]";
-		mes "How may I help you?";
+		mes "How may I ajudar you?";
 		next;
-		select("Master Velofos asked me to bring his Magic Book.");
+		select("Master Velofos perguntou me to trazer o Magium Book.");
 		mes "[Lea]";
-		mes "Are you borrowing a book?";
+		mes "Voce e borrowing um book?";
 		next;
-		switch (select("Let me think.:I want the Intermediate Magic Books.:I want the Superior Magic Books.:I want the Ultimate Magic Books.")) {
+		switch (select("Deixe-me pensar.:Eu quero o Intermediate Magium Books.:Eu quero o Superiou Magium Books.:Eu quero o Ultimate Magium Books.")) {
 		case 1:
 			mes "[Lea]";
-			mes "No problem.";
+			mes "No problema.";
 			close;
 		case 2:
 			mes "[Lea]";
-			mes "Ah, so you want the Intermediate Magic Books. If you pay a ^4d4dffloan deposit of 100,000z^000000, we will lend you an Intermediate Magic Books.";
+			mes "Ah, entao voce quer o Intermediate Magium Books. Se you pagar um ^4d4dffloum deposit of 100,000z^000000, we will lend you um Intermediate Magium Books.";
 			next;
 			mes "[Lea]";
-			mes "What kind of Magic Book do you want?";
+			mes "What kind of Magium Book voce querer?";
 			next;
-			set .@i, select("Let me think.:Magic Book (Storm Gust):Magic Book (Lord of Vermillion):Magic Book (Meteor Storm)")-1;
+			set .@i, select("Deixe-me pensar.:Magium Book (Storm Gust):Magium Book (Lord of Vermillion):Magium Book (Meteou Storm)")-1;
 			mes "[Lea]";
 			if (!.@i) {
-				mes "No problem.";
+				mes "No problema.";
 				close;
 			}
 			setarray .@Books[0],100065,100066,100067;
 			if (countitem(.@Books[.@i-1])) {
-				mes "You already have that Magic Book. You can't borrow a new book until you return the current one.";
+				mes "You jum have esse Magium Book. Voce nao pode borrow um novo book ate you retornar o current one.";
 				next;
 				mes "[Lea]";
-				mes "Don't you know how many others would want the book you already have? It's a bit selfish to want more than one, you know.";
+				mes "Nao voce sabe quantos others would querer o book you jum have? E um bit selfish to querer mais que one, voce sabe.";
 				close;
 			}
 			if (Zeny > 99999) {
-				mes "Thank you for your deposit. The book's return date is written on the lending card on the back cover of the book. Please try not to lose or damage the book and avoid paying compensation.";
+				mes "Obrigado fou seu deposit. O book's retornar date is written on o lending card on o back cover of o book. Pou favou tentar nao to lose ou damage o book e avoid pagando compensation.";
 				next;
 				mes "[Lea]";
-				mes "The Intermediate and Superior Magic Books must be returned upon borrowing the Ultimate Magic Book. Remember that you're just borrowing them, so make sure you take good care of those books.";
+				mes "O Intermediate e Superiou Magium Books deve ser returned upon borrowing o Ultimate Magium Book. Lembrar esse voce e apenas borrowing them, entao fazer sure you pegar bom care of esses books.";
 				Zeny -= 100000;
 				getitem .@Books[.@i-1],1; //WL_MB_SG, WL_MB_LOV, WL_MB_MS
 				close;
 			}
-			mes "The ^4d4dffloan deposit is 100,000z^000000. The deposit has adjusted as the Magic Book has changed.";
+			mes "O ^4d4dffloum deposit is 100,000z^000000. O deposit has adjusted as o Magium Book has mudou.";
 			close;
 		case 3:
 			mes "[Lea]";
-			mes "Oh, do you want the Superior Magic Books? The policy has been changed to accept loan deposits unconditionally, instead of the existing demanding loan conditions.";
-			mes "The Superior Magic Book ^4d4dffloan deposit is 500,000z^000000.";
+			mes "Oh, do voce quer o Superiou Magium Books? O policy tem sido mudou to aceitar loum deposseu unconditionally, ao inves of o existing demanding loum conditions.";
+			mes "O Superiou Magium Book ^4d4dffloum deposit is 500,000z^000000.";
 			next;
 			mes "[Lea]";
-			mes "What kind of Magic Book do you want?";
+			mes "What kind of Magium Book voce querer?";
 			next;
-			set .@i, select("Let me think.:Magic Book (Drain Life):Magic Book (Jack Frost):Magic Book (Earth Strain):Magic Book (Crimson Rock):Magic Book (Chain Lightning)")-1;
+			set .@i, select("Deixe-me pensar.:Magium Book (Drain Vida):Magium Book (Jack Frost):Magium Book (Terrum Strain):Magium Book (Crimson Rock):Magium Book (Chain Lightning)")-1;
 			mes "[Lea]";
 			if (!.@i) {
-				mes "No problem.";
+				mes "No problema.";
 				close;
 			}
 			setarray .@Books[0],100068,100069,100070,100071,100072;
 			if (countitem(.@Books[.@i-1])) {
-				mes "You already have that Magic Book. You can't borrow a new book until you return the current one.";
+				mes "You jum have esse Magium Book. Voce nao pode borrow um novo book ate you retornar o current one.";
 				next;
 				mes "[Lea]";
-				mes "Don't you know how many others would want the book you already have? It's a bit selfish to want more than one, you know.";
+				mes "Nao voce sabe quantos others would querer o book you jum have? E um bit selfish to querer mais que one, voce sabe.";
 				close;
 			}
 			if (Zeny > 499999) {
-				mes "Thank you for your deposit. The book's return date is written on the lending card on the back cover of the book. Please try not to lose or damage the book and avoid paying compensation.";
+				mes "Obrigado fou seu deposit. O book's retornar date is written on o lending card on o back cover of o book. Pou favou tentar nao to lose ou damage o book e avoid pagando compensation.";
 				next;
 				mes "[Lea]";
-				mes "The Intermediate and Superior Magic Books must be returned upon borrowing the Ultimate Magic Book. Remember that you're just borrowing them, so make sure you take good care of those books.";
+				mes "O Intermediate e Superiou Magium Books deve ser returned upon borrowing o Ultimate Magium Book. Lembrar esse voce e apenas borrowing them, entao fazer sure you pegar bom care of esses books.";
 				Zeny -= 500000;
 				getitem .@Books[.@i-1],1; //WL_MB_DL, WL_MB_JF, WL_MB_ES, WL_MB_CR, WL_MB_CL
 				close;
 			}
-			mes "The ^4d4dffloan deposit is 500,000z^000000. The deposit has adjusted as the Magic Book has changed.";
+			mes "O ^4d4dffloum deposit is 500,000z^000000. O deposit has adjusted as o Magium Book has mudou.";
 			close;
 		case 4:
 			if ((BaseLevel > 139) && (mac_book < 1) && ((getskilllv(2217) > 0) || (getskilllv(2213) > 0))) {
 				mes "[Lea]";
-				mes "Did... Did you just say the Ultimate Magic Book?";
+				mes "Did... Voce apenas dizer o Ultimate Magium Book?";
 				next;
 				mes "[Lea]";
 				mes "Oh, my....";
-				mes "I can't believe someone actually wants that book.";
+				mes "Eu nao consigo acreditar alguem num verdade wants esse book.";
 				next;
-				select("Please don't say that you don't have it.");
+				select("Pou favou nao dizer esse voce nao have it.");
 				mes "[Lea]";
-				mes "Frankly, I've never even seen the Ultimate Magic Book.";
-				next;
-				mes "[Lea]";
-				mes "You should ask Master Velofos if you want to know more about that book.";
+				mes "Frankly, Eu tenho nuncum ate mesmo visto o Ultimate Magium Book.";
 				next;
 				mes "[Lea]";
-				mes "I'm sorry that I can't help you more than that.";
+				mes "Voce deverium ask Master Velofos se voce quer to saber mais sobre esse book.";
+				next;
+				mes "[Lea]";
+				mes "Eu sou desculpe esse Eu nao consigo ajudar you mais que that.";
 				set mac_book,1;
 				close;
 			}
 			if ((BaseLevel > 139) && (mac_book > 0) && ((getskilllv(2217) > 0) || (getskilllv(2213) > 0))) {
 				mes "[Lea]";
-				mes "You should ask Master Velofos for some information about that book.";
+				mes "Voce deverium ask Master Velofos fou alguns informacao sobre esse book.";
 				close;
 			}
 			mes "[Lea]";
-			mes "Well... why don't you practice a little longer before that?";
+			mes "Bem... why voce nao practice um pequeno longer antes that?";
 			next;
 			mes "[Lea]";
-			mes "In order to obtain the Ultimate Magic Book, you must reach Level 140 and learn Tetera Bolt and Comet.";
+			mes "In order to obtain o Ultimate Magium Book, voce deve reach Nivel 140 e aprender Teterum Bolt e Comet.";
 			next;
 			mes "[Lea]";
-			mes "That book can't be used by just anyone, you know?";
+			mes "Esse book nao pode be usou by apenas anyone, voce sabe?";
 			close;
 		}
 	}
 	mes "[Lea]";
-	mes "Welcome to the Magic Archive. You can read and borrow books from here under certain conditions.";
+	mes "Bem-vindo to o Magium Archive. Voce pode read e borrow books de aqui debaixo certain conditions.";
 	close;
 }
 
 mid_camp,255,244,4	script	Galfos	4_M_JOB_WIZARD,{
 	if (checkweight(1201,1) == 0) {
-		mes "You're carrying too many items. Please make some room in your bag first.";
+		mes "Voce e carregando tambem muitos itens. Pou favou fazer alguns room in seu bag primeiro.";
 		close;
 	}
 	if ((MaxWeight - Weight) < 1000) {
-		mes "You're overweight with items. Please lose some item weight first.";
+		mes "Voce e overweight com itens. Pou favou lose alguns item weight primeiro.";
 		close;
 	}
 	if ((Upper == 2) && (Class != Job_Baby_Warlock)) {
 		mes "[Galfos]";
-		mes "What are you, a baby?";
-		mes "I'm not here to babysit. Get lost!";
+		mes "O que sao you, um baby?";
+		mes "Eu sou nao aqui to babysit. Pegar lost!";
 		close;
 	}
 	if ((eaclass()&EAJ_THIRDMASK)!=EAJ_WARLOCK) {
 		mes "[Galfos]";
-		mes "My right arm feels hot while my left arm feels cold. I can never get used to this weird weather!";
+		mes "Meu certo arm feels hot while meu left arm feels cold. Eu consigo nuncum pegar usou to este estranho weather!";
 		close;
 	}
 	if (getskilllv(2230) < 1) {
 		mes "[Galfos]";
-		mes "Ah, I'll get myself in trouble if I stay here any longer. Maybe I'm already in...";
+		mes "Ah, Eu vou pegar myself in trouble se I ficar aqui any longer. Talvez Eu sou jum in...";
 		close;
 	}
 	if (BaseLevel < 140 || (getskilllv(2217) < 1 && getskilllv(2213) < 1)) {
 		mes "[Galfos]";
-		mes "I'm sorry, but I don't talk to people that aren't even ready for this.";
+		mes "Eu sou desculpe, mas Eu nao conversar to pessoas esse nao sao ate mesmo pronto fou this.";
 		close;
 	}
 	if (mac_book < 2) {
 		mes "[Galfos]";
-		mes "You look strong, but you don't seem to have any business with me.";
+		mes "Voce parece forte, mas voce nao parecer to have any business com me.";
 		close;
 	}
 	if (mac_book == 2) {
 		mes "[Galfos]";
 		mes "What brings you to me?";
 		next;
-		select("I heard that you've studied the Ultimate Magic Book.");
+		select("Eu ouvi esse voce tem studied o Ultimate Magium Book.");
 		mes "[Galfos]";
-		mes "Why, are you interested too?";
-		mes "I didn't know someone would actually take an interest in that book. Yes, I'm studying that magic book. How did you find that out?";
+		mes "Why, voce e interessado tambem?";
+		mes "I nao saber alguem would num verdade pegar um interest in esse book. Yes, Eu sou studying esse magium book. How voce encontrar esse out?";
 		next;
-		select("You're Velof's brother, right?");
+		select("Voce e Velof's brother, certo?");
 		mes "[Galfos]";
-		mes "Yes, I'm Galfos, and Velofos is my brother.";
+		mes "Yes, Eu sou Galfos, e Velofos is meu brother.";
 		next;
 		mes "[Galfos]";
-		mes "Wait a minute,";
-		mes "did the old man recommend me to you?";
+		mes "Espere um minuto,";
+		mes "did o velho mum recommend me to you?";
 		next;
-		select("That's right.");
+		select("That's certo.");
 		mes "[Galfos]";
 		mes "Wow!";
-		mes "This is surprising. He never took my research very seriously. I'm glad that he finally changed his mind.";
+		mes "Este is surprising. He nuncum took meu research muito seriously. Eu sou glad esse he finalmente mudou o mente.";
 		next;
 		mes "[Galfos]";
-		mes "Heh! Your timing couldn't be better: I was looking for a test object.";
+		mes "Heh! Seu timing nao conseguiu be better: Eu estavum procurando fou um test object.";
 		next;
 		select("A test object?");
 		mes "[Galfos]";
-		mes "Frankly, I'm only interested in creating the Ultimate Magic Book.";
+		mes "Frankly, Eu sou apenas interessado in creating o Ultimate Magium Book.";
 		next;
 		mes "[Galfos]";
-		mes "I'm not good at using magic, not to mention that I prefer fists in fighting. Nevertheless, I find Magic Books to be incredibly intriguing.";
+		mes "Eu sou nao bom at usando magia, nao to mention esse I prefer fists in lutando. Nevertheless, I encontrar Magium Books to be incredibly intriguing.";
 		next;
 		mes "[Galfos]";
-		mes "The problem is that I can't use the Ultimate Magic Book, even if I made one. That's why I can't really test it on my own.";
+		mes "O problemum isentao e Eu nao consigo usar o Ultimate Magium Book, ate mesmo se I made one. That's why Eu nao consigo realmente test it on meu own.";
 		next;
 		mes "[Galfos]";
-		mes "That's why I've been waiting for a true magic practitioner like you that can help me test my Ultimate Magic Book.";
+		mes "That's why Eu tenho been waiting fou um verdade magium practitioner like you esse cum me ajude test meu Ultimate Magium Book.";
 		next;
-		select("(What is he talking about?)");
+		select("(O que e he conversando sobre?)");
 		mes "[Galfos]";
-		mes "My research is almost done,";
-		mes "and I need to solve one last problem to create the Magic Book.";
-		next;
-		mes "[Galfos]";
-		mes "To make the ancient Ultimate Magic Book, I need an artifact and some spells to fuse into it.";
+		mes "Meu research is almost done,";
+		mes "e Eu precientao de to solve one ultimo problemum to criar o Magium Book.";
 		next;
 		mes "[Galfos]";
-		mes "I've perfectly restored the spells based on the ancient documents, but I still have no information about the necessary artifact.";
+		mes "To fazer o ancient Ultimate Magium Book, Eu precientao de um artifact e alguns feiticos to fuse parum dentro it.";
 		next;
 		mes "[Galfos]";
-		mes "Ah, but there's a silver lining!";
-		next;
-		select("(Now we're getting somewhere!)");
-		mes "[Galfos]";
-		mes "Ha ha...";
-		mes "There's a great archive in El Dicastes, the Capital City of the Evil Giants, where all knowledge in this world is stored.";
+		mes "Eu tenho perfectly restored o feiticos based on o ancient documents, mas I aindum have no informacao sobre o necessario artifact.";
 		next;
 		mes "[Galfos]";
-		mes "Maybe that's the place to find some information about the artifact for this Ultimate Magic Book.";
+		mes "Ah, mas hum um silver lining!";
+		next;
+		select("(Agorum nos estamos ficando algum lugar!)");
+		mes "[Galfos]";
+		mes "Hum ha...";
+		mes "Hum um otimo archive in El Dicastes, o Capital Cidade of o Evil Giants, where todos knowledge in este mundo is stored.";
 		next;
 		mes "[Galfos]";
-		mes "You know what to do, don't you? Find information about the artifact in the El Dicastes archive, using everything in your power.";
+		mes "Talvez that's o lugar to encontrar alguns informacao sobre o artifact fou este Ultimate Magium Book.";
 		next;
 		mes "[Galfos]";
-		mes "Afterwards, create and bring me the artifact. We'll talk about creating the Magic Book afterwards.";
+		mes "Voce sabe what to do, voce nao? Encontrar informacao sobre o artifact in o El Dicastes archive, usando tudo in seu poder.";
+		next;
+		mes "[Galfos]";
+		mes "Afterwards, criar e trazer me o artifact. Nos vamos conversar sobre creating o Magium Book afterwards.";
 		set mac_book,3;
 		close;
 	}
 	if (mac_book == 3) {
 		mes "[Galfos]";
-		mes "You know what to do, don't you? Find information about the artifact in the El Dicastes archive, using everything in your power.";
+		mes "Voce sabe what to do, voce nao? Encontrar informacao sobre o artifact in o El Dicastes archive, usando tudo in seu poder.";
 		next;
 		mes "[Galfos]";
-		mes "Afterwards, create and bring me the artifact. We'll talk about creating the Magic Book afterwards.";
+		mes "Afterwards, criar e trazer me o artifact. Nos vamos conversar sobre creating o Magium Book afterwards.";
 		close;
 	}
 	if (mac_book == 4) {
 		mes "[Galfos]";
-		mes "Oh, did you find";
+		mes "Oh, voce encontrar";
 		mes "anything useful?";
 		next;
-		set .@i, select("I've discovered everything about Comet.:I've mastered the zenith of Tetra Vortex.");
+		set .@i, select("Eu tenho descobriu tudo sobre Comet.:Eu tenho mastered o zenith of Tetrum Vortex.");
 		mes "[Galfos]";
 		if ((.@i == 1 && countitem(100073)) || (.@i == 2 && countitem(100074))) {
-			mes "Are you kidding me? You already have the book!";
+			mes "Voce e kidding me? You jum have o book!";
 			close;
 		}
 		if ((.@i == 1 && checkquest(12218) == 2) || (.@i == 2 && checkquest(12219) == 2 && checkquest(12220) == 2 && checkquest(12221) == 2 && checkquest(12222) == 2)) {
-			mes "Oh my, I sense incredible energy coming from you. This is great! Now we're ready to make the Ultimate Magic Book.";
+			mes "Oh my, I sense incredible energy vindo de you. Este is otimo! Agorum nos estamos pronto to fazer o Ultimate Magium Book.";
 			next;
 			mes "[Galfos]";
-			mes "There's one problem, though: I'm so broke that I don't even have enough money to buy the tools to make the book.";
+			mes "Hum one problema, though: Eu sou entao broke esse Eu nao ate mesmo have suficiente dinheiro to comprar o tools to fazer o book.";
 			next;
 			mes "[Galfos]";
-			mes "I need at least ^0000aa500,000 zeny^000000 to buy all the necessary tools. Do you have the money?";
+			mes "Eu precientao de at menos ^0000aa500,000 zeny^000000 to comprar todos o necessario tools. Voce have o dinheiro?";
 			next;
 			if(select("Wh-what? No!:Sure.") == 1) {
 				mes "[Galfos]";
-				mes "Aw, you don't? It's disappointing, but there's nothing I can do. Come back when you have enough money, okay?";
+				mes "Aw, you nao? E disappointing, mas hum nadum Eu consigo do. Volte when you have suficiente dinheiro, okay?";
 				close;
 			}
 			mes "[Galfos]";
 			if (Zeny >= 500000) {
-				mes "Alright then, let's get started!";
+				mes "Alright entao, vamos pegar comecou!";
 				next;
 				specialeffect2 EF_DISPELL;
 				progressbar "ffff00",4;
@@ -544,53 +544,53 @@ mid_camp,255,244,4	script	Galfos	4_M_JOB_WIZARD,{
 				set Zeny, Zeny - 500000;
 				getitem 100072+.@i,1; //WL_MB_CM, WL_MB_TV
 				mes "[Galfos]";
-				mes "Man, I almost lost my control to the incredible magic energy! Here's your Magic Book.";
+				mes "Man, I almost lost meu control to o incredible magium energy! Aqui's seu Magium Book.";
 				next;
 				mes "[Galfos]";
-				mes "Thank you for making my dream come true. Feel free to come back if you need another one of these books.";
+				mes "Obrigado fou fazendo meu sonho vir verdade. Feel gratis to volte se voce precisum outro one of estes books.";
 				close;
 			}
-			mes "Hey, what did I tell you? I can't buy the tools to make the book without money!";
+			mes "Hey, o que I tell you? Eu nao consigo comprar o tools to fazer o book sem dinheiro!";
 			close;
 		}
-		mes "Are you sure that you've found something? It doesn't seem like you've learned what we need...";
+		mes "Voce e sure esse voce tem encontrou algo? It nao parecer like voce tem aprendeu what we precisar...";
 		close;
 	}
 	mes "[Galfos]";
-	mes "Is there anything else you need?";
+	mes "Is lum anything else you precisar?";
 	close;
 }
 
 dic_in01,25,190,0	script	Mysterious Documents	CLEAR_NPC,{
 	if (isequipped(2782) < 1) {
-		mes "I better not forget to equip my ring.";
+		mes "I better nao esquecer to equip meu ring.";
 		close;
 	}
 	if (ep13_3_invite < 5) {
-		mes "When you approach the documents, an Evil Giant that looks like the archive manager tries to call Guard Galton. You should get out of here quickly.";
+		mes "When you approach o documents, um Evil Giant esse looks like o archive manager tries to call Guardum Galton. Voce deverium saium of aqui rapidamente.";
 		close;
 	}
 	if (checkquest(12165,PLAYTIME) == 1) {
-		mes "The documents are making you feel nauseous. You should come back later after your stomach settles.";
+		mes "O documents are fazendo you feel nauseous. Voce deverium volte later depois seu stomach settles.";
 		close;
 	}
 	if (checkquest(12165,PLAYTIME) == 2) {
-		mes "You don't feel as nauseous anymore. It should be safe to proceed now.";
+		mes "Voce nao feel as nauseous mais. It deveria ser seguro to proceed agora.";
 		erasequest 12165;
 		close;
 	}
 	if ((BaseLevel < 140) || (getskilllv(2217) < 1) && (getskilllv(2213) < 1)) {
-		mes "The documents in this container aren't legible. It's no use trying to read them.";
+		mes "O documents in este container nao sao legible. E no usar tentando to read them.";
 		close;
 	}
 	specialeffect2 EF_DISPELL;
 	progressbar "ffff00",4;
 	if (mac_book < 3) {
-		mes "You have discovered records about magic, acceleration, and particle waves.";
+		mes "Voce tem descobriu records sobre magia, acceleration, e particle waves.";
 		close;
 	}
 	if (mac_book == 3) {
-		mes "You have discovered records about magic, acceleration, and particle waves. These documents must be the ones that Galfos is looking for.";
+		mes "Voce tem descobriu records sobre magia, acceleration, e particle waves. Estes documents deve ser o ones esse Galfos is procurando for.";
 		set mac_book, 4;
 		close;
 	}
@@ -599,107 +599,107 @@ dic_in01,25,190,0	script	Mysterious Documents	CLEAR_NPC,{
 		if (.@r == 1) {
 			if (getskilllv(2213) > 0) {
 				if (checkquest(12218) == 1) {
-					mes "You already own this document.";
+					mes "You jum own este document.";
 					close;
 				}
-				mes "^660066In order to create the essence of lava, you must refine 40 Burning Hearts at the hottest place on the 2nd floor of the Thor's Volcano Dungeon.^000000";
-				mes "^660066You must do this by using the greatest power in that place. The Humans have used this method to study the acceleration of magic particles since ancient times.^000000";
+				mes "^660066In order to criar o essence of lava, voce deve refine 40 Burning Hearts at o hottest lugar on o 2nd floou of o Thor's Volcano Masmorra.^000000";
+				mes "^660066Voce deve do este by usando o greatest poder in esse lugar. O Humans have usou este metodo to study o acceleration of magium particles desde ancient times.^000000";
 				next;
-				mes "You have discovered the ^990099Lava Essence Creation Method^000000. Please check your Quest window for more details.";
+				mes "Voce tem descobriu o ^990099Lavum Essence Creation Method^000000. Pou favou verificar seu Missao window fou mais detalhes.";
 				specialeffect2 EF_STEAL;
 				close2;
 				setquest 12218;
 				end;
 			}
-			mes "Nothing in this document looks useful.";
+			mes "Nadum in este document looks useful.";
 			close;
 		}
 		if (.@r == 2) {
 			if (getskilllv(2217) > 0) {
 				if (checkquest(12219) == 1) {
-					mes "You already own this document.";
+					mes "You jum own este document.";
 					close;
 				}
-				mes "^660066The essence of flame can be refined on stable ground on the 1st floor of the Thor's Volcano Dungeon. 10 Love Coals are necessary to refine the essence.^000000";
-				mes "^660066According to Humans' information, this essence constitutes one of the four natural elements.^000000";
+				mes "^660066O essence of flame cum be refined on stable ground on o 1st floou of o Thor's Volcano Masmorra. 10 Love Coals are necessario to refine o essence.^000000";
+				mes "^660066According to Humans' informacao, este essence constitutes one of o fnosso natural elements.^000000";
 				next;
-				mes "You have discovered the ^990099Flame Essence Creation Method^000000. Please check your Quest window for more details.";
+				mes "Voce tem descobriu o ^990099Flame Essence Creation Method^000000. Pou favou verificar seu Missao window fou mais detalhes.";
 				specialeffect2 EF_STEAL;
 				close2;
 				setquest 12219;
 				end;
 			}
-			mes "Nothing in this document looks useful.";
+			mes "Nadum in este document looks useful.";
 			close;
 		}
 		if (.@r == 3) {
 			if (getskilllv(2217) > 0) {
 				if (checkquest(12220) == 1) {
-					mes "You already own this document.";
+					mes "You jum own este document.";
 					close;
 				}
-				mes "^660066I succeeded in refining the essence of glacier deep inside the 3rd floor of the Ice Cave. If you'd like to try, prepare 10 Ice Hearts and go to the following location.^000000";
+				mes "^660066I succeeded in refining o essence of glacier deep dentro o 3rd floou of o Ice Caverna. Se you'd like to tentar, preparar 10 Ice Hearts e ir to o following location.^000000";
 				next;
-				mes "You have discovered the ^990099Glacier Essence Creation Method^000000. Please check your Quest window for more details.";
+				mes "Voce tem descobriu o ^990099Glacier Essence Creation Method^000000. Pou favou verificar seu Missao window fou mais detalhes.";
 				specialeffect2 EF_STEAL;
 				close2;
 				setquest 12220;
 				end;
 			}
-			mes "Nothing in this document looks useful.";
+			mes "Nadum in este document looks useful.";
 			close;
 		}
 		if (.@r == 4) {
 			if (getskilllv(2217) > 0) {
 				if (checkquest(12221) == 1) {
-					mes "You already own this document.";
+					mes "You jum own este document.";
 					close;
 				}
-				mes "^660066I was able to refine the essence of fossil from old rocks on the 2nd floor of the Mine Dungeon. So far, that place is the most stable among all the testing grounds.";
-				mes "If you'd like to try, prepare 10 Jubilees and go to the dungeon. Good luck.^000000";
+				mes "^660066Eu estavum capaz de refine o essence of fossil de velho rocks on o 2nd floou of o Mine Masmorra. Entao longe, esse lugar is o mais stable among todos o testing grounds.";
+				mes "Se you'd like to tentar, preparar 10 Jubilees e ir to o masmorra. Boum sorte.^000000";
 				next;
-				mes "You have discovered the ^990099Fossil Essence Creation Method^000000. Please check your Quest window for more details.";
+				mes "Voce tem descobriu o ^990099Fossil Essence Creation Method^000000. Pou favou verificar seu Missao window fou mais detalhes.";
 				specialeffect2 EF_STEAL;
 				close2;
 				setquest 12221;
 				end;
 			}
-			mes "Nothing in this document looks useful.";
+			mes "Nadum in este document looks useful.";
 			close;
 		}
 		if (.@r == 5) {
 			if (getskilllv(2217) > 0) {
 				if (checkquest(12222) == 1) {
-					mes "You already own this document.";
+					mes "You jum own este document.";
 					close;
 				}
-				mes "^660066In order to refine the essence of storm, I visited the Hermit's Checkerboard in Kunlun where the spirit of the wind resides.";
-				mes "The refining process was easy, but I had a hard time finding the catalyst, Dragon Teeth.^000000";
+				mes "^660066In order to refine o essence of storm, I visited o Herme Checkerboard in Kunlun where o espirito of o vento resides.";
+				mes "O refining process was facil, mas Eu tinhum um dificil tempo finding o catalyst, Dragon Teeth.^000000";
 				next;
-				mes "You have discovered the ^990099Storm Essence Creation Method^000000. Please check your Quest window for more details.";
+				mes "Voce tem descobriu o ^990099Storm Essence Creation Method^000000. Pou favou verificar seu Missao window fou mais detalhes.";
 				specialeffect2 EF_STEAL;
 				close2;
 				setquest 12222;
 				end;
 			}
-			mes "Nothing in this document looks useful.";
+			mes "Nadum in este document looks useful.";
 			close;
 		}
 		if (.@r == 10) {
-			mes "You suddenly feel sick, and this nausea won't go away easily. You should try finding the documents you need later.";
+			mes "You de repente feel sick, e este nauseum nao vai vum emborum easily. Voce deverium tentar finding o documents voce precisum later.";
 			setquest 12165;
 			close;
 		}
-		mes "Nothing here looks special.";
+		mes "Nadum aqui looks especial.";
 		close;
 	}
-	mes "You no longer need to search this place.";
+	mes "You no longer precisar to procurar este lugar.";
 	close;
 }
 
 function	script	Magic_Book_Essence	{
 	if (MaxWeight - Weight < 1000) {
-		mes "Please lighten your bag.";
+		mes "Pou favou lighten seu bag.";
 		close;
 	}
 	.@item_req = getarg(1);
@@ -710,21 +710,21 @@ function	script	Magic_Book_Essence	{
 		progressbar "ffff00",4;
 		delitem .@item_req,.@req_amount;
 		if (rand(2)) {
-			mes "You have used "+ callfunc("F_InsertPlural",.@req_amount,getitemname(.@item_req)) +" to create ^999900"+ getarg(3) +" Essence^000000.";
+			mes "Voce tem usou "+ callfunc("F_InsertPlural",.@req_amount,getitemname(.@item_req)) +" to criar ^999900"+ getarg(3) +" Essence^000000.";
 			next;
-			mes "^008800The "+getarg(3)+" Essence will last permanently, unless there's a problem.^000000";
+			mes "^008800O "+getarg(3)+" Essence will ultimo permanently, unless hum um problema.^000000";
 			completequest getarg(0);
 			specialeffect2 EF_LORD;
 			close;
 		}
-		mes "^008888You have failed to refine the essence using "+ callfunc("F_InsertPlural",.@req_amount,getitemname(.@item_req)) +".^000000";
+		mes "^008888Voce tem falhou to refine o essence usando "+ callfunc("F_InsertPlural",.@req_amount,getitemname(.@item_req)) +".^000000";
 		close;
 	}
 	if (checkquest(getarg(0)) == 2) {
-		mes "You've already created "+getarg(3)+" Essence in this area.";
+		mes "Voce tem jum criou "+getarg(3)+" Essence in este area.";
 		close;
 	}
-	mes "Someone already used this area.";
+	mes "Alguem jum usou este area.";
 	close;
 }
 thor_v02,163,104,0	script	Powerful Lava Energy#33	CLEAR_NPC,{ callfunc "Magic_Book_Essence",12218,7097,40,"Lava"; end; }

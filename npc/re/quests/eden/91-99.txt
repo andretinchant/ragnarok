@@ -19,49 +19,49 @@
 
 moc_para01,48,177,3	script	91-99 Mission Board	857,{
 	if (!callfunc("F_HasEdenGroupMark")) {
-		mes "Wait a minute!";
-		mes "-You need to have an-";
-		mes "-^4d4dff'Eden Group Mark'^000000-";
-		mes "-to receive these missions.-";
+		mes "Espere um minuto!";
+		mes "-Voce precisum to have an-";
+		mes "-^4d4dff'Eden Grupo Mark'^000000-";
+		mes "-to receber estes missoes.-";
 		next;
-		switch(select("Just walk away.:^0000FFEden Group^000000 missions?:How can I be a member of the ^0000FFEden Group^000000?")) {
+		switch(select("Apenas andar embora.:^0000FFEden Grupo^000000 missoes?:Como pode I be um membro of o ^0000FFEden Grupo^000000?")) {
 		case 1:
 			close;
 		case 2:
-			mes "::The Eden Group Missions";
-			mes "::are basically missions";
+			mes "::O Eden Grupo Missoes";
+			mes "::are basically missoes";
 			mes "::requested by";
-			mes "::people from all around the kingdom.";
-			mes "::We just categorize them.";
+			mes "::pessoas de todos ao redou o reino.";
+			mes "::We apenas categorize them.";
 			next;
-			mes "::In the Eden Group,";
-			mes "::we sorted out the missions";
-			mes "::according to the level of difficulty.";
-			mes "::According to this level,";
-			mes "::you can find";
-			mes "::missions that";
+			mes "::In o Eden Grupo,";
+			mes "::we sorted out o missoes";
+			mes "::according to o nivel of difficulty.";
+			mes "::According to este nivel,";
+			mes "::voce pode encontrar";
+			mes "::missoes that";
 			mes "::suit you.";
 			next;
 			mes "::When you are done,";
-			mes "::you can come back";
-			mes "::to the mission board.";
+			mes "::voce pode volte";
+			mes "::to o missao quadro.";
 			next;
-			mes "::Then you will be";
+			mes "::Entao you sera";
 			mes "::rewarded!!";
-			mes "::Simple, isn't it!!";
+			mes "::Simple, nao e it!!";
 			mes "::No commission required!!";
 			close;
 		case 3:
-			mes "::You can become a member";
-			mes "::of the Eden Group";
+			mes "::Voce pode se tornar um membro";
+			mes "::of o Eden Grupo";
 			mes "::to ^0000FFLaime Evenor^000000,";
-			mes "::who is waiting on the 1st floor.";
+			mes "::quem e waiting on o 1st floor.";
 			next;
-			mes "::If you become a member,";
-			mes "::you will get an";
-			mes "::\"^006400Eden Group Mark^000000\".";
-			mes "::Then you will be able";
-			mes "::to see the mission board.";
+			mes "::Se you se tornar um membro,";
+			mes "::you will pegar an";
+			mes "::\"^006400Eden Grupo Mark^000000\".";
+			mes "::Entao you sera able";
+			mes "::to ver o missao quadro.";
 			close;
 		}
 	}
@@ -80,25 +80,25 @@ moc_para01,48,177,3	script	91-99 Mission Board	857,{
 			96000,102000,110000,
 			102000,108000,
 			110000,138000,118000,96000,134000;
-		mes "You must be within level 91-99 to accept these missions.";
+		mes "Voce deve be within nivel 91-99 to aceitar estes missoes.";
 		for(set .@quest,4181; .@quest<=4196; set .@quest,.@quest+1) {
 			set .@hunting, checkquest(.@quest,HUNTING);
 			if (.@hunting == 0 || .@hunting == 1) {
 				next;
-				mes ":: You cannot proceed in";
-				mes ":: ^0000FF"+.@names$[.@quest-4181]+" Hunting^000000.";
-				mes ":: The registration to the mission";
+				mes ":: You nao pode proceed in";
+				mes ":: ^0000FF"+.@names$[.@missao-4181]+" Cacada^000000.";
+				mes ":: O registration to o missao";
 				mes ":: is cancelled.";
 				erasequest .@quest;
 				close;
 			} else if (.@hunting == 2) {
 				next;
-				mes ":: You added information";
-				mes ":: about the mission";
-				mes ":: ^0000FF"+.@names$[.@quest-4181]+" Hunting^000000";
-				mes ":: on the mission board.";
-				mes ":: You've got a";
-				mes ":: salutary experience.";
+				mes ":: You added informacao";
+				mes ":: sobre o missao";
+				mes ":: ^0000FF"+.@names$[.@missao-4181]+" Cacada^000000";
+				mes ":: on o missao quadro.";
+				mes ":: Voce tem got a";
+				mes ":: salutary experiencia.";
 				erasequest .@quest;
 				getexp .@exp[.@quest-4181],0;
 				close;
@@ -107,54 +107,54 @@ moc_para01,48,177,3	script	91-99 Mission Board	857,{
 		close;
 	}
 	mes "[91-99 Mission Board]";
-	mes "There are several requests on this board.";
+	mes "Hum several requests on este quadro.";
 	next;
-	switch(select("^8B4513Turtle Island^000000:^8B4513Glast Heim^000000:^8B4513Rachel / Veins^000000:^8B4513Expansion Cities^000000:^8B4513Other regions^000000")) {
+	switch(select("^8B4513Turtle Ilha^000000:^8B4513Glast Heim^000000:^8B4513Rachel / Veins^000000:^8B4513Expansion Cities^000000:^8B4513Ota regions^000000")) {
 	case 1:
-		mes "^8B4513Turtle Island^000000.";
-		mes "Which monster will you hunt or have you finished hunting?";
+		mes "^8B4513Turtle Ilha^000000.";
+		mes "Which monstro will you cacar ou voce jum terminou cacando?";
 		next;
 		switch(select("^0000FFSolider^000000:^0000FFFreezer^000000:^0000FFHeater^000000")) {
-			case 1: callsub L_Quest,4181,"Solider",90000,"¼Ö¸®´õÄ«µå","There is a monster that only can be found on ^8B4513Turtle Island^000000.";
-			case 2: callsub L_Quest,4182,"Freezer",94000,"ÇÁ¸®ÀúÄ«µå","There is a monster that only can be found on ^8B4513Turtle Island^000000.";
-			case 3: callsub L_Quest,4183,"Heater",114000,"È÷ÅÍÄ«µå","There is a monster that only can be found on ^8B4513Turtle Island^000000.";
+			case 1: callsub L_Quest,4181,"Solider",90000,"ï¿½Ö¸ï¿½ï¿½ï¿½Ä«ï¿½ï¿½","Hum um monstro esse apenas cum be encontrou on ^8B4513Turtle Ilha^000000.";
+			case 2: callsub L_Quest,4182,"Freezer",94000,"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½","Hum um monstro esse apenas cum be encontrou on ^8B4513Turtle Ilha^000000.";
+			case 3: callsub L_Quest,4183,"Heater",114000,"ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½","Hum um monstro esse apenas cum be encontrou on ^8B4513Turtle Ilha^000000.";
 		}
 	case 2:
 		mes "^8B4513Glast Heim^000000.";
-		mes "Which monster will you hunt or have you finished hunting?";
+		mes "Which monstro will you cacar ou voce jum terminou cacando?";
 		next;
-		switch(select("^0000FFInjustice^000000:^0000FFRybio^000000:^0000FFDark Priest^000000")) {
-			case 1: callsub L_Quest,4184,"Injustice",96000,"ÀÎÀú½ºÆ¼½ºÄ«µå","There is a monster only found in ^8B4513Glast Heim prison^000000.";
-			case 2: callsub L_Quest,4185,"Rybio",96000,"¸®ºñ¿ÀÄ«µå","There is a monster only found in ^8B4513Glast Heim prison^000000.";
-			case 3: callsub L_Quest,4186,"Dark Priest",146000,"´ÙÅ©ÇÁ¸®½ºÆ®Ä«µå","There is a monster only found in ^8B4513Glast Heim prison^000000.";
+		switch(select("^0000FFInjustice^000000:^0000FFRybio^000000:^0000FFDark Sacerdote^000000")) {
+			case 1: callsub L_Quest,4184,"Injustice",96000,"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¼ï¿½ï¿½Ä«ï¿½ï¿½","Hum um monstro apenas encontrou in ^8B4513Glast Heim prison^000000.";
+			case 2: callsub L_Quest,4185,"Rybio",96000,"ï¿½ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½","Hum um monstro apenas encontrou in ^8B4513Glast Heim prison^000000.";
+			case 3: callsub L_Quest,4186,"Escuro Sacerdote",146000,"ï¿½ï¿½Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®Ä«ï¿½ï¿½","Hum um monstro apenas encontrou in ^8B4513Glast Heim prison^000000.";
 		}
 	case 3:
 		mes "^8B4513Rachel / Veins^000000.";
-		mes "Which monster will you hunt or have you finished hunting?";
+		mes "Which monstro will you cacar ou voce jum terminou cacando?";
 		next;
 		switch(select("^0000FFStapo^000000:^0000FFRoween^000000:^0000FFSiroma^000000")) {
-			case 1: callsub L_Quest,4187,"Stapo",96000,"½ºÅÂÆ÷Ä«µå","There is a monster only found in ^8B4513Veins^000000.";
-			case 2: callsub L_Quest,4188,"Roween",102000,"·Î¿ìÀ©Ä«µå","There is a monster only found in ^8B4513Rachel^000000.";
-			case 3: callsub L_Quest,4189,"Siroma",110000,"½Ã·Î¸¶Ä«µå","There is a monster only found in ^8B4513Ice Dungeon^000000.";
+			case 1: callsub L_Quest,4187,"Stapo",96000,"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½","Hum um monstro apenas encontrou in ^8B4513Veins^000000.";
+			case 2: callsub L_Quest,4188,"Roween",102000,"ï¿½Î¿ï¿½ï¿½ï¿½Ä«ï¿½ï¿½","Hum um monstro apenas encontrou in ^8B4513Rachel^000000.";
+			case 3: callsub L_Quest,4189,"Siroma",110000,"ï¿½Ã·Î¸ï¿½Ä«ï¿½ï¿½","Hum um monstro apenas encontrou in ^8B4513Ice Masmorra^000000.";
 		}
 	case 4:
 		mes "^8B4513Expansion Cities^000000.";
-		mes "Which monster will you hunt or have you finished hunting?";
+		mes "Which monstro will you cacar ou voce jum terminou cacando?";
 		next;
 		switch(select("^0000FFShinobi^000000:^0000FFEvil Nymph^000000")) {
-			case 1: callsub L_Quest,4190,"Shinobi",102000,"½Ã³ëºñÄ«µå","There is a monster only found in ^8B4513Amatsu Dungeon^000000.";
-			case 2: callsub L_Quest,4191,"Evil Nymph",108000,"¿ä¼±³àÄ«µå","There is a monster only found in ^8B4513Kunlun Dungeon^000000.";
+			case 1: callsub L_Quest,4190,"Shinobi",102000,"ï¿½Ã³ï¿½ï¿½Ä«ï¿½ï¿½","Hum um monstro apenas encontrou in ^8B4513Amatsu Masmorra^000000.";
+			case 2: callsub L_Quest,4191,"Evil Nymph",108000,"ï¿½ä¼±ï¿½ï¿½Ä«ï¿½ï¿½","Hum um monstro apenas encontrou in ^8B4513Kunlun Masmorra^000000.";
 		}
 	case 5:
-		mes "Other Regions.";
-		mes "Which monster will you hunt or have you finished hunting?";
+		mes "Outro Regions.";
+		mes "Which monstro will you cacar ou voce jum terminou cacando?";
 		next;
 		switch(select("^0000FFDeviruchi^000000:^0000FFMineral^000000:^0000FFKaho^000000:^0000FFNeraid^000000:^0000FFDisguise^000000")) {
-			case 1: callsub L_Quest,4192,"Deviruchi",110000,"µ¥ºñ·çÄ¡Ä«µå","There is a monster only found in ^8B4513Geffen Dungeon^000000.";
-			case 2: callsub L_Quest,4193,"Mineral",138000,"¹Ì³×¶ö","There is a monster only found in ^8B4513Einbech Dungeon^000000.";
-			case 3: callsub L_Quest,4194,"Kaho",118000,"Ä«È£Ä«µå","There is a monster found in ^8B4513Nogg Road Magma 1^000000.";
-			case 4: callsub L_Quest,4195,"Neraid",96000,"³×·¹ÀÌµåÄ«µå","There is a monster only found in ^8B4513Comodo Dungeon^000000.";
-			case 5: callsub L_Quest,4196,"Disguise",134000,"µð½º°¡ÀÌÁîÄ«µå","There is a monster only found in ^8B4513Niflheim^000000.";
+			case 1: callsub L_Quest,4192,"Deviruchi",110000,"ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡Ä«ï¿½ï¿½","Hum um monstro apenas encontrou in ^8B4513Geffen Masmorra^000000.";
+			case 2: callsub L_Quest,4193,"Mineral",138000,"ï¿½Ì³×¶ï¿½","Hum um monstro apenas encontrou in ^8B4513Einbech Masmorra^000000.";
+			case 3: callsub L_Quest,4194,"Kaho",118000,"Ä«È£Ä«ï¿½ï¿½","Hum um monstro encontrou in ^8B4513Nogg Estradum Magmum 1^000000.";
+			case 4: callsub L_Quest,4195,"Neraid",96000,"ï¿½×·ï¿½ï¿½Ìµï¿½Ä«ï¿½ï¿½","Hum um monstro apenas encontrou in ^8B4513Comodo Masmorra^000000.";
+			case 5: callsub L_Quest,4196,"Disguise",134000,"ï¿½ð½º°ï¿½ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½","Hum um monstro apenas encontrou in ^8B4513Niflheim^000000.";
 		}
 	}
 	end;
@@ -167,18 +167,18 @@ L_Quest:
 	set .@playtime, checkquest(.@quest2,PLAYTIME);
 	if (.@playtime == 0 || .@playtime == 1) {
 		mes "[91-99 Mission Board]";
-		mes "You need to wait 3 hours before you can take this mission again.";
+		mes "Voce precisum to esperar 3 hours antes voce pode pegar este missao novamente.";
 		close;
 	}
 	set .@hunting, checkquest(.@quest1,HUNTING);
 	if (.@hunting == 0 || .@hunting == 1) {
 		mes "[91-99 Mission Board]";
-		mes "Have you finished hunting all 30 "+getarg(1)+getarg(5,"")+" yet?";
+		mes "Voce jum terminou cacando todos 30 "+getarg(1)+getarg(5,"")+" yet?";
 		close;
 	} else if (.@hunting == 2) {
 		mes "[91-99 Mission Board]";
-		mes "You have completed the hunting.";
-		mes "Please accept this reward as a compensation.";
+		mes "Voce tem completou o cacando.";
+		mes "Pou favou aceitar este recompensum as um compensation.";
 		erasequest .@quest1;
 		if (.@playtime > -1) erasequest .@quest2;
 		setquest .@quest2;
@@ -196,7 +196,7 @@ L_Quest:
 //		recall_completequest .@quest1
 		erasequest .@quest1;
 		mes "[91-99 Mission Board]";
-		mes "You have re-accepted the "+getarg(1)+" Hunting mission.";
+		mes "Voce tem re-aceitou o "+getarg(1)+" Cacadum missao.";
 		close;
 	}*/ else {
 		mes "[91-99 Mission Board]";
@@ -204,12 +204,12 @@ L_Quest:
 		next;
 		if (.@cutin$ != "") cutin .@cutin$,3;
 		mes "[91-99 Mission Board]";
-		mes "Hunt 30 "+getarg(1)+" monsters there and post your success on this board.";
+		mes "Cacar 30 "+getarg(1)+" monstros lum e post seu sucesso on este quadro.";
 		next;
 		if (.@cutin$ != "") cutin .@cutin$,255;
-		if(select("I'll hunt them.:No thanks.") == 1) {
+		if(select("Eu vou cacar them.:No obrigado.") == 1) {
 			mes "[91-99 Mission Board]";
-			mes "When you have completed the mission, post it on this board and collect your reward.";
+			mes "When you have completou o missao, post it on este quadro e coletar seu recompensa.";
 			if (.@playtime > -1) erasequest .@quest2;
 			setquest .@quest1;
 		}

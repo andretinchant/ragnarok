@@ -8,48 +8,48 @@
 
 harboro1,356,211,5	script	Guide#rockridge01	4_F_ANYA,{
 	mes "[Sheriff Assistant]";
-	mes "Welcome to Rock Ridge, the hot, dry desert in the West where adventure is waiting!";
+	mes "Bem-vindo a Rock Ridge, the hot, dry desert in the West where adventure is waiting!";
 	mes "I'm the sheriff's assistant, and I'm here to guide visitors. Is there a place you want to go?";
 	next;
 	mes "[Sheriff Assistant]";
 	mes "Tell me where you want to go, and I'll show you where it is.";
-	mes "Also, you can use ^B9062FNavigation^000000 mode by ^B9062Fclicking the name of the place^000000 I showed to you.";
+	mes "Alem disso, voce pode usar o modo ^B9062FNavegacao^000000 ^B9062Fclicando no nome do local^000000 que eu te mostrei.";
 	while(true) {
 		next;
 		.@s = select( "[Kafra Employee]", "[Inn]", "[Weapon/Armor Shop]", "[Tool Shop]", "[Sheriff's Office]", "Clear mini-map.", "Cancel." );
 		switch(.@s) {
 		case 1:
 			mes "[Sheriff Assistant]";
-			mes "The ^006400Kafra Employee^000000, got it. Please click the ^0000FFBox icon^000000 on your mini-map.";
+			mes "The ^006400Kafra Employee^000000, got it. Please click the ^0000FFBox icon^000000 no seu mini-mapa.";
 			viewpoint 1,291,207,1,0xFFFF33;
 			break;
 		case 2:
 			mes "[Sheriff Assistant]";
-			mes "I've marked the location of the <NAVI>Inn<INFO>harboro1,156,215,0,000,0</INFO></NAVI> on your mini-map.";
+			mes "I've marked the location of the <NAVI>Inn<INFO>harboro1,156,215,0,000,0</INFO></NAVI> no seu mini-mapa.";
 			mes "Click the name to activate Navigation mode.";
 			viewpoint 1,156,215,2,0xAAFF00;
 			break;
 		case 3:
 			mes "[Sheriff Assistant]";
-			mes "I've marked the location of the <NAVI>Weapon/Armor Shop<INFO>harboro1,312,193,0,000,0</INFO></NAVI> on your mini-map.";
+			mes "I've marked the location of the <NAVI>Weapon/Armor Shop<INFO>harboro1,312,193,0,000,0</INFO></NAVI> no seu mini-mapa.";
 			mes "Click the name to activate Navigation mode.";
 			viewpoint 1,312,193,3,0x008080;
 			break;
 		case 4:
 			mes "[Sheriff Assistant]";
-			mes "I've marked the location of the <NAVI>Tool Shop<INFO>harboro1,312,193,0,000,0</INFO></NAVI> on your mini-map.";
+			mes "I've marked the location of the <NAVI>Tool Shop<INFO>harboro1,312,193,0,000,0</INFO></NAVI> no seu mini-mapa.";
 			mes "Click the name to activate Navigation mode.";
 			viewpoint 1,312,193,4,0xFF1493;
 			break;
 		case 5:
 			mes "[Sheriff Assistant]";
-			mes "I've marked the location of the <NAVI>Sheriff's Office<INFO>harboro1,241,218,0,000,0</INFO></NAVI> on your mini-map.";
+			mes "I've marked the location of the <NAVI>Sheriff's Office<INFO>harboro1,241,218,0,000,0</INFO></NAVI> no seu mini-mapa.";
 			mes "Click the name to activate Navigation mode.";
 			viewpoint 1,241,218,5,0xFFCCFF;
 			break;
 		case 6:
 			mes "[Sheriff Assistant]";
-			mes "Let me remove all the marks on your mini-map.";
+			mes "Let me remove all the marks no seu mini-mapa.";
 			viewpoint 2,291,207,1,0xFFFF33;
 			viewpoint 2,156,215,2,0xAAFF00;
 			viewpoint 2,312,193,3,0x008080;

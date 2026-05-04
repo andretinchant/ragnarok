@@ -16,7 +16,7 @@
 
 umbala,128,94,3	script	Umbala Guide#01umbala::GuideUmbala	702,{
 	mes "[Umbala Guide]";
-	mes "Welcome to ^8B4513Umbala^000000,";
+	mes "Bem-vindo a ^8B4513Umbala^000000,";
 	mes "the Village of the Utan Tribe.";
 	next;
 	mes "[Umbala Guide]";
@@ -26,42 +26,42 @@ umbala,128,94,3	script	Umbala Guide#01umbala::GuideUmbala	702,{
 	F_Navi("[Umbala Guide]");
 	while (1) {
 		next;
-		switch(select("[ Kafra Employee ]:[ Chief's House ]:[ Shaman's House ]:[ Weapon Shop ]:[ Tool Shop ]:[ Bungee Jump Area ]:[ Tree of Yggdrasil ]:Remove Marks from Mini-Map:Cancel")) {
+		switch(select("[ Kafra Employee ]:[ Chief's House ]:[ Shaman's House ]:[ Weapon Shop ]:[ Tool Shop ]:[ Bungee Jump Area ]:[ Tree of Yggdrasil ]:Remover Marcas do Mini-Mapa:Cancelar")) {
 		case 1:
 			mes "[Umbala Guide]";
-			mes "Let me mark the location of the";
+			mes "Deixe-me marcar the location of the";
 			mes "^0000FFKafra Employee^000000";
-			mes "on your mini-map.";
-			mes "Would you like to check any other locations?";
+			mes "no seu mini-mapa.";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,87,160,0,0x0A82FF;
 			break;
 		case 2:
 			mes "[Umbala Guide]";
 			mes "Only the "+F_Navi("Chief","umbala,68,251","^006400")+" knows the language of the outside world.";
 			mes "So you'd better visit him before anything else.";
-			mes "Would you like to check any other locations?";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,68,251,1,0xAAFF00;
 			break;
 		case 3:
 			mes "[Umbala Guide]";
 			mes "The "+F_Navi("Shaman","umbala,219,188","^008080")+" has some sort of mystic power.";
 			mes "People say she can create rough enchanted stones, and divide a pure enchanted stone into rough ones.";
-			mes "Would you like to check any other locations?";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,219,188,2,0x008080;
 			break;
 		case 4:
 			mes "[Umbala Guide]";
-			mes "The "+F_Navi("Weapon Shop","umbala,125,155","^FF1493")+" inside Umbala";
+			mes "The "+F_Navi("Loja de Armas","umbala,125,155","^FF1493")+" inside Umbala";
 			mes "supplies the weapons";
 			mes "for defending against their enemies.";
-			mes "Would you like to check any other locations?";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,125,155,3,0xFF1493;
 			break;
 		case 5:
 			mes "[Umbala Guide]";
 			mes "There are many useful things for";
-			mes "traveling in the "+F_Navi("Tool Shop","umbala,136,127","^8B4513")+" in Umbala.";
-			mes "Would you like to check any other locations?";
+			mes "traveling in the "+F_Navi("Loja de Ferramentas","umbala,136,127","^8B4513")+" in Umbala.";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,136,127,4,0x8B4513;
 			break;
 		case 6:
@@ -70,14 +70,14 @@ umbala,128,94,3	script	Umbala Guide#01umbala::GuideUmbala	702,{
 			mes "the "+F_Navi("Bungee Jump Area","umbala,138,198")+".";
 			mes "If you're interested in testing";
 			mes "your courage, why don't you try it.";
-			mes "Would you like to check any other locations?";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,221,176,5,0x9400D3;
 			break;
 		case 7:
 			mes "[Umbala Guide]";
 			mes "There's the "+F_Navi("Tree of Yggdrasil","umbala,107,284")+" in the northern part of town.";
 			mes "You should pay it a visit since that's a place I recommend when you visit Umbala.";
-			mes "Would you like to check any other locations?";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,107,284,6,0xA52A2A;
 			break;
 		case 8:
@@ -94,7 +94,7 @@ umbala,128,94,3	script	Umbala Guide#01umbala::GuideUmbala	702,{
 			break;
 		case 9:
 			mes "[Umbala Guide]";
-			mes "Be safe on your travels.";
+			mes "Tenha uma viagem segura.";
 			close;
 		}
 	}

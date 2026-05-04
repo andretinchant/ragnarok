@@ -18,37 +18,37 @@ nif_fild01,332,327,4	script	Deadman	795,{
 	if (checkquest(60173) != -1) {
 		if (checkquest(60173,HUNTING) != 2 ) {
 			mes "[Deadman]";
-			mes "Have you finished hunting the 50 Disguise?";
+			mes "Voce ja terminou de cacar os 50 Disguise?";
 			next;
-			switch(select("Yes:No:I want to quit")) {
+			switch(select("Sim:Nao:Quero desistir")) {
 			case 1:
 				mes "[Deadman]";
-				mes "Hmm, I don't think you've hunted 50 yet.";
+				mes "Hmm, acho que voce ainda nao cacou 50 yet.";
 				close;
 			case 2:
 				mes "[Deadman]";
-				mes "Remember, I need help hunting Disguise so go and hunt 50 of them.";
+				mes "Lembre-se, preciso de ajuda cacando Disguise entao va e cace 50 deles.";
 				close;
 			case 3:
 				mes "[Deadman]";
-				mes "Are you sure that you want to stop hunting?";
-				mes "Any progress that you've made will be erased";
+				mes "Tem certeza que quer parar de cacar?";
+				mes "Todo o progresso que voce fez sera apagado";
 				next;
-				switch(select("Yes:No")) {
+				switch(select("Sim:Nao")) {
 				case 1:
 					mes "[Deadman]";
-					mes "Ok then, well come back here if you change your mind.";
+					mes "Tudo bem entao, volte aqui se mudar de ideia.";
 					erasequest 60173;
 					close;
 				case 2:
 					mes "[Deadman]";
-					mes "Please kill 50 Disguise in order to make this a Place were people can go to and gather Experience.";
+					mes "Por favor, mate 50 Disguise in order to make this a Place were people can go to and gather Experience.";
 					close;
 				}
 			}
 		}
 		mes "[Deadman]";
-		mes "Amazing, you did that with speed.";
+		mes "Incrivel, voce fez isso rapidamente.";
 		getexp 140600,95800;
 		erasequest 60173;
 		close;
@@ -56,95 +56,95 @@ nif_fild01,332,327,4	script	Deadman	795,{
 	if (checkquest(60176) != -1) {
 		if (checkquest(60176,HUNTING) != 2 ) {
 			mes "[Deadman]";
-			mes "Have you finished hunting the 50 Loli Ruri?";
+			mes "Voce ja terminou de cacar os 50 Loli Ruri?";
 			next;
-			switch(select("Yes:No:I want to quit")) {
+			switch(select("Sim:Nao:Quero desistir")) {
 			case 1:
 				mes "[Deadman]";
-				mes "Hmm, I don't think you've hunted 50 yet.";
+				mes "Hmm, acho que voce ainda nao cacou 50 yet.";
 				close;
 			case 2:
 				mes "[Deadman]";
-				mes "Remember, I need help hunting Loli Ruri so go and hunt 50 of them.";
+				mes "Lembre-se, preciso de ajuda cacando Loli Ruri entao va e cace 50 deles.";
 				close;
 			case 3:
 				mes "[Deadman]";
-				mes "Are you sure that you want to stop hunting?";
-				mes "Any progress that you've made will be erased";
+				mes "Tem certeza que quer parar de cacar?";
+				mes "Todo o progresso que voce fez sera apagado";
 				next;
-				switch(select("Yes:No")) {
+				switch(select("Sim:Nao")) {
 				case 1:
 					mes "[Deadman]";
-					mes "Ok then, well come back here if you change your mind.";
+					mes "Tudo bem entao, volte aqui se mudar de ideia.";
 					erasequest 60176;
 					close;
 				case 2:
 					mes "[Deadman]";
-					mes "Please kill 50 Loli Ruri in order to make this a Place were people can go to and gather Experience.";
+					mes "Por favor, mate 50 Loli Ruri in order to make this a Place were people can go to and gather Experience.";
 					close;
 				}
 			}
 		}
 		mes "[Deadman]";
-		mes "Amazing, you did that with speed.";
+		mes "Incrivel, voce fez isso rapidamente.";
 		getexp 332000,239500;
 		erasequest 60176;
 		close;
 	}
 	if ((BaseLevel > 59) && (BaseLevel < 99)) {
 		mes "[Deadman]";
-		mes "Oh great!";
-		mes "You are here to help me right?";
-		mes "If not, i don't know what to do with the Monsters in this Place!";
+		mes "Que otimo!";
+		mes "Voce esta aqui para me ajudar, certo?";
+		mes "Se nao, nao sei o que fazer com os monstros neste lugar!";
 		next;
-		switch(select("Sure:No")) {
+		switch(select("Claro:Nao")) {
 		case 1:
 			mes "[Deadman]";
-			mes "Great! I knew the moment i saw you that i can count on you!";
-			mes "I need you to reduce the Amount of Monsters which are currently rampaging on this Map!";
-			mes "There are to many Disguise and Loli Ruri around, which makes it impossible for the lower level players to gain good experience here.";
+			mes "Otimo! Eu sabia no momento que te vi que podia contar com voce!";
+			mes "Preciso que voce reduza a quantidade de monstros que estao causando caos neste mapa!";
+			mes "Ha muitos Disguise e Loli Ruri por aqui, o que torna impossivel para jogadores de nivel mais baixo ganhar boa experiencia aqui.";
 			next;
 			mes "[Deadman]";
-			mes "So, which of those Monsters would you like to hunt for me?";
+			mes "Entao, qual desses monstros voce gostaria de cacar para mim?";
 			next;
-			switch(select("Disguise:Loli Ruri:Cancel")) {
+			switch(select("Disguise:Loli Ruri:Cancelar")) {
 			case 1:
 				if (BaseLevel > 90) {
 					mes "[Deadman]";
-					mes "Thank you for your great help with the Disguise!";
-					mes "Currently the Situation is stable and i'm not in need of your help anymore to kill them.";
+					mes "Obrigado pela sua grande ajuda com os Disguise!";
+					mes "Atualmente a situacao esta estavel e nao preciso mais da sua ajuda para mata-los.";
 					close;
 				}
 				mes "[Deadman]";
-				mes "Kill 50 of those Disguise and let me know when you're done. I will reward you for your efforts.";
+				mes "Mate 50 desses Disguise e me avise quando terminar. Vou te recompensar pelos seus esforcos.";
 				setquest 60173;
 				close;
 			case 2:
 				if (BaseLevel > 98) {
 					mes "[Deadman]";
-					mes "Thank you for your great help with the Loli Ruri!";
-					mes "Currently the Situation is stable and i'm not in need of your help anymore to kill them.";
+					mes "Obrigado pela sua grande ajuda com os Loli Ruri!";
+					mes "Atualmente a situacao esta estavel e nao preciso mais da sua ajuda para mata-los.";
 					close;
 				}
 				mes "[Deadman]";
-				mes "Kill 50 of those Loli Ruri and let me know when you're done. I will reward you for your efforts.";
+				mes "Mate 50 desses Loli Ruri e me avise quando terminar. Vou te recompensar pelos seus esforcos.";
 				setquest 60176;
 				close;
 			case 3:
 				mes "[Deadman]";
-				mes "If you change your mind, please come back.";
+				mes "Se mudar de ideia, por favor volte.";
 				close;
 			}
 		case 2:
 			mes "[Deadman]";
-			mes "If you change your mind, please come back.";
+			mes "Se mudar de ideia, por favor volte.";
 			close;
 		}
 	}
 	mes "[Deadman]";
-	mes "Oh boy, Oh boy!";
+	mes "Que bom, que bom!";
 	next;
 	mes "[Deadman]";
-	mes "Sorry I can't talk right now I am in a world of pain here, these darn Disguise and Loli Ruri are going to kill me.";
+	mes "Desculpe, nao posso falar agora, estou sofrendo muito, esses malditos Disguise e Loli Ruri vao me matar.";
 	close;
 }

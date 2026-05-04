@@ -785,7 +785,7 @@ que_god01,11,136,6	script	Researcher#G2	742,{
 				mes "[Aadin]";
 				mes "Mm...?";
 				mes "You haven't left";
-				mes "for Payon yet...?";
+				mes "for Payon ainda...?";
 				mes "I hope you can";
 				mes "tell me the rest";
 				mes "of the story soon.";

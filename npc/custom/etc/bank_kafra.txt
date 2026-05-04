@@ -22,7 +22,7 @@
 
 -	script	Bank Clerk::bankg	833,{
 	mes"[Maniss]";
-	mes strcharinfo(0)+", welcome to the 2nd Bank of Prontera!";
+	mes strcharinfo(0)+", bem-vindo ao 2o Banco de Prontera!";
 
 	set @kb_int,(gettime(DT_MONTH)*31)+gettime(DT_DAYOFMONTH); //today's number
 	set @income,0;
@@ -34,17 +34,17 @@
 L_NoIncomeToday:
 	set #kb_int,@kb_int; //reset days timer
 
-	if(#kafrabank==0) mes "We could open you an account.";
+	if(#kafrabank==0) mes "Podemos abrir uma conta para voce.";
 	if(@income>0) mes "Today's income: ^135445" + callfunc("F_InsertComma",@income) + "^000000 zeny.";
 	set #kafrabank,#kafrabank+@income;
 	if(#kafrabank>0) mes "Your account: ^135445" + callfunc("F_InsertComma",#kafrabank) + "^000000 zeny.";
-	mes "What would you like?";
+	mes "O que deseja?";
 	next;
-	if(#kafrabank==0) menu "-Open an account",-,"-Quit",B_EXIT2;
-	if(#kafrabank>0) menu "-Deposit money",-,"-Withdraw money",M_WITHDRAW,"-Quit",B_EXIT2;
+	if(#kafrabank==0) menu "-Abrir uma conta",-,"-Sair",B_EXIT2;
+	if(#kafrabank>0) menu "-Depositar dinheiro",-,"-Sacar dinheiro",M_WITHDRAW,"-Sair",B_EXIT2;
 
 	mes"[Maniss]";
-	mes "Please, tell me how much zeny you would like to deposit.";
+	mes "Por favor, me diga quanto zeny voce gostaria de depositar.";
 	next;
 	if(input(@kafrabank) == 1) goto L_TOO_BIG_AMOUNT;
 
@@ -53,7 +53,7 @@ L_NoIncomeToday:
 	set Zeny, Zeny-@kafrabank;
 	set #kafrabank,#kafrabank+@kafrabank;
 	mes"[Maniss]";
-	mes "You've made a deposit of ^135445" + callfunc("F_InsertComma",@kafrabank) + "z^000000.";
+	mes "Voce fez um deposito de ^135445" + callfunc("F_InsertComma",@kafrabank) + "z^000000.";
 	//we log these zeny operations into the log db
 	logmes "Bank %: " + @income +"z, Deposit: "+ @kafrabank +"z, Final: "+ #kafrabank +"z";
 	goto B_EXIT;
@@ -62,7 +62,7 @@ M_WITHDRAW:
 	if(#kafrabank==0) goto L_ZERO_ACCOUNT;
 	mes"[Maniss]";
 	mes "Your account: ^135445" + callfunc("F_InsertComma",#kafrabank) + "^000000 zeny.";
-	mes "How much zeny would you like to withdraw?";
+	mes "Quanto zeny voce gostaria de sacar?";
 	next;
 	if(input(@kafrabank) == 1) goto L_TOO_BIG_AMOUNT;
 
@@ -71,42 +71,42 @@ M_WITHDRAW:
 	set #kafrabank,#kafrabank-@kafrabank;
 	set Zeny, Zeny+@kafrabank;
 	mes"[Maniss]";
-	mes "Here is your ^135445" + callfunc("F_InsertComma",@kafrabank) + "z^000000, put your sign here...";
+	mes "Aqui esta seu ^135445" + callfunc("F_InsertComma",@kafrabank) + "z^000000, coloque sua assinatura aqui...";
 	//we log these zeny operations into the log db
 	logmes "Bank %: " + @income +"z, Withdraw: "+ @kafrabank +"z, Final: "+ #kafrabank +"z";
 	goto B_EXIT;
 
 L_NOT_ENOUGH:
 	mes"[Maniss]";
-	mes "You don't have enough zeny for this operation.";
+	mes "Voce nao tem zeny suficiente para esta operacao.";
 	next;
 	goto B_EXIT2;
 
 L_ZERO_ACCOUNT:
 	mes"[Maniss]";
-	mes "You don't have any zeny on your account!";
+	mes "Voce nao tem nenhum zeny na sua conta!";
 	next;
 	goto B_EXIT2;
 
 L_TOO_BIG_AMOUNT:
 	mes"[Maniss]";
-	mes "Sorry. The maximum deposit you can make on a time is 10,000,000 zeny.";
+	mes "Desculpe. O deposito maximo que voce pode fazer por vez e 10.000.000 zeny.";
 	next;
 	goto B_EXIT2;
 
 L_LESS_1000:
 	mes"[Maniss]";
-	mes "We're sorry, the minimum amount of zeny you can deposit is 1,000 zeny.";
+	mes "Desculpe, o valor minimo de zeny que voce pode depositar e 1.000 zeny.";
 	next;
 	goto B_EXIT2;
 
 B_EXIT:
-	mes "Very well... Come again soon!";
+	mes "Muito bem... Volte em breve!";
 	next;
 
 B_EXIT2:
 	mes"[Maniss]";
-	mes "Thank you for using our Bank Service. We hope to see you again soon.";
+	mes "Obrigado por usar nosso Servico Bancario. Esperamos ve-lo novamente em breve.";
 	close;
 }
 

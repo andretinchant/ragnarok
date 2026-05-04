@@ -1,0 +1,130 @@
+//===== rAthena Script =======================================
+//= Professora Fifi
+//===== Description: =========================================
+//= NPC de mudanca de classe para Novatos com Job Level 10.
+//= Localizada na Academia de Izlude (iz_ac01).
+//============================================================
+
+iz_ac01,97,45,4	script	Professora Fifi	4_F_01,{
+
+	mes "[Professora Fifi]";
+
+	// Jogador ja mudou de classe (nao e mais Novato)
+	if (Class != JOB_NOVICE) {
+		mes "Ah, " + strcharinfo(PC_NAME) + "!";
+		mes "Voce ja encontrou seu caminho... Que orgulho sinto de voce!";
+		next;
+		mes "[Professora Fifi]";
+		mes "Continue crescendo e nunca esqueca: a jornada e tao importante quanto o destino.";
+		mes "Estarei sempre torcendo por voce! *sorriso caloroso*";
+		close;
+	}
+
+	// Novato com Job Level abaixo de 10
+	if (JobLevel < 10) {
+		mes "Ola, ola! Que alegria receber uma visita!";
+		next;
+		mes "[Professora Fifi]";
+		mes "Hmm... Deixa eu dar uma olhadinha em voce...";
+		mes "Parece que voce ainda nao chegou ao nivel 10 de Classe. Nao se preocupe, isso e completamente normal!";
+		next;
+		mes "[Professora Fifi]";
+		mes "Sabe, cada etapa da sua jornada tem um proposito especial. Nao tenha pressa!";
+		next;
+		mes "[Professora Fifi]";
+		mes "Aproveite esse tempo e converse com os outros professores aqui na Academia.";
+		mes "Eles tem muito a te ensinar antes de voce escolher seu caminho. Sao pessoas maravilhosas!";
+		next;
+		mes "[Professora Fifi]";
+		mes "Quando chegar ao nivel 10, volte aqui e me conte tudo, ta? Estarei esperando por voce com um sorriso! ^FF6699<3^000000";
+		close;
+	}
+
+	// Novato com Job Level 10 - pronto para mudar de classe
+	mes "Ah, " + strcharinfo(PC_NAME) + "! Voce chegou!";
+	mes "Olha so... Nivel 10 de Classe! Estou tao orgulhosa de voce!";
+	next;
+	mes "[Professora Fifi]";
+	mes "Voce cresceu tanto desde que chegou aqui na Academia...";
+	mes "Faz meu coracao esquentar so de pensar!";
+	next;
+	mes "[Professora Fifi]";
+	mes "Agora chegou o grande momento: e hora de escolher qual caminho voce vai seguir na sua aventura!";
+	next;
+	mes "[Professora Fifi]";
+	mes "Mas lembre-se: nao existe escolha errada. Cada classe tem sua propria beleza e forca.";
+	mes "Escolha com o coracao, ta bem?";
+	next;
+	mes "[Professora Fifi]";
+	mes "Para qual classe voce deseja evoluir?";
+
+	switch(select(
+		"Espadachim - Forca e maestria com a espada",
+		"Mago - O poder misterioso das artes arcanas",
+		"Arqueiro - Precisao e agilidade incomparaveis",
+		"Acolyte - A luz sagrada da cura e da fe",
+		"Mercador - Talento para o comercio e a criatividade",
+		"Ladrao - A arte furtiva das sombras",
+		"Ainda nao decidi..."
+	)) {
+	case 1:
+		mes "[Professora Fifi]";
+		mes "Espadachim! Uma escolha nobre e corajosa!";
+		mes "Com essa determinacao no olhar, tenho certeza que voce vai longe!";
+		next;
+		jobchange JOB_SWORDMAN;
+		break;
+	case 2:
+		mes "[Professora Fifi]";
+		mes "Mago! Ah, que escolha fascinante!";
+		mes "O mundo da magia e lindo e cheio de misterios... Cuide-se bem la fora!";
+		next;
+		jobchange JOB_MAGE;
+		break;
+	case 3:
+		mes "[Professora Fifi]";
+		mes "Arqueiro! Que espirito livre e agil voce tem!";
+		mes "Tenho certeza que suas flechas vao acertar o alvo sempre!";
+		next;
+		jobchange JOB_ARCHER;
+		break;
+	case 4:
+		mes "[Professora Fifi]";
+		mes "Acolyte! Que coracao generoso o seu!";
+		mes "O mundo precisa de mais pessoas dedicadas a cuidar dos outros. Que bencao!";
+		next;
+		jobchange JOB_ACOLYTE;
+		break;
+	case 5:
+		mes "[Professora Fifi]";
+		mes "Mercador! Que inteligencia e criatividade!";
+		mes "Com esse talento, voce vai transformar o mundo!";
+		next;
+		jobchange JOB_MERCHANT;
+		break;
+	case 6:
+		mes "[Professora Fifi]";
+		mes "Ladrao! *risinho* Nao se engane com o nome - e uma arte que poucos dominam!";
+		mes "Confio no seu carater. Use seus talentos com sabedoria!";
+		next;
+		jobchange JOB_THIEF;
+		break;
+	case 7:
+		mes "[Professora Fifi]";
+		mes "Tudo bem, nao precisa ter pressa! Essa e uma das decisoes mais importantes da sua aventura.";
+		next;
+		mes "[Professora Fifi]";
+		mes "Quando estiver pronto, pode voltar aqui. Estarei esperando com todo o carinho do mundo!";
+		mes "^FF6699<3^000000";
+		close;
+	}
+
+	mes "[Professora Fifi]";
+	mes "Que escolha maravilhosa! Estou radiante de felicidade por voce!";
+	next;
+	mes "[Professora Fifi]";
+	mes "O mundo de Midgard e vasto e cheio de aventuras incriveis te esperando.";
+	mes "Cuide-se muito, ta? E lembre-se: se precisar de qualquer coisa, a Professora Fifi estara sempre aqui!";
+	mes "^FF6699<3^000000";
+	close;
+}

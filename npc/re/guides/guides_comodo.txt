@@ -17,17 +17,17 @@
 
 comodo,322,178,4	script	Comodo Guide#01comodo::GuideComodo	700,{
 	mes "[Comodo Guide]";
-	mes "Welcome to ^8B4513Comodo^000000,";
+	mes "Bem-vindo a ^8B4513Comodo^000000,";
 	mes "the Beach Town of the Rune-Midgarts Kingdom.";
 	mes "Do you need help navigating the town?";
 	F_Navi("[Comodo Guide]");
 	next;
 	while (1) {
-		switch(select("[ Main Facilities ]:[ Merchants & Helpers ]:Remove Marks from Mini-Map:Cancel:About ^8B4513Comodo^000000")) {
+		switch(select("[ Main Facilities ]:[ Comerciantes e Ajudantes ]:Remover Marcas do Mini-Mapa:Cancel:About ^8B4513Comodo^000000")) {
 		case 1:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ Tavern ]:[ Casino ]:[ Weapon & Armor Shop ]:[ Tool Shop ]:[ Campsite ]:[ Souvenir Vendor ]:[ East Cave Mao ]:[ West Cave Karu ]:[ North Cave Ruanda ]:[ Hula Dance Stage ]:[ Kafra Co. Western Branch ]:Previous Menu")) {
+				switch(select("[ Tavern ]:[ Casino ]:[ Weapon & Armor Shop ]:[ Tool Shop ]:[ Campsite ]:[ Souvenir Vendor ]:[ East Cave Mao ]:[ West Cave Karu ]:[ North Cave Ruanda ]:[ Hula Dance Stage ]:[ Kafra Co. Western Branch ]:Menu Anterior")) {
 				case 1:
 					callsub L_Mark, F_Navi("Tavern","comodo,161,315","^FF0000");
 					viewpoint 1,166,298,0,0xFF0000;
@@ -44,7 +44,7 @@ comodo,322,178,4	script	Comodo Guide#01comodo::GuideComodo	700,{
 					next;
 					break;
 				case 4:
-					callsub L_Mark, F_Navi("Tool Shop","comodo,92,128","^B8860B");
+					callsub L_Mark, F_Navi("Loja de Ferramentas","comodo,92,128","^B8860B");
 					viewpoint 1,86,128,3,0xB8860B;
 					next;
 					break;
@@ -80,10 +80,10 @@ comodo,322,178,4	script	Comodo Guide#01comodo::GuideComodo	700,{
 					break;
 				case 11:
 					mes "[Comodo Guide]";
-					mes "Let me mark the location of the";
+					mes "Deixe-me marcar the location of the";
 					mes F_Navi("Kafra Corporation Western Branch","comodo,131,195","^DB7093");
-					mes "on your mini-map.";
-					mes "Would you like to check any other locations?";
+					mes "no seu mini-mapa.";
+					mes "Gostaria de verificar outros locais?";
 					viewpoint 1,136,202,10,0xDB7093;
 					next;
 					break;
@@ -96,7 +96,7 @@ comodo,322,178,4	script	Comodo Guide#01comodo::GuideComodo	700,{
 		case 2:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ Chief's House ]:[ Bor Robin ]:[ Kafra Employee ]:[ Roaming Bard ]:Previous Menu")) {
+				switch(select("[ Chief's House ]:[ Bor Robin ]:[ Kafra Employee ]:[ Roaming Bard ]:Menu Anterior")) {
 				case 1:
 					callsub L_Mark, F_Navi("Chief's House","comodo,115,290","^6495ED");
 					viewpoint 1,114,294,11,0x6495ED;
@@ -106,7 +106,7 @@ comodo,322,178,4	script	Comodo Guide#01comodo::GuideComodo	700,{
 					mes "[Comodo Guide]";
 					mes F_Navi("Bor Robin","comodo,193,151","^228B22");
 					mes "helps adventurers to become ^228B22Dancers^000000.";
-					mes "Would you like to check any other locations?";
+					mes "Gostaria de verificar outros locais?";
 					viewpoint 1,193,151,12,0x228B22;
 					next;
 					break;
@@ -119,7 +119,7 @@ comodo,322,178,4	script	Comodo Guide#01comodo::GuideComodo	700,{
 					mes "[Comodo Guide]";
 					mes "The "+F_Navi("Roaming Bard","comodo,226,123","^DB7093");
 					mes "helps adventurers to become ^DB7093Bards^000000.";
-					mes "Would you like to check any other locations?";
+					mes "Gostaria de verificar outros locais?";
 					viewpoint 1,226,123,14,0xDB7093;
 					next;
 					break;
@@ -172,10 +172,10 @@ comodo,322,178,4	script	Comodo Guide#01comodo::GuideComodo	700,{
 	end;
 L_Mark:
 	mes "[Comodo Guide]";
-	mes "Let me mark the location of";
+	mes "Deixe-me marcar the location of";
 	mes "the "+getarg(0);
-	mes "on your mini-map.";
-	mes "Would you like to check any other locations?";
+	mes "no seu mini-mapa.";
+	mes "Gostaria de verificar outros locais?";
 	return;
 }
 comodo,181,347,4	duplicate(GuideComodo)	Comodo Guide#02comodo	700

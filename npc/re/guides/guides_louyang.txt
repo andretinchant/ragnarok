@@ -16,7 +16,7 @@
 
 louyang,224,104,4	script	Luoyang Guide#01louyang	818,{
 	mes "[Representative]";
-	mes "Welcome to ^8B4513Luoyang^000000,";
+	mes "Bem-vindo a ^8B4513Luoyang^000000,";
 	mes "an ancient land with";
 	mes "a history full of tales";
 	mes "of bravery.";
@@ -31,7 +31,7 @@ louyang,224,104,4	script	Luoyang Guide#01louyang	818,{
 	set .@str$,"Is there anything else I can do for you?";
 	while (1) {
 		next;
-		switch(select("[ Dragon Castle ]:[ Doctor's Office ]:[ City Hall ]:[ Weapon Shop ]:[ Tool Shop ]:[ Tavern ]:[ Observatory ]:[ Return to Alberta ]:Remove Marks from Mini-Map:Cancel")) {
+		switch(select("[ Dragon Castle ]:[ Doctor's Office ]:[ City Hall ]:[ Weapon Shop ]:[ Tool Shop ]:[ Tavern ]:[ Observatory ]:[ Return to Alberta ]:Remover Marcas do Mini-Mapa:Cancelar")) {
 		case 1:
 			mes "[Representative]";
 			mes "The "+F_Navi("Dragon Castle","louyang,218,253")+" is located at ^0A82FF+^000000. It is where all the nobles reside, including our lord.";
@@ -60,7 +60,7 @@ louyang,224,104,4	script	Luoyang Guide#01louyang	818,{
 			break;
 		case 4:
 			mes "[Representative]";
-			mes "The "+F_Navi("Weapon Shop","louyang,145,172")+" is located at ^55FF33+^000000.";
+			mes "The "+F_Navi("Loja de Armas","louyang,145,172")+" is located at ^55FF33+^000000.";
 			next;
 			mes "[Representative]";
 			mes "You will see";
@@ -72,7 +72,7 @@ louyang,224,104,4	script	Luoyang Guide#01louyang	818,{
 			break;
 		case 5:
 			mes "[Representative]";
-			mes "The "+F_Navi("Tool Shop","louyang,138,99")+" is located at ^3355FF+^000000.";
+			mes "The "+F_Navi("Loja de Ferramentas","louyang,138,99")+" is located at ^3355FF+^000000.";
 			next;
 			mes "[Representative]";
 			mes "Knowing your enemy";

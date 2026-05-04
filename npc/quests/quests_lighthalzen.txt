@@ -4414,7 +4414,7 @@ lighthalzen,346,263,3	script	Elder#lhz	4_F_EINOLD,{
 				mes "the remains of the spirits";
 				mes "that still cling to this plane?";
 				next;
-				switch(select("Show him the Pendant.:Cancel")) {
+				switch(select("Show him the Pendant.:Cancelar")) {
 				case 1:
 					mes "[Elder]";
 					mes "Oh my... There are some";
@@ -5198,7 +5198,7 @@ lhz_in01,114,181,5	script	Representative#li_01	1_F_LIBRARYGIRL,{
 			mes "to know more about.";
 			next;
 			while (1) {
-				switch(select("1F:2F:B1:Cancel")) {
+				switch(select("1F:2F:B1:Cancelar")) {
 				case 1:
 					mes "[Representative]";
 					mes "The ^3131FFRekenber Library^000000 can";
@@ -5284,7 +5284,7 @@ lhz_in01,114,181,5	script	Representative#li_01	1_F_LIBRARYGIRL,{
 			mes "to know more about.";
 			next;
 			while (1) {
-				switch(select("1F:2F:B1:Cancel")) {
+				switch(select("1F:2F:B1:Cancelar")) {
 				case 1:
 					mes "[Representative]";
 					mes "The ^3131FFRekenber Library^000000 can";
@@ -5427,7 +5427,7 @@ lhz_in01,27,247,5	script	Representative#li_02	1_F_LIBRARYGIRL,{
 			mes "to know more about.";
 			next;
 			while (1) {
-				switch(select("1F:2F:B1:Cancel")) {
+				switch(select("1F:2F:B1:Cancelar")) {
 				case 1:
 					mes "[Representative]";
 					mes "The ^3131FFRekenber Library^000000 can";
@@ -5916,7 +5916,7 @@ lhz_in01,286,226,3	script	Secretary Slierre#li	4_F_ZONDAGIRL,{
 				mes "to illustrate your claim for us";
 				mes "to be on the same page...";
 				next;
-				switch(select("Show Evidence:Cancel")) {
+				switch(select("Show Evidence:Cancelar")) {
 				case 1:
 					if (countitem(7345) > 0) {
 						mes "^3355FFYou reveal the Handcuffs";
@@ -5941,7 +5941,7 @@ lhz_in01,286,226,3	script	Secretary Slierre#li	4_F_ZONDAGIRL,{
 						mes "Wolfchev's research in";
 						mes "the Regenschirm Laboratory?";
 						next;
-						switch(select("Yes:No")) {
+						switch(select("Sim:Nao")) {
 						case 1:
 							break;
 						case 2:
@@ -6049,7 +6049,7 @@ lhz_in01,286,226,3	script	Secretary Slierre#li	4_F_ZONDAGIRL,{
 			mes "Wolfchev's research in";
 			mes "the Regenschirm Laboratory?";
 			next;
-			switch(select("Yes:No")) {
+			switch(select("Sim:Nao")) {
 			case 1:
 				break;
 			case 2:
@@ -8158,7 +8158,7 @@ L_Mission:
 		mes "to go through all of the";
 		mes "reports in these files.";
 		mes "Please give me a little more";
-		mes "time to make sense of them.";
+		mes "time to make sense deles.";
 		close2;
 		cutin "",255;
 		end;

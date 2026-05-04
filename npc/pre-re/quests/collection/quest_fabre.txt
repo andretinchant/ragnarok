@@ -18,38 +18,38 @@ gef_fild07,321,193,4	script	Langry#Fabre_Hunt	754,{
 	if (checkquest(60107) != -1) {
 		if (checkquest(60107,HUNTING) != 2 ) {
 			mes "[Langry]";
-			mes "Have you finished hunting the 50 Fabres?";
+			mes "Voce ja terminou de cacar os 50 Fabres?";
 			next;
-			switch(select("Yes:No:I want to quit")) {
+			switch(select("Sim:Nao:Quero desistir")) {
 			case 1:
 				mes "[Langry]";
-				mes "Hmm, I don't think you've hunted 50 yet...";
+				mes "Hmm, acho que voce ainda nao cacou 50 ainda...";
 				close;
 			case 2:
 				mes "[Langry]";
-				mes "Remember, I need help hunting Fabres so go and hunt 50 of them.";
+				mes "Lembre-se, preciso de ajuda cacando Fabres entao va e cace 50 deles.";
 				close;
 			case 3:
 				mes "[Langry]";
-				mes "Are you sure that you want to stop hunting?";
-				mes "Any progress that you've made will be erased";
+				mes "Tem certeza que quer parar de cacar?";
+				mes "Todo o progresso que voce fez sera apagado";
 				next;
-				switch(select("Yes:No")) {
+				switch(select("Sim:Nao")) {
 				case 1:
 					mes "[Langry]";
-					mes "Ok then, well come back here if you change your mind.";
+					mes "Tudo bem entao, volte aqui se mudar de ideia.";
 					erasequest 60107;
 					close;
 				case 2:
 					mes "[Langry]";
-					mes "Please kill 50 Fabres.";
+					mes "Por favor, mate 50 Fabres.";
 					close;
 				}
 			}
 		}
 		else {
 			mes "[Langry]";
-			mes "Amazing, you did that with speed.";
+			mes "Incrivel, voce fez isso rapidamente.";
 			getexp 385,30;
 			erasequest 60107;
 			close;
@@ -58,38 +58,38 @@ gef_fild07,321,193,4	script	Langry#Fabre_Hunt	754,{
 	if (checkquest(60108) != -1) {
 		if (checkquest(60108,HUNTING) != 2 ) {
 			mes "[Langry]";
-			mes "Have you finished hunting the 50 Fabres?";
+			mes "Voce ja terminou de cacar os 50 Fabres?";
 			next;
-			switch(select("Yes:No:I want to quit")) {
+			switch(select("Sim:Nao:Quero desistir")) {
 			case 1:
 				mes "[Langry]";
-				mes "Hmm, I don't think you've hunted 100 yet...";
+				mes "Hmm, acho que voce ainda nao cacou 100 ainda...";
 				close;
 			case 2:
 				mes "[Langry]";
-				mes "Remember, I need help hunting Fabres so go and hunt 100 of them.";
+				mes "Lembre-se, preciso de ajuda cacando Fabres entao va e cace 100 deles.";
 				close;
 			case 3:
 				mes "[Langry]";
-				mes "Are you sure that you want to stop hunting?";
-				mes "Any progress that you've made will be erased";
+				mes "Tem certeza que quer parar de cacar?";
+				mes "Todo o progresso que voce fez sera apagado";
 				next;
-				switch(select("Yes:No")) {
+				switch(select("Sim:Nao")) {
 				case 1:
 					mes "[Langry]";
-					mes "Ok then, well come back here if you change your mind.";
+					mes "Tudo bem entao, volte aqui se mudar de ideia.";
 					erasequest 60108;
 					close;
 				case 2:
 					mes "[Langry]";
-					mes "Please kill 100 Fabres.";
+					mes "Por favor, mate 100 Fabres.";
 					close;
 				}
 			}
 		}
 		else {
 			mes "[Langry]";
-			mes "Amazing, you did that with speed.";
+			mes "Incrivel, voce fez isso rapidamente.";
 			getexp 385,30;
 			getexp 385,30;
 			erasequest 60108;
@@ -99,38 +99,38 @@ gef_fild07,321,193,4	script	Langry#Fabre_Hunt	754,{
 	if (checkquest(60109) != -1) {
 		if (checkquest(60109,HUNTING) != 2 ) {
 			mes "[Langry]";
-			mes "Have you finished hunting the 150 Fabres?";
+			mes "Voce ja terminou de cacar os 150 Fabres?";
 			next;
-			switch(select("Yes:No:I want to quit")) {
+			switch(select("Sim:Nao:Quero desistir")) {
 			case 1:
 				mes "[Langry]";
-				mes "Hmm, I don't think you've hunted 150 yet...";
+				mes "Hmm, acho que voce ainda nao cacou 150 ainda...";
 				close;
 			case 2:
 				mes "[Langry]";
-				mes "Remember, I need help hunting Fabres so go and hunt 150 of them.";
+				mes "Lembre-se, preciso de ajuda cacando Fabres entao va e cace 150 deles.";
 				close;
 			case 3:
 				mes "[Langry]";
-				mes "Are you sure that you want to stop hunting?";
-				mes "Any progress that you've made will be erased";
+				mes "Tem certeza que quer parar de cacar?";
+				mes "Todo o progresso que voce fez sera apagado";
 				next;
-				switch(select("Yes:No")) {
+				switch(select("Sim:Nao")) {
 				case 1:
 					mes "[Langry]";
-					mes "Ok then, well come back here if you change your mind.";
+					mes "Tudo bem entao, volte aqui se mudar de ideia.";
 					erasequest 60109;
 					close;
 				case 2:
 					mes "[Langry]";
-					mes "Please kill 150 Fabres.";
+					mes "Por favor, mate 150 Fabres.";
 					close;
 				}
 			}
 		}
 		else {
 			mes "[Langry]";
-			mes "Amazing, you did that with speed.";
+			mes "Incrivel, voce fez isso rapidamente.";
 			getexp 385,30;
 			getexp 385,30;
 			getexp 385,30;
@@ -143,87 +143,87 @@ gef_fild07,321,193,4	script	Langry#Fabre_Hunt	754,{
 		//for maximum level
 		if (BaseLevel < 21) {
 			mes "[Langry]";
-			mes "Do you think you can help me?";
-			mes "Please?";
+			mes "Voce acha que pode me ajudar?";
+			mes "Por favor?";
 			next;
-			switch(select("Sure:No")) {
+			switch(select("Claro:Nao")) {
 			case 1:
 				mes "[Langry]";
-				mes "Really?!";
-				mes "That's great!";
+				mes "Serio?!";
+				mes "Que otimo!";
 				next;
-				switch(select("Gather Items:Hunt Fabres:Cancel")) {
+				switch(select("Coletar Itens:Cacar Fabres:Cancelar")) {
 				case 1:
 					// Item turn in
 					mes "[Langry]";
-					mes "I need to collect ^0000CE25 Fluff^000000 to";
-					mes "complete this community service project.";
-					mes "You know what? I can even reward you a little for helping me.";
+					mes "Eu preciso coletar ^0000CE25 Fluff^000000 para";
+					mes "completar este projeto de servico comunitario.";
+					mes "Sabe de uma coisa? Posso ate te recompensar um pouco por me ajudar.";
 					next;
 					switch(select("I have some Fluff:What was that again?")) {
 					case 1:
 						if (countitem(914) > 24) {
 							mes "[Langry]";
-							mes "Thank you for the Fluff. This helps me out greatly.";
-							mes "Oh and here you go, this should help you get stronger, faster!";
+							mes "Obrigado pelo Fluff. Isso me ajuda muito.";
+							mes "Oh, e aqui esta, isso deve te ajudar a ficar mais forte, mais rapido!";
 							delitem 914,25; //Fluff
 							getexp 385,30;
 							close;
 						}
 						else {
 							mes "[Langry]";
-							mes "I see no Fluff, wait yea I do it's the lies coming from your mouth.";
+							mes "Nao vejo nenhum Fluff, espera, sim eu vejo, sao as mentiras saindo da sua boca.";
 							close;
 						}
 					case 2:
 						mes "[Langry]";
-						mes "I need ^00CE0025 Fluff^000000.";
+						mes "Eu preciso de ^00CE0025 Fluff^000000.";
 						close;
 					}
 				case 2:
 					// Kill Count Quest
 					mes "[Langry]";
-					mes "Ah, ok I think you can help me out by hunting some Fabres.";
-					mes "How many would you like to hunt?";
+					mes "Ah, ok, acho que voce pode me ajudar cacando alguns Fabres.";
+					mes "Quantos voce gostaria de cacar?";
 					next;
 					switch(select("50 Fabres:100 Fabres:150 Fabres")) {
 					case 1:
 						mes "[Langry]";
-						mes "Come back when you've finished your task and I will give you a small reward.";
+						mes "Volte quando terminar sua tarefa e eu te darei uma pequena recompensa.";
 						setquest 60107;
 						close;
 					case 2:
 						mes "[Langry]";
-						mes "Come back when you've finished your task and I will give you a small reward.";
+						mes "Volte quando terminar sua tarefa e eu te darei uma pequena recompensa.";
 						setquest 60108;
 						close;
 					case 3:
 						mes "[Langry]";
-						mes "Come back when you've finished your task and I will give you a small reward.";
+						mes "Volte quando terminar sua tarefa e eu te darei uma pequena recompensa.";
 						setquest 60109;
 						close;
 					}
 				case 3:
 					mes "[Langry]";
-					mes "If you change your mind, please come back.";
+					mes "Se mudar de ideia, por favor volte.";
 					close;
 				}
 			case 2:
 				mes "[Langry]";
-				mes "If you change your mind, please come back.";
+				mes "Se mudar de ideia, por favor volte.";
 				close;
 			}
 		}
 		else {
 			mes "[Langry]";
-			mes "Hello, my name is Langry.";
-			mes "I have to complete this community service, but I am just too lazy.";
+			mes "Ola, meu nome e Langry.";
+			mes "Tenho que completar esse servico comunitario, mas sou preguicoso demais.";
 			close;
 		}
 	}
 	else {
 		mes "[Langry]";
-		mes "You may just be the most unlikely person ever, recycle a few Fabres and come back.";
+		mes "Voce pode ser a pessoa mais improvavel de todas, recicle alguns Fabres e volte.";
 		close;
 	}
 }

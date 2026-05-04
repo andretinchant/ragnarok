@@ -22,13 +22,13 @@ yuno,59,212,4	script	Juno Guide#yuno01::GuideJuno	700,{
 	F_Navi("[Juno Guide]");
 	next;
 	while (1) {
-		switch(select("[ Main Facilities ]:[ Merchants & Helpers ]:Remove marks from Mini-Map:Cancel")) {
+		switch(select("[ Main Facilities ]:[ Comerciantes e Ajudantes ]:Remove marks from Mini-Map:Cancelar")) {
 		case 1:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ Tool Shop ]:[ Forge ]:[ Airport ]:[ Government Building ]:[ Street of Book Stores ]:[ Inn & Pub ]:[ Sage Castle ]:[ Monster Academy ]:[ Library of the Republic ]:[ Weapon & Armor Shop ]:[ Juphero Plaza ]:[ Monster Museum ]:[ Schweicherbil Magic Academy ]:Previous Menu")) {
+				switch(select("[ Tool Shop ]:[ Forge ]:[ Airport ]:[ Government Building ]:[ Street of Book Stores ]:[ Inn & Pub ]:[ Sage Castle ]:[ Monster Academy ]:[ Library of the Republic ]:[ Weapon & Armor Shop ]:[ Juphero Plaza ]:[ Monster Museum ]:[ Schweicherbil Magic Academy ]:Menu Anterior")) {
 				case 1:
-					callsub L_Mark, F_Navi("Tool Shop","yuno,194,140","^FF0000");
+					callsub L_Mark, F_Navi("Loja de Ferramentas","yuno,194,140","^FF0000");
 					viewpoint 1,194,140,0,0xFF0000;
 					next;
 					break;
@@ -91,8 +91,8 @@ yuno,59,212,4	script	Juno Guide#yuno01::GuideJuno	700,{
 					mes "[Juno Guide]";
 					mes "I will mark the location of the";
 					mes F_Navi("Schweicherbil Magic Academy","yuno,323,280","^CD1039");
-					mes "on your mini-map.";
-					mes "Would you like to check any other locations?";
+					mes "no seu mini-mapa.";
+					mes "Gostaria de verificar outros locais?";
 					viewpoint 1,323,280,12,0xCD1039;
 					next;
 					break;
@@ -105,7 +105,7 @@ yuno,59,212,4	script	Juno Guide#yuno01::GuideJuno	700,{
 		case 2:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ Kafra Employees ]:[ Eden Teleport Officer ]:Previous Menu")) {
+				switch(select("[ Kafra Employees ]:[ Eden Teleport Officer ]:Menu Anterior")) {
 				case 1:
 					callsub L_Mark, "^FA8072Kafra Employees^000000";
 					viewpoint 1,152,187,13,0xFA8072;
@@ -158,8 +158,8 @@ L_Mark:
 	mes "[Juno Guide]";
 	mes "I will mark the location";
 	mes "of the "+getarg(0);
-	mes "on your mini-map.";
-	mes "Would you like to check any other locations?";
+	mes "no seu mini-mapa.";
+	mes "Gostaria de verificar outros locais?";
 	return;
 }
 yuno,153,47,4	duplicate(GuideJuno)	Juno Guide#yuno02	700

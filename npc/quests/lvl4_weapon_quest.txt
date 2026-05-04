@@ -267,7 +267,7 @@ umbala,117,285,3	script	Bazo#lv4	85,{
 			if ((countitem(7295) > 29) && (countitem(7294) > 29) && (countitem(7291) > 29)) {
 				mes "[Bazo]";
 				mes "Hahaha, I asked you to";
-				mes "bring one kind of ore, not all of them. So which one would you";
+				mes "bring one kind of ore, not all deles. So which one would you";
 				mes "like to use?";
 				next;
 				switch(select("Citrin:Turquoise:Agate")) {

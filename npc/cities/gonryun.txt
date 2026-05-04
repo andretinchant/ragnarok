@@ -19,130 +19,130 @@
 //============================================================
 -	script	::Kunlun_Envoy_gonryun	-1,{
 	mes "[Wa Bai Hu]";
-	mes "Good day~";
-	mes "Let me invite you all";
-	mes "to my homeland, Kunlun.";
-	mes "It is my honor to guide";
-	mes "such distinguished quests from";
-	mes "the Rune-Midgarts kingdom.";
+	mes "Bom dia~";
+	mes "Permitam-me convida-los";
+	mes "a minha terra natal, Kunlun.";
+	mes "E minha honra guiar";
+	mes "convidados tao distintos do";
+	mes "reino de Rune-Midgarts.";
 	next;
-	switch(select("About Kunlun:Visit Kunlun:Cancel")) {
+	switch(select("Sobre Kunlun:Visitar Kunlun:Cancelar")) {
 	case 1:
 		mes "[Wa Bai Hu]";
-		mes "Kunlun is a beautiful place,";
-		mes "rich with history, and its";
-		mes "own traditions. I also think";
-		mes "Kunlun is the best place for";
-		mes "sightseeing.";
+		mes "Kunlun e um lugar lindo,";
+		mes "rico em historia e com";
+		mes "suas proprias tradicoes. Tambem acho";
+		mes "que Kunlun e o melhor lugar para";
+		mes "passeios turisticos.";
 		next;
 		mes "[Wa Bai Hu]";
-		mes "When you arrive at the harbor of";
-		mes "Kunlun, you'll be able to see";
-		mes "miniature replicas of";
-		mes "buildings found in Alberta";
-		mes "and Prontera.";
+		mes "Quando voce chegar ao porto de";
+		mes "Kunlun, podera ver";
+		mes "replicas em miniatura de";
+		mes "edificios encontrados em Alberta";
+		mes "e Prontera.";
 		next;
 		mes "[Wa Bai Hu]";
-		mes "After enjoying a nice, leisurely";
-		mes "stroll, step into the beautiful";
-		mes "column of light that will take";
-		mes "you up into the clouds to";
-		mes "Kunlun Village.";
+		mes "Apos um agradavel e tranquilo";
+		mes "passeio, entre na bela";
+		mes "coluna de luz que vai te levar";
+		mes "acima das nuvens ate a";
+		mes "Vila de Kunlun.";
 		next;
 		mes "[Wa Bai Hu]";
-		mes "I've heard that on the";
-		mes "Rune-Midgarts continent,";
-		mes "there is another city that is";
-		mes "is kept aloft in the sky by";
-		mes "an ancient, mysterious power...";
+		mes "Ouvi dizer que no";
+		mes "continente de Rune-Midgarts,";
+		mes "existe outra cidade que e";
+		mes "mantida no ar por";
+		mes "um antigo e misterioso poder...";
 		next;
 		mes "[Wa Bai Hu]";
-		mes "Well, my Kunlun also floats";
-		mes "in the air, but without any";
-		mes "so called technology or";
-		mes "power supply. We consider";
-		mes "our land especially blessed...";
+		mes "Bom, minha Kunlun tambem flutua";
+		mes "no ar, mas sem nenhuma";
+		mes "tecnologia ou";
+		mes "fonte de energia. Consideramos";
+		mes "nossa terra especialmente abencaoada...";
 		next;
 		mes "[Wa Bai Hu]";
-		mes "When you're in Kunlun, don't";
-		mes "forget to try our specialties";
-		mes "such as the giant dumpling or the heaven peach.";
+		mes "Quando estiver em Kunlun, nao";
+		mes "se esqueca de experimentar nossas especialidades";
+		mes "como o bolinho gigante ou o pessego celestial.";
 		next;
 		mes "[Wa Bai Hu]";
-		mes "You'd better prepare yourself";
-		mes "if you are planning to visit";
-		mes "the Kunlun dungeon. I must";
-		mes "say, that is not a safe place to go for fun.";
+		mes "E melhor se preparar";
+		mes "se estiver planejando visitar";
+		mes "a masmorra de Kunlun. Devo";
+		mes "dizer que nao e um lugar seguro pra ir se divertir.";
 		next;
 		mes "[Wa Bai Hu]";
-		mes "If you are interested in visiting";
-		mes "Kunlun, do not hesitate to let";
-		mes "me know. It's my great pleasure";
-		mes "to serve you, honorable guest.";
+		mes "Se estiver interessado em visitar";
+		mes "Kunlun, nao hesite em me";
+		mes "avisar. E um grande prazer";
+		mes "servi-lo, honoravel convidado.";
 		close;
 	case 2:
 		mes "[Wa Bai Hu]";
-		mes "Excellent choice, I am glad";
-		mes "to have you as our guest~";
-		mes "However, a small fee is required";
-		mes "to board the ship to Kunlun.";
+		mes "Excelente escolha, fico feliz";
+		mes "em te-lo como nosso convidado~";
+		mes "Porem, uma pequena taxa e necessaria";
+		mes "para embarcar no navio para Kunlun.";
 		next;
 		mes "[Wa Bai Hu]";
-		mes "We ask that you pay 10,000 zeny";
-		mes "prior to departure. That fee also";
-		mes "covers the cost of returning";
-		mes "to Alberta. I am ready to guide";
-		mes "you to Kunlun at any time.";
+		mes "Pedimos que pague 10.000 zeny";
+		mes "antes da partida. Essa taxa tambem";
+		mes "cobre o custo de retorno";
+		mes "para Alberta. Estou pronto para te guiar";
+		mes "ate Kunlun a qualquer momento.";
 		next;
 		mes "[Wa Bai Hu]";
-		mes "Would you like to board?";
+		mes "Gostaria de embarcar?";
 		next;
-		if (select("To Kunlun~!:No.") == 1) {
+		if (select("Para Kunlun~!:Nao.") == 1) {
 			if (Zeny > 9999) {
 				mes "[Wa Bai Hu]";
-				mes "Thank you, let me guide you there immediately.";
+				mes "Obrigado, deixe-me guia-lo imediatamente.";
 				close2;
 				set Zeny, Zeny-10000;
 				warp "gon_fild01",258,82;
 				end;
 			}
 			mes "[Wa Bai Hu]";
-			mes "I am sorry, but you must have";
-			mes "10,000 zeny to travel to Kunlun.";
-			mes "Please make sure you have enough";
-			mes "zeny with you. Thank you, and";
-			mes "please come again.";
+			mes "Sinto muito, mas voce precisa ter";
+			mes "10.000 zeny para viajar ate Kunlun.";
+			mes "Certifique-se de ter zeny suficiente";
+			mes "com voce. Obrigado, e";
+			mes "volte sempre.";
 			close;
 		}
 		mes "[Wa Bai Hu]";
-		mes "I see. However, whenever you";
-		mes "change your mind, please let";
-		mes "me know. It would be a great";
-		mes "please to serve you, most";
-		mes "honorable guest.";
+		mes "Entendo. Porem, quando";
+		mes "mudar de ideia, por favor me";
+		mes "avise. Sera um grande";
+		mes "prazer servi-lo, meu";
+		mes "honoravel convidado.";
 		close;
 	case 3:
 		mes "[Wa Bai Hu]";
-		mes "I see. However, whenever you";
-		mes "change your mind, please let me";
-		mes "know. It would be a great pleasure to serve you, most honorable guest.";
+		mes "Entendo. Porem, quando voce";
+		mes "mudar de ideia, por favor me";
+		mes "avise. Sera um grande prazer servi-lo, meu honoravel convidado.";
 		close;
 	}
 }
 
 gon_fild01,255,79,7	script	Kunlun Envoy#gon2	776,{
 	mes "[Wa Bai Hu]";
-	mes "So, did you enjoy your trip?";
-	mes "I guess it's the time for you to";
-	mes "go home. The ship to Rune-Midgarts is ready to depart at any time.";
+	mes "Entao, aproveitou sua viagem?";
+	mes "Acho que e hora de voce";
+	mes "voltar pra casa. O navio para Rune-Midgarts esta pronto para partir a qualquer momento.";
 	next;
-	if (select("Go back to Alberta:Cancel") == 1) {
+	if (select("Voltar para Alberta:Cancelar") == 1) {
 		mes "[Wa Bai Hu]";
-		mes "Please come again.";
-		mes "I hope you will let your friends";
-		mes "know about Kunlun when you get";
-		mes "back. Now, let me guide you";
-		mes "back to Alberta.";
+		mes "Por favor volte sempre.";
+		mes "Espero que conte aos seus amigos";
+		mes "sobre Kunlun quando voltar";
+		mes "pra casa. Agora, deixe-me te guiar";
+		mes "de volta a Alberta.";
 		close2;
 		if (checkre(0))
 			warp "alberta",245,87;
@@ -151,40 +151,40 @@ gon_fild01,255,79,7	script	Kunlun Envoy#gon2	776,{
 		end;
 	}
 	mes "[Wa Bai Hu]";
-	mes "Take your time, my guest.";
-	mes "There should be many places";
-	mes "you may have missed.";
+	mes "Fique a vontade, meu convidado.";
+	mes "Deve haver muitos lugares";
+	mes "que voce pode ter perdido.";
 	close;
 }
 
 gon_fild01,187,239,7	script	Kunlun Envoy#gon3	776,{
 	mes "[Zhang Quing Long]";
-	mes "Please head north to enter Kunlun.";
-	mes "I hope you will have a great time";
-	mes "while staying in Kunlun.";
+	mes "Por favor siga para o norte para entrar em Kunlun.";
+	mes "Espero que voce tenha uma otima estadia";
+	mes "enquanto estiver em Kunlun.";
 	close;
 }
 
 gonryun,153,64,7	script	Kunlun Envoy#gon4	776,{
 	mes "[Zhang Quing Long]";
-	mes "Please make yourself comfortable.";
-	mes "If you want to go back, I will";
-	mes "be more than happy to guide you";
-	mes "to the ship to Alberta.";
+	mes "Por favor fique a vontade.";
+	mes "Se quiser voltar, ficarei";
+	mes "mais do que feliz em te guiar";
+	mes "ate o navio para Alberta.";
 	next;
-	if (select("Go back to the harbor:Cancel") == 1) {
+	if (select("Voltar ao porto:Cancelar") == 1) {
 		mes "[Zhang Quing Long]";
-		mes "I hope you enjoyed your trip.";
-		mes "Now, let me guide you back";
-		mes "to the harbor.";
+		mes "Espero que tenha aproveitado sua viagem.";
+		mes "Agora, deixe-me te guiar de volta";
+		mes "ao porto.";
 		close2;
 		warp "gon_fild01",258,82;
 		end;
 	}
 	mes "[Zhang Quing Long]";
-	mes "Take your time, my guest.";
-	mes "There should be many places";
-	mes "you may have missed.";
+	mes "Fique a vontade, meu convidado.";
+	mes "Deve haver muitos lugares";
+	mes "que voce pode ter perdido.";
 	close;
 }
 
@@ -192,91 +192,91 @@ gonryun,153,64,7	script	Kunlun Envoy#gon4	776,{
 //============================================================
 gonryun,200,82,3	script	Jian Chung Xun#gon	774,{
 	mes "[Jian Chung Xun]";
-	mes "I simply adore festivals.";
-	mes "That's why I love this town.";
-	mes "This town makes me feel like I am";
-	mes "in the middle of a festival all year round.";
+	mes "Eu simplesmente adoro festivais.";
+	mes "Por isso amo esta cidade.";
+	mes "Esta cidade me faz sentir como se estivesse";
+	mes "no meio de um festival o ano inteiro.";
 	close;
 }
 
 gonryun,268,88,3	script	Liang Zhun Bu#gon	776,{
 	mes "[Liang Zhun Bu]";
-	mes "We are proud to be an independent";
-	mes "nation, and have been fighting";
-	mes "against the evil invaders who've";
-	mes "wanted to conquer this blessed land for many years...";
+	mes "Temos orgulho de ser uma nacao";
+	mes "independente, e temos lutado";
+	mes "contra os invasores malignos que";
+	mes "querem conquistar esta terra abencaoada por muitos anos...";
 	next;
 	mes "[Liang Zhun Bu]";
-	mes "But we have victoriously fended";
-	mes "off every invasion! As long";
-	mes "as we believe in ourselves,";
-	mes "we shall never forget the";
-	mes "Triumphal Song that has helped us in our struggles.";
+	mes "Mas temos vitoriosamente repelido";
+	mes "toda invasao! Enquanto";
+	mes "acreditarmos em nos mesmos,";
+	mes "jamais esqueceremos a";
+	mes "Cancao Triunfal que nos ajudou em nossas lutas.";
 	close;
 }
 
 gonryun,118,111,5	script	Qian Yuen Shuang#gon	89,{
 	mes "[Qian Yuen Shuang]";
-	mes "The chief of this town is a man";
-	mes "who opens his heart to others.";
-	mes "However, I have heard that there";
-	mes "are some people who don't like his personality...";
+	mes "O chefe desta cidade e um homem";
+	mes "que abre seu coracao para os outros.";
+	mes "Porem, ouvi dizer que ha";
+	mes "pessoas que nao gostam da personalidade dele...";
 	next;
 	mes "[Qian Yuen Shuang]";
-	mes "Well, I like my town. The Chief's";
-	mes "efforts have made our town safer.";
-	mes "I just hope other people feel the";
-	mes "same way about what he has done.";
+	mes "Bom, eu gosto da minha cidade. Os esforcos";
+	mes "do Chefe tornaram nossa cidade mais segura.";
+	mes "So espero que outras pessoas sintam o";
+	mes "mesmo sobre o que ele fez.";
 	close;
 }
 
 gonryun,181,161,3	script	Jing Wen Zhen#gon	773,{
 	mes "[Jing Wen Zhen]";
-	mes "The men in our town, Kunlun, are";
-	mes "all brave and courageous.";
-	mes "But, they are unable to get";
-	mes "married. It's quite a shame really...";
+	mes "Os homens da nossa cidade, Kunlun, sao";
+	mes "todos corajosos e destemidos.";
+	mes "Mas nao conseguem se";
+	mes "casar. E uma pena mesmo...";
 	next;
 	mes "[Jing Wen Zhen]";
-	mes "It's all because there are";
-	mes "more men than women.";
-	mes "I am not even sure whether";
-	mes "or not my son will be able to";
-	mes "find me a daughter in law.";
+	mes "E tudo porque ha";
+	mes "mais homens do que mulheres.";
+	mes "Nem sei se";
+	mes "meu filho vai conseguir";
+	mes "encontrar uma nora pra mim.";
 	close;
 }
 
 gonryun,113,135,6	script	Gatekeeper#gon	780,{
 	mes "[Kunlun Guard]";
-	mes "Welcome.";
-	mes "This is the residence of Shi Yan Wen, the chief of Kunlun.";
+	mes "Bem-vindo.";
+	mes "Esta e a residencia de Shi Yan Wen, o chefe de Kunlun.";
 	next;
 	mes "[Kunlun Guard]";
-	mes "You better behave yourself while";
-	mes "you are here. If we see anything";
-	mes "suspicious, we'll arrest you in a heartbeat.";
+	mes "E melhor se comportar enquanto";
+	mes "estiver aqui. Se virmos algo";
+	mes "suspeito, vamos te prender num piscar de olhos.";
 	next;
 	mes "[Kunlun Guard]";
-	mes "However, rest assured, you seem";
-	mes "like a trustworthy person.";
-	mes "I'm sure nothing will happen. Enjoy your visit.";
+	mes "Porem, fique tranquilo, voce parece";
+	mes "ser uma pessoa confiavel.";
+	mes "Tenho certeza de que nada vai acontecer. Aproveite sua visita.";
 	close;
 }
 
 gonryun,113,127,6	script	Gatekeeper#gon2	780,{
 	mes "[Kunlun Guard]";
-	mes "Welcome.";
-	mes "This is the residence of Shi Yan Wen, the chief of Kunlun.";
+	mes "Bem-vindo.";
+	mes "Esta e a residencia de Shi Yan Wen, o chefe de Kunlun.";
 	next;
 	mes "[Kunlun Guard]";
-	mes "You better behave yourself while";
-	mes "you are here. If we see anything";
-	mes "suspicious, we'll arrest you in a heartbeat.";
+	mes "E melhor se comportar enquanto";
+	mes "estiver aqui. Se virmos algo";
+	mes "suspeito, vamos te prender num piscar de olhos.";
 	next;
 	mes "[Kunlun Guard]";
-	mes "However, rest assured, you seem";
-	mes "like a trustworthy person.";
-	mes "I'm sure nothing will happen. Enjoy your visit.";
+	mes "Porem, fique tranquilo, voce parece";
+	mes "ser uma pessoa confiavel.";
+	mes "Tenho certeza de que nada vai acontecer. Aproveite sua visita.";
 	close;
 }
 
@@ -286,28 +286,28 @@ gon_in,73,82,5	script	Ji Chung Zhe#gon	778,{
 		mes "............";
 		next;
 		mes "[Ji Chung Zhe]";
-		mes "puuuuu....This sure is";
-		mes "something to worry about.";
+		mes "puuuuu....Isso com certeza e";
+		mes "algo pra se preocupar.";
 		close;
 	}
 	if (nakha == 3) {
 		// set cha,1;// unused
 		mes "[Ji Chung Zhe]";
-		mes "I am Ji Chung Zhe, a renown brewer";
-		mes "of teas. Everyday, I put all my";
-		mes "efforts in making scrumptious, delicious tea.";
+		mes "Eu sou Ji Chung Zhe, um renomado preparador";
+		mes "de chas. Todo dia, coloco todo meu";
+		mes "esforco em fazer chas deliciosos e saborosos.";
 		next;
 		mes "[Ji Chung Zhe]";
-		mes "*Sigh* But lately, the tea I've";
-		mes "been making hasn't been that";
-		mes "great... If I only had some special ingredients...";
+		mes "*Suspiro* Mas ultimamente, o cha que tenho";
+		mes "feito nao tem sido tao";
+		mes "bom... Se ao menos tivesse alguns ingredientes especiais...";
 		next;
 		mes "[Ji Chung Zhe]";
-		mes "I've been told that if you use";
-		mes "a snake, you can concoct a truly";
-		mes "extraordinary beverage~";
-		mes "But...where can I find one";
-		mes "and how can I catch one?";
+		mes "Me disseram que se voce usar";
+		mes "uma cobra, pode fazer uma bebida";
+		mes "verdadeiramente extraordinaria~";
+		mes "Mas...onde posso encontrar uma";
+		mes "e como posso captura-la?";
 		mes "Hmm...";
 		close;
 	}
@@ -315,100 +315,100 @@ gon_in,73,82,5	script	Ji Chung Zhe#gon	778,{
 
 gon_in,173,27,3	script	Yu Jiu Xia#gon	774,{
 	mes "[Yu Jiu Xia]";
-	mes "Geez, just as I thought.";
-	mes "They won't sell alcohol to me.";
-	mes "Maybe its cuz I'm too young...";
-	mes "Hmmm...I wonder how it tastes...";
+	mes "Puxa, como eu pensava.";
+	mes "Eles nao vendem alcool pra mim.";
+	mes "Talvez seja porque sou muito novo...";
+	mes "Hmmm...me pergunto que gosto tem...";
 	next;
 	mes "[Yu Jiu Xia]";
-	mes "However, I know they're making";
-	mes "some tasty tea that even kids";
-	mes "like me can enjoy.";
-	mes "It makes my mouth water just";
-	mes "thinking about this new tea.";
+	mes "Porem, sei que estao fazendo";
+	mes "um cha gostoso que ate criancas";
+	mes "como eu podem apreciar.";
+	mes "Minha boca ja saliva so";
+	mes "de pensar nesse novo cha.";
 	close;
 }
 
 gonryun,166,196,3	script	Soldier#gon	780,{
 	if (b_sword < 7) {
 		mes "[Wa Qiu Wu]";
-		mes "Let me tell you something";
-		mes "interesting about this place~";
-		mes "Long ago, this entire area used to be a shrine.";
+		mes "Deixe-me contar algo";
+		mes "interessante sobre este lugar~";
+		mes "Ha muito tempo, toda esta area costumava ser um santuario.";
 		next;
 		mes "[Wa Qiu Wu]";
-		mes "In those days, Taoist hermits";
-		mes "used to gather here in order to";
-		mes "reach the Sky Kingdom. However,";
-		mes "they failed miserably...slowly the monsters began to come...";
+		mes "Naqueles dias, eremitas Taoistas";
+		mes "costumavam se reunir aqui para";
+		mes "alcancar o Reino Celestial. Porem,";
+		mes "falharam miseravelmente...lentamente os monstros comecaram a vir...";
 		close;
 	}
 	else if ((b_sword > 6) && (b_sword < 10)) {
 		mes "[Wa Qiu Wu]";
-		mes "Don't you think it was quite noisy";
-		mes "last night? It was all because";
-		mes "of that thief. He made quite";
-		mes "a scene...It was so loud that";
-		mes "I couldn't sleep at all...";
+		mes "Voce nao acha que estava bem barulhento";
+		mes "ontem a noite? Foi tudo por causa";
+		mes "daquele ladrao. Ele fez uma baita";
+		mes "cena...Foi tao alto que";
+		mes "nao consegui dormir...";
 		next;
 		mes "[Wa Qiu Wu]";
 		mes "Ahh~~~~!";
-		mes "In the middle of all that";
-		mes "commotion, I saw";
-		mes "something running straight";
-		mes "into the shrine.";
+		mes "No meio de toda aquela";
+		mes "confusao, vi";
+		mes "algo correndo direto";
+		mes "pro santuario.";
 		next;
 		mes "[Wa Qiu Wu]";
-		mes "It was moving so fast that";
-		mes "I couldn't even tell what it was.";
-		mes "From what I could recognize, it";
-		mes "looked human. I wonder";
-		mes "what it was...";
+		mes "Se movia tao rapido que";
+		mes "eu nem consegui ver o que era.";
+		mes "Pelo que pude reconhecer,";
+		mes "parecia humano. Me pergunto";
+		mes "o que era...";
 		next;
 		mes "[Wa Qiu Wu]";
-		mes "It might have been the";
-		mes "thief, but it moved";
-		mes "so fast, it seemed like";
-		mes "just a blur.";
+		mes "Pode ter sido o";
+		mes "ladrao, mas se movia";
+		mes "tao rapido que parecia";
+		mes "apenas um borrrao.";
 		close;
 	}
 	mes "[Wa Qiu Wu]";
-	mes "Let me tell you something";
-	mes "interesting~ This entire area";
-	mes "used to be a shrine.";
+	mes "Deixe-me contar algo";
+	mes "interessante~ Toda esta area";
+	mes "costumava ser um santuario.";
 	next;
 	mes "[Wa Qiu Wu]";
-	mes "A long time ago, Taoist hermits";
-	mes "used to gather here in order to";
-	mes "reach the Sky Kingdom. However,";
-	mes "they failed miserably...slowly the monsters began to come.";
+	mes "Ha muito tempo, eremitas Taoistas";
+	mes "costumavam se reunir aqui para";
+	mes "alcancar o Reino Celestial. Porem,";
+	mes "falharam miseravelmente...lentamente os monstros comecaram a vir.";
 	next;
 	mes "[Wa Qiu Wu]";
-	mes "The town is getting ready for the";
-	mes "Festival, but something is delaying";
-	mes "it. This has never happened before...";
+	mes "A cidade esta se preparando para o";
+	mes "Festival, mas algo esta atrasando.";
+	mes "Isso nunca aconteceu antes...";
 	close;
 }
 
 gonryun,169,71,3	script	Guidev#gon	770,{
 	mes "[Li Xi Jiao]";
-	mes "Welcome to Kunlun!";
-	mes "Did you enjoy all the incredible";
-	mes "scenery on your way here?";
-	mes "The buildings may be small, but we";
-	mes "all worked hard to build this city.";
+	mes "Bem-vindo a Kunlun!";
+	mes "Aproveitou todo o incrivel";
+	mes "cenario no caminho ate aqui?";
+	mes "Os edificios podem ser pequenos, mas todos";
+	mes "trabalhamos duro pra construir esta cidade.";
 	next;
 	mes "[Li Xi Jiao]";
-	mes "I have some miniatures of";
-	mes "the Rune-Midgarts Kingdom.";
-	mes "You can view all of Prontera in a";
-	mes "single glance. The craftsmanship";
-	mes "on these masterpieces is quite stunning!";
+	mes "Tenho algumas miniaturas do";
+	mes "Reino de Rune-Midgarts.";
+	mes "Voce pode ver toda Prontera de uma";
+	mes "so vez. O artesanato";
+	mes "dessas obras-primas e impressionante!";
 	next;
 	mes "[Li Xi Jiao]";
-	mes "If you look around carefully,";
-	mes "You'll find all sorts of beautiful";
-	mes "sights throughout the town.";
+	mes "Se voce olhar com cuidado,";
+	mes "encontrara todo tipo de lindas";
+	mes "paisagens pela cidade.";
 	close;
 }
 

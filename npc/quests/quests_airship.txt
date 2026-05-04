@@ -1379,7 +1379,7 @@ L_Diary:
 	mes "just a little more each day.";
 	mes "I wanted to tell Kain about";
 	mes "what the doctor said, but he's";
-	mes "not ready for this news yet...^000000";
+	mes "not ready for this news ainda...^000000";
 	next;
 	mes "^856363Lately, Tarsha cries";
 	mes "a lot. My poor baby loves";

@@ -18,18 +18,18 @@
 aldebaran,139,63,4	script	Guide#01aldebaran::GuideAldearan	105,{
 	cutin "prt_soldier",2;
 	mes "[Al De Baran Guide]";
-	mes "Welcome to ^8B4513Al De Baran^000000,";
+	mes "Bem-vindo a ^8B4513Al De Baran^000000,";
 	mes "the Border City.";
-	mes "Do you need help navigating the city?";
+	mes "Precisa de ajuda para navegar pela cidade?";
 	F_Navi("[Al De Baran Guide]");
 	next;
-	set .@str$,"Would you like to check any other locations?";
+	set .@str$,"Gostaria de verificar outros locais?";
 	while (1) {
-		switch(select("[ Main Facilities ]:[ Merchants & Helpers ]:Remove Marks from Mini-Map:Cancel")) {
+		switch(select("[ Main Facilities ]:[ Comerciantes e Ajudantes ]:Remover Marcas do Mini-Mapa:Cancelar")) {
 		case 1:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ Kafra Headquarters ]:[ Alchemist Guild ]:[ Clock Tower ]:[ Inn & Tool Shop ]:[ Repair & Buy Equipment ]:[ Tavern ]:Previous Menu")) {
+				switch(select("[ Kafra Headquarters ]:[ Alchemist Guild ]:[ Clock Tower ]:[ Inn & Tool Shop ]:[ Repair & Buy Equipment ]:[ Tavern ]:Menu Anterior")) {
 				case 1:
 					callsub L_Mark, F_Navi("Kafra Headquarters","aldebaran,61,229","^B9062F");
 					mes .@str$;
@@ -50,9 +50,9 @@ aldebaran,139,63,4	script	Guide#01aldebaran::GuideAldearan	105,{
 					break;
 				case 4:
 					mes "[Al De Baran Guide]";
-					mes "Let me mark the location of the";
+					mes "Deixe-me marcar the location of the";
 					mes F_Navi("Inn & Tool Shop","aldebaran,197,70","^006400")+" building";
-					mes "on your mini-map.";
+					mes "no seu mini-mapa.";
 					mes .@str$;
 					viewpoint 1,197,70,3,0xAAFF00;
 					next;
@@ -80,7 +80,7 @@ aldebaran,139,63,4	script	Guide#01aldebaran::GuideAldearan	105,{
 		case 2:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ Eden Teleport Officer ]:[ Kafra Employee ]:[ Mr. Claus ]:[ Chef Assistant ]:Previous Menu")) {
+				switch(select("[ Eden Teleport Officer ]:[ Kafra Employee ]:[ Mr. Claus ]:[ Chef Assistant ]:Menu Anterior")) {
 				case 1:
 					callsub L_Mark, F_Navi("Eden Teleport Officer","aldebaran,133,119","^B9062F");
 					mes .@str$;
@@ -96,8 +96,8 @@ aldebaran,139,63,4	script	Guide#01aldebaran::GuideAldearan	105,{
 					mes "[Al De Baran Guide]";
 					mes "Mr. Claus can teleport";
 					mes "you to "+F_Navi("Lutie","aldebaran,168,168","^006400")+".";
-					mes "Let me mark his location";
-					mes "on your mini-map.";
+					mes "Deixe-me marcar his location";
+					mes "no seu mini-mapa.";
 					mes .@str$;
 					viewpoint 1,168,168,8,0xAAFF00;
 					next;
@@ -132,7 +132,7 @@ aldebaran,139,63,4	script	Guide#01aldebaran::GuideAldearan	105,{
 			break;
 		case 4:
 			mes "[Al De Baran Guide]";
-			mes "Alright then,";
+			mes "Muito bem,";
 			mes "enjoy your stay!";
 			close2;
 			cutin "prt_soldier",255;
@@ -142,9 +142,9 @@ aldebaran,139,63,4	script	Guide#01aldebaran::GuideAldearan	105,{
 	end;
 L_Mark:
 	mes "[Al De Baran Guide]";
-	mes "Let me mark the location of the";
+	mes "Deixe-me marcar the location of the";
 	mes getarg(0);
-	mes "on your mini-map.";
+	mes "no seu mini-mapa.";
 	return;
 }
 aldebaran,243,143,2	duplicate(GuideAldearan)	Guide#02aldebaran	105

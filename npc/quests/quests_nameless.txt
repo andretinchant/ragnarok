@@ -849,7 +849,7 @@ ve_fild07,125,128,0	script	Boat#Aru	111,{
 		mes "can take you to the";
 		mes "monastery.^000000";
 		next;
-		switch(select("Go to Monastery:Cancel")) {
+		switch(select("Go to Monastery:Cancelar")) {
 		case 1:
 			mes "^3355FFYou set sail for";
 			mes "the monastery...^000000";
@@ -867,7 +867,7 @@ ve_fild07,125,128,0	script	Boat#Aru	111,{
 		mes "can take you to the";
 		mes "monastery.^000000";
 		next;
-		switch(select("Go to Monastery:Cancel")) {
+		switch(select("Go to Monastery:Cancelar")) {
 		case 1:
 			mes "^3355FFYou set sail for";
 			mes "the monastery...^000000";
@@ -1212,7 +1212,7 @@ nameless_i,259,218,3	script	Larjes#Aru	97,{
 		mes "but did you want to leave";
 		mes "this place for a while?";
 		next;
-		if(select("Yes:No")==1) {
+		if(select("Sim:Nao")==1) {
 			mes "[Larjes]";
 			mes "Alight, let's go.";
 			close2;
@@ -1256,7 +1256,7 @@ nameless_n,259,218,3	script	Larjes#Boat1	97,{
 			mes "but did you want to leave";
 			mes "this place for a while?";
 			next;
-			switch(select("Yes:No")) {
+			switch(select("Sim:Nao")) {
 			case 1:
 				mes "[Larjes]";
 				mes "Alright, let's go.";
@@ -3706,7 +3706,7 @@ cmd_fild01,55,160,0	script	Heap of Earth	844,{
 		mes "dug a hole in the ground,";
 		mes "and then covered it again.^000000";
 		next;
-		switch(select("Dig Up the Spot:Cancel")) {
+		switch(select("Dig Up the Spot:Cancelar")) {
 		case 1:
 			mes "[" + strcharinfo(0) + "]";
 			mes "There must be something";
@@ -4154,7 +4154,7 @@ cmd_fild01,55,160,0	script	Heap of Earth	844,{
 		mes "I can't blame you since";
 		mes "they're a bit complicated.";
 		next;
-		switch(select("Instructions:Cancel")) {
+		switch(select("Instructions:Cancelar")) {
 		case 1:
 			mes "[Dorian]";
 			mes "First, insert a new rough";

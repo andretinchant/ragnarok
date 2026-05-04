@@ -35,7 +35,7 @@ prt_in,49,172,3	script	Marianne#juice	53,{
 		mes "[Housewife Marianne]";
 		mes "Morrison!! Eat some fruits!! You don't want to become a slobby fat pig when you grow up, do you?";
 		next;
-		if (select("Talk:Cancel") == 1) {
+		if (select("Talk:Cancelar") == 1) {
 			mes "[Housewife Marianne]";
 			mes "Hm? ...You!";
 			mes "You're the one who gave, my little Morrison that Meat?! Did you come here thinking I wouldn't know about it?!";
@@ -65,7 +65,7 @@ prt_in,49,172,3	script	Marianne#juice	53,{
 	mes "[Housewife Marinaa]";
 	mes "Sigh~!! Like father, like son...";
 	next;
-	switch(select("Talk:Cancel")) {
+	switch(select("Talk:Cancelar")) {
 		mes "[Housewife Marianne]";
 		mes "*Sigh*... This is Morrison...";
 		mes "My one and only son.";
@@ -111,7 +111,7 @@ prt_in,47,173,3	script	Morrison#juice	97,{
 	mes "No, don't make me eat it! I can't bear to taste fruits!";
 	next;
 	if (countitem(517) > 0) {
-		switch(select("Talk:Show the Meat:Cancel")) {
+		switch(select("Talk:Show the Meat:Cancelar")) {
 		case 1:
 			mes "[Little Morrison]";
 			mes "Aaaagh!! Once or twice is enough!! I refuse to eat any more fruits! You have to peel them and there's so much juice that it makes you feel icky...";
@@ -151,7 +151,7 @@ prt_in,47,173,3	script	Morrison#juice	97,{
 			close;
 		}
 	}
-	if (select("Talk:Cancel") == 1) {
+	if (select("Talk:Cancelar") == 1) {
 		mes "[Little Morrison]";
 		mes "Aaah!! I can't eat any more fruits!";
 		next;
@@ -189,7 +189,7 @@ payon_in03,188,146,5	script	Marx Hansen#juice	86,{
 			mes "[Merchant Marx Hansen]";
 			mes "What kind of fruit juice would you like to make?";
 			next;
-			switch(select("Apple Juice:Banana Juice:Carrot Juice:Grape Juice:Cancel")) {
+			switch(select("Apple Juice:Banana Juice:Carrot Juice:Grape Juice:Cancelar")) {
 			case 1:
 				set .@fruit,512;
 				set .@juice,531;
@@ -314,7 +314,7 @@ payon_in03,188,146,5	script	Marx Hansen#juice	86,{
 		mes "Welcome.";
 		mes "How may I help you?";
 		next;
-		if (select("Talk:Cancel") == 1) {
+		if (select("Talk:Cancelar") == 1) {
 			mes "[Merchant Marx Hansen]";
 			mes "Before humans were able to develop such vast societies, they gathered fruit from trees to survive. Fruits may have been nature's blessing that allowed us to exist in the world.";
 			next;

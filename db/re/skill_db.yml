@@ -3864,12 +3864,12 @@ Body:
   - Id: 94
     Name: BS_IRON
     Description: Iron Tempering
-    MaxLevel: 5
+    MaxLevel: 10
     Type: Weapon
   - Id: 95
     Name: BS_STEEL
     Description: Steel Tempering
-    MaxLevel: 5
+    MaxLevel: 10
     Type: Weapon
   - Id: 96
     Name: BS_ENCHANTEDSTONE
@@ -3879,47 +3879,47 @@ Body:
   - Id: 97
     Name: BS_ORIDEOCON
     Description: Oridecon Research
-    MaxLevel: 5
+    MaxLevel: 10
     Type: Weapon
   - Id: 98
     Name: BS_DAGGER
     Description: Smith Dagger
-    MaxLevel: 3
+    MaxLevel: 5
     Type: Weapon
   - Id: 99
     Name: BS_SWORD
     Description: Smith Sword
-    MaxLevel: 3
+    MaxLevel: 5
     Type: Weapon
   - Id: 100
     Name: BS_TWOHANDSWORD
     Description: Smith Two-handed Sword
-    MaxLevel: 3
+    MaxLevel: 5
     Type: Weapon
   - Id: 101
     Name: BS_AXE
     Description: Smith Axe
-    MaxLevel: 3
+    MaxLevel: 5
     Type: Weapon
   - Id: 102
     Name: BS_MACE
     Description: Smith Mace
-    MaxLevel: 3
+    MaxLevel: 5
     Type: Weapon
   - Id: 103
     Name: BS_KNUCKLE
     Description: Smith Knucklebrace
-    MaxLevel: 3
+    MaxLevel: 5
     Type: Weapon
   - Id: 104
     Name: BS_SPEAR
     Description: Smith Spear
-    MaxLevel: 3
+    MaxLevel: 5
     Type: Weapon
   - Id: 105
     Name: BS_HILTBINDING
     Description: Hilt Binding
-    MaxLevel: 1
+    MaxLevel: 10
     Type: Weapon
   - Id: 106
     Name: BS_FINDINGORE
@@ -3951,12 +3951,12 @@ Body:
   - Id: 109
     Name: BS_SKINTEMPER
     Description: Skin Tempering
-    MaxLevel: 5
+    MaxLevel: 10
     Type: Weapon
   - Id: 110
     Name: BS_HAMMERFALL
     Description: Hammer Fall
-    MaxLevel: 5
+    MaxLevel: 10
     Type: Weapon
     TargetType: Ground
     DamageFlags:
@@ -3979,7 +3979,15 @@ Body:
       - Level: 5
         Area: 2
       - Level: 6
-        Area: 12
+        Area: 3
+      - Level: 7
+        Area: 3
+      - Level: 8
+        Area: 3
+      - Level: 9
+        Area: 3
+      - Level: 10
+        Area: 3
     Duration2: 4500
     Requires:
       SpCost: 10
@@ -3993,7 +4001,7 @@ Body:
   - Id: 111
     Name: BS_ADRENALINE
     Description: Adrenaline Rush
-    MaxLevel: 5
+    MaxLevel: 10
     Type: Weapon
     TargetType: Self
     DamageFlags:
@@ -4015,6 +4023,16 @@ Body:
         Time: 120000
       - Level: 5
         Time: 150000
+      - Level: 6
+        Time: 180000
+      - Level: 7
+        Time: 210000
+      - Level: 8
+        Time: 240000
+      - Level: 9
+        Time: 270000
+      - Level: 10
+        Time: 300000
     Requires:
       SpCost:
         - Level: 1
@@ -4027,6 +4045,16 @@ Body:
           Amount: 29
         - Level: 5
           Amount: 32
+        - Level: 6
+          Amount: 35
+        - Level: 7
+          Amount: 38
+        - Level: 8
+          Amount: 41
+        - Level: 9
+          Amount: 44
+        - Level: 10
+          Amount: 47
       Weapon:
         1hAxe: true
         2hAxe: true
@@ -4035,7 +4063,7 @@ Body:
   - Id: 112
     Name: BS_WEAPONPERFECT
     Description: Weapon Perfection
-    MaxLevel: 5
+    MaxLevel: 10
     Type: Weapon
     TargetType: Self
     DamageFlags:
@@ -4057,6 +4085,16 @@ Body:
         Time: 40000
       - Level: 5
         Time: 50000
+      - Level: 6
+        Time: 60000
+      - Level: 7
+        Time: 70000
+      - Level: 8
+        Time: 80000
+      - Level: 9
+        Time: 90000
+      - Level: 10
+        Time: 100000
     Requires:
       SpCost:
         - Level: 1
@@ -4069,11 +4107,21 @@ Body:
           Amount: 12
         - Level: 5
           Amount: 10
+        - Level: 6
+          Amount: 10
+        - Level: 7
+          Amount: 10
+        - Level: 8
+          Amount: 10
+        - Level: 9
+          Amount: 10
+        - Level: 10
+          Amount: 10
     Status: WeaponPerfection
   - Id: 113
     Name: BS_OVERTHRUST
     Description: Power-Thrust
-    MaxLevel: 5
+    MaxLevel: 10
     Type: Weapon
     TargetType: Self
     DamageFlags:
@@ -4095,6 +4143,16 @@ Body:
         Time: 80000
       - Level: 5
         Time: 100000
+      - Level: 6
+        Time: 120000
+      - Level: 7
+        Time: 140000
+      - Level: 8
+        Time: 160000
+      - Level: 9
+        Time: 180000
+      - Level: 10
+        Time: 200000
     Requires:
       SpCost:
         - Level: 1
@@ -4106,6 +4164,16 @@ Body:
         - Level: 4
           Amount: 12
         - Level: 5
+          Amount: 10
+        - Level: 6
+          Amount: 10
+        - Level: 7
+          Amount: 10
+        - Level: 8
+          Amount: 10
+        - Level: 9
+          Amount: 10
+        - Level: 10
           Amount: 10
       Weapon:
         Dagger: true
@@ -4135,7 +4203,7 @@ Body:
   - Id: 114
     Name: BS_MAXIMIZE
     Description: Maximize Power
-    MaxLevel: 5
+    MaxLevel: 10
     Type: Weapon
     TargetType: Self
     DamageFlags:

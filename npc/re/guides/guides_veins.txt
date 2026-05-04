@@ -21,19 +21,19 @@ veins,210,345,5	script	Veins Guide#veins01::GuideVeins	934,{
 	F_Navi("[Veins Guide]");
 	next;
 	while (1) {
-		switch(select("[ Temple ]:[ Inn ]:[ Pub ]:[ Weapon Shop ]:[ Tool Shop ]:[ Airport ]:[ Geological Research Institute ]:[ Cool Event Corp. Staff ]:Remove Marks from Mini-Map:Cancel")) {
+		switch(select("[ Temple ]:[ Inn ]:[ Pub ]:[ Weapon Shop ]:[ Tool Shop ]:[ Airport ]:[ Geological Research Institute ]:[ Cool Event Corp. Staff ]:Remover Marcas do Mini-Mapa:Cancelar")) {
 		case 1:
 			mes "[Veins Guide]";
 			mes "The "+F_Navi("Temple","veins,197,256")+" is always filled with praying the faithful of the incarnation of goddess Freya.";
 			mes "It's located on the North side of Veins.";
-			mes "Would you like to check any other locations?";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,197,256,0,0xFF0000;
 			next;
 			break;
 		case 2:
 			mes "[Veins Guide]";
 			mes "You can rest your fatigue of the journey in the "+F_Navi("Inn","veins,110,278")+". The Inn is located on the North-West side of Veins.";
-			mes "Would you like to check any other locations?";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,110,278,1,0xFF4500;
 			next;
 			break;
@@ -41,30 +41,30 @@ veins,210,345,5	script	Veins Guide#veins01::GuideVeins	934,{
 			mes "[Veins Guide]";
 			mes "If you want to talk to the Veins Towners, visit the Veins "+F_Navi("Pub","veins,150,215")+".";
 			mes "The pub is located on the west side of Veins.";
-			mes "Would you like to check any other locations?";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,150,215,2,0xDAA520;
 			next;
 			break;
 		case 4:
 			mes "[Veins Guide]";
 			mes "You have to be able to protect your own body.";
-			mes "The "+F_Navi("Weapon Shop","veins,150,175")+" in Veins is selling the good weapons at a reasonable price..";
+			mes "The "+F_Navi("Loja de Armas","veins,150,175")+" in Veins is selling the good weapons at a reasonable price..";
 			mes "It is located on the West side of Veins.";
-			mes "Would you like to check any other locations?";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,150,175,3,0x008000;
 			next;
 			break;
 		case 5:
 			mes "[Veins Guide]";
-			mes "The essential items! Check out the Veins "+F_Navi("Tool Shop","veins,230,161")+" in the center of town..";
-			mes "Would you like to check any other locations?";
+			mes "The essential items! Check out the Veins "+F_Navi("Loja de Ferramentas","veins,230,161")+" in the center of town..";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,230,161,4,0x0000FF;
 			next;
 			break;
 		case 6:
 			mes "[Veins Guide]";
 			mes "The "+F_Navi("Airport","veins,273,287")+" of Veins is currently only used for Cargo.";
-			mes "Would you like to check any other locations?";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,273,287,5,0x000080;
 			next;
 			break;
@@ -73,7 +73,7 @@ veins,210,345,5	script	Veins Guide#veins01::GuideVeins	934,{
 			mes "Are you interested in Geology?";
 			mes "If so, please visit the ";
 			mes F_Navi("Geological Research Institute","veins,150,175")+" at the second floor of Weapon Shop.";
-			mes "Would you like to check any other locations?";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,150,175,6,0x800080;
 			next;
 			break;
@@ -82,7 +82,7 @@ veins,210,345,5	script	Veins Guide#veins01::GuideVeins	934,{
 			mes "I will mark the location";
 			mes "of the "+F_Navi("Cool Event Corp. Staff","veins,209,127","^808080");
 			mes "on your mini map.";
-			mes "Would you like to check any other locations?";
+			mes "Gostaria de verificar outros locais?";
 			viewpoint 1,209,127,7,0x808080;
 			next;
 			break;

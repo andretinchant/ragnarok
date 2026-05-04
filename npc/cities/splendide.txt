@@ -19,7 +19,7 @@
 splendide,218,193,3	script	Fairy#ep13_1	441,{
 	if (isequipped(2782) == 1) {
 		mes "[Exhausted Fairy]";
-		mes "Wait, don't come any closer. I can't stand your smell, it makes me feel dizzy.";
+		mes "Espere, nao chegue mais perto. Nao suporto seu cheiro, me da tontura.";
 		close;
 	}
 	else {
@@ -32,7 +32,7 @@ splendide,218,193,3	script	Fairy#ep13_1	441,{
 splendide,180,223,3	script	Fairy#ep13_2	440,{
 	if (isequipped(2782) == 1) {
 		mes "[Kalua]";
-		mes "You don't look sophisticated, but I think you are better than those uncivilized guys who are around the snowfield.";
+		mes "Voce nao parece sofisticado, mas acho que e melhor do que aqueles caras incivilizados que ficam perto do campo de neve.";
 		close;
 	}
 	else {
@@ -45,8 +45,8 @@ splendide,180,223,3	script	Fairy#ep13_2	440,{
 splendide,125,227,3	script	Fairy#ep13_3	444,{
 	if (isequipped(2782) == 1) {
 		mes "[Flowa]";
-		mes "No offense, I was not looking at you with sympathy.";
-		mes "I just wondered how you could walk with that heavy body...";
+		mes "Sem ofensa, eu nao estava te olhando com simpatia.";
+		mes "Eu so fiquei imaginando como voce consegue andar com esse corpo pesado...";
 		close;
 	}
 	else {
@@ -61,9 +61,9 @@ splendide,125,227,3	script	Fairy#ep13_3	444,{
 splendide,159,164,3	script	Fairy#13_2_1	461,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Fairy]";
-		mes "It is shame that I have to";
-		mes "cope with those fat beasts.";
-		mes "I am just too delicate to fight with them.";
+		mes "E uma vergonha que eu tenho que";
+		mes "lidar com aquelas bestas gordas.";
+		mes "Sou delicada demais pra lutar com elas.";
 		close;
 	}
 	else {
@@ -78,13 +78,13 @@ splendide,159,164,3	script	Fairy#13_2_1	461,{
 splendide,229,54,3	script	Fairy#13_2_2	439,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Fairy]";
-		mes "Huh? You are a human.";
-		mes "You are better than those fat Saphas, but still you are not a beautiful thing also.";
+		mes "Huh? Voce e um humano.";
+		mes "Voce e melhor do que aqueles Saphas gordos, mas ainda assim voce tambem nao e uma coisa bonita.";
 		next;
 		mes "[Fairy]";
-		mes "How did you find this wonderful place?";
-		mes "This is a sophisticated place.";
-		mes "I don't think you can be here with us.";
+		mes "Como voce encontrou esse lugar maravilhoso?";
+		mes "Este e um lugar sofisticado.";
+		mes "Nao acho que voce possa ficar aqui conosco.";
 		close;
 	}
 	else {
@@ -104,11 +104,11 @@ splendide,89,235,5	script	Fairy#13_2_3	446,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Fairy]";
 		mes "Lalalalal~Lala~Lalala~";
-		mes "Let's sing a song~!";
-		mes "My voice is so fantastic!";
+		mes "Vamos cantar uma musica~!";
+		mes "Minha voz e tao fantastica!";
 		next;
 		mes "[Fairy]";
-		mes "Don't even think about getting close to me!";
+		mes "Nem pense em chegar perto de mim!";
 		close;
 	}
 	else {
@@ -126,15 +126,15 @@ splendide,89,235,5	script	Fairy#13_2_3	446,{
 splendide,245,243,3	script	Fairy#13_2_4	462,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Fairy]";
-		mes "This land was such a waste land.";
-		mes "It was extremely cold and";
-		mes "nothing could live here.";
-		mes "but, once we inhabited this place, it has been changing day by day.";
+		mes "Esta terra era tao deserta.";
+		mes "Era extremamente fria e";
+		mes "nada podia viver aqui.";
+		mes "Mas, quando nos habitamos este lugar, ele foi mudando dia apos dia.";
 		next;
 		mes "[Fairy]";
-		mes "Now, all the problems are gone.";
-		mes "Except those ugly fat Saphas.";
-		mes "How can we be rid of those things?";
+		mes "Agora, todos os problemas sumiram.";
+		mes "Exceto aqueles Saphas gordos e feios.";
+		mes "Como podemos nos livrar daquelas coisas?";
 		close;
 	}
 	else {
@@ -156,7 +156,7 @@ splendide,245,243,3	script	Fairy#13_2_4	462,{
 splendide,230,142,3	script	Fairy#13_2_5	439,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Fairy]";
-		mes "Ah-Ha, I am so stunning.";
+		mes "Ah-Ha, eu sou tao deslumbrante.";
 		close;
 	}
 	else {
@@ -169,9 +169,9 @@ splendide,230,142,3	script	Fairy#13_2_5	439,{
 splendide,274,203,3	script	Fairy#13_2_6	444,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Fairy]";
-		mes "Hey, you~! Human! How did you find us?";
-		mes "What does your human world look like?";
-		mes "Is it fun to be there?";
+		mes "Ei, voce~! Humano! Como voce nos encontrou?";
+		mes "Como e o seu mundo humano?";
+		mes "E divertido ficar la?";
 		close;
 	}
 	else {
@@ -186,12 +186,12 @@ splendide,274,203,3	script	Fairy#13_2_6	444,{
 splendide,275,141,3	script	Fairy#13_2_7	447,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Fairy]";
-		mes "Don't talk to me. What do you want?";
-		mes "I know you will blame something on me right?";
+		mes "Nao fale comigo. O que voce quer?";
+		mes "Eu sei que voce vai me culpar por algo, ne?";
 		next;
 		mes "[Fairy]";
-		mes "I don't want to listen to other people...";
-		mes "I am perfect as I am!";
+		mes "Nao quero ouvir outras pessoas...";
+		mes "Eu sou perfeita do jeito que sou!";
 		close;
 	}
 	else {
@@ -209,10 +209,10 @@ splendide,275,141,3	script	Fairy#13_2_7	447,{
 splendide,224,230,3	script	Fairy#13_2_8	440,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Fairy]";
-		mes "Listen carefully and learn more!";
-		mes "Let's sing and dance!";
-		mes "You can be part of us!";
-		mes "Shake your hips!";
+		mes "Escute com atencao e aprenda mais!";
+		mes "Vamos cantar e dancar!";
+		mes "Voce pode fazer parte de nos!";
+		mes "Balance seus quadris!";
 		mes "Wow~Woo~Wow~";
 		mes "Dance~!";
 		close;
@@ -232,14 +232,14 @@ splendide,224,230,3	script	Fairy#13_2_8	440,{
 splendide,223,36,3	script	Fairy#13_2_9	462,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Fairy]";
-		mes "I don't want to touch them at all.";
-		mes "But they are ruining my Yggdrasilberries.";
-		mes "I can't stand it anymore!";
+		mes "Nao quero nem encostar neles.";
+		mes "Mas eles estao arruinando minhas Yggdrasilberries.";
+		mes "Nao aguento mais!";
 		next;
 		mes "[Fairy]";
-		mes "Fighting is not my thing...";
-		mes "But for our glory, I will fight!";
-		mes "They should feel honored to be battling with us!";
+		mes "Lutar nao e minha praia...";
+		mes "Mas pela nossa gloria, eu vou lutar!";
+		mes "Eles deviam se sentir honrados por batalhar conosco!";
 		close;
 	}
 	else {
@@ -261,14 +261,14 @@ splendide,223,36,3	script	Fairy#13_2_9	462,{
 splendide,305,129,3	script	Fairy#13_2_10	436,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Fairy]";
-		mes "Hu...feel sleepy.";
-		mes "I am so bored. I have nothing to do.";
-		mes "Even my friends are fighting with those giants, but it is not really my job to help them.";
+		mes "Hu...com sono.";
+		mes "Estou tao entediada. Nao tenho nada pra fazer.";
+		mes "Ate minhas amigas estao lutando com aqueles gigantes, mas nao e realmente meu trabalho ajuda-las.";
 		next;
 		mes "[Fairy]";
-		mes "I better check my make-up";
-		mes "in the dressing room.";
-		mes "Or should I get more beauty sleep?";
+		mes "Melhor eu verificar minha maquiagem";
+		mes "no vestiario.";
+		mes "Ou sera que eu deveria dormir mais um pouco?";
 		close;
 	}
 	else {
@@ -289,14 +289,14 @@ splendide,305,129,3	script	Fairy#13_2_10	436,{
 splendide,142,315,3	script	Fairy#13_2_11	462,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Fairy]";
-		mes "Flying in the sky is not easy.";
-		mes "But it is better than a walk on the ground.";
+		mes "Voar no ceu nao e facil.";
+		mes "Mas e melhor do que caminhar no chao.";
 		next;
 		mes "[Fairy]";
-		mes "Are you a human? Poor thing...";
-		mes "You can't have these beautiful wings?";
-		mes "Pathetic lives.";
-		mes "It is obvious that we are the only ones who are blessed.";
+		mes "Voce e um humano? Coitadinho...";
+		mes "Voce nao pode ter essas asas bonitas?";
+		mes "Vidas pateticas.";
+		mes "E obvio que somos os unicos abencados.";
 		close;
 	}
 	else {
@@ -317,10 +317,10 @@ splendide,142,315,3	script	Fairy#13_2_11	462,{
 splendide,181,107,5	script	Fairy#13_2_12	462,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Fairy]";
-		mes "Neatness, tidiness and cleanness!";
-		mes "Those are the words.";
-		mes "that can describe us!";
-		mes "Others are so dirty and messy!";
+		mes "Asseio, arrumacao e limpeza!";
+		mes "Essas sao as palavras";
+		mes "que nos descrevem!";
+		mes "Os outros sao tao sujos e bagunçados!";
 		close;
 	}
 	else {
@@ -337,7 +337,7 @@ splendide,181,107,5	script	Fairy#13_2_12	462,{
 splendide,188,76,5	script	Splendide Soldier#tre1	461,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Splendide Soldier]";
-		mes "This is Splendide, the garrison base of the Laphine.";
+		mes "Esta e Splendide, a base de guarnicao dos Laphine.";
 		close;
 	}
 	else {
@@ -350,7 +350,7 @@ splendide,188,76,5	script	Splendide Soldier#tre1	461,{
 splendide,201,76,3	script	Splendide Soldier#tre2	461,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Splendide Soldier]";
-		mes "This is Splendide, the garrison base of the Laphine.";
+		mes "Esta e Splendide, a base de guarnicao dos Laphine.";
 		close;
 	}
 	else {
@@ -364,7 +364,7 @@ splendide,207,97,5	script	Middle-Ranked Laphine#1	443,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Middle-Ranked Laphine]";
 		mes "Haap-!";
-		mes "See? Same as a streetlight, right?";
+		mes "Viu? Igual a um poste de luz, ne?";
 		specialeffect EF_LEVEL99_4;
 		close;
 	}
@@ -380,7 +380,7 @@ splendide,207,97,5	script	Middle-Ranked Laphine#1	443,{
 splendide,210,95,3	script	Middle-Ranked Laphine#2	442,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Middle-Ranked Laphine]";
-		mes "Wow~ Great!!";
+		mes "Uau~ Otimo!!";
 		emotion ET_BEST;
 		close;
 	}
@@ -395,11 +395,11 @@ splendide,210,95,3	script	Middle-Ranked Laphine#2	442,{
 spl_in01,190,314,5	script	Security Officer#tre	461,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Security Officer]";
-		mes "This is the underground prison of Splendide.";
-		mes "Those who are guilty and prisoners are detained here.";
+		mes "Esta e a prisao subterranea de Splendide.";
+		mes "Aqueles que sao culpados e prisioneiros sao detidos aqui.";
 		next;
 		mes "[Security Officer]";
-		mes "If you do something suspicious, you must be detained here too, so you'd better to be careful!";
+		mes "Se voce fizer algo suspeito, tambem sera detido aqui, entao e melhor tomar cuidado!";
 		close;
 	}
 	else {
@@ -414,7 +414,7 @@ spl_in01,190,314,5	script	Security Officer#tre	461,{
 spl_in01,281,329,3	script	Splendide Guard#tre	447,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Splendide Guard]";
-		mes "If you make too much noise, the prisoners will cause trouble. So try to keep quiet at all times.";
+		mes "Se voce fizer muito barulho, os prisioneiros vao causar problemas. Entao tente ficar quieto o tempo todo.";
 		close;
 	}
 	else {
@@ -427,8 +427,8 @@ spl_in01,281,329,3	script	Splendide Guard#tre	447,{
 spl_in01,287,306,3	script	#spl_prs	111,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Manuk Prisoner]";
-		mes "My, my body...!!";
-		mes "Injection! Please!! Help me!";
+		mes "Meu, meu corpo...!!";
+		mes "Injecao! Por favor!! Me ajudem!";
 		close;
 	}
 	else {
@@ -443,9 +443,9 @@ spl_in01,265,315,0	script	#spl_prs1	-1,5,5,{
 OnTouch:
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Voice from another side]";
-		mes "Sir, Please!!!";
-		mes "How can I communicate secretly with Manuk!!";
-		mes "I'm innocent. Please.";
+		mes "Senhor, Por favor!!!";
+		mes "Como posso me comunicar secretamente com Manuk!!";
+		mes "Sou inocente. Por favor.";
 		close;
 	}
 	else {
@@ -461,108 +461,108 @@ OnTouch:
 spl_in01,172,225,3	script	Wandering Poet#ep13	51,{
 	cutin "god_nelluad02",2;
 	mes "[Poet Nell]";
-	mes "Hi~~ do you hear the beautiful music coming from afar~?";
+	mes "Oi~~ voce ouve a musica bonita vindo de longe~?";
 	next;
-	select("Who are you?");
+	select("Quem e voce?");
 	cutin "god_nelluad01",2;
 	mes "[Poet Nell]";
-	mes "Who, me...?";
-	mes "I am just a poet enjoying the ambience...";
+	mes "Quem, eu...?";
+	mes "Eu sou apenas um poeta aproveitando a atmosfera...";
 	next;
 	mes "[Poet Nell]";
-	mes "I cam here the other day, requesting to take notes of this new world and they allow me to follow the adventurers here.";
+	mes "Vim aqui outro dia, pedindo para tomar notas deste novo mundo e eles me deixaram seguir os aventureiros ate aqui.";
 	next;
 	mes "[Poet Nell]";
-	mes "I became familiar with the Lapine.";
-	mes "It was quite awkward at first... Since I didn't knew their language.";
-	mes "But, one I started to play my instruments... they loved it.";
+	mes "Me tornei familiar com os Lapine.";
+	mes "Foi bem estranho no inicio... Ja que eu nao sabia a lingua deles.";
+	mes "Mas, quando comecei a tocar meus instrumentos... eles adoraram.";
 	next;
 	mes "[Poet Nell]";
-	mes "They're fairies that know how to enjoy their lives..";
-	mes "How happy they are...";
-	mes "They are quite curious... I am honored to have met them...";
+	mes "Eles sao fadas que sabem como aproveitar suas vidas..";
+	mes "Como sao felizes...";
+	mes "Sao bem curiosos... Sinto-me honrado por te-los conhecido...";
 	next;
 	mes "[Poet Nell]";
-	mes "So do you want to listen to my playing?";
+	mes "Entao, voce quer ouvir eu tocar?";
 	next;
-	switch(select("Sure.:Not really.")) {
+	switch(select("Claro.:Na verdade, nao.")) {
 	case 1:
 		mes "[Poet Nell]";
-		mes "What song do you want??";
+		mes "Que musica voce quer??";
 		next;
 		switch(select("Poet of Bragie:Chaos in Eternity:Sunset Assassin:Ring of Nibelungen")) {
 		case 1:
 			cutin "god_nelluad02",2;
 			mes "[Poet Nell]";
 			mes "Poet of Bragie!";
-			mes "You must have a keen ear.";
+			mes "Voce deve ter um bom ouvido.";
 			soundeffect "bragis_poem.wav",0;
 			break;
 		case 2:
 			cutin "god_nelluad02",2;
 			mes "[Poet Nell]";
 			mes "Chaos in Eternity...";
-			mes "This is a great piece but I wouldn't recommend it while dining...";
+			mes "Esta e uma otima peca, mas eu nao recomendaria durante o jantar...";
 			soundeffect "chaos_of_eternity.wav",0;
 			break;
 		case 3:
 			cutin "god_nelluad02",2;
 			mes "[Poet Nell]";
 			mes "Sunset Assassin!";
-			mes "Do you like Assassins?";
-			mes "This song tells of a legendary Assassin Cross that lived in the desert.";
+			mes "Voce gosta de Assassinos?";
+			mes "Esta musica conta sobre um lendario Assassin Cross que vivia no deserto.";
 			soundeffect "assassin_of_sunset.wav",0;
 			break;
 		case 4:
 			cutin "god_nelluad02",2;
 			mes "[Poet Nell]";
 			mes "Ring of Nibelungen...";
-			mes "This song has quite an interesting story~";
+			mes "Esta musica tem uma historia bem interessante~";
 			next;
 			soundeffect "ring_of_nibelungen.wav",0;
-			mes "^4d4dff There was a river named Rhein that";
-			mes "that would shine as if made of gold.";
-			mes "It's secret hidden from all since";
-			mes "before this story was told...^000000";
+			mes "^4d4dff Havia um rio chamado Rhein que";
+			mes "brilhava como se fosse feito de ouro.";
+			mes "Seu segredo escondido de todos desde";
+			mes "antes desta historia ser contada...^000000";
 			next;
-			mes "^4d4dff Valhalla was born from the goddess Freya.";
-			mes "The envious Rocky destroyed the goddess of beauty.^000000";
-			mes "^4d4dff Out of it's depths was born a ring made of fire.";
-			mes "A ring so strong it held the god's desires~^000000";
+			mes "^4d4dff Valhalla nasceu da deusa Freya.";
+			mes "O invejoso Rocky destruiu a deusa da beleza.^000000";
+			mes "^4d4dff Das profundezas nasceu um anel feito de fogo.";
+			mes "Um anel tao forte que continha os desejos dos deuses~^000000";
 			next;
-			mes "^4d4dff Alberich's treasure now holds that power.";
-			mes "The power of the ring that held all the god's desires.^000000";
+			mes "^4d4dff O tesouro de Alberich agora guarda esse poder.";
+			mes "O poder do anel que continha todos os desejos dos deuses.^000000";
 			next;
-			mes "^4d4dff The treasure was used to buy the world's soul.";
-			mes "A soul purchased with the weight of gold.^000000";
+			mes "^4d4dff O tesouro foi usado para comprar a alma do mundo.";
+			mes "Uma alma comprada com o peso do ouro.^000000";
 			next;
-			mes "^4d4dff Rocky afraid of losing control. transforms poor Alberich to the shape of a toad.";
+			mes "^4d4dff Rocky com medo de perder o controle, transforma o pobre Alberich na forma de um sapo.";
 			next;
-			mes "^4d4dff Alberich swears with the last of his breath, that his treasured ring will curse it's wearer till death.";
+			mes "^4d4dff Alberich jura com seu ultimo suspiro, que seu anel precioso vai amaldicoar quem o usar ate a morte.";
 			next;
-			mes "^4d4dff Forever will the bearer be, cursed with Rocky's jealousy.";
+			mes "^4d4dff Para sempre o portador sera, amaldicado com a inveja de Rocky.";
 			break;
 		}
 		break;
 	case 2:
 		cutin "god_nelluad03",2;
 		mes "[Poet Nell]";
-		mes "Why not?";
-		mes "Why would you stare at me like that if you didn't want to listen to my playing";
+		mes "Por que nao?";
+		mes "Por que voce ficaria me encarando desse jeito se nao queria ouvir eu tocar?";
 		next;
-		select("You look like someone I know.");
+		select("Voce parece com alguem que eu conhego.");
 		cutin "god_nelluad04",2;
 		mes "[Poet Nell]";
-		mes "Eh?";
-		mes "No way!";
-		mes "Maybe you're confused..!";
+		mes "He?";
+		mes "De jeito nenhum!";
+		mes "Talvez voce esteja confuso..!";
 		next;
 		mes "[Poet Nell]";
-		mes "Yes, I look quite common...";
-		mes "But I doubt we've ever met before.";
+		mes "Sim, eu pareco bem comum...";
+		mes "Mas duvido que a gente ja tenha se encontrado antes.";
 		next;
 		cutin "god_nelluad01",255;
-		mes "- Nell seems embarrassed, then starts playing very complicated music -";
+		mes "- Nell parece envergonhado, entao comeca a tocar uma musica muito complicada -";
 		break;
 	}
 	close2;
@@ -573,13 +573,13 @@ spl_in01,172,225,3	script	Wandering Poet#ep13	51,{
 spl_in01,182,213,1	script	Resting Laphine#ep13_1	438,{
 	if ((isequipped(2782) > 0) && (ep13_2_rhea > 99)) {
 		mes "[Resting Laphine]";
-		mes "The poet on the stage is mysterious.";
-		mes "The moment you came here...";
-		mes "He arrived and started playing music.";
+		mes "O poeta no palco e misterioso.";
+		mes "No momento em que voce chegou aqui...";
+		mes "Ele chegou e comecou a tocar musica.";
 		next;
 		mes "[Resting Laphine]";
-		mes "This is music from your country yes?";
-		mes "I think it sounds great.";
+		mes "Essa e musica do seu pais, nao e?";
+		mes "Eu acho que soa otimo.";
 		close;
 	}
 	else {
@@ -593,15 +593,15 @@ spl_in01,182,213,1	script	Resting Laphine#ep13_1	438,{
 
 spl_in01,181,218,5	script	Resting Laphine#ep13_2	446,{
 	if ((isequipped(2782) > 0) && (ep13_2_rhea > 99)) {
-		mes "- He is nodding his head to the sound of the music -";
+		mes "- Ele esta balancando a cabeca no ritmo da musica -";
 		next;
 		mes "[Resting Laphine]";
-		mes "Do you know how to play a similar sound?";
-		mes "This tone is unbelievable.";
+		mes "Voce sabe como produzir um som parecido?";
+		mes "Este tom e inacreditavel.";
 		close;
 	}
 	else {
-		mes "- He is nodding his head to the sound of the music -";
+		mes "- Ele esta balancando a cabeca no ritmo da musica -";
 		next;
 		mes "[Resting Laphine]";
 		mes "GothTingNoth Di~ nar..";
@@ -614,12 +614,12 @@ spl_in01,181,218,5	script	Resting Laphine#ep13_2	446,{
 spl_in01,161,213,7	script	Dining Laphine#ep13	447,{
 	if ((isequipped(2782) > 0) && (ep13_2_rhea > 99)) {
 		mes "[Dining Laphine]";
-		mes "I got bored eating home cooked food.";
-		mes "The only thing that keeps me coming here is fruit soup...";
+		mes "Cansei de comer comida caseira.";
+		mes "A unica coisa que me faz vir aqui e a sopa de frutas...";
 		next;
 		mes "[Dining Laphine]";
-		mes "Hey you!";
-		mes "Why are you staring at me eating dinner?";
+		mes "Ei, voce!";
+		mes "Por que esta me encarando enquanto como?";
 		close;
 	}
 	else {
@@ -627,7 +627,7 @@ spl_in01,161,213,7	script	Dining Laphine#ep13	447,{
 		mes "NothFarLu Ra...? ";
 		mes "RuffYur..!";
 		next;
-		mes "- He is giving me a odd stare as he eats his dinner -";
+		mes "- Ele esta me olhando de forma estranha enquanto come seu jantar -";
 		close;
 	}
 }
@@ -635,16 +635,16 @@ spl_in01,161,213,7	script	Dining Laphine#ep13	447,{
 spl_in01,162,202,5	script	Laphine taking notes#1	436,{
 	if ((isequipped(2782) > 0) && (ep13_2_rhea > 99)) {
 		mes "[Laphine taking notes]";
-		mes "We are quite impressed by the poet.";
-		mes "We Laphine love music as well.";
-		mes "I never imagined that I would ever hear such exotic music.";
+		mes "Ficamos bem impressionados com o poeta.";
+		mes "Nos Laphine tambem amamos musica.";
+		mes "Nunca imaginei que ouviria uma musica tao exotica.";
 		next;
 		mes "[Laphine taking notes]";
-		mes "I want to study music someday.";
-		mes "I plan to write much about the study of instruments and music";
+		mes "Quero estudar musica algum dia.";
+		mes "Planejo escrever muito sobre o estudo de instrumentos e musica.";
 		next;
 		mes "[Laphine taking notes]";
-		mes "Someday you should listen to mu people's music.";
+		mes "Algum dia voce deveria ouvir a musica do meu povo.";
 		close;
 	}
 	else {
@@ -652,31 +652,31 @@ spl_in01,162,202,5	script	Laphine taking notes#1	436,{
 		mes "TiTalLars Ur tasThorNoth O AnImanWha.";
 		mes "FusLuRuff..... Mu TingLuAla Yee AnmanAndu";
 		next;
-		mes "- He seems frustrated that you don't understand him -";
+		mes "- Ele parece frustrado por voce nao entende-lo -";
 		close;
 	}
 }
 
 spl_in01,167,207,7	script	Silent Laphine#ep13	445,{
-	mes "- He is almost sleeping but he is still managing to hold a cup with a drink in it. He must be really tired-";
+	mes "- Ele esta quase dormindo mas ainda consegue segurar uma xicara com uma bebida. Deve estar muito cansado -";
 	close;
 }
 
 spl_in01,180,201,3	script	Laphine Soldier#ep13_1	461,{
 	if ((isequipped(2782) > 0) && (ep13_2_rhea > 99)) {
 		mes "[Laphine Soldier]";
-		mes "You are a stranger here, aren't you?";
-		mes "I am watching him to prevent anything bad from happening.";
+		mes "Voce e um estranho aqui, nao e?";
+		mes "Estou vigiando ele para prevenir que algo ruim aconteca.";
 		next;
 		mes "[Laphine Soldier]";
-		mes "Definitely you are involved.";
-		mes "The upper side people allow you to pass here...";
-		mes "But nobody knows what's going to happen in this battlefield.";
+		mes "Com certeza voce esta envolvido.";
+		mes "O pessoal de cima te deixa passar aqui...";
+		mes "Mas ninguem sabe o que vai acontecer neste campo de batalha.";
 		next;
 		mes "[Laphine Soldier]";
-		mes "Anyway, what's that instrument over there?";
-		mes "We have a similar one...";
-		mes "But it sounds totally different.";
+		mes "De qualquer forma, o que e aquele instrumento ali?";
+		mes "Nos temos um parecido...";
+		mes "Mas soa totalmente diferente.";
 		close;
 	}
 	else {
@@ -685,7 +685,7 @@ spl_in01,180,201,3	script	Laphine Soldier#ep13_1	461,{
 		mes "LoUdenFar Ha Dormaur?";
 		mes "...marAmanYur Mu.";
 		next;
-		mes "-The Laphine Soldier wants to tell you something, but just stops talking as you give him a blank stare -";
+		mes "- O Soldado Laphine quer te dizer algo, mas para de falar quando voce o olha sem entender -";
 		close;
 	}
 }
@@ -693,15 +693,15 @@ spl_in01,180,201,3	script	Laphine Soldier#ep13_1	461,{
 spl_in01,189,207,3	script	Laphine Staff#ep13_1	439,{
 	if ((isequipped(2782) > 0) && (ep13_2_rhea > 99)) {
 		mes "[Laphine Staff]";
-		mes "Hm, what's up?";
-		mes "I'm sorry, but we don't sell food to strangers.";
+		mes "Hm, o que foi?";
+		mes "Sinto muito, mas nao vendemos comida para estranhos.";
 		next;
 		mes "[Laphine Staff]";
-		mes "You guys also need to be careful of food here.";
-		mes "Food is scarce here.";
+		mes "Voces tambem precisam tomar cuidado com a comida aqui.";
+		mes "Comida e escassa aqui.";
 		next;
 		mes "[Laphine Staff]";
-		mes "You're going to have to find food somewhere else.";
+		mes "Voce vai ter que encontrar comida em outro lugar.";
 		close;
 	}
 	else {
@@ -710,7 +710,7 @@ spl_in01,189,207,3	script	Laphine Staff#ep13_1	439,{
 		mes "TurWos";
 		mes "......ah...";
 		next;
-		mes "- You just grin and smile. It's frustrating not to be able to understand their language. -";
+		mes "- Voce so sorri sem jeito. E frustrante nao conseguir entender a lingua deles. -";
 		close;
 	}
 }
@@ -718,13 +718,13 @@ spl_in01,189,207,3	script	Laphine Staff#ep13_1	439,{
 spl_in01,154,207,5	script	Laphine Staff#ep13_2	440,{
 	if ((isequipped(2782) > 0) && (ep13_2_rhea > 99)) {
 		mes "[Laphine Staff]";
-		mes "his camp serves a military purpose. But we also have a need for bars.";
+		mes "Este acampamento serve um proposito militar. Mas tambem temos necessidade de bares.";
 		next;
 		mes "[Laphine Staff]";
-		mes "How else can a soldier release stress if not through drinking...";
+		mes "De que outra forma um soldado pode aliviar o estresse se nao bebendo...";
 		next;
 		mes "[Laphine Staff]";
-		mes "We are here to support the laphine soldier by giving good drinks and entertainment.";
+		mes "Estamos aqui para apoiar o soldado laphine dando boas bebidas e entretenimento.";
 		close;
 	}
 	else {
@@ -739,16 +739,16 @@ spl_in01,154,207,5	script	Laphine Staff#ep13_2	440,{
 spl_in01,122,314,5	script	High-Ranked Soldier#ep13	461,{
 	if ((isequipped(2782) > 0) && (ep13_2_rhea > 99)) {
 		mes "[High-Ranked Soldier]";
-		mes "Are there any new supplies?";
+		mes "Ha algum suprimento novo?";
 		next;
 		mes "[Laphine Soldier]";
-		mes "This sword just arrived...";
-		mes "This is inspired by stars, and we tested it by cutting the thread floating over the water.";
+		mes "Esta espada acabou de chegar...";
+		mes "Ela e inspirada em estrelas, e nos a testamos cortando um fio flutuando sobre a agua.";
 		next;
 		mes "[High-Ranked Soldier]";
-		mes "Hmm, we rarely used swords. But it looks great as a decoration.";
+		mes "Hmm, raramente usamos espadas. Mas parece otima como decoracao.";
 		next;
-		mes "- Seems their busy talking about weapons -";
+		mes "- Parecem estar ocupados conversando sobre armas -";
 		close;
 	}
 	else {
@@ -768,12 +768,12 @@ spl_in01,122,314,5	script	High-Ranked Soldier#ep13	461,{
 spl_in01,122,311,1	script	Laphine Soldier#ep13_2	447,{
 	if ((isequipped(2782) > 0) && (ep13_2_rhea > 99)) {
 		mes "[Laphine Soldier]";
-		mes "Are you a stranger?";
-		mes "Have you come here to see the Laphine's military storage?";
+		mes "Voce e um estranho?";
+		mes "Veio aqui para ver o arsenal militar dos Laphine?";
 		next;
 		mes "[High-Ranked Soldier]";
-		mes "Nevermind. These are useless to them...";
-		mes "How can this delicate sword be used by those brutes...?";
+		mes "Nao se preocupe. Sao inuteis para eles...";
+		mes "Como essa espada delicada pode ser usada por aqueles brutos...?";
 		next;
 		mes "[Laphine Soldier]";
 		mes "O";
@@ -797,9 +797,9 @@ spl_in01,122,311,1	script	Laphine Soldier#ep13_2	447,{
 splendide,121,259,3	script	Fairy#ep13bs1	436,{
 	if (isequipped(2782) == 1) {
 		mes "[Fairy]";
-		mes "Have you ever gone to the East side?";
-		mes "Theres lots of ice~";
-		mes "How cold...";
+		mes "Voce ja foi pro lado Leste?";
+		mes "Tem muito gelo la~";
+		mes "Que frio...";
 		close;
 	}
 	else {
@@ -814,10 +814,10 @@ splendide,121,259,3	script	Fairy#ep13bs1	436,{
 splendide,163,264,3	script	Fairy#ep13bs2	438,{
 	if (isequipped(2782) == 1) {
 		mes "[Fairy]";
-		mes "What are you looking at!";
+		mes "O que voce esta olhando!";
 		next;
 		mes "[Fairy]";
-		mes "Oh me! You know beauty when you see it don't you~?!";
+		mes "Ah, eu! Voce reconhece beleza quando ve, ne~?!";
 		close;
 	}
 	else {

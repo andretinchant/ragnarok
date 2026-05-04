@@ -49,7 +49,7 @@ lighthalzen,198,285,5	script	Jiwon#zen5	862,{
 	mes "[Jiwon]";
 	mes "I think we're really";
 	mes "fortunate to be able to";
-	mes "live in such a beautiful";
+	mes "live in such a bonito";
 	mes "and peaceful city like this.";
 	next;
 	mes "[Jiwon]";
@@ -74,7 +74,7 @@ lighthalzen,220,244,3	script	Samnang#zen2	863,{
 	mes "Just the other day, these";
 	mes "hoodlums in black suits";
 	mes "were yelling at me to get out";
-	mes "of their way. But of course,";
+	mes "of their way. But claro,";
 	mes "I didn't move quickly enough.";
 	mes "So what did they do to me?";
 	next;
@@ -92,7 +92,7 @@ lighthalzen,261,112,3	script	Ruth#zen4	862,{
 	mes "[Ruth]";
 	mes "Sweety, isn't it";
 	mes "nice to be together";
-	mes "under this beautiful";
+	mes "under this bonito";
 	mes "sunlight? It's perfect";
 	mes "for our date. Ahhhh~";
 	next;
@@ -231,7 +231,7 @@ lighthalzen,66,94,3	script	Elmer Keays#li_03	866,{
 	mes "with you like this reminds";
 	mes "me of the old days. Back";
 	mes "then, everyone was jealous";
-	mes "that I had such a beautiful";
+	mes "that I had such a bonito";
 	mes "woman by my side. Heh heh~";
 	next;
 	mes "[Elmer Keays]";
@@ -334,7 +334,7 @@ lighthalzen,230,182,4	script	Klaubis#zen3	866,{
 		mes "many people stay in their";
 		mes "hometowns. Even if you do";
 		mes "leave, though, you can always";
-		mes "come back. It wouldn't be your hometown if you couldn't, right?";
+		mes "volte. It wouldn't be your hometown if you couldn't, right?";
 		close;
 	case 2:
 		mes "[Klaubis]";
@@ -351,7 +351,7 @@ lighthalzen,230,182,4	script	Klaubis#zen3	866,{
 		mes "Axe Murderer? I thought";
 		mes "that was an old ghost story.";
 		mes "Hm. I think that lady inside";
-		mes "the Weapon Shop would";
+		mes "the Loja de Armas would";
 		mes "know more about that tale...";
 		close;
 	}
@@ -390,7 +390,7 @@ lighthalzen,191,134,3	script	Dan Song#zen2	869,{
 	mes "Those eyes of yours...";
 	mes "So pure and so deep,";
 	mes "like glimmering pools";
-	mes "of light. So, so beautiful...";
+	mes "of light. So, so bonito...";
 	close;
 }
 
@@ -403,7 +403,7 @@ lighthalzen,115,159,3	script	Collins#zen1	866,{
 	mes "best jobs in Lighthalzen.";
 	next;
 	mes "[Collins]";
-	mes "Although they're a large,";
+	mes "Embora they're a large,";
 	mes "major corporation, it's";
 	mes "almost impossible to get";
 	mes "employed by them. How";
@@ -480,7 +480,7 @@ lighthalzen,239,64,5	script	Jade#zen2	862,{
 	mes "strange kingdom out there";
 	mes "that's basically ruled by";
 	mes "magic and swords, where";
-	mes "adventurers are enlisted";
+	mes "aventureiros are enlisted";
 	mes "for the greater good.";
 	next;
 	mes "[Jade]";
@@ -550,17 +550,17 @@ lighthalzen,182,102,3	script	Lucius#zen5	866,{
 	if (Zeny < 90000) {
 		mes "[Lucius]";
 		mes "Hello youngster~";
-		mes "Would you like to";
+		mes "Gostaria de";
 		mes "make a donation";
 		mes "to help the hungry?";
 		next;
-		if (select("Sure.:No, thanks.") == 1) {
+		if (select("Sure.:Nao, obrigado.") == 1) {
 			mes "[Lucius]";
 			mes "Now, you can donate 1 to";
 			mes "30,000 zeny that will be used";
 			mes "to support the poor and feed";
 			mes "starving children. If you wish";
-			mes "to cancel, please enter ''0.''";
+			mes "to cancelar, please enter ''0.''";
 			next;
 			input .@input;
 			if (.@input > 30000 || .@input < 0) {
@@ -578,11 +578,11 @@ lighthalzen,182,102,3	script	Lucius#zen5	866,{
 				mes "your reasons. Well, when";
 				mes "you can afford to give to";
 				mes "the needy, you're welcome";
-				mes "to come back at any time.";
+				mes "to volte at any time.";
 				close;
 			}
 			mes "[Lucius]";
-			mes "Thank you so much";
+			mes "Obrigado so much";
 			mes "for your " + .@input + " zeny donation.";
 			mes "I promise that your money";
 			mes "will be put to good use in";
@@ -591,7 +591,7 @@ lighthalzen,182,102,3	script	Lucius#zen5	866,{
 			if (Zeny < .@input) {
 				mes "[Lucius]";
 				mes "Still, I'm just a little";
-				mes "disappointed. An adventurer";
+				mes "disappointed. An aventureiro";
 				mes "like you should be donating";
 				mes "as much as you possibly can...";
 				close;
@@ -611,7 +611,7 @@ lighthalzen,182,102,3	script	Lucius#zen5	866,{
 				mes "to send to the Poor Relief";
 				mes "Organization. Please accept";
 				mes "this small gift as a token of";
-				mes "my gratitude, adventurer. Bless";
+				mes "my gratitude, aventureiro. Bless";
 				mes "you, youngster and take care.";
 				set $donatedzeny,0;
 				getitem 603,1; //Old_Blue_Box
@@ -632,7 +632,7 @@ lighthalzen,182,102,3	script	Lucius#zen5	866,{
 	mes "Hello youngster~";
 	mes "You seem to be fairly";
 	mes "well-off. Money is good";
-	mes "to have, but be careful not";
+	mes "to have, but tome cuidado not";
 	mes "to become obsessed with it.";
 	next;
 	mes "[Lucius]";
@@ -673,7 +673,7 @@ lhz_in02,242,172,1	script	Hotel Employee#zen3	868,{
 	mes "at the northern end to";
 	mes "go downstairs so that you";
 	mes "can go to the Front Desk.";
-	mes "Thank you and I hope that";
+	mes "Obrigado and I hope that";
 	mes "you enjoy your stay here.";
 	close;
 }
@@ -787,7 +787,7 @@ lhz_in02,238,275,5	script	Hotel Employee#zen1	869,{
 
 lhz_in02,247,275,1	script	Hotel Employee#zen4	868,{
 	mes "[Hotel Employee]";
-	mes "Welcome to the";
+	mes "Bem-vindo ao";
 	mes "Royal Dragon Hotel Bar.";
 	mes "How about a nice night";
 	mes "cap before going to bed?";
@@ -807,7 +807,7 @@ lhz_in02,271,281,2	script	Citizen#amano09	47,{
 	mes "Oh yeah. I love-love-love";
 	mes "bars. If I don't come here";
 	mes "for the booze, then I'm here";
-	mes "for all these beautiful ladies.";
+	mes "for all these bonito ladies.";
 	next;
 	mes "[Hachi]";
 	mes "Weird. It's the very first";
@@ -918,11 +918,11 @@ lighthalzen,123,212,4	script	Merpi#zen2	700,{
 	mes "a fresh, lovely scent.";
 	next;
 	mes "[Merpi]";
-	mes "Oh, an adventurer from";
+	mes "Oh, an aventureiro from";
 	mes "Rune-Midgarts, are you?";
 	mes "How do you like our city?";
 	mes "If you have any questions,";
-	mes "feel free to ask me anything.";
+	mes "fique a vontade para ask me anything.";
 	next;
 	switch(select("Well, I have nothing to ask...:Any news or rumors?:I like laundry too.")) {
 	case 1:
@@ -999,11 +999,11 @@ lighthalzen,296,239,3	script	Berru#lhz_01	706,{
 		mes "[Pilia]";
 		mes "Uncle Togii from";
 		mes "next door hasn't";
-		mes "come back either...";
+		mes "volte either...";
 		close;
 	case 3:
 		mes "[Pilia]";
-		mes "Hmm? Oh, I'm sorry,";
+		mes "Hmm? Oh, Sinto muito,";
 		mes "but my little brother";
 		mes "just won't stop crying.";
 		mes "I'm sorry if we're loud...";
@@ -1056,7 +1056,7 @@ OnTouch_:
 		set Zeny, Zeny-50;
 		next;
 		mes "[Beggar]";
-		mes "Thank you so much.";
+		mes "Obrigado so much.";
 		mes "I have nothing to offer you";
 		mes "in exchange, but I can share";
 		mes "a story with you and impart";
@@ -1310,7 +1310,7 @@ lhz_in01,134,45,3	script	Cenku Dekdam#delic	869,{
 
 lighthalzen,330,276,3	script	Nun#light	79,{
 	mes "[Angela]";
-	mes "Greetings, adventurer.";
+	mes "Saudacoes, aventureiro.";
 	mes "I'm Angela, a social";
 	mes "worker for the Poor";
 	mes "Relief Organization.";
@@ -1351,7 +1351,7 @@ lhz_in01,134,38,3	script	Bankri Kun#kagun	798,{
 	mes "[Bankri Kun]";
 	mes "Now it's time for me";
 	mes "to head back to work.";
-	mes "I'll see you later, kid.";
+	mes "I'll ate mais, kid.";
 	mes "Sorry my advice was so";
 	mes "lame-- I couldn't think of";
 	mes "anything else to tell you.";
@@ -1362,7 +1362,7 @@ lhz_in01,139,40,7	script	Enoz#oz	53,{
 	mes "[Enoz]";
 	mes "So, the novel I ordered from";
 	mes "the Rune-Midgarts Kingdom";
-	mes "just recently arrived. It's real good, by the guy who wrote";
+	mes "just recentemente arrived. It's real good, by the guy who wrote";
 	mes "''Roda Frog Adventure''";
 	mes "years ago. Remember?";
 	next;
@@ -1426,7 +1426,7 @@ lhz_in01,125,40,3	script	Dowbow Ryuei#ryusei	843,{
 		mes "Yeah, we got the same";
 		mes "outlook on life. If you don't";
 		mes "mind, I'd like to shake";
-		mes "your hand, adventurer.";
+		mes "your hand, aventureiro.";
 		emotion ET_BEST;
 		close;
 	}
@@ -1560,7 +1560,7 @@ lhz_in03,193,25,2	script	Bartender#12	61,{
 	next;
 	mes "[Tony]";
 	mes "Just a sip of this";
-	mes "beautiful drink and";
+	mes "bonito drink and";
 	mes "you're on top of the";
 	mes "world! But it's best";
 	mes "for helpin' yah relax";
@@ -1716,7 +1716,7 @@ lhz_in03,176,85,5	script	Citizen#amano04	869,{
 	mes "relaxing thing in the world.";
 	next;
 	mes "[Dique]";
-	mes "Of course, there's";
+	mes "Claro, there's";
 	mes "more to life than just";
 	mes "hanging out in pubs and";
 	mes "bars. The thing is, in my";
@@ -1727,7 +1727,7 @@ lhz_in03,176,85,5	script	Citizen#amano04	869,{
 
 lhz_in03,184,38,3	script	Loudmouth	55,{
 	mes "[Loudmouth]";
-	mes "Do you know who I am?!";
+	mes "Voce sabe who I am?!";
 	mes "Just look at this peg leg.";
 	mes "I was in the Comodo War,";
 	mes "Ski Troop division! I lost my";
@@ -1747,7 +1747,7 @@ lhz_in01,173,28,4	script	Guard#01::LhzRekGuard	868,{
 	mes "Please keep clear";
 	mes "if you do not have";
 	mes "special authorization.";
-	mes "Thank you for your cooperating.";
+	mes "Obrigado por your cooperating.";
 	close;
 }
 
@@ -1773,7 +1773,7 @@ lhz_in01,72,195,0	script	Guide#lt1	90,{
 	mes "[Geonuii]";
 	mes "Greetings. This path";
 	mes "leads to the Library and";
-	mes "the Laboratory. Please be";
+	mes "the Laboratorio. Please be";
 	mes "aware that these places";
 	mes "are restricted from access";
 	mes "by the general public.";
@@ -1801,10 +1801,10 @@ lhz_in01,35,226,5	script	Rekenber Guard#li01	867,{
 	mes "area! Please show";
 	mes "some ID immediately!";
 	next;
-	if (select("ID?:Cancel") == 1) {
+	if (select("ID?:Cancelar") == 1) {
 		mes "[Rekenber Guard]";
 		mes "I don't know how you";
-		mes "adventurers do things in";
+		mes "aventureiros do things in";
 		mes "Rune-Midgarts, but over here";
 		mes "we have laws about trespassing!";
 		close;
@@ -1813,7 +1813,7 @@ lhz_in01,35,226,5	script	Rekenber Guard#li01	867,{
 	mes "Unless you have special";
 	mes "authorization, nobody is";
 	mes "allowed into the Underground";
-	mes "Laboratory for security reasons.";
+	mes "Laboratorio for security reasons.";
 	close;
 }
 
@@ -1823,7 +1823,7 @@ OnTouch_:
 		mes "[Rekenber Guard]";
 		mes "Keep your eyes open.";
 		mes "I've heard rumors that some";
-		mes "adventurers from Rune-Midgarts";
+		mes "aventureiros from Rune-Midgarts";
 		mes "are trying to sneak into here!";
 		mes "I know the security here is";
 		mes "pretty much fail sure, but...";
@@ -1929,7 +1929,7 @@ OnTouch_:
 		mes "[Rekenber Guard]";
 		mes "......................";
 		next;
-		if (select("Nice day, huh?:Cancel") == 1) {
+		if (select("Nice day, huh?:Cancelar") == 1) {
 			mes "[Rekenber Guard]";
 			mes "...";
 			emotion ET_FRET;
@@ -1955,22 +1955,22 @@ lhz_in01,24,140,3	script	Regenschirm Guard#40	4_M_LGTGUARD,{
 		next;
 		if (select("Yes","No") == 1) {
 			mes "[Regenschirm Guard]";
-			mes "Thank you and";
+			mes "Obrigado and";
 			mes "have a nice day.";
 			close2;
 			warp "lhz_dun01",149,285;
 			end;
 		}
 		mes "[Regenschirm Guard]";
-		mes "Thank you and";
+		mes "Obrigado and";
 		mes "have a nice day.";
 		close;
 	}
 	mes "May I help you?";
 	mes "If you would like to";
 	mes "enter, you must first";
-	mes "have a Laboratory Permit.";
-	mes "Thank you for your cooperation.";
+	mes "have a Laboratorio Permit.";
+	mes "Obrigado por your cooperation.";
 	close;
 }
 
@@ -2092,7 +2092,7 @@ lhz_in02,153,206,4	script	Millette#05	853,{
 	mes "drinking and singing";
 	mes "in the street, huh?";
 	mes "Is it a crime to have";
-	mes "a beautiful tenor voice?!";
+	mes "a bonito tenor voice?!";
 	mes "Get me outta this joint!";
 	close;
 }
@@ -2178,7 +2178,7 @@ lhz_in01,14,28,3	script	Banquet Staff	109,{
 	mes "to hold events such as dinner";
 	mes "parties with partners, clients";
 	mes "and other associates, and press";
-	mes "conferences. Of course, there's";
+	mes "conferences. Claro, there's";
 	mes "nothing going on right now.";
 	next;
 	mes "[Banquet Staff]";
@@ -2209,7 +2209,7 @@ lhz_in01,28,33,7	script	Hanccet#li_party	706,{
 	mes "Alright, okay, if I were my";
 	mes "sister Luccet, where would";
 	mes "I think I would not look for";
-	mes "me? Of course...! The sewers!";
+	mes "me? Claro...! The sewers!";
 	close;
 }
 
@@ -2271,7 +2271,7 @@ lhz_in01,166,55,3	script	#crazy4u	111,{
 	mes "of books. Out of curiosity, you";
 	mes "decide to pick one out.^000000";
 	next;
-	mes "^3355FFHowever, the book you";
+	mes "^3355FFPorem, the book you";
 	mes "happen to touch contains";
 	mes "an amazing amount of dark";
 	mes "power, causing you to drop it.^000000";
@@ -2339,7 +2339,7 @@ lhz_in01,157,47,1	script	Mareth#seram	797,{
 lhz_in01,164,45,3	script	Eiya#iaiai	91,{
 	mes "[Eiya]";
 	mes "Jorje seems so cranky";
-	mes "recently. He's usually";
+	mes "recentemente. He's usually";
 	mes "more laid back than this.";
 	mes "Oh well, I hope that he";
 	mes "feels better.";
@@ -2430,7 +2430,7 @@ lhz_in03,124,117,1	script	Housemaid Brenda#li	74,{
 	mes "I better dust extra";
 	mes "gently around this vase.";
 	mes "It's worth ten million zeny";
-	mes "and if it were to-- No. No!";
+	mes "and if it were to-- Nao. No!";
 	mes "I'm not even going to think it!";
 	close;
 }
@@ -2500,7 +2500,7 @@ lighthalzen,163,306,3	script	Rekenber Guard Tan#li	867,{
 	mes "Man, these officially licensed";
 	mes "Kafra Lady glossies... They're";
 	mes "worth every zeny we paid. Say";
-	mes "goodbye Swimsuit Calendar,";
+	mes "tchau Swimsuit Calendar,";
 	mes "and hellooooo Kafra Leilah~";
 	next;
 	mes "[Rekenber Guard Tan]";
@@ -2576,7 +2576,7 @@ lhz_in03,32,99,3	script	Sopheap#zen1	863,{
 	mes "Oh, you youngsters.";
 	mes "Always traveling around";
 	mes "and having adventures and";
-	mes "fighting monsters. I certainly";
+	mes "fighting monstros. I certainly";
 	mes "had my fill of excitement back";
 	mes "when I was your age, long ago.";
 	next;
@@ -2595,7 +2595,7 @@ lhz_in03,25,105,5	script	Gopal#zen4	869,{
 	mes "enjoying the peaceful life,";
 	mes "but I'm not! I'm too young";
 	mes "to just lay down and let";
-	mes "these days just pass by!";
+	mes "hoje em dia just pass by!";
 	next;
 	mes "[Gopal]";
 	mes "I wanna make something";
@@ -2609,14 +2609,14 @@ lighthalzen,176,65,5	script	Kimmy#zen3	862,{
 	mes "[Kimmy]";
 	mes "Unlike most places,";
 	mes "Lighthalzen has many";
-	mes "beautiful clothing and";
+	mes "bonito clothing and";
 	mes "accessory shops. This";
 	mes "place is heaven to a";
 	mes "trend-setter like me~!";
 	next;
 	mes "[Kimmy]";
 	mes "I don't know if you";
-	mes "adventurers are interested";
+	mes "aventureiros are interested";
 	mes "in fashion, but you can trash";
 	mes "your old clothes and get some";
 	mes "new, unique and trendy gear";
@@ -2692,7 +2692,7 @@ lhz_in02,267,25,4	script	Diana#npc	747,{
 	mes "[Diana]";
 	mes "Huh...?!";
 	mes "That's ridiculous!";
-	mes "Never mind that, let";
+	mes "Deixa pra la that, let";
 	mes "me take a look at that";
 	mes "Gladius in the corner.";
 	next;
@@ -2709,7 +2709,7 @@ lhz_in02,267,25,4	script	Diana#npc	747,{
 	mes "Yes, this replica really";
 	mes "does look just like an";
 	mes "actual Gladius, does it";
-	mes "not? Although not a true";
+	mes "not? Embora not a true";
 	mes "weapon, it's quite capable of";
 	mes "opening the toughest envelopes.";
 	next;
@@ -2723,18 +2723,18 @@ lhz_in02,267,25,4	script	Diana#npc	747,{
 
 lhz_in02,267,22,1	script	Shop Assistant#cobo	91,{
 	mes "[Shop Assistant]";
-	mes "Welcome to our";
+	mes "Bem-vindo a our";
 	mes "store where we offer";
 	mes "many unique products that";
 	mes "you can't find anywhere else.";
 	next;
 	mes "[Shop Assistant]";
-	mes "However, shopping is only available to our members. There's an annual";
+	mes "Porem, shopping is only available to our members. There's an annual";
 	mes "membership fee that's waived when you spend a certain amount every";
 	mes "month in our store. If you invite your friends, you'll receive spe--";
 	next;
 	mes "[" + strcharinfo(0) + "]";
-	mes "N-no thank you!";
+	mes "N-no obrigado!";
 	mes "I'm not interested!";
 	close;
 }
@@ -2747,14 +2747,14 @@ lighthalzen,192,63,4	script	Sergei#zen1	92,{
 	mes "over there. Would you";
 	mes "like me to tell you?";
 	next;
-	if (select("Sure.:No, thanks.") == 1) {
+	if (select("Sure.:Nao, obrigado.") == 1) {
 		mes "[Sergei]";
 		mes "This previous owner of";
-		mes "this Weapon Shop was";
+		mes "this Loja de Armas was";
 		mes "a convicted serial killer.";
 		mes "Each night, he'd take that";
 		mes "axe and cruelly murder";
-		mes "beautiful ladies like me.";
+		mes "bonito ladies like me.";
 		next;
 		mes "[Sergei]";
 		mes "When he was finally";
@@ -2838,7 +2838,7 @@ lighthalzen,40,107,4	script	Vergil#zen4	869,{
 		mes "But me and a buddy are";
 		mes "planning to head to the";
 		mes "Al De Baran Turbo Track";
-		mes "one of these days. Boy,";
+		mes "one of hoje em dia. Boy,";
 		mes "the last time we went,";
 		mes "he wasted a lot of zeny.";
 		next;
@@ -2882,12 +2882,12 @@ lighthalzen,40,107,4	script	Vergil#zen4	869,{
 		mes "did the story go?";
 		next;
 		mes "[Vergil]";
-		mes "I heard that some hat";
+		mes "Ouvi dizer que some hat";
 		mes "maker, the one who makes";
 		mes "the Smokie Hat, accidentally";
 		mes "made a Person Headgear";
 		mes "instead of, like, a hat made";
-		mes "of monsters. Don't ask me how.";
+		mes "of monstros. Don't ask me how.";
 		next;
 		mes "[Vergil]";
 		mes "Yeah, I think relatives";
@@ -2954,7 +2954,7 @@ lhz_in01,139,48,7	script	Leimi#mimir	73,{
 			mes "[Leimi]";
 			mes "Oh, you're an Assassin!";
 			mes "Oh, you boys are soooo cute!";
-			mes "And so cool and so mysterious all at the same time! I love you!";
+			mes "And so cool and so misterioso all at the same time! I love you!";
 		}
 		else {
 			next;
@@ -2988,12 +2988,12 @@ OnTouch_:
 
 lhz_in02,36,274,4	script	Cool Event Staff#Saera	831,{
 	mes "[Saera]";
-	mes "Welcome to the";
+	mes "Bem-vindo ao";
 	mes "temporary headquarters";
 	mes "of Cool Event Corporation.";
 	mes "How may I help you today?";
 	next;
-	switch(select("Temporary headquarters?:Voting:No, thanks.")) {
+	switch(select("Temporary headquarters?:Voting:Nao, obrigado.")) {
 	case 1:
 		mes "[Saera]";
 		mes "Our headquarters building";
@@ -3023,7 +3023,7 @@ lhz_in02,36,274,4	script	Cool Event Staff#Saera	831,{
 			mes "voters will be chosen, so";
 			mes "you can check your voting";
 			mes "eligibility at the headquarters";
-			mes "of both participating companies. Thank you for your patronage~";
+			mes "of both participating companies. Obrigado pela sua preferencia~";
 			close;
 		}
 		else {
@@ -3053,13 +3053,13 @@ lhz_in02,36,274,4	script	Cool Event Staff#Saera	831,{
 			mes "Remember that the";
 			mes "election polls can be";
 			mes "found in either Prontera";
-			mes "or Juno. Thank you very much.";
+			mes "or Juno. Muito obrigado.";
 			close;
 		}
 	case 3:
 		mes "[Saera]";
-		mes "Thank you.";
-		mes "Have a good day.";
+		mes "Obrigado.";
+		mes "Tenha um bom dia.";
 		close;
 	}
 }
@@ -3086,7 +3086,7 @@ lhz_in02,110,286,5	script	Cool Event Manager	853,{
 	mes "The employees seem";
 	mes "to be having too much";
 	mes "fun amongst themselves";
-	mes "recently. This does not";
+	mes "recentemente. This does not";
 	mes "bode well at all...";
 	next;
 	mes "[Baoto]";

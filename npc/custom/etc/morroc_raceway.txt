@@ -23,11 +23,11 @@
 //Warps you into race way
 morocc,166,105,6	script	Race Girl#01	116,{
 	mes "[Race Girl]";
-	mes "Would you like to visit ^0000FFMorocc Raceway^000000?";
+	mes "Gostaria de visitar a ^0000FFPista de Corrida de Morocc^000000?";
 	next;
-	menu "Yes",L_Warp,"No",-;
+	menu "Sim",L_Warp,"Nao",-;
 	mes "[Race Girl]";
-	mes "Alright, talk to me again when you want to go.";
+	mes "Tudo bem, fale comigo novamente quando quiser ir.";
 	close;
 L_Warp:
 	warp "pvp_y_1-5",165,256;
@@ -37,23 +37,23 @@ L_Warp:
 //Warps you out of raceway
 pvp_y_1-5,169,265,5	script	Race Girl#02	116,{
 	mes "[Race Girl]";
-	mes "Welcome to Morocc Raceway!";
+	mes "Bem-vindo a Pista de Corrida de Morocc!";
 	next;
-	menu "Information",-,"Leave",L_Warp,"Cancel",L_Cancel;
+	menu "Informacoes",-,"Sair",L_Warp,"Cancelar",L_Cancel;
 	mes "[Race Girl]";
-	mes "Someone must click on the Starter NPC to start the race.";
-	next;
-	mes "[Race Girl]";
-	mes "Once the race is started, run around Morocc anti-clockwise.";
+	mes "Alguem precisa clicar no NPC Iniciador para comecar a corrida.";
 	next;
 	mes "[Race Girl]";
-	mes "You must reach all the checkpoints - No cheating!";
+	mes "Uma vez iniciada a corrida, corra ao redor de Morocc no sentido anti-horario.";
+	next;
+	mes "[Race Girl]";
+	mes "Voce precisa alcancar todos os checkpoints - Sem trapaca!";
 	close;
 L_Warp:
 	warp "morocc",165,101;
 L_Cancel:
 	mes "[Race Girl]";
-	mes "Come again soon!";
+	mes "Volte em breve!";
 	close;
 }
 
@@ -64,18 +64,18 @@ pvp_y_1-5,145,269,5	script	Starter	733,{
 	if ($@racecount == 1) goto L_Started;
 L_Menu:
 	mes "[Race Starter]";
-	mes "Please stay on the Eastern side of me.";
-	menu "Start Race",L_Count,"Cancel",-;
+	mes "Por favor, fique do meu lado Leste.";
+	menu "Iniciar Corrida",L_Count,"Cancelar",-;
 	close;
 L_Count:
 	set $@counting,1;
-	mes "Counting down...";
+	mes "Contagem regressiva...";
 	addtimer 1000, "Starter::OnCount1000";
 	addtimer 2000, "Starter::OnCount2000";
 	addtimer 3000, "Starter::OnCount3000";
 	addtimer 4000, "Starter::OnCount4000";
-	announce strcharinfo(0) + "Started a countdown",1;
-	announce "Get ready to race!",1;
+	announce strcharinfo(0) + " iniciou uma contagem regressiva",1;
+	announce "Preparem-se para correr!",1;
 	close;
 
 OnCount1000:
@@ -101,7 +101,7 @@ L_Started:
 	if ((getmapusers("pvp_y_1-5") < 3) && ($@position > 0)) goto L_Menu;
 	if ($@position > 2) goto L_Menu;
 	mes "[Starter]";
-	mes "Race in progress";
+	mes "Corrida em andamento";
 	close;
 
 OnInit:
@@ -118,14 +118,14 @@ OnTouch:
 	if (@raceid != $@raceid) goto L_Started;
 	if (@race == 6) goto L_Finished;
 	if ($@race == 1) goto L_Started;
-	mes "The race has not started, please move back.";
+	mes "A corrida ainda nao comecou, por favor volte.";
 	close;
 L_Started:
 	set @race,1;
 	set @raceid,$@raceid;
 	end;
 L_Finished:
-	mes "You have already completed the race.";
+	mes "Voce ja completou a corrida.";
 	close;
 }
 
@@ -138,7 +138,7 @@ OnTouch:
 	announce "[" + strcharinfo(0) +"] has reached Checkpoint [1]",1;
 	end;
 L_Miss:
-	mes "You have missed a Checkpoint. Please go back.";
+	mes "Voce perdeu um Checkpoint. Por favor, volte.";
 	close;
 }
 
@@ -151,7 +151,7 @@ OnTouch:
 	announce "[" + strcharinfo(0) +"] has reached Checkpoint [2]",1;
 	end;
 L_Miss:
-	mes "You have missed a Checkpoint. Please go back.";
+	mes "Voce perdeu um Checkpoint. Por favor, volte.";
 	close;
 }
 
@@ -164,7 +164,7 @@ OnTouch:
 	announce "[" + strcharinfo(0) +"] has reached Checkpoint [3]",1;
 	end;
 L_Miss:
-	mes "You have missed a Checkpoint. Please go back.";
+	mes "Voce perdeu um Checkpoint. Por favor, volte.";
 	close;
 }
 
@@ -177,7 +177,7 @@ OnTouch:
 	announce "[" + strcharinfo(0) +"] has reached Checkpoint [4]",1;
 	end;
 L_Miss:
-	mes "You have missed a Checkpoint. Please go back.";
+	mes "Voce perdeu um Checkpoint. Por favor, volte.";
 	close;
 }
 
@@ -192,10 +192,10 @@ OnTouch:
 	announce "[" + strcharinfo(0) +"] has reached The Finish line! [Position: " + $@position + "]",1;
 	end;
 L_Miss:
-	mes "You have missed a Checkpoint. Please go back.";
+	mes "Voce perdeu um Checkpoint. Por favor, volte.";
 	close;
 L_WrongRace:
-	mes "You are not in this race.";
+	mes "Voce nao esta nesta corrida.";
 	close;
 }
 

@@ -15,14 +15,14 @@ prontera,155,177,5	script	Card Seller	100,{
 	.@menu$ = getvariableofnpc( .alphabet_menu$, "card_seller_creation" );
 	if (.@menu$ == "") {
 		mes "[Card Seller]";
-		mes "I am sorry, it seems like something went wrong.";
-		mes "I cannot find any cards in our database at the moment.";
-		mes "Please contact a game master.";
+		mes "Desculpe, parece que algo deu errado.";
+		mes "Nao consigo encontrar nenhuma carta no nosso banco de dados no momento.";
+		mes "Por favor, contate um game master.";
 		close;
 	}
 	mes "[Card Seller]";
-	mes "Welcome!";
-	mes "I can sell you any normal monster card in the game. Would you like to have a look?";
+	mes "Bem-vindo!";
+	mes "Posso te vender qualquer carta de monstro normal do jogo. Gostaria de dar uma olhada?";
 	next;
 	.@s = select(.@menu$) -1;
 	close2;

@@ -1766,7 +1766,7 @@ ayo_in01,181,193,4	script	Shaman#thai	840,{
 			mes "somehow, did you?";
 			mes "With the items you";
 			mes "have, I'll simply";
-			mes "make more of them.";
+			mes "make more deles.";
 			next;
 			mes "[Boonthom]";
 			mes "Ooooohmmmmm...";
@@ -2894,7 +2894,7 @@ OnTouch_:
 						emotion ET_THINK;
 						mes "[Mr. Jun]";
 						mes "Hmm...";
-						mes "Looks like you need a lot of them. Oh well, that's fine with me. I had a good time with you.";
+						mes "Looks like you need a lot deles. Oh well, that's fine with me. I had a good time with you.";
 						next;
 						mes "[Mr. Jun]";
 						mes "Don't forget this though:";

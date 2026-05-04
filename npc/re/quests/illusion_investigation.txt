@@ -10,79 +10,79 @@
 prt_in,136,34,3	script	Commander Joel#joel	1_M_ORIENT01,{
 	if (BaseLevel < 100) {
 		mes "[Commander Joel]";
-		mes "Hello, what business are you here for?";
+		mes "Ola, what business voce e aqui for?";
 		next;
 		mes "[Commander Joel]";
-		mes "If you wish to join the Illusion Investigation Corps, you're lacking in skills yet.";
+		mes "Se you wish to join o Illusion Investigation Corps, voce e lacking in habilidades yet.";
 		next;
 		mes "[Commander Joel]";
-		mes "Please visit again when you have reached a certain level.";
+		mes "Pou favou visit novamente when you have reached um certain nivel.";
 		next;
-		mes "^4d4dff== You must be level 100 or higher to join. ==^000000";
+		mes "^4d4dff== Voce deve be nivel 100 ou higa to join. ==^000000";
 		close;
 	}
 	if (isbegin_quest(3470) == 0) {
 		mes "[Commander Joel]";
-		mes "Hello, I'm Joel, the Commander of the Illusion Investigation Corps.";
+		mes "Ola, Eu sou Joel, o Commander of o Illusion Investigation Corps.";
 		next;
 		mes "[Commander Joel]";
-		mes "Have you ever heard of or experienced illusions?";
+		mes "Voce jum ever ouviu of ou experienced illusions?";
 		next;
 		mes "[Commander Joel]";
-		mes "Until now, illusions have been discovered all over the world and are somewhat known to the public.";
+		mes "Until agora, illusions tem sido descobriu todos sobre o mundo e are somewhat known to o public.";
 		next;
 		mes "[Commander Joel]";
-		mes "It is also used as a hunting ground for many adventurers because it is easy to obtain rare materials.";
+		mes "Isentao e tambem usou as um cacando ground fou muitos aventureiros porque it is facil to obtain rare materiais.";
 		next;
 		mes "[Commander Joel]";
-		mes "Also, the monsters in Illusion are new monsters that have never been discovered before, and the monsters in Illusion are multiplying abnormally.";
+		mes "Tambem, o monstros in Illusion are novo monstros esse have nuncum been descobriu antes, e o monstros in Illusion are multiplying abnormally.";
 		next;
 		mes "[Commander Joel]";
-		mes "Despite many adventurers hunting the monsters that exist in Illusion to obtain materials, the reason for the very rapid recovery of the population has not been identified.";
+		mes "Despite muitos aventureiros cacando o monstros esse existir in Illusion to obtain materiais, o razao fou o muito rapid recovery of o population has nao been identified.";
 		next;
 		mes "[Commander Joel]";
-		mes "Our Illusion Investigation Team was organized to uncover the mystery of the Illusion, and first we decided to figure out the ecology of the monsters inside the Illusion.";
+		mes "Nosso Illusion Investigation Team was organized to uncover o mystery of o Illusion, e primeiro we decided to figure out o ecology of o monstros dentro o Illusion.";
 		next;
 		mes "[Commander Joel]";
-		mes "What we found was that all illusions are affected by dimensional rifts.";
+		mes "What we encontrou was esse todos illusions are affected by dimensional rifts.";
 		next;
 		mes "[Commander Joel]";
-		mes "I've been speculating that it might be related to the dimensional rift for a long time, but with the results of this investigation, it's clear.";
+		mes "Eu tenho been speculating esse it pode ser related to o dimensional rift fou um long tempo, mas com o results of este investigation, e clear.";
 		next;
 		mes "[Commander Joel]";
-		mes "There are still many adventurers visiting Illusion with a purpose, so the monster population is fortunately maintained.";
+		mes "Hum aindum muitos aventureiros visiting Illusion com um purpose, entao o monstro population is fortunately maintained.";
 		next;
 		mes "[Commander Joel]";
-		mes "If no one sets foot there, it's very dangerous because the monsters can go beyond saturation and invade other areas.";
+		mes "Se ninguem sets pe la, e muito perigoentao porque o monstros cum ir beyond saturation e invade outro areas.";
 		next;
 		mes "[Commander Joel]";
-		mes "For that reason, the number of individuals is still being investigated, and one investigator is currently assigned to each illusion.";
+		mes "Fou esse razao, o number of individuals is aindum being investigated, e one investigatou is currently assigned to each illusion.";
 		next;
 		mes "[Commander Joel]";
-		mes "And we're recruiting members with the ability to control the number of monsters inside Illusion.";
+		mes "E nos estamos recruiting membros com o ability to control o number of monstros dentro Illusion.";
 		next;
 		mes "[Commander Joel]";
-		mes "And if you're an adventurer, you seem to be strong enough for that role...";
+		mes "E se voce e um aventureiro, voce parece to be forte suficiente fou esse role...";
 		next;
 		mes "[Commander Joel]";
-		mes "Would you like to join the Illusion Investigation Team and join us in investigating illusions?";
+		mes "Voce gostarium de like to join o Illusion Investigation Team e join us in investigating illusions?";
 		next;
-		if (select( "I'm joining", "I'll think about it" ) == 2) {
+		if (select( "Eu sou joining", "Eu vou pensar sobre it" ) == 2) {
 			mes "[Commander Joel]";
-			mes "It's very meaningful.";
+			mes "E muito meaningful.";
 			next;
 			mes "[Commander Joel]";
-			mes "Please think about it before you tell me.";
+			mes "Pou favou pensar sobre it antes you me diga.";
 			close;
 		}
 		mes "[Commander Joel]";
-		mes "Okay, you're welcome!!";
+		mes "Okay, voce e bem-vindo!!";
 		next;
 		mes "[Commander Joel]";
-		mes "The procedure is simple, please fill out the pledge here...";
+		mes "O procedure is simple, pou favou fill out o pledge aqui...";
 		next;
 		mes "[Commander Joel]";
-		mes "Here... please sign this.";
+		mes "Aqui... pou favou sign this.";
 		next;
 		mes "[Commander Joel]";
 		mes ".";
@@ -94,35 +94,35 @@ prt_in,136,34,3	script	Commander Joel#joel	1_M_ORIENT01,{
 		mes "...";
 		next;
 		mes "[Commander Joel]";
-		mes "Yes, with this you have become a member of the Illusionary Survey Corps, welcome again!";
+		mes "Yes, com este you have se tornar um membro of o Illusionary Survey Corps, bem-vindo novamente!";
 		next;
 		mes "[Commander Joel]";
-		mes "If you have time during your adventure, I would like you to stop by the Illusions located in various places and help me with the investigation.";
+		mes "Se you have tempo durante seu adventure, Eu gostarium de like you to parar by o Illusions located in various places e me ajude com o investigation.";
 		next;
 		mes "[Commander Joel]";
-		mes "A dispatched investigator will guide you.";
+		mes "A dispatched investigatou will guide you.";
 		next;
 		mes "[Commander Joel]";
-		mes "Then I hope you have a nice day";
+		mes "Entao I esperancum you have um nice dia";
 		close2;
 		setquest 3470;
 		completequest 3470;
 		end;
 	}
 	mes "[Commander Joel]";
-	mes "I think the investigation will be much easier thanks to you, adventurer.";
+	mes "Eu acho o investigation sera muito easier obrigado to you, aventureiro.";
 	next;
 	mes "[Commander Joel]";
-	mes "New illusions will appear again.";
+	mes "Novo illusions will aparecer novamente.";
 	next;
 	mes "[Commander Joel]";
-	mes "Every new discovery takes a lot of time for us to adapt to it";
+	mes "Cadum novo discovery takes um lot of tempo fou us to adapt to it";
 	next;
 	mes "[Commander Joel]";
-	mes "This investigation will at least help reduce that time.";
+	mes "Este investigation will at menos ajudar reduce esse tempo.";
 	next;
 	mes "[Commander Joel]";
-	mes "Thank you and look forward to many more activities in the future.";
+	mes "Obrigado e olhar forward to muitos mais activities in o future.";
 	close;
 
 OnInit:
@@ -132,43 +132,43 @@ OnInit:
 
 prt_in,136,29,3	script	Member Zenhi#zenhi	4_F_KHELLY,{
 	mes "[Member Zenhi]";
-	mes "Hello~~!!";
+	mes "Ola~~!!";
 	next;
 	mes "[Member Zenhi]";
-	mes "The Illusion Investigation Corps is getting bigger little by little.";
+	mes "O Illusion Investigation Corps is ficando bigger pequeno by pequeno.";
 	next;
 	mes "[Member Zenhi]";
-	mes "The more members, the more things we can do, right?";
+	mes "O mais membros, o mais coisas nos podemos do, certo?";
 	close;
 }
 
 prt_in,121,36,6	script	Member Zenian#zenian	4_F_HUWOMAN,{
 	mes "[Member Zenian]";
-	mes "Hello, I'm Zenian, a new member of the team.";
+	mes "Ola, Eu sou Zenian, um novo membro of o team.";
 	next;
 	mes "[Member Zenian]";
-	mes "I've been paying attention to the phenomenon of dimensional rifts for a long time. Clearly, despite many subjugations, monsters are constantly appearing.";
+	mes "Eu tenho been pagando attention to o phenomenon of dimensional rifts fou um long tempo. Clearly, despite muitos subjugations, monstros are constantly appearing.";
 	next;
 	mes "[Member Zenian]";
-	mes "It has been proven that this phenomenon also occurs in illusions, so I decided to join the Illusion Investigation Team.";
+	mes "It tem sido proven esse este phenomenon tambem occurs in illusions, entao I decided to join o Illusion Investigation Team.";
 	next;
 	mes "[Member Zenian]";
-	mes "Good luck in the future!!";
+	mes "Boum sorte in o future!!";
 	close;
 }
 
 prt_in,124,21,1	script	 Member link#yeonsu	4_M_DEWWOMAN,{
 	mes "[Member link]";
-	mes "Nice to meet you, this is the Welcome Survey Team.";
+	mes "Nice to meet you, este is o Bem-vindo Survey Team.";
 	next;
 	mes "[Member link]";
-	mes "Investigate the ecosystem of monsters in Illusion...";
+	mes "Investigar o ecosystem of monstros in Illusion...";
 	next;
 	mes "[Member link]";
-	mes "Also... I thought it might have something to do with the dimensional rift.";
+	mes "Tambem... I pensou it might have algo to do com o dimensional rift.";
 	next;
 	mes "[Member link]";
-	mes "I hope that everyone who is working hard at this time will return safely without any incident.";
+	mes "I esperancum esse todos quem e funcionando dificil at este tempo will retornar safely sem any incident.";
 	close;
 }
 
@@ -177,62 +177,62 @@ pay_d03_i,149,34,5	script	Girocker#ziroker	4_M_ORIENT02,{
 		end;
 	if (isbegin_quest(3470) == 0) {
 		mes "[Girocker]";
-		mes "Hello!!";
+		mes "Ola!!";
 		next;
 		mes "[Girocker]";
-		mes "I am J-Girocker from the Illusion Investigation Corps.";
+		mes "Eu sou J-Girocker de o Illusion Investigation Corps.";
 		next;
 		mes "[Girocker]";
-		mes "Ugh... to really come to a place like this... I wish adventurers would help me too...";
+		mes "Ugh... to realmente vir to um lugar like this... I wish aventureiros would me ajude tambem...";
 		next;
 		mes "[Girocker]";
-		mes "You haven't joined the investigation team yet.";
+		mes "You nao tenho joined o investigation team yet.";
 		next;
 		mes "[Girocker]";
-		mes "Would you like to investigate the monsters here with me? It will definitely be meaningful!!";
+		mes "Voce gostarium de like to investigar o monstros aqui com me? It will definitivamente be meaningful!!";
 		next;
 		mes "[Girocker]";
-		mes "Please apply for membership to <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI>, the investigator in Prontera, and come!!";
+		mes "Pou favou apply fou membership to <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI>, o investigatou in Prontera, e vir!!";
 		close;
 	}
 	if (isbegin_quest(3446) == 0) {
 		mes "[Girocker]";
-		mes "Hello!!";
+		mes "Ola!!";
 		next;
 		mes "[Girocker]";
-		mes "I am J-Girocker from the Illusion Investigation Corps.";
+		mes "Eu sou J-Girocker de o Illusion Investigation Corps.";
 		next;
 		mes "[Girocker]";
-		mes "Ugh... To come to a place like this...";
+		mes "Ugh... To vir to um lugar like this...";
 		next;
 		mes "[Girocker]";
-		mes "I usually pretended to be brave, but I think I was conscious of Elysia, the member I have a crush on.";
+		mes "I usually pretended to be brave, mas Eu acho Eu estavum conscious of Elysia, o membro Eu tenho um crush on.";
 		next;
 		mes "[Girocker]";
-		mes "Actually, I'm the one who's more timid than anyone else... heck";
+		mes "Num verdade, Eu sou o one who's mais timid que anyone else... heck";
 		next;
 		mes "[Girocker]";
-		mes "Anyway... I'm in charge of investigating this place.";
+		mes "Anyway... Eu sou in charge of investigating este lugar.";
 		next;
 		mes "[Girocker]";
-		mes "Have you heard about the investigation from Captain Joel? Adventurer, you have to completely hunt 100 monsters by yourself.";
+		mes "Voce jum ouviu sobre o investigation de Capitao Joel? Aventureiro, you tem que completely cacar 100 monstros by yourself.";
 		next;
 		mes "[Girocker]";
-		mes "Would you like to participate in the investigation of this place?";
+		mes "Voce gostarium de like to participate in o investigation of este lugar?";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Girocker]";
-			mes "Then should I ask another adventurer...";
+			mes "Entao should I ask outro aventureiro...";
 			close;
 		}
 		mes "[Girocker]";
 		mes "I like it!!";
 		next;
 		mes "[Girocker]";
-		mes "Just kill 100 monsters of any type here.";
+		mes "Apenas matar 100 monstros of any type aqui.";
 		next;
 		mes "[Girocker]";
-		mes "Then be careful!";
+		mes "Entao tenhum cuidado!";
 		close2;
 		setquest 3446;
 		completequest 3446;
@@ -245,10 +245,10 @@ pay_d03_i,149,34,5	script	Girocker#ziroker	4_M_ORIENT02,{
 	case 0:
 	case 1:
 		mes "[Girocker]";
-		mes "Ah, that's enough for today's investigation.";
+		mes "Ah, that's suficiente fou hoje's investigation.";
 		next;
 		mes "[Girocker]";
-		mes "It will be restored tomorrow, so if you can afford it, I would appreciate it if you could come and help me with the investigation!!";
+		mes "It sera restored amanha, entao se voce pode afford it, Eu gostarium de appreciate it se you could vir e me ajude com o investigation!!";
 		close;
 	case 2:
 		erasequest 3448;
@@ -257,44 +257,44 @@ pay_d03_i,149,34,5	script	Girocker#ziroker	4_M_ORIENT02,{
 	switch( checkquest(3447,HUNTING) ) {
 	case -1:
 		mes "[Girocker]";
-		mes "Hello, are you here today to help with the investigation?";
+		mes "Ola, voce e aqui hoje to ajudar com o investigation?";
 		next;
 		mes "[Girocker]";
-		mes "The content is the same as last time.";
+		mes "O content is o mesmo as ultimo tempo.";
 		next;
 		mes "[Girocker]";
-		mes "If you kill 100 monsters of any type, would you like to participate?";
+		mes "Se you matar 100 monstros of any type, voce gostarium de like to participate?";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Girocker]";
-			mes "It would be nice if you could help me today...";
+			mes "It seria nice se you could me ajude hoje...";
 			close;
 		}
 		mes "[Girocker]";
 		mes "I like it!!";
 		next;
 		mes "[Girocker]";
-		mes "Just kill 100 monsters of any type here.";
+		mes "Apenas matar 100 monstros of any type aqui.";
 		next;
 		mes "[Girocker]";
-		mes "Then be careful!";
+		mes "Entao tenhum cuidado!";
 		close2;
 		setquest 3447;
 		end;
 	case 0:
 	case 1:
 		mes "[Girocker]";
-		mes "Kill 100 monsters of any type.";
+		mes "Matar 100 monstros of any type.";
 		close;
 	case 2:
 		mes "[Girocker]";
-		mes "You're back safely!";
+		mes "Voce e back safely!";
 		next;
 		mes "[Girocker]";
-		mes "Okay... Then hmm... I'll have to wait and see how much monsters spawn for a while.";
+		mes "Okay... Entao hmm... Eu vou tem que esperar e ver quanto monstros spawn fou um while.";
 		next;
 		mes "[Girocker]";
-		mes "Leave the rest to me!! Thanks!!";
+		mes "Sair o rest to me!! Obrigado!!";
 		close2;
 		erasequest 3447;
 		setquest 3448;
@@ -315,84 +315,84 @@ OnInit:
 ice_dun02,142,18,5	script	Elysia#elisia	4_F_OPERATION,{
 	if (BaseLevel < 120) {
 		mes "[Elysia]";
-		mes "Oh, must you have a hard time enduring the cold here?";
+		mes "Oh, must you have um dificil tempo enduring o cold aqui?";
 		next;
 		mes "[Elysia]";
-		mes "Come back when you're a little hotter.";
+		mes "Volte when voce e um pequeno hotter.";
 		next;
-		mes "^4d4dff== This is a level 120 or higher quest. ==^000000";
+		mes "^4d4dff== Este is um nivel 120 ou higa missao. ==^000000";
 		close;
 	}
 	if (isbegin_quest(3470) == 0) {
 		mes "[Elysia]";
-		mes "Hello~";
+		mes "Ola~";
 		next;
 		mes "[Elysia]";
-		mes "I'm Elysia from the Illusion Investigation Team~";
+		mes "Eu sou Elysium de o Illusion Investigation Team~";
 		next;
 		mes "[Elysia]";
-		mes "It's really cold here...";
+		mes "E realmente cold aqui...";
 		next;
 		mes "[Elysia]";
-		mes "I'd like to ask the adventurer for help...";
+		mes "Eu gostarium de like to ask o aventureiro fou ajudar...";
 		next;
 		mes "[Elysia]";
-		mes "You haven't joined the investigation team yet.";
+		mes "You nao tenho joined o investigation team yet.";
 		next;
 		mes "[Elysia]";
-		mes "If you don't mind, why don't you join the Illusionary Survey Corps? Then you can help me!!!";
+		mes "Se voce nao mente, why voce nao join o Illusionary Survey Corps? Entao voce pode me ajude!!!";
 		next;
 		mes "[Elysia]";
-		mes "Please apply for membership to <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI>, the Commander in Prontera, and come!!";
+		mes "Pou favou apply fou membership to <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI>, o Commander in Prontera, e vir!!";
 		close;
 	}
 	if (isbegin_quest(3449) == 0) {
 		mes "[Elysia]";
-		mes "Hello~";
+		mes "Ola~";
 		next;
 		mes "[Elysia]";
-		mes "I'm Elysia from the Illusion Investigation Team~";
+		mes "Eu sou Elysium de o Illusion Investigation Team~";
 		next;
 		mes "[Elysia]";
-		mes "It's really cold here...";
+		mes "E realmente cold aqui...";
 		next;
 		mes "[Elysia]";
-		mes "I never thought I would be sent to such a dangerous place alone... I wanted to come with Jirocker...";
+		mes "I nuncum pensou Eu gostarium de be sent to such um perigoentao lugar sozinho... I wanted to vir com Jirocker...";
 		next;
 		mes "[Elysia]";
-		mes "Well, even if there was a Jirocker, he's a coward, so I'd be in a position to protect him...";
+		mes "Bem, ate mesmo se lum was um Jirocker, he's um coward, entao Eu gostarium de be in um position to proteger him...";
 		next;
 		mes "[Elysia]";
-		mes "You pretended to be brave... but I already noticed";
+		mes "You pretended to be brave... mas I jum noticed";
 		next;
 		mes "[Elysia]";
-		mes "Is Jirocker doing his investigation safely in the abandoned village? I'm worried.";
+		mes "Is Jirocker fazendo o investigation safely in o abandoned vila? Eu sou preocupado.";
 		next;
 		mes "[Elysia]";
-		mes "Hmm... Actually, now is not the time to worry about Jirocker, Adventurer. Can you help me?";
+		mes "Hmm... Num verdade, agorum is nao o tempo to preocupar sobre Jirocker, Aventureiro. Voce pode me ajude?";
 		next;
 		mes "[Elysia]";
-		mes "Did you hear that this is an investigation into how the monster population is maintained? Many adventurers come here to hunt, but it's a bit lacking.";
+		mes "Voce ouvir esse este is um investigation parum dentro how o monstro population is maintained? Many aventureiros vir aqui to cacar, mas e um bit lacking.";
 		next;
 		mes "[Elysia]";
-		mes "It's easy to figure out the number of monsters when you deal with them hotly. How about you? Would you like to participate in the investigation of this place?";
+		mes "E facil to figure out o number of monstros when you deal com them hotly. Que tal you? Voce gostarium de like to participate in o investigation of este lugar?";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Elysia]";
-			mes "Yeah, that's right...";
+			mes "Yeah, that's certo...";
 			next;
 			mes "[Elysia]";
-			mes "Then I'll be shivering a little longer...";
+			mes "Entao Eu vou be shivering um pequeno longer...";
 			close;
 		}
 		mes "[Elysia]";
-		mes "Oh yes!! Thanks!!";
+		mes "Oh yes!! Obrigado!!";
 		next;
 		mes "[Elysia]";
-		mes "After entering, kill 100 monsters of any type.";
+		mes "Depois entering, matar 100 monstros of any type.";
 		next;
 		mes "[Elysia]";
-		mes "I look forward to your hot hunting skills~~!!";
+		mes "I olhar forward to seu hot cacando habilidades~~!!";
 		close2;
 		setquest 3449;
 		completequest 3449;
@@ -405,10 +405,10 @@ ice_dun02,142,18,5	script	Elysia#elisia	4_F_OPERATION,{
 	case 0:
 	case 1:
 		mes "[Elysia]";
-		mes "Ah, I think this should be enough for today!!";
+		mes "Ah, Eu acho este deveria ser suficiente fou hoje!!";
 		next;
 		mes "[Elysia]";
-		mes "If you come after tomorrow, you'll have something else to do~";
+		mes "Se you vir depois amanha, voce vai have algo else to do~";
 		close;
 	case 2:
 		erasequest 3451;
@@ -417,44 +417,44 @@ ice_dun02,142,18,5	script	Elysia#elisia	4_F_OPERATION,{
 	switch( checkquest(3450,HUNTING) ) {
 	case -1:
 		mes "[Elysia]";
-		mes "Ah, nice to meet you!! Are you here today to help with the investigation??";
+		mes "Ah, nice to meet you!! Voce e aqui hoje to ajudar com o investigation??";
 		next;
 		mes "[Elysia]";
-		mes "Your help is the same as last time~";
+		mes "Seu ajudar is o mesmo as ultimo tempo~";
 		next;
 		mes "[Elysia]";
-		mes "If you kill 100 monsters of any type, would you like to participate?";
+		mes "Se you matar 100 monstros of any type, voce gostarium de like to participate?";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Elysia]";
-			mes "Okay... I'll keep shivering in the cold...";
+			mes "Okay... Eu vou manter shivering in o cold...";
 			close;
 		}
 		mes "[Elysia]";
-		mes "Thank you";
+		mes "Obrigado";
 		next;
 		mes "[Elysia]";
-		mes "After entering, kill 100 monsters of any type.";
+		mes "Depois entering, matar 100 monstros of any type.";
 		next;
 		mes "[Elysia]";
-		mes "Then be careful!";
+		mes "Entao tenhum cuidado!";
 		close2;
 		setquest 3450;
 		end;
 	case 0:
 	case 1:
 		mes "[Elysia]";
-		mes "Kill 100 monsters regardless of type.";
+		mes "Matar 100 monstros regardless of type.";
 		close;
 	case 2:
 		mes "[Elysia]";
-		mes "Have you finished already? You've done it hotly as expected~";
+		mes "Voce jum terminou ja? Voce tem done it hotly as expected~";
 		next;
 		mes "[Elysia]";
-		mes "Then I'll do the rest of the research for you~";
+		mes "Entao Eu vou do o rest of o research fou you~";
 		next;
 		mes "[Elysia]";
-		mes "Thank you for your hard work. I hope we can meet again!!";
+		mes "Obrigado fou seu dificil trabalhar. I esperancum nos podemos meet novamente!!";
 		close2;
 		erasequest 3450;
 		setquest 3451;
@@ -477,68 +477,68 @@ gef_d01_i,122,237,3	script	Radimir#ridimir	8_F,{
 		end;
 	if (isbegin_quest(3470) == 0) {
 		mes "[Radimir]";
-		mes "Hello, Adventurer";
+		mes "Ola, Aventureiro";
 		next;
 		mes "[Radimir]";
-		mes "I am Radimir from the Illusion Investigation.";
+		mes "Eu sou Radimir de o Illusion Investigation.";
 		next;
 		mes "[Radimir]";
-		mes "I'm sent to such a dreary place, and honestly, I'm very afraid";
+		mes "Eu sou sent to such um dreary lugar, e honestly, Eu sou muito afraid";
 		next;
 		mes "[Radimir]";
-		mes "I'd like you to conduct the investigation together, but... you haven't joined the investigation team yet.";
+		mes "Eu gostarium de like you to conduct o investigation juntos, but... you nao tenho joined o investigation team yet.";
 		next;
 		mes "[Radimir]";
-		mes "Would you like to do something meaningful with me?";
+		mes "Voce gostarium de like to do algo meaningful com me?";
 		next;
 		mes "[Radimir]";
-		mes "If you are interested, please meet <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI>, the Commander in Prontera, and join the Investigation Team and come back.";
+		mes "Se you are interessado, pou favou meet <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI>, o Commander in Prontera, e join o Investigation Team e volte.";
 		close;
 	}
 	if (isbegin_quest(3452) == 0) {
 		mes "[Radimir]";
-		mes "Hello, Adventurer";
+		mes "Ola, Aventureiro";
 		next;
 		mes "[Radimir]";
-		mes "I am Radimir from the Illusion Investigation.";
+		mes "Eu sou Radimir de o Illusion Investigation.";
 		next;
 		mes "[Radimir]";
-		mes "I'm sent to such a dreary place, and honestly, I'm very afraid";
+		mes "Eu sou sent to such um dreary lugar, e honestly, Eu sou muito afraid";
 		next;
 		mes "[Radimir]";
-		mes "But I've always been interested in the phenomenon of illusion, and when the investigation team was founded, I actively applied for membership.";
+		mes "Mas Eu tenho sempre been interessado in o phenomenon of illusion, e when o investigation team was founded, I actively applied fou membership.";
 		next;
 		mes "[Radimir]";
-		mes "Because nobody has figured it out yet";
+		mes "Porque ninguem has figured it out yet";
 		next;
 		mes "[Radimir]";
-		mes "It's just the beginning of the current investigation, but it's sure to be a great first step";
+		mes "E apenas o beginning of o current investigation, mas e sure to be um otimo primeiro step";
 		next;
 		mes "[Radimir]";
-		mes "Therefore, fear can be overcome by will.";
+		mes "Portanto, medo cum be overcome by will.";
 		next;
 		mes "[Radimir]";
-		mes "Investigation preparations are complete, now I'm waiting for someone who can adjust the monsters' levels.";
+		mes "Investigation preparations are completar, agorum Eu sou waiting fou alguem who cum adjust o monstros' levels.";
 		next;
 		mes "[Radimir]";
-		mes "How about you, why don't you participate in the investigation? You joined the investigation team for that, right?";
+		mes "Que tal you, why voce nao participate in o investigation? You joined o investigation team fou that, certo?";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Radimir]";
-			mes "I'll stay here";
+			mes "Eu vou ficar aqui";
 			close;
 		}
 		mes "[Radimir]";
-		mes "Good.";
+		mes "Bom.";
 		next;
 		mes "[Radimir]";
-		mes "Just kill 100 monsters of any type here.";
+		mes "Apenas matar 100 monstros of any type aqui.";
 		next;
 		mes "[Radimir]";
-		mes "The sooner the better.";
+		mes "O sooner o better.";
 		next;
 		mes "[Radimir]";
-		mes "Then I'll be waiting for you.";
+		mes "Entao Eu vou be waiting fou you.";
 		close2;
 		setquest 3452;
 		completequest 3452;
@@ -551,10 +551,10 @@ gef_d01_i,122,237,3	script	Radimir#ridimir	8_F,{
 	case 0:
 	case 1:
 		mes "[Radimir]";
-		mes "That's it for today.";
+		mes "That's it fou hoje.";
 		next;
 		mes "[Radimir]";
-		mes "If the current trend, I think we can resume the investigation in a day or so. Please come then.";
+		mes "Se o current trend, Eu acho nos podemos resume o investigation in um dium ou so. Pou favou vir entao.";
 		close;
 	case 2:
 		erasequest 3454;
@@ -563,44 +563,44 @@ gef_d01_i,122,237,3	script	Radimir#ridimir	8_F,{
 	switch( checkquest(3453,HUNTING) ) {
 	case -1:
 		mes "[Radimir]";
-		mes "Hello, are you here today to help with the investigation?";
+		mes "Ola, voce e aqui hoje to ajudar com o investigation?";
 		next;
 		mes "[Radimir]";
-		mes "Please execute the operation as it was then.";
+		mes "Pou favou execute o operation as erum entao.";
 		next;
 		mes "[Radimir]";
-		mes "Would you like to participate in the task of killing 100 monsters of any type?";
+		mes "Voce gostarium de like to participate in o task of killing 100 monstros of any type?";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Radimir]";
-			mes "You acted meaninglessly, I'm disappointed.";
+			mes "You acted meaninglessly, Eu sou disappointed.";
 			close;
 		}
 		mes "[Radimir]";
-		mes "Thank you";
+		mes "Obrigado";
 		next;
 		mes "[Radimir]";
-		mes "Kill 100 monsters of any type.";
+		mes "Matar 100 monstros of any type.";
 		next;
 		mes "[Radimir]";
-		mes "Then I'll be waiting for you.";
+		mes "Entao Eu vou be waiting fou you.";
 		close2;
 		setquest 3453;
 		end;
 	case 0:
 	case 1:
 		mes "[Radimir]";
-		mes "Kill 100 monsters of any type.";
+		mes "Matar 100 monstros of any type.";
 		close;
 	case 2:
 		mes "[Radimir]";
-		mes "You came through quickly, thank you.";
+		mes "You came atraves rapidamente, obrigado.";
 		next;
 		mes "[Radimir]";
-		mes "That makes it easier to work out the numbers.";
+		mes "Esse makes it easier to trabalhar out o numbers.";
 		next;
 		mes "[Radimir]";
-		mes "I will finish the rest of the work soon and report it to the investigation team. Thank you for your hard work.";
+		mes "Eu vou terminar o rest of o trabalhar soon e relatorio it to o investigation team. Obrigado fou seu dificil trabalhar.";
 		close2;
 		erasequest 3453;
 		setquest 3454;
@@ -623,68 +623,68 @@ ein_d02_i,161,180,5	script	Machoko#machoco	8_F_GIRL,{
 		end;
 	if (isbegin_quest(3470) == 0) {
 		mes "[Machoko]";
-		mes "Hello!!!";
+		mes "Ola!!!";
 		next;
 		mes "[Machoko]";
-		mes "I'm Machoko from the Illusion Investigation Team~";
+		mes "Eu sou Machoko de o Illusion Investigation Team~";
 		next;
 		mes "[Machoko]";
-		mes "I really wanted to be dispatched to this place, but I was lucky.";
+		mes "I realmente wanted to be dispatched to este lugar, mas Eu estavum lucky.";
 		next;
 		mes "[Machoko]";
-		mes "These damn teddy bears~~ The teddy bears...";
+		mes "Estes damn teddy bears~~ O teddy bears...";
 		next;
 		mes "[Machoko]";
-		mes "But it's impossible for me... I don't have enough strength... But you haven't joined the investigation team yet...";
+		mes "Mas e impossivel fou me... Eu nao have suficiente forca... Mas you nao tenho joined o investigation team yet...";
 		next;
 		mes "[Machoko]";
-		mes "You can sign up by going to <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI>, the Commander in Prontera. Sign up and come here~";
+		mes "Voce pode sign up by vai <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI>, o Commander in Prontera. Sign up e vir aqui~";
 		close;
 	}
 	if (isbegin_quest(3455) == 0) {
 		mes "[Machoko]";
-		mes "Hello!!!";
+		mes "Ola!!!";
 		next;
 		mes "[Machoko]";
-		mes "I'm Machoko from the Illusion Investigation Team~";
+		mes "Eu sou Machoko de o Illusion Investigation Team~";
 		next;
 		mes "[Machoko]";
-		mes "I really wanted to be dispatched to this place, but I was lucky.";
+		mes "I realmente wanted to be dispatched to este lugar, mas Eu estavum lucky.";
 		next;
 		mes "[Machoko]";
-		mes "These damn teddy bears~~ The teddy bears...";
+		mes "Estes damn teddy bears~~ O teddy bears...";
 		next;
 		mes "[Machoko]";
-		mes "But it's impossible for me... I don't have enough strength... He looks easy... but he's so strong...";
+		mes "Mas e impossivel fou me... Eu nao have suficiente forca... He looks facil... mas he's entao forte...";
 		next;
 		mes "[Machoko]";
-		mes "I thought I could do it all by myself... I took it too lightly... Huh...";
+		mes "I pensou I could do it todos by myself... I took it tambem lightly... Huh...";
 		next;
 		mes "[Machoko]";
-		mes "I unknowingly and vigorously attacked and came back with a lot of beating... I almost died...";
+		mes "I unknowingly e vigorously attacked e came back com um lot of beating... I almost morreu...";
 		next;
 		mes "[Machoko]";
-		mes "I barely recovered... I think it's possible to investigate, but you look a little strong?";
+		mes "I barely recovered... Eu acho e possivel to investigar, mas voce parece um pequeno forte?";
 		next;
 		mes "[Machoko]";
-		mes "Then help me... I need someone to take control of those vicious teddy bears...";
+		mes "Entao me ajude... Eu precientao de alguem to pegar control of esses vicious teddy bears...";
 		next;
 		mes "[Machoko]";
-		mes "How about it? Do you want to join the investigation??";
+		mes "Que tal it? Do voce quer to join o investigation??";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Machoko]";
-			mes "Yes... I'm about to collapse after I've been here... Like a man without blood or tears...";
+			mes "Yes... Eu sou sobre to collapse depois Eu tenho been aqui... Like um mum sem sangue ou tears...";
 			close;
 		}
 		mes "[Machoko]";
-		mes "Okay! Let's go!!";
+		mes "Okay! Vamos ir!!";
 		next;
 		mes "[Machoko]";
-		mes "Go and beat up about 100 of them, and come, it doesn't matter what type, blow them up as you see them!!";
+		mes "Ir e beat up sobre 100 of them, e vir, it nao matter what type, blow them up as you ver them!!";
 		next;
 		mes "[Machoko]";
-		mes "I... can't even move... Here... I'll wait...";
+		mes "I... nao pode ate mesmo mover... Aqui... Eu vou esperar...";
 		close2;
 		setquest 3455;
 		completequest 3455;
@@ -697,10 +697,10 @@ ein_d02_i,161,180,5	script	Machoko#machoco	8_F_GIRL,{
 	case 0:
 	case 1:
 		mes "[Machoko]";
-		mes "Well, no more today";
+		mes "Bem, no mais hoje";
 		next;
 		mes "[Machoko]";
-		mes "Come back after a day!!";
+		mes "Volte depois um dia!!";
 		close;
 	case 2:
 		erasequest 3457;
@@ -709,47 +709,47 @@ ein_d02_i,161,180,5	script	Machoko#machoco	8_F_GIRL,{
 	switch( checkquest(3456,HUNTING) ) {
 	case -1:
 		mes "[Machoko]";
-		mes "Oh, nice to meet you! Welcome back!";
+		mes "Oh, nice to meet you! Bem-vindo back!";
 		next;
 		mes "[Machoko]";
-		mes "You must have come here because your body itches.";
+		mes "Voce deve have vir aqui porque seu corpo itches.";
 		next;
 		mes "[Machoko]";
-		mes "Would you like to participate in the investigation work here again today??";
+		mes "Voce gostarium de like to participate in o investigation trabalhar aqui novamente hoje??";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Machoko]";
-			mes "What...then why did you come??";
+			mes "What...entao why voce vir??";
 			close;
 		}
 		mes "[Machoko]";
-		mes "Sure, that's how it should be";
+		mes "Sure, that's how it deveria ser";
 		next;
 		mes "[Machoko]";
-		mes "Regardless of the type, just beat 100 of them and bring them back.";
+		mes "Regardless of o type, apenas beat 100 of them e trazer them back.";
 		next;
 		mes "[Machoko]";
-		mes "I'll be waiting for you, so hurry up!!";
+		mes "Eu vou be waiting fou you, entao hurry up!!";
 		close2;
 		setquest 3456;
 		end;
 	case 0:
 	case 1:
 		mes "[Machoko]";
-		mes "Go and beat up about 100 of them, and come, it doesn't matter what type, blow them up as you see them!!";
+		mes "Ir e beat up sobre 100 of them, e vir, it nao matter what type, blow them up as you ver them!!";
 		close;
 	case 2:
 		mes "[Machoko]";
-		mes "I've been waiting for you... finish quickly and come back...";
+		mes "Eu tenho been waiting fou you... terminar rapidamente e volte...";
 		next;
 		mes "[Machoko]";
-		mes "Um...but that's about it... um...yeah!! good!!";
+		mes "Um...mas that's sobre it... um...yeah!! bom!!";
 		next;
 		mes "[Machoko]";
-		mes "Leave the rest to me!! I'll report the results to the investigation team, now you can go and rest.";
+		mes "Sair o rest to me!! Eu vou relatorio o results to o investigation team, agorum voce pode ir e rest.";
 		next;
 		mes "[Machoko]";
-		mes "Thank you~~";
+		mes "Obrigado~~";
 		close2;
 		erasequest 3456;
 		setquest 3457;
@@ -772,65 +772,65 @@ tur_d03_i,125,186,5	script	Orian#orian	4_M_LGTPOOR,{
 		end;
 	if (isbegin_quest(3470) == 0) {
 		mes "[Orian]";
-		mes "Hello!";
+		mes "Ola!";
 		next;
 		mes "[Orian]";
-		mes "I'm Orian, a contract worker in the Illusion Investigation Corps.";
+		mes "Eu sou Orian, um contract worker in o Illusion Investigation Corps.";
 		next;
 		mes "[Orian]";
-		mes "Actually, it's not something I'm keen on...but I need the money...";
+		mes "Num verdade, e nao algo Eu sou keen on...mas Eu precientao de o dinheiro...";
 		next;
 		mes "[Orian]";
-		mes "It would be nice if you could help me... is that possible?";
+		mes "It seria nice se you could me ajude... isentao e possivel?";
 		next;
 		mes "[Orian]";
-		mes "Uh, but you haven't joined the investigation team yet.";
+		mes "Uh, mas you nao tenho joined o investigation team yet.";
 		next;
 		mes "[Orian]";
-		mes "Please apply for membership to <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI>, the Commander in Prontera, and come!!";
+		mes "Pou favou apply fou membership to <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI>, o Commander in Prontera, e vir!!";
 		close;
 	}
 	if (isbegin_quest(3458) == 0) {
 		mes "[Orian]";
-		mes "Hello!";
+		mes "Ola!";
 		next;
 		mes "[Orian]";
-		mes "I'm Orian, a contract worker in the Illusion Investigation Corps.";
+		mes "Eu sou Orian, um contract worker in o Illusion Investigation Corps.";
 		next;
 		mes "[Orian]";
-		mes "The Illumination Investigation Team is a newly formed organization, so it must have been a little understaffed. I saw an announcement that they would hire part-time contract workers.";
+		mes "O Illumination Investigation Team is um newly formed organization, entao it must tem sido um pequeno understaffed. I saw um announcement esse they would hire part-tempo contract workers.";
 		next;
 		mes "[Orian]";
-		mes "Actually, I'm not interested in illusions... I'm busy making a living.";
+		mes "Num verdade, Eu sou nao interessado in illusions... Eu sou ocupado fazendo um vivendo.";
 		next;
 		mes "[Orian]";
-		mes "Huh... It's all about money, I'm going to buy a new set of clothes when I get paid.";
+		mes "Huh... E todos sobre dinheiro, Eu sou vai comprar um novo definir of clothes when I pegar pago.";
 		next;
 		mes "[Orian]";
-		mes "But even that isn't easy... I've been waiting for an investigator like you to come because I think it's going to be very difficult on my own.";
+		mes "Mas ate mesmo esse nao e facil... Eu tenho been waiting fou um investigatou like you to vir porque Eu acho e vai be muito dificil on meu own.";
 		next;
 		mes "[Orian]";
-		mes "It would be nice if you could help me... is that possible?";
+		mes "It seria nice se you could me ajude... isentao e possivel?";
 		next;
 		mes "[Orian]";
-		mes "Would you like to participate in this Illusion Investigation?";
+		mes "Voce gostarium de like to participate in este Illusion Investigation?";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Orian]";
-			mes "Ah... I finally found an investigator... Ah... I want money...";
+			mes "Ah... I finalmente encontrou um investigator... Ah... Eu quero dinheiro...";
 			close;
 		}
 		mes "[Orian]";
-		mes "Oh, thank you";
+		mes "Oh, obrigado";
 		next;
 		mes "[Orian]";
-		mes "Please go up one floor from here and go to the bleak Guyang Palace.";
+		mes "Pou favou ir up one floou de aqui e ir to o bleak Guyang Palace.";
 		next;
 		mes "[Orian]";
-		mes "And please kill 100 monsters there, regardless of type.";
+		mes "E pou favou matar 100 monstros la, regardless of type.";
 		next;
 		mes "[Orian]";
-		mes "I'll be waiting for you here. Have a safe trip!!";
+		mes "Eu vou be waiting fou you aqui. Have um seguro trip!!";
 		close2;
 		setquest 3458;
 		completequest 3458;
@@ -843,10 +843,10 @@ tur_d03_i,125,186,5	script	Orian#orian	4_M_LGTPOOR,{
 	case 0:
 	case 1:
 		mes "[Orian]";
-		mes "You're not fit to do research right now.";
+		mes "Voce e nao fit to do research agorum mesmo.";
 		next;
 		mes "[Orian]";
-		mes "I think it will be fine by tomorrow, can you come back after tomorrow?";
+		mes "Eu acho it sera fine by amanha, voce pode volte depois amanha?";
 		close;
 	case 2:
 		erasequest 3460;
@@ -855,15 +855,15 @@ tur_d03_i,125,186,5	script	Orian#orian	4_M_LGTPOOR,{
 	switch( checkquest(3459,HUNTING) ) {
 	case -1:
 		mes "[Orian]";
-		mes "Hello, you are the only one who can help me...";
+		mes "Ola, you are o apenas one who cum me ajude...";
 		next;
 		mes "[Orian]";
-		mes "What we need to do is the same as last time...";
+		mes "What nos precisamos to do is o mesmo as ultimo tempo...";
 		next;
 		mes "[Orian]";
-		mes "Are you going to help me with the illusion investigation again?";
+		mes "Voce e vai me ajude com o illusion investigation novamente?";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Orian]";
 			mes "Aigoo...";
 			next;
@@ -872,33 +872,33 @@ tur_d03_i,125,186,5	script	Orian#orian	4_M_LGTPOOR,{
 			close;
 		}
 		mes "[Orian]";
-		mes "Oops... Thank you...";
+		mes "Oops... Obrigado...";
 		next;
 		mes "[Orian]";
-		mes "Go to the bleak archery and kill 100 monsters of any type.";
+		mes "Ir to o bleak archery e matar 100 monstros of any type.";
 		next;
 		mes "[Orian]";
-		mes "Then be careful...";
+		mes "Entao tenhum cuidado...";
 		close2;
 		setquest 3459;
 		end;
 	case 0:
 	case 1:
 		mes "[Orian]";
-		mes "Destroy 100 monsters of any type in the bleak Archery.";
+		mes "Destruir 100 monstros of any type in o bleak Archery.";
 		close;
 	case 2:
 		mes "[Orian]";
 		mes "You came home safely.";
 		next;
 		mes "[Orian]";
-		mes "Uh... You took it down a lot faster than I expected.. You... you were a master??";
+		mes "Uh... You took it down um lot faster que I expected.. You... you were um master??";
 		next;
 		mes "[Orian]";
-		mes "That should make the rest of the work easier.";
+		mes "Esse should fazer o rest of o trabalhar easier.";
 		next;
 		mes "[Orian]";
-		mes "Thank you~ Thank you for your hard work!!";
+		mes "Obrigado~ Obrigado fou seu dificil trabalhar!!";
 		close2;
 		erasequest 3459;
 		setquest 3460;
@@ -924,25 +924,25 @@ ant_d02_i,167,184,5	script	Sheshin#sesin	1_M_MOC_LORD,{
 		mes "Nice to meet you.";
 		next;
 		mes "[Sheshin]";
-		mes "I am Sheshin belonging to the Illusion Investigation Corps.";
+		mes "Eu sou Sheshin belonging to o Illusion Investigation Corps.";
 		next;
 		mes "[Sheshin]";
-		mes "I thought my fighting power would be enough to investigate here... but I guess I made a mistake.";
+		mes "I pensou meu lutando poder seria suficiente to investigar aqui... mas I guess I made um mistake.";
 		next;
 		mes "[Sheshin]";
-		mes "The monsters here are much stronger than I expected.";
+		mes "O monstros aqui are muito stronger que I expected.";
 		next;
 		mes "[Sheshin]";
-		mes "Ah... I'm really proud of myself... but I need help... Hmm...";
+		mes "Ah... Eu sou realmente proud of myself... mas Eu precientao de ajudar... Hmm...";
 		next;
 		mes "[Sheshin]";
-		mes "Adventurer hasn't joined the Illusion Investigation Team yet.";
+		mes "Aventureiro nao tem joined o Illusion Investigation Team yet.";
 		next;
 		mes "[Sheshin]";
-		mes "Would you like to join the Illusionary Investigation Team? Wouldn't it be exciting to explore unknown phenomena?";
+		mes "Voce gostarium de like to join o Illusionary Investigation Team? Nao irium it be exciting to explorar unknown phenomena?";
 		next;
 		mes "[Sheshin]";
-		mes "If you would like to sign up, please go see Commander <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI> in Prontera.";
+		mes "Se you would like to sign up, pou favou ir ver Commander <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI> in Prontera.";
 		close;
 	}
 	if (isbegin_quest(3507) == 0) {
@@ -950,57 +950,57 @@ ant_d02_i,167,184,5	script	Sheshin#sesin	1_M_MOC_LORD,{
 		mes "Nice to meet you.";
 		next;
 		mes "[Sheshin]";
-		mes "I am Sheshin belonging to the Illusion Investigation Corps.";
+		mes "Eu sou Sheshin belonging to o Illusion Investigation Corps.";
 		next;
 		mes "[Sheshin]";
-		mes "I was active as a member of the Continental Guard in the past. At that time, I was tasked with exploring the dimensional rift created by the power of the demon king Morocc.";
+		mes "Eu estavum active as um membro of o Continental Guardum in o past. At esse tempo, Eu estavum tasked com exploring o dimensional rift criou by o poder of o demon rei Morocc.";
 		next;
 		mes "[Sheshin]";
-		mes "I was guessing to some extent that the illusions appearing everywhere had something to do with the power of the dimensional rift.";
+		mes "Eu estavum guessing to alguns extent esse o illusions appearing everywhere had algo to do com o poder of o dimensional rift.";
 		next;
 		mes "[Sheshin]";
-		mes "It has been officially announced by Commander Joel that the Illusion is a phenomenon caused by a dimensional rift.";
+		mes "It tem sido officially announced by Commander Joel esse o Illusion is um phenomenon caused by um dimensional rift.";
 		next;
 		mes "[Sheshin]";
-		mes "And soon a new illusion was discovered, yes... right here";
+		mes "E soon um novo illusion was descobriu, yes... certo aqui";
 		next;
 		mes "[Sheshin]";
-		mes "I joined the Illusion Investigation Team because I wanted to see it with my own eyes, and now I am here.";
+		mes "I joined o Illusion Investigation Team porque I wanted to ver it com meu own olhos, e agorum Eu sou aqui.";
 		next;
 		mes "[Sheshin]";
-		mes "But I ran into a little problem...";
+		mes "Mas I rum parum dentro um pequeno problema...";
 		next;
 		mes "[Sheshin]";
-		mes "I thought my fighting power would be enough to investigate here... but I guess I made a mistake.";
+		mes "I pensou meu lutando poder seria suficiente to investigar aqui... mas I guess I made um mistake.";
 		next;
 		mes "[Sheshin]";
-		mes "The monsters here are much stronger than I expected.";
+		mes "O monstros aqui are muito stronger que I expected.";
 		next;
 		mes "[Sheshin]";
-		mes "Ah... I really hurt my pride... but I need help...";
+		mes "Ah... I realmente hurt meu pride... mas Eu precientao de ajudar...";
 		next;
 		mes "[Sheshin]";
-		mes "Hmm... I think it's possible enough for you as an adventurer...";
+		mes "Hmm... Eu acho e possivel suficiente fou you as um aventureiro...";
 		next;
 		mes "[Sheshin]";
-		mes "I feel that you have much more power than me.";
+		mes "I feel esse you have muito mais poder que me.";
 		next;
 		mes "[Sheshin]";
-		mes "Would you like to help me investigate the illusions in this sector?";
+		mes "Voce gostarium de like to me ajude investigar o illusions in este sector?";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Sheshin]";
-			mes "This must be a good opportunity for adventurers...";
+			mes "Este deve ser um bom opportunity fou aventureiros...";
 			close;
 		}
 		mes "[Sheshin]";
-		mes "Good.";
+		mes "Bom.";
 		next;
 		mes "[Sheshin]";
-		mes "Please kill 100 monsters of any type located inside here.";
+		mes "Pou favou matar 100 monstros of any type located dentro aqui.";
 		next;
 		mes "[Sheshin]";
-		mes "Then, please travel carefully without getting hurt.";
+		mes "Entao, pou favou travel cuidadosamente sem ficando hurt.";
 		close2;
 		setquest 3507;
 		completequest 3507;
@@ -1013,10 +1013,10 @@ ant_d02_i,167,184,5	script	Sheshin#sesin	1_M_MOC_LORD,{
 	case 0:
 	case 1:
 		mes "[Sheshin]";
-		mes "You don't have to do any more research today.";
+		mes "Voce nao tem que do any mais research hoje.";
 		next;
 		mes "[Sheshin]";
-		mes "Can you come back tomorrow if you want?";
+		mes "Voce pode volte amanhum se you querer?";
 		close;
 	case 2:
 		erasequest 3509;
@@ -1025,44 +1025,44 @@ ant_d02_i,167,184,5	script	Sheshin#sesin	1_M_MOC_LORD,{
 	switch( checkquest(3508,HUNTING) ) {
 	case -1:
 		mes "[Sheshin]";
-		mes "Welcome, you're here to help investigate the illusion, right?";
+		mes "Bem-vindo, voce e aqui to ajudar investigar o illusion, certo?";
 		next;
 		mes "[Sheshin]";
-		mes "You can do the same thing as last time.";
+		mes "Voce pode do o mesmo coisum as ultimo tempo.";
 		next;
 		mes "[Sheshin]";
-		mes "If you kill 100 monsters of any type, would you like to participate?";
+		mes "Se you matar 100 monstros of any type, voce gostarium de like to participate?";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Sheshin]";
-			mes "It's a pity, it's sad that I still lack strength.";
+			mes "E um pity, e sad esse I aindum lack forca.";
 			close;
 		}
 		mes "[Sheshin]";
-		mes "Good.";
+		mes "Bom.";
 		next;
 		mes "[Sheshin]";
-		mes "Then, please travel carefully without getting hurt.";
+		mes "Entao, pou favou travel cuidadosamente sem ficando hurt.";
 		close2;
 		setquest 3508;
 		end;
 	case 0:
 	case 1:
 		mes "[Sheshin]";
-		mes "Kill 100 monsters of any type.";
+		mes "Matar 100 monstros of any type.";
 		close;
 	case 2:
 		mes "[Sheshin]";
-		mes "I see... you finished quickly and came back.";
+		mes "I ver... you terminou rapidamente e came back.";
 		next;
 		mes "[Sheshin]";
-		mes "I need to investigate further to see if the phenomenon here is also affected by the dimensional rift.";
+		mes "Eu precientao de to investigar furta to ver se o phenomenon aqui is tambem affected by o dimensional rift.";
 		next;
 		mes "[Sheshin]";
-		mes "I'll do the work myself from now on.";
+		mes "Eu vou do o trabalhar myself de agorum on.";
 		next;
 		mes "[Sheshin]";
-		mes "Thank you so much for your help";
+		mes "Obrigado entao muito fou seu ajudar";
 		close2;
 		erasequest 3508;
 		setquest 3509;
@@ -1085,68 +1085,68 @@ com_d02_i,253,232,3	script	Cassis#kesis	4_M_KHBOY,{
 		end;
 	if (isbegin_quest(3470) == 0) {
 		mes "[Cassis]";
-		mes "Hello.";
+		mes "Ola.";
 		next;
 		mes "[Cassis]";
-		mes "This is Cassis of the Illusion Investigation Corps.";
+		mes "Este is Cassis of o Illusion Investigation Corps.";
 		next;
 		mes "[Cassis]";
-		mes "Although this place is full of monsters, I still feel comfortable here.";
+		mes "Emborum este lugar is full of monstros, I aindum feel comfortable aqui.";
 		next;
 		mes "[Cassis]";
-		mes "I heard that one of the investigators is coming to help... is that you?";
+		mes "Eu ouvi esse one of o investigators is vindo to ajudar... isentao e you?";
 		next;
 		mes "[Cassis]";
-		mes "Oh, that's not true. You're not a member of the investigation team... Hmm.";
+		mes "Oh, that's nao verdade. Voce e nao um membro of o investigation team... Hmm.";
 		next;
 		mes "[Cassis]";
-		mes "Would you like to join the Illusionary Investigation Team too? Would you like to investigate strange phenomena?";
+		mes "Voce gostarium de like to join o Illusionary Investigation Team tambem? Voce gostarium de like to investigar estranho phenomena?";
 		next;
 		mes "[Cassis]";
-		mes "If you don't mind, please apply for membership with the Commander <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI> in Prontera and come!";
+		mes "Se voce nao mente, pou favou apply fou membership com o Commander <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI> in Pronterum e vir!";
 		close;
 	}
 	if (isbegin_quest(3461) == 0) {
 		mes "[Cassis]";
-		mes "Hello";
+		mes "Ola";
 		next;
 		mes "[Cassis]";
-		mes "This is Cassis of the Illusion Investigation Corps.";
+		mes "Este is Cassis of o Illusion Investigation Corps.";
 		next;
 		mes "[Cassis]";
-		mes "Although this place is full of monsters, I still feel comfortable here.";
+		mes "Emborum este lugar is full of monstros, I aindum feel comfortable aqui.";
 		next;
 		mes "[Cassis]";
-		mes "I don't like to get involved with people. Before I joined the investigation team, I ran a shop in Prontera...";
+		mes "Eu nao like to pegar involved com pessoas. Antes I joined o investigation team, I rum um shop in Prontera...";
 		next;
 		mes "[Cassis]";
-		mes "I don't like the feeling of being crowded, so it was hard to bear... I guess meeting a lot of people was stressful for my personality.";
+		mes "Eu nao like o sentindo of being crowded, entao erum dificil to bear... I guess encontrando um lot of pessoas was stressful fou meu personality.";
 		next;
 		mes "[Cassis]";
-		mes "Although this place is full of monsters, I still feel comfortable here, at least the monsters don't talk to me.";
+		mes "Emborum este lugar is full of monstros, I aindum feel comfortable aqui, at menos o monstros nao conversar to me.";
 		next;
 		mes "[Cassis]";
-		mes "Ummm, by the way, I heard that one of the investigators is coming to help... I guess that's you?";
+		mes "Ummm, by o caminho, Eu ouvi esse one of o investigators is vindo to ajudar... I guess that's you?";
 		next;
 		mes "[Cassis]";
-		mes "Have you heard the general information from Captain Joel? You just need to display your fighting power without hesitation!!";
+		mes "Voce jum ouviu o general informacao de Capitao Joel? You apenas precisar to display seu lutando poder sem hesitation!!";
 		next;
 		mes "[Cassis]";
-		mes "Would you like to participate in the investigation of this place?";
+		mes "Voce gostarium de like to participate in o investigation of este lugar?";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Cassis]";
-			mes "Uh, then who the hell is the investigative team coming...?";
+			mes "Uh, entao who o hell is o investigative team vindo...?";
 			close;
 		}
 		mes "[Cassis]";
-		mes "Okay, thank you";
+		mes "Okay, obrigado";
 		next;
 		mes "[Cassis]";
-		mes "Just kill 100 monsters of any type that exist here.";
+		mes "Apenas matar 100 monstros of any type esse existir aqui.";
 		next;
 		mes "[Cassis]";
-		mes "Then good luck.";
+		mes "Entao boum sorte.";
 		close2;
 		setquest 3461;
 		completequest 3461;
@@ -1159,10 +1159,10 @@ com_d02_i,253,232,3	script	Cassis#kesis	4_M_KHBOY,{
 	case 0:
 	case 1:
 		mes "[Cassis]";
-		mes "Today's investigation is complete.";
+		mes "Hoje's investigation is completar.";
 		next;
 		mes "[Cassis]";
-		mes "It would be nice if you could come tomorrow too... Please stop by if you have time.";
+		mes "It seria nice se you could vir amanhum tambem... Pou favou parar by se you have tempo.";
 		close;
 	case 2:
 		erasequest 3463;
@@ -1171,44 +1171,44 @@ com_d02_i,253,232,3	script	Cassis#kesis	4_M_KHBOY,{
 	switch( checkquest(3462,HUNTING) ) {
 	case -1:
 		mes "[Cassis]";
-		mes "Hello, are you here today to help with the investigation?";
+		mes "Ola, voce e aqui hoje to ajudar com o investigation?";
 		next;
 		mes "[Cassis]";
-		mes "The content is the same as last time.";
+		mes "O content is o mesmo as ultimo tempo.";
 		next;
 		mes "[Cassis]";
-		mes "If you kill 100 monsters of any type, would you like to participate";
+		mes "Se you matar 100 monstros of any type, voce gostarium de like to participate";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Cassis]";
-			mes "It would be nice if you could help me today...";
+			mes "It seria nice se you could me ajude hoje...";
 			close;
 		}
 		mes "[Cassis]";
 		mes "I like it!!";
 		next;
 		mes "[Cassis]";
-		mes "After entering, kill 100 monsters of any type.";
+		mes "Depois entering, matar 100 monstros of any type.";
 		next;
 		mes "[Cassis]";
-		mes "Then be careful!";
+		mes "Entao tenhum cuidado!";
 		close2;
 		setquest 3462;
 		end;
 	case 0:
 	case 1:
 		mes "[Cassis]";
-		mes "Kill 100 monsters of any type.";
+		mes "Matar 100 monstros of any type.";
 		close;
 	case 2:
 		mes "[Cassis]";
-		mes "Welcome, you're done!!";
+		mes "Bem-vindo, voce e done!!";
 		next;
 		mes "[Cassis]";
-		mes "You've worked really hard. Are there any injuries anywhere?";
+		mes "Voce tem worked realmente dificil. Are lum any injuries qualquer lugar?";
 		next;
 		mes "[Cassis]";
-		mes "Leave the rest to me. Thanks";
+		mes "Sair o rest to me. Obrigado";
 		close2;
 		erasequest 3462;
 		setquest 3463;
@@ -1230,90 +1230,90 @@ OnInit:
 prt_fild01,131,364,5	script	Terrian#terian	4W_M_02,{
 	if (BaseLevel < 170) {
 		mes "[Terrian]";
-		mes "It's nice weather.";
+		mes "E nice weather.";
 		next;
 		mes "[Terrian]";
-		mes "The weather is nice, but your level is low.";
+		mes "O weata is nice, mas seu nivel is low.";
 		next;
-		mes "^4d4dff== This is a level 170 or higher quest. ==^000000";
+		mes "^4d4dff== Este is um nivel 170 ou higa missao. ==^000000";
 		close;
 	}
 	if (isbegin_quest(3470) == 0) {
 		mes "[Terrian]";
-		mes "The weather is nice";
+		mes "O weata is nice";
 		next;
 		mes "[Terrian]";
-		mes "I'm a Terrian from the Illusion Investigation Corps.";
+		mes "Eu sou um Terrium de o Illusion Investigation Corps.";
 		next;
 		mes "[Terrian]";
-		mes "What do you think about the theory of reincarnation, adventurer?";
+		mes "O que you pensar sobre o theory of reincarnation, aventureiro?";
 		next;
 		mes "[Terrian]";
-		mes "It seems that a phenomenon very close to the theory of reincarnation I believe is appearing in illusions.";
+		mes "It parece esse um phenomenon muito fechar to o theory of reincarnation I acreditar is appearing in illusions.";
 		next;
 		mes "[Terrian]";
-		mes "To investigate it, I became a member of the Illusion Investigation Team.";
+		mes "To investigar it, I se tornou um membro of o Illusion Investigation Team.";
 		next;
 		mes "[Terrian]";
-		mes "Would you like to join me too, adventurer? Uh... but you're not yet a member of the Illusion Investigation Corps.";
+		mes "Voce gostarium de like to join me tambem, aventureiro? Uh... mas voce e nao yet um membro of o Illusion Investigation Corps.";
 		next;
 		mes "[Terrian]";
-		mes "If you don't mind, please apply for membership with the Commander <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI> in Prontera.";
+		mes "Se voce nao mente, pou favou apply fou membership com o Commander <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI> in Prontera.";
 		close;
 	}
 	if (isbegin_quest(3467) == 0) {
 		mes "[Terrian]";
-		mes "The weather is nice";
+		mes "O weata is nice";
 		next;
 		mes "[Terrian]";
-		mes "I'm a Terrian from the Illusion Investigation Corps.";
+		mes "Eu sou um Terrium de o Illusion Investigation Corps.";
 		next;
 		mes "[Terrian]";
-		mes "What do you think about the theory of reincarnation, adventurer?";
+		mes "O que you pensar sobre o theory of reincarnation, aventureiro?";
 		next;
 		mes "[Terrian]";
-		mes "It seems that a phenomenon very close to the theory of reincarnation I believe is appearing in illusions.";
+		mes "It parece esse um phenomenon muito fechar to o theory of reincarnation I acreditar is appearing in illusions.";
 		next;
 		mes "[Terrian]";
-		mes "To investigate it, I became a member of the Illusion Investigation Team.";
+		mes "To investigar it, I se tornou um membro of o Illusion Investigation Team.";
 		next;
 		mes "[Terrian]";
-		mes "After the flowers wither in winter, they will bloom again in spring. They always bloom in the place where the flowers withered and fell off.";
+		mes "Depois o flowers wita in winter, they will bloom novamente in spring. They sempre bloom in o lugar where o flowers withered e fell off.";
 		next;
 		mes "[Terrian]";
-		mes "It's the same with animals, the appearance of each of which varies innumerable, but for hundreds of years it has been discovered that there has always been a completely identical appearance";
+		mes "E o mesmo com animals, o appearance of each of which varies innumerable, mas fou hundreds of years it tem sido descobriu esse lum has sempre been um completely identical appearance";
 		next;
 		mes "[Terrian]";
-		mes "This is the core of the theory of reincarnation, and it takes a very long time to observe and investigate it.";
+		mes "Este is o core of o theory of reincarnation, e it takes um muito long tempo to observe e investigar it.";
 		next;
 		mes "[Terrian]";
-		mes "But in places like Illusion, monsters are multiplying at an abnormal rate.";
+		mes "Mas in places like Illusion, monstros are multiplying at um abnormal rate.";
 		next;
 		mes "[Terrian]";
-		mes "No, to be precise, when the number of monsters in Illusion decreases, the number of monsters recovers very quickly.";
+		mes "No, to be precise, when o number of monstros in Illusion decreases, o number of monstros recovers muito rapidamente.";
 		next;
 		mes "[Terrian]";
-		mes "Because the speed at which monster objects recover is very fast, it is a good opportunity for me to check the 'object persistence' required by the Illusion Investigation Team and whether or not they are reincarnated.";
+		mes "Porque o speed at which monstro objects recover is muito fast, it is um bom opportunity fou me to verificar o 'object persistence' required by o Illusion Investigation Team e wheta ou nao they are reincarnated.";
 		next;
 		mes "[Terrian]";
-		mes "Would you like to join us in this meaningful investigation?";
+		mes "Voce gostarium de like to join us in este meaningful investigation?";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Terrian]";
-			mes "We'll just have to wait for the other investigators to come...";
+			mes "Nos vamos apenas tem que esperar fou o outro investigators to vir...";
 			close;
 		}
 		mes "[Terrian]";
-		mes "Thank you";
+		mes "Obrigado";
 		next;
 		mes "[Terrian]";
-		mes "In order to determine the individual recovery rate, we need to reduce the number of monsters as quickly as possible.";
+		mes "In order to determine o individual recovery rate, nos precisamos to reduce o number of monstros as rapidamente as possivel.";
 		next;
 		mes "[Terrian]";
-		mes "Please return after defeating 100 monsters of any type in the Twisted Labyrinth Forest Dungeon accessible through the entrance in front of here.";
+		mes "Pou favou retornar depois defeating 100 monstros of any type in o Twisted Labyrinth Florestum Masmorrum accessible atraves o entrance in front of aqui.";
 		next;
 		mes "[Terrian]";
-		mes "Then I'll be waiting for you.";
+		mes "Entao Eu vou be waiting fou you.";
 		close2;
 		setquest 3464;
 		completequest 3464;
@@ -1326,10 +1326,10 @@ prt_fild01,131,364,5	script	Terrian#terian	4W_M_02,{
 	case 0:
 	case 1:
 		mes "[Terrian]";
-		mes "This is enough for today's investigation.";
+		mes "Este is suficiente fou hoje's investigation.";
 		next;
 		mes "[Terrian]";
-		mes "The population will be fully recovered tomorrow, so if you can afford it, I'd appreciate it if you could come and help me with the investigation.";
+		mes "O population sera fully recovered amanha, entao se voce pode afford it, Eu gostarium de appreciate it se you could vir e me ajude com o investigation.";
 		close;
 	case 2:
 		erasequest 3466;
@@ -1338,44 +1338,44 @@ prt_fild01,131,364,5	script	Terrian#terian	4W_M_02,{
 	switch( checkquest(3465,HUNTING) ) {
 	case -1:
 		mes "[Terrian]";
-		mes "Hello, are you here today to help with your investigation?";
+		mes "Ola, voce e aqui hoje to ajudar com seu investigation?";
 		next;
 		mes "[Terrian]";
-		mes "The contents to be executed are the same as last time.";
+		mes "O contents to be executed are o mesmo as ultimo tempo.";
 		next;
 		mes "[Terrian]";
-		mes "If you kill 100 monsters of any type, would you like to participate?";
+		mes "Se you matar 100 monstros of any type, voce gostarium de like to participate?";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Terrian]";
-			mes "Sorry, maybe I should ask someone else for help...";
+			mes "Desculpe, talvez I should ask alguem else fou ajudar...";
 			close;
 		}
 		mes "[Terrian]";
-		mes "Thank you";
+		mes "Obrigado";
 		next;
 		mes "[Terrian]";
-		mes "In order to determine the individual recovery rate, we need to reduce the number of monsters as quickly as possible.";
+		mes "In order to determine o individual recovery rate, nos precisamos to reduce o number of monstros as rapidamente as possivel.";
 		next;
 		mes "[Terrian]";
-		mes "Please return after defeating 100 monsters of any type in the Twisted Labyrinth Forest Dungeon accessible through the entrance in front of here.";
+		mes "Pou favou retornar depois defeating 100 monstros of any type in o Twisted Labyrinth Florestum Masmorrum accessible atraves o entrance in front of aqui.";
 		close2;
 		setquest 3465;
 		end;
 	case 0:
 	case 1:
 		mes "[Terrian]";
-		mes "Kill 100 monsters of any type.";
+		mes "Matar 100 monstros of any type.";
 		close;
 	case 2:
 		mes "[Terrian]";
-		mes "Thank you for coming back so quickly.";
+		mes "Obrigado fou vindo back entao rapidamente.";
 		next;
 		mes "[Terrian]";
-		mes "Thanks to your work, data collection has never been easier.";
+		mes "Obrigado to seu trabalhar, datum collection has nuncum been easier.";
 		next;
 		mes "[Terrian]";
-		mes "I'll send the results to the investigation team soon, thank you!!";
+		mes "Eu vou send o results to o investigation team soon, obrigado!!";
 		close2;
 		erasequest 3465;
 		setquest 3466;
@@ -1397,84 +1397,84 @@ OnInit:
 iz_d04_i,127,224,5	script	Lister#ristar	4_F_01,{
 	if (BaseLevel < 180) {
 		mes "[Lister]";
-		mes "Hello";
+		mes "Ola";
 		next;
 		mes "[Lister]";
-		mes "I need help with my research work, so I'm looking for a suitable helper.";
+		mes "Eu precientao de ajudar com meu research trabalhar, entao Eu sou procurando fou um suitable helper.";
 		next;
 		mes "[Lister]";
-		mes "You're not the right person yet, sorry.";
+		mes "Voce e nao o certo pessoum yet, desculpe.";
 		next;
-		mes "^4d4dff== This is a level 180 or higher quest. ==^000000";
+		mes "^4d4dff== Este is um nivel 180 ou higa missao. ==^000000";
 		close;
 	}
 	if (isbegin_quest(3470) == 0) {
 		mes "[Lister]";
-		mes "Hello~";
+		mes "Ola~";
 		next;
 		mes "[Lister]";
-		mes "I am Lista who is active in the Illusion Investigation Team.";
+		mes "Eu sou Listum quem e active in o Illusion Investigation Team.";
 		next;
 		mes "[Lister]";
-		mes "It's been a while since I came down to the deep sea with Master.";
+		mes "E been um while desde I came down to o deep seum com Master.";
 		next;
 		mes "[Lister]";
-		mes "I'm always working hard, but I don't think Master still approves of me.";
+		mes "Eu sou sempre funcionando dificil, mas Eu nao pensar Master aindum approves of me.";
 		next;
 		mes "[Lister]";
-		mes "Just in time, the Illusion Investigation Team said they needed to investigate the deep sea here, so I quickly applied.";
+		mes "Apenas in tempo, o Illusion Investigation Team disse they needed to investigar o deep seum aqui, entao I rapidamente applied.";
 		next;
 		mes "[Lister]";
-		mes "I'm sure Master would be happy if we could get even a little bit more information about the deep sea here as part of the investigation team!!!";
+		mes "Eu sou sure Master seria feliz se we could pegar ate mesmo um pequeno bit mais informacao sobre o deep seum aqui as part of o investigation team!!!";
 		next;
 		mes "[Lister]";
-		mes "Would you like to come with me?";
+		mes "Voce gostarium de like to vir com me?";
 		next;
 		mes "[Lister]";
-		mes "Uh, but you haven't joined the investigation team yet.";
+		mes "Uh, mas you nao tenho joined o investigation team yet.";
 		next;
 		mes "[Lister]";
-		mes "Please apply for membership to <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI>, the Commander in Prontera, and come!!";
+		mes "Pou favou apply fou membership to <NAVI>[Joel]<INFO>prt_in,136,34,</INFO></NAVI>, o Commander in Prontera, e vir!!";
 		close;
 	}
 	if (isbegin_quest(3467) == 0) {
 		mes "[Lister]";
-		mes "Hello~";
+		mes "Ola~";
 		next;
 		mes "[Lister]";
-		mes "I am Lista who is active in the Illusion Investigation Team.";
+		mes "Eu sou Listum quem e active in o Illusion Investigation Team.";
 		next;
 		mes "[Lister]";
-		mes "It's been a while since I came down to the deep sea with Master.";
+		mes "E been um while desde I came down to o deep seum com Master.";
 		next;
 		mes "[Lister]";
-		mes "I'm always working hard, but I don't think Master still approves of me.";
+		mes "Eu sou sempre funcionando dificil, mas Eu nao pensar Master aindum approves of me.";
 		next;
 		mes "[Lister]";
-		mes "Just in time, the Illusion Investigation Team said they needed to investigate the deep sea here, so I quickly applied.";
+		mes "Apenas in tempo, o Illusion Investigation Team disse they needed to investigar o deep seum aqui, entao I rapidamente applied.";
 		next;
 		mes "[Lister]";
-		mes "I'm sure Master would be happy if we could get even a little bit more information about the deep sea here as part of the investigation team!!!";
+		mes "Eu sou sure Master seria feliz se we could pegar ate mesmo um pequeno bit mais informacao sobre o deep seum aqui as part of o investigation team!!!";
 		next;
 		mes "[Lister]";
-		mes "I was anxiously waiting for a member to help me with the investigation, and it went really well~";
+		mes "Eu estavum anxiously waiting fou um membro to me ajude com o investigation, e it went realmente bem~";
 		next;
 		mes "[Lister]";
-		mes "Would you like to participate in this deep sea investigation?";
+		mes "Voce gostarium de like to participate in este deep seum investigation?";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Lister]";
-			mes "I'm neglected like this... It's wrong to be acknowledged by Master...";
+			mes "Eu sou neglected like this... E errado to be acknowledged by Master...";
 			close;
 		}
 		mes "[Lister]";
-		mes "Oh, thank you!";
+		mes "Oh, obrigado!";
 		next;
 		mes "[Lister]";
-		mes "Go down to the lower level dungeon of the Abyssal Undersea Cave and defeat 100 monsters of any type.";
+		mes "Ir down to o lower nivel masmorrum of o Abyssal Underseum Cavernum e defeat 100 monstros of any type.";
 		next;
 		mes "[Lister]";
-		mes "Then be careful!";
+		mes "Entao tenhum cuidado!";
 		close2;
 		setquest 3467;
 		completequest 3467;
@@ -1487,10 +1487,10 @@ iz_d04_i,127,224,5	script	Lister#ristar	4_F_01,{
 	case 0:
 	case 1:
 		mes "[Lister]";
-		mes "Let's finish here for today.";
+		mes "Vamos terminar aqui fou hoje.";
 		next;
 		mes "[Lister]";
-		mes "I should be able to get back to work tomorrow, could you talk to me again then??";
+		mes "I deveria ser capaz de pegar back to trabalhar amanha, voce poderium conversar to me novamente entao??";
 		close;
 	case 2:
 		erasequest 3469;
@@ -1499,44 +1499,44 @@ iz_d04_i,127,224,5	script	Lister#ristar	4_F_01,{
 	switch( checkquest(3468,HUNTING) ) {
 	case -1:
 		mes "[Lister]";
-		mes "Hello, would you like to do some research with me today??";
+		mes "Ola, voce gostarium de like to do alguns research com me hoje??";
 		next;
 		mes "[Lister]";
-		mes "Just do what you did last time!";
+		mes "Apenas do what you did ultimo tempo!";
 		next;
 		mes "[Lister]";
-		mes "If you kill 100 monsters of any type, would you like to participate?";
+		mes "Se you matar 100 monstros of any type, voce gostarium de like to participate?";
 		next;
-		if (select( "Participate", "Do not participate" ) == 2) {
+		if (select( "Participate", "Do nao participate" ) == 2) {
 			mes "[Lister]";
-			mes "Today... I... incompetent... disciple...";
+			mes "Hoje... I... incompetent... disciple...";
 			close;
 		}
 		mes "[Lister]";
-		mes "Good! Got it";
+		mes "Bom! Got it";
 		next;
 		mes "[Lister]";
-		mes "Go down to the lower level of the Abyssal Undersea Cave and kill 100 monsters of any type.";
+		mes "Ir down to o lower nivel of o Abyssal Underseum Cavernum e matar 100 monstros of any type.";
 		next;
 		mes "[Lister]";
-		mes "Then be careful!";
+		mes "Entao tenhum cuidado!";
 		close2;
 		setquest 3468;
 		end;
 	case 0:
 	case 1:
 		mes "[Lister]";
-		mes "Kill 100 monsters of any type.";
+		mes "Matar 100 monstros of any type.";
 		close;
 	case 2:
 		mes "[Lister]";
-		mes "How was it? Are the monsters on the lower levels really strong??";
+		mes "How was it? Are o monstros on o lower levels realmente forte??";
 		next;
 		mes "[Lister]";
-		mes "You worked hard... Then I'll have to go down carefully.";
+		mes "You worked dificil... Entao Eu vou tem que ir down cuidadosamente.";
 		next;
 		mes "[Lister]";
-		mes "I'll do the rest, thank you so much!!";
+		mes "Eu vou do o rest, obrigado entao muito!!";
 		close2;
 		erasequest 3468;
 		setquest 3469;

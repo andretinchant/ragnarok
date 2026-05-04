@@ -400,7 +400,7 @@ alberta_in,28,145,4	script	Grampa	120,{
 	mes "But my soul still burns with youthful vigor! It's just... This old body can't keep up anymore... *Hack! Wheeeeze~*";
 	next;
 	if (countitem(1030) > 9) {
-		switch(select("Show him Tiger's Footskin.:Exchange it with Boys Cap.:Cancel")) {
+		switch(select("Show him Tiger's Footskin.:Exchange it with Boys Cap.:Cancelar")) {
 		case 1:
 			mes "[Grampa]";
 			mes "Ohhh~ !!";
@@ -434,7 +434,7 @@ alberta_in,28,145,4	script	Grampa	120,{
 		}
 	} 
 	else {
-		switch(select("Talk:Cancel")) {
+		switch(select("Talk:Cancelar")) {
 		case 1:
 			mes "[Grampa]";
 			mes "Listen well...";
@@ -1194,7 +1194,7 @@ alberta_in,23,104,4	script	Grandpa Turtle#tur	120,{
 			mes "[Gotanblue]";
 			mes "If you wish for me to guide you there, I will charge you 10,000 zeny. I'm the only navigator that can guide you there and back safely.";
 			next;
-			if (select("Turtle island -> 10000 zeny:Cancel") == 1) {
+			if (select("Turtle island -> 10000 zeny:Cancelar") == 1) {
 				if (Zeny > 9999) {
 					mes "[Gotanblue]";
 					mes "Alright!!";

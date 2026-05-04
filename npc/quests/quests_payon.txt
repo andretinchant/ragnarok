@@ -32,7 +32,7 @@ payon_in01,99,72,4	script	Granny	103,{
 		mes "I wish I could make some clothing for my grandchildren for the festival season...";
 		next;
 		mes "[Granny]";
-		mes "Oh! Would you give me your ^3355FFSkirt of Virgin^000000? I'd need four of them. Please, I'm begging you.";
+		mes "Oh! Would you give me your ^3355FFSkirt of Virgin^000000? I'd need four deles. Please, I'm begging you.";
 		next;
 		switch(select("Alright.:No way!")) {
 		case 1:
@@ -132,7 +132,7 @@ payon_in02,25,71,4	script	Boy	86,{
 		mes "*Huk*";
 		mes "Now even my eyes have gone mad!! Why do these bugs suddenly seem so cute?! Nooooooo~!!!";
 		next;
-		switch(select("Show Ora Ora:Give Ora Ora:Cancel")) {
+		switch(select("Show Ora Ora:Give Ora Ora:Cancelar")) {
 		case 1:
 			mes "[Young Man]";
 			mes "Oooooohhhh!!!";
@@ -183,7 +183,7 @@ payon_in02,25,71,4	script	Boy	86,{
 		mes "I can't take it any more!";
 		mes "You little stinky filthy bastards!";
 		next;
-		switch(select("Continue:Cancel")) {
+		switch(select("Continue:Cancelar")) {
 		case 1:
 			mes "[Young Man]";
 			mes "Oh man...";

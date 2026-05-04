@@ -1,0 +1,10 @@
+//===== rAthena Script =======================================
+//= Spawns customizados - prt_fild08
+//===== Description: =========================================
+//= 100 de cada monstro para a quest do Professor de Caca.
+//============================================================
+
+prt_fild08,0,0,0,0	monster	Poring	1002,100,60000,60000
+prt_fild08,0,0,0,0	monster	Fabre	1007,100,60000,60000
+prt_fild08,0,0,0,0	monster	Lunatic	1063,100,60000,60000
+prt_fild08,0,0,0,0	monster	Willow	1010,100,60000,60000

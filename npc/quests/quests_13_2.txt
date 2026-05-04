@@ -71,7 +71,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 		mes "Cat Trading's available services are as followed.";
 		mes "For additional services, please consult Agent Gyaruk.";
 		next;
-		switch(select("Save your location:Cancel")) {
+		switch(select("Save your location:Cancelar")) {
 		case 1:
 			savepoint "mid_camp",62,127,1,1;
 			mes "[Cat Paw Agent]";
@@ -88,7 +88,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 		mes "Cat Trading's available services are as followed.";
 		mes "For additional services, please consult Agent Gyaruk.";
 		next;
-		switch(select("Save your location:Use Storage:Cancel")) {
+		switch(select("Save your location:Use Storage:Cancelar")) {
 		case 1:
 			savepoint "mid_camp",62,127,1,1;
 			mes "[Cat Paw Agent]";
@@ -132,7 +132,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 		mes "Cat Trading's available services are as followed.";
 		mes "For additional services, please consult Agent Gyaruk.";
 		next;
-		switch(select("Save your location:Use Storage:Use Cat Warp (Midgard):Cancel")) {
+		switch(select("Save your location:Use Storage:Use Cat Warp (Midgard):Cancelar")) {
 		case 1:
 			savepoint "mid_camp",62,127,1,1;
 			mes "[Cat Paw Agent]";
@@ -173,20 +173,20 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 			mes "Please remember, you can't come back easily once you move to Midgard.";
 			next;
 			if ((ep13_yong1 > 39) && (ep13_yong1 < 50)) {
-				switch(select("Prontera -> 5500z:Cancel")) {
+				switch(select("Prontera -> 5500z:Cancelar")) {
 					case 1: Catwarp(5500,2);
 					case 2: close;
 				}
 			}
 			else if ((ep13_yong1 > 49) && (ep13_yong1 < 60)) {
-				switch(select("Alberta -> 5500z:Prontera -> 5500z:Cancel")) {
+				switch(select("Alberta -> 5500z:Prontera -> 5500z:Cancelar")) {
 					case 1: Catwarp(5500,1);
 					case 2: Catwarp(5500,2);
 					case 3: close;
 				}
 			}
 			else if ((ep13_yong1 > 59) && (ep13_yong1 < 70)) {
-				switch(select("Alberta -> 5025z:Prontera -> 5025z:Izlude -> 5025z:Cancel")) {
+				switch(select("Alberta -> 5025z:Prontera -> 5025z:Izlude -> 5025z:Cancelar")) {
 					case 1: Catwarp(5025,1);
 					case 2: Catwarp(5025,2);
 					case 3: Catwarp(5025,3);
@@ -194,7 +194,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 				}
 			}
 			else if ((ep13_yong1 > 69) && (ep13_yong1 < 80)) {
-				switch(select("Alberta -> 5025z:Prontera -> 5025z:Izlude -> 5025z:Geffen -> 5025z:Cancel")) {
+				switch(select("Alberta -> 5025z:Prontera -> 5025z:Izlude -> 5025z:Geffen -> 5025z:Cancelar")) {
 					case 1: Catwarp(5025,1);
 					case 2: Catwarp(5025,2);
 					case 3: Catwarp(5025,3);
@@ -203,7 +203,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 				}
 			}
 			else if ((ep13_yong1 > 79) && (ep13_yong1 < 90)) {
-				switch(select("Alberta -> 4765z:Prontera -> 4765z:Izlude -> 4765z:Geffen -> 4765z:Payon -> 4765z:Cancel")) {
+				switch(select("Alberta -> 4765z:Prontera -> 4765z:Izlude -> 4765z:Geffen -> 4765z:Payon -> 4765z:Cancelar")) {
 					case 1: Catwarp(4765,1);
 					case 2: Catwarp(4765,2);
 					case 3: Catwarp(4765,3);
@@ -213,7 +213,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 				}
 			}
 			else if ((ep13_yong1 > 89) && (ep13_yong1 < 100)) {
-				switch(select("Alberta -> 4765z:Prontera -> 4765z:Izlude -> 4765z:Geffen -> 4765z:Payon -> 4765z:Morocc -> 4765z:Cancel")) {
+				switch(select("Alberta -> 4765z:Prontera -> 4765z:Izlude -> 4765z:Geffen -> 4765z:Payon -> 4765z:Morocc -> 4765z:Cancelar")) {
 					case 1: Catwarp(4765,1);
 					case 2: Catwarp(4765,2);
 					case 3: Catwarp(4765,3);
@@ -224,7 +224,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 				}
 			}
 			else if (ep13_yong1 > 99) {
-				switch(select("Alberta -> 4590z:Prontera -> 4590z:Izlude -> 4590z:Geffen -> 4590z:Payon -> 4590z:Morocc -> 4590z:Al De Baran -> 4590z:Cancel")) {
+				switch(select("Alberta -> 4590z:Prontera -> 4590z:Izlude -> 4590z:Geffen -> 4590z:Payon -> 4590z:Morocc -> 4590z:Al De Baran -> 4590z:Cancelar")) {
 					case 1: Catwarp(4590,1);
 					case 2: Catwarp(4590,2);
 					case 3: Catwarp(4590,3);
@@ -254,7 +254,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 		mes "Cat Trading's available services are as followed.";
 		mes "For additional services, please consult Agent Gyaruk.";
 		next;
-		switch(select("Save your location:Use Storage:Use Cat Warp (Midgard):Use Cat Warp (Jottunheim):Cancel")) {
+		switch(select("Save your location:Use Storage:Use Cat Warp (Midgard):Use Cat Warp (Jottunheim):Cancelar")) {
 		case 1:
 			savepoint "mid_camp",62,127,1,1;
 			mes "[Cat Paw Agent]";
@@ -295,7 +295,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 			mes "Please remember, you can't come back easily once you move to Midgard.";
 			next;
 			if ((ep13_yong1 > 99) && (ep13_yong1 < 200)) {
-				switch(select("Alberta -> 4590z:Prontera -> 4590z:Izlude -> 4590z:Geffen -> 4590z:Payon -> 4590z:Morocc -> 4590z:Al De Baran -> 4590z:Cancel")) {
+				switch(select("Alberta -> 4590z:Prontera -> 4590z:Izlude -> 4590z:Geffen -> 4590z:Payon -> 4590z:Morocc -> 4590z:Al De Baran -> 4590z:Cancelar")) {
 					case 1: Catwarp(4590,1);
 					case 2: Catwarp(4590,2);
 					case 3: Catwarp(4590,3);
@@ -307,7 +307,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 				}
 			}
 			else if ((ep13_yong1 > 199) && (ep13_yong1 < 250)) {
-				switch(select("Alberta -> 4170z:Prontera -> 4170z:Izlude -> 4170z:Geffen -> 4170z:Payon -> 4170z:Morocc -> 4170z:Al De Baran -> 4170z:Juno -> 4170z:Cancel")) {
+				switch(select("Alberta -> 4170z:Prontera -> 4170z:Izlude -> 4170z:Geffen -> 4170z:Payon -> 4170z:Morocc -> 4170z:Al De Baran -> 4170z:Juno -> 4170z:Cancelar")) {
 					case 1: Catwarp(4170,1);
 					case 2: Catwarp(4170,2);
 					case 3: Catwarp(4170,3);
@@ -321,7 +321,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 				close;
 			}
 			else if ((ep13_yong1 > 249) && (ep13_yong1 < 300)) {
-				switch(select("Alberta -> 4025z:Prontera -> 4025z:Izlude -> 4025z:Geffen -> 4025z:Payon -> 4025z:Morocc -> 4025z:Al De Baran -> 4025z:Juno -> 4025z:Einbroch -> 4025z:Cancel")) {
+				switch(select("Alberta -> 4025z:Prontera -> 4025z:Izlude -> 4025z:Geffen -> 4025z:Payon -> 4025z:Morocc -> 4025z:Al De Baran -> 4025z:Juno -> 4025z:Einbroch -> 4025z:Cancelar")) {
 					case 1: Catwarp(4025,1);
 					case 2: Catwarp(4025,2);
 					case 3: Catwarp(4025,3);
@@ -336,7 +336,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 				close;
 			}
 			else if (ep13_yong1 > 299) {
-				switch(select("Alberta -> 3970z:Prontera -> 3970z:Izlude -> 3970z:Geffen -> 3970z:Payon -> 3970z:Morocc -> 3970z:Al De Baran -> 3970z:Juno -> 3970z:Einbroch -> 3970z:Lighthalzen -> 3970z:Cancel")) {
+				switch(select("Alberta -> 3970z:Prontera -> 3970z:Izlude -> 3970z:Geffen -> 3970z:Payon -> 3970z:Morocc -> 3970z:Al De Baran -> 3970z:Juno -> 3970z:Einbroch -> 3970z:Lighthalzen -> 3970z:Cancelar")) {
 					case 1: Catwarp(3970,1);
 					case 2: Catwarp(3970,2);
 					case 3: Catwarp(3970,3);
@@ -360,7 +360,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 				close;
 			}
 		case 4:
-			if (strnpcinfo(2) == "spl") switch(select("Alliance Forces Post -> 5500z:Manuk Camp -> 7500z:Cancel")) {
+			if (strnpcinfo(2) == "spl") switch(select("Alliance Forces Post -> 5500z:Manuk Camp -> 7500z:Cancelar")) {
 				case 1: Catwarp(5500,13);
 				case 2: Catwarp(5500,12);
 				case 3:
@@ -368,7 +368,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 					mes "Thank you for using our service.";
 					close;
 				}
-			else switch(select("Alliance Forces Post -> 5500z:Splendide Camp -> 7500z:Cancel")) {
+			else switch(select("Alliance Forces Post -> 5500z:Splendide Camp -> 7500z:Cancelar")) {
 				case 1: Catwarp(5500,13);
 				case 2: Catwarp(5500,11);
 				case 3:
@@ -855,7 +855,7 @@ spl_in01,32,306,3	script	Splendide Guard#ep13md01	447,2,2,{
 			mes "You should be able to find some Yggdrasilberries there.";
 			next;
 			mes "[Arc]";
-			mes "You will need at least 6~7 of them...";
+			mes "You will need at least 6~7 deles...";
 			mes ".... .. I hope she is safe..";
 			next;
 			mes "[Arc]";
@@ -1691,7 +1691,7 @@ man_in01,175,59,5	script	Snorren#ep13_13	454,{
 				mes "This is where people who break the rules are kept overnight.";
 				next;
 				mes "[Snorren]";
-				mes "Oh. I'm not one of them.";
+				mes "Oh. I'm not one deles.";
 				mes "I just have some business here.";
 				mes "Snorren is a good Sapha.";
 				close;
@@ -2497,7 +2497,7 @@ spl_in02,236,92,5	script	Arc#ep13md_l02	447,{
 			else {
 				mes "[Terra]";
 				mes "I'm sorry...";
-				mes "My body is not fully recovered yet...";
+				mes "My body is not fully recovered ainda...";
 			}
 			close;
 		}
@@ -3699,7 +3699,7 @@ mid_camp,197,237,3	script	Schwarzwald Mechanic#1	869,{
 				mes "Since this electric signal is same as the signal used by our body's nerve system, it will enable us to understand and use the language fluently.";
 				next;
 				mes "[Mechanic Engineer Dorance]";
-				mes "Once this translator gets popularized, it'd be just a matter of time for us to advance into the other world. Well, the problem is...we don't have enough quantity yet...";
+				mes "Once this translator gets popularized, it'd be just a matter of time for us to advance into the other world. Well, the problem is...we don't have enough quantity ainda...";
 				next;
 				mes "[Mechanic Engineer Dorance]";
 				mes "Hmm...";
@@ -6564,7 +6564,7 @@ mid_camp,283,198,5	script	Bazett Teablack#ep13bs	883,{
 		mes "[Bazett]";
 		mes "Oh! You're done with the investigation?";
 		next;
-		switch(select("Yes.:Not yet...")) {
+		switch(select("Yes.:Not ainda...")) {
 		case 1:
 			if (countitem(6074) < 1) {
 				mes "[Bazett]";
@@ -7316,7 +7316,7 @@ nyd_dun02,1,1,0	script	ep13_nd2f_mng	844,{
 	if (callfunc("F_GM_NPC",1854,0) == 1) {
 		mes "Reset Control devices?";
 		next;
-		switch(select("Yes:No")) {
+		switch(select("Sim:Nao")) {
 		case 1:
 			donpcevent "ep13_nd2f_mng::OnReset";
 			set $@08_ep13nydun02_in,0;

@@ -5,24 +5,24 @@
 //===== Changelogs: ==========================================
 //= 1.0 First Version. [JohnnyPlayy, Pokye]
 //============================================================
- 
+
 //= Gemstone Bagger
 //============================================================
 -	script	#GemstoneBagger	HIDDEN_NPC,{
 	mes "[Gemstone Bagger]";
-	mes "We pack gemstones in bags in an easy to find way.";
-	mes "What would you like to do?";
+	mes "Nos embalamos pedras preciosas em sacolas de forma facil de encontrar.";
+	mes "O que voce gostaria de fazer?";
 	next;
-	switch(select("Exchange Gemstones:Cancel")) {
+	switch(select("Trocar Pedras Preciosas:Cancelar")) {
 	case 1:
 		mes "[Gemstone Bagger]";
-		mes "I will prepare a bag for gemstones.";
+		mes "Vou preparar uma sacola para pedras preciosas.";
 		close2;
 		callshop "Gemstone_Bagger";
 		break;
 	case 2:
 		mes "[Gemstone Bagger]";
-		mes "Come back if you need help.";
+		mes "Volte se precisar de ajuda.";
 		close;
 	}
 }

@@ -21,58 +21,58 @@
 -	script	::Aibakthing_ayothaya	-1,{
 	mes "[Aibakthing]";
 	mes "Hoo! Hah! Hoo! Hah!";
-	mes "Let me take you away to";
-	mes "a distant spiritual place,";
-	mes "a land of exotic mystery,";
-	mes "my hometown Ayothaya!";
+	mes "Deixe-me levar voce para";
+	mes "um lugar espiritual distante,";
+	mes "uma terra de misterio exotico,";
+	mes "minha cidade natal Ayothaya!";
 	next;
-	switch(select("About Ayothaya.:Go to Ayothaya.:Cancel.")) {
+	switch(select("Sobre Ayothaya.:Ir para Ayothaya.:Cancelar.")) {
 	case 1:
 		mes "[Aibakthing]";
-		mes "We Ayothayans are a pious people who value peace and sincerity. We endeavor to lead simple, yet noble, lives in harmony with nature.";
+		mes "Nos de Ayothaya somos um povo piedoso que valoriza a paz e a sinceridade. Nos esforçamos para levar vidas simples, porem nobres, em harmonia com a natureza.";
 		next;
 		mes "[Aibakthing]";
-		mes "Our traditional cuisine is world famous. It's no surprise when we serve dishes like Tom Yum Goong, made of Shrimp, Lemon and Chillies, which has a tantalizing aroma and flavor beyond imagining.";
+		mes "Nossa culinaria tradicional e famosa mundialmente. Nao e surpresa quando servimos pratos como Tom Yum Goong, feito de Camarao, Limao e Pimenta, que tem um aroma e sabor tentadores alem da imaginacao.";
 		next;
 		mes "[Aibakthing]";
-		mes "For those who crave adventure, there is an age old story about the Sa-mhing Tiger, an evil creature that haunts our temple ruins.";
+		mes "Para aqueles que desejam aventura, ha uma historia antiga sobre o Tigre Sa-mhing, uma criatura maligna que assombra as ruinas do nosso templo.";
 		next;
 		mes "[Aibakthing]";
 		mes "Hoo! Hahh! Hoo! Hahh!";
-		mes "No man alive can resist the";
-		mes "call of this beautiful land.";
-		mes "Midgardians are";
-		mes "always welcome!";
+		mes "Nenhum homem vivo pode resistir ao";
+		mes "chamado desta bela terra.";
+		mes "Midgardianos sao";
+		mes "sempre bem-vindos!";
 		close;
 	case 2:
 		mes "[Aibakthing]";
-		mes "Ah, you must pay 10,000 Zeny";
-		mes "if you wish to visit Ayothaya.";
-		mes "If you're ready, we can leave";
-		mes "right now~";
+		mes "Ah, voce deve pagar 10.000 Zeny";
+		mes "se deseja visitar Ayothaya.";
+		mes "Se estiver pronto, podemos partir";
+		mes "agora mesmo~";
 		next;
-		if (select("I'm ready, let's go!:No.") == 1) {
+		if (select("Estou pronto, vamos!:Nao.") == 1) {
 			if (Zeny > 9999) {
 				mes "[Aibakthing]";
 				mes "Hoo! Hah! Hoo! Hah!";
-				mes "Let us be off! Back to my";
-				mes "beautiful Ayothaya!";
+				mes "Vamos la! De volta a minha";
+				mes "bela Ayothaya!";
 				close2;
 				set Zeny, Zeny-10000;
 				warp "ayothaya",149,71;
 				end;
 			}
 			mes "[Aibakthing]";
-			mes "I am sorry, but you do not have the 10,000 Zeny to travel to Ayothaya. Such a price is nothing compared to the experiences that await you!";
+			mes "Sinto muito, mas voce nao tem os 10.000 Zeny para viajar ate Ayothaya. Esse preco nao e nada comparado as experiencias que te esperam!";
 			close;
 		}
 	case 3:
 		mes "[Aibakthing]";
-		mes "Have you ever dreamed";
-		mes "of a beautiful place filled";
-		mes "with spiritual serenity? You";
-		mes "must have been dreaming";
-		mes "of Ayothaya, my friend.";
+		mes "Voce ja sonhou";
+		mes "com um lugar lindo cheio";
+		mes "de serenidade espiritual? Voce";
+		mes "deve ter sonhado";
+		mes "com Ayothaya, meu amigo.";
 		close;
 	}
 }
@@ -80,11 +80,11 @@
 ayothaya,152,68,1	script	Aibakthing#ayo2	843,{
 	mes "[Aibakthing]";
 	mes "Hoo! Hah! Hmm! Hah!";
-	mes "So, how did you like Ayothaya? Did you get a chance to try Tom Yum Goong? When you're ready, I shall take you back home.";
+	mes "Entao, o que achou de Ayothaya? Teve a chance de experimentar Tom Yum Goong? Quando estiver pronto, eu te levo de volta pra casa.";
 	next;
-	if (select("Go back to Alberta.:Cancel.") == 1) {
+	if (select("Voltar para Alberta.:Cancelar.") == 1) {
 		mes "[Aibakthing]";
-		mes "You will be welcome to come back whenever you please. I hope that we will see each other again sometime soon. Thank you~";
+		mes "Voce sera bem-vindo para voltar quando quiser. Espero que nos vejamos novamente em breve. Obrigado~";
 		close2;
 		if (checkre(0))
 			warp "alberta",245,87;
@@ -93,8 +93,8 @@ ayothaya,152,68,1	script	Aibakthing#ayo2	843,{
 		end;
 	}
 	mes "[Aibakthing]";
-	mes "Ah yes. I understand that it is difficult to take leave of such a beautiful place. Do not worry";
-	mes "and take your time.";
+	mes "Ah sim. Entendo que e dificil se despedir de um lugar tao lindo. Nao se preocupe";
+	mes "e fique a vontade.";
 	close;
 }
 
@@ -102,17 +102,17 @@ ayothaya,152,68,1	script	Aibakthing#ayo2	843,{
 //============================================================
 ayothaya,189,120,3	script	Young Man#Thang	843,{
 	mes "[Thang]";
-	mes "There's an ancient,";
-	mes "dreadful building in";
-	mes "Ayothaya that no one";
-	mes "here dares approach...";
+	mes "Ha um antigo";
+	mes "e terrivel edificio em";
+	mes "Ayothaya que ninguem";
+	mes "aqui ousa se aproximar...";
 	next;
 	mes "[Thang]";
-	mes "In the past, a few curious people went inside, despite the horror stories, and never returned. What on earth could be going on inside of that place?";
+	mes "No passado, algumas pessoas curiosas entraram, apesar das historias de terror, e nunca retornaram. O que diabos pode estar acontecendo la dentro?";
 	next;
 	mes "[Thang]";
-	mes "However, if you want to prove your courage to others, confronting the danger inside might be a worthy challenge for an adventurer...";
-	mes "I think.";
+	mes "Porem, se voce quer provar sua coragem aos outros, enfrentar o perigo la dentro pode ser um desafio digno de um aventureiro...";
+	mes "Eu acho.";
 	close;
 }
 
@@ -120,24 +120,24 @@ ayothaya,171,152,5	script	Girl#Lalitha	838,{
 	set .@sit,rand(1,5);
 	if (.@sit > 0 && .@sit < 3) {
 		mes "[Lalitha]";
-		mes "Hello!";
-		mes "I don't think";
-		mes "we've met before.";
+		mes "Ola!";
+		mes "Acho que nao nos";
+		mes "conhecemos.";
 		next;
 		mes "[Lalitha]";
-		mes "You must be";
-		mes "from Midgard.";
-		mes "After all, I know every single person living in this village.";
+		mes "Voce deve ser";
+		mes "de Midgard.";
+		mes "Afinal, eu conheco cada pessoa que mora nesta vila.";
 		mes "Heh heh~";
 		next;
 		mes "[Lalitha]";
 		mes "Hmm...";
-		mes "May I ask about the land you";
-		mes "come from? I'm curious about";
-		mes "a lot of things in the outside world.";
+		mes "Posso perguntar sobre a terra de onde";
+		mes "voce vem? Tenho curiosidade sobre";
+		mes "muitas coisas do mundo la fora.";
 		next;
 		mes "[Lalitha]";
-		mes "You know, like the dresses and jewelry that ladies wear in other countries, whether or not the men are good looking, what kind of songs you have, what kind of girls that guys over there like...";
+		mes "Sabe, tipo os vestidos e joias que as damas usam em outros paises, se os homens sao bonitos, que tipo de musicas voces tem, que tipo de garotas os rapazes de la gostam...";
 		emotion ET_QUESTION;
 		next;
 		mes "[" +strcharinfo(0)+ "]";
@@ -148,42 +148,42 @@ ayothaya,171,152,5	script	Girl#Lalitha	838,{
 		emotion ET_SWEAT;
 		next;
 		mes "[Lalitha]";
-		mes "Okay~!";
-		mes "Take care and";
-		mes "enjoy your travels!";
+		mes "Ta bom~!";
+		mes "Se cuide e";
+		mes "aproveite suas viagens!";
 		close;
 	}
 	else if (.@sit > 2 && .@sit < 6) {
 		mes "[Lalitha]";
-		mes "When you go East from this";
-		mes "village, you will arrive at the ruins of an old shrine. It is now";
-		mes "a nest full of fearsome monsters.";
+		mes "Quando voce for para o Leste desta";
+		mes "vila, chegara as ruinas de um antigo santuario. Agora e um";
+		mes "ninho cheio de monstros terriveis.";
 		next;
 		mes "[Lalitha]";
-		mes "If you plan to venture through these ruins, you better prepare";
-		mes "as much as you can!";
+		mes "Se voce planeja se aventurar por essas ruinas, e melhor se preparar";
+		mes "o maximo que puder!";
 		next;
 		mes "[Lalitha]";
 		mes "Ah...";
-		mes "I wonder where";
-		mes "my Black Knight is~";
+		mes "Onde sera que esta";
+		mes "meu Cavaleiro Negro~";
 		emotion ET_THROB;
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "Don't you mean...";
-		mes "Knight in shining armor";
-		mes "riding a white horse?";
+		mes "Voce nao quis dizer...";
+		mes "Cavaleiro de armadura brilhante";
+		mes "montado num cavalo branco?";
 		next;
 		mes "[Lalitha]";
 		mes "Hmm...?";
-		mes "Oh, well...";
-		mes "I'll take them both!";
-		mes "Hee hee~!";
+		mes "Ah, bom...";
+		mes "Eu aceito os dois!";
+		mes "Hi hi~!";
 		close;
 	}
 	mes "[Lalitha]";
 	mes "Mmm...?";
-	mes "What's up?";
+	mes "O que foi?";
 	close;
 }
 
@@ -194,99 +194,98 @@ ayothaya,143,102,5	script	Old Man#ayothaya	842,{
 	mes "Ummmmm...?";
 	next;
 	mes "[Villager]";
-	mes "You must be";
-	mes "an outsider.";
-	mes "Yes. Yes, indeed.";
+	mes "Voce deve ser";
+	mes "de fora.";
+	mes "Sim. Sim, com certeza.";
 	next;
 	mes "[Villager]";
-	mes "Did you just ask";
-	mes "where am I going?";
-	mes "Why, to the Fishing Spot";
-	mes "just ahead. That's what";
-	mes "we old men do: fish.";
+	mes "Voce acabou de perguntar";
+	mes "pra onde eu estou indo?";
+	mes "Ora, pro Ponto de Pesca";
+	mes "logo ali na frente. E isso";
+	mes "que nos velhos fazemos: pescar.";
 	next;
 	mes "[Villager]";
 	mes "Hmmm...";
-	mes "Would you like to hear";
-	mes "something interesting? I've heard that someone found a ring inside";
-	mes "a fish he caught in the";
-	mes "Fishing Spot.";
+	mes "Gostaria de ouvir";
+	mes "algo interessante? Ouvi dizer que alguem encontrou um anel dentro";
+	mes "de um peixe que pescou no";
+	mes "Ponto de Pesca.";
 	next;
 	mes "[Villager]";
-	mes "Supposedly, there are lots of stories about people finding valuables inside of the fish they've been catching there.";
+	mes "Supostamente, tem varias historias sobre pessoas encontrando coisas valiosas dentro dos peixes que pescam la.";
 	next;
 	mes "[Villager]";
-	mes "If you're lucky enough,";
-	mes "you might even become";
-	mes "a millionaire.";
+	mes "Se voce tiver sorte,";
+	mes "pode ate se tornar";
+	mes "um milionario.";
 	mes "Heh heh heh~";
 	next;
 	mes "[Villager]";
 	mes "...!?";
-	mes "Ah, I came into the fish market! ^666666*Sigh*^000000 It seems I went the wrong way. The Fishing Spot is on the opposite side of this village.";
+	mes "Ah, vim parar no mercado de peixes! ^666666*Suspiro*^000000 Parece que fui pro lado errado. O Ponto de Pesca fica do lado oposto da vila.";
 	next;
 	mes "[Villager]";
-	mes "Since I'm here, it wouldn't be";
-	mes "a bad idea to look around. All of the seafood in this market is fresh and tasty. You'll regret it if you don't try some of this seafood";
-	mes "at least once.";
+	mes "Ja que estou aqui, nao seria ma ideia dar uma olhada. Todos os frutos do mar neste mercado sao frescos e gostosos. Voce vai se arrepender se nao experimentar";
+	mes "pelo menos uma vez.";
 	close;
 }
 
 ayothaya,197,189,5	script	Young Man#1ayothaya	841,{
 	mes "[Kwan]";
-	mes "Phew, isn't it";
-	mes "soooo hot today?";
+	mes "Ufa, nao ta";
+	mes "muuuito quente hoje?";
 	next;
 	mes "[Kwan]";
-	mes "You must be";
-	mes "from Midgard, huh?";
-	mes "I've seen a lot of tourists";
-	mes "coming from there recently.";
+	mes "Voce deve ser";
+	mes "de Midgard, ne?";
+	mes "Tenho visto muitos turistas";
+	mes "vindo de la ultimamente.";
 	next;
 	mes "[Kwan]";
-	mes "You'd better be really careful if you travel outside of the village. Whatever you do, don't go into";
-	mes "the ruins of an old shrine";
-	mes "in the forest.";
+	mes "E melhor ter muito cuidado se voce viajar para fora da vila. Aconteca o que acontecer, nao entre nas";
+	mes "ruinas de um antigo santuario";
+	mes "na floresta.";
 	next;
 	mes "[Kwan]";
-	mes "That place is far too";
-	mes "dangerous to visit. Still, I hear that if you had some kind of amulet, you could go there with";
-	mes "a little less worry...";
+	mes "Aquele lugar e perigoso";
+	mes "demais para visitar. Ainda assim, ouvi dizer que se voce tivesse algum tipo de amuleto, poderia ir la com";
+	mes "um pouco menos de preocupacao...";
 	next;
 	mes "[Kwan]";
-	mes "Well, anyway, it's still a really good idea to stay away from that place. I hope you enjoy visiting Ayothaya, and that you keep safe~";
+	mes "Bom, de qualquer forma, ainda e uma otima ideia ficar longe daquele lugar. Espero que voce aproveite a visita a Ayothaya e que se mantenha seguro~";
 	close;
 }
 
 ayothaya,214,142,5	script	Young Man#5ayothaya	843,{
 	mes "[Detzi]";
-	mes "In Ayothaya, we have our own traditional martial arts. We, the young men of the village, practice our traditional martial arts in order to become strong.";
+	mes "Em Ayothaya, temos nossas proprias artes marciais tradicionais. Nos, os jovens da vila, praticamos nossas artes marciais tradicionais para nos tornarmos fortes.";
 	next;
 	mes "[Detzi]";
-	mes "Why don't you learn our martial arts? I guarantee that it will help you greatly in your travels.";
+	mes "Por que voce nao aprende nossas artes marciais? Garanto que vai te ajudar muito nas suas viagens.";
 	close;
 }
 
 ayothaya,241,264,5	script	Young Man#5ayothaya2	843,{
 	mes "[Eik]";
-	mes "Hey...";
-	mes "You look pretty strong";
-	mes "You wanna challenge";
-	mes "me to a match?";
+	mes "Ei...";
+	mes "Voce parece bem forte.";
+	mes "Quer me desafiar";
+	mes "pra uma luta?";
 	next;
-	if (select("Sure!:Nah~") == 1) {
+	if (select("Claro!:Nah~") == 1) {
 		mes "[Eik]";
-		mes "Ow ow ow!";
-		mes "I was just";
-		mes "kidding, man!";
+		mes "Ai ai ai!";
+		mes "Eu tava so";
+		mes "brincando, cara!";
 		next;
 		mes "[Eik]";
-		mes "I'm not so rude as to pick fights with strangers for no reason!";
+		mes "Nao sou tao rude a ponto de arrumar briga com estranhos sem motivo!";
 		emotion ET_KEK;
 		close;
 	}
 	mes "[Eik]";
-	mes "Real power is developed after having thousands of matches with other people. So, don't be afraid of fighting, okay?";
+	mes "O verdadeiro poder se desenvolve apos milhares de lutas com outras pessoas. Entao, nao tenha medo de lutar, ta?";
 	emotion ET_HNG;
 	close;
 }

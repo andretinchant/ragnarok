@@ -18,7 +18,7 @@
 lighthalzen,207,310,5	script	Guide#lhz::LhzGuide	852,{
 	cutin "ein_soldier",2;
 	mes "[Lighthalzen Guide]";
-	mes "Welcome to Lighthalzen,";
+	mes "Bem-vindo a Lighthalzen,";
 	mes "the Corporation City-State.";
 	mes "If you need any guidance";
 	mes "around the city, feel free";
@@ -27,7 +27,7 @@ lighthalzen,207,310,5	script	Guide#lhz::LhzGuide	852,{
 	set .@loop1,1;
 	while (.@loop1) {
 		next;
-		switch(select("City Guide:Remove Marks from Mini-Map:Notice.:Cancel")) {
+		switch(select("City Guide:Remover Marcas do Mini-Mapa:Notice.:Cancelar")) {
 		case 1:
 			mes "[Lighthalzen Guide]";
 			mes "Please be aware that I'm";
@@ -41,8 +41,8 @@ lighthalzen,207,310,5	script	Guide#lhz::LhzGuide	852,{
 				mes "[Lighthalzen Guide]";
 				mes "But before that,";
 				mes "would you like me";
-				mes "to mark locations";
-				mes "on your Mini-Map?";
+				mes "marcasse locais";
+				mes "no seu Mini-Mapa?";
 				next;
 				if (select("Yes.:No.") == 1) set .@compass_check,1;
 			}
@@ -50,7 +50,7 @@ lighthalzen,207,310,5	script	Guide#lhz::LhzGuide	852,{
 			while(.@loop2) {
 				if (.@wait_button_chk == 0) set .@wait_button_chk,1;
 				else next;
-				switch(select("^FF0000Rekenber Corporation^000000:Train Station:Police Station:Bank:Hotel:Airport:Merchant Guild:Jewelry Shop:Weapon Shop:Departement Store:Cancel")) {
+				switch(select("^FF0000Rekenber Corporation^000000:Train Station:Police Station:Bank:Hotel:Airport:Merchant Guild:Jewelry Shop:Loja de Armas:Departement Store:Cancelar")) {
 				case 1:
 					mes "[Lighthalzen Guide]";
 					mes "Rekenber Corporation,";
@@ -74,7 +74,7 @@ lighthalzen,207,310,5	script	Guide#lhz::LhzGuide	852,{
 				case 3:
 					mes "[Lighthalzen Guide]";
 					mes "Our Police Station is just";
-					mes "north of the city's center.";
+					mes "ao norte de the city's center.";
 					mes "Please don't hesitate to report";
 					mes "any suspicious persons and";
 					mes "activity, or if you have any";
@@ -105,7 +105,7 @@ lighthalzen,207,310,5	script	Guide#lhz::LhzGuide	852,{
 				case 6:
 					mes "[Lighthalzen Guide]";
 					mes "The Airport is to the far";
-					mes "west of the Central Promenade.";
+					mes "a oeste de the Central Promenade.";
 					mes "You can travel anywhere within";
 					mes "the Schwarzwald Republic by";
 					mes "riding on one of the Airships.";
@@ -155,7 +155,7 @@ lighthalzen,207,310,5	script	Guide#lhz::LhzGuide	852,{
 					mes "Marks from Mini-Map'' if you";
 					mes "no longer wish to have the";
 					mes "location marks displayed";
-					mes "on your Mini-Map.";
+					mes "no seu Mini-Mapa.";
 					set .@loop2,0;
 				}
 			}

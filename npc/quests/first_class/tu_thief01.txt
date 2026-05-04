@@ -649,7 +649,7 @@ moc_ruins,66,164,4	script	Thief Trainer#T	4_M_02,{
 			mes "I couldn't focus";
 			mes "on it at all...";
 			next;
-			switch(select("I'm still investigating.:I'm not done yet...:Oh, I finished~")) {
+			switch(select("I'm still investigating.:I'm not done ainda...:Oh, I finished~")) {
 			case 1:
 				mes "[Yierhan]";
 				mes "Ah, gotcha. Well, that's understandable. I mean, these things take time, you know?";

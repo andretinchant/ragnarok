@@ -2317,7 +2317,7 @@ payon_in03,11,31,4	script	Daewoon#sign	808,{
 			mes "......";
 			mes "Do you enjoy life?";
 			next;
-			switch(select("Yes:No")) {
+			switch(select("Sim:Nao")) {
 			case 1:
 				mes "[Daewoon]";
 				emotion ET_SMILE;
@@ -2493,7 +2493,7 @@ payon_in03,11,31,4	script	Daewoon#sign	808,{
 		mes "behind the Sobbing Starlight,";
 		mes "do you like it?";
 		next;
-		switch(select("Yes:No")) {
+		switch(select("Sim:Nao")) {
 		case 1:
 			mes "[Daewoon]";
 			mes "Ah, how great~!";
@@ -2955,7 +2955,7 @@ aldeba_in,156,118,4	script	Piru Piru#sign	102,{
 				mes "is researching a way to";
 				mes "create artificial life! Still,";
 				mes "it's not easy and we haven't";
-				mes "accomplished anything yet...";
+				mes "accomplished anything ainda...";
 				next;
 				mes "[Piru Piru]";
 				mes "It doesn't help that my";
@@ -3008,7 +3008,7 @@ aldeba_in,156,118,4	script	Piru Piru#sign	102,{
 			mes "is researching a way to";
 			mes "create artificial life! Still,";
 			mes "it's not easy and we haven't";
-			mes "accomplished anything yet...";
+			mes "accomplished anything ainda...";
 			next;
 			mes "[Piru Piru]";
 			mes "It doesn't help that my";
@@ -3095,7 +3095,7 @@ OnTouch_:
 
 prt_maze02,25,161,0	script	#music	-1,7,7,{
 OnTouch_:
-	soundeffect "effect\\¼®¾çÀÇ ¾î½Ø½Å.wav",1;
+	soundeffect "effect\\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ø½ï¿½.wav",1;
 	end;
 }
 
@@ -4504,7 +4504,7 @@ cmd_in02,88,51,4	script	Strange Guy#sign	806,{
 		mes "Soooooo, did you";
 		mes "bring the money?";
 		next;
-		switch(select("Here you are...:Not yet...")) {
+		switch(select("Here you are...:Not ainda...")) {
 		case 1:
 			mes "[Dearles]";
 			mes "Ummm.......";
@@ -6241,7 +6241,7 @@ alde_alche,169,162,7	script	Alchemist#sign	749,{
 		mes "you need for the";
 		mes "Vigorgra...?";
 		next;
-		switch(select("Not yet...:Yes.")) {
+		switch(select("Not ainda...:Yes.")) {
 		case 1:
 			mes "[Melkaba]";
 			mes "Well, let me";
@@ -6921,7 +6921,7 @@ geffen_in,159,48,5	script	Lonely-looking Woman	711,{
 		mes "Hmm...";
 		mes "What should I make for";
 		mes "dinner today? Pickled cabbage?";
-		mes "I learned how to make it a while ago, but I've never gotten the chance to make it yet...";
+		mes "I learned how to make it a while ago, but I've never gotten the chance to make it ainda...";
 		close;
 	}
 	else if (sign_q == 54) {
@@ -7156,7 +7156,7 @@ mjo_dun02,88,295,4	script	Flaming Spirit Man	85,{
 	if ((sign_q > 1) && (sign_q < 54)) {
 		if(countitem(1002) > 0) {
 			mes "Just as I suspected...";
-			mes "I didn't bring enough of them.";
+			mes "I didn't bring enough deles.";
 			mes "Hmm, this is serious. What";
 			mes "am I going to do about this?";
 			next;
@@ -9766,7 +9766,7 @@ que_sign01,122,141,4	script	Witch#s	792,{
 		mes "care of Serin. Are you";
 		mes "ready to go, "+strcharinfo(0)+"?";
 		next;
-		switch(select("Yes.:Not yet...")) {
+		switch(select("Yes.:Not ainda...")) {
 		case 1:
 			switch(select("Go directly to Serin:Path Towards Serin")) {
 			case 1:
@@ -10250,7 +10250,7 @@ que_sign01,122,141,4	script	Witch#s	792,{
 			mes "stop her, but we have";
 			mes "to try. Are you ready?";
 			next;
-			switch(select("Yes:No")) {
+			switch(select("Sim:Nao")) {
 			case 1:
 				close2;
 				set $@sign_w1,1;
@@ -10271,7 +10271,7 @@ que_sign01,122,141,4	script	Witch#s	792,{
 			mes "truly horrible. Are";
 			mes "you ready to go?";
 			next;
-			switch(select("Yes:No")) {
+			switch(select("Sim:Nao")) {
 			case 1:
 				mes "[Kirkena]";
 				mes "Okay then.";
@@ -10976,7 +10976,7 @@ niflheim,146,241,0	script	Depressing Man	735,{
 			mes "Now, did Crayu";
 			mes "tell you why I'm here?";
 			next;
-			switch(select("Yes:No")) {
+			switch(select("Sim:Nao")) {
 			case 1:
 				mes "[Gen]";
 				mes "Good, then you";
@@ -11092,7 +11092,7 @@ niflheim,146,241,0	script	Depressing Man	735,{
 		mes "mansion, Eljudnir,";
 		mes "right now?";
 		next;
-		switch(select("Yes:No")) {
+		switch(select("Sim:Nao")) {
 		case 1:
 			mes "[Gen]";
 			mes "Remember to be";

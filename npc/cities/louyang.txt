@@ -29,7 +29,7 @@
 	mes "on a picnic somewhere~";
 	mes "La la la la~";
 	next;
-	switch(select("About Luoyang.:Go to Luoyang.:Cancel.")) {
+	switch(select("Sobre Luoyang.:Go to Luoyang.:Cancelarar.")) {
 	case 1:
 		mes "[Girl]";
 		mes "Oh, are you";
@@ -43,7 +43,7 @@
 		mes "Luoyang area.";
 		next;
 		mes "[Girl]";
-		mes "You can find cure-all medicines, mysterious occurrences, and";
+		mes "You can find cure-all medicines, misterioso occurrences, and";
 		mes "martial artists all in one place!";
 		next;
 		mes "[Girl]";
@@ -51,7 +51,7 @@
 		next;
 		mes "[Girl]";
 		mes "If you want to visit";
-		mes "Luoyang, feel free to";
+		mes "Luoyang, fique a vontade para";
 		mes "tell me. Just give me";
 		mes "some Zeny and we'll go~";
 		close;
@@ -65,7 +65,7 @@
 		mes "[Girl]";
 		mes "So, are you ready?";
 		next;
-		if (select("Yes!:No.") == 1) {
+		if (select("Yes!:Nao.") == 1) {
 			if (Zeny > 9999) {
 				mes "[Girl]";
 				mes "Okay~";
@@ -92,7 +92,7 @@
 	case 3:
 		mes "[Girl]";
 		mes "Oh...";
-		mes "Have a good day!";
+		mes "Tenha um bom dia!";
 		close;
 	}
 }
@@ -103,7 +103,7 @@ lou_fild01,190,100,7	script	Girl#1lou	815,{
 	mes "like to go back";
 	mes "to Alberta?";
 	next;
-	if (select("Go back to Alberta.:Cancel.") == 1) {
+	if (select("Voltar para Alberta.:Cancelarar.") == 1) {
 		mes "[Girl]";
 		mes "I hope to";
 		mes "see you again!";
@@ -143,7 +143,7 @@ louyang,297,167,2	script	Muscular Woman#lou	815,{
 		mes "All the members of the Maiden Palace, including myself and our master, are all female.";
 		next;
 		mes "[Zhi Ching Li]";
-		mes "Recently we've had a hard time recruiting new members, so I came here to check if there's any woman who wishes to join us.";
+		mes "Recentemente we've had a hard time recruiting new members, so I came here to check if there's any woman who wishes to join us.";
 		emotion ET_THINK;
 		close;
 	}
@@ -189,7 +189,7 @@ louyang,276,136,4	script	Fist master#lou	819,{
 	mes "the 'Claw of Dragon!'";
 	next;
 	mes "[Zhiang Xiau Ji]";
-	mes "Although there are eight basic steps, I had to learn the history of this art, and meditate, focusing on my spiritual improvement,";
+	mes "Embora there are eight basic steps, I had to learn the history of this art, and meditate, focusing on my spiritual improvement,";
 	mes "for three years.";
 	next;
 	mes "[Zhiang Xiau Ji]";
@@ -265,13 +265,13 @@ louyang,272,129,0	duplicate(LouTrainee)	Trainee#12lou	819
 //============================================================
 lou_in01,25,23,5	script	Friendly Looking Lady#lo	817,{
 	mes "[Hong Miao]";
-	mes "Welcome.";
+	mes "Bem-vindo.";
 	next;
 	mes "[Hong Miao]";
 	mes "This is an elevator which leads";
-	mes "to the Observation Tower. We are providing you a safe and fast transfer service for an affordable fee. Would you like to use this service?";
+	mes "to the Observation Tower. We are providing you a safe and fast transfer service for an affordable fee. Gostaria de use this service?";
 	next;
-	switch(select("Information.:Yes.:Maybe next time.")) {
+	switch(select("Informacao.:Sim.:Maybe next time.")) {
 	case 1:
 		mes "[Hong Miao]";
 		mes "After many suggestions and proposals were sent to the Luoyang tourism office, the Observation Tower was built so tourists can enjoy the sights.";
@@ -286,11 +286,11 @@ lou_in01,25,23,5	script	Friendly Looking Lady#lo	817,{
 	case 2:
 		if (Zeny < 500) {
 			mes "[Hong Miao]";
-			mes "I'm sorry, but you do not have enough zeny. I hope you'll come back later to enjoy the Observation Tower. Have a good day.";
+			mes "Sinto muito, mas voce do not have enough zeny. I hope you'll volte later to enjoy the Observation Tower. Tenha um bom dia.";
 			close;
 		}
 		mes "[Hong Miao]";
-		mes "Thank you for your patronage.";
+		mes "Obrigado pela sua preferencia.";
 		mes "We are trying to provide you with the best of service. Please";
 		mes "come again.";
 		next;
@@ -301,7 +301,7 @@ lou_in01,25,23,5	script	Friendly Looking Lady#lo	817,{
 		mes "[Hong Miao]";
 		mes "Please come";
 		mes "back later.";
-		mes "Have a good day.";
+		mes "Tenha um bom dia.";
 		close;
 	}
 }
@@ -309,9 +309,9 @@ lou_in01,25,23,5	script	Friendly Looking Lady#lo	817,{
 louyang,84,254,0	script	Exit#lou	111,{
 	mes "^3355FFThere is some sort";
 	mes "of descent apparatus.";
-	mes "Would you like to use it?^000000";
+	mes "Gostaria de use it?^000000";
 	next;
-	if (select("Yes.:No.") == 1) {
+	if (select("Sim.:Nao.") == 1) {
 		if (rand(1,100) == 34) {
 			percentheal -99,0;
 			warp "louyang",86,269;

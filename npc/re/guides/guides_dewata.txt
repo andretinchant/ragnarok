@@ -16,7 +16,7 @@
 
 dewata,202,106,4	script	Dewata Guide#dewata01	4_M_DEWWOMAN,{
 	mes "[Dewata Guide]";
-	mes "Welcome to ^8B4513Dewata Island^000000,";
+	mes "Bem-vindo a ^8B4513Dewata Island^000000,";
 	mes "a place with dazzling waves and charming views it's a great place to relax.";
 	mes "If you have any questions, please ask me.";
 	next;
@@ -25,7 +25,7 @@ dewata,202,106,4	script	Dewata Guide#dewata01	4_M_DEWWOMAN,{
 	F_Navi("[Dewata Guide]");
 	while (1) {
 		next;
-		switch(select("[ Kafra Employee ]:[ Weapon Dealer ]:[ Armor Dealer ]:[ Tool Dealer ]:[ Restauranteur ]:[ Krakatau Gatekeeper ]:[ Alberta Sailor ]:Remove marks from Mini-Map:Cancel")) {
+		switch(select("[ Kafra Employee ]:[ Weapon Dealer ]:[ Armor Dealer ]:[ Tool Dealer ]:[ Restauranteur ]:[ Krakatau Gatekeeper ]:[ Alberta Sailor ]:Remove marks from Mini-Map:Cancelar")) {
 		case 1:
 			callsub L_Mark, "^0000FFKafra Employee^000000";
 			viewpoint 1,202,184,0,0x000FFF;
@@ -76,8 +76,8 @@ dewata,202,106,4	script	Dewata Guide#dewata01	4_M_DEWWOMAN,{
 L_Mark:
 	mes "[Dewata Guide]";
 	mes "The "+getarg(0)+" is";
-	mes "marked on your mini-map.";
-	mes "Check your mini-map.";
+	mes "marked no seu mini-mapa.";
+	mes "Verifique seu mini-mapa.";
 	mes "Is there anything else I can do for you?";
 	return;
 }

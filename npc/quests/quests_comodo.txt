@@ -484,7 +484,7 @@ comodo,206,310,4	script	Campground Boy#cmd	704,{
 		mes "BBQ camping in Comodo is";
 		mes "heaven to a meat lover like me~";
 		next;
-		if (select("BBQ Camping...?:Cancel") == 1) {
+		if (select("BBQ Camping...?:Cancelar") == 1) {
 			mes "[Rochito]";
 			mes "Yeah man... You can eat";
 			mes "Komodoru meat all day when";
@@ -645,7 +645,7 @@ comodo,204,310,4	script	Camping Youth#cmd	65,{
 		mes "together for this barbeque";
 		mes "for such a long time~";
 		next;
-		if(select("Buddies...?:Cancel") == 1) {
+		if(select("Buddies...?:Cancelar") == 1) {
 			mes "[Rockha]";
 			mes "Yeah, some of us know";
 			mes "each other when we fought";
@@ -747,7 +747,7 @@ comodo,209,305,4	script	Camping Maiden#cmd	71,{
 	mes "Having a good time, all of us";
 	mes "together in a time of peace~";
 	next;
-	if (select("War of the Witch?:Cancel") == 1) {
+	if (select("War of the Witch?:Cancelar") == 1) {
 		mes "[Emralhandas]";
 		mes "Before I tell you about the";
 		mes "War of the Witch, I guess";
@@ -1008,7 +1008,7 @@ cmd_in02,32,140,4	script	Chief#cmd	49,{
 		mes "Comodo, a city famous for its beauty and nightlife. I hope you";
 		mes "enjoy your stay, whether you are seeking excitement or relaxation~";
 		next;
-		switch(select("About Casino:About Banished Witch:Cancel")) {
+		switch(select("About Casino:About Banished Witch:Cancelar")) {
 		case 1:
 			mes "[Tausupa]";
 			mes "Ah yes, Comodo is world";
@@ -1102,7 +1102,7 @@ comodo,88,97,4	script	Toruna#cmd	109,{
 	mes "you believe this entire city";
 	mes "is built inside a natural cave?";
 	next;
-	switch(select("This cave is huge!:This place sure is strange...:Cancel")) {
+	switch(select("This cave is huge!:This place sure is strange...:Cancelar")) {
 	case 1:
 		mes "[Toruna]";
 		mes "Oh, this is a huge cave,";
@@ -2463,7 +2463,7 @@ comodo,232,87,4	script	Won#cmd	106,{
 		mes "in the city of ^3355FFJuno^000000 in the";
 		mes "Schwarzwald Republic.";
 		mes "Your quest to obtain a";
-		mes "doomed sword isn't over yet...";
+		mes "doomed sword isn't over ainda...";
 		break;
 	case 23:
 		mes "[Won]";
@@ -2479,7 +2479,7 @@ comodo,232,87,4	script	Won#cmd	106,{
 		mes "in the city of ^3355FFJuno^000000 in the";
 		mes "Schwarzwald Republic.";
 		mes "Your quest to obtain a";
-		mes "doomed sword isn't over yet...";
+		mes "doomed sword isn't over ainda...";
 		break;
 	case 24:
 		mes "1 2 3 4 5 6 7 8 9 10 1 2 3 4 5";

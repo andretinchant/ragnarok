@@ -19,35 +19,35 @@ moc_para01,41,76,3	script	Ragi#1	4_M_RAGI,{
 	cutin "ragi01",0;
 	mes "[Ragi]";
 	if (!callfunc("F_HasEdenGroupMark")) {
-		mes "Only adventurers from Eden Group are welcome here.";
-		mes "I'm giving requests to base level ^FF0000130-140^000000 adventurers only.";
+		mes "Apenas aventureiros de Eden Grupo are bem-vindo aqui.";
+		mes "Eu sou dando requests to base nivel ^FF0000130-140^000000 aventureiros apenas.";
 	}
 	else if (para_130lv01 == 0) {
-		mes "Hi. I'm the new member of the Dandelion band Ragi. I am making songs on behalf of Aigu. Are you interested in a story?";
+		mes "Hi. Eu sou o novo membro of o Dandelion be Ragi. Eu sou fazendo songs on behalf of Aigu. Voce e interessado in um historia?";
 		next;
 		mes "[Ragi]";
-		mes "Haha. I am sorry to request to adventurers even though I am a new.";
+		mes "Haha. Eu sou desculpe to request to aventureiros ate mesmo though Eu sou um novo.";
 		next;
 		mes "[Ragi]";
-		mes "Just take a look at the list. Can you help me if it is okay with you?";
+		mes "Apenas pegar um olhar at o list. Voce pode me ajude se it is okay com you?";
 		para_130lv01 = 1;
 	}
 	else {
-		mes "I am collecting stories to make a song on behalf of Aigu.";
+		mes "Eu sou coletando stories to fazer um song on behalf of Aigu.";
 		next;
-		if (select( "Request to collect stories", "Conversation" ) == 1) {
+		if (select( "Request to coletar stories", "Conversation" ) == 1) {
 			mes "[Ragi]";
 			if (BaseLevel < 131) {
 				cutin "ragi02",0;
-				mes "This is the request of Aigu but it is dangerous. You should grow up more.";
+				mes "Este is o request of Aigu mas it is perigoso. Voce deverium grow up mais.";
 			}
 			else if (BaseLevel < 141) {
-				mes "This song and story is about monsters. ^FF0000Tell me the story about how you felt while you were fighting with them.^000000";
+				mes "Este song e historium is sobre monstros. ^FF0000Me digum o historium sobre how you felt while you were lutando com them.^000000";
 				next;
-				switch( select( "The story of the lost", "Story of devil", "Story from far away distance" ) ) {
+				switch( select( "O historium of o lost", "Historium of devil", "Historium de longe emborum distance" ) ) {
 					mes "[Ragi]";
 				case 1:
-					mes "Lighthalzen has many stories that I'm sure are sad and lost. Their stories should not be forgotten so please tell me what you can.";
+					mes "Lighthalzen has muitos stories esse Eu sou sure are sad e lost. Their stories should nao be esquecido entao pou favou me digum what you can.";
 					next;
 					switch( select( "Egnigem Cenia (Swordman Monster)",
 									"Armeyer Dinze (Merchant Monster)",
@@ -58,96 +58,96 @@ moc_para01,41,76,3	script	Ragi#1	4_M_RAGI,{
 						mes "[Ragi]";
 					case 1:
 						if (checkquest(13144,PLAYTIME) == 0)
-							mes "Some adventurers tell me stories a little bit but they are not enough to make a song out of.";
+							mes "Alguns aventureiros me digum stories um pequeno bit mas they are nao suficiente to fazer um song out of.";
 						else if (checkquest(13143,HUNTING) == 1) {
-							cutin "ÀÌ±×´ÏÁª¼¼´Ï¾ÆÄ«µå",3;  //ygnizem_card
-							mes "She is a sad swordman in such a far away place. What brought here there do you think?";
+							cutin "ï¿½Ì±×´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¾ï¿½Ä«ï¿½ï¿½",3;  //ygnizem_card
+							mes "Elum e um sad swordmum in such um longe emborum lugar. What trouxe aqui lum voce pensar?";
 							next;
 							mes "[Ragi]";
-							mes "These are very important stories to someone. I want to make a song with these stories. Please help me.";
+							mes "Estes are muito importante stories to alguem. Eu quero to fazer um song com estes stories. Pou favou me ajude.";
 							cutin "ragi01",0;
 						}
 						else if (checkquest(13143,HUNTING) == 2) {
-							mes "Have you heard any new stories? Please tell me stories if you have any from your journey.";
+							mes "Voce jum ouviu any novo stories? Pou favou me digum stories se you have any de seu journey.";
 							callsub S_Quest,13143,13144,1100000,300000;
 						}
 						else {
-							cutin "ÀÌ±×´ÏÁª¼¼´Ï¾ÆÄ«µå",3;  //ygnizem_card
-							mes "A sword woman who is stronger than any swordmen. Egnigem Cenia. That is her name. I am not sure if that is her or someone else.";
+							cutin "ï¿½Ì±×´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¾ï¿½Ä«ï¿½ï¿½",3;  //ygnizem_card
+							mes "A espadum womum quem e stronger que any swordmen. Egnigem Cenia. Esse is a name. Eu sou nao sure se esse is a ou alguem else.";
 							next;
 							mes "[Ragi]";
-							mes "I can not lose her story. I really wish you to stop by.";
+							mes "Eu consigo nao lose a historia. I realmente wish you to parar by.";
 							next;
 							cutin "ragi01",0;
-							if (select( "Take the request", "Quit." ) == 1) {
+							if (select( "Pegar o request", "Quit." ) == 1) {
 								mes "[Ragi]";
-								mes "It will be more dangerous than you think. But story must be conveyed for everyone.";
+								mes "It sera mais perigoentao que you pensar. Mas historium deve ser conveyed fou todos.";
 								callsub S_Quest,13144,13143;
 							}
 						}
 						break;
 					case 2:
 						if (checkquest(13146,PLAYTIME) == 0)
-							mes "Some adventurers tell me stories a little bit but they are not enough to make a song out of.";
+							mes "Alguns aventureiros me digum stories um pequeno bit mas they are nao suficiente to fazer um song out of.";
 						else if (checkquest(13145,HUNTING) == 1) {
-							cutin "¾Æ¸£¸¶ÀÌ¾îµòÁ¦Ä«µå",3;  //armaia_card
-							mes "How far could she have continued her journey? I guess she could not do it alone.";
+							cutin "ï¿½Æ¸ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //armaia_card
+							mes "How longe could she have continued a journey? I guess she could nao do it sozinho.";
 							next;
 							mes "[Ragi]";
-							mes "You do not wonder why that journey should have stopped?";
+							mes "You do nao imaginar why esse journey should have stopped?";
 							next;
 							mes "[Ragi]";
-							mes "I want to make a song with these stories. Please help me.";
+							mes "Eu quero to fazer um song com estes stories. Pou favou me ajude.";
 							cutin "ragi01",0;
 						}
 						else if (checkquest(13145,HUNTING) == 2) {
-							mes "Have you heard any new stories? Please tell me stories if you have any from your journey.";
+							mes "Voce jum ouviu any novo stories? Pou favou me digum stories se you have any de seu journey.";
 							callsub S_Quest,13145,13146,1100000,300000;
 						}
 						else {
-							cutin "¾Æ¸£¸¶ÀÌ¾îµòÁ¦Ä«µå",3;  //armaia_card
-							mes "A daughter of a merchant. Armeyer Dinze, she looks like a rich woman. But she looks insecure.";
+							cutin "ï¿½Æ¸ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //armaia_card
+							mes "A daughter of um mercador. Armeyer Dinze, she looks like um rich woman. Mas she looks insecure.";
 							next;
 							mes "[Ragi]";
-							mes "What made her disappear? Or for what? Please listen to her story.";
+							mes "What made a desaparecer? Ou fou what? Pou favou ouvir to a historia.";
 							next;
 							cutin "ragi01",0;
-							if (select( "Take the request", "Quit." ) == 1) {
+							if (select( "Pegar o request", "Quit." ) == 1) {
 								mes "[Ragi]";
-								mes "It will be more dangerous than you think. But the story must be conveyed.";
+								mes "It sera mais perigoentao que you pensar. Mas o historium deve ser conveyed.";
 								callsub S_Quest,13146,13145;
 							}
 						}
 						break;
 					case 3:
 						if (checkquest(13148,PLAYTIME) == 0)
-							mes "Some adventurers tell me stories a little bit but they are not enough to make a song out of.";
+							mes "Alguns aventureiros me digum stories um pequeno bit mas they are nao suficiente to fazer um song out of.";
 						else if (checkquest(13147,HUNTING) == 1) {
-							cutin "ÈÖÄÉ¹ÙÀÎÆ®¸®½ºÄ«µå",3;  //whikebain_card
-							mes "What might have moved her mind? She only cared about money.";
+							cutin "ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //whikebain_card
+							mes "What might have moved a mente? She apenas cared sobre dinheiro.";
 							next;
 							mes "[Ragi]";
-							mes "I wonder how far her heart has been reached? Please listen to her story. Please tell me.";
+							mes "I imaginar how longe a coracao tem sido reached? Pou favou ouvir to a historia. Pou favou me diga.";
 							next;
 							mes "[Ragi]";
-							mes "Please make a song for us.";
+							mes "Pou favou fazer um song fou us.";
 							cutin "ragi01",0;
 						}
 						else if (checkquest(13147,HUNTING) == 2) {
-							mes "Have you heard any new stories? Please tell me stories if you have any from your journey.";
+							mes "Voce jum ouviu any novo stories? Pou favou me digum stories se you have any de seu journey.";
 							callsub S_Quest,13147,13148,1100000,300000;
 						}
 						else {
-							cutin "ÈÖÄÉ¹ÙÀÎÆ®¸®½ºÄ«µå",3;  //whikebain_card
-							mes "Nobody knows how it has started. Wickebine Tres is the name who could have found a true companion.";
+							cutin "ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //whikebain_card
+							mes "Ninguem knows how it has comecou. Wickebine Tres is o name who could have encontrou um verdade companion.";
 							next;
 							mes "[Ragi]";
-							mes "She was the one who only cared for money. How far has her journey continued? Please listen to her story in Lighthalzen.";
+							mes "She was o one who apenas cared fou dinheiro. How longe has a journey continued? Pou favou ouvir to a historium in Lighthalzen.";
 							next;
 							cutin "ragi01",0;
-							if (select( "Take the request", "Quit." ) == 1) {
+							if (select( "Pegar o request", "Quit." ) == 1) {
 								mes "[Ragi]";
-								mes "It will be more dangerous than you think. But the story must be conveyed.";
+								mes "It sera mais perigoentao que you pensar. Mas o historium deve ser conveyed.";
 								emotion ET_BEST;
 								callsub S_Quest,13148,13147;
 							}
@@ -155,138 +155,138 @@ moc_para01,41,76,3	script	Ragi#1	4_M_RAGI,{
 						break;
 					case 4:
 						if (checkquest(13150,PLAYTIME) == 0)
-							mes "Some adventurers tell me stories a little bit but they are not enough to make a song out of.";
+							mes "Alguns aventureiros me digum stories um pequeno bit mas they are nao suficiente to fazer um song out of.";
 						else if (checkquest(13149,HUNTING) == 1) {
-							cutin "Ä«¹ÙÅ©ÀÌÄ«·ç½ºÄ«µå",3;  //kavac_card
-							mes "Yes. It seems that I have heard the same name from Payon. I am not sure it means the same.";
+							cutin "Ä«ï¿½ï¿½Å©ï¿½ï¿½Ä«ï¿½ç½ºÄ«ï¿½ï¿½",3;  //kavac_card
+							mes "Yes. It parece esse Eu tenho ouviu o mesmo name de Payon. Eu sou nao sure it significum o mesmo.";
 							next;
 							mes "[Ragi]";
-							mes "Please try to find him or a bow at Lighthalzen.";
+							mes "Pou favou tentar to encontrar him ou um bow at Lighthalzen.";
 							next;
 							mes "[Ragi]";
-							mes "Please do not forget to tell me any story you hear.";
+							mes "Pou favou do nao esquecer to me digum any historium you ouvir.";
 							cutin "ragi01",0;
 						}
 						else if (checkquest(13149,HUNTING) == 2) {
-							mes "Have you heard any new stories? Please tell me stories if you have any from your journey.";
+							mes "Voce jum ouviu any novo stories? Pou favou me digum stories se you have any de seu journey.";
 							callsub S_Quest,13149,13150,1100000,300000;
 						}
 						else {
-							cutin "Ä«¹ÙÅ©ÀÌÄ«·ç½ºÄ«µå",3;  //kavac_card
-							mes "Kavach Icarus is the name whose hands are faster than eyes and shoots arrows swiftly.";
+							cutin "Ä«ï¿½ï¿½Å©ï¿½ï¿½Ä«ï¿½ç½ºÄ«ï¿½ï¿½",3;  //kavac_card
+							mes "Kavach Icarus is o name whose hands are faster que olhos e shoots arrows swiftly.";
 							next;
 							mes "[Ragi]";
-							mes "I heard his shadow and his arrow are wandering somewhere. Please go to Lighthalzen and tell me his story.";
+							mes "Eu ouvi o shadow e o arrow are wandering algum lugar. Pou favou ir to Lighthalzen e me digum o historia.";
 							next;
 							cutin "ragi01",0;
-							if (select( "Take the request", "Quit." ) == 1) {
+							if (select( "Pegar o request", "Quit." ) == 1) {
 								mes "[Ragi]";
-								mes "Please be careful of his arrows. You may have laid down on the cold floor before this story is finished.";
+								mes "Pou favou tenhum cuidado of o arrows. Voce pode have laid down on o cold floou antes este historium is terminou.";
 								callsub S_Quest,13150,13149;
 							}
 						}
 						break;
 					case 5:
 						if (checkquest(13152,PLAYTIME) == 0)
-							mes "Some adventurers tell me stories a little bit but they are not enough to make a song out of.";
+							mes "Alguns aventureiros me digum stories um pequeno bit mas they are nao suficiente to fazer um song out of.";
 						else if (checkquest(13151,HUNTING) == 1) {
-							cutin "ÀÌ·»µå¿¡º£½ÃÄ«µå",3;  //erend_card
-							mes "No matter if it was for friendship or a mission. If that journey was for someone, It would not be easy to stop the journey.";
+							cutin "ï¿½Ì·ï¿½ï¿½å¿¡ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //erend_card
+							mes "No matter se erum fou friendship ou um missao. Se esse journey was fou alguem, It would nao be facil to parar o journey.";
 							next;
 							mes "[Ragi]";
-							mes "What made stopped their journey? What kind of story is in it?";
+							mes "What made stopped o journey? What kind of historium is in it?";
 							next;
 							mes "[Ragi]";
-							mes "Please check that story in Lighthalzen.";
+							mes "Pou favou verificar esse historium in Lighthalzen.";
 							cutin "ragi01",0;
 						}
 						else if (checkquest(13151,HUNTING) == 2) {
-							mes "Have you heard any new stories? Please tell me stories if you have any from your journey.";
+							mes "Voce jum ouviu any novo stories? Pou favou me digum stories se you have any de seu journey.";
 							callsub S_Quest,13151,13152,1100000,300000;
 						}
 						else {
-							cutin "ÀÌ·»µå¿¡º£½ÃÄ«µå",3;  //erend_card
-							mes "Errende Ebecee is the one who started a journey to look for someone.";
+							cutin "ï¿½Ì·ï¿½ï¿½å¿¡ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //erend_card
+							mes "Errende Ebecee is o one who comecou um journey to olhar fou alguem.";
 							next;
 							mes "[Ragi]";
-							mes "But I guess... His journey also might have stopped somewhere in Lighthalzen. Please listen to his story.";
+							mes "Mas I guess... O journey tambem might have stopped algum lugar in Lighthalzen. Pou favou ouvir to o historia.";
 							next;
 							cutin "ragi01",0;
-							if (select( "Take the request", "Quit." ) == 1) {
+							if (select( "Pegar o request", "Quit." ) == 1) {
 								mes "[Ragi]";
-								mes "Please be careful not get lost like these ^FF0000poor souls^000000.";
+								mes "Pou favou tenhum cuidado nao pegar lost like estes ^FF0000poou souls^000000.";
 								callsub S_Quest,13152,13151;
 							}
 						}
 						break;
 					case 6:
 						if (checkquest(13154,PLAYTIME) == 0)
-							mes "Some adventurers tell me stories a little bit but they are not enough to make a song out of.";
+							mes "Alguns aventureiros me digum stories um pequeno bit mas they are nao suficiente to fazer um song out of.";
 						else if (checkquest(13153,HUNTING) == 1) {
-							cutin "¶ó¿ì·¼ºá´õÄ«µå",3;  //rawrel_card
-							mes "By the way. I have read a book called ^FF0000How to be a wizard^000000...";
+							cutin "ï¿½ï¿½ì·¼ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //rawrel_card
+							mes "By o caminho. Eu tenho read um book chamado ^FF0000How to be um bruxo^000000...";
 							next;
 							mes "[Ragi]";
-							mes "According to that book, some magic by 25 years olds can be stronger than older wizards.";
+							mes "According to esse book, alguns magium by 25 years olds cum be stronger que older wizards.";
 							next;
 							mes "[Ragi]";
-							mes "What are you listening to seriously? Let's finish the request about Laurell Weinders story!";
+							mes "O que sao you listening to seriously? Vamos terminar o request sobre Laurell Weinders historia!";
 							cutin "ragi01",0;
 						}
 						else if (checkquest(13153,HUNTING) == 2) {
-							mes "Have you heard any new stories? Please tell me stories if you have any from your journey.";
+							mes "Voce jum ouviu any novo stories? Pou favou me digum stories se you have any de seu journey.";
 							callsub S_Quest,13153,13154,1100000,300000;
 						}
 						else {
-							cutin "¶ó¿ì·¼ºá´õÄ«µå",3;  //rawrel_card
-							mes "Laurell Weinder, who decided to have a difficult journey to repay gratitude for some wizards deed.";
+							cutin "ï¿½ï¿½ì·¼ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //rawrel_card
+							mes "Laurell Weinder, who decided to have um dificil journey to repay gratitude fou alguns wizards deed.";
 							next;
 							mes "[Ragi]";
-							mes "But... These talented wizards could not return? Who made them? Find a clue in Lighthalzen.";
+							mes "But... Estes talented wizards could nao retornar? Who made them? Encontrar um clue in Lighthalzen.";
 							next;
 							cutin "ragi01",0;
-							if (select( "Take the request", "Quit." ) == 1) {
+							if (select( "Pegar o request", "Quit." ) == 1) {
 								mes "[Ragi]";
-								mes "I like this story but be careful if you do not want to end up a story yourself.";
+								mes "I like este historium mas tenhum cuidado se you do nao querer to end up um historium yourself.";
 								callsub S_Quest,13154,13153;
 							}
 						}
 					}
 					break;
 				case 2:
-					mes "Do you know the story about Satan Morocc? I want to sing a song of their story even when time passes by.";
+					mes "Do voce sabe o historium sobre Satum Morocc? Eu quero to sing um song of o historium ate mesmo when tempo passes by.";
 					next;
 					switch( select( "Angel Incarnation", "Black Nightmare Incarnation", "Ghost Incarnation" ) ) {
 						mes "[Ragi]";
 					case 1:
 						if (checkquest(13156,PLAYTIME) == 0) {
-							mes "A monster from Morocc has wings like an angel. Maybe, Satan Morocc wants to be an angel?";
+							mes "A monstro de Morocc has wings like um angel. Talvez, Satum Morocc wants to be um angel?";
 							next;
 							mes "[Ragi]";
-							mes "Haha please do not mind. It is just joke of a story teller. Please give me another story next time.";
+							mes "Hahum pou favou do nao mente. Isentao e apenas joke of um historium teller. Pou favou me de outro historium proximo tempo.";
 						}
 						else if (checkquest(13155,HUNTING) == 1) {
-							mes "Appearance looks fine but inside.. I am sure they are flesh and blood!";
+							mes "Appearance looks fine mas dentro.. Eu sou sure they are flesh e sangue!";
 							next;
 							mes "[Ragi]";
-							mes "Of course, I did not check by myself. But I am just a story teller as you see.";
+							mes "E claro, I did nao verificar by myself. Mas Eu sou apenas um historium teller as you ver.";
 							next;
 							mes "[Ragi]";
-							mes "But it is not safe.. So be careful! Please give me more stories! Maybe I can meet Satan Morocc somewhere around here?";
+							mes "Mas it is nao seguro.. Entao tenhum cuidado! Pou favou me de mais stories! Talvez Eu consigo meet Satum Morocc algum lugar ao redou aqui?";
 						}
 						else if (checkquest(13155,HUNTING) == 2) {
-							mes "Wow. There are so many stories coming to me! Thanks to you!";
+							mes "Wow. Hum entao muitos stories vindo to me! Obrigado to you!";
 							callsub S_Quest,13155,13156,1100000,200000;
 						}
 						else {
-							mes "Well... This song is not about the prince of darkness, but it is taken from people who claim to have seen him.";
+							mes "Bem... Este song is nao sobre o principe of escuridao, mas it is taken de pessoas who claim to have visto him.";
 							next;
 							mes "[Ragi]";
-							mes "Please help me to make a story by searching the flying Incarnations of Morocc.";
+							mes "Pou favou me ajude to fazer um historium by searching o flying Incarnations of Morocc.";
 							next;
-							if (select( "Take the request", "Quit." ) == 1) {
+							if (select( "Pegar o request", "Quit." ) == 1) {
 								mes "[Ragi]";
-								mes "Be sure to get at least 30 Angel looking Incarnations of Morocc.";
+								mes "Be sure to pegar at menos 30 Angel procurando Incarnations of Morocc.";
 								emotion ET_KEK;
 								callsub S_Quest,13156,13155;
 							}
@@ -294,178 +294,178 @@ moc_para01,41,76,3	script	Ragi#1	4_M_RAGI,{
 						break;
 					case 2:
 						if (checkquest(13158,PLAYTIME) == 0) {
-							mes "Story is not made yet, so I will ask next time !";
+							mes "Historium is nao made yet, entao Eu vou ask proximo tempo !";
 							cutin "ragi02",0;
 						}
 						else if (checkquest(13157,HUNTING) == 1) {
-							mes "The shape is not completed but it has a very sharp tooth.";
+							mes "O shape is nao completou mas it has um muito sharp tooth.";
 							next;
 							mes "[Ragi]";
-							mes "Do not you think that is going to be a very funny story?";
+							mes "Do nao you pensar esse is vai be um muito funny historia?";
 						}
 						else if (checkquest(13157,HUNTING) == 2) {
-							mes "Wow. There are so many stories coming to me! Thanks to you!";
+							mes "Wow. Hum entao muitos stories vindo to me! Obrigado to you!";
 							callsub S_Quest,13157,13158,1100000,200000;
 						}
 						else {
-							mes "I do not know if everything came out from Satan Morocc himself but things like this look horrible.";
+							mes "I do nao saber se tudo came out de Satum Morocc himself mas coisas like este olhar horrible.";
 							next;
 							mes "[Ragi]";
-							mes "But I think there also will be a story in it. That is why those creature are made. Please look for something black and tar-like.";
+							mes "Mas Eu acho lum tambem sera um historium in it. Esse is why esses creature are made. Pou favou olhar fou algo black e tar-like.";
 							next;
-							if (select( "Take the request", "Quit." ) == 1) {
+							if (select( "Pegar o request", "Quit." ) == 1) {
 								mes "[Ragi]";
-								mes "Find and get rid of 30 Dark Incarnation of Morocc.";
+								mes "Encontrar e pegar rid of 30 Escuro Incarnation of Morocc.";
 								callsub S_Quest,13158,13157;
 							}
 						}
 						break;
 					case 3:
 						if (checkquest(13160,PLAYTIME) == 0)
-							mes "The creature without clothing has very weird shape. Haha do not take it seriously. I am just a story teller.";
+							mes "O creature sem clothing has muito estranho shape. Hahum do nao pegar it seriously. Eu sou apenas um historium teller.";
 						else if (checkquest(13159,HUNTING) == 1) {
-							mes "This story should be spread out for weak adventurers like me! Because not everyone can be adventurer.";
+							mes "Este historium deveria ser spread out fou fraco aventureiros like me! Porque nao todos cum be aventureiro.";
 							next;
 							mes "[Ragi]";
-							mes "Maybe, adventurers have a good merit to know this kind of story. So can you please look for these creatures near Morocc?";
+							mes "Talvez, aventureiros have um bom merit to saber este kind of historia. Entao voce pode pou favou olhar fou estes creatures perto Morocc?";
 						}
 						else if (checkquest(13159,HUNTING) == 2) {
-							mes "Wow. There are so many stories coming to me! Thanks to you!";
+							mes "Wow. Hum entao muitos stories vindo to me! Obrigado to you!";
 							callsub S_Quest,13159,13160,1100000,200000;
 						}
 						else {
-							mes "This one is weird.. But he is also is an Incarnation of Morocc.";
+							mes "Este one is estranho.. Mas he is tambem is um Incarnation of Morocc.";
 							next;
 							mes "[Ragi]";
-							mes "But I am curious because it looks like a ghost and attacks does not work.";
+							mes "Mas Eu sou curioentao porque it looks like um ghost e ataques does nao trabalhar.";
 							next;
-							if (select( "Take the request", "Quit." ) == 1) {
+							if (select( "Pegar o request", "Quit." ) == 1) {
 								mes "[Ragi]";
-								mes "Please make a story after hunting at least 30 Ghost Incarnation of Morocc!";
+								mes "Pou favou fazer um historium depois cacando at menos 30 Ghost Incarnation of Morocc!";
 								callsub S_Quest,13160,13159;
 							}
 						}
 					}
 					break;
 				case 3:
-					mes "I never been to Ash Vacuum but I heard there are many interesting creatures there in the Scaraba Hall.";
+					mes "I nuncum been to Ash Vacuum mas Eu ouvi hum muitos interesting creatures lum in o Scarabum Hall.";
 					next;
-					switch( select( "Uni-Horn Scaraba Story", "Horn Scaraba Story", "Antler Scaraba Story", "Rake Horn Scaraba Story" ) ) {
+					switch( select( "Uni-Horn Scarabum Historia", "Horn Scarabum Historia", "Antler Scarabum Historia", "Rake Horn Scarabum Historia" ) ) {
 						mes "[Ragi]";
 					case 1:
 						if (checkquest(13162,PLAYTIME) == 0)
-							mes "I am making a story about Uni-Horn Scaraba. One means less than two!~ I started but it is difficult to finish. Can you help me?";
+							mes "Eu sou fazendo um historium sobre Uni-Horn Scaraba. One significum menos que two!~ I comecou mas it is dificil to terminar. Voce pode me ajude?";
 						else if (checkquest(13161,HUNTING) == 1) {
-							cutin "½ºÄ«¶ó¹ÙÄ«µå",3;  //scaraba_card
-							mes "They also have some stories right? First, I wonder about the shape of the one with one horn.";
+							cutin "ï¿½ï¿½Ä«ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //scaraba_card
+							mes "They tambem have alguns stories certo? Primeiro, I imaginar sobre o shape of o one com one horn.";
 							next;
 							cutin "ragi01",0;
 						}
 						else if (checkquest(13161,HUNTING) == 2) {
-							mes "I wonder what Uni-Horn Scarabas think? I want to make a song. Thanks for your help!";
+							mes "I imaginar what Uni-Horn Scarabas pensar? Eu quero to fazer um song. Obrigado fou seu ajudar!";
 							callsub S_Quest,13161,13162,1100000,200000;
 						}
 						else {
-							cutin "½ºÄ«¶ó¹ÙÄ«µå",3;  //scaraba_card
-							mes "New world is full of amazing monsters. They will become a dream for children who want to be adventurers.";
+							cutin "ï¿½ï¿½Ä«ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //scaraba_card
+							mes "Novo mundo is full of incrivel monstros. Eles vao se tornar um sonho fou children who querer to be aventureiros.";
 							next;
 							mes "[Ragi]";
-							mes "I want to make a song about the ^FF0000Uni-Horn Scaraba^000000!? Children will really like it.";
+							mes "Eu quero to fazer um song sobre o ^FF0000Uni-Horn Scaraba^000000!? Children will realmente like it.";
 							next;
 							cutin "ragi01",0;
-							if (select( "Take the request", "Quit." ) == 1) {
+							if (select( "Pegar o request", "Quit." ) == 1) {
 								mes "[Ragi]";
-								mes "You can find them near somewhere in the east at Scaraba Hall.";
+								mes "Voce pode encontrar them perto algum lugar in o leste at Scarabum Hall.";
 								callsub S_Quest,13162,13161;
 							}
 						}
 						break;
 					case 2:
 						if (checkquest(13164,PLAYTIME) == 0)
-							mes "I am making a story... Two means less than three~ I started to make a story but I can not finish. Will you help me?";
+							mes "Eu sou fazendo um historia... Two significum menos que three~ I comecou to fazer um historium mas Eu consigo nao terminar. Will you me ajude?";
 						else if (checkquest(13163,HUNTING) == 1) {
-							cutin "½ºÄ«¶ó¹ÙÄ«µå",3;  //scaraba_card
-							mes "That horn thing bothers me a little bit. What is the difference between one and two horns? Just appearance?";
+							cutin "ï¿½ï¿½Ä«ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //scaraba_card
+							mes "Esse horn coisum bothers me um pequeno bit. O que e o difference entre one e two horns? Apenas appearance?";
 							next;
 							mes "[Ragi]";
-							mes "Maybe it is unnecessary. But curiosity is important for story tellers. Hahaha.";
+							mes "Talvez it is unnecessary. Mas curiosity is importante fou historium tellers. Hahaha.";
 							cutin "ragi01",0;
 						}
 						else if (checkquest(13163,HUNTING) == 2) {
-							mes "You came back safely! How is it? Horn Scaraba seemed to be a fun story. You really did a good job.";
+							mes "You came back safely! Como estum it? Horn Scarabum seemed to be um fun historia. You realmente did um bom job.";
 							callsub S_Quest,13163,13164,1100000,200000;
 						}
 						else {
-							cutin "½ºÄ«¶ó¹ÙÄ«µå",3;  //scaraba_card
-							mes "We talk about Horn Scaraba? There is one more we should mention.. That is Horn Scaraba!";
+							cutin "ï¿½ï¿½Ä«ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //scaraba_card
+							mes "We conversar sobre Horn Scaraba? Hum one mais we should mention.. Esse is Horn Scaraba!";
 							next;
 							mes "[Ragi]";
-							mes "I do no know why. I just heard from people. I need to make a song so please take a look at their world!";
+							mes "I do no saber why. I apenas ouviu de pessoas. Eu precientao de to fazer um song entao pou favou pegar um olhar at o mundo!";
 							next;
 							cutin "ragi01",0;
-							if (select( "Take the request", "Quit." ) == 1) {
+							if (select( "Pegar o request", "Quit." ) == 1) {
 								mes "[Ragi]";
-								mes "You can find them near somewhere in the east at Scaraba Hall.";
+								mes "Voce pode encontrar them perto algum lugar in o leste at Scarabum Hall.";
 								callsub S_Quest,13164,13163;
 							}
 						}
 						break;
 					case 3:
 						if (checkquest(13166,PLAYTIME) == 0)
-							mes "There seem to be more story about Antler Scaraba! Please help me if you have time.";
+							mes "There parecer to be mais historium sobre Antler Scaraba! Pou favou me ajude se you have tempo.";
 						else if (checkquest(13165,HUNTING) == 1) {
-							cutin "½ºÄ«¶ó¹ÙÄ«µå",3;  //scaraba_card
-							mes "There seemed to be more special Scarabas according to rumors. Stronger and more scary ones.";
+							cutin "ï¿½ï¿½Ä«ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //scaraba_card
+							mes "There seemed to be mais especial Scarabas according to rumors. Stronger e mais assustadou ones.";
 							next;
 							mes "[Ragi]";
-							mes "Do you think Antler Scaraba might be one of them?";
+							mes "Voce pensar Antler Scarabum pode ser one of them?";
 							cutin "ragi01",0;
 						}
 						else if (checkquest(13165,HUNTING) == 2) {
-							mes "It must be tiring traveling long distance! Please tell me if there are more interesting stories!";
+							mes "It deve ser tiring traveling long distance! Pou favou me digum se hum mais interesting stories!";
 							callsub S_Quest,13165,13166,1100000,200000;
 						}
 						else {
-							cutin "½ºÄ«¶ó¹ÙÄ«µå",3;  //scaraba_card
-							mes "This one is very unique! Horns look like the one of a deer so it is called an Antler Scaraba.";
+							cutin "ï¿½ï¿½Ä«ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //scaraba_card
+							mes "Este one is muito unique! Horns olhar like o one of um deer entao it is chamado um Antler Scaraba.";
 							next;
 							mes "[Ragi]";
-							mes "Aren't you curious why it has that horn? I think it has an interesting story that people would like. Shall I ask you adventurer?";
+							mes "Voce nao e curioentao why it has esse horn? Eu acho it has um interesting historium esse pessoas would like. Shall I ask you aventureiro?";
 							next;
 							cutin "ragi01",0;
-							if (select( "Take the request", "Quit." ) == 1) {
+							if (select( "Pegar o request", "Quit." ) == 1) {
 								mes "[Ragi]";
-								mes "Can you please find a story about Antler Scaraba? Experience yourself is the best I guess!";
+								mes "Voce pode pou favou encontrar um historium sobre Antler Scaraba? Experiencium yourself is o best I guess!";
 								callsub S_Quest,13166,13165;
 							}
 						}
 						break;
 					case 4:
 						if (checkquest(13168,PLAYTIME) == 0)
-							mes "I feel like Rake Horn Scaraba has more story. Please help me if you have time.";
+							mes "I feel like Rake Horn Scarabum has mais historia. Pou favou me ajude se you have tempo.";
 						else if (checkquest(13167,HUNTING) == 1) {
-							cutin "½ºÄ«¶ó¹ÙÄ«µå",3;  //scaraba_card
-							mes "Here my plan is. I am making 4 passages for each Scaraba.";
+							cutin "ï¿½ï¿½Ä«ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //scaraba_card
+							mes "Aqui meu plum is. Eu sou fazendo 4 passages fou each Scaraba.";
 							next;
 							mes "[Ragi]";
-							mes "Whoever listen or sing will be confused to sing a troll. It sounds fun, right?";
+							mes "Whoever ouvir ou sing sera confcostumava sing um troll. It sounds fun, certo?";
 							cutin "ragi01",0;
 						}
 						else if (checkquest(13167,HUNTING) == 2) {
-							mes "Thank you ! I am sure that I can make a great song.";
+							mes "Obrigado ! Eu sou sure esse Eu consigo fazer um otimo song.";
 							callsub S_Quest,13167,13168,1100000,200000;
 						}
 						else {
-							cutin "½ºÄ«¶ó¹ÙÄ«µå",3;  //scaraba_card
-							mes "I'm starting to get confused. I am going to make a song of the Rake Horn Scarabas story.";
+							cutin "ï¿½ï¿½Ä«ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",3;  //scaraba_card
+							mes "Eu sou starting to pegar confused. Eu sou vai fazer um song of o Rake Horn Scarabas historia.";
 							next;
 							mes "[Ragi]";
-							mes "A song begins with Uni-horn Scaraba then sing along with Rake Horn Scaraba. Will you help me?";
+							mes "A song begins com Uni-horn Scarabum entao sing ao longo com Rake Horn Scaraba. Will you me ajude?";
 							next;
 							cutin "ragi01",0;
-							if (select( "Take the request", "Quit." ) == 1) {
+							if (select( "Pegar o request", "Quit." ) == 1) {
 								mes "[Ragi]";
-								mes "Please find a story about Rake Horn Scaraba from Scaraba Hall. Battle or experienced stories are fine.";
+								mes "Pou favou encontrar um historium sobre Rake Horn Scarabum de Scarabum Hall. Batalhum ou experienced stories are fine.";
 								callsub S_Quest,13168,13167;
 							}
 						}
@@ -474,7 +474,7 @@ moc_para01,41,76,3	script	Ragi#1	4_M_RAGI,{
 				}
 			}
 			else {
-				mes "I will continue to make a story or songs. But adventurers should step into a new adventure.";
+				mes "Eu vou continue to fazer um historium ou songs. Mas aventureiros should step parum dentro um novo adventure.";
 				next;
 				callsub S_Erasequest,
 					13143,1,"Egnigem Cenia",
@@ -491,23 +491,23 @@ moc_para01,41,76,3	script	Ragi#1	4_M_RAGI,{
 					13165,3,"Antler Scaraba",
 					13167,3,"Rake Horn Scaraba";
 				mes "[Ragi]";
-				mes "I hope to see you again as we farewell with smile.";
+				mes "I esperancum to ver you novamente as we ate mais com smile.";
 			}
 		}
 		else {
 			mes "[Ragi]";
-			mes "Well, I am kind of busy doing an errand for Sir Aigu. Do you have any questions?";
+			mes "Bem, Eu sou kind of ocupado fazendo um erre fou Sir Aigu. Voce have any questions?";
 			next;
-			switch( select( "Where did you get your hair-do?", "Please sing a song for me.", "Do you have a girl friend?", "About Aigu" ) ) {
+			switch( select( "Where voce pegar seu hair-do?", "Pou favou sing um song fou me.", "Voce have um girl amigo?", "Sobre Aigu" ) ) {
 				mes "[Ragi]";
 			case 1:
-				mes "There is a fine hair artist in Alberta. He butchered my hair with a some cooking scissors. Looks illegal.";
+				mes "Hum um fine hair artist in Alberta. He butchered meu hair com um alguns cooking scissors. Looks illegal.";
 				next;
 				mes "[Ragi]";
-				mes "Sometimes, hair-dos or color are strange... but I was lucky I didn't die.";
+				mes "Sometimes, hair-dos ou colou are estranho... mas Eu estavum lucky I nao morrer.";
 				break;
 			case 2:
-				mes "I did not make a song as a member of band yet. Someday, I will make a great song for you!";
+				mes "I did nao fazer um song as um membro of be yet. Someday, Eu vou fazer um otimo song fou you!";
 				break;
 			case 3:
 				cutin "ragi03",0;
@@ -515,19 +515,19 @@ moc_para01,41,76,3	script	Ragi#1	4_M_RAGI,{
 				next;
 				cutin "ragi02",0;
 				mes "[Ragi]";
-				mes "Aigu is only on my mind. I can not think of anything else. I am fine even if it is just a one-sided love...";
+				mes "Aigu is apenas on meu mente. Eu consigo nao pensar of anything else. Eu sou fine ate mesmo se it is apenas um one-sided amor...";
 				break;
 			case 4:
-				mes "I will never forget the first day I met her. She stared at me out of all the people in Izlude port. Now I help her by doing small errands.";
+				mes "Eu vou nuncum esquecer o primeiro dium I met her. She stared at me out of todos o pessoas in Izlude port. Agorum I ajudar a by fazendo pequeno errands.";
 				next;
 				mes "[Ragi]";
-				mes "But alas, I think Aigu likes someone else. ^FF0000We've never met... But I hate him.^000000";
+				mes "Mas alas, Eu acho Aigu likes alguem else. ^FF0000Nos temos nuncum met... Mas I odio him.^000000";
 				next;
 				mes "[Ragi]";
-				mes "But I hate myself more because I want to stay around her even if she will never see me. Haha was I too serious?";
+				mes "Mas I odio myself mais porque Eu quero to ficar ao redou a ate mesmo se she will nuncum ver me. Hahum was I tambem serious?";
 				next;
 				mes "[Ragi]";
-				mes "I am just a storyteller.. Any story can be made up. Most of the times it contains the truth.";
+				mes "Eu sou apenas um storyteller.. Any historium cum be made up. Most of o times it contains o truth.";
 			}
 		}
 	}
@@ -555,11 +555,11 @@ S_Erasequest:
 			mes "[Ragi]";
 			switch( getarg(.@i+1) ) {
 			case 1:
-				mes "The rest of the story of "+ getarg(.@i+2) +" is Okay, I will ask to someone else.";
+				mes "O rest of o historium of "+ getarg(.@i+2) +" is Okay, Eu vou ask to alguem else.";
 				break;
 			case 2:
 			case 3:
-				mes "I will ask to other adventurers about the story of "+ getarg(.@i+2) +".";
+				mes "Eu vou ask to outro aventureiros sobre o historium of "+ getarg(.@i+2) +".";
 				break;
 			}
 			break;
@@ -567,15 +567,15 @@ S_Erasequest:
 			mes "[Ragi]";
 			switch( getarg(.@i+1) ) {
 			case 1:
-				mes "Did you hear the story of "+ getarg(.@i+2) +"? Thanks you. I promise to make a good song.";
+				mes "Voce ouvir o historium of "+ getarg(.@i+2) +"? Obrigado you. I promise to fazer um bom song.";
 				getexp 1100000,300000;
 				break;
 			case 2:
-				mes "Is Morocc's story good enough for songs? You did a good job.";
+				mes "Is Morocc's historium bom suficiente fou songs? You did um bom job.";
 				getexp 1100000,200000;
 				break;
 			case 3:
-				mes "How was your adventure? Was it fun? Please let me hear your adventure story someday.";
+				mes "How was seu adventure? Was it fun? Pou favou deixe-me ouvir seu adventure historium someday.";
 				getexp 1100000,200000;
 				break;
 			}

@@ -42,7 +42,7 @@
 			case 9: mes .@s$+"The smell of this sea place is better than Mora, which is full of a grassy smell."; break;
 		}
 		next;
-		if(select("No:^A2314BMalangdo^000000~ Go~ Go~") == 1) {
+		if(select("Nao:^A2314BMalangdo^000000~ Go~ Go~") == 1) {
 			mes "[Dolangmal]";
 			mes "What!? You don't want to go ^A2314BMalangdo^000000? Chet!";
 			next;
@@ -50,7 +50,7 @@
 			mes "You're such an annoying guy. If you don't go, why did you talk to me... but...";
 			next;
 			mes "[Dolangmal]";
-			mes "^9E1837Admiral Tomas^000000 said to kidnap humans... No... Bring them politely?";
+			mes "^9E1837Admiral Tomas^000000 said to kidnap humans... Nao... Bring them politely?";
 			next;
 			mes "[Dolangmal]";
 			mes "Anyway, I got you. Whenever you want to go, just tell me.";
@@ -104,7 +104,7 @@
 			mes "You're such an annoying guy. If you can't keep these, why didn't you tell me during our conversation? I told you everything... but..";
 			next;
 			mes "[Dolangmal]";
-			mes "^9E1837Admiral Tomas^000000 said to kidnap humans... No... Bring them politely?";
+			mes "^9E1837Admiral Tomas^000000 said to kidnap humans... Nao... Bring them politely?";
 			next;
 			mes "[Dolangmal]";
 			mes "Anyway, I got you. Just tell me whenever you want to go.";
@@ -290,13 +290,13 @@ malangdo,147,117,3	script	Innkeeper#malang	554,{
 	mes "You see a lazy cat standing on a chair.";
 	mes "You guess that this is the Innkeeper.";
 	next;
-	switch(select("Umm... Can I rest here?:Psst... Can I save here?:Leave.")) {
+	switch(select("Umm... Can I rest here?:Psst... Can I save here?:Sair.")) {
 	case 1:
 		mes "[Innkeeper]";
 		mes "Eh?";
 		mes "Uh, sure you can use this hammock if you give me ^FF00005 Malangdo Cans^000000.";
 		next;
-		switch(select("Here you go.:Never mind.")) {
+		switch(select("Here you go.:Deixa pra la.")) {
 		case 1:
 			if (countitem(12636) > 4) {
 				delitem 12636,5; //Malang_Sp_Can

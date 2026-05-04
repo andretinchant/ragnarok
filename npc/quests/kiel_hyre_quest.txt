@@ -281,7 +281,7 @@ yuno_in01,35,179,4	script	Pub Master#kh	46,5,5,{
 		mes "to my pub. So what";
 		mes "would you like to have?";
 		next;
-		switch(select("Beer, please:A cocktail, please:Soju, please.:You look worried, what's up?:Cancel")) {
+		switch(select("Beer, please:A cocktail, please:Soju, please.:You look worried, what's up?:Cancelar")) {
 		case 1:
 			mes "[Vandt]";
 			mes "Alright, let me get";
@@ -1909,7 +1909,7 @@ yuno_fild08,71,170,0	script	Grave#kh	111,{
 		mes "^3355FFThe door to the";
 		mes "factory is wide open.^000000";
 		next;
-		switch(select("Enter:Cancel")) {
+		switch(select("Enter:Cancelar")) {
 		case 1:
 			warp "kh_dun01",3,230;
 			end;
@@ -1987,7 +1987,7 @@ yuno_fild02,93,210,4	script	Cottage Keeper#kh	85,{
 			mes "Master Kiel Hyre?";
 			mes "Um, are you sure?";
 			next;
-			switch(select("Yes:No")) {
+			switch(select("Sim:Nao")) {
 			case 1:
 				mes "[Cottage Keeper]";
 				mes "There must be some sort";
@@ -2030,7 +2030,7 @@ yuno_fild02,75,218,0	script	Door#kh2	111,{
 		mes "open it for you, then you'll";
 		mes "need the right key to unlock it.";
 		next;
-		switch(select("Unlock:Cancel")) {
+		switch(select("Unlock:Cancelar")) {
 		case 1:
 			mes "^3355FFYou unlock the door with the";
 			mes "key that Elly gave you, and";
@@ -2057,7 +2057,7 @@ yuno_fild02,75,218,0	script	Door#kh2	111,{
 	else {
 		mes "^3355FFThe door is open.^000000";
 		next;
-		switch(select("Enter:Cancel")) {
+		switch(select("Enter:Cancelar")) {
 		case 1:
 			warp "kh_vila",188,18;
 			end;
@@ -2084,7 +2084,7 @@ yuno_fild02,109,218,0	script	Door#kh1	111,{
 		mes "open it for you, then you'll";
 		mes "need the right key to unlock it.";
 		next;
-		switch(select("Open:Cancel")) {
+		switch(select("Open:Cancelar")) {
 		case 1:
 			mes "^3355FFYou don't have";
 			mes "the key that can";
@@ -2115,7 +2115,7 @@ kh_vila,191,14,0	script	Wall#kh	139,1,1,{
 		mes "open, revealing";
 		mes "a secret path.^000000";
 		next;
-		switch(select("Enter:Cancel")) {
+		switch(select("Enter:Cancelar")) {
 		case 1:
 			warp "kh_vila",17,177;
 			end;
@@ -2204,7 +2204,7 @@ kh_vila,16,175,0	script	Box#khp1	111,{
 	mes "^FFFFFF_^000000";
 	mes "Price: 1,100 zeny (cheap!)";
 	next;
-	switch(select("Buy!:Cancel")) {
+	switch(select("Buy!:Cancelar")) {
 	case 1:
 		if (Zeny < 1100) {
 			mes "^3355FFUnfortunately, you";
@@ -2347,7 +2347,7 @@ kh_vila,44,126,0	script	Map#khp1	111,{
 		mes "refresh your memory and";
 		mes "read that poem again.^000000";
 		next;
-		switch(select("Read:Cancel")) {
+		switch(select("Read:Cancelar")) {
 		case 1:
 			mes "^0000FFShe will be in a place";
 			mes "as cold as the poles.";
@@ -2490,7 +2490,7 @@ kh_vila,39,41,0	script	Pool#khp1	111,{
 		mes "along with a conscpicuous";
 		mes "lion statue with two handles.^000000";
 		next;
-		switch(select("Pull Handles:Cancel")) {
+		switch(select("Pull Handles:Cancelar")) {
 		case 1:
 			mes "Which handle would";
 			mes "you like to pull first?";
@@ -2741,7 +2741,7 @@ kh_vila,181,138,0	script	Bookshelf#khp1	111,{
 				mes "the bookshelf. There are two";
 				mes "keyholes on the steel safe.^000000";
 				next;
-				switch(select("Try all your keys:Cancel")) {
+				switch(select("Try all your keys:Cancelar")) {
 				case 1:
 					mes "^3355FFWhich key will";
 					mes "you insert into";
@@ -2895,7 +2895,7 @@ kh_vila,123,170,0	script	Medicine Chest#khp1	111,{
 			mes "was a good idea...^000000";
 			close;
 		case 2:
-			switch(select("Try Red Liquid:Try Blue Liquid:Try Yellow Liquid:Try Green Liquid:Cancel")) {
+			switch(select("Try Red Liquid:Try Blue Liquid:Try Yellow Liquid:Try Green Liquid:Cancelar")) {
 			case 1:
 				set .@KHPotionColor$,"red";
 				break;
@@ -3134,7 +3134,7 @@ kh_vila,136,68,0	script	Sword Hilt#kh	111,{
 		mes "path that leads to";
 		mes "the secret laboratory.^000000";
 		next;
-		switch(select("Enter:Cancel")) {
+		switch(select("Enter:Cancelar")) {
 		case 1:
 			warp "kh_vila",178,72;
 			end;
@@ -3254,7 +3254,7 @@ kh_dun01,235,48,0	script	Heavy Door#kh1::HeavyDoorKHQ1	111,{
 		mes "^3355FFThere is a large, heavy";
 		mes "door infront of you.^000000";
 		next;
-		switch(select("Open Door:Cancel")) {
+		switch(select("Open Door:Cancelar")) {
 		case 1:
 			input .@KHInput$;
 			mes "^3355FFYou try to push the";
@@ -3274,7 +3274,7 @@ kh_dun01,235,48,0	script	Heavy Door#kh1::HeavyDoorKHQ1	111,{
 		mes "^3355FFThere is a large, heavy";
 		mes "door in front of you.^000000";
 		next;
-		switch(select("Open Door:Cancel")) {
+		switch(select("Open Door:Cancelar")) {
 		case 1:
 			input .@KHInput$;
 			if (.@KHInput$ == "Blue Keycard") {
@@ -3316,7 +3316,7 @@ kh_dun01,76,233,0	script	Heavy Door::HeavyDoorKHQ2	111,{
 		mes "^3355FFThere is a large, heavy";
 		mes "door infront of you.^000000";
 		next;
-		switch(select("Open Door:Cancel")) {
+		switch(select("Open Door:Cancelar")) {
 		case 1:
 			input .@KHInput$;
 			mes "^3355FFYou try to push the";
@@ -3777,7 +3777,7 @@ kh_dun01,44,203,0	script	Entrance Device#khd2::KHAccess	111,{
 			mes "to reveal a long flight";
 			mes "of descending stairs.^000000";
 			next;
-			switch(select("Descend Stairs:Cancel")) {
+			switch(select("Descend Stairs:Cancelar")) {
 			case 1:
 				warp "kh_dun02",41,198;
 				end;
@@ -3853,7 +3853,7 @@ kh_mansion,78,55,5	script	Steward#kh	109,{
 		mes "once again. Would you";
 		mes "like to see my master?";
 		next;
-		switch(select("Yes:No")) {
+		switch(select("Sim:Nao")) {
 		case 1:
 			mes "[Steward]";
 			mes "Very well.";
@@ -4584,7 +4584,7 @@ kh_mansion,22,28,4	script	Kiel Hyre#kh	903,{
 		mes "to confront";
 		mes "Kiehl now?";
 		next;
-		switch(select("Yes:No")) {
+		switch(select("Sim:Nao")) {
 		case 1:
 			mes "[Kiel Hyre]";
 			mes "There... the secret";
@@ -4699,7 +4699,7 @@ kh_mansion,18,30,4	script	Allysia	894,{
 		mes "would be easier to understand";
 		mes "if I explained about robots?";
 		next;
-		switch(select("Yes:No")) {
+		switch(select("Sim:Nao")) {
 		case 1:
 			mes "[Allysia]";
 			mes "The robots you've been";
@@ -5091,7 +5091,7 @@ OnTouch:
 		mes "you can get to Juno, and";
 		mes "finish your mission quickly.";
 		next;
-		switch(select("Yes:No")) {
+		switch(select("Sim:Nao")) {
 		case 1:
 			mes "[Mitchell]";
 			mes "Good luck. Once you";
@@ -5591,7 +5591,7 @@ kh_rossi,144,286,0	script	Desk#khr3	111,{
 		mes "^3355FFThe desk has";
 		mes "three drawers.^000000";
 		next;
-		switch(select("First Drawer:Second Drawer:Third Drawer:Cancel")) {
+		switch(select("First Drawer:Second Drawer:Third Drawer:Cancelar")) {
 		case 1:
 			mes "^3355FFThe first drawer is locked.^000000";
 			close;
@@ -6361,7 +6361,7 @@ kh_kiehl01,166,187,0	script	Big Door#BigDoorKHQ5	111,{
 			mes "fully leveraged it, then you";
 			mes "should be able to open it.^000000";
 			next;
-			switch(select("Steel:Rusty Iron Piece:Solid Iron Piece:Iron Piece:Screw:Cancel")) {
+			switch(select("Steel:Rusty Iron Piece:Solid Iron Piece:Iron Piece:Screw:Cancelar")) {
 			case 1:
 				set .@KHPryingItem$,"Steel";
 				break;
@@ -6425,7 +6425,7 @@ kh_kiehl01,166,187,0	script	Big Door#BigDoorKHQ5	111,{
 				mes "is wide open, and.";
 				mes "you may now enter.^000000";
 				next;
-				switch(select("Yes:No")) {
+				switch(select("Sim:Nao")) {
 				case 1:
 					close2;
 					donpcevent "Big_Door_5_Warp::OnEnable";

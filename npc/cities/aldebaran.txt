@@ -39,7 +39,7 @@ aldebaran,113,70,4	script	Forger Munster#alde	48,{
 	mes "My family used to live in Geffen. So I guess it was natural that we studied forging and eventually became Blacksmiths. Then, we finally moved to this town,";
 	mes "Al De Baran.";
 	next;
-	if (select("About ^3355FFItem Upgrade^000000:Quit") == 1) {
+	if (select("Sobre ^3355FFItem Upgrade^000000:Sair") == 1) {
 		mes "[Munster]";
 		mes "My father was a famous blacksmith in Geffen, and he taught me a lot about forging equipment.";
 		next;
@@ -61,9 +61,9 @@ aldebaran,113,70,4	script	Forger Munster#alde	48,{
 
 aldebaran,64,104,4	script	Smithing Guy#alde	55,{
 	mes "[Quatro]";
-	mes "Have you heard that a famous Blacksmith moved here from Geffen?";
+	mes "Voce ja ouviu falar that a famous Blacksmith moved here from Geffen?";
 	next;
-	if (select("Famous Blacksmith?:End Conversation") == 1) {
+	if (select("Famous Blacksmith?:Encerrar conversa") == 1) {
 		mes "[Quatro]";
 		mes "From what I've heard, he's one of those Blacksmiths that can upgrade your weapons and armor. When you upgrade a weapon, its attack strength is increased.";
 		next;
@@ -89,7 +89,7 @@ aldebaran,49,93,4	script	Young Man#alde	83,{
 	mes "weapons exist!";
 	next;
 	mes "[Miller]";
-	mes "Well, they're rarely seen in the open market, but boss monsters will drop them by a low chance if you happen to be able to kill them.";
+	mes "Well, they're rarely seen in the open market, but boss monstros will drop them by a low chance if you happen to be able to kill them.";
 	close;
 }
 
@@ -97,14 +97,14 @@ aldebaran,81,61,4	script	Shell Gathering Lady#ald	101,{
 	mes "[Joanne]";
 	mes "I enjoy gathering shells from the sea. It's really fun and relaxing~";
 	next;
-	if (select("Shell Gathering?:End Conversation") == 1) {
+	if (select("Shell Gathering?:Encerrar conversa") == 1) {
 		mes "[Joanne]";
 		mes "When you see bubbles popping up from the sand or muddy puddles, try digging into the ground a bit. You might find some shells underneath the ground!";
 		next;
 		mes "[Joanne]";
-		mes "Have you heard";
+		mes "Voce ja ouviu falar";
 		mes "of Ambernite?";
-		mes "That shell monster";
+		mes "That shell monstro";
 		mes "is pretty tough~";
 		next;
 		mes "[Joanne]";
@@ -127,14 +127,14 @@ aldebaran,46,129,4	script	Canal Guy#alde	97,{
 	mes "[Panama]";
 	mes "Al De Baran is known world wide as the City of Canals. The waterways really add a sophisticated, romantic touch to our fair city.";
 	next;
-	switch(select("About the Canals:End Conversation")) {
+	switch(select("Sobre the Canals:Encerrar conversa")) {
 	case 1:
 		mes "[Panama]";
 		mes "Well, a canal is an artificial waterway used for travel,";
 		mes "shipping, or irrigation.";
 		next;
 		mes "[Panama]";
-		mes "However, the canals over here are just for show. If we needed to transport anything, we just use the Kafra Corporation Teleport service!";
+		mes "Porem, the canals over here are just for show. If we needed to transport anything, we just use the Kafra Corporation Teleport service!";
 		close;
 		break;
 	case 2:
@@ -151,7 +151,7 @@ aldebaran,67,154,4	script	Forest Guy#alde	98,{
 	mes "Both of those places are tough";
 	mes "to travel through.";
 	next;
-	switch(select("Mt.Mjolnir?:Payon Forest...?:End Conversation")) {
+	switch(select("Mt.Mjolnir?:Payon Forest...?:Encerrar conversa")) {
 	case 1:
 		mes "[Isenberg]";
 		mes "To arrive here from Prontera or Geffen, you've got to cross the Mjolnir Mountains.";
@@ -161,14 +161,14 @@ aldebaran,67,154,4	script	Forest Guy#alde	98,{
 		mes "then good job!";
 		next;
 		mes "[Isenberg]";
-		mes "The Mjolnir Mountains are really steep, and it's full of aggressive and hostile monsters. So it's always a risk to travel through there alone.";
+		mes "The Mjolnir Mountains are really steep, and it's full of aggressive and hostile monstros. So it's always a risk to travel through there alone.";
 		close;
 	case 2:
 		mes "[Isenberg]";
 		mes "If you wish to visit Alberta or the city of Payon, you must first travel through the Payon Forest.";
 		next;
 		mes "[Isenberg]";
-		mes "The Payon Forest is a winding, intricate maze where it's easy to get lost. Unless you concentrate and keep track of your path, you might be stuck wandering in that dangerous place.";
+		mes "The Payon Forest is a winding, intricate maze where it's easy to get lost. Unless you concentrate and keep track of your path, you might be stuck wandering in that perigoso place.";
 		next;
 		mes "[Isenberg]";
 		mes "Payon, the Archer Village, was built deep inside this steep and rugged forest so that it may be protected from outside invaders. So I guess that a good decision on their part.";
@@ -178,7 +178,7 @@ aldebaran,67,154,4	script	Forest Guy#alde	98,{
 		mes "The huge mountains surrounding this town";
 		mes "blocks people from outside to come into this town.";
 		mes "That may be a part of the reason how we have been able to";
-		mes "keep this beautiful canal and mysterious alchemy";
+		mes "keep this bonito canal and misterioso alchemy";
 		mes "without any influence from outside.";
 		close;
 	}
@@ -186,19 +186,19 @@ aldebaran,67,154,4	script	Forest Guy#alde	98,{
 
 aldebaran,90,170,4	script	Slot Guy#alde	47,{
 	mes "[Epthiel]";
-	mes "Some weapons or armor have Slots where you can insert Cards obtained from monsters.";
+	mes "Some weapons or armor have Slots where you can insert Cards obtained from monstros.";
 	next;
-	switch(select("About the number of Slots:Relation between Cards and Slots:End Conversation")) {
+	switch(select("Sobre the number of Slots:Relation between Cards and Slots:Encerrar conversa")) {
 	case 1:
 		mes "[Epthiel]";
-		mes "Items dropped by monsters possess more Slots than ordinary weapons or armor sold in NPC shops.";
+		mes "Items dropped by monstros possess more Slots than ordinary weapons or armor sold in NPC shops.";
 		next;
 		mes "[Epthiel]";
 		mes "I guess you can assume that an item with more Slots is more valuable than the same item with fewer Slots.";
 		close;
 	case 2:
 		mes "[Epthiel]";
-		mes "Once a Card is inserted into a Slot, it is impossible to remove it. So please be careful when you insert Cards into weapons or armor.";
+		mes "Once a Card is inserted into a Slot, it is impossible to remove it. So please tome cuidado when you insert Cards into weapons or armor.";
 		next;
 		mes "[Epthiel]";
 		mes "Also, when you mouse over equipment in the Item Window or Vending Window, the name of the item will be followed by the number of its Slots in brackets.";
@@ -211,7 +211,7 @@ aldebaran,90,170,4	script	Slot Guy#alde	47,{
 		close;
 	case 3:
 		mes "[Epithiel]";
-		mes "Have you ever obtained a card from a monster?";
+		mes "Have you ever obtained a card from a monstro?";
 		close;
 	}
 }
@@ -220,27 +220,27 @@ aldebaran,117,181,4	script	Phracon Guy#alde	48,{
 	mes "[Joy]";
 	mes "Level 1 weapons, which are the lowest grade, need a metal named ^3355FFPhracon^000000 in order to be upgraded.";
 	next;
-	switch(select("About Phracon:Advice about Phracon:End Conversation")) {
+	switch(select("Sobre Phracon:Advice about Phracon:Encerrar conversa")) {
 	case 1:
 		mes "[Joy]";
 		mes "Phracon is a pretty common metal and can be found all over the Midgard continent.";
 		next;
 		mes "[Joy]";
-		mes "Although it lacks the strength of other metals, it's easy to find and obtain. You can get Phracons by killing monsters or by buying them in Forging Shops in towns.";
+		mes "Embora it lacks the strength of other metals, it's easy to find and obtain. You can get Phracons by killing monstros or by buying them in Forging Shops in towns.";
 		next;
 		mes "[Joy]";
 		mes "When you no longer need Phracons because you are using higher level weapons, you can sell them for some zeny!";
 		close;
 	case 2:
 		mes "[Joy]";
-		mes "Well, I hear lots of monsters carry Phracons and will drop them once killed. Why don't you go hunting for them?";
+		mes "Well, I hear lots of monstros carry Phracons and will drop them once killed. Why don't you go hunting for them?";
 		next;
 		mes "[Joy]";
 		mes "It shouldn't be too difficult. Once I found a Phracon that dropped after killing a Bebe Savage! But if you're desperate, you can always buy them at the Forging Shop.";
 		close;
 	case 3:
 		mes "[Joy]";
-		mes "Good luck with finding Phracons!";
+		mes "Boa sorte with finding Phracons!";
 		close;
 	}
 }
@@ -249,13 +249,13 @@ aldebaran,121,231,4	script	Alchemy Guy#alde	49,{
 	mes "[Chemirre]";
 	mes "Alchemists, one of the 2nd Jobs, are able to create items out of several materials using knowledge from the ancient age of Al De Baran.";
 	next;
-	switch(select("About Alchemy in Payon:Definition of Alchemy:. . . . .:End Conversation")) {
+	switch(select("Sobre Alchemy in Payon:Definition of Alchemy:. . . . .:Encerrar conversa")) {
 	case 1:
 		mes "[Chemirre]";
 		mes "Most people don't know that there was an oriental form of Alchemy that developed in Payon.";
 		next;
 		mes "[Chemirre]";
-		mes "These Payon Alchemists were able to create Gold out of different materials. However, Payon Alchemy never advanced as much as the Alchemy in Al De Baran.";
+		mes "These Payon Alchemists were able to create Gold out of different materials. Porem, Payon Alchemy never advanced as much as the Alchemy in Al De Baran.";
 		next;
 		mes "[Chemirre]";
 		mes "Materials for Alchemy in Payon were scarce and interest in that field eventually waned. Now, you can only study Alchemy here in Al De Baran.";
@@ -268,16 +268,16 @@ aldebaran,121,231,4	script	Alchemy Guy#alde	49,{
 		mes "Alchemists specialize in chemical research in order to create useful items out of various things.";
 		next;
 		mes "[Chemirre]";
-		mes "I also hear that they create all sorts of Potions, and can even summon certain monsters! It seems that their studies have all sorts of nifty applications.";
+		mes "I also hear that they create all sorts of Potions, and can even summon certain monstros! It seems that their studies have all sorts of nifty applications.";
 		close;
 	case 3:
 		mes "[Chemirre]";
 		mes "You are bored, aren't you?";
-		mes "Alright then, I will tell you a story about monster cards and item slots.";
-		mes "As you already know, if you ever have obtained a monster card before,";
+		mes "Certo entao, I will tell you a story about monstro cards and item slots.";
+		mes "As you already know, if you ever have obtained a monstro card before,";
 		next;
 		mes "[Chemirre]";
-		mes "you can only insert a monster card to an item";
+		mes "you can only insert a monstro card to an item";
 		mes "that satisfies the card's location requirement.";
 		mes "For instance, let's say, you have obtained a Poring Card.";
 		next;
@@ -295,7 +295,7 @@ aldebaran,121,231,4	script	Alchemy Guy#alde	49,{
 		mes "Almost every armor items that are being sold";
 		mes "in town shops do not have slots on them.";
 		mes "That means, you can only obtain";
-		mes "slotted armors by hunting monsters.";
+		mes "slotted armors by hunting monstros.";
 		next;
 		mes "[Chemirre]";
 		mes "Ah, let me tell you how you can insert a card to an item.";
@@ -321,7 +321,7 @@ aldebaran,86,228,4	script	Little Kid#alde	62,{
 	mes "A while ago I went out for a walk toward Mt. Mjolnir with my pet Savage Bebe. His name is NukNuk!";
 	mes "We got attacked, but luckily we weren't hurt.";
 	next;
-	switch(select("Attacked?:About Mt.Mjolnir:End Conversation")) {
+	switch(select("Attacked?:Sobre Mt.Mjolnir:Encerrar conversa")) {
 	case 1:
 		mes "[Bebe]";
 		mes "I was walking up a narrow path, and out of the blue, a giant and ugly plant started to attack me and NukNuk!";
@@ -330,21 +330,21 @@ aldebaran,86,228,4	script	Little Kid#alde	62,{
 		mes "I was so surprised, so me and NukNuk had to run away. I threw rocks at it, but I don't think I hurt it. It must have been really strong!";
 		next;
 		mes "[Bebe]";
-		mes "What really surprised me was the plant that attacked me was a huge flower with the face of a person! So, look out for those. They're dangerous!";
+		mes "What really surprised me was the plant that attacked me was a huge flower with the face of a person! So, look out for those. They're perigoso!";
 		close;
 	case 2:
 		mes "[Bebe]";
-		mes "Even though people are fascinated by the scenic beauty of Mt. Mjolnir, it's full of dangerous monsters!";
+		mes "Even though people are fascinated by the scenic beauty of Mt. Mjolnir, it's full of perigoso monstros!";
 		next;
 		mes "[Bebe]";
 		mes "There are Flowers, Insects, Bees, Butterflies and Moths that are big enough to kill you if you're not careful!";
 		next;
 		mes "[Bebe]";
-		mes "Then again, most of these monsters won't hurt you if you don't attack first. But some of them will attack you once they see you!";
+		mes "Then again, most of these monstros won't hurt you if you don't attack first. But some of them will attack you once they see you!";
 		close;
 	case 3:
 		mes "[Bebe]";
-		mes "By the way, where is my NukNuk...?";
+		mes "A proposito, where is my NukNuk...?";
 		mes "NukNuk! Come out!";
 		close;
 	}
@@ -354,18 +354,18 @@ aldebaran,159,242,4	script	Insect Guy#alde	119,{
 	mes "[Stromme]";
 	mes "Even to a strong Swordman, the Insects or Mt. Mjolnir pose a considerable threat. You've got to know your enemy before engaging it in battle!";
 	next;
-	if (select("About Insects:End Conversation") == 1) {
+	if (select("Sobre Insects:Encerrar conversa") == 1) {
 		mes "[Stromme]";
 		mes "Honey Bees, Butterflies and Moths seem like simple creatures, but that doesn't mean you should underestimate them.";
 		next;
 		mes "[Stromme]";
-		mes "These Insects have evolved over time, and can counter attacks from threats like you adventurers!";
+		mes "These Insects have evolved over time, and can counter attacks from threats like you aventureiros!";
 		next;
 		mes "[Stromme]";
 		mes "There are also carnivorous Insects, such as praying Spiders, praying Mantises, and the millipede like Argiopes.";
 		next;
 		mes "[Stromme]";
-		mes "These monsters have mutated and are too strong for a person at certain levels. You should especially watch out for Argiopes.";
+		mes "These monstros have mutated and are too strong for a person at certain levels. You should especially watch out for Argiopes.";
 		next;
 		mes "[Stromme]";
 		mes "Luckily, their eyesight is pretty bad, so it won't notice you if you walk a safe distance away from it.";
@@ -391,7 +391,7 @@ aldebaran,60,70,4	script	Sylvia#alde	69,{
 	next;
 	if (select("Appraise?:That's very nice.") == 1) {
 		mes "[Sylvia]";
-		mes "Equipment that is dropped by monsters can't be equipped right away.";
+		mes "Equipment that is dropped by monstros can't be equipped right away.";
 		next;
 		mes "[Sylvia]";
 		mes "If you right-click the equippable item in the Item Inventory, you'll see that it is Unidentified and that Appraisal is needed. What to do?";
@@ -400,7 +400,7 @@ aldebaran,60,70,4	script	Sylvia#alde	69,{
 		mes "Well, in that case, you've gotta use ^3355FF Magnifier^000000!";
 		next;
 		mes "[Sylvia]";
-		mes "Even without a Blacksmith, Alchemist or Merchant in your party, you can appraise your equipment! Of course, a Magnifier is consumed each time you use one...";
+		mes "Even without a Blacksmith, Alchemist or Merchant in your party, you can appraise your equipment! Claro, a Magnifier is consumed each time you use one...";
 		close;
 	}
 	mes "[Sylvia]";
@@ -411,18 +411,18 @@ aldebaran,60,70,4	script	Sylvia#alde	69,{
 
 aldebaran,93,80,4	script	Issei#alde	48,{
 	mes "[Issei]";
-	mes "Al De Baran is such a wonderful place with its romantic canals and classic architecture. I love nothing more than to stroll through this city with my beautiful girlfriend.";
+	mes "Al De Baran is such a wonderful place with its romantic canals and classic architecture. I love nothing more than to stroll through this city with my bonito girlfriend.";
 	next;
-	if (select("You have a girlfriend?:End Conversation.") == 1) {
+	if (select("You have a girlfriend?:Encerrar conversa.") == 1) {
 		mes "[Issei]";
 		mes "Hey...";
-		mes "Is that so hard to believe?! Yeah, ask anyone! She really exists! Although, sometimes, just sometimes mind you, she gets too excited about weapons and armor.";
+		mes "Is that so hard to believe?! Yeah, ask anyone! She really exists! Embora, sometimes, just sometimes mind you, she gets too excited about weapons and armor.";
 		next;
 		mes "[Issei]";
-		mes "I mean, instead of enjoying a romantic dinner, she'll just go on about how equipment dropped from monsters is higher quality than those sold in shops...";
+		mes "I mean, instead of enjoying a romantic dinner, she'll just go on about how equipment dropped from monstros is higher quality than those sold in shops...";
 		next;
 		mes "[Issei]";
-		mes "I mean, why should I care if equipment dropped by monsters tend to have more Slots?! I can't even kill a Poring!";
+		mes "I mean, why should I care if equipment dropped by monstros tend to have more Slots?! I can't even kill a Poring!";
 		next;
 		mes "[Issei]";
 		mes "As you can see,";
@@ -447,12 +447,12 @@ aldebaran,180,46,4	script	Joo Jahk#alde	88,{
 	mes "[Joo Jahk]";
 	mes "Well, it's too late for me, since I already drank some. Still, I'm a little worried...";
 	next;
-	if (select("Continue.:End conversation.") == 1) {
+	if (select("Continue.:Encerrar conversa.") == 1) {
 		mes "[Joo Jahk]";
-		mes "On one of my travels around Midgard, I've heard from a really high level Mage that physical attacks, or magic with Neutral Property, won't damage Spiritual Property monsters.";
+		mes "On one of my travels around Midgard, I've heard from a really high level Mage that physical attacks, or magic with Neutral Property, won't damage Spiritual Property monstros.";
 		next;
 		mes "[Joo Jahk]";
-		mes "Maybe that advice will come in handy, now that you know that. Always remember the importance of the Properties of your skills and weapons when battling monsters.";
+		mes "Maybe that advice will come in handy, now that you know that. Always remember the importance of the Properties of your skills and weapons when battling monstros.";
 		close;
 	}
 	mes "[Joo Jahk]";
@@ -462,7 +462,7 @@ aldebaran,180,46,4	script	Joo Jahk#alde	88,{
 
 aldebaran,212,122,4	script	Citizen#alde	97,{
 	mes "[Gavin]";
-	mes "Welcome!";
+	mes "Bem-vindo!";
 	mes "The town of";
 	mes "Al De Baran";
 	mes "welcomes you!";
@@ -471,16 +471,16 @@ aldebaran,212,122,4	script	Citizen#alde	97,{
 	mes "Well, that might be an exaggeration. After all, it's just me that's welcoming you.";
 	mes "Hey there!";
 	next;
-	if (select("Now, tell me about monsters.:End conversation.") == 1) {
+	if (select("Now, tell me about monsters.:Encerrar conversa.") == 1) {
 		mes "[Gavin]";
 		mes "Monsters...?";
-		mes "Aren't we straying off topic a little bit? Ah, you must be one of those adventurers!";
+		mes "Aren't we straying off topic a little bit? Ah, you must be one of those aventureiros!";
 		next;
 		mes "[Gavin]";
-		mes "Can't get your mind off the job, eh? Alright, now there was some monster that I saw just recently...";
+		mes "Can't get your mind off the job, eh? Alright, now there was some monstro that I saw just recentemente...";
 		next;
 		mes "[Gavin]";
-		mes "Ah, now I remember! Just a few days ago, I saw a really interesting looking monster! It was a Poring with Angel's wings!";
+		mes "Ah, now I remember! Just a few days ago, I saw a really interesting looking monstro! It was a Poring with Angel's wings!";
 		next;
 		mes "[Gavin]";
 		mes "I swear! He was jumping around somewhere near Mt. Mjolnir with some ordinary Porings. I think he was, like, their leader.";
@@ -499,15 +499,15 @@ aldebaran,146,124,4	script	Town Girl#alde	101,{
 	mes "[Nastasia]";
 	mes "But isn't killing illegal? And do they even collect educational tuition?";
 	next;
-	if (select("Continue conversation.:End Conversation.") == 1) {
+	if (select("Continue conversation.:Encerrar conversa.") == 1) {
 		mes "[Nastasia]";
-		mes "Although Assassins benefit from being very quick and having lots of AGI, they should still have some DEX.";
+		mes "Embora Assassins benefit from being very quick and having lots of AGI, they should still have some DEX.";
 		next;
 		mes "[Nastasia]";
-		mes "DEX is especially important if you want to hit monsters with wings. Those monsters are quick moving and fast in attacking.";
+		mes "DEX is especially important if you want to hit monstros with wings. Those monstros are quick moving and fast in attacking.";
 		next;
 		mes "[Nastasia]";
-		mes "In general, if you want to hit monsters that are as fast, or even faster, than you are, you're going to need some DEX.";
+		mes "In general, if you want to hit monstros that are as fast, or even faster, than you are, you're going to need some DEX.";
 		close;
 	}
 	mes "[Nastasia]";
@@ -519,7 +519,7 @@ aldebaran,143,136,4	script	Bell Keeper#A	89,{
 	mes "[Bell Keeper]";
 	mes "I have been charged by the Committee of 'Heaven on Earth' to guard this entrance of the Clock Tower.";
 	next;
-	if (select("About Clock Tower.:Quit.") == 1) {
+	if (select("Sobre Clock Tower.:Sair.") == 1) {
 		mes "[Bell Keeper]";
 		mes "Every floor of this tower is connected to each other by a certain device we like to call 'Warp Gear.'";
 		next;
@@ -530,11 +530,11 @@ aldebaran,143,136,4	script	Bell Keeper#A	89,{
 		mes "The 'Random Warp' will transport you to an unknown spot. Be advised if you don't want to suddenly be separated from your party...";
 		next;
 		mes "[Bell Keeper]";
-		mes "Remember, Random Warps are shown in green on the mini-map. So keep your eyes peeled for that, as well as for those dangerous Clocks.";
+		mes "Remember, Random Warps are shown in green on the mini-map. So keep your eyes peeled for that, as well as for those perigoso Clocks.";
 		close;
 	}
 	mes "[Bell Keeper]";
-	mes "Please take heed that this Clock Tower is filled with extremely dangerous monsters.";
+	mes "Please take heed that this Clock Tower is filled with extremely perigoso monstros.";
 	close;
 }
 
@@ -549,7 +549,7 @@ aldeba_in,232,241,4	script	RS125#alde	48,{
 	mes "I may have a machine heart and I may disturb you with loud noises from the heart,";
 	mes "that will never stop me from running for future of Al De Baran.";
 	next;
-	if (select("Listen to his story.:End Conversation") == 1) {
+	if (select("Listen to his story.:Encerrar conversa") == 1) {
 		mes "[RS125]";
 		mes "It's been 3 years already.";
 		mes "My brother 996 used to be a short track athlete in the Al De Baran city field team.";
@@ -563,7 +563,7 @@ aldeba_in,232,241,4	script	RS125#alde	48,{
 		mes "I was his manager at the time and I was so stressed out because of his fans.";
 		next;
 		mes "[RS125]";
-		mes "However, there is nothing last forever...";
+		mes "Porem, there is nothing last forever...";
 		mes "One day, a girl from Payon beat my brother from a game.";
 		next;
 		mes "[RS125]";
@@ -577,7 +577,7 @@ aldeba_in,232,241,4	script	RS125#alde	48,{
 		close;
 	}
 	mes "[RS125]";
-	mes "I want to travel around the world one of these days.";
+	mes "I want to travel around the world one of hoje em dia.";
 	mes "If I can see the ocean from the port of Alberta, it must be so wonderful.";
 	mes "After the next year's athletic competition, I will go on a round-the-world tour with my brother.";
 	close;
@@ -592,7 +592,7 @@ aldeba_in,223,121,4	script	Threatening-Looking Man	63,{
 	mes "[Threatening-Looking Man]";
 	mes "Hahahaha...chill out, I was just joking.";
 	next;
-	if (select("Continue:Quit") == 1) {
+	if (select("Continue:Sair") == 1) {
 		mes "[Threatening-Looking Man]";
 		mes "You may know this already, but";
 		mes "we have a system called, the mercenary system in this world.";
@@ -676,7 +676,7 @@ aldeba_in,152,47,4	script	Fussy Man#alde	97,{
 aldeba_in,156,179,4	script	Master#alde	61,{
 	mes "[Master]";
 	mes "The Kafra Corporation Headquarters is located here in Al De Baran.";
-	mes "Do you know";
+	mes "Voce sabe";
 	mes "what that means?";
 	next;
 	mes "[Master]";
@@ -714,7 +714,7 @@ aldeba_in,156,179,4	script	Master#alde	61,{
 		mes "Intelligent, sophisticated and never seen without her luxurious glasses. It's Candidate Number Five: ^33FF55Leilah^000000!";
 		next;
 		mes "[Master]";
-		mes "Pretty, cute and fresh faced. Although She looks young and immature, she's the best staff!";
+		mes "Pretty, cute and fresh faced. Embora She looks young and immature, she's the best staff!";
 		mes "Candidate Number (6) ^AAAA00Curly Sue^000000 !!";
 		next;
 		switch(select("(1) Pavianne:(2) Blossom:(3) Jasmine:(4) Roxie:(5) Leilah:(6) Curly Sue")) {
@@ -765,16 +765,16 @@ aldeba_in,156,179,4	script	Master#alde	61,{
 aldeba_in,84,166,4	script	Kafra Service#alde	117,{
 	cutin "kafra_01",2;
 	mes "[Kafra Pavianne]";
-	mes "Welcome! I'm Pavianne,";
+	mes "Bem-vindo! I'm Pavianne,";
 	mes "one of the senior Kafra Employees. The Kafra Corporation Service is always trying to satisfy 100 % of our customers' expectations.";
 	next;
 	mes "[Kafra Pavianne]";
-	mes "Due to a change in customer support policy, we no longer accept Kafra Passes. However, we are offering refunds for our customers who still possess these passes.";
+	mes "Due to a change in customer support policy, we no longer accept Kafra Passes. Porem, we are offering refunds for our customers who still possess these passes.";
 	next;
 	if (select("Sell Kafra Pass:Alright, bye~") == 1) {
 		if (countitem(1084) == 0) {
 			mes "[Kafra Pavianne]";
-			mes "I'm sorry,";
+			mes "Sinto muito,";
 			mes "but you don't";
 			mes "have any Kafra Passes.";
 			close2;
@@ -787,7 +787,7 @@ aldeba_in,84,166,4	script	Kafra Service#alde	117,{
 			mes "Let's see...";
 			if (countitem(1084) == 1) {
 				mes "You have 1 Kafra Pass.";
-				mes "You can sell that pass to us for 2000 zeny. Would you like to sell this Kafra Pass back to the Kafra Corporation?";
+				mes "You can sell that pass to us for 2000 zeny. Gostaria de sell this Kafra Pass back to the Kafra Corporation?";
 			}
 			else {
 				mes "You have "+ countitem(1084) +" Kafra Passes.";
@@ -797,7 +797,7 @@ aldeba_in,84,166,4	script	Kafra Service#alde	117,{
 			if (select("Yes:No") == 1) {
 				if (countitem(1084) == 0) {
 					mes "[Kafra Pavianne]";
-					mes "I'm sorry, but you don't have any Kafra Passes.";
+					mes "Sinto muito, mas voce don't have any Kafra Passes.";
 					close2;
 					cutin "",255;
 					end;
@@ -805,7 +805,7 @@ aldeba_in,84,166,4	script	Kafra Service#alde	117,{
 				delitem 1084,countitem(1084); //Kapra's_Pass
 				set Zeny,Zeny+.@kafrapassmoney;
 				mes "[Kafra Pavianne]";
-				mes "Thank you.";
+				mes "Obrigado.";
 			}
 			close2;
 			cutin "",255;
@@ -813,7 +813,7 @@ aldeba_in,84,166,4	script	Kafra Service#alde	117,{
 		}
 	}
 	mes "[Kafra Pavianne]";
-	mes "Thank you,";
+	mes "Obrigado,";
 	mes "have a good day.";
 	close2;
 	cutin "",255;
@@ -823,18 +823,18 @@ aldeba_in,84,166,4	script	Kafra Service#alde	117,{
 aldeba_in,83,245,4	script	Kafra Service#2alde	116,{
 	cutin "kafra_02",2;
 	mes "[Kafra Blossom]";
-	mes "Welcome to the";
+	mes "Bem-vindo ao";
 	mes "Kafra Corporation.";
 	mes "The Kafra Employees are";
 	mes "always here to serve you.";
 	next;
 	mes "[Kafra Blossom]";
-	mes "We appreciate your continued use of the Kafra Service. Please feel free to ask me if you have any questions.";
+	mes "We appreciate your continued use of the Kafra Service. Please fique a vontade para ask me if you have any questions.";
 	next;
 	switch(select("How does Kafra Storage work?:How do you teleport people?")) {
 	case 1:
 		mes "[Kafra Blossom]";
-		mes "Well, adventurers like yourself can place items into Kafra Storage, so that you don't have to carry all of your stuff around.";
+		mes "Well, aventureiros like yourself can place items into Kafra Storage, so that you don't have to carry all of your stuff around.";
 		next;
 		mes "[Kafra Blossom]";
 		mes "Now, the Kafra Storage Window is separated into three tabs into which items are automatically sorted.";
@@ -846,7 +846,7 @@ aldeba_in,83,245,4	script	Kafra Service#2alde	116,{
 		mes "Multiple items of the same type will only take up one Slot in the Item and Etc. tabs. For example, 324 Jellopies would take up only one Slot, and 22 Red Potions would take another Slot.";
 		next;
 		mes "[Kafra Blossom]";
-		mes "However, in the Equip tab, each and every single item takes up its own Slot. I guess that's because each and every single equipment can be uniquely upgraded by forging or through Cards.";
+		mes "Porem, in the Equip tab, each and every single item takes up its own Slot. I guess that's because each and every single equipment can be uniquely upgraded by forging or through Cards.";
 		next;
 		mes "[Kafra Blossom]";
 		mes "There's a total of 300 Slots for all three item categories in the Kafra Storage, so it might be helpful to remember that.";
@@ -857,7 +857,7 @@ aldeba_in,83,245,4	script	Kafra Service#2alde	116,{
 		mes "Oh, I get that question all the time. '^CC0066Oh Blossom, how do you do it?^000000' Well...";
 		next;
 		mes "[Kafra Blossom]";
-		mes "Well, I couldn't really go too much into detail, of course. That's confidential information. But I can tell you our teleportation works through a mix of magic and technology.";
+		mes "Well, I couldn't really go too much into detail, claro. That's confidential information. But I can tell you our teleportation works through a mix of magic and technology.";
 		next;
 		mes "[Kafra Blossom]";
 		mes "Also, the Kafra girls alone can't teleport our customers. We just receive and process your teleportation request.";
@@ -889,12 +889,12 @@ aldeba_in,83,245,4	script	Kafra Service#2alde	116,{
 aldeba_in,24,245,4	script	Kafra Jasmine#alde	115,{
 	cutin "kafra_03",2;
 	mes "[Kafra Jasmine]";
-	mes "Welcome!";
+	mes "Bem-vindo!";
 	mes "The Kafra service is";
 	mes "always on your side.";
 	next;
 	mes "[Kafra Jasmine]";
-	mes "Thank you for coming all the way to visit us at the Kafra Corporation Headquarters here in Al De Baran!";
+	mes "Obrigado por coming all the way to visit us at the Kafra Corporation Headquarters here in Al De Baran!";
 	next;
 	mes "[Kafra Jasmine]";
 	mes "The Kafra Service is always behind our customers with a dependable reputation that has been established over five thousand, eight hundred years...";
@@ -949,8 +949,8 @@ aldeba_in,24,245,4	script	Kafra Jasmine#alde	115,{
 aldeba_in,142,238,4	script	Kafra Service#3alde	114,{
 	cutin "kafra_04",2;
 	mes "[Kafra Roxie]";
-	mes "Welcome~!";
-	mes "The Kafra Corporation will always support Midgard's adventurers with our excellent services.";
+	mes "Bem-vindo~!";
+	mes "The Kafra Corporation will always support Midgard's aventureiros with our excellent services.";
 	next;
 	mes "[Kafra Roxie]";
 	mes "My name is Roxie!";
@@ -967,7 +967,7 @@ aldeba_in,142,238,4	script	Kafra Service#3alde	114,{
 		mes "[Kafra Roxie]";
 		mes "So, you'd like more details on our policies and eligibility for our services? What would you like me to explain?";
 		next;
-		switch(select("Kafra Storage:Cart Rental:Actually, never mind.")) {
+		switch(select("Kafra Storage:Cart Rental:Actually, deixa pra la.")) {
 		case 1:
 			mes "[Kafra Roxie]";
 			mes "As you probably already know, our customers must have at least Basic Skill level 6 in order to use the Kafra Storage.";
@@ -979,10 +979,10 @@ aldeba_in,142,238,4	script	Kafra Service#3alde	114,{
 			mes "Now you remember your days as a Novice. Everything was new and exciting, but zeny was scarce. Well, a lot of Novices would even put their weapons and armor in Kafra Storage.";
 			next;
 			mes "[Kafra Roxie]";
-			mes "However, by this time, they've already spent what little zeny they had to open their Storage. But they don't have enough to access their Storage again!";
+			mes "Porem, by this time, they've already spent what little zeny they had to open their Storage. But they don't have enough to access their Storage again!";
 			next;
 			mes "[Kafra Roxie]";
-			mes "So, these weaponless, armorless Novices must fight monsters with their bare hands until they gather the zeny to open their Kafra Storage again!";
+			mes "So, these weaponless, armorless Novices must fight monstros with their bare hands until they gather the zeny to open their Kafra Storage again!";
 			next;
 			mes "[Kafra Roxie]";
 			mes "It's a silly mistake, to be sure, but we here at Kafra Corporation value human life, and decided on the Basic Skill Level 6 Requirement to prevent this kind of mishap.";
@@ -1013,7 +1013,7 @@ aldeba_in,142,238,4	script	Kafra Service#3alde	114,{
 		break;
 	case 2:
 		mes "[Kafra Roxie]";
-		mes "Thank you!";
+		mes "Obrigado!";
 		mes "It's great to know that we're appreciated by our customers! All of us are working hard to make sure that our service meets your standards of excellence~";
 		break;
 	}
@@ -1033,7 +1033,7 @@ aldeba_in,91,244,4	script	Kafra Service#4alde	112,{
 	mes "[Kafra Curly Sue]";
 	mes "I may still need to learn more about serving our customers, but I'm always doing my best!";
 	next;
-	if (select("Where's your mommy, kid?:End conversation.") == 1) {
+	if (select("Where's your mommy, kid?:Encerrar conversa.") == 1) {
 		mes "[Kafra Curly Sue]";
 		mes "Waaaaaaah~!";
 		mes "I'm not a kid!";
@@ -1061,7 +1061,7 @@ aldeba_in,79,161,7	script	Kafra Employee#reserve1	4_F_KAFRA3,{
 		close;
 	}
 	mes "[Kafra Employee]";
-	mes "Welcome, "+ strcharinfo(0) +"~";
+	mes "Bem-vindo, "+ strcharinfo(0) +"~";
 	mes "Here, you can exchange";
 	mes "the Special Reserve Points";
 	mes "you've earned by using the";
@@ -1113,7 +1113,7 @@ aldeba_in,79,161,7	script	Kafra Employee#reserve1	4_F_KAFRA3,{
 		.@index_quantity = .@s * 2;
 		if (.@total < .@select_price[.@index_points]) {
 			.@points = .@select_price[.@index_points] - .@total;
-			mes "I'm sorry, but you don't";
+			mes "Sinto muito, mas voce don't";
 			mes "enough Special Reserve";
 			mes "Points to exchange for this";
 			mes "reward. You need at least";
@@ -1221,7 +1221,7 @@ aldeba_in,79,161,7	script	Kafra Employee#reserve1	4_F_KAFRA3,{
 						next;
 						mes "set of Wooden Mail!";
 						mes "Today must be your";
-						mes "lucky day, adventurer!";
+						mes "lucky day, aventureiro!";
 					}
 				}
 				else {
@@ -1273,18 +1273,18 @@ aldeba_in,79,161,7	script	Kafra Employee#reserve1	4_F_KAFRA3,{
 		}
 	}
 	mes "[Kafra Employee]";
-	mes "Alright then. Please";
+	mes "Certo entao. Please";
 	mes "use our services to";
 	mes "collect more and more";
 	mes "Special Reserve Points";
 	mes "for even better rewards.";
-	mes "Thank you for your patronage.";
+	mes "Obrigado pela sua preferencia.";
 	close;
 }
 
 aldeba_in,88,161,3	script	Kafra Employee#reserve2	4_F_KAFRA3,{
 	mes "[Kafra Employee]";
-	mes "Welcome~ "+ strcharinfo(0) +".";
+	mes "Bem-vindo~ "+ strcharinfo(0) +".";
 	mes "Currently, we, Kafra Center is having a special event for our customers.";
 	next;
 	mes "[Kafra Employee]";
@@ -1292,7 +1292,7 @@ aldeba_in,88,161,3	script	Kafra Employee#reserve2	4_F_KAFRA3,{
 	mes "Kafra Corporation added new gifts in this event.";
 	next;
 	mes "[Kafra Employee]";
-	mes "Do you want to use your points?";
+	mes "Voce quer use your points?";
 	next;
 	if (select( "Yes, I do","Maybe in next time" ) == 1) {
 		mes "[Kafra Employee]";
@@ -1302,7 +1302,7 @@ aldeba_in,88,161,3	script	Kafra Employee#reserve2	4_F_KAFRA3,{
 			next;
 			mes "[Kafra Employee]";
 			mes "I'm sorry~ but~";
-			mes "Please, visit Kafra warehouse and store your items until you have free space of ^0000FF1100^000000 and come back.";
+			mes "Please, visit Kafra warehouse and store your items until you have free space of ^0000FF1100^000000 and volte.";
 			mes "I apologize for inconvenience~";
 			close;
 		}
@@ -1363,7 +1363,7 @@ aldeba_in,88,161,3	script	Kafra Employee#reserve2	4_F_KAFRA3,{
 					next;
 					mes "[Kafra Employee]";
 					mes "We always use this when we need to concentrate on something.";
-					mes "However, overdose is not good for your body~";
+					mes "Porem, overdose is not good for your body~";
 				}
 				else if (.@choose_prize < 20) {
 					getitem 505,3;// Blue_Potion
@@ -1475,7 +1475,7 @@ aldeba_in,88,161,3	script	Kafra Employee#reserve2	4_F_KAFRA3,{
 	mes "[Kafra Employee]";
 	mes "No Problem~";
 	mes "Collect more~ and more~ special reserve points~";
-	mes "Thank you for using Kafra Corporation's services~~";
+	mes "Obrigado por using Kafra Corporation's services~~";
 	close;
 }
 
@@ -1496,7 +1496,7 @@ function	script	F_ClockTowerGate	{
 	.@item_req = getarg(1);
 
 	mes "[Gatekeeper Boy]";
-	mes "Welcome to";
+	mes "Bem-vindo a";
 	mes "Kinase - Blue Gallino";
 	mes "The one of Local Speciality in Aldebaran.";
 	mes "You can't go through from "+ .@floor$ +" Floor,";
@@ -1529,7 +1529,7 @@ function	script	F_ClockTowerGate	{
 		mes "By any means,";
 		mes "You will meet with a mishap";
 		mes "by Gatekeeper Creatures.";
-		mes "Please be careful ..";
+		mes "Please tome cuidado ..";
 		close;
 	case 2:
 		mes "[Gatekeeper Boy]";

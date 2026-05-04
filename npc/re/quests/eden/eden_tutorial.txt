@@ -25,47 +25,47 @@ moc_para01,34,178,3	script	Tutorial Instructor	904,{
 			set @tutorial_restart,0;
 		}
 		mes "[Tutorial Instructor]";
-		mes "Lately, it has been said that";
+		mes "Lately, it tem sido disse that";
 		mes "they are developing ways to add options";
-		mes "to put in sockets or add statuses";
-		mes "on equipment that normally don't have it.";
-		mes "They call that ^006400Enchant^000000.";
+		mes "to colocar in sockets ou add statuses";
+		mes "on equipamento esse normally nao have it.";
+		mes "They call esse ^006400Enchant^000000.";
 		next;
 		mes "[Tutorial Instructor]";
-		mes "After seeing that being developed,";
-		mes "I was so inspired by it";
-		mes "that I worked hard to discover";
-		mes "a way to do it and I finally";
-		mes "made my own way to ^006400Enchant^000000!";
+		mes "Depois vendo esse being developed,";
+		mes "Eu estavum entao inspired by it";
+		mes "esse I worked dificil to descobrir";
+		mes "um caminho to do it e I finalmente";
+		mes "made meu own caminho to ^006400Enchant^000000!";
 		next;
 		mes "[Tutorial Instructor]";
-		mes "But in order do to this";
-		mes "I need some special materials.";
-		mes "If you're okay with it...";
-		mes "Do you think you can";
-		mes "help me out by gathering them?";
+		mes "Mas in order do to this";
+		mes "Eu precientao de alguns especial materiais.";
+		mes "Se voce e okay com it...";
+		mes "Voce pensar you can";
+		mes "me ajude out by gathering them?";
 		next;
-		switch(select("Sure, I can help out!:I'm a little busy right now...")) {
+		switch(select("Sure, Eu consigo ajudar out!:Eu sou um pequeno ocupado agorum mesmo...")) {
 		case 1:
 			mes "[Tutorial Instructor]";
-			mes "However, looking at you";
-			mes "in your current state makes me";
-			mes "doubt your ability to gather";
-			mes "the items I need...";
+			mes "Porem, procurando at you";
+			mes "in seu current state makes me";
+			mes "doubt seu ability to reunir";
+			mes "o itens I precisar...";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "Well, I guess if you employ";
-			mes "a ^006400Mercenary^000000 for this";
-			mes "then I think I can entrust you";
-			mes "with my requests... right?";
+			mes "Bem, I guess se you employ";
+			mes "um ^006400Mercenary^000000 fou this";
+			mes "entao Eu acho Eu consigo entrust you";
+			mes "com meu requests... certo?";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "In order to employ a Mercenary,";
-			mes "go find the ^006400Mercenary Guild^000000";
-			mes "which is by the front door of ^8B4513Prontera^000000.";
-			mes "Go to the ^006400Information Agent^000000";
-			mes "and ask them where the ^006400Mercenary Guild Official^000000";
-			mes "is located and they will let you know.";
+			mes "In order to employ um Mercenary,";
+			mes "ir encontrar o ^006400Mercenary Guilda^000000";
+			mes "which is by o front portum of ^8B4513Prontera^000000.";
+			mes "Ir to o ^006400Information Agent^000000";
+			mes "e ask them where o ^006400Mercenary Guildum Official^000000";
+			mes "is located e they will let voce sabe.";
 			next;
 			if (.@tutorial_restart) {
 				erasequest 9167;
@@ -78,75 +78,75 @@ moc_para01,34,178,3	script	Tutorial Instructor	904,{
 				erasequest 9173;
 			}
 			mes "[Tutorial Instructor]";
-			mes "Now... Hurry and employ";
-			mes "a ^006400Mercenary^000000 and come back to me!";
+			mes "Agora... Hurry e employ";
+			mes "um ^006400Mercenary^000000 e volte to me!";
 			setquest 9167;
 			close;
 		case 2:
 			mes "[Tutorial Instructor]";
-			mes "Well since you said you're busy";
-			mes "I can't be helped...";
-			mes "When you're not so busy, come find me again.";
+			mes "Bem desde you disse voce e ocupado";
+			mes "Eu nao consigo be helped...";
+			mes "When voce e nao entao ocupado, vir encontrar me novamente.";
 			close;
 		}
 	} else if (checkquest(9167) == 0 || checkquest(9167) == 1) {
 		if (!getmercinfo(1)) {
 			mes "[Tutorial Instructor]";
-			mes "You haven't gotten a mercenary yet.";
+			mes "You nao tenho gotten um mercenary yet.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "In order to employ a Mercenary,";
-			mes "go find the ^006400Mercenary Guild^000000";
-			mes "which is by the front door of ^8B4513Prontera^000000.";
-			mes "Go to the ^006400Information Agent^000000";
-			mes "and ask them where the ^006400Mercenary Guild Official^000000";
-			mes "is located and they will let you know.";
+			mes "In order to employ um Mercenary,";
+			mes "ir encontrar o ^006400Mercenary Guilda^000000";
+			mes "which is by o front portum of ^8B4513Prontera^000000.";
+			mes "Ir to o ^006400Information Agent^000000";
+			mes "e ask them where o ^006400Mercenary Guildum Official^000000";
+			mes "is located e they will let voce sabe.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "Now... Hurry and employ";
-			mes "a ^006400Mercenary^000000 and come back to me!";
+			mes "Agora... Hurry e employ";
+			mes "um ^006400Mercenary^000000 e volte to me!";
 			close;
 		}
 		mes "[Tutorial Instructor]";
-		mes "Seeing you with a ^006400Mercenary^000000 definitely makes me trust you more.";
+		mes "Seeing you com um ^006400Mercenary^000000 definitivamente makes me confiancum you mais.";
 		next;
 		mes "[Tutorial Instructor]";
-		mes "If a 006400Mercenary^000000 gives you direct effect";
-		mes "by fighting for you";
-		mes "then a ^006400Pet^000000 helps you indirectly with their";
-		mes "abilities and varied appearances,";
-		mes "and it captures your heart.";
-		mes "Try raising a ^006400Pet^000000 in the future as well.";
+		mes "Se um 006400Mercenary^000000 gives you direct effect";
+		mes "by lutando fou you";
+		mes "entao um ^006400Pet^000000 helps you indirectly com their";
+		mes "abilities e varied appearances,";
+		mes "e it captures seu coracao.";
+		mes "Tentar raising um ^006400Pet^000000 in o future as bem.";
 		next;
 		mes "[Tutorial Instructor]";
-		mes "Now, let's see... In order to";
-		mes "get this ^006400Enchant^000000 to succeed";
-		mes "you have to go gather some materials for me...";
-		mes "What I need is...";
+		mes "Agora, vamos ver... In order to";
+		mes "pegar este ^006400Enchant^000000 to conseguir";
+		mes "you tem que ir reunir alguns materiais fou me...";
+		mes "What Eu precientao de is...";
 		mes "..............";
 		next;
-		select("I don't think I heard you clearly...");
+		select("Eu nao pensar Eu ouvi you clearly...");
 		mes "[Tutorial Instructor]";
-		mes "I really don't like to repeat myself..";
-		mes "If you ask me again like that";
-		mes "does it just make your mouth tired?";
-		mes "In these situations, open your ^006400Quest Window^000000";
-		mes "and you can see what is requested of you";
-		mes "and the details of my request.";
+		mes "I realmente nao like to repeat myself..";
+		mes "Se you ask me novamente like that";
+		mes "does it apenas fazer seu mouth cansado?";
+		mes "In estes situations, abrir seu ^006400Quest Window^000000";
+		mes "e voce pode ver o que e requested of you";
+		mes "e o detalhes of meu request.";
 		next;
 		mes "[Tutorial Instructor]";
-		mes "If you look at the top left";
-		mes "in the area with the information,";
+		mes "Se voce parece at o top left";
+		mes "in o areum com o informacao,";
 		mes "it says ^006400QUEST^000000";
-		mes "and if you click that";
-		mes "it'll show all information";
-		mes "that pertains to the request.";
+		mes "e se you click that";
+		mes "it'll show todos informacao";
+		mes "esse pertains to o request.";
 		next;
 		mes "[Tutorial Instructor]";
-		mes "Once you verify what materials";
-		mes "you need go gather from";
-		mes "the ^006400Quest Window^000000,";
-		mes "come find and talk to me again.";
+		mes "Once you verify what materiais";
+		mes "voce precisum ir reunir de";
+		mes "o ^006400Quest Window^000000,";
+		mes "vir encontrar e conversar to me novamente.";
 		completequest 9167;
 		setquest 9168;
 		close;
@@ -154,243 +154,243 @@ moc_para01,34,178,3	script	Tutorial Instructor	904,{
 		if (checkweight(607,1) == 0) {
 			if (MaxWeight - Weight < getiteminfo(607, ITEMINFO_WEIGHT)) {
 				mes "[Tutorial Instructor]";
-				mes "You seemed to be sluggish with a lot of items";
-				mes "in your inventory making you heavy...";
-				mes "It'll be hard to do my request";
-				mes "when you're heavy with all that junk!";
-				mes "Go empty out your inventory and come back to me.";
+				mes "You seemed to be sluggish com um lot of itens";
+				mes "in seu inventory fazendo you heavy...";
+				mes "It'll be dificil to do meu request";
+				mes "when voce e heavy com todos esse junk!";
+				mes "Ir empty out seu inventory e volte to me.";
 				close;
 			} else {
 				mes "[Tutorial Instructor]";
-				mes "It seems that you have";
-				mes "one too many items on you...";
-				mes "If you want to help me out";
-				mes "then you're gonna have to put some";
-				mes "stuff away then come back.";
+				mes "It parece esse you have";
+				mes "one tambem muitos itens on you...";
+				mes "Se voce quer to me ajude out";
+				mes "entao voce e gonnum tem que colocar alguns";
+				mes "stuff emborum entao volte.";
 				close;
 			}
 		}
 		mes "[Tutorial Instructor]";
-		mes "Did you open your ^006400Quest Window^000000";
-		mes "to verify the materials?";
+		mes "Voce abrir seu ^006400Quest Window^000000";
+		mes "to verify o materiais?";
 		next;
-		switch(select("Yup!:No...:Where is the Quest Window...")) {
+		switch(select("Yup!:No...:Onde estum o Missao Window...")) {
 		case 1:
 			mes "[Tutorial Instructor]";
-			mes "Oh yeah? Then shall I test you to see";
-			mes "if you really checked it?";
-			mes "Write down what material I asked you to get.";
+			mes "Oh yeah? Entao shall I test you to ver";
+			mes "se you realmente checked it?";
+			mes "Write down what material I perguntou you to pegar.";
 			next;
 			input .@inputstr$;
 			if (.@inputstr$ == "10 Jellopy") {
 				mes "[Tutorial Instructor]";
-				mes "Good, you know.";
-				mes "Now, are you feeling pretty familiar";
-				mes "about the ^006400Quest Window^000000?";
-				mes "But there is an issue...";
-				mes "You know what material to collect,";
-				mes "but gathering that won't be easy.";
+				mes "Bom, voce sabe.";
+				mes "Agora, voce e sentindo pretty familiar";
+				mes "sobre o ^006400Quest Window^000000?";
+				mes "Mas hum um issue...";
+				mes "Voce sabe what material to coletar,";
+				mes "mas gathering esse nao vai be facil.";
 				next;
 				mes "[Tutorial Instructor]";
-				mes "Also, there is one thing";
-				mes "I absolutely think you need to try.";
-				mes "And that is...";
-				mes "the ^006400Universal Silver Catalog^000000.";
+				mes "Tambem, hum one coisa";
+				mes "I absolutely pensar voce precisum to tentar.";
+				mes "E esse is...";
+				mes "o ^006400Universal Silver Catalog^000000.";
 				next;
 				mes "[Tutorial Instructor]";
-				mes "The ^006400Universal Silver Catalog^000000";
-				mes "can be obtained from";
-				mes "the ^0000FFCatalogue Wizard^000000";
-				mes "that is located in the Eden Group Headquarter.";
+				mes "O ^006400Universal Silver Catalog^000000";
+				mes "cum be obtained de";
+				mes "o ^0000FFCatalogue Bruxo^000000";
+				mes "esse is located in o Eden Grupo Headquarter.";
 				next;
 				mes "[Tutorial Instructor]";
-				mes "Now, go and obtain";
-				mes "a ^006400Universal Silver Catalog^000000";
-				mes "then come back and talk to me.";
+				mes "Agora, ir e obtain";
+				mes "um ^006400Universal Silver Catalog^000000";
+				mes "entao volte e conversar to me.";
 				completequest 9168;
 				setquest 9169;
 				close;
 			}
 			mes "[Tutorial Instructor]";
-			mes "You... still don't seem";
-			mes "to know much about the";
+			mes "You... aindum nao parecer";
+			mes "to saber muito sobre the";
 			mes "^006400Quest Window^000000.";
-			mes "I will inform you again.";
+			mes "Eu vou inform you novamente.";
 			next;
 			break;
 		case 2:
 			mes "[Tutorial Instructor]";
-			mes "Hurry and check to see";
-			mes "what materials are required in";
-			mes "your ^006400Quest Window^000000.";
+			mes "Hurry e verificar to ver";
+			mes "what materiais are required in";
+			mes "seu ^006400Quest Window^000000.";
 			close;
 		case 3:
 			break;
 		}
 		mes "[Tutorial Instructor]";
-		mes "If you look at the top left";
-		mes "in the area with the information,";
+		mes "Se voce parece at o top left";
+		mes "in o areum com o informacao,";
 		mes "it says ^006400QUEST^000000";
-		mes "and if you click that";
-		mes "it'll show all information";
-		mes "that pertains to the request.";
+		mes "e se you click that";
+		mes "it'll show todos informacao";
+		mes "esse pertains to o request.";
 		next;
 		mes "[Tutorial Instructor]";
-		mes "Once you verify what materials";
-		mes "you need go gather from";
-		mes "the ^006400Quest Window^000000,";
-		mes "come find and talk to me again.";
+		mes "Once you verify what materiais";
+		mes "voce precisum ir reunir de";
+		mes "o ^006400Quest Window^000000,";
+		mes "vir encontrar e conversar to me novamente.";
 		close;
 	} else if (checkquest(9169) == 0 || checkquest(9169) == 1) {
 		if (countitem(12580) == 0) {
 			mes "[Tutorial Instructor]";
-			mes "Hmm? So I noticed that";
-			mes "you haven't gone and picked up a";
+			mes "Hmm? Entao I noticed that";
+			mes "you nao tenho gone e picked up a";
 			mes "^006400Universal Silver Catalog^000000 yet!";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "You can get the";
+			mes "Voce pode pegar the";
 			mes "^006400Universal Silver Catalog^000000";
-			mes "from the ^0000FFCatalogue Wizard^000000";
-			mes "who is located in the Eden Group Headquarter.";
+			mes "de o ^0000FFCatalogue Bruxo^000000";
+			mes "quem e located in o Eden Grupo Headquarter.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "So, go and get the";
+			mes "So, ir e pegar the";
 			mes "^006400Universal Silver Catalog^000000";
-			mes "then come back to me.";
+			mes "entao volte to me.";
 			close;
 		}
 		mes "[Tutorial Instructor]";
-		mes "Oh! You managed to get a";
+		mes "Oh! You managed to pegar a";
 		mes "^006400Universal Silver Catalog^000000!";
 		next;
 		mes "[Tutorial Instructor]";
-		mes "This lets you browse and search";
-		mes "through all the various stores";
-		mes "that are on the same map and";
-		mes "are open for vending.";
+		mes "Este lets you browse e procurar";
+		mes "atraves todos o various stores";
+		mes "esse are on o mesmo map and";
+		mes "are abrir fou vending.";
 		next;
 		mes "[Tutorial Instructor]";
-		mes "It only costs 200 zeny for one";
-		mes "of these and with it you can";
-		mes "search up to 10 times.";
-		mes "You can say that it's a necessity.";
+		mes "It apenas costs 200 zeny fou one";
+		mes "of estes e com it you can";
+		mes "procurar up to 10 times.";
+		mes "Voce pode dizer esse e um necessity.";
 		next;
 		mes "[Tutorial Instructor]";
-		mes "So, go to the area you want";
-		mes "and try out the ^006400Universal Silver Catalog^000000";
-		mes "then come and find me";
-		mes "after you've done this.";
+		mes "So, ir to o areum you querer";
+		mes "e tentar out o ^006400Universal Silver Catalog^000000";
+		mes "entao vir e encontrar me";
+		mes "depois voce tem done this.";
 		completequest 9169;
 		setquest 9170;
 		close;
 	} else if (checkquest(9170) == 0 || checkquest(9170) == 1) {
 		if (countitem(12580)) {
 			mes "[Tutorial Instructor]";
-			mes "Hmm... It seems that you still have";
-			mes "the ^006400Universal Silver Catalog^000000 in your inventory.";
-			mes "Since you're saying you forgot how to use it";
-			mes "I'll explain it to you again.";
+			mes "Hmm... It parece esse you aindum have";
+			mes "o ^006400Universal Silver Catalog^000000 in seu inventory.";
+			mes "Since voce e dizendo you forgot how to usar it";
+			mes "Eu vou explain it to you novamente.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "You see... the ^006400Universal Silver Catalog^000000";
-			mes "lets you browse and search";
-			mes "through all the various stores";
-			mes "that are on the same map and";
-			mes "are open for vending.";
+			mes "You ver... o ^006400Universal Silver Catalog^000000";
+			mes "lets you browse e procurar";
+			mes "atraves todos o various stores";
+			mes "esse are on o mesmo map and";
+			mes "are abrir fou vending.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "So, go to the area you want";
-			mes "and try out the ^006400Universal Silver Catalog^000000";
-			mes "them come and find me";
-			mes "after you've done this.";
+			mes "So, ir to o areum you querer";
+			mes "e tentar out o ^006400Universal Silver Catalog^000000";
+			mes "them vir e encontrar me";
+			mes "depois voce tem done this.";
 			close;
 		}
 		mes "[Tutorial Instructor]";
-		mes "How do you feel after trying out";
-		mes "the ^006400Universal Silver Catalog^000000?";
-		mes "It feels a lot easier than";
-		mes "going through each individual";
-		mes "vendor and finding the item";
-		mes "you need, right?";
+		mes "Como you feel depois tentando out";
+		mes "o ^006400Universal Silver Catalog^000000?";
+		mes "It feels um lot easier que";
+		mes "indo atraves each individual";
+		mes "vendou e finding o item";
+		mes "you precisar, certo?";
 		next;
 		mes "[Tutorial Instructor]";
-		mes "Now, go out and gather";
-		mes "the materials I need and";
-		mes "I will make sure to give you";
-		mes "a fantastic ^006400enchant^000000!";
-		mes "I'll be waiting!";
+		mes "Agora, ir out e reunir";
+		mes "o materiais Eu precientao de and";
+		mes "Eu vou fazer sure to dar you";
+		mes "um fantastic ^006400enchant^000000!";
+		mes "Eu vou be waiting!";
 		completequest 9170;
 		setquest 9171;
 		close;
 	} else if (checkquest(9171) == 0 || checkquest(9171) == 1) {
 		if (countitem(909) < 10) {
 			mes "[Tutorial Instructor]";
-			mes "It seems you didn't bring";
-			mes "enough materials. Did you forget";
-			mes "what you needed to gather?";
+			mes "It parece you nao trazer";
+			mes "suficiente materiais. Voce esquecer";
+			mes "what you needed to reunir?";
 			next;
 			switch(select("Yeah...:Nope!")) {
 			case 1:
 				mes "[Tutorial Instructor]";
-				mes "I've been told that if you click the";
-				mes "thing on the top left that says";
-				mes "^006400QUEST^000000, it'll show you all";
-				mes "the information that you need";
-				mes "that pertains to your requests.";
+				mes "Eu tenho been disse esse se you click the";
+				mes "coisum on o top left esse says";
+				mes "^006400QUEST^000000, it'll show you todos";
+				mes "o informacao esse you precisar";
+				mes "esse pertains to seu requests.";
 				next;
 				mes "[Tutorial Instructor]";
-				mes "Once you gather all the materials";
-				mes "that are listed in your ^006400Quest Window^000000";
-				mes "come and talk to me.";
+				mes "Once you reunir todos o materiais";
+				mes "esse are listed in seu ^006400Quest Window^000000";
+				mes "vir e conversar to me.";
 				close;
 			case 2:
 				mes "[Tutorial Instructor]";
-				mes "When you gather the items";
-				mes "come to me and I will show you";
-				mes "an awesome ^006400ENCHANT^000000.";
-				mes "I'll be waiting!";
+				mes "When you reunir o itens";
+				mes "vir to me e Eu vou show you";
+				mes "um awesome ^006400ENCHANT^000000.";
+				mes "Eu vou be waiting!";
 				close;
 			}
 		}
 		if (checkweight(607,6) == 0) {
 			if (MaxWeight - Weight < getiteminfo(607, ITEMINFO_WEIGHT)) {
 				mes "[Tutorial Instructor]";
-				mes "Your inventory seems to be really full";
-				mes "with various stuff... Do you think";
-				mes "you can get anything done when you're so";
-				mes "weighed down? Go put some stuff away";
-				mes "then come back to me.";
+				mes "Seu inventory parece to be realmente full";
+				mes "com various stuff... Voce pensar";
+				mes "voce pode pegar anything done when voce e so";
+				mes "weighed down? Ir colocar alguns stuff embora";
+				mes "entao volte to me.";
 				close;
 			} else {
 				mes "[Tutorial Instructor]";
-				mes "You seem to have too much stuff";
-				mes "in your inventory... Go put some";
-				mes "stuff away then come back to me";
-				mes "when you have less suff on you.";
+				mes "Voce parece to have tambem muito stuff";
+				mes "in seu inventory... Ir colocar alguns";
+				mes "stuff emborum entao volte to me";
+				mes "when you have menos suff on you.";
 				close;
 			}
 		}
 		mes "[Tutorial Instructor]";
-		mes "You got everything I asked for!";
-		mes "So~ Shall we start on the awesome";
-		mes "Enchant that I found and developed?";
+		mes "You got tudo I perguntou for!";
+		mes "So~ Shall we comecar on o awesome";
+		mes "Enchant esse I encontrou e developed?";
 		next;
 		specialeffect EF_BASH3D2;
 		mes "[Tutorial Instructor]";
-		mes "Okay! Now for the first skill!!";
-		mes "To add a new ability to your armor...";
+		mes "Okay! Agorum fou o primeiro habilidade!!";
+		mes "To add um novo ability to seu armadura...";
 		mes "^006400HIDDEN SOCKET ENCHANT^000000!!";
 		next;
 		specialeffect EF_BASH3D2;
 		mes "[Tutorial Instructor]";
-		mes "And for the second skill!!";
-		mes "To add a new socket into your";
-		mes "weapon and shield...";
+		mes "E fou o second habilidade!!";
+		mes "To add um novo socket parum dentro your";
+		mes "armum e escudo...";
 		mes "^006400SOCKET ENCHANT^000000!!";
 		next;
 		mes "[Tutorial Instructor]";
-		mes "There. The Enchant is done. You can't understand the process by just watching me, so I'll let you look at the items themselves.";
+		mes "There. O Enchant is done. Voce nao pode underste o process by apenas watching me, entao Eu vou let voce parece at o itens themselves.";
 		delitem 909,10; //Jellopy
 		completequest 9171;
 		setquest 9172;
@@ -399,37 +399,37 @@ moc_para01,34,178,3	script	Tutorial Instructor	904,{
 		getitem 15034,1; //Tutorial_Mattle_
 		next;
 		mes "[Tutorial Instructor]";
-		mes "Those items cannot be";
-		mes "worn or traded so don't even";
-		mes "think about running away with them.";
-		mes "When you're done looking at them,";
-		mes "give them back to me.";
+		mes "Esses itens nao pode be";
+		mes "worn ou traded entao nao ate mesmo";
+		mes "pensar sobre correndo emborum com them.";
+		mes "When voce e done procurando at them,";
+		mes "dar them back to me.";
 		close;
 	} else if (checkquest(9172) == 0 || checkquest(9172) == 1) {
 		if (countitem(15033) == 0 || countitem(15034) == 0) {
 			mes "[Tutorial Instructor]";
-			mes "What did you do with the Enchanted";
-			mes "items I lent to you to look at?";
-			mes "Until you bring back the fruits of";
-			mes "my labor, I don't want to talk to you,";
-			mes "let alone see your face.";
+			mes "O que you do com o Enchanted";
+			mes "itens I lent to you to olhar at?";
+			mes "Until you trazer back o fruseu of";
+			mes "meu labor, Eu nao querer to conversar to you,";
+			mes "let sozinho ver seu face.";
 			close;
 		}
 		mes "[Tutorial Instructor]";
-		mes "Are you done looking over";
-		mes "the items I Enchanted?";
+		mes "Voce e done procurando sobre";
+		mes "o itens I Enchanted?";
 		next;
-		switch(select("Yes, thank you.:I haven't looked at them yet.")) {
+		switch(select("Yes, obrigado.:I nao tenho looked at them yet.")) {
 		case 1:
 			mes "[Tutorial Instructor]";
-			mes "So what did you think after inspecting it? Now that you've looked at an actual Enchanted item, do you understand it?";
+			mes "Entao o que you pensar depois inspecting it? Agorum esse voce tem looked at um actual Enchanted item, voce underste it?";
 			// Item deletions moved below to prevent errors.
 			next;
 			mes "[Tutorial Instructor]";
-			mes "Thanks to you I was able to see great results of my research and study.";
+			mes "Obrigado to you Eu estavum capaz de ver otimo results of meu research e study.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "If you have any questions about anything that I discussed with you, I will tell you everything! Thanks for your hard work!";
+			mes "Se you have any questions sobre anything esse I discussed com you, Eu vou tell you tudo! Obrigado fou seu dificil trabalhar!";
 			delitem 15033,2;
 			delitem 15034,1;
 			completequest 9172;
@@ -438,136 +438,136 @@ moc_para01,34,178,3	script	Tutorial Instructor	904,{
 			close;
 		case 2:
 			mes "[Tutorial Instructor]";
-			mes "Take your time to look them over";
-			mes "then bring them back to me.";
+			mes "Pegar seu tempo to olhar them sobre";
+			mes "entao trazer them back to me.";
 			close;
 		}
 	} else if (checkquest(9173) == 0 || checkquest(9173) == 1) {
 		mes "[Tutorial Instructor]";
-		mes "Do you have any questions?";
+		mes "Voce have any questions?";
 		next;
-		switch(select("Can I do the same quest again?:About the Quest Window...:About ENCHANT...:About Searching Vends...:About Mercenary and Pets...:End Conversation.")) {
+		switch(select("Cum I do o mesmo missao novamente?:Sobre o Missao Window...:Sobre ENCHANT...:Sobre Searching Vends...:Sobre Mercenary e Pets...:End Conversation.")) {
 		case 1:
 			if (checkquest(9173,PLAYTIME) == 0 || checkquest(9173,PLAYTIME) == 1) {
 				mes "[Tutorial Instructor]";
-				mes "The one method to do the same quests repeatdedly is to do the ^006400Daily Quests^000000.";
+				mes "O one metodo to do o mesmo missoes repeatdedly is to do o ^006400Daily Missoes^000000.";
 				next;
 				mes "[Tutorial Instructor]";
-				mes "Once you complete a ^006400Daily Quest^000000 and turn it in, wait about a day then come back to get the request and do it all over again!";
+				mes "Once you completar um ^006400Daily Missao^000000 e turn it in, esperar sobre um dium entao volte to pegar o request e do it todos sobre novamente!";
 				mes "[Tutorial Instructor]";
-				mes "If you received a daily quest, look at bottom right of the ^006400Quest Window^000000. There is a section that is called ^006400LIMITED^000000. In that section, it'll tell you how much time needs to pass before you can pick up another daily quest.";
+				mes "Se you recebeu um daily missao, olhar at bottom certo of o ^006400Quest Window^000000. Hum um section esse is chamado ^006400LIMITED^000000. In esse section, it'll tell you quanto tempo needs to pass antes voce pode pick up outro daily missao.";
 				next;
 				mes "[Tutorial Instructor]";
-				mes "It seems you still have some time left to wait out after finishing my quest. Wait it out a bit more, then come find me and you can get the same quest again.";
+				mes "It parece you aindum have alguns tempo left to esperar out depois finishing meu missao. Esperar it out um bit mais, entao vir encontrar me e voce pode pegar o mesmo missao novamente.";
 				close;
 			}
 			mes "[Tutorial Instructor]";
-			mes "It seems that about a day has passed since you've finished my quest. Alright, so like the ^006400Daily Quests^000000, you can get a quest from me. Did you want to proceed?";
+			mes "It parece esse sobre um dium has passed desde voce tem terminou meu missao. Alright, entao like o ^006400Daily Missoes^000000, voce pode pegar um missao de me. Did voce quer to proceed?";
 			next;
-			switch(select("Yes:No")) {
+			switch(select("Sim:Nao")) {
 			case 1:
 				set @tutorial_restart,1;
 				goto OnStartQuest;
 			case 2:
 				mes "[Tutorial Instructor]";
-				mes "Okay. But if you change your mind and want to receive a quest, come find me.";
+				mes "Okay. Mas se you mudar seu mente e querer to receber um missao, vir encontrar me.";
 				close;
 			}
 		case 2:
 			mes "[Tutorial Instructor]";
-			mes "They say that the ^006400Quest Window^000000 details out everything you need to know about your quests.";
+			mes "They dizer esse o ^006400Quest Window^000000 detalhes out tudo voce precisum to saber sobre seu missoes.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "If you look at the top left";
-			mes "in the area with the information,";
+			mes "Se voce parece at o top left";
+			mes "in o areum com o informacao,";
 			mes "it says ^006400QUEST^000000";
-			mes "and if you click that";
-			mes "it'll show all information";
-			mes "that pertains to the request.";
+			mes "e se you click that";
+			mes "it'll show todos informacao";
+			mes "esse pertains to o request.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "Using the ^006400Quest Window^000000 will make your life easier. It'll tell you where to go, what items to get or who to find and etc.";
+			mes "Using o ^006400Quest Window^000000 will fazer seu vidum easier. It'll tell you where to ir, what itens to pegar ou who to encontrar e etc.";
 			close;
 		case 3:
 			mes "[Tutorial Instructor]";
-			mes "^006400ENCHANT^000000, in general, is divided into two parts: ^006400SOCKET ENCHANT^000000 and ^006400HIDDEN SOCKET ENCHANT^000000.";
+			mes "^006400ENCHANT^000000, in general, is divided parum dentro two parts: ^006400SOCKET ENCHANT^000000 e ^006400HIDDEN SOCKET ENCHANT^000000.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "^006400SOCKET ENCHANT^000000 is used to add a SOCKET into equipments and ^006400HIDDEN SOCKET ENCHANT^000000 is used to put in stats into a socket of an armor.";
+			mes "^006400SOCKET ENCHANT^000000 is usou to add um SOCKET parum dentro equipments e ^006400HIDDEN SOCKET ENCHANT^000000 is usou to colocar in stats parum dentro um socket of um armadura.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "Of course, in order to do this we are in need of some materials and there is a chance that it may fail, but that's the risk you're taking.";
+			mes "E claro, in order to do este we are in precisar of alguns materiais e hum um chance esse it may falhar, mas that's o risk voce e levando.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "The people who do the ^006400SOCKET ENCHANT^000000 can be found in ^8B4513Prontera, Morocc, Payon,^000000. ^8B4513Rhitalzen^000000 is in the Refinery and ^0000FFSeiyablem^000000 and ^0000FFReiablem^000000 can be found near the entrance.";
+			mes "O pessoas who do o ^006400SOCKET ENCHANT^000000 cum be encontrou in ^8B4513Prontera, Morocc, Payon,^000000. ^8B4513Rhitalzen^000000 is in o Refinery e ^0000FFSeiyablem^000000 e ^0000FFReiablem^000000 cum be encontrou perto o entrance.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "The one who does ^006400HIDDEN SOCKET ENCHANT^000000 is found at the 6 o'clock location of ^8B4513Prontera^000000. Look for the ^0000FFCraftman Apprentice^000000.";
+			mes "O one who does ^006400HIDDEN SOCKET ENCHANT^000000 is encontrou at o 6 o'clock location of ^8B4513Prontera^000000. Olhar fou o ^0000FFCraftmum Apprentice^000000.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "Do you think you understand a little bit more about ^006400ENCHANT^000000?";
+			mes "Voce pensar you underste um pequeno bit mais sobre ^006400ENCHANT^000000?";
 			close;
 		case 4:
 			mes "[Tutorial Instructor]";
-			mes "^006400Vend Search^000000 can be utilized by the ^006400Universal Silver Catalog^000000 item. Since you search through as vends on that map, it'll make it easier for you to find the item that you're looking for.";
+			mes "^006400Vend Procurar^000000 cum be utilized by o ^006400Universal Silver Catalog^000000 item. Since you procurar atraves as vends on esse map, it'll fazer it easier fou you to encontrar o item esse voce e procurando for.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "The ^006400Universal Silver Catalog^000000";
-			mes "can be obtained from ";
-			mes "the ^0000FFCatalogue Wizard^000000";
-			mes "that is located in the Eden Group Headquarter.";
+			mes "O ^006400Universal Silver Catalog^000000";
+			mes "cum be obtained de ";
+			mes "o ^0000FFCatalogue Bruxo^000000";
+			mes "esse is located in o Eden Grupo Headquarter.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "It only costs 200 zeny for one";
-			mes "of these and with it you can";
-			mes "search up to 10 times.";
-			mes "You can say that it's a necessity.";
+			mes "It apenas costs 200 zeny fou one";
+			mes "of estes e com it you can";
+			mes "procurar up to 10 times.";
+			mes "Voce pode dizer esse e um necessity.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "So, are you getting familiar with ^006400Vend Search^000000? Don't just stand there and listen to me. Go ahead and try it for yourself!";
+			mes "So, voce e ficando familiar com ^006400Vend Procurar^000000? Nao apenas ste lum e ouvir to me. Vum em frente e tentar it fou yourself!";
 			close;
 		case 5:
 			mes "[Tutorial Instructor]";
-			mes "Depending on what you need, ^006400Mercenary^000000 and ^006400Pet^000000 can be used in various ways.";
+			mes "Depending on what you precisar, ^006400Mercenary^000000 e ^006400Pet^000000 cum be usou in various ways.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "If a 006400Mercenary^000000 gives you direct effect";
-			mes "by fighting for you";
-			mes "then a ^006400Pet^000000 helps you indirectly with their";
-			mes "abilities and varied appearances,";
-			mes "and it captures your heart.";
+			mes "Se um 006400Mercenary^000000 gives you direct effect";
+			mes "by lutando fou you";
+			mes "entao um ^006400Pet^000000 helps you indirectly com their";
+			mes "abilities e varied appearances,";
+			mes "e it captures seu coracao.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "In order to employ a Mercenary";
-			mes "Go find the ^006400Mercenary Guild^000000";
-			mes "which is by the front door of ^8B4513Prontera^000000.";
-			mes "Go to the ^006400Information Agent^000000";
-			mes "and ask them where the ^006400Mercenary Guild Official^000000";
-			mes "is located and they will let you know.";
+			mes "In order to employ um Mercenary";
+			mes "Ir encontrar o ^006400Mercenary Guilda^000000";
+			mes "which is by o front portum of ^8B4513Prontera^000000.";
+			mes "Ir to o ^006400Information Agent^000000";
+			mes "e ask them where o ^006400Mercenary Guildum Official^000000";
+			mes "is located e they will let voce sabe.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "In order to get a ^006400Pet^000000, while hunting you will obtain taming items. Use the tame on the monster it's for and you can get a pet.";
+			mes "In order to pegar um ^006400Pet^000000, while cacando you will obtain taming itens. Usar o tame on o monstro e fou e voce pode pegar um pet.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "Because there is a chance for failure, please use the taming item with great care.";
+			mes "Porque hum um chance fou failure, pou favou usar o taming item com otimo care.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "That aside... you can get a ^006400Mercenary^000000 from the Mercenary Guild and you can get a ^006400Pet^000000 by trading or buying it from another player.";
+			mes "Esse aside... voce pode pegar um ^006400Mercenary^000000 de o Mercenary Guildum e voce pode pegar um ^006400Pet^000000 by trading ou comprando it de outro player.";
 			next;
 			mes "[Tutorial Instructor]";
-			mes "Now, do you understand a bit more about using a ^006400Mercenary^000000 and a ^006400Pet^000000? I hope you get a chance to use them in the future.";
+			mes "Agora, voce underste um bit mais sobre usando um ^006400Mercenary^000000 e um ^006400Pet^000000? I esperancum you pegar um chance to usar them in o future.";
 			close;
 		case 6:
 			mes "[Tutorial Instructor]";
-			mes "If you have any questions, come find me again.";
+			mes "Se you have any questions, vir encontrar me novamente.";
 			close;
 		}
 	}
 	mes "[Tutorial Instructor]";
-	mes "Lately, it has been said that";
+	mes "Lately, it tem sido disse that";
 	mes "they are developing ways to add options";
-	mes "to put in sockets or add statuses";
-	mes "on equipment that normally don't have it.";
+	mes "to colocar in sockets ou add statuses";
+	mes "on equipamento esse normally nao have it.";
 	close;
 }
 
@@ -575,50 +575,50 @@ moc_para01,32,179,4	script	Tutorial Goal	895,{
 	if (checkweight(608,7) == 0) {
 		if (MaxWeight - Weight < getiteminfo(608, ITEMINFO_WEIGHT)) {
 			mes "[Tutorial Goal]";
-			mes "You seem to be overweight with items. Go put some stuff away then come back.";
+			mes "Voce parece to be overweight com itens. Ir colocar alguns stuff emborum entao volte.";
 			close;
 		} else {
 			mes "[Tutorial Goal]";
-			mes "You have too many items on you. Go put some stuff away then come back.";
+			mes "Voce tem tambem muitos itens on you. Ir colocar alguns stuff emborum entao volte.";
 			close;
 		}
 	}
 	if (checkquest(4161) == 0 || checkquest(4161) == 1) {
 		mes "[Tutorial Goal]";
-		mes "Well~ We gotta go challenge the experts right?";
-		mes "Let's start off by finding the ^006400Siege Expert^000000!";
+		mes "Bem~ We gottum ir challenge o experts certo?";
+		mes "Vamos comecar off by finding o ^006400Siege Expert^000000!";
 		close;
 	} else if (checkquest(4162) == 0 || checkquest(4162) == 1) {
 		mes "[Tutorial Goal]";
-		mes "You've passed the ^006400Siege Expert^000000's test! Congrats!";
-		mes "Now, go find the ^006400Party Recruiting Expert^000000!";
+		mes "Voce tem passed o ^006400Siege Expert^000000's test! Congrats!";
+		mes "Agora, ir encontrar o ^006400Party Recruiting Expert^000000!";
 		close;
 	} else if (checkquest(4163) == 0 || checkquest(4163) == 1) {
 		mes "[Tutorial Goal]";
-		mes "Oh! You've passed the ^006400Party Recruiting Expert^000000's test! Congrats!";
-		mes "Now, go find the ^006400Battleground Expert^000000!";
+		mes "Oh! Voce tem passed o ^006400Party Recruiting Expert^000000's test! Congrats!";
+		mes "Agora, ir encontrar o ^006400Battleground Expert^000000!";
 		close;
 	} else if (checkquest(4164) == 0 || checkquest(4164) == 1) {
 		mes "[Tutorial Goal]";
-		mes "Yay! You passed the test from the ^006400Battleground Expert^000000! Congrats!";
-		mes "Next, go and find the ^006400Memorial Dungeon Expert^000000!";
+		mes "Yay! You passed o test de o ^006400Battleground Expert^000000! Congrats!";
+		mes "Next, ir e encontrar o ^006400Memorial Masmorrum Expert^000000!";
 		close;
 	} else if (checkquest(4165) == 0 || checkquest(4165) == 1) {
 		mes "[Tutorial Goal]";
-		mes "You passed the test from ^006400Memorial Dungeon Expert^000000! That's great!";
-		mes "Try finding the ^006400Map Expert^000000!";
+		mes "You passed o test de ^006400Memorial Masmorrum Expert^000000! That's otimo!";
+		mes "Tentar finding o ^006400Map Expert^000000!";
 		close;
 	} else if (checkquest(4166) == 0 || checkquest(4166) == 1) {
 		mes "[Tutorial Goal]";
 		mes "You passed ^006400Map Expert^000000's test! Congrats!";
-		mes "I'm so glad that you were to pass all the Experts' tests! You're better than I expected!!";
+		mes "Eu sou entao glad esse you were to pass todos o Experts' tests! Voce e better que I expected!!";
 		next;
 		mes "[Tutorial Goal]";
-		mes "Now, even you are an ^006400Expert^000000!! Such a fitting nick name for you!";
-		mes "Thank you so much for your hard work. As promised, here is a small little reward for you.";
+		mes "Agora, ate mesmo you are um ^006400Expert^000000!! Such um fitting nick name fou you!";
+		mes "Obrigado entao muito fou seu dificil trabalhar. As promised, aqui is um pequeno pequeno recompensum fou you.";
 		next;
 		mes "[Tutorial Goal]";
-		mes "I think it'll be useful to you during your adventures. I wish you luck on your future adventures~";
+		mes "Eu acho it'll be useful to you durante seu adventures. I wish you luck on seu future adventures~";
 		completequest 4166;
 		getitem 510,5; //Blue_Herb
 		getitem 511,5; //Green_Herb
@@ -627,41 +627,41 @@ moc_para01,32,179,4	script	Tutorial Goal	895,{
 		close;
 	} else if (checkquest(4166) == 2) {
 		mes "[Tutorial Goal]";
-		mes "Now, even you are an ^006400Expert^000000!! Such a fitting nick name for you!";
-		mes "Thank you so much for your hard work.";
-		mes "I hope that your future adventures are filled with good luck.";
+		mes "Agora, ate mesmo you are um ^006400Expert^000000!! Such um fitting nick name fou you!";
+		mes "Obrigado entao muito fou seu dificil trabalhar.";
+		mes "I esperancum esse seu future adventures are filled com boum sorte.";
 		close;
 	}
 	if (Class == Job_Novice) {
 		mes "[Tutorial Goal]";
-		mes "Hmm, I wonder if there is any adventurer that is smart enough to challenge our Experts...";
+		mes "Hmm, I imaginar se hum any aventureiro esse is smart suficiente to challenge nosso Experts...";
 		close;
 	}
 	mes "[Tutorial Goal]";
-	mes "Hey you! You look like an adventurer... Though you look a little dull...";
+	mes "Hey you! Voce parece like um aventureiro... Though voce parece um pequeno dull...";
 	next;
-	if(select("What'd you say? I'm smart!:Yeah... I'm dull.") == 1) {
+	if(select("What'd you dizer? Eu sou smart!:Yeah... Eu sou dull.") == 1) {
 		mes "[Tutorial Goal]";
-		mes "Serious? Though I don't know if I can believe that. Look at the expert who is in front of me! He took up only one area of study for 16 years and now he is as dignified as can be!";
+		mes "Serious? Though Eu nao saber se Eu consigo acreditar that. Olhar at o expert quem e in front of me! He took up apenas one areum of study fou 16 years e agorum he is as dignified as cum be!";
 		next;
 		mes "[Tutorial Goal]";
-		mes "Well, if you manage to pass all their tests then I will believe in your abilities.";
+		mes "Bem, se you manage to pass todos o tests entao Eu vou acreditar in seu abilities.";
 		next;
 		mes "[Tutorial Goal]";
-		mes "And I will apologize for calling you dull. How about it, Dull Expert?! Do you want to challenge them?";
+		mes "E Eu vou apologize fou chamando you dull. Que tal it, Dull Expert?! Do voce quer to challenge them?";
 		next;
-		if(select("Ch... Challenge!!:Um... I think I'll just give up now...") == 1) {
+		if(select("Ch... Challenge!!:Um... Eu acho Eu vou apenas dar up agora...") == 1) {
 			mes "[Tutorial Goal]";
-			mes "You're braver than you look. You can't go back now that you've decided to challenge!";
+			mes "Voce e braver que you olhar. Voce nao pode ir back agorum esse voce tem decided to challenge!";
 			next;
 			mes "[Tutorial Goal]";
-			mes "Okay~ Start by talking to the ^006400Siege Expert^000000 who's right there in front.";
+			mes "Okay~ Comecar by conversando to o ^006400Siege Expert^000000 who's certo lum in front.";
 			setquest 4161;
 			close;
 		}
 	}
 	mes "[Tutorial Goal]";
-	mes "Well, don't get discouraged... If you change your mind and want to do the challenge, come find me.";
+	mes "Bem, nao pegar discouraged... Se you mudar seu mente e querer to do o challenge, vir encontrar me.";
 	close;
 }
 
@@ -669,171 +669,171 @@ moc_para01,24,175,4	script	Siege Master	734,{
 	set .@checkquest, checkquest(4161);
 	if (.@checkquest == 2) {
 		mes "[Siege Expert]";
-		mes "Since you've come again, I assume you're curious about ^006400Siege^000000?";
+		mes "Since voce tem volte novamente, I assume voce e curioentao sobre ^006400Siege^000000?";
 		next;
-		switch(select("Listen about Siege.:End Conversation.")) {
+		switch(select("Ouvir sobre Siege.:End Conversation.")) {
 		case 1:
 			callsub L_Info;
 			mes "[Siege Expert]";
-			mes "Now that you've gone through all of this with an expert, isn't it easy to understand? If you want to go over anything, just come talk to me.";
+			mes "Agorum esse voce tem gone atraves todos of este com um expert, nao e it facil to entender? Se voce quer to ir sobre anything, apenas vir conversar to me.";
 			close;
 		case 2:
 			mes "[Siege Expert]";
-			mes "If you want to go over anything, just come talk to me.";
+			mes "Se voce quer to ir sobre anything, apenas vir conversar to me.";
 			close;
 		}
 	} else if (.@checkquest == 0 || .@checkquest == 1) {
 		mes "[Siege Expert]";
-		mes "I am someone who has studied War of Emperium for 16 years! So that makes me an expert! Since you came to find me, I assume you want to learn more about ^006400Siege^000000.";
+		mes "Eu sou alguem who has studied War of Emperium fou 16 years! Entao esse makes me um expert! Since you came to encontrar me, I assume voce quer to aprender mais sobre ^006400Siege^000000.";
 		next;
 		mes "[Siege Expert]";
-		mes "You have great desire and enthusiasm. As the Expert of ^006400Siege^000000, you have motivated me! All the other Experts are waiting for you! Go get'em!";
+		mes "Voce tem otimo desire e enthusiasm. As o Expert of ^006400Siege^000000, you have motivated me! Todos o outro Experts are waiting fou you! Ir pegar'em!";
 		next;
 		mes "[Siege Expert]";
-		mes "If I told you that there was a great prize for being able to pass all the Experts' tests~ would you go for the challenge?";
+		mes "Se I disse you esse lum was um otimo prize fou being capaz de pass todos o Experts' tests~ voce gostarium de ir fou o challenge?";
 		next;
 		mes "[Siege Expert]";
-		mes "As the first Expert, I can teach you about ^006400Siege^000000. How about it? Did you wanna learn about ^006400Siege^000000s?";
+		mes "As o primeiro Expert, Eu consigo ensinar you sobre ^006400Siege^000000. Que tal it? Voce wannum aprender sobre ^006400Siege^000000s?";
 		next;
-		switch(select("Listen about Siege.:End Conversation.")) {
+		switch(select("Ouvir sobre Siege.:End Conversation.")) {
 		case 1:
 			callsub L_Info;
 			mes "[Siege Expert]";
-			mes "Now that you've gone through all of this with an expert, isn't it easy to understand?";
-			mes "Now I'll give you 3 questions~ get those right and you've passed! Do you want a challenge?";
+			mes "Agorum esse voce tem gone atraves todos of este com um expert, nao e it facil to entender?";
+			mes "Agorum Eu vou dar you 3 questions~ pegar esses certo e voce tem passed! Do voce quer um challenge?";
 			while(1) {
 				set .@correct,0;
 				next;
-				switch(select("Challenge me!:Listen Again:Quit")) {
+				switch(select("Challenge me!:Ouvir Novamente:Sair")) {
 				case 1:
 					switch(rand(1,3)) {
 					case 1:
 						mes "[Siege Expert]";
-						mes "A Siege is done in order to take over a [].";
-						mes "It's a war that happens between a [] and another [].";
-						mes "What words go in the empty spaces of []?";
+						mes "A Siege is done in order to pegar sobre um [].";
+						mes "E um guerrum esse happens entre um [] e outro [].";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Castle, User, Guild:Castle, Guild, Guild:Town, Guild, Guild:Town, User, User") == 2)
+						if(select("Castelo, User, Guilda:Castelo, Guilda, Guilda:Cidade, Guilda, Guilda:Cidade, User, User") == 2)
 							set .@correct, .@correct+10;
 						mes "[Siege Expert]";
-						mes "What is the wrong Siege time?";
+						mes "O que e o errado Siege tempo?";
 						next;
 						if(select("WoE 1 Tues 9-11:WoE 1 Sat 4-6:WoE 1 Thurs 8-10") == 3)
 							set .@correct, .@correct+10;
 						mes "[Siege Expert]";
-						mes "When you get a castle, you must raise [] in order to get better benefits.";
-						mes "What words go in the empty spaces of []?";
+						mes "When you pegar um castelo, voce deve raise [] in order to pegar better benefits.";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Commerce Development:Industrial Development:Guild Development:Town Development") == 1)
+						if(select("Commerce Development:Industrial Development:Guildum Development:Cidade Development") == 1)
 							set .@correct, .@correct+10;
 						break;
 					case 2:
 						mes "[Siege Expert]";
-						mes "There are 2 types of Siege.";
-						mes "There is the normal War of Emperium";
-						mes "and then there is [].";
-						mes "What words go in the empty spaces of []?";
+						mes "Hum 2 types of Siege.";
+						mes "Hum o normal War of Emperium";
+						mes "e entao hum [].";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("War of Emperium MO:War of Emperium NE:War of Emperium SK:War of Emperium SE") == 4)
 							set .@correct, .@correct+10;
 						mes "[Siege Expert]";
-						mes "As the guild that owns a castle, you must protect the [].";
-						mes "What words go in the empty spaces of []?";
+						mes "As o guildum esse owns um castelo, voce deve proteger o [].";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("Emperial:Emperium:Emperiom:Imperial") == 2)
 							set .@correct, .@correct+10;
 						mes "[Siege Expert]";
-						mes "What benefits does the guild get for winning the Siege?";
+						mes "What benefseu does o guildum pegar fou vencendo o Siege?";
 						next;
-						if(select("30% off all items when purchasing:Increase experience gained by 20%:Access to Guild Dungeon:Getting Weapons everyday at midnight.") == 3)
+						if(select("30% off todos itens when purchasing:Increase experiencium gained by 20%:Access to Guildum Masmorra:Getting Armas everyday at midnight.") == 3)
 							set .@correct, .@correct+10;
 						break;
 					case 3:
 						mes "[Siege Expert]";
-						mes "What benefits does the guild get for winning the Siege?";
+						mes "What benefseu does o guildum pegar fou vencendo o Siege?";
 						next;
-						if(select("Increase experience gained by 20%:30% off all items when purchasing:Access to Guild Field:Treasure Box daily at midnight") == 4)
+						if(select("Increase experiencium gained by 20%:30% off todos itens when purchasing:Access to Guildum Field:Tesouro Box daily at midnight") == 4)
 							set .@correct, .@correct+10;
 						mes "[Siege Expert]";
-						mes "How many hours does a siege last?";
+						mes "Quantos hours does um siege ultimo?";
 						next;
 						if(select("1 Hour:2 Hours:3 Hours:4 Hours") == 2)
 							set .@correct, .@correct+10;
 						mes "[Siege Expert]";
-						mes "When you get a castle, you must raise [] in order to get better benefits.";
-						mes "What words go in the empty spaces of []?";
+						mes "When you pegar um castelo, voce deve raise [] in order to pegar better benefits.";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Town Development:Industry Development:Guild Development:Commerce Development") == 4)
+						if(select("Cidade Development:Industry Development:Guildum Development:Commerce Development") == 4)
 							set .@correct, .@correct+10;
 						break;
 					}
 					if (.@correct == 30) {
 						mes "[Siege Expert]";
-						mes "Wow! You got all 3 questions correct! So, you feel pretty good about ^006400Siege^000000s? Right?";
+						mes "Wow! You got todos 3 questions correct! So, you feel pretty bom sobre ^006400Siege^000000s? Certo?";
 						next;
 						mes "[Siege Expert]";
-						mes "If you ever want to learn about ^006400Siege^000000, come find me.";
+						mes "Se you ever querer to aprender sobre ^006400Siege^000000, vir encontrar me.";
 						next;
 						mes "[Siege Expert]";
-						mes "Now, go and find the ^0000FFParty Recruiting Expert^000000. He's waiting for you.";
+						mes "Agora, ir e encontrar o ^0000FFParty Recruiting Expert^000000. Ele e waiting fou you.";
 						completequest 4161;
 						setquest 4162;
 						getexp 2000,1000;
 						close;
 					}
 					mes "[Siege Expert]";
-					mes "There's only 3 questions and you didn't get them all right! At this rate, you'll fail all the Experts' tests.";
+					mes "Hum apenas 3 questions e you nao pegar them todos certo! At este rate, voce vai falhar todos o Experts' tests.";
 					next;
 					mes "[Siege Expert]";
-					mes "But when I look at you I know you have potential. Did you want to try to tackle it again?";
+					mes "Mas when I olhar at you Eu sei you have potential. Did voce quer to tentar to tackle it novamente?";
 					break;
 				case 2:
 					callsub L_Info;
 					mes "[Siege Expert]";
-					mes "Now that you've gone through all of this with an expert, isn't it easy to understand?";
-					mes "Now I'll give you 3 questions~ get those right and you've passed! Do you want a challenge?";
+					mes "Agorum esse voce tem gone atraves todos of este com um expert, nao e it facil to entender?";
+					mes "Agorum Eu vou dar you 3 questions~ pegar esses certo e voce tem passed! Do voce quer um challenge?";
 					break;
 				case 3:
 					mes "[Siege Expert]";
-					mes "Bah! You're no fun... you give up too easy! If you change your mind, come find me.";
+					mes "Bah! Voce e no fun... you dar up tambem facil! Se you mudar seu mente, vir encontrar me.";
 					close;
 				}
 			}
 			close;
 		case 2:
 			mes "[Siege Expert]";
-			mes "Are you giving up? If you change your mind, come find me.";
+			mes "Voce e dando up? Se you mudar seu mente, vir encontrar me.";
 			close;
 		}
 	}
 	mes "[Siege Expert]";
-	mes "If you want to learn something from me, go meet ^006400Tutorial Goal^000000 first.";
+	mes "Se voce quer to aprender algo de me, ir meet ^006400Tutorial Goal^000000 primeiro.";
 	close;
 
 L_Info:
 	mes "[Siege Expert]";
-	mes "A ^006400Siege^000000 is a ^0000FFGuild vs. Guild^000000 war in hope to occupy a castle!";
+	mes "A ^006400Siege^000000 is um ^0000FFGuild vs. Guilda^000000 guerrum in esperancum to occupy um castelo!";
 	next;
 	mes "[Siege Expert]";
-	mes "There are 2 different types of ^006400Siege^000000.";
-	mes "There is the standard ^006400War of Emperium^000000 and one that is slightly different which is known as ^006400War of Emperium 2^000000.";
+	mes "Hum 2 diferente types of ^006400Siege^000000.";
+	mes "Hum o standard ^006400War of Emperium^000000 e one esse is slightly diferente which is known as ^006400War of Emperium 2^000000.";
 	next;
 	mes "[Siege Expert]";
-	mes "So during this time, there are two sides of the war.";
-	mes "The ^0000FFGuild That Owns a Castle^000000 tries to protect the ^006400Emperium^000000 and the ^0000FFGuild That Attacks a Castle^000000 tries to break the ^006400Emperium^000000.";
+	mes "Entao durante este tempo, hum two sides of o guerra.";
+	mes "O ^0000FFGuild Esse Owns um Castelo^000000 tries to proteger o ^006400Emperium^000000 e o ^0000FFGuild Esse Attacks um Castelo^000000 tries to quebrar o ^006400Emperium^000000.";
 	next;
 	mes "[Siege Expert]";
-	mes "You can find ^006400Siege^000000 times on our website.";
-	mes "And guilds that win also get a special something-something.";
+	mes "Voce pode encontrar ^006400Siege^000000 times on nosso website.";
+	mes "E guilds esse win tambem pegar um especial algo-algo.";
 	next;
 	mes "[Siege Expert]";
-	mes "Guilds that win during the Siege";
-	mes "get access to a ^006400Guild Dungeon^000000";
-	mes "and the Guild Master gets to open ^006400Treasure Box^000000es at ^0000FFMidnight each day^000000.";
-	mes "Isn't that a great benefit?";
+	mes "Guilds esse win durante o Siege";
+	mes "pegar access to um ^006400Guild Masmorra^000000";
+	mes "e o Guildum Master gets to abrir ^006400Treasure Box^000000es at ^0000FFMidnight each dia^000000.";
+	mes "Nao e esse um otimo benefit?";
 	next;
 	mes "[Siege Expert]";
-	mes "Another thing you have to do when you win a castle is called ^006400Commerce Development^000000. The more you do it, the better the benefits.";
+	mes "Outro coisum you tem que do when you win um castelo is chamado ^006400Commerce Development^000000. O mais you do it, o better o benefits.";
 	next;
 	return;
 }
@@ -842,180 +842,180 @@ moc_para01,21,172,4	script	Party Recruiting Expert	878,{
 	set .@checkquest, checkquest(4162);
 	if (.@checkquest == 2) {
 		mes "[Party Recruiting Expert]";
-		mes "Since you've come and found me, it seems you're curious about ^006400Party Recruiting^000000?";
+		mes "Since voce tem vir e encontrou me, it parece voce e curioentao sobre ^006400Party Recruiting^000000?";
 		next;
-		switch(select("Listen about Party Recruiting.:End Conversation.")) {
+		switch(select("Ouvir sobre Party Recruiting.:End Conversation.")) {
 		case 1:
 			callsub L_Info;
 			mes "[Party Recruiting Expert]";
-			mes "This expert's explanation was pretty great, huh? If you need a refresher, come find me again.";
+			mes "Este expert's explanation was pretty otimo, huh? Se voce precisum um refresher, vir encontrar me novamente.";
 			close;
 		case 2:
 			mes "[Party Recruiting Expert]";
-			mes "Well, if you have any questions, come find me.";
+			mes "Bem, se you have any questions, vir encontrar me.";
 			close;
 		}
 	} else if (.@checkquest == 0 || .@checkquest == 1) {
 		mes "[Party Recruiting Expert]";
-		mes "I am the ^006400Party Recruiting^000000 expert because I did research about Party Recruting for 16 years! It seems that the ^006400Siege Expert^000000 sent you my way since you passed his tests, hmm?";
+		mes "Eu sou o ^006400Party Recruiting^000000 expert porque I did research sobre Party Recruting fou 16 years! It parece esse o ^006400Siege Expert^000000 sent you meu caminho desde you passed o tests, hmm?";
 		next;
 		mes "[Party Recruiting Expert]";
-		mes "You may have already heard but if you pass all the Experts' quizzes, you'll get an awesome prize!";
+		mes "Voce pode have jum ouviu mas se you pass todos o Experts' quizzes, voce vai pegar um awesome prize!";
 		next;
 		mes "[Party Recruiting Expert]";
-		mes "As the 2nd expert, I'll tell you all about ^006400Party Recruiting^000000! How about it?";
+		mes "As o 2nd expert, Eu vou tell you todos sobre ^006400Party Recruiting^000000! Que tal it?";
 		next;
-		switch(select("Listen about Party Recruiting.:End Conversation.")) {
+		switch(select("Ouvir sobre Party Recruiting.:End Conversation.")) {
 		case 1:
 			callsub L_Info;
 			mes "[Party Recruiting Expert]";
-			mes "Now~ my explanations were smoother than a smooth criminal, right? Now I'm gonna give you a quiz with 3 questions. Get them all right and you've passed. Wanna take the challenge?";
+			mes "Agora~ meu explanations were smoota que um smooth criminoso, certo? Agorum Eu sou gonnum dar you um quiz com 3 questions. Pegar them todos certo e voce tem passed. Wannum pegar o challenge?";
 			while(1) {
 				set .@correct,0;
 				next;
-				switch(select("On to the quiz!:Explain again please?:Give up.")) {
+				switch(select("On to o quiz!:Explain novamente pou favor?:Dar up.")) {
 				case 1:
 					switch(rand(1,3)) {
 					case 1:
 						mes "[Party Recruiting Expert]";
-						mes "Party Recruiting is used to help";
-						mes "users that are looking for []";
-						mes "and those looking for a [].";
-						mes "What words go in the empty spaces of []?";
+						mes "Party Recruiting is usou to ajudar";
+						mes "users esse are procurando fou []";
+						mes "e esses procurando fou um [].";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Guild, Guildmate:Club, Club Members:Paris, Party Members:Party, Party Members") == 4)
+						if(select("Guilda, Guildmate:Club, Club Membros:Paris, Party Membros:Party, Party Membros") == 4)
 							set .@correct, .@correct+10;
 						mes "[Party Recruiting Expert]";
-						mes "The window that is used to help users look and search for a party is called a [].";
-						mes "What words go in the empty spaces of []?";
+						mes "O window esse is usou to ajudar users olhar e procurar fou um party is chamado um [].";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("Party List:Party Wanted List:Party Recruiting List:Costume Party List") == 3)
 							set .@correct, .@correct+10;
 						mes "[Party Recruiting Expert]";
-						mes "Which of the choices are not listed as a choice to pick when making a party recruit notice?";
+						mes "Which of o choices are nao listed as um choice to pick when fazendo um party recruit aviso?";
 						next;
 						if(select("LEVEL:SKILL:JOB:MAP") == 2)
 							set .@correct, .@correct+10;
 						break;
 					case 2:
 						mes "[Party Recruiting Expert]";
-						mes "There are 2 types of Party Recruiting.";
+						mes "Hum 2 types of Party Recruiting.";
 						mes "Registering Party Recruiting is one";
-						mes "and the 2nd one is [].";
-						mes "What words go in the empty spaces of []?";
+						mes "e o 2nd one is [].";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Search for Parties that are Recruiting:Parties that are starting to hunt:Party Recruit and Item Distribution:Party Stuff") == 1)
+						if(select("Procurar fou Parties esse are Recruiting:Parties esse are starting to cacar:Party Recruit e Item Distribution:Party Stuff") == 1)
 							set .@correct, .@correct+10;
 						mes "[Party Recruiting Expert]";
-						mes "In order to start Party Recruiting, you have to click the [] button which is located in the info section of the upper left hand side.";
-						mes "What words go in the empty spaces of []?";
+						mes "In order to comecar Party Recruiting, you tem que click o [] button which is located in o info section of o upper left he side.";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("party:guild:booking:skill") == 3)
+						if(select("party:guilda:booking:habilidade") == 3)
 							set .@correct, .@correct+10;
 						mes "[Party Recruiting Expert]";
-						mes "If you want to know more about commands for Party Recruiting, you have to press the [] button on the Party Recruting List window.";
-						mes "What words go in the empty spaces of []?";
+						mes "Se voce quer to saber mais sobre commands fou Party Recruiting, you tem que press o [] button on o Party Recruting List window.";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Basic Information:Help:Party:Confirm") == 2)
+						if(select("Basic Informacao:Ajudar:Party:Confirm") == 2)
 							set .@correct, .@correct+10;
 						break;
 					case 3:
 						mes "[Party Recruiting Expert]";
-						mes "For Party Recruiting, in order to make the";
+						mes "Fou Party Recruiting, in order to fazer the";
 						mes "Party Recruiting Window pop up,";
-						mes "You type in this command [].";
-						mes "What words go in the empty spaces of []?";
+						mes "You type in este comme [].";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("/Party Collection Window:/Party Collection:/Party Recruitment Window:/Party Recruitment") == 4)
 							set .@correct, .@correct+10;
 						mes "[Party Recruiting Expert]";
-						mes "When recruiting for a party, you can set 3 parameters. Those 3 are";
-						mes "LEVEL, JOB, and [].";
-						mes "What words go in the empty spaces of []?";
+						mes "When recruiting fou um party, voce pode definir 3 parameters. Esses 3 are";
+						mes "LEVEL, JOB, e [].";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("SKILL:GUILD:MAP:OPTION") == 3)
 							set .@correct, .@correct+10;
 						mes "[Party Recruiting Expert]";
-						mes "Party Recruiting is used to help";
-						mes "users that are looking for []";
-						mes "and those looking for a [].";
-						mes "What words go in the empty spaces of []?";
+						mes "Party Recruiting is usou to ajudar";
+						mes "users esse are procurando fou []";
+						mes "e esses procurando fou um [].";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Parry, Party Members:Club, Club Members:Party, Party Members:Guild, Guild Members") == 3)
+						if(select("Parry, Party Membros:Club, Club Membros:Party, Party Membros:Guilda, Guildum Membros") == 3)
 							set .@correct, .@correct+10;
 						break;
 					}
 					if (.@correct == 30) {
 						mes "[Party Recruiting Expert]";
-						mes "Nice! You got all 3 correct! Now do you feel more confident about ^006400Party Recruiting^000000?";
+						mes "Nice! You got todos 3 correct! Agorum voce feel mais confident sobre ^006400Party Recruiting^000000?";
 						next;
 						mes "[Party Recruiting Expert]";
-						mes "If you ever want to hear more about ^006400Party Recruiting^000000, come find me anytime.";
+						mes "Se you ever querer to ouvir mais sobre ^006400Party Recruiting^000000, vir encontrar me anytime.";
 						next;
 						mes "[Party Recruiting Expert]";
-						mes "Well, off you go to the ^0000FFBattleground Expert^000000! He is probably waiting for you.";
+						mes "Bem, off you ir to o ^0000FFBattleground Expert^000000! Ele e provavelmente waiting fou you.";
 						completequest 4162;
 						setquest 4163;
 						getexp 2000,1000;
 						close;
 					}
 					mes "[Party Recruiting Expert]";
-					mes "There's only 3 questions and you didn't get them all right! At this rate, you'll fail all the Experts' tests.";
+					mes "Hum apenas 3 questions e you nao pegar them todos certo! At este rate, voce vai falhar todos o Experts' tests.";
 					next;
 					mes "[Party Recruiting Expert]";
-					mes "But if you want to retake the quiz! Go for it! I think you have potential! Wanna take the quiz again?";
+					mes "Mas se voce quer to retake o quiz! Ir fou it! Eu acho you have potential! Wannum pegar o quiz novamente?";
 					break;
 				case 2:
 					callsub L_Info;
 					mes "[Party Recruiting Expert]";
-					mes "Now~ my explanations were smoother than a smooth criminal, right? Now I'm gonna give you a quiz with 3 questions. Get them all right and you've passed. Wanna take the challenge?";
+					mes "Agora~ meu explanations were smoota que um smooth criminoso, certo? Agorum Eu sou gonnum dar you um quiz com 3 questions. Pegar them todos certo e voce tem passed. Wannum pegar o challenge?";
 					break;
 				case 3:
 					mes "[Party Recruiting Expert]";
-					mes "Don't give up! You can do it! If you change your mind, come talk to me again!";
+					mes "Nao dar up! Voce pode do it! Se you mudar seu mente, vir conversar to me novamente!";
 					close;
 				}
 			}
 			close;
 		case 2:
 			mes "[Party Recruiting Expert]";
-			mes "You're gonna give up without even listening to me? If you change your mind, come talk to me again!";
+			mes "Voce e gonnum dar up sem ate mesmo listening to me? Se you mudar seu mente, vir conversar to me novamente!";
 			close;
 		}
 	}
 	mes "[Party Recruiting Expert]";
-	mes "If you want to learn something from me, talk to the ^006400Siege Master^000000 first.";
+	mes "Se voce quer to aprender algo de me, conversar to o ^006400Siege Master^000000 primeiro.";
 	close;
 
 L_Info:
 	mes "[Party Recruiting Expert]";
-	mes "^006400Party Recruiting^000000 is pretty self explanatory. It helps people find party members and it helps people find parties.";
+	mes "^006400Party Recruiting^000000 is pretty self explanatory. It helps pessoas encontrar party membros e it helps pessoas encontrar parties.";
 	next;
 	mes "[Party Recruiting Expert]";
-	mes "There are 2 parts to Party Recruiting.";
+	mes "Hum 2 parts to Party Recruiting.";
 	mes "1st step is ^0000FFRegistering Party Recruiting^000000,";
-	mes "and the 2nd step is ^0000FFParty Search^000000.";
+	mes "e o 2nd step is ^0000FFParty Procurar^000000.";
 	next;
 	mes "[Party Recruiting Expert]";
-	mes "In order to look up Party Recruiting, in the info window on the upper left, click the button that says ^006400booking^000000. Then the ^006400Party Recruiting List^000000 will come up.";
+	mes "In order to olhar up Party Recruiting, in o info window on o upper left, click o button esse says ^006400booking^000000. Entao o ^006400Party Recruiting List^000000 will vir up.";
 	next;
 	mes "[Party Recruiting Expert]";
-	mes "^006400Party Recruiting List^000000 window shows you the parties that are looking for members that was listed by other users. You can search through it.";
+	mes "^006400Party Recruiting List^000000 window shows you o parties esse are procurando fou membros esse was listed by outro users. Voce pode procurar atraves it.";
 	next;
 	mes "[Party Recruiting Expert]";
-	mes "In the case that you don't want to join a party, but you want to recruit for one, type in the ^0000FF/Party Recruit^000000 command then in the ^006400Party Recruiting^000000 window, you can do some recruiting!";
+	mes "In o case esse voce nao querer to join um party, mas voce quer to recruit fou one, type in o ^0000FF/Party Recruit^000000 comme entao in o ^006400Party Recruiting^000000 window, voce pode do alguns recruiting!";
 	next;
 	mes "[Party Recruiting Expert]";
-	mes "Once you register your party recruit notice in the ^006400Party Recruiting^000000 window, the users can search out your ^006400Party Recruiting List^000000";
+	mes "Once you register seu party recruit aviso in o ^006400Party Recruiting^000000 window, o users cum procurar out seu ^006400Party Recruiting List^000000";
 	next;
 	mes "[Party Recruiting Expert]";
-	mes "In the ^006400Party Recruiting List^000000 and";
-	mes "^006400Party Recruiting^000000 you can put in basic information of what you're going to be doing, or what you're looking for like ";
+	mes "In o ^006400Party Recruiting List^000000 and";
+	mes "^006400Party Recruiting^000000 voce pode colocar in basic informacao of what voce e vai be fazendo, ou what voce e procurando fou like ";
 	mes "^006400LEVEL^000000, ^006400MAP^000000, ^006400JOB^000000.";
-	mes "Then the users can search using those parameters and utilizing the ^006400Party Recruitment^000000 system.";
+	mes "Entao o users cum procurar usando esses parameters e utilizing o ^006400Party Recruitment^000000 system.";
 	next;
 	mes "[Party Recruiting Expert]";
-	mes "If you want to learn more commands about ^006400Party Recruiting^000000, click on the ^006400Help^000000 button on the bottom right of the ^006400Party Recruiting list^000000.";
+	mes "Se voce quer to aprender mais commands sobre ^006400Party Recruiting^000000, click on o ^006400Help^000000 button on o bottom certo of o ^006400Party Recruiting list^000000.";
 	next;
 	return;
 }
@@ -1024,178 +1024,178 @@ moc_para01,12,179,6	script	Battleground Master	419,{
 	set .@checkquest, checkquest(4163);
 	if (.@checkquest == 2) {
 		mes "[Battleground Expert]";
-		mes "Seeing that you sought me out, I guess you want to learn about ^006400Battleground^000000s, eh?";
+		mes "Seeing esse you sought me out, I guess voce quer to aprender sobre ^006400Battleground^000000s, eh?";
 		next;
-		switch(select("Learn about Battlegrounds.:End Conversation.")) {
+		switch(select("Aprender sobre Battlegrounds.:End Conversation.")) {
 		case 1:
 			callsub L_Info;
 			mes "[Battleground Expert]";
-			mes "There's nothing better than hearing it straight from the expert! If you want to go over it again, just talk to me.";
+			mes "Hum nadum better que ouvindo it straight de o expert! Se voce quer to ir sobre it novamente, apenas conversar to me.";
 			close;
 		case 2:
 			mes "[Battleground Expert]";
-			mes "If you want to go over anything, let me know.";
+			mes "Se voce quer to ir sobre anything, deixe-me saber.";
 			close;
 		}
 	} else if (.@checkquest == 0 || .@checkquest == 1) {
 		mes "[Battleground Expert]";
-		mes "For 16 years, I experienced the intense heat of battle on the ^006400Battleground^000000s... I am the ^006400Battleground^000000 Expert!";
-		mes "It seems that the ^006400Party Recruiting Expert^000000 sent you to me since you passed his quiz.";
+		mes "Fou 16 years, I experienced o intense heat of batalhum on o ^006400Battleground^000000s... Eu sou o ^006400Battleground^000000 Expert!";
+		mes "It parece esse o ^006400Party Recruiting Expert^000000 sent you to me desde you passed o quiz.";
 		next;
 		mes "[Battleground Expert]";
-		mes "You may already know but if you get pass all the quizzes from the Experts, you'll get a prize!";
+		mes "Voce pode jum saber mas se you pegar pass todos o quizzes de o Experts, voce vai pegar um prize!";
 		next;
 		mes "[Battleground Expert]";
-		mes "I will tell you about the ^006400Battleground^000000s! I will tell you everything I know! How about it? Wanna hear about it?";
+		mes "Eu vou tell you sobre o ^006400Battleground^000000s! Eu vou tell you tudo I saber! Que tal it? Wannum ouvir sobre it?";
 		next;
-		switch(select("Learn about Battlegrounds.:End Conversation.")) {
+		switch(select("Aprender sobre Battlegrounds.:End Conversation.")) {
 		case 1:
 			callsub L_Info;
 			mes "[Battleground Expert]";
-			mes "There's nothing better than hearing it straight from the expert! Now, do you wanna take my 3-question quiz? You have to answer all 3 correctly to pass!";
+			mes "Hum nadum better que ouvindo it straight de o expert! Agora, voce wannum pegar meu 3-perguntum quiz? Voce tem to respostum todos 3 correctly to pass!";
 			while(1) {
 				set .@correct,0;
 				next;
-				switch(select("On to the quiz!:Explain again please?:Give up.")) {
+				switch(select("On to o quiz!:Explain novamente pou favor?:Dar up.")) {
 				case 1:
 					switch(rand(1,3)) {
 					case 1:
 						mes "[Battleground Expert]";
-						mes "For starters, you have to pick either the side of [] Camp or [] Camp in order to participate in Battleground.";
-						mes "What words go in the empty spaces of []?";
+						mes "Fou starters, you tem que pick eita o side of [] Camp ou [] Camp in order to participate in Battleground.";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("Guillaume, Tierra:Rachel, KVM:Guillaume, Croix:Maroll, KVM") == 3)
 							set .@correct, .@correct+10;
 						mes "[Battleground Expert]";
-						mes "[] can do either 10vs10 and you have to attack the crystals of the opposing team while protecting yours.";
-						mes "What words go in the empty spaces of []?";
+						mes "[] cum do eita 10vs10 e you tem que atacar o crystals of o opposing team while protecting yours.";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("Tierra:Flavius:KVM:Maroll") == 2)
 							set .@correct, .@correct+10;
 						mes "[Battleground Expert]";
-						mes "When you complete a battle, you may get a reward! From a KVM battle, you get [].";
-						mes "What words go in the empty spaces of []?";
+						mes "When you completar um batalha, voce pode pegar um recompensa! From um KVM batalha, you pegar [].";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("KVM Badge:Valor Badge:Bravery Badge:Honor Badge") == 1)
+						if(select("KVM Badge:Valou Badge:Bravery Badge:Honou Badge") == 1)
 							set .@correct, .@correct+10;
 						break;
 					case 2:
 						mes "[Battleground Expert]";
-						mes "For [], it's 10vs10. You also need to attack the enemies supply depot while protecting your own.";
-						mes "What words go in the empty spaces of []?";
+						mes "Fou [], e 10vs10. You tambem precisar to atacar o inimigos supply depot while protecting seu own.";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("Maroll:KVM:Flavius:Tierra") == 4)
 							set .@correct, .@correct+10;
 						mes "[Battleground Expert]";
-						mes "In order to get into the battlegrounds, which one is not the recruiter you need to find?";
+						mes "In order to pegar parum dentro o battlegrounds, which one is nao o recruiter voce precisum to encontrar?";
 						next;
-						if(select("Maroll Mercenary Recruiter:KVM Mercenary Recruiter:Tierra Mercenary Recruiter:Flavius Mercenary Recruiter") == 1)
+						if(select("Maroll Mercenary Recruiter:KVM Mercenary Recruiter:Tierrum Mercenary Recruiter:Flavius Mercenary Recruiter") == 1)
 							set .@correct, .@correct+10;
 						mes "[Battleground Expert]";
-						mes "You can get [] from participating in the Battlegrounds of Tierra.";
-						mes "What words go in the empty spaces of []?";
+						mes "Voce pode pegar [] de participating in o Battlegrounds of Tierra.";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("KVM Badge:Valor Badge:Bravery Badge:Honor Badge") == 2)
+						if(select("KVM Badge:Valou Badge:Bravery Badge:Honou Badge") == 2)
 							set .@correct, .@correct+10;
 						break;
 					case 3:
 						mes "[Battleground Expert]";
-						mes "In every major city, you can find [] to enter the Battlegrounds.";
-						mes "What words go in the empty spaces of []?";
+						mes "In cadum majou cidade, voce pode encontrar [] to entrar o Battlegrounds.";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Maroll Battleground Recruiter:Tierra Battleground Recruiter:Flavius Battleground Recruiter:KVM Battleground Recruiter") == 1)
+						if(select("Maroll Battleground Recruiter:Tierrum Battleground Recruiter:Flavius Battleground Recruiter:KVM Battleground Recruiter") == 1)
 							set .@correct, .@correct+10;
 						mes "[Battleground Expert]";
-						mes "For [], you go in 5vs5 with the intention of trying to reduce the number of enemies on the opposite side.";
-						mes "What words go in the empty spaces of []?";
+						mes "Fou [], you ir in 5vs5 com o intention of tentando to reduce o number of inimigos on o opposite side.";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("Maroll:Flavius:KVM:Tierra") == 3)
 							set .@correct, .@correct+10;
 						mes "[Battleground Expert]";
-						mes "When you complete a battle, you get a prize. The prize from Flavius is called [].";
-						mes "What words go in the empty spaces of []?";
+						mes "When you completar um batalha, you pegar um prize. O prize de Flavius is chamado [].";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("KVM Badge:Valor Badge:Bravery Badge:Honor Badge") == 3)
+						if(select("KVM Badge:Valou Badge:Bravery Badge:Honou Badge") == 3)
 							set .@correct, .@correct+10;
 						break;
 					}
 					if (.@correct == 30) {
 						mes "[Battleground Expert]";
-						mes "You got all 3 correct! I think you got a pretty good head on your shoulders. You know a thing or two about ^006400Battleground^000000s.";
+						mes "You got todos 3 correct! Eu acho you got um pretty bom cabecum on seu shoulders. Voce sabe um coisum ou two sobre ^006400Battleground^000000s.";
 						next;
 						mes "[Battleground Expert]";
-						mes "If you ever want to go over anything about ^006400Battleground^000000s, feel free to come talk to me!";
+						mes "Se you ever querer to ir sobre anything sobre ^006400Battleground^000000s, feel gratis to vir conversar to me!";
 						next;
 						mes "[Battleground Expert]";
-						mes "Go on and find and talk to the 0000FFMemorial Dungeon Expert^000000!";
+						mes "Ir on e encontrar e conversar to o 0000FFMemorial Masmorrum Expert^000000!";
 						completequest 4163;
 						setquest 4164;
 						getexp 2000,1000;
 						close;
 					}
 					mes "[Battleground Expert]";
-					mes "There's only 3 questions and you didn't get them all right! At this rate, you'll fail all the Experts' tests.";
+					mes "Hum apenas 3 questions e you nao pegar them todos certo! At este rate, voce vai falhar todos o Experts' tests.";
 					next;
 					mes "[Battleground Expert]";
-					mes "But if you want to take it on again, you should.";
+					mes "Mas se voce quer to pegar it on novamente, you should.";
 					break;
 				case 2:
 					callsub L_Info;
 					mes "[Battleground Expert]";
-					mes "There's nothing better than hearing it straight from the expert! Now, do you wanna take my 3-question quiz? You have to answer all 3 correctly to pass!";
+					mes "Hum nadum better que ouvindo it straight de o expert! Agora, voce wannum pegar meu 3-perguntum quiz? Voce tem to respostum todos 3 correctly to pass!";
 					break;
 				case 3:
 					mes "[Battleground Expert]";
-					mes "Don't disappoint me by giving up. If you change your mind, come find me again.";
+					mes "Nao disappoint me by dando up. Se you mudar seu mente, vir encontrar me novamente.";
 					close;
 				}
 			}
 			close;
 		case 2:
 			mes "[Battleground Expert]";
-			mes "You're a coward if you give up even before starting. If you change your mind, come find me again.";
+			mes "Voce e um coward se you dar up ate mesmo antes starting. Se you mudar seu mente, vir encontrar me novamente.";
 			close;
 		}
 		close;
 	}
 	mes "[Battleground Expert]";
-	mes "If you want to learn something from me, go get acknowledged by the ^006400Party Recruiting Expert^000000 first.";
+	mes "Se voce quer to aprender algo de me, ir pegar acknowledged by o ^006400Party Recruiting Expert^000000 primeiro.";
 	close;
 
 L_Info:
 	mes "[Battleground Expert]";
 	mes "To explain ^006400Battleground^000000 easily...";
-	mes "You pick either Camp ^006400Guillaume^000000 or Camp ^006400Croix^000000 then you fight each other.";
+	mes "You pick eita Camp ^006400Guillaume^000000 ou Camp ^006400Croix^000000 entao you lutar each outro.";
 	next;
 	mes "[Battleground Expert]";
-	mes "There are 3 types of ^006400Battleground^000000s.";
-	mes "First is ^006400KVM^000000. It is a 5vs5 battle with the goal of reducing the number of people on either side.";
+	mes "Hum 3 types of ^006400Battleground^000000s.";
+	mes "Primeiro is ^006400KVM^000000. Isentao e um 5vs5 batalhum com o goal of reducing o number of pessoas on eita side.";
 	next;
 	mes "[Battleground Expert]";
-	mes "The second one is 10vs10. You attack the supply depots of your opponents and in turn, you protect your supply depots. This is called ^006400Tierra^000000.";
+	mes "O second one is 10vs10. You atacar o supply depots of seu opponents e in turn, you proteger seu supply depots. Este is chamado ^006400Tierra^000000.";
 	next;
 	mes "[Battleground Expert]";
-	mes "The third and final one is called ^006400Flavius^000000. This one is also 10vs10. For this one, you attack the crystals of your opponents while trying to protect your own.";
+	mes "O third e final one is chamado ^006400Flavius^000000. Este one is tambem 10vs10. Fou este one, you atacar o crystals of seu opponents while tentando to proteger seu own.";
 	next;
 	mes "[Battleground Expert]";
-	mes "To get to ^006400Battleground^000000s, find ^006400Maroll, the Recruiter^000000 who can be found in all major towns.";
+	mes "To pegar to ^006400Battleground^000000s, encontrar ^006400Maroll, o Recruiter^000000 who cum be encontrou in todos majou towns.";
 	next;
 	mes "[Battleground Expert]";
-	mes "After you enter, pick if you want to side with Guillaume or Croix, then on their side, pick either...";
+	mes "Depois you entrar, pick se voce quer to side com Guillaume ou Croix, entao on o side, pick either...";
 	mes "^006400KVM Mercenary Recruiter^000000,";
-	mes "^006400Tierra Mercenary Recruiter^000000, or";
+	mes "^006400Tierrum Mercenary Recruiter^000000, or";
 	mes "^006400Flavius Mercenary Recruiter^000000,";
-	mes "then you can join the ^006400Battleground^000000s.";
+	mes "entao voce pode join o ^006400Battleground^000000s.";
 	next;
 	mes "[Battleground Expert]";
-	mes "Depending on the outcome of the ^006400Battleground^000000 you can get a prize too.";
-	mes "You get KVM Badges from ^006400KVM^000000,";
-	mes "from ^006400Tierra^000000 you obtain Bravery Badges and";
-	mes "you receive Valor Badges ^006400Flavius^000000.";
+	mes "Depending on o outcome of o ^006400Battleground^000000 voce pode pegar um prize tambem.";
+	mes "You pegar KVM Badges de ^006400KVM^000000,";
+	mes "de ^006400Tierra^000000 you obtain Bravery Badges and";
+	mes "you receber Valou Badges ^006400Flavius^000000.";
 	next;
 	mes "[Battleground Expert]";
-	mes "With the rewards from ^006400Battleground^000000s, you can get items that you can't normally get elsewhere.";
-	mes "Each ^006400Battleground^000000 reward you can obtain is different so you'll have to check on it.";
+	mes "With o recompensas de ^006400Battleground^000000s, voce pode pegar itens esse voce nao pode normally pegar elsewhere.";
+	mes "Each ^006400Battleground^000000 recompensum voce pode obtain is diferente entao voce vai tem que verificar on it.";
 	next;
 	return;
 }
@@ -1204,176 +1204,176 @@ moc_para01,28,167,3	script	Memorial Dungeon Expert	868,{
 	set .@checkquest, checkquest(4164);
 	if (.@checkquest == 2) {
 		mes "[Memorial Dungeon Expert]";
-		mes "Since you've come here, it seems you want to learn about the ^006400Memorial Dungeon^000000.";
+		mes "Since voce tem vir aqui, it parece voce quer to aprender sobre o ^006400Memorial Masmorra^000000.";
 		next;
-		switch(select("Listen about Memorial Dungeon.:End Conversation.")) {
+		switch(select("Ouvir sobre Memorial Masmorra.:End Conversation.")) {
 		case 1:
 			callsub L_Info;
 			mes "[Memorial Dungeon Expert]";
-			mes "Now that you've listend to an expert, it's easy to understand, right? If you want to hear about it again, come find me.";
+			mes "Agorum esse voce tem listend to um expert, e facil to entender, certo? Se voce quer to ouvir sobre it novamente, vir encontrar me.";
 			close;
 		case 2:
 			mes "[Memorial Dungeon Expert]";
-			mes " If you want to hear about it again, come find me.";
+			mes " Se voce quer to ouvir sobre it novamente, vir encontrar me.";
 			close;
 		}
 	} else if (.@checkquest == 0 || .@checkquest == 1) {
 		mes "[Memorial Dungeon Expert]";
-		mes "I am the ^006400Memorial Dungeon^000000 Expert! I studied the ^006400Memorial Dungeon^000000 for 16 years!";
-		mes "Since you've sought me out, I assume that you've passed the ^006400Battleground Expert^000000's quiz.";
+		mes "Eu sou o ^006400Memorial Masmorra^000000 Expert! I studied o ^006400Memorial Masmorra^000000 fou 16 years!";
+		mes "Since voce tem sought me out, I assume esse voce tem passed o ^006400Battleground Expert^000000's quiz.";
 		next;
 		mes "[Memorial Dungeon Expert]";
-		mes "As you already know, if you pass all the Experts' quiz you'll get a prize.";
+		mes "As you jum saber, se you pass todos o Experts' quiz voce vai pegar um prize.";
 		next;
 		mes "[Memorial Dungeon Expert]";
-		mes "As the 4th Expert, I will explain everything to you about ^006400Memorial Dungeon^000000.";
-		mes "Want to hear about ^006400Memorial Dungeon^000000?";
+		mes "As o 4th Expert, Eu vou explain tudo to you sobre ^006400Memorial Masmorra^000000.";
+		mes "Querer to ouvir sobre ^006400Memorial Masmorra^000000?";
 		next;
-		switch(select("Listen about Memorial Dungeon.:End Conversation.")) {
+		switch(select("Ouvir sobre Memorial Masmorra.:End Conversation.")) {
 		case 1:
 			callsub L_Info;
 			mes "[Memorial Dungeon Expert]";
-			mes "Now that you've listend to an expert, it's easy to understand, right? If you want to hear about it again, come find me.";
-			mes "Okay, now I'm gonna give you a quiz. You have to get all the questions right to pass. Ready?";
+			mes "Agorum esse voce tem listend to um expert, e facil to entender, certo? Se voce quer to ouvir sobre it novamente, vir encontrar me.";
+			mes "Okay, agorum Eu sou gonnum dar you um quiz. Voce tem to pegar todos o questions certo to pass. Pronto?";
 			while(1) {
 				set .@correct,0;
 				next;
-				switch(select("On to the quiz!:Explain again please?:Give up.")) {
+				switch(select("On to o quiz!:Explain novamente pou favor?:Dar up.")) {
 				case 1:
 					switch(rand(1,3)) {
 					case 1:
 						mes "[Memorial Dungeon Expert]";
-						mes "^006400Memorial Dungeon^000000 isn't a dungeon that is open to all users. It's only available to you and your [].";
-						mes "What words go in the empty spaces of []?";
+						mes "^006400Memorial Masmorra^000000 nao e um masmorrum esse is abrir to todos users. E apenas disponivel to you e seu [].";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Party Members:Guildmates:Friends:Family") == 1)
+						if(select("Party Membros:Guildmates:Friends:Familia") == 1)
 							set .@correct, .@correct+10;
 						mes "[Memorial Dungeon Expert]";
-						mes "If you go to [] and find [], he will give you information about Endless Tower- which is a huge and tall dungeon.";
-						mes "What words go in the empty spaces of []?";
+						mes "Se you ir to [] e encontrar [], he will dar you informacao sobre Endless Torre- which is um huge e tall masmorra.";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Prontera, Seiyablem:Alberta, Leyablem:Alberta, Captain Jansen:Prontera, Captin Jansen") == 3)
+						if(select("Prontera, Seiyablem:Alberta, Leyablem:Alberta, Capitao Jansen:Prontera, Captin Jansen") == 3)
 							set .@correct, .@correct+10;
 						mes "[Memorial Dungeon Expert]";
-						mes "In order to enter Memorial Dungeon the [] must apply and then be on stand-by to enter. You will enter in the order the application was put in.";
-						mes "What words go in the empty spaces of []?";
+						mes "In order to entrar Memorial Masmorrum o [] must apply e entao be on stand-by to entrar. Voce vai entrar in o order o application was colocar in.";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Guild Member:Guild Leader:Party Leader:Party Member") == 3)
+						if(select("Guildum Membro:Guildum Lider:Party Lider:Party Membro") == 3)
 							set .@correct, .@correct+10;
 						break;
 					case 2:
 						mes "[Memorial Dungeon Expert]";
-						mes "When you're done with the [], you cannot re-enter the same dungeon for a certain period of time.";
-						mes "What words go in the empty spaces of []?";
+						mes "When voce e done com o [], you nao pode re-entrar o mesmo masmorrum fou um certain period of tempo.";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("Buff:Ritual:Exploration:Inspection") == 3)
 							set .@correct, .@correct+10;
 						mes "[Memorial Dungeon Expert]";
-						mes "If you go to the Orc Map where all the orcs live, you will be able to find []. He will probably be able to give you information about the Orc's Memory dungeon.";
-						mes "What words go in the empty spaces of []?";
+						mes "Se you ir to o Orc Map where todos o orcs live, you sera capaz de encontrar []. He will provavelmente be capaz de dar you informacao sobre o Orc's Memory masmorra.";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Insane Scientist:Crazy Scientist:Insane Alchemist:Crazy Alchemist") == 1)
+						if(select("Insane Scientist:Louco Scientist:Insane Alquimista:Louco Alquimista") == 1)
 							set .@correct, .@correct+10;
 						mes "[Memorial Dungeon Expert]";
-						mes "In order to enter Memorial Dungeon, the [] must apply- then you'll be able to enter in order of when your application was turned in.";
-						mes "You have to be on stand-by for this.";
-						mes "What words go in the empty spaces of []?";
+						mes "In order to entrar Memorial Masmorra, o [] must apply- entao voce vai be capaz de entrar in order of when seu application was turned in.";
+						mes "Voce tem to be on stand-by fou this.";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Guild Leader:Guildmate:Party Member:Party Leader") == 4)
+						if(select("Guildum Lider:Guildmate:Party Membro:Party Lider") == 4)
 							set .@correct, .@correct+10;
 						break;
 					case 3:
 						mes "[Memorial Dungeon Expert]";
-						mes "If you go to the place where you can become a monk, the Capitolina Monastery, you can meet []. He will tell you about the dungeon with the Sealed Baphomet.";
-						mes "What words go in the empty spaces of []?";
+						mes "Se you ir to o lugar where voce pode se tornar um monk, o Capitolinum Monastery, voce pode meet []. He will tell you sobre o masmorrum com o Sealed Baphomet.";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Agent Patrick:Patrolman Patrick:Drunken Patrick:Detective Patrick") == 4)
+						if(select("Agent Patrick:Patrolmum Patrick:Drunken Patrick:Detective Patrick") == 4)
 							set .@correct, .@correct+10;
 						mes "[Memorial Dungeon Expert]";
-						mes "When you're done with the [], you cannot re-enter the same dungeon for a certain period of time.";
-						mes "What words go in the empty spaces of []?";
+						mes "When voce e done com o [], you nao pode re-entrar o mesmo masmorrum fou um certain period of tempo.";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("Exploration:Inspection:Buff:Ritual") == 1)
 							set .@correct, .@correct+10;
 						mes "[Memorial Dungeon Expert]";
-						mes "^006400Memorial Dungeon^000000 is not just open to all users. It is open available for you and your [].";
-						mes "What words go in the empty spaces of []?";
+						mes "^006400Memorial Masmorra^000000 is nao apenas abrir to todos users. Isentao e abrir disponivel fou you e seu [].";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Friends:Family:Party Members:Guildmates") == 3)
+						if(select("Friends:Familia:Party Membros:Guildmates") == 3)
 							set .@correct, .@correct+10;
 						break;
 					}
 					if (.@correct == 30) {
 						mes "[Memorial Dungeon Expert]";
-						mes "You're pretty bright~ seeing that you got all 3 correct. Now do you understand about ^006400Memorial Dungeon^000000?";
+						mes "Voce e pretty bright~ vendo esse you got todos 3 correct. Agorum voce underste sobre ^006400Memorial Masmorra^000000?";
 						next;
 						mes "[Memorial Dungeon Expert]";
-						mes "If you ever want to go over things about ^006400Memorial Dungeon^000000, come talk to me any time.";
+						mes "Se you ever querer to ir sobre coisas sobre ^006400Memorial Masmorra^000000, vir conversar to me any tempo.";
 						next;
 						mes "[Memorial Dungeon Expert]";
-						mes "Now, off you go to the ^0000FFMap Expert^000000!";
+						mes "Agora, off you ir to o ^0000FFMap Expert^000000!";
 						completequest 4164;
 						setquest 4165;
 						getexp 2000,1000;
 						close;
 					}
 					mes "[Memorial Dungeon Expert]";
-					mes "The quiz wasn't that hard...";
+					mes "O quiz nao erum esse dificil...";
 					next;
 					mes "[Memorial Dungeon Expert]";
-					mes "You look like you have potential... you should try again.";
+					mes "Voce parece like you have potential... voce deverium tentar novamente.";
 					break;
 				case 2:
 					callsub L_Info;
 					mes "[Memorial Dungeon Expert]";
-					mes "It's easy to understand since it's coming from an expert like me. Now it's quiz time. You have to get all the answers correct to pass. Are you ready?";
+					mes "E facil to underste desde e vindo de um expert like me. Agorum e quiz tempo. Voce tem to pegar todos o answers correct to pass. Voce e pronto?";
 					break;
 				case 3:
 					mes "[Memorial Dungeon Expert]";
-					mes "Giving up is lame. If you change your mind, come talk to me.";
+					mes "Giving up is lame. Se you mudar seu mente, vir conversar to me.";
 					close;
 				}
 			}
 			close;
 		case 2:
 			mes "[Memorial Dungeon Expert]";
-			mes "Giving up without even trying is lame. If you change your mind, come talk to me.";
+			mes "Giving up sem ate mesmo tentando is lame. Se you mudar seu mente, vir conversar to me.";
 			close;
 		}
 		close;
 	}
 	mes "[Memorial Dungeon Expert]";
-	mes "If you want to learn anything from me, talk to the ^006400Battleground Master^000000 first and get acknowledged by him.";
+	mes "Se voce quer to aprender anything de me, conversar to o ^006400Battleground Master^000000 primeiro e pegar acknowledged by him.";
 	close;
 
 L_Info:
 	mes "[Memorial Dungeon Expert]";
-	mes "The ^006400Memorial Dungeon^000000is not a dungeon that is open to everyone. It only opens to ^0000FFYou and your Party Members^000000.";
+	mes "O ^006400Memorial Masmorra^000000is nao um masmorrum esse is abrir to todos. It apenas opens to ^0000FFYou e seu Party Membros^000000.";
 	next;
 	mes "[Memorial Dungeon Expert]";
-	mes "Therefore, in order to enter ^006400Memorial Dungeon^000000, the Party Leader must apply to enter. Since you enter in the order you apply, you must be on stand-by to enter.";
+	mes "Portanto, in order to entrar ^006400Memorial Masmorra^000000, o Party Lider must apply to entrar. Since you entrar in o order you apply, voce deve be on stand-by to entrar.";
 	next;
 	mes "[Memorial Dungeon Expert]";
-	mes "Also, after you explore Memorial Dungeon, you cannot re-enter the same ^006400Memorial Dungeon^000000 for a certain period of time.";
+	mes "Tambem, depois you explorar Memorial Masmorra, you nao pode re-entrar o mesmo ^006400Memorial Masmorra^000000 fou um certain period of tempo.";
 	next;
 	mes "[Memorial Dungeon Expert]";
-	mes "Many ^006400Memorial Dungeon^000000s exist, but we will give you hints to help you find Memorial Dungeon in the world of Midgard.";
+	mes "Many ^006400Memorial Masmorra^000000s existir, mas we will dar you hints to ajudar you encontrar Memorial Masmorrum in o mundo of Midgard.";
 	next;
 	mes "[Memorial Dungeon Expert]";
-	mes "First, go to ^8B4513Alberta^000000 and find ^006400Captain Jansen^000000.";
-	mes "He will give you information about the really huge and tall dungeon known as ^006400Endless Tower^000000.";
+	mes "Primeiro, ir to ^8B4513Alberta^000000 e encontrar ^006400Captain Jansen^000000.";
+	mes "He will dar you informacao sobre o realmente huge e tall masmorrum known as ^006400Endless Torre^000000.";
 	next;
 	mes "[Memorial Dungeon Expert]";
-	mes "Second, go to the ^8B4513Orc Map^000000 where all the orcs live and find the ^006400Insane Scientist^000000.";
-	mes "You might be able to get some information about a dungeon that has to do with ^006400Orc's Memory^000000.";
+	mes "Second, ir to o ^8B4513Orc Map^000000 where todos o orcs live e encontrar o ^006400Insane Scientist^000000.";
+	mes "Voce pode be capaz de pegar alguns informacao sobre um masmorrum esse has to do com ^006400Orc's Memory^000000.";
 	next;
 	mes "[Memorial Dungeon Expert]";
-	mes "Third and last, seek out the place where you can become a monk, which is the ^8B4513Capitolina Monastery^000000 and seek out ^006400Detective Patrick^000000.";
-	mes "He will be able to give you information about the dungeon with the ^006400Sealed Baphomet^000000+.";
+	mes "Third e ultimo, seek out o lugar where voce pode se tornar um monk, which is o ^8B4513Capitolinum Monastery^000000 e seek out ^006400Detective Patrick^000000.";
+	mes "He sera capaz de dar you informacao sobre o masmorrum com o ^006400Sealed Baphomet^000000+.";
 	next;
 	mes "[Memorial Dungeon Expert]";
-	mes "Of course there are other locations for Memorial Dungeon but it's best to start where you can find it easily.";
-	mes "As you continue to go on your adventures you will be able to find them more easily.";
+	mes "E claro hum outro locations fou Memorial Masmorrum mas e best to comecar where voce pode encontrar it easily.";
+	mes "As you continue to ir on seu adventures you sera capaz de encontrar them mais easily.";
 	next;
 	return;
 }
@@ -1382,102 +1382,102 @@ moc_para01,14,168,6	script	Map Expert	743,{
 	set .@checkquest, checkquest(4165);
 	if (.@checkquest == 2) {
 		mes "[Map Expert]";
-		mes "Seeing that you came to me, I assume you have some questions about ^006400MAP^000000s?";
+		mes "Seeing esse you came to me, I assume you have alguns questions sobre ^006400MAP^000000s?";
 		next;
-		switch(select("List about the Map.:End Conversation.")) {
+		switch(select("List sobre o Map.:End Conversation.")) {
 		case 1:
 			callsub L_Info;
 			mes "[Map Expert]";
-			mes "If you end up in those areas while you're adventuring, be sure to tell me all about it!";
-			mes "And now, since you've passed all the Expert's quizzes, go on and talk to ^006400Tutorial Goal^000000.";
+			mes "Se you end up in esses areas while voce e adventuring, be sure to me digum todos sobre it!";
+			mes "E agora, desde voce tem passed todos o Expert's quizzes, ir on e conversar to ^006400Tutorial Goal^000000.";
 			close;
 		case 2:
 			mes "[Map Expert]";
-			mes "If you have any more questions, come find me.";
+			mes "Se you have any mais questions, vir encontrar me.";
 			close;
 		}
 	} else if (.@checkquest == 0 || .@checkquest == 1) {
 		mes "[Map Expert]";
-		mes "I have been researching and studying ^006400MAP^000000s for 16 years and so now I am the ^006400MAP^000000 Expert!";
-		mes "Since you've sought me out, it seems you've passed ^006400Memorial Dungeon Expert^000000's quiz.";
+		mes "Eu tenho been researching e studying ^006400MAP^000000s fou 16 years e entao agorum Eu sou o ^006400MAP^000000 Expert!";
+		mes "Since voce tem sought me out, it parece voce tem passed ^006400Memorial Masmorrum Expert^000000's quiz.";
 		next;
 		mes "[Map Expert]";
-		mes "As you already know, if you pass all the Experts' quiz you'll get a prize.";
+		mes "As you jum saber, se you pass todos o Experts' quiz voce vai pegar um prize.";
 		next;
 		mes "[Map Expert]";
-		mes "As the last Expert, I will try to explain everything about ^006400MAP^000000s to make it easy on you. Ready to start?";
+		mes "As o ultimo Expert, Eu vou tentar to explain tudo sobre ^006400MAP^000000s to fazer it facil on you. Pronto to comecar?";
 		next;
-		switch(select("Listen about Maps.:End Conversation.")) {
+		switch(select("Ouvir sobre Maps.:End Conversation.")) {
 		case 1:
 			callsub L_Info;
 			mes "[Map Expert]";
-			mes "How was my explanation? Now I am gonna give you a quick quiz! You have to get all the answers correct in order to pass. Ready?";
+			mes "How was meu explanation? Agorum Eu sou gonnum dar you um quick quiz! Voce tem to pegar todos o answers correct in order to pass. Pronto?";
 			while(1) {
 				set .@correct,0;
 				next;
-				switch(select("On to the quiz!:Explain again please?:Give up.")) {
+				switch(select("On to o quiz!:Explain novamente pou favor?:Dar up.")) {
 				case 1:
 					switch(rand(1,3)) {
 					case 1:
 						mes "[Map Expert]";
-						mes "You can view the map by clicking on the [] button that is located in the upper left hand side.";
-						mes "What words go in the empty spaces of []?";
+						mes "Voce pode view o map by clicking on o [] button esse is located in o upper left he side.";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("SKILL:GUILD:MAP:BOOKING") == 3)
 							set .@correct, .@correct+10;
 						mes "[Map Expert]";
-						mes "When looking at the map, each area offers the [] and [] information about the monsters. That will take all the guess work out of where you should hunt.";
-						mes "What words go in the empty spaces of []?";
+						mes "When procurando at o map, each areum offers o [] e [] informacao sobre o monstros. Esse will pegar todos o guess trabalhar out of where voce deverium cacar.";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Name, Age:Attributes, Level:Attributes, Tribe:Name, Level") == 4)
+						if(select("Name, Age:Attributes, Nivel:Attributes, Tribe:Name, Nivel") == 4)
 							set .@correct, .@correct+10;
 						mes "[Map Expert]";
-						mes "If you want to stop looking at the map, simple press the shortcut key of [] or ESC and it will close the map for you.";
-						mes "What words go in the empty spaces of []?";
+						mes "Se voce quer to parar procurando at o map, simple press o shortcut key of [] ou ESC e it will fechar o map fou you.";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("ALT + F4:CTRL + %:CTRL + M:ALT + ESC") == 2)
 							set .@correct, .@correct+10;
 						break;
 					case 2:
 						mes "[Map Expert]";
-						mes "After you open your map and you";
-						mes "hover your mouse over specific areas";
-						mes "you can see the [] and [] of the region.";
-						mes "What words go in the empty spaces of []?";
+						mes "Depois you abrir seu map e you";
+						mes "hover seu mouse sobre specific areas";
+						mes "voce pode ver o [] e [] of o region.";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Name, Area Details:Name, Monster Attributes:Specialties, Area Details:Specialties, Name") == 1)
+						if(select("Name, Areum Detalhes:Name, Monstro Attributes:Specialties, Areum Detalhes:Specialties, Name") == 1)
 							set .@correct, .@correct+10;
 						mes "[Map Expert]";
-						mes "If you look to the bottom right of the map, you will see a drawing of []. Click on that or press the TAB shortcut key and you can find out various information.";
-						mes "What words go in the empty spaces of []?";
+						mes "Se voce parece to o bottom certo of o map, you will ver um drawing of []. Click on esse ou press o TAB shortcut key e voce pode encontrar out various informacao.";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("Desert Wolf:Mimic:Siroma:Poring") == 4)
 							set .@correct, .@correct+10;
 						mes "[Map Expert]";
-						mes "While looking at the map, when you press the TAB shortcut key, you will be able to find and locate various dungeons and their Entrance Locations.";
-						mes "You can also find the [] of the monsters in that area.";
-						mes "What words go in the empty spaces of []?";
+						mes "While procurando at o map, when you press o TAB shortcut key, you sera capaz de encontrar e locate various masmorras e o Entrance Locations.";
+						mes "Voce pode tambem encontrar o [] of o monstros in esse area.";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Name:Level:Attribute:Size") == 2)
+						if(select("Name:Nivel:Attribute:Size") == 2)
 							set .@correct, .@correct+10;
 						break;
 					case 3:
 						mes "[Map Expert]";
-						mes "If you want to stop looking at the map, all you need to do is press the [] to go back to your normal screen.";
-						mes "What words go in the empty spaces of []?";
+						mes "Se voce quer to parar procurando at o map, todos voce precisum to do is press o [] to ir back to seu normal screen.";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("O:X:EXIT:ALT") == 2)
 							set .@correct, .@correct+10;
 						mes "[Map Expert]";
-						mes "While looking at the map, when you press the TAB shortcut key, you will be able to find and locate various dungeons and their Entrance Locations.";
-						mes "You can also find the [] of the monsters in that area.";
-						mes "What words go in the empty spaces of []?";
+						mes "While procurando at o map, when you press o TAB shortcut key, you sera capaz de encontrar e locate various masmorras e o Entrance Locations.";
+						mes "Voce pode tambem encontrar o [] of o monstros in esse area.";
+						mes "What words ir in o empty spaces of []?";
 						next;
-						if(select("Level:Name:Size:Attribute") == 1)
+						if(select("Nivel:Name:Size:Attribute") == 1)
 							set .@correct, .@correct+10;
 						mes "[Map Expert]";
-						mes "You can view the map by clicking on the [] button that is located in the upper left hand side.";
-						mes "What words go in the empty spaces of []?";
+						mes "Voce pode view o map by clicking on o [] button esse is located in o upper left he side.";
+						mes "What words ir in o empty spaces of []?";
 						next;
 						if(select("GUILD:SKILL:BOOKING:MAP") == 4)
 							set .@correct, .@correct+10;
@@ -1485,80 +1485,80 @@ moc_para01,14,168,6	script	Map Expert	743,{
 					}
 					if (.@correct == 30) {
 						mes "[Map Expert]";
-						mes "Bingo! You got all 3 answers correct! Now, do you feel like you understand stuff about ^006400MAP^000000s more?";
+						mes "Bingo! You got todos 3 answers correct! Agora, voce feel like you underste stuff sobre ^006400MAP^000000s mais?";
 						next;
 						mes "[Map Expert]";
-						mes "If you ever feel like you want to learn more about ^006400MAP^000000s, come talk to me anytime.";
+						mes "Se you ever feel like voce quer to aprender mais sobre ^006400MAP^000000s, vir conversar to me anytime.";
 						next;
 						mes "[Map Expert]";
-						mes "Congrats on passing all the Experts' quizzes! Now, go find and talk to the ^006400Tutorial Goal^000000!";
+						mes "Congrats on passando todos o Experts' quizzes! Agora, ir encontrar e conversar to o ^006400Tutorial Goal^000000!";
 						completequest 4165;
 						setquest 4166;
 						getexp 2000,1000;
 						close;
 					}
 					mes "[Map Expert]";
-					mes "The 3 questions shouldn't have been that hard...";
+					mes "O 3 questions nao deverium tem sido esse dificil...";
 					next;
 					mes "[Map Expert]";
-					mes "Well, you seem to be pretty smart so why not try the quiz again?";
+					mes "Bem, voce parece to be pretty smart entao why nao tentar o quiz novamente?";
 					break;
 				case 2:
 					callsub L_Info;
 					mes "[Map Expert]";
-					mes "How is this Expert's explanations? Now I am gonna give you a quick quiz. You have to get all the answers correct to pass. Want to try it?";
+					mes "Como estum este Expert's explanations? Agorum Eu sou gonnum dar you um quick quiz. Voce tem to pegar todos o answers correct to pass. Querer to tentar it?";
 					break;
 				case 3:
 					mes "[Map Expert]";
-					mes "I'm the last Expert! Dont' give up! Come find me again when you're ready!";
+					mes "Eu sou o ultimo Expert! Dont' dar up! Vir encontrar me novamente when voce e pronto!";
 					close;
 				}
 			}
 			close;
 		case 2:
 			mes "[Map Expert]";
-			mes "You're gonna give up without even trying? But I'm the last Expert! Dont' give up! Come find me again when you're ready!";
+			mes "Voce e gonnum dar up sem ate mesmo tentando? Mas Eu sou o ultimo Expert! Dont' dar up! Vir encontrar me novamente when voce e pronto!";
 			close;
 		}
 		close;
 	}
 	mes "[Map Expert]";
-	mes "If you want to learn from me, go get acknowledged by the ^006400Memorial Dungeon^000000 first.";
+	mes "Se voce quer to aprender de me, ir pegar acknowledged by o ^006400Memorial Masmorra^000000 primeiro.";
 	close;
 
 L_Info:
 	mes "[Map Expert]";
-	mes "A ^006400MAP^000000 shows you things that is much needed for travelling around the world; such as the lay of the land, major towns and fields and such. It's a very important tool!";
+	mes "A ^006400MAP^000000 shows you coisas esse is muito needed fou travelling ao redou o mundo; such as o lay of o land, majou towns e fields e such. E um muito importante tool!";
 	next;
 	mes "[Map Expert]";
-	mes "Because of this, it's more important than everything else that you know about ^006400MAP^000000s.";
+	mes "Porque of this, e mais importante que tudo else esse voce sabe sobre ^006400MAP^000000s.";
 	next;
 	mes "[Map Expert]";
-	mes "The map can be accessed by clicking on the button that says ^006400MAP^000000 on the upper left side of your screen.";
+	mes "O map cum be accessed by clicking on o button esse says ^006400MAP^000000 on o upper left side of seu screen.";
 	next;
 	mes "[Map Expert]";
-	mes "When you click on the ^006400MAP^000000 button, a full sized map of Midgard will take up your screen.";
-	mes "When you ^0000FFHover your mouse over specific areas^000000, you can find out more things such as ^006400NAME^000000 and Area Details.";
+	mes "When you click on o ^006400MAP^000000 button, um full sized map of Midgard will pegar up seu screen.";
+	mes "When you ^0000FFHover seu mouse sobre specific areas^000000, voce pode encontrar out mais coisas such as ^006400NAME^000000 e Areum Detalhes.";
 	next;
 	mes "[Map Expert]";
-	mes "If you look to the lower right side of your map, there is a ^006400Poring drawing^000000.";
-	mes "If you click on it or press the ^006400TAB^000000 shortcut key, you will be able to various information.";
+	mes "Se voce parece to o lower certo side of seu map, hum um ^006400Poring drawing^000000.";
+	mes "Se you click on it ou press o ^006400TAB^000000 shortcut key, you sera capaz de various informacao.";
 	next;
 	mes "[Map Expert]";
-	mes "Firstly, you can find out the ^006400NAME^000000 and ^006400LEVEL^000000 of the monsters in each area. That will take a lot of the guess work out of where you want to go hunt.";
+	mes "Firstly, voce pode encontrar out o ^006400NAME^000000 e ^006400LEVEL^000000 of o monstros in each area. Esse will pegar um lot of o guess trabalhar out of where voce quer to ir cacar.";
 	next;
 	mes "[Map Expert]";
-	mes "Secondly, You can locate various ^006400DUNGEON^000000s and their";
-	mes "^006400Entrance Location^000000. Plus, it'll also tell you monsters that reside in that area";
-	mes "along with their ^006400LEVEL^000000. It's displayed in red so it's easy to find.";
+	mes "Secondly, Voce pode locate various ^006400DUNGEON^000000s e their";
+	mes "^006400Entrance Location^000000. Plus, it'll tambem tell you monstros esse reside in esse area";
+	mes "ao longo com o ^006400LEVEL^000000. E displayed in red entao e facil to encontrar.";
 	next;
 	mes "[Map Expert]";
-	mes "If you want to stop looking at the map, there are 2 ways to do this.";
-	mes "You can press the shortcut keys which are ^006400CTRL + %^000000 or ^006400ESC^000000";
-	mes "Or at the top right of the map, there is a ^006400X^000000 button. Click that and you will return to your normal game screen.";
+	mes "Se voce quer to parar procurando at o map, hum 2 ways to do this.";
+	mes "Voce pode press o shortcut keys which are ^006400CTRL + %^000000 ou ^006400ESC^000000";
+	mes "Ou at o top certo of o map, hum um ^006400X^000000 button. Click esse e you will retornar to seu normal game screen.";
 	next;
 	mes "[Map Expert]";
-	mes "Currently, we cannot see places that are beyond Midgard but it has been said that there are a lot of unknown worlds that exist in the beyond.";
+	mes "Currently, we nao pode ver places esse are beyond Midgard mas it tem sido disse esse hum um lot of unknown worlds esse existir in o beyond.";
 	next;
 	return;
 }

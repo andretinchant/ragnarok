@@ -862,7 +862,7 @@ que_ng,72,34,3	script	Craftsman Kaibara	847,{
 	mes "You look like a Ninja.";
 	mes "If you're interested, take a look at my goods while you decide what you want.";
 	next;
-	switch(select("Gokurin:Jitte:Ashura[3]:Murasame:Hakujin:Cancel")){
+	switch(select("Gokurin:Jitte:Ashura[3]:Murasame:Hakujin:Cancelar")){
 		case 1:
 			mes "[Kaibara]";
 			mes "Hmm~ I see you've picked the Gokurin.";

@@ -3299,7 +3299,7 @@ prt_castle,368,310,1	script	Prince#eisen6	983,{
 	mes "What are you talking about? I totally can't understand! Are you saying you are not in the status quo? Yes? What the heck are you talking about!";
 	next;
 	mes "[Ahrum]";
-	mes "Shut up! Without knowing anything, you don't know when you can be killed. You don't get me yet.... ah...! You need to not know this!";
+	mes "Shut up! Without knowing anything, you don't know when you can be killed. You don't get me ainda.... ah...! You need to not know this!";
 	next;
 	mes "[Ernst]";
 	mes "Br...Brother, will you keep insisting on this? Our relationship is this short?";

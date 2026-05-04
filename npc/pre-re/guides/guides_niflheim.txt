@@ -38,7 +38,7 @@ niflheim,107,156,6	script	Roaming Man#nif	798,{
 		mes "[Ricael]";
 		mes "So, um, which place do you want to know about?";
 		next;
-		switch(select("Witch's castle:Tool shop:Weapon shop:Pub:Cancel")) {
+		switch(select("Witch's castle:Tool shop:Weapon shop:Pub:Cancelar")) {
 		case 1:
 			mes "[Ricael]";
 			mes "There. I made a ^FF3355+^000000 mark";
@@ -59,7 +59,7 @@ niflheim,107,156,6	script	Roaming Man#nif	798,{
 			mes "[Ricael]";
 			mes "The Tool shop is located";
 			mes "at the ^CE6300+^000000 mark I made";
-			mes "on your mini-map.";
+			mes "no seu mini-mapa.";
 			next;
 			mes "[Ricael]";
 			mes "They sell some unique items that";
@@ -75,7 +75,7 @@ niflheim,107,156,6	script	Roaming Man#nif	798,{
 			mes "[Ricael]";
 			mes "The Weapon shop is located";
 			mes "at the ^55FF33+^000000 mark I made";
-			mes "on your mini-map.";
+			mes "no seu mini-mapa.";
 			next;
 			mes "[Ricael]";
 			mes "They sell some unique items which";
@@ -91,7 +91,7 @@ niflheim,107,156,6	script	Roaming Man#nif	798,{
 			mes "[Ricael]";
 			mes "The Pub is located at";
 			mes "the ^3355FF+^000000 mark I've made";
-			mes "on your mini-map.";
+			mes "no seu mini-mapa.";
 			next;
 			mes "[Ricael]";
 			mes "Sometimes I see dead people in the";

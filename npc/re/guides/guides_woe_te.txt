@@ -10,7 +10,7 @@
 prt_gld,118,151,4	script	Guide in Gloria#tes01	8W_SOLDIER,{
 	mes "[Guide Soldier]";
 	mes "May the endless glory be with the Kingdom of Rune-Midgarts and its seven royal families!";
-	mes "Welcome to Gloria, the fortress in Siege Battle TE. We provide services in cooperation with Kafra and the major royal families of the kingdom.";
+	mes "Bem-vindo a Gloria, the fortress in Siege Battle TE. We provide services in cooperation with Kafra and the major royal families of the kingdom.";
 	next;
 	switch( select( "Gloria?", "About Siege Battle TE", "About requirements for participation", "Forget it." ) ) {
 	case 1:
@@ -72,7 +72,7 @@ te_prt_gld,118,151,4	script	Guide in Gloria#tes03	8W_SOLDIER,{
 
 te_prt_gld,122,151,4	script	Guide in Gloria#tes04	8W_SOLDIER,{
 	mes "[Guide Soldier]";
-	mes "Welcome to Gloria.";
+	mes "Bem-vindo a Gloria.";
 	mes "Job classes that are allowed to participate in siege battles at the fortresses in Kafragarten and Gloria regions are limited to ^4d4dffprimary and secondary job classes as well as those without expanded levels.^000000";
 	next;
 	mes "[Guide Soldier]";
@@ -87,7 +87,7 @@ te_prt_gld,122,151,4	script	Guide in Gloria#tes04	8W_SOLDIER,{
 
 alde_gld,228,189,3	script	Sorin of Kafragarten	4_F_KAFRA3,{
 	mes "[Sorin]";
-	mes "Welcome to Kafra Service~ We always provide the best to our customers.";
+	mes "Bem-vindo a Kafra Service~ We always provide the best to our customers.";
 	mes "Finally, Kafra Service has established its own fortress!";
 	next;
 	switch( select( "What is Kafragarten?", "What is Siege Battle TE?", "Qualifications for participation", "Forget it." ) ) {

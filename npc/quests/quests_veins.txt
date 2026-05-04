@@ -118,7 +118,7 @@
 			mes "stones stuck in the ground?";
 			mes "Those are what I need to";
 			mes "pick up. Now don't go";
-			mes "lifting rocks just yet...";
+			mes "lifting rocks just ainda...";
 			next;
 			mes "[Zabaroo]";
 			mes "I asked some other old";
@@ -509,7 +509,7 @@ ve_in02,37,28,4	script	Factory Manager	898,{
 		mes "[Mirhen]";
 		mes "Bring those rocks over";
 		mes "to Bahed over there.";
-		mes "He'll take care of them.";
+		mes "He'll take care deles.";
 		set veins_stone,6;
 		close;
 	}
@@ -578,7 +578,7 @@ ve_in02,54,49,2	script	Factory Worker#ve1	943,{
 		mes "attracted attention outside";
 		mes "of town. Before all this,";
 		mes "the townspeople just";
-		mes "made carvings out of them.";
+		mes "made carvings out deles.";
 		next;
 		mes "[Bahed]";
 		mes "Then, all of a sudden,";
@@ -1564,7 +1564,7 @@ job_duncer,93,106,6	script	Dance Instructor#sch	892,{
 		mes "job escorting them. Now...";
 		mes "Do you have the money?";
 		next;
-		if (select("Yes:No") == 1) {
+		if (select("Sim:Nao") == 1) {
 			if (Zeny < 500000) {
 				mes "[Hianna]";
 				mes "What's this? Hmm...";
@@ -1608,7 +1608,7 @@ job_duncer,93,106,6	script	Dance Instructor#sch	892,{
 			mes "You sure you want to pay";
 			mes "the money for a Megaphone?";
 			next;
-			if (select("Yes:No") == 1) {
+			if (select("Sim:Nao") == 1) {
 				if (Zeny < 500000) {
 					mes "[Hianna]";
 					mes "I'm sorry, but this";
@@ -1663,7 +1663,7 @@ job_duncer,85,49,0	script	Young Dancer#sch1	724,{
 		mes "bodyguard. So are you";
 		mes "ready to go now?";
 		next;
-		if (select("Yes:No") == 1) {
+		if (select("Sim:Nao") == 1) {
 			mes "[Dancer]";
 			mes "Alright, then.";
 			mes "Here we go~";
@@ -1701,7 +1701,7 @@ job_duncer,83,52,6	script	Cheerful Dancer#sch1	724,{
 		mes "bodyguard. So are you";
 		mes "ready to go now?";
 		next;
-		if (select("Yes:No") == 1) {
+		if (select("Sim:Nao") == 1) {
 			mes "[Dancer]";
 			mes "Alright, then.";
 			mes "Here we go~";
@@ -1738,7 +1738,7 @@ job_duncer,87,50,2	script	Mature Looking Dancer#s1	724,{
 		mes "bodyguard. So are you";
 		mes "ready to go now?";
 		next;
-		if (select("Yes:No") == 1) {
+		if (select("Sim:Nao") == 1) {
 			mes "[Dancer]";
 			mes "Alright, then.";
 			mes "Here we go~";
@@ -2224,7 +2224,7 @@ morocc,297,154,0	script	Thin-Faced Bard#sch	51,{
 		mes "So did you listen";
 		mes "to all of their songs?";
 		next;
-		if (select("Yes:No") == 1) {
+		if (select("Sim:Nao") == 1) {
 			mes "[Vitre]";
 			mes "Perfect~ Here's a little";
 			mes "something to show my";
@@ -5448,7 +5448,7 @@ ra_temin,85,118,3	script	Drawer#vol3	111,{
 		mes "to the high priest";
 		mes "inside this drawer.^000000";
 		next;
-		if (select("Check the Reports:Cancel") == 1) {
+		if (select("Check the Reports:Cancelar") == 1) {
 			mes "["+strcharinfo(0)+"]";
 			mes "Well, it might not to";
 			mes "the most moral thing,";
@@ -5520,7 +5520,7 @@ ra_temin,73,126,1	script	Ladder#vol1	111,{
 		mes "I'd get caught if I just";
 		mes "passed the guards...";
 		next;
-		if (select("Climb Ladder:Cancel") == 1) {
+		if (select("Climb Ladder:Cancelar") == 1) {
 			mes "^3355FFYou climbed the";
 			mes "ladder over the";
 			mes "wall and snuck out.^000000";
@@ -5866,7 +5866,7 @@ ve_in,233,116,3	script	Drunken Man#vol	901,{
 		mes "*Ahem* And that's how";
 		mes "erosion... Works. Tomorrow,";
 		mes "I'll teach you ladies all";
-		mes "about rocks. All of them.";
+		mes "about rocks. All deles.";
 		next;
 		mes "[Geologist Gio]";
 		mes "Welcome back! So,";
@@ -6394,7 +6394,7 @@ thor_camp,250,104,3	script	Sahedi#vol	934,{
 		mes "erupt anytime soon?";
 		next;
 		while(1) {
-			if (select("Yes:No") == 1) {
+			if (select("Sim:Nao") == 1) {
 				mes "["+strcharinfo(0)+"]";
 				mes "I guess I can't hide it";
 				mes "from you... The recent";

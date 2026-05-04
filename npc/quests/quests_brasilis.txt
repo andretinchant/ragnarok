@@ -824,7 +824,7 @@ OnTouch:
 		mes "[Toucan]";
 		mes "That kid has had a really lonely time, baaecc! Perhaps you are a friend of him? Baaeec!!";
 		next;
-		select("Not yet... but I want to be a friend.");
+		select("Not ainda... but I want to be a friend.");
 		mes "[Toucan]";
 		mes "The kid who received care from guarana woman is also a friend of animals. Bbaaeecc!";
 		next;

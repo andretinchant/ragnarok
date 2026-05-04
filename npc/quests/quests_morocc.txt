@@ -371,7 +371,7 @@ que_job01,82,95,3	script	Bar Master#moc_main01	46,{
 		mes "What do you wanna drink?";
 	}
 	next;
-	switch(select("Order a Drink:Ask About Mission:Cancel")) {
+	switch(select("Order a Drink:Ask About Mission:Cancelar")) {
 	case 1:
 		mes "[Master]";
 		mes "In this place, I only serve two drinks.";
@@ -1534,7 +1534,7 @@ morocc,159,113,3	script	Chief Balrog	752,{
 		mes "[Chief Balrog]";
 		mes "I guess you'd benefit from a full situational briefing. Shall I brief you now?";
 		next;
-		switch(select("Yes:No")) {
+		switch(select("Sim:Nao")) {
 		case 1:
 			mes "[Chief Balrog]";
 			mes "I'm going to tell you some basic information about fighting Satan Morocc as a member of the Continental Guard.";
@@ -3125,7 +3125,7 @@ yuno_in04,169,123,3	script	Suspicious Man#oliver_h	407,{
 		mes "[Oliver Hilpert]";
 		mes "Did you change your mind about selling Lady Mammi's picture book to me?";
 		next;
-		switch(select("Yes:No")) {
+		switch(select("Sim:Nao")) {
 		case 1:
 			cutin "oliver_smile",2;
 			mes "[Oliver Hilpert]";
@@ -3397,7 +3397,7 @@ yuno_in04,167,120,3	script	Worn-out Book#garas	111,{
 		cutin "oliver_think",2;
 		mes "[Oliver Hilpert]";
 		mes "Yes, I've been having dreams that are so vivid, they feel like reality.";
-		mes "I was told great writers usually find their inspiration from their dreams. I guess I was born to be one of them. Hahaha!";
+		mes "I was told great writers usually find their inspiration from their dreams. I guess I was born to be one deles. Hahaha!";
 		next;
 		mes "You felt something uncomfortable about this so-called dream. You wanted to understand the meaning of what you've seen while reading the book.";
 		mes "If Oliver was dreaming exactly the same things as you, that might mean he and you are sharing dreams. Then again, you've discovered the cave village in the book actually exists.";
@@ -4144,7 +4144,7 @@ cave,22,186,3	script	Monsterous Man#zid	999,{
 				mes "They believed their research would open a whole new world for mankind...";
 				next;
 				mes "[Zid]";
-				mes "Eva was one of them... Although she wasn't kind, she at least sympathized for me because I sold myself out of poverty.";
+				mes "Eva was one deles... Although she wasn't kind, she at least sympathized for me because I sold myself out of poverty.";
 				next;
 				mes "[Zid]";
 				mes "She had a man who loved her so much...";

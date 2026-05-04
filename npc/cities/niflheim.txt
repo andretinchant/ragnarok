@@ -117,7 +117,7 @@ nif_in,156,93,5	script	Child#niflheim	793,{
 	mes "Mommy, have you seen my mommy?";
 	mes "I wanna go home...*Sob*";
 	next;
-	switch(select("About the witch:About the curse:Cancel.")) {
+	switch(select("Sobre the witch:Sobre the curse:Cancelarar.")) {
 	case 1:
 		mes "[Alakina Ann]";
 		mes "Witch...? I've never seen a witch, but I've read about them in books. I'm not sure if they exist or not, but it would be so horrifying if they did...";
@@ -179,7 +179,7 @@ niflheim,350,258,1	script	Cursed Spirit#nif	802,{
 	mes "By giving it to me!!";
 	next;
 	mes "[Ashe Bruce]";
-	mes "Just because I'm a cursed spirit, you adventurers think you can just dump your curses on me?!";
+	mes "Just because I'm a cursed spirit, you aventureiros think you can just dump your curses on me?!";
 	emotion ET_FRET;
 	next;
 	mes "[Ashe Bruce]";
@@ -271,7 +271,7 @@ niflheim,350,258,1	script	Cursed Spirit#nif	802,{
 					mes "this feeling?";
 					next;
 					mes "[Ashe Bruce]";
-					mes "No...!";
+					mes "Nao...!";
 					mes "NOOOOOOOOOOOOOOOO!";
 					next;
 					mes "[Ashe Bruce]";

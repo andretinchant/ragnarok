@@ -24,7 +24,7 @@ alberta,196,202,3	script	Optamara Crew#alberta	100,{
 	mes "Hey, there!";
 	mes "It's 10,000 Zeny to go to Port Malaya. Interested?";
 	next;
-	switch(select("About Port Malaya.:Go to Port Malaya.:Cancel.")) {
+	switch(select("Sobre Port Malaya.:Go to Port Malaya.:Cancelarar.")) {
 	case 1:
 		mes "[Optamara Crew]";
 		mes "Port Malaya is a small village you could reach by sailing southwest from Alberta.";
@@ -45,7 +45,7 @@ alberta,196,202,3	script	Optamara Crew#alberta	100,{
 		if (Zeny < 10000) {
 			mes "[Optamara Crew]";
 			mes "Oh God!!";
-			mes "You don't know how far it is from here. Of course it's not free. Please come back with 10,000 Zeny. Sorry!";
+			mes "You don't know how far it is from here. Claro it's not free. Please volte with 10,000 Zeny. Sorry!";
 			close;
 		}
 		mes "[Optamara Crew]";
@@ -57,7 +57,7 @@ alberta,196,202,3	script	Optamara Crew#alberta	100,{
 		end;
 	case 3:
 		mes "[Optamara Crew]";
-		mes "Adventurers these days act like they are busy. Come back when you have the time and we could go visit Port Malaya together.";
+		mes "Aventureiros hoje em dia act like they are busy. Volte when you have the time and we could go visit Port Malaya together.";
 		close;
 	}
 }
@@ -69,11 +69,11 @@ malaya,276,55,4	script	Optamara Crew#malaya	100,{
 		next;
 	} else if (malaya_hi < 20) {
 		mes "[Optamara Crew]";
-		mes "I think a nameless adventurer helped take a load off the villagers' minds. Yahoo! Would you like to go back to Alberta?";
+		mes "I think a nameless aventureiro helped take a load off the villagers' minds. Yahoo! Gostaria de go back to Alberta?";
 		next;
 	} else {
 		mes "[Optamara Crew]";
-		mes "Would you like to go back to Alberta with me?";
+		mes "Gostaria de go back to Alberta with me?";
 		next;
 	}
 	switch(select("Return.:Do not return.")) {
@@ -100,18 +100,18 @@ ma_in01,30,94,4	script	Inn Keeper#ma	583,{
 		close;
 	} else if (malaya_hi < 20) {
 		mes "[Inn Keeper]";
-		mes "So you are the adventurer villagers are talking about? I reopened my inn thanks to you. Thank you.";
+		mes "So you are the aventureiro villagers are talking about? I reopened my inn thanks to you. Obrigado.";
 		next;
 	} else {
 		mes "[Inn Keeper]";
-		mes "Welcome.";
+		mes "Bem-vindo.";
 		mes "This is Port Malaya's best inn, 'Cabin in the City'.";
 		next;
 	}
 	mes "[Inn Keeper]";
 	mes "Come for a rest? Lodging will be 5,000 Zeny.";
 	next;
-	switch(select("Store.:Lodge. - 5,000z:Cancel.")) {
+	switch(select("Store.:Lodge. - 5,000z:Cancelarar.")) {
 	case 1:
 		mes "[Inn Keeper]";
 		mes "Successfully stored. See you next time.";
@@ -300,7 +300,7 @@ malaya,227,311,4	script	Grandma#ma01	575,{
 	next;
 	select("Meoneonuncle?");
 	mes "[Grandma]";
-	mes "Not from around here? Let me tell you why even a foreigner like you should be careful.";
+	mes "Not from around here? Let me tell you why even a foreigner like you should tome cuidado.";
 	next;
 	mes "[Grandma]";
 	mes "Meoneonuncle was a woman who lived in Port Malaya long ago. She married a decent man and also had a baby.";
@@ -335,7 +335,7 @@ malaya,189,263,4	script	Drumming Young Man#ma02	578,{
 		close;
 	} else if (malaya_hi < 20) {
 		mes "[Drumming Young Man]";
-		mes "I think the village was saved by a nameless adventurer.";
+		mes "I think the village was saved by a nameless aventureiro.";
 		next;
 		emotion ET_OHNO;
 		mes "[Drumming Young Man]";
@@ -348,7 +348,7 @@ malaya,189,263,4	script	Drumming Young Man#ma02	578,{
 		close;
 	}
 	mes "[Drumming Young Man]";
-	mes "Bakonawa is also known as the 'monster that swallows the moon' in Port Malaya.";
+	mes "Bakonawa is also known as the 'monstro that swallows the moon' in Port Malaya.";
 	next;
 	mes "[Drumming Young Man]";
 	mes "But I know that Bakonawa could also 'swallow people', too.";
@@ -359,7 +359,7 @@ malaya,189,263,4	script	Drumming Young Man#ma02	578,{
 	mes "Ha ha ha. There is a way to stop Bakonawa from swallowing a person.";
 	next;
 	mes "[Drumming Young Man]";
-	mes "Yes, there is a weakness to even the worst monster that swallowed 6 moons already.";
+	mes "Yes, there is a weakness to even the worst monstro that swallowed 6 moons already.";
 	next;
 	select("Wow. What is it?");
 	mes "[Drumming Young Man]";
@@ -380,12 +380,12 @@ malaya,270,59,4	script	Port Guard#ma03	570,{
 	if (malaya_hi < 10) {
 		emotion ET_PROFUSELY_SWEAT;
 		mes "[Port Guard]";
-		mes "The village is chaotic these days. Is it okay for me to be off like this?";
+		mes "The village is chaotic hoje em dia. Is it okay for me to be off like this?";
 		close;
 	} else if (malaya_hi < 20) {
 		emotion ET_STARE_ABOUT;
 		mes "[Port Guard]";
-		mes "The village is somewhat stable now but you should still be careful walking around at night.";
+		mes "The village is somewhat stable now but you should still tome cuidado walking around at night.";
 		close;
 	}
 	if (rand(1,3) == 2) {
@@ -402,18 +402,18 @@ malaya,270,59,4	script	Port Guard#ma03	570,{
 	next;
 	select("What document?");
 	mes "[Port Guard]";
-	mes "It says that travelers should be careful of monsters when walking in the village at night.";
+	mes "It says that travelers should tome cuidado of monstros when walking in the village at night.";
 	next;
 	mes "[Port Guard]";
 	mes "Buwaya don't come to the village often but there are cases when they snatch people in the boxes they carry at night.";
 	next;
 	mes "[Port Guard]";
-	mes "Huh?! And it says here that a monster named Wokwok especially visits the village often at night and should be avoided.";
+	mes "Huh?! And it says here that a monstro named Wokwok especially visits the village often at night and should be avoided.";
 	next;
-	switch(select("I see.:Is there any way to prevent them from coming?")) {
+	switch(select("Entendo.:Is there any way to prevent them from coming?")) {
 	case 1:
 		mes "[Port Guard]";
-		mes "Be careful at night!";
+		mes "Tome cuidado at night!";
 		close;
 	case 2:
 		mes "[Port Guard]";
@@ -464,7 +464,7 @@ malaya,88,252,4	script	Little Girl#ma04	576,{
 malaya,219,92,6	script	Little Kid#ma05	577,{
 	if (malaya_hi < 10) {
 		mes "[Little Kid]";
-		mes "My mom told me not to play outside because its dangerous. Why?";
+		mes "My mom told me not to play outside because its perigoso. Why?";
 		close;
 	} else if (malaya_hi < 20) {
 		mes "[Little Kid]";
@@ -479,7 +479,7 @@ malaya,219,92,6	script	Little Kid#ma05	577,{
 		mes "I heard someone took Jejelings hat in Baryo Mahiwaga.";
 		next;
 		mes "[Little Kid]";
-		mes "Why would someone steal a monster's hat? "+getd("$ma_name0"+rand(1,6)+"$")+" must be desperate.";
+		mes "Why would someone steal a monstro's hat? "+getd("$ma_name0"+rand(1,6)+"$")+" must be desperate.";
 		next;
 		mes "[Little Kid]";
 		mes "Oh wait! This was suppose to be a secret. Shsh! Please pretend you didn't hear me.";
@@ -502,24 +502,24 @@ malaya,219,92,6	script	Little Kid#ma05	577,{
 malaya,363,283,4	script	Local#ma06	582,{
 	if (malaya_hi < 10) {
 		mes "[Local]";
-		mes "Hmm... is it time to be careful of the witches' curse?";
+		mes "Hmm... is it time to tome cuidado of the witches' curse?";
 		next;
 		mes "[Local]";
 		mes "Beware of Mongkukurums needle, foreigner.";
 		close;
 	} else if (malaya_hi < 20) {
 		mes "[Local]";
-		mes "Welcome to Port Malaya, foreigner..";
+		mes "Bem-vindo a Port Malaya, foreigner..";
 		next;
 		mes "[Local]";
-		mes "The village is chaotic these days. If you see someone with red eyes, try not to stare at their eyes.";
+		mes "The village is chaotic hoje em dia. If you see someone with red eyes, try not to stare at their eyes.";
 		close;
 	}
 	set .@name$, getd("$ma_name0"+rand(1,6)+"$");
 	switch(rand(1,6)) {
 	case 1:
 		mes "[Local]";
-		mes "Be careful walking around the village at night. "+.@name$+" was taken down by Wokwok.";
+		mes "Tome cuidado walking around the village at night. "+.@name$+" was taken down by Wokwok.";
 		close;
 	case 2:
 		mes "[Local]";
@@ -531,18 +531,18 @@ malaya,363,283,4	script	Local#ma06	582,{
 		close;
 	case 4:
 		mes "[Local]";
-		mes "If you plan to go out of the village, be careful of Tiucknuc. "+.@name$+" is said to be tricked by Tiucknuc and had to go to the hospital.";
+		mes "If you plan to go out of the village, tome cuidado of Tiucknuc. "+.@name$+" is said to be tricked by Tiucknuc and had to go to the hospital.";
 		close;
 	case 5:
 	case 6:
 		break;
 	}
 	mes "[Local]";
-	mes "The village is chaotic these days. Looks like Mongkukurum is back in the village.";
+	mes "The village is chaotic hoje em dia. Looks like Mongkukurum is back in the village.";
 	next;
 	select("Mongkukurum?");
 	mes "[Local]";
-	mes "A monster that is also called witch. Looks like a person and also wears clothes.";
+	mes "A monstro that is also called witch. Looks like a person and also wears clothes.";
 	next;
 	mes "[Local]";
 	mes "Mongkukurum makes a doll out of the people it sees and curses it with needles.";
@@ -565,7 +565,7 @@ malaya,363,283,4	script	Local#ma06	582,{
 malaya,41,127,6	script	Old Man #ma07	574,{
 	if (malaya_hi < 10) {
 		mes "[Old Man]";
-		mes "Foreigners are not welcomed that much when our village is chaotic like these days.";
+		mes "Foreigners are not welcomed that much when our village is chaotic like hoje em dia.";
 		close;
 	} else if (malaya_hi < 20) {
 		mes "[Old Man]";
@@ -656,7 +656,7 @@ malaya,63,185,4	script	Woman#ma08	583,{
 			close;
 		default:
 			mes "[Woman]";
-			mes "I like fun stories. Oh by the way! "+.@name$+", love is photogenic. Don't you agree?";
+			mes "I like fun stories. Oh a proposito! "+.@name$+", love is photogenic. Don't you agree?";
 			next;
 			mes "[Woman]";
 			mes "It needs darkness to develop.";
@@ -671,17 +671,17 @@ malaya,63,185,4	script	Woman#ma08	583,{
 	next;
 	select("Why?");
 	mes "[Woman]";
-	mes "There is a monster named Tiucknuc that roams around outside of the village and cries after transforming himself into a baby.";
+	mes "There is a monstro named Tiucknuc that roams around outside of the village and cries after transforming himself into a baby.";
 	next;
 	mes "[Woman]";
 	mes "But when kind travelers pick up the baby, it turns back into its original form and attacks.";
 	next;
 	select("Sounds like a sneaky monster.");
 	mes "[Woman]";
-	mes "Yes, this monster is bad to trick the kindness of travelers but...";
+	mes "Yes, this monstro is bad to trick the kindness of travelers but...";
 	next;
 	mes "[Woman]";
-	mes "There is rumor that the monster came from the soul of a baby that never been born. So sad.";
+	mes "There is rumor that the monstro came from the soul of a baby that never been born. So sad.";
 	close;
 }
 
@@ -718,7 +718,7 @@ function	script	F_Malaya_Jeepney	{
 			close;
 		} else {
 			mes "[Jeepney Driver]";
-			mes "Have a nice day.";
+			mes "Tenha um bom dia.";
 			close2;
 			warp .@mapName$,29,24;
 			end;
@@ -736,13 +736,13 @@ function	script	F_Malaya_Jeepney	{
 		close;
 	case 3:
 		mes "[Jeepney Driver]";
-		mes "Oh! Other Jeepneys are in operation, of course.";
+		mes "Oh! Other Jeepneys are in operation, claro.";
 		next;
 		mes "[Jeepney Driver]";
 		mes "In Port Malaya there are 12, 30 and 60 passenger Jeepneys with 3 each operating.";
 		next;
 		mes "[Jeepney Driver]";
-		mes "Would you like to know the location of other cars?";
+		mes "Gostaria de know the location of other cars?";
 		next;
 		switch (select("I'd like to know where the 12 passenger car is.:I'd like to know where the 30 passenger car is.:I'd like to know where the 60 passenger car is.")) {
 		case 1:

@@ -144,7 +144,7 @@ xmas,115,297,4	script	Vending Machine	111,{
 	mes "[Audi]";
 	mes "^555555Exciting item vending machine. Invented by great Titicupe. Select the desired item and place required items into snowmouth receptacle.^000000";
 	next;
-	switch(select("^FF3355Notice (Must Read)^000000:Raccoon Hat:Spore Hat:Wonder Nutshell:Rainbow Eggshell:Blush:Chef Hat:Candle:Cake Hat:Cancel")) {
+	switch(select("^FF3355Notice (Must Read)^000000:Raccoon Hat:Spore Hat:Wonder Nutshell:Rainbow Eggshell:Blush:Chef Hat:Candle:Cake Hat:Cancelar")) {
 	case 1:
 		mes "[Audi]";
 		mes "Hi~ !";

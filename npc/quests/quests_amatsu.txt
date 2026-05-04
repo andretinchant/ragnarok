@@ -240,7 +240,7 @@ ama_test,52,44,3	script	Assistant#ama	109,{
 		mes "First of all...Did you hear";
 		mes "about the story from the publisher?";
 		next;
-		if (select("Yes:No") == 1) {
+		if (select("Sim:Nao") == 1) {
 			mes "[Satoshi]";
 			mes "Hehe...Good.";
 			mes "Momotaro Story is our";
@@ -1467,7 +1467,7 @@ ama_in02,170,62,4	script	Soldier#ama2	767,{
 			if (countitem(7160) > 0) {
 				mes "[Jiro]";
 				mes "You already have one...";
-				mes "You don't need to have two of them.";
+				mes "You don't need to have two deles.";
 				close;
 			}
 			mes "[Jiro]";
@@ -1715,7 +1715,7 @@ ama_in02,115,177,7	script	Soldier#ama10	767,{
 	emotion ET_SWEAT;
 	next;
 	if (countitem(7160) > 0) {
-		if (select("Show him the ticket:Cancel") == 1) {
+		if (select("Show him the ticket:Cancelar") == 1) {
 			mes "[Jyuro]";
 			mes "What? That pass is...?";
 			mes "That Transit Permit is from";

@@ -22,24 +22,24 @@ veins,210,345,5	script	Veins Guide#1::ve_guide	934,{
 	set .@loop1,1;
 	while(.@loop1) {
 		next;
-		switch(select("Village Guide:Remove Marks from Mini-Map:Notice:Cancel")) {
+		switch(select("Village Guide:Remover Marcas do Mini-Mapa:Aviso:Cancelar")) {
 		case 1:
 			mes "[Veins Guide]";
 			mes "I can tell you any building location as long as it is in Veins.";
 			mes "So where do you want to go?";
 			if (.@compass_check == 0) {
-				mes "Would you like me";
-				mes "to mark locations";
-				mes "on your Mini-Map?";
+				mes "Gostaria que eu";
+				mes "marcasse locais";
+				mes "no seu Mini-Mapa?";
 				next;
-				if (select("Yes:No") == 1) set .@compass_check,1;
+				if (select("Sim:Nao") == 1) set .@compass_check,1;
 			}
 			set .@loop2,1;
 			while(.@loop2) {
 				if (.@wait_button_chk == 0) set .@wait_button_chk,1;
 				else next;
 
-				switch(select("Temple:Inn:Weapon Shop:Tool Shop:Airship:Tavern:Geological Research Institute:Cancel")) {
+				switch(select("Temple:Inn:Loja de Armas:Loja de Ferramentas:Airship:Tavern:Geological Research Institute:Cancelar")) {
 				case 1:
 					mes "[Veins Guide]";
 					mes "Our temple is located north,";

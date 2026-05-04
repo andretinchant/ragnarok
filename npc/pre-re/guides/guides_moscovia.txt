@@ -15,7 +15,7 @@
 
 moscovia,161,76,4	script	Moscovia Guide#mosk	959,{
 	mes "[Moscovia Guide]";
-	mes "Welcome to Moscovia";
+	mes "Bem-vindo a Moscovia";
 	mes "Here is the paradise spreading on";
 	mes "the endless seas";
 	mes "You'll be happy with the beautiful";
@@ -32,7 +32,7 @@ moscovia,161,76,4	script	Moscovia Guide#mosk	959,{
 			mes "[Moscovia Guide]";
 			mes "Where would you like to go?";
 			next;
-			switch(select("The Palace:Armor Shop:Tool Shop:An Inn:Cancel")) {
+			switch(select("The Palace:Loja de Armaduras:Loja de Ferramentas:An Inn:Cancelar")) {
 				case 1:
 					mes "[Moscovia Guide]";
 					mes "The Palace can be found ^ff0000+^000000 at the";

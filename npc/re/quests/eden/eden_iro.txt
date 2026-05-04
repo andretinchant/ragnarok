@@ -21,31 +21,31 @@
 //============================================================
 moc_para01,14,32,5	script	Aperture#acolytewarp	90,{
 	mes "[Aperture]";
-	mes "Hello there, adventurer.";
-	mes "I've been studying magic from all over Midgard to upgrade what I believe to be one of the greatest skills available to the acolyte class.";
+	mes "Olum la, aventureiro.";
+	mes "Eu tenho been studying magium de todos sobre Midgard to upgrade what I acreditar to be one of o greatest habilidades disponivel to o acolyte class.";
 	next;
 
 	if (is_function("VIP_iRO_Acolyte"))
 		callfunc "VIP_iRO_Acolyte","[Aperture]","Prontera";
 
 	mes "[Aperture]";
-	mes "I am the one and only Acolyte that has attained the Level 10 Warp Portal skill!";
+	mes "Eu sou o one e apenas Acolyte esse has attained o Nivel 10 Warp Portal habilidade!";
 	emotion ET_THINK, playerattached();
 	next;
 	mes "[Aperture]";
-	mes "That's right! And...";
-	mes "I promise you that I don't forget locations that I have already memorized.";
-	mes "One day I will level up my skills to warp to wherever I please~";
+	mes "That's certo! And...";
+	mes "I promise you esse Eu nao esquecer locations esse Eu tenho jum memorized.";
+	mes "One dium Eu vou nivel up meu habilidades to warp to wherever I pou favor~";
 	next;
 	mes "[Aperture]";
-	mes "I am willing to warp you to the many locations that I have memorized for a small fee.";
-	mes "Would you like to use this service?";
+	mes "Eu sou willing to warp you to o muitos locations esse Eu tenho memorized fou um pequeno taxa.";
+	mes "Voce gostarium de like to usar este service?";
 	next;
-	switch(select("Yes:No")) {
+	switch(select("Sim:Nao")) {
 	case 1:
 		mes "[Aperture]";
-		mes "Where would you like to go to?";
-		mes "I wish you goodluck on your journey.";
+		mes "Where voce gostarium de like to ir to?";
+		mes "I wish you goodluck on seu journey.";
 		next;
 
 		setarray .@towns$[0], "Prontera", "Izlude", "Geffen", "Payon", "Morocc", "Alberta", "Al De Baran", "Comodo", "Umbala", "Juno", "Einbroch", "Lighthalzen", "Hugel", "Rachel";
@@ -57,15 +57,15 @@ moc_para01,14,32,5	script	Aperture#acolytewarp	90,{
 		set .@i, select(.@menu$+"Cancel")-1;
 		if (.@i == .@size) {
 			mes "[Aperture]";
-			mes "Come back when you need a warp.";
+			mes "Volte when voce precisum um warp.";
 			close;
 		}
 		if (Zeny < .@cost[.@i]) {
 			mes "[Aperture]";
-			mes "I'm sorry, but you don't have";
-			mes "enough zeny for the Teleport";
-			mes "Service. The fee to teleport";
-			mes "to "+.@towns$[.@i]+" is "+.@cost[.@i]+" zeny.";
+			mes "Eu sou desculpe, mas voce nao have";
+			mes "suficiente zeny fou o Teleport";
+			mes "Service. O taxum to teleport";
+			mes "to "+.@towns$[.@i]+" is "+.@custo[.@i]+" zeny.";
 			close;
 		}
 		specialeffect2 EF_READYPORTAL;
@@ -92,7 +92,7 @@ moc_para01,14,32,5	script	Aperture#acolytewarp	90,{
 		close;
 	case 2:
 		mes "[Aperture]";
-		mes "Come back when you need a warp.";
+		mes "Volte when voce precisum um warp.";
 		close;
 	}
 }
@@ -100,16 +100,16 @@ moc_para01,14,32,5	script	Aperture#acolytewarp	90,{
 function	script	VIP_iRO_Acolyte	{
 	if (!vip_status(VIP_STATUS_ACTIVE)) {
 		mes getarg(0);
-		mes "But, my full powers are only available to those who have are VIPs.";
-		mes "I can still offer you a warp to "+getarg(1)+" though.";
+		mes "But, meu full powers are apenas disponivel to esses who have are VIPs.";
+		mes "Eu consigo aindum offer you um warp to "+getarg(1)+" though.";
 		next;
 		switch(select(getarg(0)+" -> 1800z:Cancel")) {
 		case 1:
 			if (Zeny < 1800) {
 				mes getarg(0);
-				mes "I'm sorry, but you don't have";
-				mes "enough zeny for the Teleport";
-				mes "Service. The fee to teleport";
+				mes "Eu sou desculpe, mas voce nao have";
+				mes "suficiente zeny fou o Teleport";
+				mes "Service. O taxum to teleport";
 				mes "to "+getarg(1)+" is 1,800 zeny.";
 				close;
 			}
@@ -135,24 +135,24 @@ function	script	VIP_iRO_Acolyte	{
 //============================================================
 moc_para01,26,15,3	script	Primo d'Buffer	790,{
 	mes "[Primo d'Buffer]";
-	mes "Hello adventurer, you look like you are itching to get out there and save the world!";
+	mes "Olum aventureiro, voce parece like you are itching to saium lum e salvar o mundo!";
 	if (!vip_status(VIP_STATUS_ACTIVE)) {
-		mes "I can also tell that you haven't been blessed with '^6666ffVIP Status^000000'.";
+		mes "Eu consigo tambem tell esse you nao tenho been blessed com '^6666ffVIP Status^000000'.";
 		next;
 		mes "[Primo d'Buffer]";
-		mes "My orders are to help out any Adventurer marked as VIP with special Buffs!";
-		mes "Currently I will give you ^ff0000+7 to all of your Stats for 30 minutes^000000 if you are VIP.";
+		mes "Meu orders are to ajudar out any Aventureiro marked as VIP com especial Buffs!";
+		mes "Currently Eu vou dar you ^ff0000+7 to todos of seu Stats fou 30 minutes^000000 se you are VIP.";
 		next;
 		mes "[Primo d'Buffer]";
-		mes "If you would like to be VIP, you can use WarpPortal to ^FF8C42Power-UP^000000 your game account with VIP Status. Of course there are many other advantages to being VIP, like higher EXP and Drop Rates, more Storage, and special buff NPCs like me!";
-		mes "Happy Journeys!";
+		mes "Se you would like to be VIP, voce pode usar WarpPortal to ^FF8C42Power-UP^000000 seu game account com VIP Status. E claro hum muitos outro advantages to being VIP, like higa EXP e Drop Rates, mais Armazem, e especial buff NPCs like me!";
+		mes "Feliz Journeys!";
 		close;
 	}
-	mes "I can also tell that you have been blessed with '^007FFFVIP Status^000000'.";
+	mes "Eu consigo tambem tell esse you tem sido blessed com '^007FFFVIP Status^000000'.";
 	next;
 	mes "[Primo d'Buffer]";
-	mes "That is awesome!";
-	mes "Here is +7 to all your stats for 30 minutes to help you on your journey. Just come back when you need to refill your stats!";
+	mes "Esse is awesome!";
+	mes "Aqui is +7 to todos seu stats fou 30 minutes to ajudar you on seu journey. Apenas volte when voce precisum to refill seu stats!";
 	close2;
 	sc_start SC_FOOD_STR_CASH,1200000,7;
 	sc_start SC_FOOD_AGI_CASH,1200000,7;
@@ -167,31 +167,31 @@ moc_para01,26,15,3	script	Primo d'Buffer	790,{
 //============================================================
 moc_para01,53,30,3	script	Clearchus	470,{
 	if (checkquest(62238,PLAYTIME) > -1 && checkquest(62238,PLAYTIME) < 2) {
-		mes "You must wait for the timer to finish before you can hire a new mercenary.";
+		mes "Voce deve esperar fou o timer to terminar antes voce pode hire um novo mercenary.";
 		close;	
 	}
 	mes "[Clearchus]";
-	mes "Greetings young adventurer! I represent the Midgardian Mercenary Mission.";
+	mes "Greetings young aventureiro! I represent o Midgardium Mercenary Missao.";
 	next;
 	mes "[Clearchus]";
-	mes "We provide training to aspiring mercenaries by pairing them with adventurers such as yourself.";
+	mes "We provide training to aspiring mercenaries by pairing them com aventureiros such as yourself.";
 	next;
 	mes "[Clearchus]";
-	mes "Our organization is 10,000 strong! Now let me see if you are registered for this service.";
+	mes "Nosso organization is 10,000 forte! Agorum deixe-me ver se you are registered fou este service.";
 	next;
 	if (!vip_status(VIP_STATUS_ACTIVE)) {
 		mes "[Clearchus]";
-		mes "Unfortunately it appears that you are not VIP, please get VIP so that you can use this service. You can get a temporary VIP access by talking to Gramps at the Eden Group Headquarters.";
+		mes "Unfortunately it aparece esse you are nao VIP, pou favou pegar VIP entao esse voce pode usar este service. Voce pode pegar um temporary VIP access by conversando to Gramps at o Eden Grupo Headquarters.";
 		next;
 		mes "[Clearchus]";
-		mes "Vip is a very useful tool for adventurers to have, giving access to extra Kafra Services, discounted warps, exclusive content, and use of Primo d'Buffer. If an adventurer has full vip they even get an Exp, Drops, and storage boost!";
+		mes "Vip is um muito useful tool fou aventureiros to have, dando access to extrum Kafrum Services, discounted warps, exclusive content, e usar of Primo d'Buffer. Se um aventureiro has full vip they ate mesmo pegar um Exp, Drops, e armazem boost!";
 		close;
 	}
 	mes "[Clearchus]";
-	mes "Your name is on the list.";
+	mes "Seu name is on o list.";
 	next;
 	mes "[Clearchus]";
-	mes "What kind of skill set are you looking for in a mercenary?";
+	mes "What kind of habilidade definir voce e procurando fou in um mercenary?";
 	next;
 
 	switch(select("Swordsman:Archer:Lancer")) {
@@ -217,10 +217,10 @@ moc_para01,53,30,3	script	Clearchus	470,{
 	else set .@i,9;
 
 	mes "[Clearchus]";
-	mes "I have just the mercenary in mind!";
+	mes "Eu tenho apenas o mercenary in mente!";
 	next;
 	mes "[Clearchus]";
-	mes "Have fun now, ya hear?";
+	mes "Have fun agora, yum ouvir?";
 	getitem .@base_id + .@i,1;
 	if (isbegin_quest(62238) > 0)
 		erasequest 62238;
@@ -232,62 +232,62 @@ moc_para01,53,30,3	script	Clearchus	470,{
 //============================================================
 moc_para01,166,51,3	script	Phelix#edco	85,{
 	mes "[Phelix]";
-	mes "Oh... I see from that look that you want me to work and give you Meat and Carrots...";
-	mes "Well my friend Izaac here has some Red Potions with him, but I only have some Carrots.";
-	mes "So I can trade you ^0000CC1 Carrot for 3 Jellopy^000000.";
+	mes "Oh... I ver de esse olhar esse voce quer me to trabalhar e dar you Meat e Carrots...";
+	mes "Bem meu amigo Izaac aqui has alguns Red Potions com him, mas I apenas have alguns Carrots.";
+	mes "Entao Eu consigo trade you ^0000CC1 Carrot fou 3 Jellopy^000000.";
 	next;
 	mes "[Phelix]";
-	mes "If you're interested in my offer, get me the Jellopies I mentioned.";
+	mes "Se voce e interessado in meu offer, pegar me o Jellopies I mentioned.";
 	next;
-	select("Carrots please.");
+	select("Carrots pou favor.");
 	mes "[Phelix]";
-	mes "Alright, let's see what ya got...";
+	mes "Alright, vamos ver what yum got...";
 	next;
 	if (countitem(909) < 3) {
 		mes "[Phelix]";
-		mes "Hmm, look dude, I said 3 Jellopies for 1 Carrot... got it?";
+		mes "Hmm, olhar dude, I disse 3 Jellopies fou 1 Carrot... got it?";
 		close;
 	}
 	mes "[Phelix]";
-	mes "Not too bad...";
-	mes "How many do you want?";
+	mes "Nao tambem ruim...";
+	mes "Quantos voce querer?";
 	next;
-	switch(select("As many as I can get, please.:I want to choose.:Never mind, I like my Jellopy.")) {
+	switch(select("As muitos as Eu consigo pegar, pou favor.:Eu quero to choose.:Nuncum mente, I like meu Jellopy.")) {
 	case 1:
 		set .@amount, countitem(909) / 3;
 		break;
 	case 2:
 		set .@available, countitem(909) / 3;
 		mes "[Phelix]";
-		mes "How many do you want?";
-		mes "^ff0000You have enough for up to " + .@available + " Carrots.^000000";
+		mes "Quantos voce querer?";
+		mes "^ff0000Voce tem suficiente fou up to " + .@disponivel + " Carrots.^000000";
 		input .@input;
 		next;
 		if (.@input < 1 || .@input > 10000) {
 			mes "[Phelix]";
-			mes "Don't want to deal? Fair enough...";
+			mes "Nao querer to deal? Fair suficiente...";
 			close;
 		}
 		if (.@input > .@available) {
 			mes "[Phelix]";
-			mes "Dude, I said for every 3 Jellopy I'll give you 1 Carrot.";
+			mes "Dude, I disse fou cadum 3 Jellopy Eu vou dar you 1 Carrot.";
 			close;
 		}
 		set .@amount, .@input;
 		break;
 	case 3:
 		mes "[Phelix]";
-		mes "Don't bother me if you don't want to trade.";
+		mes "Nao bota me se voce nao querer to trade.";
 		close;
 	}
 	if (checkweight(515,.@amount) == 0) {
 		mes "[Phelix]";
-		mes "You are overweight.";
+		mes "Voce e overweight.";
 		close;
 	}
 	mes "[Phelix]";
-	mes "There you go~! As I promised.";
-	mes "Try not to stuff yer face.";
+	mes "There you ir~! As I promised.";
+	mes "Tentar nao to stuff yer face.";
 	delitem 909,.@amount*3; //Jellopy
 	getitem 515,.@amount; //Carrot
 	end;
@@ -295,26 +295,26 @@ moc_para01,166,51,3	script	Phelix#edco	85,{
 
 moc_para01,163,51,7	script	Izaac#edco	86,{
 	mes "[Izaac]";
-	mes "Good day!";
-	mes "Have you collected any weird stuff from monsters?";
-	mes "I want things like Jellopy, Fluff, Shell, Feather of Birds, Tree Root, Worm Peelings, and Chrysalis.";
-	mes "I need those for something.";
+	mes "Bom dia!";
+	mes "Voce jum collected any estranho stuff de monstros?";
+	mes "Eu quero coisas like Jellopy, Fluff, Shell, Feata of Birds, Tree Root, Worm Peelings, e Chrysalis.";
+	mes "Eu precientao de esses fou algo.";
 	next;
 	mes "[Izaac]";
-	mes "Of course, I won't ask you to give me that stuff for free. What if I traded the following for ^CC00001 Red Potion^000000:";
+	mes "E claro, I nao vai ask you to me de esse stuff fou gratis. What se I traded o following fou ^CC00001 Red Potion^000000:";
 	mes "^00CC005 Shell^000000";
 	mes "^0000CC10 Fluff^000000";
 	mes "^00CC0010 Jellopy^000000";
 	mes "^0000CC6 Tree Root^000000";
 	mes "^00CC001 Worm Peeling^000000";
-	mes "^0000CC7 Feather of Birds^000000";
+	mes "^0000CC7 Feata of Birds^000000";
 	mes "^00CC006 Chrysalis^000000";
 	next;
-	switch(select("Sure!:I think it's a rip-off!:No, thanks.")) {
+	switch(select("Sure!:Eu acho e um rip-off!:No, obrigado.")) {
 	case 1:
 		mes "[Izaac]";
-		mes "So which items do";
-		mes "you want to bring me?";
+		mes "Entao which itens do";
+		mes "voce quer to trazer me?";
 		next;
 
 		setarray .@items[0], 935, 914, 909, 902, 955, 916, 915;
@@ -327,7 +327,7 @@ moc_para01,163,51,7	script	Izaac#edco	86,{
 		if (.@select == .@size) {
 			mes "[Izaac]";
 			mes "Sure~";
-			mes "No problem.";
+			mes "No problema.";
 			close;
 		}
 		set .@item, .@items[.@select];
@@ -336,14 +336,14 @@ moc_para01,163,51,7	script	Izaac#edco	86,{
 
 		if (countitem(.@item) < .@price) {
 			mes "[Izaac]";
-			mes "Hey, where's all";
-			mes "that "+.@item$+" that";
+			mes "Hey, where's todos";
+			mes "esse "+.@item$+" that";
 			mes "you promised me?";
-			mes "Give me "+.@item$+"!";
+			mes "Me de "+.@item$+"!";
 			close;
 		}
 		mes "[Izaac]";
-		mes "Okay, let me check";
+		mes "Okay, deixe-me verificar";
 		mes "how much "+.@item$;
 		mes "you have on you.";
 		mes "Hmm...";
@@ -352,13 +352,13 @@ moc_para01,163,51,7	script	Izaac#edco	86,{
 		set .@trade_amount, .@amount * .@price;
 		mes "[Izaac]";
 		mes "You have";
-		mes "a total of "+countitem(.@item)+" "+.@item$+"...";
-		mes "For all those, I can give you";
-		mes "a total of "+.@amount+" Red Potion(s).";
+		mes "um total of "+countitem(.@item)+" "+.@item$+"...";
+		mes "Fou todos those, Eu consigo dar you";
+		mes "um total of "+.@amount+" Red Potion(s).";
 		next;
 		mes "[Izaac]";
-		mes "What do you say?";
-		mes "Do we have a deal?";
+		mes "O que you dizer?";
+		mes "Do we have um deal?";
 		next;
 		if(select("Deal.:No deal.") == 2) {
 			mes "[Izaac]";
@@ -366,33 +366,33 @@ moc_para01,163,51,7	script	Izaac#edco	86,{
 			mes "Alright.";
 			mes "Though are";
 			mes .@item$ + " more useful";
-			mes "to an adventurer like you?";
+			mes "to um aventureiro like you?";
 			close;
 		}
 		if (checkweight(501,.@amount) == 0) { //custom check
 			mes "[Izaac]";
-			mes "You are overweight.";
+			mes "Voce e overweight.";
 			close;
 		}
 		delitem .@item,.@trade_amount;
 		getitem 501,.@amount; //Red_Potion
 		mes "[Izaac]";
-		mes "There you go!";
+		mes "There you ir!";
 		mes "Check how many "+.@item$;
-		mes "I've given you, it should be good.";
-		mes "Thanks, that was a good deal~";
+		mes "Eu tenho given you, it deveria ser bom.";
+		mes "Obrigado, esse was um bom deal~";
 		close;
 	case 2:
 		mes "[Izaac]";
 		mes "A rip-off...?";
-		mes "If you check the market value";
-		mes "of the items being traded, I'm actually the one getting";
-		mes "ripped off here.";
+		mes "Se you verificar o market value";
+		mes "of o itens being traded, Eu sou num verdade o one ficando";
+		mes "ripped off aqui.";
 		close;
 	case 3:
 		mes "[Izaac]";
-		mes "Alright, No problem.";
-		mes "But come back to me if you change your mind.";
+		mes "Alright, No problema.";
+		mes "Mas volte to me se you mudar seu mente.";
 		close;
 	}
 }
@@ -401,32 +401,32 @@ moc_para01,163,51,7	script	Izaac#edco	86,{
 //============================================================
 moc_para01,50,39,4	script	Eve Natalia	882,{
 	mes "[Eve Natalia]";
-	mes "So I'm in town for a while to see if I can strike up some commerce with MVP hunters!";
-	mes "I'm willing to take some MVP gear and give you these upgrade Certificates I have in exchange;";
-	mes "if things go well enough I'll open up further business opportunities!";
+	mes "Entao Eu sou in cidade fou um while to ver se Eu consigo strike up alguns commerce com MVP hunters!";
+	mes "Eu sou willing to pegar alguns MVP gear e dar you estes upgrade Certificates Eu tenho in exchange;";
+	mes "se coisas ir bem suficiente Eu vou abrir up furta business opportunities!";
 	next;
 	mes "[Eve Natalia]";
-	mes "So do you have any of the gears I'm looking for to get some random Safe to 7 Certificates?";
+	mes "Entao voce have any of o gears Eu sou procurando fou to pegar alguns random Seguro to 7 Certificates?";
 	next;
-	switch(select("What gear?:Yes I am!:Never mind.")) {
+	switch(select("What gear?:Yes I am!:Nuncum mente.")) {
 	case 1:
 		mes "[Eve Natalia]";
-		mes "Nidhoggur's Shadow Garb 4 Random Safe to 7 Certificates";
-		mes "Valkyrja's Shield 4 Random Safe to 7 Certificates";
-		mes "Valkyrian Armor 5 Random Safe to 7 Certificates";
-		mes "Diabolus Robe 5 Random Safe to 7 Certificates";
-		mes "Diabolus Armor 2 Random Safe to 7 Certificates";
-		mes "Diabolus Boots 2 Random Safe to 7 Certificates";
-		mes "Diabolus Manteau 4 Random Safe to 7 Certificates";
-		mes "Twin Edge of Naght Sieger Blue 2 Random Safe to 7 Certificates";
-		mes "Twin Edge of Naght Sieger Red 2 Random Safe to 7 Certificates";
+		mes "Nidhoggur's Shadow Garb 4 Random Seguro to 7 Certificates";
+		mes "Valkyrja's Escudo 4 Random Seguro to 7 Certificates";
+		mes "Valkyrium Armadurum 5 Random Seguro to 7 Certificates";
+		mes "Diabolus Robe 5 Random Seguro to 7 Certificates";
+		mes "Diabolus Armadurum 2 Random Seguro to 7 Certificates";
+		mes "Diabolus Boots 2 Random Seguro to 7 Certificates";
+		mes "Diabolus Manteau 4 Random Seguro to 7 Certificates";
+		mes "Twin Edge of Naght Sieger Blue 2 Random Seguro to 7 Certificates";
+		mes "Twin Edge of Naght Sieger Red 2 Random Seguro to 7 Certificates";
 		close;
 	case 2:
 		mes "[Eve Natalia]";
-		mes "I'm going to ask you which piece of gear you want to trade in, please verify that the 1st one in your inventory is one you want to give up.";
-		mes "^CC0000So if it is carded, upgraded, enchanted etc, you should put it in storage before we continue.^000000";
+		mes "Eu sou vai ask you which piece of gear voce quer to trade in, pou favou verify esse o 1st one in seu inventory is one voce quer to dar up.";
+		mes "^CC0000Entao se it is carded, upgraded, enchanted etc, voce deverium colocar it in armazem antes we continue.^000000";
 		next;
-		set .@i, select("Wait a minute:Nidhoggur's Shadow Garb 4:Valkyrja's Shield 4:Valkyrian Armor 5:Diabolus Robe 5:Diabolus Armor 2:Diabolus Boots 2:Diabolus Manteau 4:Twin Edge of Naght Sieger Blue 2:Twin Edge of Naght Sieger Red 2")-2;
+		set .@i, select("Espere um minuto:Nidhoggur's Shadow Garb 4:Valkyrja's Escudo 4:Valkyrium Armadurum 5:Diabolus Robe 5:Diabolus Armadurum 2:Diabolus Boots 2:Diabolus Manteau 4:Twin Edge of Naght Sieger Blue 2:Twin Edge of Naght Sieger Red 2")-2;
 		if (.@i == -1)
 			break;
 
@@ -437,27 +437,27 @@ moc_para01,50,39,4	script	Eve Natalia	882,{
 		set .@amount, .@tickets[.@i];
 
 		mes "[Eve Natalia]";
-		mes "I see you have "+countitem(.@item)+" "+getitemname(.@item)+".";
-		mes "So do you want to trade the 1st one in your inventory for ^00CC00"+.@amount+" Random Safe to 7 Certificates^000000?";
-		mes "Tell me '1' if you do, or '0' to cancel.";
+		mes "I ver you have "+countitem(.@item)+" "+getitemname(.@item)+".";
+		mes "Entao do voce quer to trade o 1st one in seu inventory fou ^00CC00"+.@amount+" Random Seguro to 7 Certificates^000000?";
+		mes "Me digum '1' se you do, ou '0' to cancel.";
 		next;
 		input .@input;
 		if (.@input < 0 || .@input > 1) {
 			mes "[Eve Natalia]";
-			mes "It is a 0 or 1, it can't be that difficult.";
+			mes "Isentao e um 0 ou 1, it nao pode be esse dificil.";
 			close;
 		} else if (.@input == 0) {
 			mes "[Eve Natalia]";
-			mes "It's best to be sure before trading, have a good day.";
+			mes "E best to be sure antes trading, have um bom dia.";
 			close;
 		}
 		if (countitem(.@item) == 0) {
 			mes "[Eve Natalia]";
-			mes "You don't even have 1... stop wasting my time.";
+			mes "Voce nao ate mesmo have 1... parar wasting meu tempo.";
 			close;
 		}
 		mes "[Eve Natalia]";
-		mes "Oh perfect, you get ^CC0000" + .@amount + "^000000 Safe to 7 Certificates!";
+		mes "Oh perfect, you pegar ^CC0000" + .@amount + "^000000 Seguro to 7 Certificates!";
 		delitem .@item,1;
 		for(set .@i,0; .@i<.@amount; set .@i,.@i+1) {
 			// Note: iRO lists item 6235 as "Safe to 7 Headgear Certificate", but it's Guarantee_Armor_6Up in our database.
@@ -471,7 +471,7 @@ moc_para01,50,39,4	script	Eve Natalia	882,{
 		break;
 	}
 	mes "[Eve Natalia]";
-	mes "Fair enough, if you have business with me in the future don't be shy!";
+	mes "Fair suficiente, se you have business com me in o future nao be shy!";
 	close;
 }
 
@@ -479,21 +479,21 @@ moc_para01,50,39,4	script	Eve Natalia	882,{
 //============================================================
 moc_para01,48,184,2	script	Gum & Manual Exchanger	562,{
 	if (checkweight(1201,1) == 0 || MaxWeight - Weight < 2000) {
-		mes "You're carrying too many items right now.";
+		mes "Voce e carregando tambem muitos itens agorum mesmo.";
 		close;	
 	}
 	mes "[Trader Machine]";
-	mes "Insert Bubble Gums and/or Battle Manuals to trade for higher efficiency Gums and Manuals.";
+	mes "Insert Bubble Gums and/ou Batalhum Manuals to trade fou higa efficiency Gums e Manuals.";
 	next;
 	mes "[Trader Machine]";
 	mes "Exchange rate:";
 	mes "2 Bubble Gum -> 1 HE Bubble Gum";
-	mes "2 Battle Manual -> 1 HE Battle Manual";
-	mes "4 HE Battle Manual -> 1 Battle Manual X3";
-	mes "3 Thick Battle Manual -> 2 Battle Manual X3";
-	mes "What would you like to exchange for?";
+	mes "2 Batalhum Manual -> 1 HE Batalhum Manual";
+	mes "4 HE Batalhum Manual -> 1 Batalhum Manual X3";
+	mes "3 Thick Batalhum Manual -> 2 Batalhum Manual X3";
+	mes "What voce gostarium de like to exchange for?";
 	next;
-	switch(select("HE Bubble Gum:HE Battle Manual:1 Battle Manual X3:2 Battle Manual X3:1 Costume Corsair:Nothing")) {
+	switch(select("HE Bubble Gum:HE Batalhum Manual:1 Batalhum Manual X3:2 Batalhum Manual X3:1 Costume Corsair:Nada")) {
 	case 1:
 		callsub L_Exchange,12210,2,12412,1;
 		break;
@@ -508,22 +508,22 @@ moc_para01,48,184,2	script	Gum & Manual Exchanger	562,{
 		break;
 	case 5:
 		mes "[Trader Machine]";
-		mes "I can give you 1 Battle Manual X3 for 1 Costume Corsair.";
+		mes "Eu consigo dar you 1 Batalhum Manual X3 fou 1 Costume Corsair.";
 		next;
 		if (countitem(19619) == 0) {
 			mes "[Trader Machine]";
-			mes "You don't have a Costume Corsair hat to make that trade.";
+			mes "Voce nao have um Costume Corsair hat to fazer esse trade.";
 			close;
 		}
 		next;
-		if(select("Yes, give it to me!:No, wait not yet.") == 2)
+		if(select("Yes, dar it to me!:No, esperar nao yet.") == 2)
 			close;
 		// Unofficial dialogue.
 		mes "[Trader Machine]";
-		mes "You place the required items into the machine...";
+		mes "You lugar o required itens parum dentro o machine...";
 		next;
 		mes "[Trader Machine]";
-		mes "The Machine has given you an item in return!";
+		mes "O Machine has given you um item in retornar!";
 		delitem 19619,1; //C_Corsair
 		getitem 14545,1; //Battle_Manual_X3
 		close;
@@ -534,8 +534,8 @@ moc_para01,48,184,2	script	Gum & Manual Exchanger	562,{
 //callsub L_Exchange,<Insert Item>,<Amount>,<Return Item>,<Amount>
 L_Exchange:
 	mes "[Trader Machine]";
-	mes "How many "+getitemname(getarg(2))+" do you want?";
-	mes "I can give you up to 60.";
+	mes "Quantos "+getitemname(getarg(2))+" voce querer?";
+	mes "Eu consigo dar you up to 60.";
 	mes "Type 0 to cancel.";
 	next;
 	input .@amount;
@@ -545,20 +545,20 @@ L_Exchange:
 		close;
 	} else if (.@amount < 0 || .@amount > 60) {
 		mes "[Trader Machine]";
-		mes "I said only 60 max.";
+		mes "I disse apenas 60 max.";
 		close;
 	}
 	mes "[Trader Machine]";
-	mes "That's a total of "+.@amount+" "+getitemname(getarg(2))+".";
-	mes "Is this correct?";
+	mes "That's um total of "+.@amount+" "+getitemname(getarg(2))+".";
+	mes "Isentao e correct?";
 	next;
-	if(select("Yes, give them to me!:No, wait not yet.") == 2)
+	if(select("Yes, dar them to me!:No, esperar nao yet.") == 2)
 		close;
 	set .@cost, getarg(1) * .@amount;
 	set .@total_amount, getarg(3) * .@amount;
 	if (countitem(getarg(0)) < .@cost) {
 		mes "[Trader Machine]";
-		mes "You don't have enough "+getitemname(getarg(0))+" to make that trade.";
+		mes "Voce nao have suficiente "+getitemname(getarg(0))+" to fazer esse trade.";
 		close;
 	}
 	delitem getarg(0),.@cost;
@@ -571,14 +571,14 @@ L_Exchange:
 moc_para01,13,22,4	script	Merry Badger#xch	882,{
 	disable_items;
 	mes "[Merry Badger]";
-	mes "Hello there!  I'm Merry Badger and I was hired to exchange the ^00CC00Eden Merit Badges^000000!";
+	mes "Olum la!  Eu sou Merry Badger e Eu estavum hired to exchange o ^00CC00Eden Merit Badges^000000!";
 	next;
 	mes "[Merry Badger]";
-	mes "I can take your Merit Badges and give you some useful stuff, or I can take some of your stuff and give you some Eden Merit Badges.";
-	mes "As I get more authorization I can offer more things to trade with you, so definitely keep me in mind when visiting the Eden Group.";
+	mes "Eu consigo pegar seu Merit Badges e dar you alguns useful stuff, ou Eu consigo pegar alguns of seu stuff e dar you alguns Eden Merit Badges.";
+	mes "As I pegar mais authorization Eu consigo offer mais coisas to trade com you, entao definitivamente manter me in mente when visiting o Eden Grupo.";
 	next;
 	// switch( select( "Redeem Badges", "Trade in FOR badges", "Exchange Rates", "15 Job Manuals - 1 JM Box", "Sky Fortress Tickets", "Weekly Special" ) ) {// Sky Fortress Tickets meaningless without the instance
-	switch( select( "Redeem Badges", "Trade in FOR badges", "Exchange Rates", "15 Job Manuals - 1 JM Box", "", "Weekly Special" ) ) {
+	switch( select( "Redeem Badges", "Trade in FOR badges", "Exchange Rates", "15 Job Manuals - 1 JM Box", "", "Weekly Especial" ) ) {
 	case 1:
 		setarray .@menu_list$[0],
 			"4 EMB for 10 KVM Badge",
@@ -601,7 +601,7 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 		.@menu$ = implode( .@menu_list$, ":" );
 		while(1) {
 			mes "[Merry Badger]";
-			mes "Sure thing, I have several options currently for your Badges!";
+			mes "Sure coisa, Eu tenho several options currently fou seu Badges!";
 			next;
 			switch( select(.@menu$) ) {
 			case 1:// "4 EMB for 10 KVM Badge"
@@ -638,20 +638,20 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 				.@item_id = 22819;
 				if (countitem(6495) < 5) {
 					mes "[Merry Badger]";
-					mes "You don't have enough ^00CC00Eden Merit Badges^000000. Let's start over!";
+					mes "Voce nao have suficiente ^00CC00Eden Merit Badges^000000. Vamos comecar sobre!";
 					break;
 				}
 				mes "[Merry Badger]";
-				mes "Ok, I can give you ^ff0000" + getitemname(.@item_id) + "^000000 for ^0066CC5 of your Eden Merit Badge(s)^000000.";
-				mes "Do you want to?";
+				mes "Ok, Eu consigo dar you ^ff0000" + getitemname(.@item_id) + "^000000 fou ^0066CC5 of seu Eden Merit Badge(s)^000000.";
+				mes "Do voce quer to?";
 				next;
-				if (select("Yes", "No") == 2) {
+				if (select("Sim", "Nao") == 2) {
 					mes "[Merry Badger]";
-					mes "I understand, let's see if you'd like something different!";
+					mes "I entender, vamos ver se you'd like algo diferente!";
 					break;
 				}
 				mes "[Merry Badger]";
-				mes "There you go! What else would you like?";
+				mes "There you ir! What else voce gostarium de like?";
 				delitem 6495, 5;// Para_Logro_Badge
 				consumeitem .@item_id;
 				break;
@@ -662,20 +662,20 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 				.@item_id = 14645;
 				if (countitem(6495) < 5) {
 					mes "[Merry Badger]";
-					mes "You don't have enough ^00CC00Eden Merit Badges^000000. Let's start over!";
+					mes "Voce nao have suficiente ^00CC00Eden Merit Badges^000000. Vamos comecar sobre!";
 					break;
 				}
 				mes "[Merry Badger]";
-				mes "Ok, I can give you ^ff0000" + getitemname(.@item_id) + "^000000 for ^0066CC5 of your Eden Merit Badge(s)^000000.";
-				mes "Do you want to?";
+				mes "Ok, Eu consigo dar you ^ff0000" + getitemname(.@item_id) + "^000000 fou ^0066CC5 of seu Eden Merit Badge(s)^000000.";
+				mes "Do voce quer to?";
 				next;
-				if (select("Yes", "No") == 2) {
+				if (select("Sim", "Nao") == 2) {
 					mes "[Merry Badger]";
-					mes "I understand, let's see if you'd like something different!";
+					mes "I entender, vamos ver se you'd like algo diferente!";
 					break;
 				}
 				mes "[Merry Badger]";
-				mes "There you go! What else would you like?";
+				mes "There you ir! What else voce gostarium de like?";
 				delitem 6495, 5;// Para_Logro_Badge
 				rentitem .@item_id, 604800;	// 7 days
 				break;
@@ -688,59 +688,59 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 			case 16:// Token of Siegfried
 				if (vip_status(VIP_STATUS_ACTIVE) == false) {
 					mes "[Merry Badger]";
-					mes "VIP Services offers those to any user with VIP!!";
+					mes "VIP Services offers esses to any user com VIP!!";
 					close;
 				}
 				// custom from here
 				.@date = gettime(DT_YYYYMMDD);
 				if (.@date <= eden_iro_token_date) {
 					mes "[Merry Badger]";
-					mes "You already got your Token today!";
+					mes "You jum got seu Token hoje!";
 					close;
 				}
 				mes "[Merry Badger]";
-				mes "There you go! What else would you like?";
+				mes "There you ir! What else voce gostarium de like?";
 				eden_iro_token_date = .@date;
 				getitem 7621,10;// Token_Of_Siegfried
 				close;
 			case 17:// Nothing Now
 				mes "[Merry Badger]";
-				mes "Wonderful!";
-				mes "I'll be here if you ever want to exchange for Eden Merit Badges!";
+				mes "Maravilhoso!";
+				mes "Eu vou be aqui se you ever querer to exchange fou Eden Merit Badges!";
 				close;
 			}
 			next;
 		}
 	case 2:
 		mes "[Merry Badger]";
-		mes "I have a limited selection as of right now, but here is what I can offer to get 1 Eden Merit Badge!";
+		mes "Eu tenho um limited selection as of agorum mesmo, mas aqui is what Eu consigo offer to pegar 1 Eden Merit Badge!";
 		next;
-		switch( select( "Etc Items", "Equipments", "Cancel" ) ) {
+		switch( select( "Etc Itens", "Equipments", "Cancelar" ) ) {
 		case 1:
 			while(1) {
-				if (select( "5x Old Purple Box", "Nothing" ) == 2) {
+				if (select( "5x Velho Purple Box", "Nada" ) == 2) {
 					mes "[Merry Badger]";
-					mes "Wonderful!";
-					mes "I'll be here if you ever want to exchange for Eden Merit Badges!";
+					mes "Maravilhoso!";
+					mes "Eu vou be aqui se you ever querer to exchange fou Eden Merit Badges!";
 					close;
 				}
 				while(1) {
 					if (countitem(617) < 5) {
 						mes "[Merry Badger]";
-						mes "You don't have enough of that to get 1 Eden Merit Badge. Lets start over!";
+						mes "Voce nao have suficiente of esse to pegar 1 Eden Merit Badge. Lets comecar sobre!";
 						break;
 					}
 					mes "[Merry Badger]";
-					mes "Ok, I can give you ^CC00001 Eden Merit Badge^000000 for ^0000CC5 of your Old Purple Boxes^000000. Do you want to?";
+					mes "Ok, Eu consigo dar you ^CC00001 Eden Merit Badge^000000 fou ^0000CC5 of seu Velho Purple Boxes^000000. Do voce quer to?";
 					next;
-					if (select( "Yes", "No" ) == 2) {
+					if (select( "Sim", "Nao" ) == 2) {
 						mes "[Merry Badger]";
-						mes "I understand, lets see if you'd like something different!";
+						mes "I entender, lets ver se you'd like algo diferente!";
 						break;
 					}
 					else {
 						mes "[Merry Badger]";
-						mes "There you go!  What else would you like?";
+						mes "There you ir!  What else voce gostarium de like?";
 						delitem 617,5;// Old_Violet_Box
 						getitem 6495,1;// Para_Logro_Badge
 						next;
@@ -751,9 +751,9 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 		case 2:
 			while(1) {
 				mes "[Merry Badger]";
-				mes "I will take the top item in your inventory! MAKE SURE YOU DONT HAVE ANY OF THESE ITEMS THAT YOU DONT WANT TO EXCHANGE.";
+				mes "Eu vou pegar o top item in seu inventory! MAKE SURE YOU DONT HAVE ANY OF THESE ITEMS THAT YOU DONT WANT TO EXCHANGE.";
 				next;
-				switch( select( "Giant Faceworm Snake Skin", "Giant Faceworm Snake Skin [1]", "Nothing" ) ) {
+				switch( select( "Giant Faceworm Snake Skin", "Giant Faceworm Snake Skin [1]", "Nada" ) ) {
 				case 1:
 					.@item_req = 20717;// FaceWorm_Skin
 					.@item_name$ = "Giant Faceworm Snake Skin";
@@ -766,93 +766,93 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 					break;
 				case 3:
 					mes "[Merry Badger]";
-					mes "Wonderful!";
-					mes "I'll be here if you ever want to exchange for Eden Merit Badges!";
+					mes "Maravilhoso!";
+					mes "Eu vou be aqui se you ever querer to exchange fou Eden Merit Badges!";
 					next;
 					mes "[Merry Badger]";
-					mes "Well that is OK, if you want to see what I offer just ask!";
+					mes "Bem esse is OK, se voce quer to ver what I offer apenas ask!";
 					close;
 				}
 				while(1) {
 					if (countitem(.@item_req) < 1) {
 						mes "[Merry Badger]";
-						mes "You don't have enough of that to get 1 Eden Merit Badge. Lets start over!";
+						mes "Voce nao have suficiente of esse to pegar 1 Eden Merit Badge. Lets comecar sobre!";
 						break;
 					}
 					mes "[Merry Badger]";
-					mes "Ok, I can give you ^ff0000" + .@amount_reward + " Eden Merit Badge^000000 for ^00ff00" + .@item_name$ + "^000000. Do you want to?";
+					mes "Ok, Eu consigo dar you ^ff0000" + .@amount_reward + " Eden Merit Badge^000000 fou ^00ff00" + .@item_name$ + "^000000. Do voce quer to?";
 					next;
-					if (select( "Yes", "No" ) == 2) {
+					if (select( "Sim", "Nao" ) == 2) {
 						mes "[Merry Badger]";
-						mes "I understand, lets see if you'd like something different!";
+						mes "I entender, lets ver se you'd like algo diferente!";
 						break;
 					}
 					delitem .@item_req, 1;
 					getitem 6495, .@amount_reward;// Para_Logro_Badge
 					mes "[Merry Badger]";
-					mes "There you go! What else do you like?";
+					mes "There you ir! What else voce like?";
 					next;
 				}
 				next;
 			}
 		case 3:
 			mes "[Merry Badger]";
-			mes "Well that is OK, if you want to see what I offer just ask!";
+			mes "Bem esse is OK, se voce quer to ver what I offer apenas ask!";
 			close;
 		}
 	case 3:
 		mes "[Merry Badger]";
-		mes "This is what I'll give you for your ^00CC00Eden Merit Badges^000000!";
-		mes "Ok, I have a special for 3 Merit Badge. This week I'll give you ^00CC0040 Light Granule^000000, ^00CC0040 Gun Powder^000000, ^0000CC3 Izidor^000000, ^00CC0010 Prickly Fruit^000000, ^0000CC1 Mandragora Flowerpot^000000, and ^00CC003 Elder Branch^000000.";
+		mes "Este is what Eu vou dar you fou seu ^00CC00Eden Merit Badges^000000!";
+		mes "Ok, Eu tenho um especial fou 3 Merit Badge. Este week Eu vou dar you ^00CC0040 Luz Granule^000000, ^00CC0040 Gun Powder^000000, ^0000CC3 Izidor^000000, ^00CC0010 Prickly Fruit^000000, ^0000CC1 Mandragorum Flowerpot^000000, e ^00CC003 Elder Branch^000000.";
 		mes "^00CC002 Eden Merit Badges^000000 = ^0000CC10x KVM Badge^000000";
 		mes "^00CC002 Eden Merit Badges^000000 = ^0000CC10x Bravery Medals^000000";
-		mes "^00CC002 Eden Merit Badges^000000 = ^0000CC10x Valor Medals^000000";
-		mes "^00CC005 Eden Merit Badges^000000 = ^0000CC5x Medium Life Potion^000000";
-		mes "^00CC005 Eden Merit Badges^000000 = ^0000CC5x Life Insurance^000000";
+		mes "^00CC002 Eden Merit Badges^000000 = ^0000CC10x Valou Medals^000000";
+		mes "^00CC005 Eden Merit Badges^000000 = ^0000CC5x Medium Vidum Potion^000000";
+		mes "^00CC005 Eden Merit Badges^000000 = ^0000CC5x Vidum Insurance^000000";
 		mes "^00CC005 Eden Merit Badges^000000 = ^0000CC5x Token Of Siegfried^000000";
-		mes "^00CC007 Eden Merit Badges^000000 = ^0000CC1x Job Battle Manual^000000";
+		mes "^00CC007 Eden Merit Badges^000000 = ^0000CC1x Job Batalhum Manual^000000";
 		mes "^00CC008 Eden Merit Badges^000000 = ^0000CC1x Reset Stone^000000";
 		next;
 		mes "[Merry Badger]";
-		mes "This is what you can give me to get ^00CC001 Eden Merit Badge^000000!";
-		mes "^0000CC5x Old Purple Box^000000";
+		mes "Este is what voce pode me de to pegar ^00CC001 Eden Merit Badge^000000!";
+		mes "^0000CC5x Velho Purple Box^000000";
 		close;
 	case 4:
 		mes "[Merry Badger]";
-		mes "I was strong armed into giving this, but you are worth it!";
-		mes "Do you want to exchange 15 Job Manuals to get 1 Tradable box of 10 Job Manuals?";
-		mes "I know 15 does not equal 10, but boxes are expensive you know.";
+		mes "Eu estavum forte armed parum dentro dando this, mas you are worth it!";
+		mes "Do voce quer to exchange 15 Job Manuals to pegar 1 Tradable box of 10 Job Manuals?";
+		mes "Eu sei 15 does nao equal 10, mas boxes are expensive voce sabe.";
 		next;
 		if (countitem(14592) < 15) {
 			mes "[Merry Badger]";
-			mes "You don't have 15 or more Job Manuals to get 1 Box!";
+			mes "Voce nao have 15 ou mais Job Manuals to pegar 1 Box!";
 			close;
 		}
 		// custom dialogue below
-		if (select("Yes", "No") == 2) {
+		if (select("Sim", "Nao") == 2) {
 			mes "[Merry Badger]";
-			mes "Wonderful!";
-			mes "I'll be here if you ever want to exchange for Eden Merit Badges!";
+			mes "Maravilhoso!";
+			mes "Eu vou be aqui se you ever querer to exchange fou Eden Merit Badges!";
 			close;
 		}
 		mes "[Merry Badger]";
-		mes "Wonderful, what else do you want?";
+		mes "Maravilhoso, what else voce querer?";
 		delitem 14592,15; //Job_Manual50
 		getitem 13990,1; //Job_Manual50_Box
 		close;
 	case 5:
 		mes "[Merry Badger]";
-		mes "I don't really understand why but I have this stack of coupons to sell.";
-		mes "Do you want to exchange 25 Eden Merit Badges for 1 dungeon ticket? If you are VIP your ticket will last much longer!";
+		mes "Eu nao realmente underste why mas Eu tenho este stack of coupons to vender.";
+		mes "Do voce quer to exchange 25 Eden Merit Badges fou 1 masmorrum ticket? Se you are VIP seu ticket will ultimo muito longer!";
 		next;
-		if (select( "Yes", "No" ) == 2) {
+		if (select( "Sim", "Nao" ) == 2) {
 			mes "[Merry Badger]";
-			mes "I understand, lets see if you'd like something different!";
+			mes "I entender, lets ver se you'd like algo diferente!";
 			close;
 		}
 		if (countitem(6495) < 25) {
 			mes "[Merry Badger]";
-			mes "You don't have enough badges!";
+			mes "Voce nao have suficiente badges!";
 			close;
 		}
 		delitem 6495,25;
@@ -861,22 +861,22 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 		else
 			getitem 17569,1;// Sky Fortress Ticket 1 Hour Box
 		mes "[Merry Badger]";
-		mes "There you go! What else would you like?";
+		mes "There you ir! What else voce gostarium de like?";
 		close;
 	case 6:
 		while(1) {
 			mes "[Merry Badger]";
-			mes "The Weekly special is ....";
+			mes "O Weekly especial is ....";
 			next;
 			mes "[Merry Badger]";
-			mes "Ok, I have a special for 3 Merit Badge or 1,000,000 zeny.  This week I'll give you ^00CC0040 Light Granule^000000, 40 Gun Powder^000000, ^0000CC3 Izidor^000000";
-			mes "^00CC0010 Prickly Fruit^000000, ^0000CC1 Mandragora Flowerpot^000000, and ^00CC003 Elder Branch^000000.";
+			mes "Ok, Eu tenho um especial fou 3 Merit Badge ou 1,000,000 zeny.  Este week Eu vou dar you ^00CC0040 Luz Granule^000000, 40 Gun Powder^000000, ^0000CC3 Izidor^000000";
+			mes "^00CC0010 Prickly Fruit^000000, ^0000CC1 Mandragorum Flowerpot^000000, e ^00CC003 Elder Branch^000000.";
 			next;
-			switch( select( "Badges", "Zeny", "No" ) ) {
+			switch( select( "Badges", "Zeny", "Nao" ) ) {
 			case 1:
 				if (countitem(6495) < 3) {
 					mes "[Merry Badger]";
-					mes "You don't have enough ^00CC00Eden Merit Badges^000000. Lets start over!";
+					mes "Voce nao have suficiente ^00CC00Eden Merit Badges^000000. Lets comecar sobre!";
 					next;
 					continue;
 				}
@@ -885,7 +885,7 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 			case 2:
 				if (Zeny < 1000000) {
 					mes "[Merry Badger]";
-					mes "You don't have enough ^00CC00Zeny^000000. Lets start over!";
+					mes "Voce nao have suficiente ^00CC00Zeny^000000. Lets comecar sobre!";
 					next;
 					continue;
 				}
@@ -893,7 +893,7 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 				break;
 			case 3:
 				mes "[Merry Badger]";
-				mes "I understand, lets see if you'd like something different!";
+				mes "I entender, lets ver se you'd like algo diferente!";
 				close;
 			}
 			getitem 7938,40;// Light_Granule
@@ -903,7 +903,7 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 			getitem 6217,1;	// Mandragora_Flowerpot
 			getitem 7939,3;	// Elder_Branch
 			mes "[Merry Badger]";
-			mes "There you go! What else would you like?";
+			mes "There you ir! What else voce gostarium de like?";
 			next;
 		}
 	}
@@ -913,21 +913,21 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 L_Exchange:
 	if (countitem(6495) < getarg(0)) {
 		mes "[Merry Badger]";
-		mes "You don't have enough ^00CC00Eden Merit Badges^000000. Let's start over!";
+		mes "Voce nao have suficiente ^00CC00Eden Merit Badges^000000. Vamos comecar sobre!";
 		return;
 	}
 	mes "[Merry Badger]";
 	mes sprintf("Ok, I can give you ^ff0000%s^000000 for ^0066CC%d of your Eden Merit Badge(s)^000000.",
 				callfunc("F_InsertPlural",getarg(2),getitemname(getarg(1))), getarg(0));
-	mes "Do you want to?";
+	mes "Do voce quer to?";
 	next;
-	if (select("Yes", "No") == 2) {
+	if (select("Sim", "Nao") == 2) {
 		mes "[Merry Badger]";
-		mes "I understand, let's see if you'd like something different!";
+		mes "I entender, vamos ver se you'd like algo diferente!";
 		return;
 	}
 	mes "[Merry Badger]";
-	mes "There you go! What else would you like?";
+	mes "There you ir! What else voce gostarium de like?";
 	delitem 6495, getarg(0); //Para_Logro_Badge
 	getitem getarg(1),getarg(2);
 	return;
@@ -937,34 +937,34 @@ L_Exchange:
 //============================================================
 moc_para01,41,169,2	script	Kafra Stacker#eden	749,{
 	if (checkweight(1201,1) == 0 || MaxWeight - Weight < 2000) {
-		mes "- Wait a moment! -";
-		mes "- Currently you're carrying -";
-		mes "- too much weight in items. -";
-		mes "- Please come back later -";
-		mes "- after you put some into Kafra storage. -";
+		mes "- Espere um momento! -";
+		mes "- Currently voce e carregando -";
+		mes "- tambem muito weight in itens. -";
+		mes "- Pou favou volte later -";
+		mes "- depois you colocar alguns parum dentro Kafrum armazem. -";
 		close;
 	}
 	mes "[Toma]";
-	mes "I can take your non-stacking Kafra Consumables";
-	mes "and make them fit neatly into stacks!";
+	mes "Eu consigo pegar seu non-stacking Kafrum Consumables";
+	mes "e fazer them fit neatly parum dentro stacks!";
 	next;
 	mes "[Toma]";
-	mes "Please understand that I can";
-	mes "only stack 10 groups at a time";
-	mes "so keep talking to me until";
+	mes "Pou favou underste esse I can";
+	mes "apenas stack 10 groups at um tempo";
+	mes "entao manter conversando to me ate";
 	mes "you have 1 stack of each!";
 	next;
 	while(1) {
-		if(select("Do it!:Never mind.") == 2)
+		if(select("Do it!:Nuncum mente.") == 2)
 			break;
 		// Something strange goes on here, haven't quite figured it out...
 		mes "[Toma]";
 		mes "Ten stack down!";
-		mes "Want to do another?";
+		mes "Querer to do outro?";
 		next;
 	}
 	mes "[Toma]";
-	mes "Ok then, laterz.";
+	mes "Ok entao, laterz.";
 	close;
 }
 
@@ -972,25 +972,25 @@ moc_para01,41,169,2	script	Kafra Stacker#eden	749,{
 //============================================================
 moc_para01,38,162,2	script	Code the Redeemer#Give1	405,{
 	if (checkweight(1201,1) == 0 || MaxWeight - Weight < 2000) {
-		mes "^0000ffHold it right there!";
-		mes "You're carrying too many items and don't have enough inventory space to receive any rewards. Please make more inventory space available and come back to take this challenge.^000000";
+		mes "^0000ffHold it certo la!";
+		mes "Voce e carregando tambem muitos itens e nao have suficiente inventory space to receber any recompensas. Pou favou fazer mais inventory space disponivel e volte to pegar este challenge.^000000";
 		close;
 	}
 	mes "[Code the Redeemer]";
-	mes "Welcome, "+strcharinfo(0)+"!";
-	mes "I've been expecting you.";
+	mes "Bem-vindo, "+strcharinfo(0)+"!";
+	mes "Eu tenho been expecting you.";
 	next;
 	mes "[Code the Redeemer]";
-	mes "I am a distributor of all the";
-	mes "items that adventurers like";
+	mes "Eu sou um distributou of todos the";
+	mes "itens esse aventureiros like";
 	mes "yourself purchase on websites";
-	mes "or receive as promotions.";
+	mes "ou receber as promotions.";
 	next;
 	mes "[Code the Redeemer]";
-	mes "^0000FFIf the list is empty,";
-	mes "that means that you have";
-	mes "not purchased, or inputted";
-	mes "your serial code from the purchasing website.^000000";
+	mes "^0000FFSe o list is empty,";
+	mes "esse significum esse you have";
+	mes "nao purchased, ou inputted";
+	mes "seu serial code de o purchasing website.^000000";
 	next;
 
 	// If you have a code redemption system, write your SQL queries here.
@@ -1060,15 +1060,15 @@ moc_para01,33,185,4	script	Dinorah Lacostt#ed	862,{ end; }
 
 moc_para01,29,35,4	script	Gramps#huntquests	866,{
 	mes "[Gramps]";
-	mes "When you get to being my";
-	mes "age, you become bitter.";
-	mes "Too long I've done nothing about the monsters that roam around";
+	mes "When you pegar to being my";
+	mes "age, you se tornar bitter.";
+	mes "Too long Eu tenho done nadum sobre o monstros esse roam ao redor";
 	mes "Midgard.";
 	next;
 	mes "[Gramps]";
-	mes "That's why I'm asking you wippersnappers to help";
-	mes "me hunt some monsters.";
-	mes "Will you help me, young adventurer?";
+	mes "That's why Eu sou asking you wippersnappers to ajudar";
+	mes "me cacar alguns monstros.";
+	mes "Will you me ajude, young aventureiro?";
 	close;
 	//next;
 	//switch(select("Yes, I'll help.:Reward Me!:^ff0000I want to quit hunting^000000:^0000ffCan you warp me?^000000:Can you erase the timer?:What missions are you giving?:Give me Limited 3 day VIP:Tell me more about the VIP Access:No thanks, pops.")) {
@@ -1076,17 +1076,17 @@ moc_para01,29,35,4	script	Gramps#huntquests	866,{
 
 moc_para01,174,33,3	script	Bathory#2012spirits	1102,{
 	mes "[Bathory]";
-	mes "Eheeheeheehee! The spotlight is on Glast Heim this week, so I'm ferrying people there for a mere 1,000z!";
+	mes "Eheeheeheehee! O spotlight is on Glast Heim este week, entao Eu sou ferrying pessoas lum fou um mere 1,000z!";
 	next;
 	mes "[Bathory]";
-	mes "How about it? Want to take a ride on a beautiful Bathory's broom?";
+	mes "Que tal it? Querer to pegar um ride on um bonito Bathory's broom?";
 	next;
-	switch(select("Prepare for Takeoff!:No thanks.")) {
+	switch(select("Prepare fou Takeoff!:No obrigado.")) {
 	case 1:
 		if (Zeny < 1000) {
 			mes "[Bathory]";
-			mes "Come on dearie...";
-			mes "You don't even have 1,000 zeny?";
+			mes "Vir on dearie...";
+			mes "Voce nao ate mesmo have 1,000 zeny?";
 			close;
 		}
 		mes "[Bathory]";
@@ -1097,7 +1097,7 @@ moc_para01,174,33,3	script	Bathory#2012spirits	1102,{
 		end;
 	case 2:
 		mes "["+strcharinfo(0)+"]";
-		mes "No thanks, maybe later.";
+		mes "No obrigado, talvez later.";
 		close;
 	}
 }
@@ -1110,18 +1110,18 @@ moc_para01,26,174,4	script	Grandma Boxter#boxx	840,{ end; }
 
 moc_para01,30,187,4	script	Mail Annex Station	888,{
 	mes "[Mail Annex Station]";
-	mes "Would you like to go to the Kafra Mail Annex Station?";
+	mes "Voce gostarium de like to ir to o Kafrum Mail Annex Station?";
 	next;
-	switch(select("Yes, send me now!:No thanks.")) {
+	switch(select("Yes, send me agora!:No obrigado.")) {
 	case 1:
 		mes "[Mail Annex Station]";
-		mes "Sending you to the Mail Annex Room.";
+		mes "Sending you to o Mail Annex Room.";
 		close2;
 		warp "auction_03",151,23;
 		end;
 	case 2:
 		mes "[Mail Annex Station]";
-		mes "Ok then!";
+		mes "Ok entao!";
 		close;
 	}
 }
@@ -1129,22 +1129,22 @@ auction_03,152,16,0	warp	#mail_annex_warp	1,1,moc_para01,30,184
 
 auction_03,152,42,4	script	Kafra Employee#annex	117,{
 	mes "[Kafra Employee]";
-	mes "Welcome to the Kafra's Mail Annex Station. This is now the only place to send and retrieve mail.";
+	mes "Bem-vindo to o Kafra's Mail Annex Station. Este is agorum o apenas lugar to send e retrieve mail.";
 	next;
 	mes "[Kafra Employee]";
-	mes "What would you like to do?";
+	mes "What voce gostarium de like to do?";
 	next;
-	switch(select("Access Mail:Storage:Cancel")) {
+	switch(select("Access Mail:Armazem:Cancelar")) {
 	case 1:
 		if (Zeny < 130) {
 			mes "[Kafra Employee]";
-			mes "I am sorry, but you do not have enough money.";
-			mes "To use the mailbox service,";
-			mes "you are required to pay 130 zeny.";
+			mes "Eu sou desculpe, mas you do nao have suficiente dinheiro.";
+			mes "To usar o mailbox service,";
+			mes "you are required to pagar 130 zeny.";
 			close;
 		}
 		mes "[Kafra Employee]";
-		mes "Thank you for using the Kafra Service.";
+		mes "Obrigado fou usando o Kafrum Service.";
 		set Zeny, Zeny - 130;
 		close2;
 		openmail;
@@ -1154,7 +1154,7 @@ auction_03,152,42,4	script	Kafra Employee#annex	117,{
 		end;
 	case 3:
 		mes "[Kafra Employee]";
-		mes "Thank you for using the Kafra Service.";
+		mes "Obrigado fou usando o Kafrum Service.";
 		close;
 	}
 }
@@ -1168,17 +1168,17 @@ auction_03,145,47,2	shop	Tool Dealer#annex	83,611:-1,501:-1,502:-1,503:-1,506:-1
 moc_para01,179,27,3	script	Dark Luhir#new10	4_F_VALKYRIE2,{
 	disable_items;
 	mes "[Dark Luhir]";
-	mes "Hello~ I am giving away extra stats to those who have a Fallen Angel Wing item.";
+	mes "Ola~ Eu sou dando emborum extrum stats to esses who have um Fallen Angel Wing item.";
 	next;
 	if (getequipid(EQI_GARMENT) != 2589) {// Fallen_Angel_Wing
 		mes "[Dark Luhir]";
-		mes "Please ^0000ffwear your Fallen Angel Wing item first^000000, and then I will give you extra stats.";
+		mes "Pou favou ^0000ffwear seu Fallen Angel Wing item primeiro^000000, e entao Eu vou dar you extrum stats.";
 		close;
 	}
-	switch( select( "Cancel", "Enchant Fallen Angel Wing", "Reset Fallen Angel Wing Stats" ) ) {
+	switch( select( "Cancelar", "Enchant Fallen Angel Wing", "Reset Fallen Angel Wing Stats" ) ) {
 	case 1:
 		mes "[Dark Luhir]";
-		mes "Later then...";
+		mes "Later entao...";
 		close;
 	case 2:
 		.@refine = getequiprefinerycnt(EQI_GARMENT);
@@ -1188,23 +1188,23 @@ moc_para01,179,27,3	script	Dark Luhir#new10	4_F_VALKYRIE2,{
 			getequipcardid(EQI_GARMENT,2),
 			getequipcardid(EQI_GARMENT,3);
 		mes "[Dark Luhir]";
-		mes "Only 1 socket can get an extra stat when refine level is between 1~6.";
-		mes "If refine level is 7~8, it can receive stats for 2 sockets.";
-		mes "+9 can receive stats to all 3 sockets.";
+		mes "Apenas 1 socket cum pegar um extrum stat when refine nivel is entre 1~6.";
+		mes "Se refine nivel is 7~8, it cum receber stats fou 2 sockets.";
+		mes "+9 cum receber stats to todos 3 sockets.";
 		next;
 		mes "[Dark Luhir]";
 		if (.@refine < 7)
-			mes "This item's refine level is lower than 7. Only ^ff0000socket slot 4^000000 can receive extra stats.";
+			mes "Este item's refine nivel is lower que 7. Apenas ^ff0000socket slot 4^000000 cum receber extrum stats.";
 		else if (.@refine < 9)
-			mes "This item's refine level is between 7~8. ^ff0000Socket slot 3 and 4^000000 can receive extra stats.";
+			mes "Este item's refine nivel is entre 7~8. ^ff0000Socket slot 3 e 4^000000 cum receber extrum stats.";
 		else
-			mes "This item's refine level is more than 9. All 3 of ^ff0000Socket slot 2, 3 and 4^000000 can receive extra stats.";
-		mes "What kind of extra stats do you want?";
+			mes "Este item's refine nivel is mais que 9. Todos 3 of ^ff0000Socket slot 2, 3 e 4^000000 cum receber extrum stats.";
+		mes "What kind of extrum stats voce querer?";
 		next;
-		switch( select( "Let me get my gear on", "1.Fighting spirit", "2.Magic Attack", "3.Archery", "4.Critical", "5.MaxHP", "6.MaxSP", "7.Atk speed", "8.STR", "9.AGI", "10.VIT", "11.INT", "12.DEX", "13.LUK" ) ) {
+		switch( select( "Deixe-me pegar meu gear on", "1.Fighting espirito", "2.Magium Atacar", "3.Archery", "4.Critical", "5.MaxHP", "6.MaxSP", "7.Atk speed", "8.STR", "9.AGI", "10.VIT", "11.INT", "12.DEX", "13.LUK" ) ) {
 		case 1:
 			mes "[Dark Luhir]";
-			mes "Please come back after equipping your item.";
+			mes "Pou favou volte depois equipping seu item.";
 			close;
 		case 2:
 			setarray .@enchants[0],4809,4808,4820,4821;		// Fighting Spirit 3~5 / Fighting Spirit 6
@@ -1262,9 +1262,9 @@ moc_para01,179,27,3	script	Dark Luhir#new10	4_F_VALKYRIE2,{
 		mes "[Dark Luhir]";
 		mes .@string$ + " ^ff0000Given stats cannot be turned back.^000000 Do you want to proceed?";
 		next;
-		if (select( "1.Quit", "2.Yes, I want to try this." ) == 1) {
+		if (select( "1.Quit", "2.Yes, Eu quero to tentar this." ) == 1) {
 			mes "[Dark Luhir]";
-			mes "Later then...";
+			mes "Later entao...";
 			close;
 		}
 
@@ -1286,7 +1286,7 @@ moc_para01,179,27,3	script	Dark Luhir#new10	4_F_VALKYRIE2,{
 		}
 		else {
 			mes "[Dark Luhir]";
-			mes "It seems this item is already has max enchanting. Please bring another one for extra stats.";
+			mes "It parece este item is jum has max enchanting. Pou favou trazer outro one fou extrum stats.";
 			close;
 		}
 		specialeffect2 EF_REPAIRWEAPON;
@@ -1297,14 +1297,14 @@ moc_para01,179,27,3	script	Dark Luhir#new10	4_F_VALKYRIE2,{
 		close;
 	case 3:
 		mes "[Dark Luhir]";
-		mes "Stat reset of the Fallen Angel Wing will cost you 1,000,000 zeny?";
-		mes "Do you wish to proceed?";
+		mes "Stat reset of o Fallen Angel Wing will custo you 1,000,000 zeny?";
+		mes "Voce wish to proceed?";
 		next;
-		if (select( "Yes", "No thanks!" ) == 2)
+		if (select( "Sim", "No obrigado!" ) == 2)
 			close;
 		if (Zeny < 1000000) {
 			mes "[Dark Luhir]";
-			mes "You liar you don't have enough zeny!";
+			mes "You liar voce nao have suficiente zeny!";
 			close;
 		}
 		if (getequipid(EQI_GARMENT) == 2589) {

@@ -36,7 +36,7 @@ umbala,128,94,4	script	Adventurer#um	702,{
 		mes "[Adventurer]";
 		mes "So, which one do you want to check?";
 		next;
-		switch(select("Chief's House:Shaman's House:Weapon Shop:Tool Shop:Bungee Jump Place:Cancel")) {
+		switch(select("Chief's House:Shaman's House:Loja de Armas:Loja de Ferramentas:Bungee Jump Place:Cancelar")) {
 		case 1:
 			mes "[Adventurer]";
 			mes "I have made a ^FF3355+^000000 mark";

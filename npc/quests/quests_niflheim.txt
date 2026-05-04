@@ -185,7 +185,7 @@ OnTouch_:
 		mes "It looks very well-shaped.^000000";
 		next;
 		mes "^3355FFWould you like to pick it up?^000000";
-		if (select("Yes:No") == 1) {
+		if (select("Sim:Nao") == 1) {
 			if (nif_esc < 10)
 				set nif_esc,nif_esc+2;
 			else if (nif_esc == 10)
@@ -207,7 +207,7 @@ OnTouch_:
 		mes "It looks very well-shaped.^000000";
 		next;
 		mes "^3355FFWould you like to pick it up?^000000";
-		if (select("Yes:No") == 1) {
+		if (select("Sim:Nao") == 1) {
 			set nif_esc,nif_esc+2;
 			getitem 7184,1; //Piano_Keyboard
 		}
@@ -665,7 +665,7 @@ niflheim,153,215,3	script	Feylin	794,{
 					mes "10 Yggdrasil Leaf to cast this";
 					mes "spell. Do you wish to continue?";
 					next;
-					if (select("Yes:No") == 1) {
+					if (select("Sim:Nao") == 1) {
 						if (countitem(610) > 9) {
 							mes "[Feylin]";
 							mes "I see. Then we shall begin.";

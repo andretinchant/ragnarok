@@ -1193,7 +1193,7 @@ payon_in03,8,193,4	script	Nanhyang#1	77,{
 		mes "[Nanhyang]";
 		mes "If you give me ^0000FF1 'Model Training Hat'^000000 and ^0000FF1 'Arrow'^000000, I give you ^8C17171 'Apple of Archer'^000000 and ^8C17171 'Book'^000000. So, would you like to disassemble the items?";
 		next;
-		if (select("Disassemble:Cancel") == 1) {
+		if (select("Disassemble:Cancelar") == 1) {
 			mes "[Nanhyang]";
 			mes "Thank you.";
 			mes "It will not take that much time to make this hat, so please wait a moment.";
@@ -1239,7 +1239,7 @@ payon_in03,8,193,4	script	Nanhyang#1	77,{
 		mes "[Hanhyang]";
 		mes "So would you like to create the Model Training Hat right now?";
 		next;
-		if (select("Create:Cancel") == 1) {
+		if (select("Create:Cancelar") == 1) {
 			mes "[Nanhyang]";
 			emotion ET_OK;
 			mes "Thank you.";
@@ -1291,7 +1291,7 @@ payon_in03,8,193,4	script	Nanhyang#1	77,{
 	mes "Hello~";
 	mes "Welcome to the Handsome Charm Modeling School. May I help you?";
 	next;
-	if (select("I want to be a model~!:Cancel") == 1) {
+	if (select("I want to be a model~!:Cancelar") == 1) {
 		mes "[Nanhyang]";
 		mes "I see~";
 		mes "Although it's clear that you've got '^3355FFthe look^000000,' we can't accept any students at the moment.";
@@ -1931,7 +1931,7 @@ alde_alche,88,180,0	script	Muscle Man#Alarm Mask	748,{
 	specialeffect EF_CLAYMORE,AREA," #Alarm Mask Man4";
 	initnpctimer;
 	if (countitem(1095) > 2999 && countitem(2288) > 0) {
-		if (select("Give him items:Cancel") == 1) {
+		if (select("Give him items:Cancelar") == 1) {
 			mes "[Muscle Man]";
 			mes "Ooh... Finally!";
 			mes "You brought them!";
@@ -2103,7 +2103,7 @@ morocc,273,79,4	script	Educated Traveller	99,{
 		next;
 		mes "[Lee Hester]";
 		mes "Just remember...";
-		mes "If you give me any equipment compounded with cards or with upgrades, ^ff0000any upgraded abilities and cards in those items will be lost after I make something out of them.^000000 So, please keep that in mind.";
+		mes "If you give me any equipment compounded with cards or with upgrades, ^ff0000any upgraded abilities and cards in those items will be lost after I make something out deles.^000000 So, please keep that in mind.";
 		next;
 		switch(select("Drooping Cat:Smokie Leaf:Lazy Smokie:Blue Fish:That's... okay.")) {
 		case 1:
@@ -2525,7 +2525,7 @@ pay_dun03,48,84,4	script	Nine Tails#Kitsune Man	762,{
 		mes "[Nine Tails]";
 		mes "Oh! You finally brought what I've asked, human. Okay, now I can bring her back to life!";
 		next;
-		if (select("Give items:Cancel") == 1) {
+		if (select("Give items:Cancelar") == 1) {
 			delitem 1022,999; //Fox_Tail
 			getitem 5069,1; //Mask_Of_Fox
 			mes "[Nine Tails]";

@@ -1258,7 +1258,7 @@ que_ng,149,178,4	script	Lab Director	744,{
 		mes "disturb me.";
 		close;
 	}
-	switch(select(((BaseLevel > 67)?"Ask about 'Butcher'.":"")+":Ask about the 'Drifter'.:Cancel")) {
+	switch(select(((BaseLevel > 67)?"Ask about 'Butcher'.":"")+":Ask about the 'Drifter'.:Cancelar")) {
 	case 1:
 		mes "[N. A]";
 		mes "Ah, you heard the news";

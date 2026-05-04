@@ -22,7 +22,7 @@
 izlude,121,87,6	script	Guide#iz	105,{
 	cutin "prt_soldier",2;
 	mes "[Izlude Guide]";
-	mes "Welcome to Izlude,";
+	mes "Bem-vindo a Izlude,";
 	mes "Prontera's satellite city.";
 	mes "If you need any guidance";
 	mes "around Izlude, feel free";
@@ -30,29 +30,29 @@ izlude,121,87,6	script	Guide#iz	105,{
 	set .@loop1,1;
 	while(.@loop1) {
 		next;
-		switch(select("City Guide:Remove Marks from Mini-Map:Notice.:Cancel")) {
+		switch(select("City Guide:Remover Marcas do Mini-Mapa:Notice.:Cancelar")) {
 		case 1:
 			mes "[Izlude Guide]";
-			mes "Please select";
-			mes "a location from";
-			mes "the following menu.";
+			mes "Por favor selecione";
+			mes "um local do";
+			mes "menu a seguir.";
 			if (.@compass_check == 0) {
-				mes "Would you like me";
-				mes "to mark locations";
-				mes "on your Mini-Map?";
+				mes "Gostaria que eu";
+				mes "marcasse locais";
+				mes "no seu Mini-Mapa?";
 				next;
-				if (select("Yes:No") == 1) set .@compass_check,1;
+				if (select("Sim:Nao") == 1) set .@compass_check,1;
 			}
 			set .@loop2,1;
 			while(.@loop2) {
 				if (.@wait_button_chk == 0) set .@wait_button_chk,1;
 				else next;
 				
-				switch(select("^FF0000Swordman Association^000000:Swordman Hall:Arena:Izlude Marina:Weapon Shop:Tool Shop:Cancel")) {
+				switch(select("^FF0000Swordman Association^000000:Swordman Hall:Arena:Izlude Marina:Loja de Armas:Loja de Ferramentas:Cancelar")) {
 				case 1:
 					mes "[Izlude Guide]";
 					mes "The Swordman Association";
-					mes "is located on an island that is";
+					mes "esta localizado on an island that is";
 					mes "in west Izlude. If you're thinking of changing jobs to Swordman,";
 					mes "you should check it out.";
 					if (.@compass_check)
@@ -61,7 +61,7 @@ izlude,121,87,6	script	Guide#iz	105,{
 				case 2:
 					mes "[Izlude Guide]";
 					mes "The Swordman Hall";
-					mes "is located in the eastern";
+					mes "esta localizado in the eastern";
 					mes "island connected to Izlude.";
 					if (.@compass_check)
 						viewpoint 1,214,130,1,0x00FF00;
@@ -106,7 +106,7 @@ izlude,121,87,6	script	Guide#iz	105,{
 					mes "Marks from Mini-Map'' if you";
 					mes "no longer wish to have the";
 					mes "location marks displayed";
-					mes "on your Mini-Map.";
+					mes "no seu Mini-Mapa.";
 					set .@loop2,0;
 					break;
 				}

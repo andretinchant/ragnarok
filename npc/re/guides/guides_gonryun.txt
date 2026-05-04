@@ -18,7 +18,7 @@
 gonryun,163,60,4	script	Kunlun Guide#01gonryun	780,{
 	mes "[He Yuen Zhe]";
 	mes "Ni Hao!";
-	mes "Welcome to ^8B4513Kunlun^000000~";
+	mes "Bem-vindo a ^8B4513Kunlun^000000~";
 	mes "Take a walk around and experience";
 	mes "the ancient history and tradition";
 	mes "of our breath taking city.";
@@ -30,7 +30,7 @@ gonryun,163,60,4	script	Kunlun Guide#01gonryun	780,{
 	F_Navi("[He Yuen Zhe]");
 	while (1) {
 		next;
-		switch(select("[ Kafra Employee ]:[ Chief's Residence ]:[ Tool Dealer ]:[ Weapon Dealer ]:[ Armor Dealer ]:[ Wine Maker ]:[ Kunlun Envoy ]:Remove Marks from Mini-Map:Cancel")) {
+		switch(select("[ Kafra Employee ]:[ Chief's Residence ]:[ Tool Dealer ]:[ Weapon Dealer ]:[ Armor Dealer ]:[ Wine Maker ]:[ Kunlun Envoy ]:Remover Marcas do Mini-Mapa:Cancelar")) {
 		case 1:
 			callsub L_Mark, "^0000FFKafra Employee^000000";
 			viewpoint 1,159,122,0,0x0A82FF;
@@ -73,7 +73,7 @@ gonryun,163,60,4	script	Kunlun Guide#01gonryun	780,{
 			break;
 		case 9:
 			mes "[He Yuen Zhe]";
-			mes "Bon voyage!";
+			mes "Boa viagem!";
 			close;
 		}
 	}
@@ -81,8 +81,8 @@ gonryun,163,60,4	script	Kunlun Guide#01gonryun	780,{
 L_Mark:
 	mes "[He Yuen Zhe]";
 	mes "The "+getarg(0)+" is";
-	mes "marked on your mini-map.";
-	mes "Check your mini-map.";
+	mes "marked no seu mini-mapa.";
+	mes "Verifique seu mini-mapa.";
 	mes "Is there anything else I can do for you?";
 	return;
 }

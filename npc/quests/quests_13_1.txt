@@ -149,7 +149,7 @@ prontera,163,53,3	script	Promotional Staff#prt	100,{
 		mes "[Alliance Manager]";
 		mes "We shouldn't loose anything to them,";
 		mes "no way! We are not as powerful as";
-		mes "most of them.";
+		mes "most deles.";
 		next;
 		mes "[Alliance Manager]";
 		mes "We only have a strange dimensional";
@@ -374,7 +374,7 @@ aldebaran,127,138,3	script	Promotional Staff#alde	100,{
 			close;
 		}
 		mes "[Promotional Staff]";
-		mes "Hey! Let me know once you collect all of them.";
+		mes "Hey! Let me know once you collect all deles.";
 		mes "Don't disturb me anymore. I'm a busy man... What a waste.";
 		next;
 		mes "[Promotional Staff]";
@@ -3868,7 +3868,7 @@ mid_camp,188,254,3	script	Monster Scholar#ep13	883,{
 					next;
 					mes "["+strcharinfo(0)+"]";
 					mes "That's right!";
-					mes "I took care of them.";
+					mes "I took care deles.";
 					mes "It was easy, haha!";
 					next;
 					mes "[Rumis Block]";
@@ -4497,7 +4497,7 @@ mid_camp,240,270,3	script	Botanist#ep13	750,{
 			mes "A group of beautiful girls will welcome you. I hope you'll enjoy having a conversation with them. Maybe you'll get to understand the mystery of nature.";
 			next;
 			mes "[Botanist]";
-			mes "Yes, I only need... ^3131FF30^000000 of them.";
+			mes "Yes, I only need... ^3131FF30^000000 deles.";
 			set ep13_animal,5;
 			changequest 2149,2150;
 			close;
@@ -7607,7 +7607,7 @@ function Catwarp;
 		mes "Would you like to save your location?";
 		set ep13_yong1,3;
 		next;
-		switch(select("Save your location:Cancel")) {
+		switch(select("Save your location:Cancelar")) {
 		case 1:
 			savepoint "mid_camp",56,139,1,1;
 			mes "[Cat Paw Agent]";
@@ -7626,7 +7626,7 @@ function Catwarp;
 		mes "Cat Trading's available services are as followed.";
 		mes "For additional services, please consult Agent Gyaruk.";
 		next;
-		switch(select("Save your location:Cancel")) {
+		switch(select("Save your location:Cancelar")) {
 		case 1:
 			savepoint "mid_camp",56,139,1,1;
 			mes "[Cat Paw Agent]";
@@ -7645,7 +7645,7 @@ function Catwarp;
 		mes "Cat Trading's available services are as followed.";
 		mes "For additional services, please consult Agent Gyaruk.";
 		next;
-		switch(select("Save your location:Use Storage:Cancel")) {
+		switch(select("Save your location:Use Storage:Cancelar")) {
 		case 1:
 			savepoint "mid_camp",56,139,1,1;
 			mes "[Cat Paw Agent]";
@@ -7692,7 +7692,7 @@ function Catwarp;
 		mes "Cat Trading's available services are as followed.";
 		mes "For additional services, please consult Agent Gyaruk.";
 		next;
-		switch(select("Save your location:Use Storage:Use Cat Warp (Midgard):Cancel")) {
+		switch(select("Save your location:Use Storage:Use Cat Warp (Midgard):Cancelar")) {
 		case 1:
 			savepoint "mid_camp",56,139,1,1;
 			mes "[Cat Paw Agent]";
@@ -7736,20 +7736,20 @@ function Catwarp;
 			mes "Please remember, you can't come back easily once you move to Midgard.";
 			next;
 			if ((ep13_yong1 > 39) && (ep13_yong1 <= 49)) {
-				switch(select("Prontera -> 5500z:Cancel")) {
+				switch(select("Prontera -> 5500z:Cancelar")) {
 					case 1: Catwarp(5500,2);
 					case 2: break;
 				}
 			}
 			else if ((ep13_yong1 > 49) && (ep13_yong1 < 60)) {
-				switch(select("Alberta -> 5500z:Prontera -> 5500z:Cancel")) {
+				switch(select("Alberta -> 5500z:Prontera -> 5500z:Cancelar")) {
 					case 1: Catwarp(5500,1);
 					case 2: Catwarp(5500,2);
 					case 3: break;
 				}
 			}
 			else if ((ep13_yong1 > 59) && (ep13_yong1 < 70)) {
-				switch(select("Alberta -> 5025z:Prontera -> 5025z:Izlude -> 5025z:Cancel")) {
+				switch(select("Alberta -> 5025z:Prontera -> 5025z:Izlude -> 5025z:Cancelar")) {
 					case 1: Catwarp(5025,1);
 					case 2: Catwarp(5025,2);
 					case 3: Catwarp(5025,3);
@@ -7757,7 +7757,7 @@ function Catwarp;
 				}
 			}
 			else if ((ep13_yong1 > 69) && (ep13_yong1 < 80)) {
-				switch(select("Alberta -> 5025z:Prontera -> 5025z:Izlude -> 5025z:Geffen -> 5025z:Cancel")) {
+				switch(select("Alberta -> 5025z:Prontera -> 5025z:Izlude -> 5025z:Geffen -> 5025z:Cancelar")) {
 					case 1: Catwarp(5025,1);
 					case 2: Catwarp(5025,2);
 					case 3: Catwarp(5025,3);
@@ -7766,7 +7766,7 @@ function Catwarp;
 				}
 			}
 			else if ((ep13_yong1 > 79) && (ep13_yong1 < 90)) {
-				switch(select("Alberta -> 4765z:Prontera -> 4765z:Izlude -> 4765z:Geffen -> 4765z:Payon -> 4765z:Cancel")) {
+				switch(select("Alberta -> 4765z:Prontera -> 4765z:Izlude -> 4765z:Geffen -> 4765z:Payon -> 4765z:Cancelar")) {
 					case 1: Catwarp(4765,1);
 					case 2: Catwarp(4765,2);
 					case 3: Catwarp(4765,3);
@@ -7776,7 +7776,7 @@ function Catwarp;
 				}
 			}
 			else if ((ep13_yong1 > 89) && (ep13_yong1 < 100)) {
-				switch(select("Alberta -> 4765z:Prontera -> 4765z:Izlude -> 4765z:Geffen -> 4765z:Payon -> 4765z:Morocc -> 4765z:Cancel")) {
+				switch(select("Alberta -> 4765z:Prontera -> 4765z:Izlude -> 4765z:Geffen -> 4765z:Payon -> 4765z:Morocc -> 4765z:Cancelar")) {
 					case 1: Catwarp(4765,1);
 					case 2: Catwarp(4765,2);
 					case 3: Catwarp(4765,3);
@@ -7787,7 +7787,7 @@ function Catwarp;
 				}
 			}
 			else if (ep13_yong1 > 99) {
-				switch(select("Alberta -> 4590z:Prontera -> 4590z:Izlude -> 4590z:Geffen -> 4590z:Payon -> 4590z:Morocc -> 4590z:Al De Baran -> 4590z:Cancel")) {
+				switch(select("Alberta -> 4590z:Prontera -> 4590z:Izlude -> 4590z:Geffen -> 4590z:Payon -> 4590z:Morocc -> 4590z:Al De Baran -> 4590z:Cancelar")) {
 					case 1: Catwarp(4590,1);
 					case 2: Catwarp(4590,2);
 					case 3: Catwarp(4590,3);
@@ -7814,7 +7814,7 @@ function Catwarp;
 		mes "Cat Trading's available services are as followed.";
 		mes "For additional services, please consult Agent Gyaruk.";
 		next;
-		switch(select("Save your location:Use Storage:Use Cat Warp (Midgard):Use Cat Warp (Jottunheim):Cancel")) {
+		switch(select("Save your location:Use Storage:Use Cat Warp (Midgard):Use Cat Warp (Jottunheim):Cancelar")) {
 		case 1:
 			savepoint "mid_camp",56,139,1,1;
 			mes "[Cat Paw Agent]";
@@ -7858,7 +7858,7 @@ function Catwarp;
 			mes "Please remember, you can't come back easily once you move to Midgard.";
 			next;
 			if ((ep13_yong1 > 99) && (ep13_yong1 < 200)) {
-				switch(select("Alberta -> 4590z:Prontera -> 4590z:Izlude -> 4590z:Geffen -> 4590z:Payon -> 4590z:Morocc -> 4590z:Al De Baran -> 4590z:Cancel")) {
+				switch(select("Alberta -> 4590z:Prontera -> 4590z:Izlude -> 4590z:Geffen -> 4590z:Payon -> 4590z:Morocc -> 4590z:Al De Baran -> 4590z:Cancelar")) {
 					case 1: Catwarp(4590,1);
 					case 2: Catwarp(4590,2);
 					case 3: Catwarp(4590,3);
@@ -7870,7 +7870,7 @@ function Catwarp;
 				}
 			}
 			else if ((ep13_yong1 > 199) && (ep13_yong1 < 250)) {
-				switch(select("Alberta -> 4170z:Prontera -> 4170z:Izlude -> 4170z:Geffen -> 4170z:Payon -> 4170z:Morocc -> 4170z:Al De Baran -> 4170z:Juno -> 4170z:Cancel")) {
+				switch(select("Alberta -> 4170z:Prontera -> 4170z:Izlude -> 4170z:Geffen -> 4170z:Payon -> 4170z:Morocc -> 4170z:Al De Baran -> 4170z:Juno -> 4170z:Cancelar")) {
 					case 1: Catwarp(4170,1);
 					case 2: Catwarp(4170,2);
 					case 3: Catwarp(4170,3);
@@ -7883,7 +7883,7 @@ function Catwarp;
 				}
 			}
 			else if ((ep13_yong1 > 249) && (ep13_yong1 < 300)) {
-				switch(select("Alberta -> 4025z:Prontera -> 4025z:Izlude -> 4025z:Geffen -> 4025z:Payon -> 4025z:Morocc -> 4025z:Al De Baran -> 4025z:Juno -> 4025z:Einbroch -> 4025z:Cancel")) {
+				switch(select("Alberta -> 4025z:Prontera -> 4025z:Izlude -> 4025z:Geffen -> 4025z:Payon -> 4025z:Morocc -> 4025z:Al De Baran -> 4025z:Juno -> 4025z:Einbroch -> 4025z:Cancelar")) {
 					case 1: Catwarp(4025,1);
 					case 2: Catwarp(4025,2);
 					case 3: Catwarp(4025,3);
@@ -7897,7 +7897,7 @@ function Catwarp;
 				}
 			}
 			else if (ep13_yong1 > 299) {
-				switch(select("Alberta -> 3970z:Prontera -> 3970z:Izlude -> 3970z:Geffen -> 3970z:Payon -> 3970z:Morocc -> 3970z:Al De Baran -> 3970z:Juno -> 3970z:Einbroch -> 3970z:Lighthalzen -> 3970z:Cancel")) {
+				switch(select("Alberta -> 3970z:Prontera -> 3970z:Izlude -> 3970z:Geffen -> 3970z:Payon -> 3970z:Morocc -> 3970z:Al De Baran -> 3970z:Juno -> 3970z:Einbroch -> 3970z:Lighthalzen -> 3970z:Cancelar")) {
 					case 1: Catwarp(3970,1);
 					case 2: Catwarp(3970,2);
 					case 3: Catwarp(3970,3);
@@ -7917,7 +7917,7 @@ function Catwarp;
 			}
 			close;
 		case 4:
-			switch(select("Splendide Camp -> 5500z:Manuk Camp -> 5500z:Cancel")) {
+			switch(select("Splendide Camp -> 5500z:Manuk Camp -> 5500z:Cancelar")) {
 				case 1: Catwarp(5500,11);
 				case 2: Catwarp(5500,12);
 				case 3:

@@ -174,7 +174,7 @@ geffen,122,77,4	script	Nia#yagu	700,{
 	mes "how would you like to play a";
 	mes "Number Match game with me?";
 	next;
-	switch(select("Number Match Game?:Practice Number Match:Play Number Match:Record Holder:Cancel")) {
+	switch(select("Number Match Game?:Practice Number Match:Play Number Match:Record Holder:Cancelar")) {
 	case 1:
 		mes "[Nia]";
 		mes "Ah, well, the objective of";

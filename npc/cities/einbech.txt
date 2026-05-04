@@ -28,7 +28,7 @@
 
 einbech,172,113,4	script	Nemuk#ein	855,{
 	mes "[Nemuk]";
-	mes "You seem to be an";
+	mes "Voce parece ser um";
 	mes "outsider, so let me";
 	mes "ask you something.";
 	mes "What do you think ";
@@ -46,13 +46,13 @@ einbech,172,113,4	script	Nemuk#ein	855,{
 		mes "[Nemuk]";
 		mes "It's been ten years since";
 		mes "I've started to think about";
-		mes "moving out. However, I'm still";
+		mes "moving out. Porem, I'm still";
 		mes "debating it. Now, if I were rich, I'd leave in no time, but it's hard getting the money to move out.";
 		next;
 		mes "[Nemuk]";
 		mes "^333333*Sigh...*^000000";
 		mes "Maybe if I had been";
-		mes "an adventurer when I was";
+		mes "an aventureiro when I was";
 		mes "younger, I wouldn't have";
 		mes "these problems today...";
 		close;
@@ -84,25 +84,25 @@ einbech,172,113,4	script	Nemuk#ein	855,{
 einbech,197,139,4	script	Young Man#air2	855,{
 	mes "[Heinz]";
 	mes "Wow...";
-	mes "An adventurer from";
+	mes "An aventureiro from";
 	mes "Rune-Midgarts, eh?";
-	mes "What brings you here?";
+	mes "O que te traz aqui?";
 	next;
 	mes "[Heinz]";
 	mes "Einbech doesn't offer much";
 	mes "in terms of sight-seeing, but";
 	mes "have you come to see the mine?";
 	mes "Right now, it's swarming with";
-	mes "monsters and we can't dig any";
-	mes "ores because it's so dangerous.";
+	mes "monstros and we can't dig any";
+	mes "ores because it's so perigoso.";
 	next;
 	mes "[Heinz]";
-	mes "Now, if some adventurers were";
+	mes "Now, if some aventureiros were";
 	mes "generous enough to hunt down";
 	mes "those evil creatures, we'd be able to mine again and they could earn some extra zeny. It's like killing two birds with one stone. Hahaha!";
 	next;
 	mes "[Heinz]";
-	mes "Oh wait... I'm sorry.";
+	mes "Oh wait... Sinto muito.";
 	mes "I don't know what's wrong";
 	mes "with me, asking complete";
 	mes "strangers to do favors for";
@@ -118,7 +118,7 @@ einbech,197,139,4	script	Young Man#air2	855,{
 
 einbech,128,238,5	script	Mogan#ein	848,{
 	mes "[Mogan]";
-	mes "Recently, there were a few";
+	mes "Recentemente, there were a few";
 	mes "cave-ins where many miners";
 	mes "were injured. It was discussed";
 	mes "in the Town Council and in my";
@@ -134,7 +134,7 @@ einbech,128,238,5	script	Mogan#ein	848,{
 	mes "future. There's no telling...";
 	next;
 	mes "[Mogan]";
-	mes "Adventurer, be careful";
+	mes "Aventureiro, tome cuidado";
 	mes "if you travel inside the";
 	mes "mines, lest your footsteps";
 	mes "disturb Ungoliant's slumber.";
@@ -174,7 +174,7 @@ einbech,105,218,5	script	Gushenmu#ein	848,{
 	next;
 	mes "[Gushenmu]";
 	mes "For lots of different reasons,";
-	mes "the work is more dangerous";
+	mes "the work is more perigoso";
 	mes "and we're running real low on";
 	mes "manpower. And the factories in";
 	mes "Einbroch make so much smog,";
@@ -191,7 +191,7 @@ einbech,105,218,5	script	Gushenmu#ein	848,{
 	mes "And as Einbech and Einbroch";
 	mes "have grown, I hear more and";
 	mes "more rumors that unfamiliar";
-	mes "monsters are beginning to";
+	mes "monstros are beginning to";
 	mes "swarm outside of town. This";
 	mes "is really Einbech's worst time...";
 	close;
@@ -199,18 +199,18 @@ einbech,105,218,5	script	Gushenmu#ein	848,{
 
 einbech,39,215,5	script	Train Station Staff#ein3	852,{
 	mes "[Staff]";
-	mes "Welcome to";
-	mes "the Train Station.";
+	mes "Bem-vindo a";
+	mes "the Estacao de Trem.";
 	mes "The fare to take the";
 	mes "train to Einbroch is";
 	mes "200 zeny. Would";
 	mes "you like to ride?";
 	next;
-	switch(select("Yes.:No.")) {
+	switch(select("Sim.:Nao.")) {
 	case 1:
 		if (Zeny > 199) {
 			mes "[Staff]";
-			mes "Thank you and";
+			mes "Obrigado and";
 			mes "we hope you enjoy";
 			mes "the ride. All aboard!";
 			close2;
@@ -220,7 +220,7 @@ einbech,39,215,5	script	Train Station Staff#ein3	852,{
 		}
 		else {
 			mes "[Staff]";
-			mes "I'm sorry,";
+			mes "Sinto muito,";
 			mes "but you don't";
 			mes "have enough zeny";
 			mes "to pay the train fare.";
@@ -360,51 +360,51 @@ einbech,130,253,1	script	Ekuri#ein	848,{
 
 einbech,135,250,5	script	Bulletin Board#einbech11	858,{
 	mes " ";
-	mes " Mine Dungeon Entrance ";
+	mes " Entrada da Masmorra da Mina ";
 	mes " ";
 	close;
 }
 
 einbech,90,214,5	script	Bulletin Board#einbech22	858,{
 	mes " ";
-	mes " Train Station ";
+	mes " Estacao de Trem ";
 	mes " ";
 	close;
 }
 
 einbech,158,189,4	script	Bulletin Board#einbech33	858,{
 	mes " ";
-	mes " Freight Train Station ";
+	mes " Freight Estacao de Trem ";
 	mes " ";
 	close;
 }
 
 einbech,180,136,5	script	Bulletin Board#einbech44	858,{
 	mes " ";
-	mes " Tool Shop ";
+	mes " Loja de Ferramentas ";
 	mes " ";
 	close;
 }
 
 einbech,133,114,5	script	Bulletin Board#einbech55	858,{
 	mes " ";
-	mes " Tavern ";
+	mes " Taberna ";
 	mes " ";
 	close;
 }
 
 einbech,77,105,5	script	Bulletin Board#einbech01	858,{
-	mes "Welcome to 'Einbech'.";
+	mes "Bem-vindo a 'Einbech'.";
 	next;
-	mes "East - Tavern, Tool Shop";
-	mes "North - Train Station, Mine Dungeon";
+	mes "Leste - Taberna, Loja de Ferramentas";
+	mes "Norte - Estacao de Trem, Masmorra da Mina";
 	close;
 }
 
 einbech,181,127,5	script	Bulletin Board#einbech03	858,{
-	mes "Northwest - Train Station";
-	mes "South - Tavern";
-	mes "North - Tool Shop, Mine Dungeon";
+	mes "Noroeste - Estacao de Trem";
+	mes "Sul - Taberna";
+	mes "Norte - Loja de Ferramentas, Masmorra da Mina";
 	close;
 }
 
@@ -465,11 +465,11 @@ ein_in01,277,95,7	script	Ryan Danger#air#einbech	855,{
 	mes "I've ever seen!)^000000";
 	next;
 	mes "[R.D. Kim]";
-	mes "Hm? No...?";
+	mes "Hm? Nao...?";
 	mes "Absolutely no?";
 	mes "Are you sure?";
 	mes "Alright, alright.";
-	mes "I'm sorry, I apologize.";
+	mes "Sinto muito, I apologize.";
 	mes "I was totally out of line.";
 	next;
 	mes "[R.D. Kim]";
@@ -523,13 +523,13 @@ einbech,46,107,6	script	Shena#ein::EinMonsters	846,{
 			mes "Perhaps my eyes are";
 			mes "getting bad in my old";
 			mes "age. Getting harder to";
-			mes "tell the difference nowadays...";
+			mes "tell the difference hoje em dia...";
 			next;
 		}
 		mes "[Shena]";
 		mes "Anyway, me and Luda";
 		mes "were just having a little";
-		mes "chat about all the monsters";
+		mes "chat about all the monstros";
 		mes "near Einbroch. Apparently,";
 		mes "you youngsters don't know as";
 		mes "much about them as you should.";
@@ -539,7 +539,7 @@ einbech,46,107,6	script	Shena#ein::EinMonsters	846,{
 		mes "business, you should";
 		mes "know what you're up against.";
 		mes "Did you have any questions";
-		mes "about the monsters around";
+		mes "about the monstros around";
 		mes "here, young lady?";
 		next;
 		if (Sex == SEX_MALE) {
@@ -554,13 +554,13 @@ einbech,46,107,6	script	Shena#ein::EinMonsters	846,{
 			next;
 			mes "[Shena]";
 			mes "So dearie,";
-			mes "which monster";
+			mes "which monstro";
 			mes "would you like";
 			mes "to hear about?";
 			next;
 		}
 		while(1) {
-			switch(select("Metalling:Mineral:Pit Man:Old Stove:Quit")) {
+			switch(select("Metalling:Mineral:Pit Man:Old Stove:Sair")) {
 			case 1:
 				mes "[Shena]";
 				mes "Well, the Metallings";
@@ -615,7 +615,7 @@ einbech,46,107,6	script	Shena#ein::EinMonsters	846,{
 				mes "growing for thousands of";
 				mes "years, it would make sense";
 				mes "if it were actually alive. Now,";
-				mes "Mineral monsters are actually living stalactites.";
+				mes "Mineral monstros are actually living stalactites.";
 				next;
 				mes "[Shena]";
 				mes "It's rumored that they";
@@ -630,7 +630,7 @@ einbech,46,107,6	script	Shena#ein::EinMonsters	846,{
 				next;
 				mes "[Shena]";
 				mes "Are there any";
-				mes "other monsters";
+				mes "other monstros";
 				mes "around here that";
 				mes "you'd want to learn";
 				mes "more about?";
@@ -656,7 +656,7 @@ einbech,46,107,6	script	Shena#ein::EinMonsters	846,{
 				mes "Did you want";
 				mes "to ask me about";
 				mes "any other of the";
-				mes "local monsters?";
+				mes "local monstros?";
 				next;
 				break;
 			case 4:
@@ -671,7 +671,7 @@ einbech,46,107,6	script	Shena#ein::EinMonsters	846,{
 					mes "of recycling and preserving our";
 					mes "natural resources, right? Now,";
 					mes "it would do my heart good if you were to recycle the scrap iron";
-					mes "from those Old Stove monsters.";
+					mes "from those Old Stove monstros.";
 					next;
 					mes "[Shena]";
 					mes "Old Stoves will usually";
@@ -681,7 +681,7 @@ einbech,46,107,6	script	Shena#ein::EinMonsters	846,{
 					break;
 				case 2:
 					mes "[Shena]";
-					mes "Yes. God's creation,";
+					mes "Sim. God's creation,";
 					mes "that creature is cruel";
 					mes "and merciless, perhaps";
 					mes "a symbol of purest evil";
@@ -717,7 +717,7 @@ einbech,46,107,6	script	Shena#ein::EinMonsters	846,{
 				break;
 			case 5:
 				mes "[Shena]";
-				mes "Alright then.";
+				mes "Certo entao.";
 				mes "Have a good";
 				mes "day, young lady.";
 				next;
@@ -726,8 +726,8 @@ einbech,46,107,6	script	Shena#ein::EinMonsters	846,{
 				mes "mother! She can be";
 				mes "overly friendly, I suppose.";
 				mes "But if you're bored, please";
-				mes "feel free to visit. Be safe";
-				mes "on your travels, adventurer~";
+				mes "fique a vontade para visit. Be safe";
+				mes "on your travels, aventureiro~";
 				close;
 			}
 		}
@@ -756,15 +756,15 @@ einbech,148,242,5	script	Jung#ein	855,{
 	next;
 	mes "[Jung]";
 	mes "Say, if you're thinking of";
-	mes "entering the Mine Dungeon,";
+	mes "entering the Masmorra da Mina,";
 	mes "I can tell you all I know about";
-	mes "the monsters in that place so";
+	mes "the monstros in that place so";
 	mes "that you'll be better prepared.";
 	next;
-	switch(select("Sure, why not?:No, thanks.")) {
+	switch(select("Sure, why not?:Nao, obrigado.")) {
 	case 1:
 		mes "[Jung]";
-		mes "Let's see. Ah, the monsters that are unique to the Mine Dungeon";
+		mes "Let's see. Ah, the monstros that are unique to the Masmorra da Mina";
 		mes "are Noxious, Venomous, Pollcellio and Obsidian. Which one do you";
 		mes "want to know more about?";
 		next;
@@ -780,14 +780,14 @@ einbech,148,242,5	script	Jung#ein	855,{
 			next;
 			mes "[Jung]";
 			mes "Now that I think about it,";
-			mes "I don't think they're naturally created monsters. They have";
+			mes "I don't think they're naturally created monstros. They have";
 			mes "this fixed look of despair and";
 			mes "suffering and tend to act like they want their enemies to kill them.";
 			next;
 			mes "[Jung]";
-			mes "Still, you'd better be careful!";
+			mes "Still, you'd better tome cuidado!";
 			mes "careful! Noxious and Venomous";
-			mes "are stealthy monsters that can";
+			mes "are stealthy monstros that can";
 			mes "glide quietly through the air";
 			mes "and attack you before";
 			mes "you even notice...";
@@ -797,7 +797,7 @@ einbech,148,242,5	script	Jung#ein	855,{
 			mes "Noxious is Ghost property";
 			mes "and Venomous is Poison.";
 			mes "Both are medium sized,";
-			mes "formless monsters.";
+			mes "formless monstros.";
 			next;
 			mes "[Jung]";
 			mes "Both of them drop Apple,";
@@ -807,10 +807,10 @@ einbech,148,242,5	script	Jung#ein	855,{
 			next;
 			mes "[Jung]";
 			mes "That's all for now.";
-			mes "Feel free to ask me";
+			mes "Fique a vontade para ask me";
 			mes "if you have any questions";
-			mes "about monsters in the Mine";
-			mes "Dungeon. Be safe, adventurer.";
+			mes "about monstros in the Mine";
+			mes "Dungeon. Be safe, aventureiro.";
 			close;
 		case 2:
 			mes "[Jung]";
@@ -830,15 +830,15 @@ einbech,148,242,5	script	Jung#ein	855,{
 			next;
 			mes "[Jung]";
 			mes "Lastly, Pollcellio is an";
-			mes "Earth property monster.";
+			mes "Earth property monstro.";
 			mes "That's all I know about it.";
 			mes "But if you want to know more";
-			mes "about some other monster in the";
-			mes "Mine Dungeon, feel free to ask.";
+			mes "about some other monstro in the";
+			mes "Masmorra da Mina, fique a vontade para ask.";
 			close;
 		case 3:
 			mes "[Jung]";
-			mes "Do you know about the";
+			mes "Voce sabe about the";
 			mes "belief that underground";
 			mes "minerals that contain huge";
 			mes "amounts of energy actually";
@@ -850,7 +850,7 @@ einbech,148,242,5	script	Jung#ein	855,{
 			next;
 			mes "[Jung]";
 			mes "Obsidian is a small,";
-			mes "shapeless monster that";
+			mes "shapeless monstro that";
 			mes "drops Clear Jewel, Piece of";
 			mes "Black Crystal, Coal, Elunium,";
 			mes "Iron and Steel.";
@@ -858,8 +858,8 @@ einbech,148,242,5	script	Jung#ein	855,{
 			mes "[Jung]";
 			mes "That's all for Obsidian.";
 			mes "If you have any questions";
-			mes "about other monsters living";
-			mes "in the Mine Dungeon, feel";
+			mes "about other monstros living";
+			mes "in the Masmorra da Mina, feel";
 			mes "free to ask me.";
 			close;
 		}
@@ -873,7 +873,7 @@ einbech,148,242,5	script	Jung#ein	855,{
 		mes "entering any dungeons.";
 		next;
 		mes "[Jung]";
-		mes "Alright then,";
+		mes "Certo entao,";
 		mes "be safe on your";
 		mes "adventures, alright?";
 		close;
@@ -890,20 +890,20 @@ einbech,148,246,5	script	Franz#ein	851,{
 	mes "[Franz]";
 	mes "Hey, a traveler!";
 	mes "Are you planning to explore";
-	mes "the Mine Dungeon or the fields";
+	mes "the Masmorra da Mina or the fields";
 	mes "around here? Let's chat for a bit and maybe you'll learn something.";
 	next;
-	switch(select("Okay, fine.:No, thanks.")) {
+	switch(select("Okay, fine.:Nao, obrigado.")) {
 	case 1:
 		mes "[Franz]";
 		mes "Ooh, have you heard";
 		mes "about the creature in the";
-		mes "Mine Dungeon or what's";
-		mes "happened in town recently?";
+		mes "Masmorra da Mina or what's";
+		mes "happened in town recentemente?";
 		mes "Which would you like to";
 		mes "know more about?";
 		next;
-		switch(select("Creature of Mine Dungeon:Town Incident")) {
+		switch(select("Creature of Masmorra da Mina:Town Incident")) {
 		case 1:
 			mes "[Franz]";
 			mes "The creature I'm talking about is Ungoliant, which also called the Master of the Caves around here.";
@@ -941,7 +941,7 @@ einbech,148,246,5	script	Franz#ein	851,{
 			mes "to anyone entering the mines.";
 			next;
 			mes "[Franz]";
-			mes "Now, an adventurer that";
+			mes "Now, an aventureiro that";
 			mes "managed to kill an Ungoliant";
 			mes "has told me that it drops Ant's";
 			mes "Jaw, Colorful Shell, Very Hard";
@@ -952,8 +952,8 @@ einbech,148,246,5	script	Franz#ein	851,{
 			mes "[Franz]";
 			mes "In Einbroch, there was";
 			mes "a short lived teddy bear";
-			mes "fad. However, a series of";
-			mes "mysterious accidents and";
+			mes "fad. Porem, a series of";
+			mes "misterioso accidents and";
 			mes "murders where entire families";
 			mes "were killed also occurred.";
 			next;
@@ -989,12 +989,12 @@ einbech,148,246,5	script	Franz#ein	851,{
 			mes "Now those aggressive teddy";
 			mes "bears are scattered all over";
 			mes "the place and the government";
-			mes "has classified them as monsters. Kill with extreme prejudice!";
+			mes "has classified them as monstros. Kill with extreme prejudice!";
 			next;
 			mes "[Franz]";
-			mes "According to adventurers";
+			mes "According to aventureiros";
 			mes "who have caught these bears,";
-			mes "they're small, neutral monsters";
+			mes "they're small, neutral monstros";
 			mes "which drop Honey, Screw, Well-baked Cookie and Oridecon Hammer.";
 			next;
 			mes "[Franz]";
@@ -1019,7 +1019,7 @@ einbech,148,246,5	script	Franz#ein	851,{
 		mes "I...";
 		mes "I've got stuff";
 		mes "I should be working";
-		mes "on. Yes. So very busy.";
+		mes "on. Sim. So very busy.";
 		close;
 	}
 }

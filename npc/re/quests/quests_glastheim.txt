@@ -13,29 +13,29 @@
 
 glast_01,195,273,3	script	Hugin's follower#1	2_F_MAGICMASTER,{
 	mes "[Hugin's Follower]";
-	mes "I can't move between time and dimensions like master Hugin but I can pretend to.";
+	mes "Eu nao consigo mover entre tempo e dimensions like master Hugin mas Eu consigo pretend to.";
 	next;
 	mes "[Hugin's Follower]";
-	mes "What's causing this Glast Heim to be imbued with such a powerful dark force?";
+	mes "O que e causing este Glast Heim to be imbued com such um poderoentao escuro force?";
 	next;
-	if( select( "I don't care:That is interesting, please tell me more" ) == 2 ){
+	if( select( "Eu nao care:Esse is interesting, pou favou me digum mais" ) == 2 ){
 		mes "[Hugin's Follower]";
-		mes "Thanks to Hugin, I found the way to access this Old Glast Heim, which is imbued by such powerful dark forces.";
+		mes "Obrigado to Hugin, I encontrou o caminho to access este Velho Glast Heim, which is imbued by such poderoentao escuro forces.";
 		next;
 		mes "[Hugin's Follower]";
-		mes "What do you say? Do you want to explore there?";
+		mes "O que you dizer? Do voce quer to explorar la?";
 		next;
-		if( select( "No exploration for me:I really want to explore!" ) == 2 ){
+		if( select( "No exploration fou me:I realmente querer to explorar!" ) == 2 ){
 			mes "[Hugin's Follower]";
-			mes "Sure, but this is not a free service! I have to get something in return. Hoho...";
+			mes "Sure, mas este is nao um gratis service! Eu tenho to pegar algo in retornar. Hoho...";
 			next;
 			mes "[Hugin's Follower]";
-			mes "I can send you to two places. Which place would you like me to send you?";
+			mes "Eu consigo send you to two places. Which lugar voce gostarium de like me to send you?";
 			next;
-			switch( select( "Cancel:Monastery Cemetery (Lv100~130) - 5000z:2nd floor Corridor (Over Lv140) - 10000z" ) ){
+			switch( select( "Cancel:Monastery Cemetery (Lv100~130) - 5000z:2nd floou Corridou (Over Lv140) - 10000z" ) ){
 				case 1:
 					mes "[Hugin's Follower]";
-					mes "Alright, please come back whenever you change your mind. I think you will have lots to talk with me about...";
+					mes "Alright, pou favou volte whenever you mudar seu mente. Eu acho you will have lots to conversar com me sobre...";
 					close;
 				case 2:
 					.@map$ = "gl_chyard_";
@@ -52,7 +52,7 @@ glast_01,195,273,3	script	Hugin's follower#1	2_F_MAGICMASTER,{
 			}
 			if( Zeny < .@zeny ){
 				mes "[Hugin's Follower]";
-				mes "What? Did you expect this service for free?";
+				mes "What? Voce expect este service fou gratis?";
 				close;
 			}
 			Zeny -= .@zeny;
@@ -61,18 +61,18 @@ glast_01,195,273,3	script	Hugin's follower#1	2_F_MAGICMASTER,{
 		}
 	}
 	mes "[Hugin's Follower]";
-	mes "Well, if you are not interested in it, never mind.";
+	mes "Bem, se you are nao interessado in it, nuncum mente.";
 	close;
 }
 
 gl_chyard_,148,149,4	script	Hugin's Follower#n_gh1	123,{
 	mes "[Hugin's Follower]";
-	mes "You want to return?";
-	mes "Ok, let's get out of here.";
+	mes "Voce quer to retornar?";
+	mes "Ok, vamos saium of aqui.";
 	next;
-	if( select( "I didn't mean to talk to you:Please get me out of here" ) == 1 ){
+	if( select( "I nao significum to conversar to you:Pou favou pegar me out of aqui" ) == 1 ){
 		mes "[Hugin's Follower]";
-		mes "Alright, just tell me whenever you want to leave.";
+		mes "Alright, apenas me digum whenever voce quer to sair.";
 		close;
 	}
 	warp "glast_01", 210, 269;

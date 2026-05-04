@@ -1,38 +1,38 @@
-//===== rAthena Script ======================================= 
+//===== rAthena Script =======================================
 //= Emperium Seller
-//===== By: ================================================== 
+//===== By: ==================================================
 //= Pokye
-//===== Current Version: ===================================== 
+//===== Current Version: =====================================
 //= 1.0
-//===== Compatible With: ===================================== 
+//===== Compatible With: =====================================
 //= rAthena Project
-//===== Description: ========================================= 
+//===== Description: =========================================
 //= Sell Emperium
-//===== Additional Comments: ================================= 
+//===== Additional Comments: =================================
 //= 1.0 Special thanks for Balfear and Everade
-//============================================================ 
+//============================================================
 
 prt_in,212,169,3	script	Guild Clerk	4_M_04,{
 	if (gettime(DT_DAYOFWEEK) >= 1 && gettime(DT_DAYOFWEEK) <= 6 && gettime(DT_HOUR) >= 18 && gettime(DT_HOUR) <= 23) {
 		mes "[Guild Clerk]";
-		mes "The Emperium to be distributed to the guild office today has arrived. If you want to purchase, please put as many as you want~";
+		mes "O Emperium a ser distribuido para o escritorio da guilda hoje chegou. Se voce quiser comprar, pegue quantos quiser~";
 		next;
 		mes "[Guild Clerk]";
-		mes "It seems that many people are looking for Emperium today. It's just a personal feeling.";
-		close2;                                                                                                         
+		mes "Parece que muitas pessoas estao procurando Emperium hoje. E so uma sensacao pessoal.";
+		close2;
 		callshop "emp_seller#slo";
 		end;
 	}
 	mes "[Guild Clerk]";
-	mes "Our guild office actively supports the smooth gathering of adventurers.";
+	mes "Nosso escritorio da guilda apoia ativamente a reuniao tranquila dos aventureiros.";
 	next;
 	mes "[Guild Clerk]";
-	mes "As part of that,";
-	mes "we are selling a limited quantity of 100 " + mesitemlink( 714, false ) + " every day";
-	mes "from ^0000ff18:00 to 23:59^000000 from ^0000ffMonday to Saturday^000000.";
+	mes "Como parte disso,";
+	mes "estamos vendendo uma quantidade limitada de 100 " + mesitemlink( 714, false ) + " todos os dias";
+	mes "das ^0000ff18:00 as 23:59^000000 de ^0000ffSegunda a Sabado^000000.";
 	next;
 	mes "[Guild Clerk]";
-	mes "Please note that our guild office does not sell all the time because we have to run around to supply Emperium outside of the hours.";
+	mes "Por favor, note que nosso escritorio da guilda nao vende o tempo todo porque temos que correr para reabastecer Emperium fora do horario.";
 	close;
 
 OnHour00:

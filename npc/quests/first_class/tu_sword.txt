@@ -1111,7 +1111,7 @@ geffen,154,143,3	script	Dequ'ee	734,{
 		}
 		mes "[Dequ'ee]";
 		mes "I get it now!";
-		mes "This is a complex transposition cipher in which we remove one person's code from the rest of them. So who do you think is";
+		mes "This is a complex transposition cipher in which we remove one person's code from the rest deles. So who do you think is";
 		mes "the murderer?";
 		next;
 		switch(select("Hans:Bankley:Geil:Muetro")) {

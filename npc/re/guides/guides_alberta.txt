@@ -17,23 +17,23 @@
 alberta,23,238,4	script	Guide#01alberta::AlbertaGuide	105,{
 	cutin "prt_soldier",2;
 	mes "[Alberta Guide]";
-	mes "Welcome to ^8B4513Alberta^000000,";
+	mes "Bem-vindo a ^8B4513Alberta^000000,";
 	mes "the Port City.";
-	mes "Do you need help navigating the city?";
+	mes "Precisa de ajuda para navegar pela cidade?";
 	F_Navi("[Alberta Guide]");
 	next;
-	set .@str$,"Would you like to check any other locations?";
+	set .@str$,"Gostaria de verificar outros locais?";
 	while (1) {
-		switch(select("[ Main Facilities ]:[ Merchants & Helpers ]:[ Destination Ports ]:Remove Marks from Mini-Map:Cancel")) {
+		switch(select("[ Main Facilities ]:[ Comerciantes e Ajudantes ]:[ Destination Ports ]:Remover Marcas do Mini-Mapa:Cancelar")) {
 		case 1:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ Tool Shop ]:[ Forge ]:[ Weapon & Armor Shop ]:[ Inn ]:[ Beauty Salon ]:[ Merchant Guild ]:Previous Menu")) {
+				switch(select("[ Tool Shop ]:[ Forge ]:[ Weapon & Armor Shop ]:[ Inn ]:[ Beauty Salon ]:[ Merchant Guild ]:Menu Anterior")) {
 				case 1:
 					mes "[Alberta Guide]";
-					mes "Let me mark the location of the";
-					mes "the "+F_Navi("Tool Shop","alberta,98,154","^0000FF");
-					mes "on your mini-map.";
+					mes "Deixe-me marcar the location of the";
+					mes "the "+F_Navi("Loja de Ferramentas","alberta,98,154","^0000FF");
+					mes "no seu mini-mapa.";
 					mes .@str$;
 					viewpoint 1,98,154,0,0x0A82FF;
 					next;
@@ -48,27 +48,27 @@ alberta,23,238,4	script	Guide#01alberta::AlbertaGuide	105,{
 					break;
 				case 3:
 					mes "[Alberta Guide]";
-					mes "Let me mark the location of the";
+					mes "Deixe-me marcar the location of the";
 					mes "the "+F_Navi("Weapon & Armor Shop","alberta,117,37","^FF5400");
-					mes "on your mini-map.";
+					mes "no seu mini-mapa.";
 					mes .@str$;
 					viewpoint 1,117,37,2,0xFFB400;
 					next;
 					break;
 				case 4:
 					mes "[Alberta Guide]";
-					mes "Let me mark the location of the";
+					mes "Deixe-me marcar the location of the";
 					mes "the "+F_Navi("Inn","alberta,65,233","^006400");
-					mes "on your mini-map.";
+					mes "no seu mini-mapa.";
 					mes .@str$;
 					viewpoint 1,65,233,3,0xAAFF00;
 					next;
 					break;
 				case 5:
 					mes "[Alberta Guide]";
-					mes "Let me mark the location of the";
+					mes "Deixe-me marcar the location of the";
 					mes "the "+F_Navi("Beauty Salon","alberta,48,145","^7F3300");
-					mes "on your mini-map.";
+					mes "no seu mini-mapa.";
 					mes .@str$;
 					viewpoint 1,48,145,4,0xD2691E;
 					next;
@@ -77,8 +77,8 @@ alberta,23,238,4	script	Guide#01alberta::AlbertaGuide	105,{
 					mes "[Alberta Guide]";
 					mes "The "+F_Navi("Merchant Guild","alberta,33,41")+" is where";
 					mes "you can change your job to ^800080Merchant^000000.";
-					mes "Let me mark its location";
-					mes "on your mini-map.";
+					mes "Deixe-me marcar its location";
+					mes "no seu mini-mapa.";
 					mes .@str$;
 					viewpoint 1,33,41,5,0xDA70D6;
 					next;
@@ -92,12 +92,12 @@ alberta,23,238,4	script	Guide#01alberta::AlbertaGuide	105,{
 		case 2:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ Eden Teleport Officer ]:[ Kafra Employee ]:[ Cool Event Employee ]:[ Bullet Merchant ]:[ Cooking Ingredient Merchant ]:Previous Menu")) {
+				switch(select("[ Eden Teleport Officer ]:[ Kafra Employee ]:[ Cool Event Employee ]:[ Bullet Merchant ]:[ Cooking Ingredient Merchant ]:Menu Anterior")) {
 				case 1:
 					mes "[Alberta Guide]";
 					mes "^B9062FEden Teleport Officers^000000 are located in "+F_Navi("south Alberta","alberta,121,68");
 					mes "and inside the "+F_Navi("Merchant Guild","alberta,33,41")+" building.";
-					mes "Let me mark their locations on your mini-map.";
+					mes "Deixe-me marcar their locations no seu mini-mapa.";
 					mes .@str$;
 					viewpoint 1,33,41,6,0xFF0000;
 					viewpoint 1,121,68,7,0xFF0000;
@@ -105,9 +105,9 @@ alberta,23,238,4	script	Guide#01alberta::AlbertaGuide	105,{
 					break;
 				case 2:
 					mes "[Alberta Guide]";
-					mes "Let me mark the location of the";
+					mes "Deixe-me marcar the location of the";
 					mes "^0000FFKafra Employees^000000";
-					mes "on your mini-map.";
+					mes "no seu mini-mapa.";
 					mes .@str$;
 					viewpoint 1,33,41,8,0x0A82FF;
 					viewpoint 1,113,60,9,0x0A82FF;
@@ -148,7 +148,7 @@ alberta,23,238,4	script	Guide#01alberta::AlbertaGuide	105,{
 		case 3:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ Port - Northern Dock ]:[ Port - Central Dock ]:[ Port - Southern Dock ]:Previous Menu")) {
+				switch(select("[ Port - Northern Dock ]:[ Port - Central Dock ]:[ Port - Southern Dock ]:Menu Anterior")) {
 				case 1:
 					mes "[Alberta Guide]";
 					mes "You can use the "+F_Navi("Northern Dock","alberta,192,196");

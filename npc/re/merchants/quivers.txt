@@ -25,61 +25,61 @@
 mora,106,117,3	script	Quiver Maker#mora	4_M_RAFLE_GR,{
 	if (checkweight(1201,1) == 0) {
 		mes "[Quiver Maker]";
-		mes "You have too many things with you.";
-		mes "Make some space in your inventory and come back. I'll tell you something interesting.";
+		mes "Voce tem coisas demais com voce.";
+		mes "Libere espaco no seu inventario e volte. Vou te contar algo interessante.";
 		close;
 	}
 	if (MaxWeight - Weight < 2000) {
 		mes "[Quiver Maker]";
-		mes "You seem worn out with all that stuff.";
-		mes "Make some space in your inventory and come back. I'll tell you something interesting.";
+		mes "Voce parece esgotado com tanta coisa.";
+		mes "Libere espaco no seu inventario e volte. Vou te contar algo interessante.";
 		close;
 	}
 	mes "[Quiver Maker]";
-	mes "Mora villagers ask what good quivers are. They just don't know how the world works.";
-	mes "No wonder they don't know a thing about quivers - spreading jam over leaves all day long.";
+	mes "Os moradores de Mora perguntam pra que servem aljavas. Eles simplesmente nao sabem como o mundo funciona.";
+	mes "Nao e de admirar que nao saibam nada sobre aljavas - passando geleia nas folhas o dia todo.";
 	next;
 	if (getbattleflag("feature.barter")) {
-		.@menu$ = "I want arrows";
+		.@menu$ = "Eu quero flechas";
 	}
-	switch( select("Please make me a quiver.", .@menu$, "What's a quiver?") ) {
+	switch( select("Por favor, faca uma aljava pra mim.", .@menu$, "O que e uma aljava?") ) {
 	case 1:
 		if (getbattleflag("feature.barter")) {
 			mes "[Quiver Maker]";
-			mes "Finally, someone has appeared who knows the true value of a quiver. I will do it for those who know its worth.";
+			mes "Finalmente, alguem apareceu que conhece o verdadeiro valor de uma aljava. Eu farei para aqueles que conhecem seu valor.";
 			close2;
 			callshop "Quiver_Archer", 1;
 			end;
 		}
 		mes "[Quiver Maker]";
-		mes "At last someone appreciates a quiver!";
-		mes "I can make Elven Quivers and Hunting Quivers.";
-		mes "Which do you need?";
+		mes "Finalmente alguem que aprecia uma aljava!";
+		mes "Eu posso fazer Aljavas Elficas e Aljavas de Caca.";
+		mes "Qual voce precisa?";
 		next;
-		switch(select("An Elven Quiver:A Hunting Quiver:I don't need a quiver.")) {
+		switch(select("Uma Aljava Elfica:Uma Aljava de Caca:Nao preciso de aljava.")) {
 		case 1: callsub S_BuyQuiver,1773,500,500,12575; //Arrow_Of_Elf_Cntr
 		case 2: callsub S_BuyQuiver,1774,500,500,12576; //Hunting_Arrow_Cntr
 		case 3:
 			mes "[Quiver Maker]";
-			mes "You can buy arrows off the tool merchant next to me.";
+			mes "Voce pode comprar flechas do mercador de ferramentas ao meu lado.";
 			close;
 		}
 		end;
 	case 2:
 		if (getbattleflag("feature.barter")) {
 			mes "[Quiver Maker]";
-			mes "I don't sell ordinary arrows. These are artisan arrows that can only be purchased here. Would you really recognize its worth, right?";
+			mes "Eu nao vendo flechas comuns. Essas sao flechas artesanais que so podem ser compradas aqui. Voce realmente reconheceria seu valor, certo?";
 			close2;
 			callshop "Catch_Arrows", 1;
 		}
 		end;
 	case 3:
 		mes "[Quiver Maker]";
-		mes "An arrow may be thin and light, but carrying hundreds and thousands of arrows is like carrying a whole log.";
+		mes "Uma flecha pode ser fina e leve, mas carregar centenas e milhares de flechas e como carregar um tronco inteiro.";
 		next;
 		mes "[Quiver Maker]";
-		mes "But when you have quivers, you can put arrows in them and save weight and space.";
-		mes "If you're interested in one, I'll stitch one up for you.";
+		mes "Mas quando voce tem aljavas, pode colocar flechas nelas e economizar peso e espaco.";
+		mes "Se estiver interessado em uma, eu costuro uma pra voce.";
 		close;
 	}
 	end;
@@ -89,29 +89,29 @@ S_BuyQuiver:
 	.@req_amount = getarg(1);
 	if (countitem(getarg(0)) < .@req_amount) {
 		mes "[Quiver Maker]";
-		mes "Bring more than "+ .@req_amount +" "+ getitemname(.@item_req) +" and I'll make you a quiver.";
+		mes "Traga mais de "+ .@req_amount +" "+ getitemname(.@item_req) +" e eu faco uma aljava pra voce.";
 		close;
 	}
 	mes "[Quiver Maker]";
-	mes "Oh, I see you have "+ getitemname(.@item_req) +" in your hand!";
-	mes "Are you interested in using a quiver? It's really convenient!";
-	mes "If you're interested, I can trade "+ .@req_amount +" of those arrows for one of these quivers for ^FF3131"+getarg(2)+" zeny^000000.";
+	mes "Ah, vejo que voce tem "+ getitemname(.@item_req) +" na mao!";
+	mes "Voce esta interessado em usar uma aljava? E realmente conveniente!";
+	mes "Se estiver interessado, eu posso trocar "+ .@req_amount +" dessas flechas por uma dessas aljavas por ^FF3131"+getarg(2)+" zeny^000000.";
 	next;
-	switch(select("Trade all the arrows you have:Get only one quiver:Don't trade")) {
+	switch(select("Trocar todas as flechas que voce tem:Pegar apenas uma aljava:Nao trocar")) {
 	case 1:
 		set .@arrows, countitem(.@item_req);
 		set .@quiver, .@arrows / .@req_amount;
 		set .@arrows_used, .@quiver * .@req_amount;
 		set .@arrow_zeny01, .@quiver * getarg(2);
-		mes "The number of arrows you have : ^3131FF"+.@arrows+"^000000";
-		mes "The number of quivers available : ^3131FF"+.@quiver+"^000000";
-		mes "Zeny needed for trade : ^3131FF"+.@arrow_zeny01+" zeny^000000";
+		mes "Numero de flechas que voce tem : ^3131FF"+.@arrows+"^000000";
+		mes "Numero de aljavas disponiveis : ^3131FF"+.@quiver+"^000000";
+		mes "Zeny necessario para troca : ^3131FF"+.@arrow_zeny01+" zeny^000000";
 		next;
-		mes "Trade?";
+		mes "Trocar?";
 		next;
-		if(select("Trade:Don't trade") == 2) {
+		if(select("Trocar:Nao trocar") == 2) {
 			mes "[Quiver Maker]";
-			mes "Hey, you don't doubt my skills, do you?";
+			mes "Ei, voce nao duvida das minhas habilidades, ne?";
 			close;
 		}
 		break;
@@ -123,22 +123,22 @@ S_BuyQuiver:
 		break;
 	case 3:
 		mes "[Quiver Maker]";
-		mes "Hey, you don't doubt my skills, do you?";
+		mes "Ei, voce nao duvida das minhas habilidades, ne?";
 		close;
 	}
 	if (Zeny < .@arrow_zeny01) {
 		mes "[Quiver Maker]";
 		if (.@zeny_mes == 1)
-			mes "I said I'd accept human coins just for you, and you still don't want to spend the money?";
+			mes "Eu disse que aceitaria moedas humanas so por voce, e ainda nao quer gastar o dinheiro?";
 		else
-			mes "You really don't expect to get your hands on a masterpiece for nothing, do you?";
+			mes "Voce realmente nao espera colocar as maos numa obra-prima de graca, ne?";
 		close;
 	}
 	mes "[Quiver Maker]";
-	mes "Hey, here you are.";
-	mes "There is ^3131FFsomething you need to know^000000 - try to remember it.";
-	mes "^FF0000You can't use quivers when your encumbrance is over 70%.^000000";
-	mes "You'd better keep that in mind, or you might be in trouble later.";
+	mes "Ei, aqui esta.";
+	mes "Ha ^3131FFalgo que voce precisa saber^000000 - tente lembrar.";
+	mes "^FF0000Voce nao pode usar aljavas quando sua carga esta acima de 70%.^000000";
+	mes "E melhor guardar isso na cabeca, ou voce pode ter problemas depois.";
 	set Zeny, Zeny-.@arrow_zeny01;
 	delitem .@item_req,.@arrows_used;
 	getitem getarg(3),.@quiver;

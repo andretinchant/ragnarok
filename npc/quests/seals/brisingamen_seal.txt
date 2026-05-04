@@ -2425,7 +2425,7 @@ gef_dun01,89,192,0	script	#lowentrace	111,3,3,{
 		mes "^3355FFWill you";
 		mes "summon her?^000000";
 		next;
-		switch(select("Yes:No")) {
+		switch(select("Sim:Nao")) {
 		case 1:
 			input @lowenstring$;
 			if (@lowenstring$ == "Lowen") {
@@ -2548,7 +2548,7 @@ gef_dun01,203,48,0	script	#lowentrace1	111,3,3,{
 		mes "Would you";
 		mes "like to summon her? ";
 		next;
-		switch(select("Yes:No")) {
+		switch(select("Sim:Nao")) {
 		case 1:
 			input @lowenstring$;
 				if (@lowenstring$ == "Lowen") {

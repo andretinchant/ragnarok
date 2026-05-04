@@ -1,0 +1,75 @@
+//===== rAthena Script =======================================
+//= Professor de Caca
+//===== Description: =========================================
+//= Instrui novatos a cacarem monstros para chegar ao nivel 10.
+//= Da 100 Pocoes de Aprendiz + efeito de Manual de Combate (5min).
+//= Oferece teleporte para prt_fild08.
+//============================================================
+
+iz_ac01,58,74,3	script	Professor de Caca	4_M_NOV_HUNT,{
+
+	mes "[Professor de Caca]";
+
+	// Ja recebeu os itens antes
+	if (QFLAG_CACA_ITEM == 1) {
+		mes "De volta por aqui!";
+		next;
+		mes "[Professor de Caca]";
+		mes "Lembre-se: mate monstros para ganhar experiencia e chegar ao nivel 10 de Classe.";
+		mes "Quanto mais voce caca, mais rapido evolui!";
+		next;
+		if (select("Me teleporta para os campos.", "Obrigado, vou sozinho.") == 1) {
+			mes "[Professor de Caca]";
+			mes "Va com tudo!";
+			close2;
+			warp "prt_fild08", 200, 200;
+			end;
+		}
+		mes "[Professor de Caca]";
+		mes "Boa caca!";
+		close;
+	}
+
+	// Primeira visita
+	mes "Ola, novato! Sou o Professor de Caca.";
+	next;
+	mes "[Professor de Caca]";
+	mes "Para evoluir como aventureiro, voce precisa de experiencia de combate.";
+	mes "E a melhor forma de ganhar experiencia e ^FF6600cacando monstros^000000!";
+	next;
+	mes "[Professor de Caca]";
+	mes "Sua missao por agora e simples:";
+	mes "^FFFF00Cace monstros ate chegar ao nivel 10 de Classe^000000.";
+	mes "So entao voce estara pronto para escolher seu caminho como aventureiro.";
+	next;
+	mes "[Professor de Caca]";
+	mes "Para te ajudar nessa jornada, vou te dar:";
+	mes "- ^00AA00100 Pocoes de Aprendiz^000000 para se curar";
+	mes "- Um ^00AA00Manual de Combate^000000 por 5 minutos para ganhar mais EXP";
+	next;
+	mes "[Professor de Caca]";
+	mes "Ha um campo aqui perto, os ^FF6600Campos de Prontera^000000,";
+	mes "cheio de monstros perfeitos para iniciantes.";
+	mes "Quer que eu te leve ate la?";
+
+	switch(select("Sim, me leva para os campos!", "Nao, vou explorar por conta.")) {
+	case 1:
+		QFLAG_CACA_ITEM = 1;
+		getitem 569, 100;
+		sc_start SC_EXPBOOST, 300000, 50;
+		mes "[Professor de Caca]";
+		mes "Otimo! Aqui estao suas pocoes e o efeito do Manual de Combate ja esta ativo!";
+		mes "Va com tudo e volte quando chegar ao nivel 10!";
+		close2;
+		warp "prt_fild08", 200, 200;
+		end;
+	case 2:
+		QFLAG_CACA_ITEM = 1;
+		getitem 569, 100;
+		sc_start SC_EXPBOOST, 300000, 50;
+		mes "[Professor de Caca]";
+		mes "Tudo bem! Aqui estao suas pocoes e o Manual de Combate esta ativo por 5 minutos.";
+		mes "Boa caca! Volte quando chegar ao nivel 10.";
+		close;
+	}
+}

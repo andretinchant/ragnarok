@@ -16,32 +16,32 @@ te_alde_gld,215,184,4	duplicate(TE Potion Merchant#prt)	TE Potion Merchant#alde	
 -	script	rental_woe_TE	-1,{
 	mes "[Rental Items Manager]";
 	if (jobcanentermap("te_prtcas01") == 1) {
-		.@list01$ = "[Shield] [Armor] [Garment]";
-		.@list02$ = "[Helmet] [Accessory] [Shoes]";
-		.@list03$ = "[Sword] [Spear] [Axe] [Katar]";
-		.@list04$ = "[Mace] [Staff] [Fist] [Book]";
-		.@list05$ = "[Bow] [Gun] [Musical Instrument] [Whip]";
+		.@list01$ = "[Escudo] [Armadura] [Manto]";
+		.@list02$ = "[Elmo] [Acessorio] [Calcados]";
+		.@list03$ = "[Espada] [Lanca] [Machado] [Katar]";
+		.@list04$ = "[Maca] [Cajado] [Punho] [Livro]";
+		.@list05$ = "[Arco] [Arma] [Instrumento Musical] [Chicote]";
 
-		mes "^4d4dffWe offer various battlegears that you can use in the regions of Gloria and Kafragarten based on the rules of Siege Battle TE.^000000";
+		mes "^4d4dffOferecemos varios equipamentos de batalha que voce pode usar nas regioes de Gloria e Kafragarten baseados nas regras da Batalha de Cerco TE.^000000";
 		next;
 		mes "[Rental Items Manager]";
-		mes "^4d4dffWe provide 1-day rental periods for free.^000000";
-		mes "However, the provided rental items ^4d4dffwill not be effective outside the Siege Battle TE area.^000000";
+		mes "^4d4dffFornecemos periodos de aluguel de 1 dia gratuitamente.^000000";
+		mes "Porem, os itens de aluguel fornecidos ^4d4dffnao serao efetivos fora da area de Batalha de Cerco TE.^000000";
 		next;
 		mes "[Rental Items Manager]";
-		mes "^4d4dffYou have to be Lv 40 or higher in order to rent an item.^000000";
-		mes "Select the desired equipment.";
+		mes "^4d4dffVoce precisa ser Nv 40 ou superior para alugar um item.^000000";
+		mes "Selecione o equipamento desejado.";
 		next;
 		while(1) {
-			switch( select( "View rental equipments", .@list01$, .@list02$, .@list03$, .@list04$, .@list05$, "Leave" ) ) {
+			switch( select( "Ver equipamentos de aluguel", .@list01$, .@list02$, .@list03$, .@list04$, .@list05$, "Sair" ) ) {
 			case 1:
 				mes "[Rental Items Manager]";
-				mes "Here is a list of rental items and descriptions.";
+				mes "Aqui esta uma lista de itens de aluguel e descricoes.";
 				close2;
 				readbook 11059,1;// WoE_TE_Rental_List
 				end;
 			case 2:
-				callsub( S_Rent, "shields, armors, and garments",
+				callsub( S_Rent, "escudos, armaduras e mantos",
 					 2178,"TE Siege Buckler",		// TE_Woe_Buckler
 					 2179,"TE Siege Shield",		// TE_Woe_Shield
 					 2180,"TE Siege Magic Guard",	// TE_Woe_Magic_Guard
@@ -53,7 +53,7 @@ te_alde_gld,215,184,4	duplicate(TE Potion Merchant#prt)	TE Potion Merchant#alde	
 					20704,"TE Siege Magic Cape" );	// TE_Woe_Magic_Manteau
 				break;
 			case 3:
-				callsub( S_Rent, "helmets, accessories, and shoes",
+				callsub( S_Rent, "elmos, acessorios e calcados",
 					2496,"TE Siege Shoes",			// TE_Woe_Shoes
 					2497,"TE Siege Boots",			// TE_Woe_Boots
 					2498,"TE Siege Magic Sandals",	// TE_Woe_Magic_Sandal
@@ -65,7 +65,7 @@ te_alde_gld,215,184,4	duplicate(TE Potion Merchant#prt)	TE Potion Merchant#alde	
 					18734,"TE Siege Magic Eyes" );	// TE_Woe_Magic_Eyes
 				break;
 			case 4:
-				callsub( S_Rent, "swords, spears, axes, and katars",
+				callsub( S_Rent, "espadas, lancas, machados e katars",
 					1299,"TE Siege Katar",				// TE_Woe_Katar
 					1399,"TE Siege Two-Handed Axe",		// TE_Woe_Two_Handed_Axe
 					1495,"TE Siege Lance",				// TE_Woe_Lance
@@ -77,7 +77,7 @@ te_alde_gld,215,184,4	duplicate(TE Potion Merchant#prt)	TE Potion Merchant#alde	
 					13439,"TE Siege Sword" );			// TE_Woe_Sword
 				break;
 			case 5:
-				callsub( S_Rent, "staves, maces, books, and fists",
+				callsub( S_Rent, "cajados, macas, livros e punhos",
 					2019,"TE Siege Two-Handed Staff",// TE_Woe_Two_Hand_Staff
 					1591,"TE Siege Book",			// TE_Woe_Book
 					1667,"TE Siege Staff",			// TE_Woe_Staff
@@ -85,7 +85,7 @@ te_alde_gld,215,184,4	duplicate(TE Potion Merchant#prt)	TE Potion Merchant#alde	
 					16025,"TE Siege Mace" );		// TE_Woe_Mace
 				break;
 			case 6:
-				callsub( S_Rent, "bows, guns, musical instruments, and whips",
+				callsub( S_Rent, "arcos, armas de fogo, instrumentos musicais e chicotes",
 					18118,"TE Siege Bow",			// TE_Woe_Bow
 					13117,"TE Siege Pistol",		// TE_Woe_Pistol
 					13184,"TE Siege Rifle",			// TE_Woe_Rifle
@@ -97,47 +97,47 @@ te_alde_gld,215,184,4	duplicate(TE Potion Merchant#prt)	TE Potion Merchant#alde	
 				break;
 			case 7:
 				mes "[Rental Items Manager]";
-				mes "Come back anytime then.";
+				mes "Volte quando quiser entao.";
 				close;
 			}
 		}
 	}
-	mes "We offer various battlegears that you can use in the regions of Gloria and Kafragarten based on the rules of Siege Battle TE.";
+	mes "Oferecemos varios equipamentos de batalha que voce pode usar nas regioes de Gloria e Kafragarten baseados nas regras da Batalha de Cerco TE.";
 	next;
 	mes "[Rental Items Manager]";
-	mes "I'm sorry but your job class is not allowed to participate in Siege Battles TE.";
-	mes "I'm afraid I can't offer any items to you.";
+	mes "Sinto muito, mas sua classe nao esta autorizada a participar das Batalhas de Cerco TE.";
+	mes "Receio que nao posso oferecer nenhum item pra voce.";
 	close;
 
 S_Rent:
 	mes "[Rental Items Manager]";
 	if (checkweight(1304,3) == 0) {
-		mes "You already have too many items to receive a new rental equipment.";
-		mes "Please organize your items and try again.";
+		mes "Voce ja tem itens demais para receber um novo equipamento de aluguel.";
+		mes "Por favor, organize seus itens e tente novamente.";
 		close;
 	}
-	mes "We have "+ getarg(0) +" ready for you.";
-	mes "Select the desired item.";
+	mes "Temos "+ getarg(0) +" prontos pra voce.";
+	mes "Selecione o item desejado.";
 	next;
 	for ( .@i = 1; .@i < getargcount(); .@i += 2 ) {
 		if (rentalcountitem(getarg(.@i)) > isequippedcnt(getarg(.@i)))// don't count item equipped
-			.@menu$ = .@menu$ + "^4d4dff"+ getarg(.@i+1) +" - Checked out^000000:";
+			.@menu$ = .@menu$ + "^4d4dff"+ getarg(.@i+1) +" - Ja retirado^000000:";
 		else
 			.@menu$ = .@menu$ + getarg(.@i+1) + ":";
 	}
 	.@total_item = (getargcount() -1) /2;
-	.@s = select( .@menu$ + ":View other items" ) -1;
+	.@s = select( .@menu$ + ":Ver outros itens" ) -1;
 	if (.@s <= .@total_item) {
 		.@index = .@s *2 +1;
 		mes "[Rental Items Manager]";
 		if (rentalcountitem(getarg(.@index)) > isequippedcnt(getarg(.@index)))
-			mes "You already have "+ getarg(.@index+1) +".";
+			mes "Voce ja tem "+ getarg(.@index+1) +".";
 		else {
-			mes "Here is "+ getarg(.@index+1) +".";
-			mes "^4d4dffThis item is effective for the next 24 hours^000000 and after that it expires.";
+			mes "Aqui esta "+ getarg(.@index+1) +".";
+			mes "^4d4dffEsse item e valido pelas proximas 24 horas^000000 e depois disso ele expira.";
 			rentitem getarg(.@index),86400;
 		}
-		mes "Do you need anything else?";
+		mes "Voce precisa de mais alguma coisa?";
 		next;
 	}
 	return;

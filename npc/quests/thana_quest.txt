@@ -22,7 +22,7 @@ hu_fild01,140,163,5	script	Tower Keeper	852,3,3,{
 	mes "of this Thanatos Tower.";
 	mes "How may I help you?";
 	next;
-	switch(select("Thanatos Tower?:Entrance Fee?:Enter the tower:Cancel")) {
+	switch(select("Thanatos Tower?:Entrance Fee?:Enter the tower:Cancelar")) {
 	case 1:
 		mes "[Gatei]";
 		mes "Yes, the tower in front";
@@ -45,7 +45,7 @@ hu_fild01,140,163,5	script	Tower Keeper	852,3,3,{
 		mes "the 3rd and higher floors is";
 		mes "incomplete. Those levels are";
 		mes "still infested with monsters, so we're contracting temp workers";
-		mes "to exterminate all of them.";
+		mes "to exterminate all deles.";
 		next;
 		mes "[Gatei]";
 		mes "If you're interested in";
@@ -171,7 +171,7 @@ tha_t01,149,78,4	script	Guide	90,{
 		mes "now open to the public. So";
 		mes "how may I help you today?";
 		next;
-		switch(select("Tower Information:Temporary Work Contract:Cancel")) {
+		switch(select("Tower Information:Temporary Work Contract:Cancelar")) {
 		case 1:
 			mes "[Ditze]";
 			mes "When this tower was built,";
@@ -490,7 +490,7 @@ tha_t01,140,78,4	script	Guide#reward	831,{
 	mes "all of your "+callfunc("F_GetPlural",getitemname(.@Items[.@i]));
 	mes "for your reward right now?";
 	next;
-	switch(select("Yes:No")) {
+	switch(select("Sim:Nao")) {
 		case 1:
 			mes "[Liei]";
 			mes "Great! Here is your";
@@ -1264,7 +1264,7 @@ tha_t06,226,230,0	script	Brilliant Statue#tt4	111,3,3,{
 			mes "and match them by corresponding color, the Stone Statue will snap open.";
 			mes "You can see small wheels are moving inside.";
 			next;
-			switch(select("Investigate the Machine Chasis:Investigate the Wheels:Cancel")) {
+			switch(select("Investigate the Machine Chasis:Investigate the Wheels:Cancelar")) {
 			case 1:
 				mes "^3355FFThe key in your inventory";
 				mes "does not seem to be affecting";

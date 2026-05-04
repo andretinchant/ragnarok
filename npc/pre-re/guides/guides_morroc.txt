@@ -21,25 +21,25 @@
 morocc,153,286,6	script	Guide#moc::MocGuide	707,{
 	cutin "moc_soldier",2;
 	mes "[Morocc Guide]";
-	mes "Welcome to Morocc,";
+	mes "Bem-vindo a Morocc,";
 	mes "the frontier town of the";
-	mes "Rune-Midgarts Kingdom.";
+	mes "Reino de Rune-Midgarts.";
 	mes "Please ask me for help if";
 	mes "you're having any trouble";
 	mes "finding anything in town.";
 	set .@loop1,1;
 	while (.@loop1) {
 		next;
-		switch(select("City Guide:Remove Marks from Mini-Map:Notice:Cancel")) {
+		switch(select("City Guide:Remover Marcas do Mini-Mapa:Aviso:Cancelar")) {
 		case 1:
 			mes "[Morocc Guide]";
-			mes "Please select";
-			mes "a location from";
-			mes "the following menu.";
+			mes "Por favor selecione";
+			mes "um local do";
+			mes "menu a seguir.";
 			if (.@compass_check == 0) {
-				mes "Would you like me";
-				mes "to mark locations";
-				mes "on your Mini-Map?";
+				mes "Gostaria que eu";
+				mes "marcasse locais";
+				mes "no seu Mini-Mapa?";
 				next;
 				if (select("Yes.:No.") == 1) set .@compass_check,1;
 			}
@@ -48,7 +48,7 @@ morocc,153,286,6	script	Guide#moc::MocGuide	707,{
 				if (.@wait_button_chk == 0) set .@wait_button_chk,1;
 				else next;
 				
-				switch(select("^FF0000Thief Guild^000000:Weapon Shop:Inn:Pub:Mercenary Guild:Forge:Cancel")) {
+				switch(select("^FF0000Thief Guild^000000:Loja de Armas:Inn:Pub:Mercenary Guild:Forge:Cancelar")) {
 				case 1:
 					mes "[Morocc Guide]";
 					mes "The Thief Guild is";
@@ -62,7 +62,7 @@ morocc,153,286,6	script	Guide#moc::MocGuide	707,{
 					break;
 				case 2:
 					mes "[Morocc Guide]";
-					mes "The Weapon Shop";
+					mes "A Loja de Armas";
 					mes "is in the southeast";
 					mes "end of Morocc.";
 					if (.@compass_check)
@@ -109,7 +109,7 @@ morocc,153,286,6	script	Guide#moc::MocGuide	707,{
 					mes "Marks from Mini-Map'' if you";
 					mes "no longer wish to have the";
 					mes "location marks displayed";
-					mes "on your Mini-Map.";
+					mes "no seu Mini-Mapa.";
 					set .@loop2,0;
 				}
 			}
@@ -149,7 +149,7 @@ morocc,153,286,6	script	Guide#moc::MocGuide	707,{
 			break;
 		case 4:
 			mes "[Morocc Guide]";
-			mes "Alright then,";
+			mes "Muito bem,";
 			mes "try to stay out of";
 			mes "too much trouble";
 			mes "out there, adventurer.";

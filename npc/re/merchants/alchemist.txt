@@ -1,64 +1,64 @@
-//===== rAthena Script ======================================= 
+//===== rAthena Script =======================================
 //= Alchemist Shop
-//===== By: ================================================== 
+//===== By: ==================================================
 //= rAthena Dev Team
-//===== Current Version: ===================================== 
+//===== Current Version: =====================================
 //= 1.0
-//===== Compatible With: ===================================== 
+//===== Compatible With: =====================================
 //= rAthena Project
-//===== Description: ========================================= 
+//===== Description: =========================================
 //= [Official Conversion]
 //= Merchants for Alchemist Materials and Manuals.
-//===== Additional Comments: ================================= 
+//===== Additional Comments: =================================
 //= 1.0 Split Geneticist shop from main file. [Euphy]
 //=     Updated dialogue to match the official script.
-//============================================================ 
+//============================================================
 
 // Main NPC :: craft_book_alche_skill_npc
 //============================================================
 alde_alche,31,186,3	script	Craft Book Merchant#alde	883,{
 	mes "[Craft Book Merchant]";
-	mes "Welcome.";
-	mes "I'm here to sell";
-	mes "^0000FFspecial craft books^000000 for Geneticists.";
+	mes "Bem-vindo.";
+	mes "Estou aqui para vender";
+	mes "^0000FFlivros de receitas especiais^000000 para Geneticistas.";
 	next;
 	mes "[Craft Book Merchant]";
-	mes "Geneticists have some skills";
-	mes "that require craft books to activate.";
+	mes "Geneticistas tem algumas habilidades";
+	mes "que precisam de livros de receitas para ativar.";
 	next;
 	mes "[Craft Book Merchant]";
-	mes "The more craft books you have,";
-	mes "the more skills you can use.";
+	mes "Quanto mais livros de receitas voce tiver,";
+	mes "mais habilidades voce podera usar.";
 	next;
 	mes "[Craft Book Merchant]";
-	mes "Please understand that";
-	mes "I specialize in the sale of these special books and";
-	mes "I ^FF0000don't sell other items^000000.";
+	mes "Por favor, entenda que";
+	mes "eu me especializo na venda desses livros especiais e";
+	mes "eu ^FF0000nao vendo outros itens^000000.";
 	next;
 	mes "[Craft Book Merchant]";
-	mes "Would you like to take a look at my craft books?";
+	mes "Voce gostaria de dar uma olhada nos meus livros de receitas?";
 	next;
-	if(select("Sure.:No.") == 2) {
+	if(select("Claro.:Nao.") == 2) {
 		mes "[Craft Book Merchant]";
-		mes "Thank you for visiting my shop.";
-		mes "Please be safe on your travels.";
+		mes "Obrigado por visitar minha loja.";
+		mes "Por favor, tenha cuidado em suas viagens.";
 		close;
 	}
 	if (checkweight(1201,1) == 0) {
 		mes "[Craft Book Merchant]";
-		mes "I'm sorry, but your inventory is almost full.";
-		mes "Please empty your inventory first.";
+		mes "Sinto muito, mas seu inventario esta quase cheio.";
+		mes "Por favor, esvazie seu inventario primeiro.";
 		close;
 	}
 	if (MaxWeight - Weight < 2500) {
 		mes "[Craft Book Merchant]";
-		mes "Please empty your inventory first.";
+		mes "Por favor, esvazie seu inventario primeiro.";
 		close;
 	}
 	mes "[Craft Book Merchant]";
-	mes "Okay then, here's the list of available craft books.";
+	mes "Certo entao, aqui esta a lista de livros de receitas disponiveis.";
 	next;
-	switch(select("[Apple Bomb Craft Book] 100,000 zeny:[Pineapple Bomb Craft Book] 100,000 zeny:[Coconut Bomb Craft Book] 100,000 zeny:[Melon Bomb Craft Book] 100,000 zeny:[Banana Bomb Craft Book] 100,000 zeny:[Plant Gene Cultivation Method] 100,000 zeny:[Superior Potion Craft Manual] 100,000 zeny:[Mix Cooking Book] 100,000 zeny:[Health Improvement Research Book] 100,000 zeny:[Vigor Drink Recipe] 100,000 zeny:Close")){
+	switch(select("[Apple Bomb Craft Book] 100.000 zeny:[Pineapple Bomb Craft Book] 100.000 zeny:[Coconut Bomb Craft Book] 100.000 zeny:[Melon Bomb Craft Book] 100.000 zeny:[Banana Bomb Craft Book] 100.000 zeny:[Plant Gene Cultivation Method] 100.000 zeny:[Superior Potion Craft Manual] 100.000 zeny:[Mix Cooking Book] 100.000 zeny:[Health Improvement Research Book] 100.000 zeny:[Vigor Drink Recipe] 100.000 zeny:Fechar")){
 	case 1: set .@item,6279; break;
 	case 2: set .@item,6280; break;
 	case 3: set .@item,6281; break;
@@ -71,51 +71,51 @@ alde_alche,31,186,3	script	Craft Book Merchant#alde	883,{
 	case 10: set .@item,11024; break;
 	case 11:
 		mes "[Craft Book Merchant]";
-		mes "Thank you for your patronage.";
-		mes "Please come again.";
+		mes "Obrigado pela preferencia.";
+		mes "Por favor, volte novamente.";
 		close;
 	}
 	mes "[Craft Book Merchant]";
-	mes "^0000FF["+getitemname(.@item)+"] costs";
-	mes "100,000 zeny.";
-	mes "How many would you like to purchase?";
+	mes "^0000FF["+getitemname(.@item)+"] custa";
+	mes "100.000 zeny.";
+	mes "Quantos voce gostaria de comprar?";
 	next;
 	input .@amount;
 	if (.@amount == 0) {
 		mes "[Craft Book Merchant]";
-		mes "Would you like to see some different books?";
+		mes "Voce gostaria de ver outros livros?";
 		close;
 	}
 	if (.@amount < 1 || .@amount > 99 ){
 		mes "[Craft Book Merchant]";
-		mes "You cannot purchase more than 100 at a time.";
+		mes "Voce nao pode comprar mais de 100 por vez.";
 		close;
 	}
 	mes "[Craft Book Merchant]";
-	mes "You've entered "+.@amount+"x ^0000FF["+getitemname(.@item)+"]^000000 to be purchased.";
-	mes "Would you like to continue?";
+	mes "Voce digitou "+.@amount+"x ^0000FF["+getitemname(.@item)+"]^000000 para serem comprados.";
+	mes "Gostaria de continuar?";
 	next;
-	if (select("Yes:No") == 1) {
+	if (select("Sim:Nao") == 1) {
 		set .@total, .@amount * 100000;
 		if (Zeny < .@total) {
 			mes "[Craft Book Merchant]";
-			mes "I'm sorry, but you don't have enough money.";
+			mes "Sinto muito, mas voce nao tem dinheiro suficiente.";
 			close;
 		}
 		if (checkweight(.@item,.@amount) == 0){
 			mes "[Craft Book Merchant]";
-			mes "It doesn't seem like you can carry everything.";
-			mes "Please check the space in your inventory.";
+			mes "Nao parece que voce consegue carregar tudo isso.";
+			mes "Por favor, verifique o espaco no seu inventario.";
 			close;
 		}
 		mes "[Craft Book Merchant]";
-		mes "Thank you for your patronage.";
+		mes "Obrigado pela preferencia.";
 		set Zeny,Zeny - .@total;
 		getitem .@item,.@amount;
 		close;
 	}
 	mes "[Craft Book Merchant]";
-	mes "Please take your time";
-	mes "before you make your decision.";
+	mes "Por favor, tome seu tempo";
+	mes "antes de tomar sua decisao.";
 	close;
 }

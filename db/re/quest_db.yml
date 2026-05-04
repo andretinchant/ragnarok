@@ -13398,3 +13398,7 @@ Body:
   - Id: 62238
     Title: Midgardian Mercenary timer
     TimeLimit: +3h
+
+Footer:
+  Imports:
+  - Path: db/import/quest_db.yml

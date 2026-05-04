@@ -16,7 +16,7 @@
 mora,25,158,5	script	Raffle Guide#north	516,{
 	mes "[Raffoh]";
 	mes "Laoh~!";
-	mes "Welcome to the Village of Mora.";
+	mes "Bem-vindo a the Village of Mora.";
 	mes "I can tell you whatever you want to know about the village~!";
 	F_Navi("[Raffoh]");
 	next;
@@ -38,7 +38,7 @@ mora,25,158,5	script	Raffle Guide#north	516,{
 	case 3:
 		mes "[Raffoh]";
 		mes "Laoh~!";
-		mes "If you are looking for souvenirs, you can buy some in this "+F_Navi("district","mora,112,110")+".";
+		mes "Se voce esta procurando souvenirs, you can buy some in this "+F_Navi("district","mora,112,110")+".";
 		viewpoint 1,112,110,2,0xDA70D6;
 		close;
 	case 4:
@@ -101,7 +101,7 @@ mora,167,76,3	script	Raffle Guide#east	522,{
 		close;
 	case 5:
 		mes "[Raffuh]";
-		mes "Are you sure you want them removed?";
+		mes "Tem certeza que quer remove-las?";
 		viewpoint 2,1,1,0,0xFFFF00;
 		viewpoint 2,1,1,1,0xFFFF00;
 		viewpoint 2,1,1,2,0xFFFF00;
@@ -118,7 +118,7 @@ mora,167,76,3	script	Raffle Guide#east	522,{
 mora,115,138,5	script	Raffle Guide#center	524,{
 	mes "[Raffla]";
 	mes "Lala!";
-	mes "Welcome to the Village of Mora la!";
+	mes "Bem-vindo a the Village of Mora la!";
 	mes "If you need to know anything about the village, just ask me la!";
 	F_Navi("[Raffla]");
 	next;
@@ -170,7 +170,7 @@ mora,115,138,5	script	Raffle Guide#center	524,{
 mora,72,51,3	script	Raffle Guide#south	518,{
 	mes "[Raffli]";
 	mes "Lali?";
-	mes "Welcome to the Village of Mora.";
+	mes "Bem-vindo a the Village of Mora.";
 	mes "If you need to know anything about the village, just ask me.";
 	F_Navi("[Raffli]");
 	next;
@@ -205,7 +205,7 @@ mora,72,51,3	script	Raffle Guide#south	518,{
 		close;
 	case 5:
 		mes "[Raffli]";
-		mes "I'll remove all the markers.";
+		mes "Vou remover todas as markers.";
 		viewpoint 2,1,1,0,0xFFFF00;
 		viewpoint 2,1,1,1,0xFFFF00;
 		viewpoint 2,1,1,2,0xFFFF00;

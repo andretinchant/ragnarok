@@ -892,7 +892,7 @@ mosk_ship,98,110,3	script	Mr. Ibanoff#npc2	4_M_RUSBALD,{
 			close;
 		}
 		mes "[Mr. Ibanoff]";
-		mes "Nothing yet... Nothing has changed";
+		mes "Nothing ainda... Nothing has changed";
 		mes "in the flow of water. There is";
 		mes "nothing to note...";
 		next;
@@ -1035,7 +1035,7 @@ S_D_1:
 		close;
 	}
 	mes "[Mr. Ibanoff]";
-	mes "Nothing yet... Nothing has changed";
+	mes "Nothing ainda... Nothing has changed";
 	mes "in the flow of water. There is";
 	mes "nothing to note...";
 	next;
@@ -1553,7 +1553,7 @@ mosk_fild01,86,104,3	script	Aged Stranger#npc	4_M_GUSLIMAN,{
 				mes "Oh! Ooh... Your hands are really good. You are surely talented with a music instrument.";
 				next;
 				mes "[Aged Stranger]";
-				mes "I heard that there are some adventurers in the mainland... that like playing instruments and singing songs! You must be one of them...";
+				mes "I heard that there are some adventurers in the mainland... that like playing instruments and singing songs! You must be one deles...";
 				next;
 				mes "[Aged Stranger]";
 				mes "This may go faster than I expected.";
@@ -3910,7 +3910,7 @@ mosk_in,211,259,5	script	Larissa#mos_01	4_F_RUSWOMAN2,{
 		mes "Did the pancake taste good?";
 		mes "Would you like another pancake?";
 		next;
-		if(select("Yes:No") == 1) {
+		if(select("Sim:Nao") == 1) {
 			if (countitem(7031) && countitem(519) > 1 && countitem(504) > 1 && countitem(548) && countitem(1019) && countitem(518)) {
 				mes "[Larissa]";
 				mes "Let me check if you have all the ingredients.";
@@ -4888,7 +4888,7 @@ OnTouch:
 			next;
 			mes "[Baba Yaga, the Horrible]";
 			mes "You have our Yaga Pestles!";
-			mes "You have so many of them...";
+			mes "You have so many deles...";
 			next;
 			mes "[Baba Yaga, the Horrible]";
 			mes "Who, who are you?";
@@ -4949,7 +4949,7 @@ mosk_in,217,45,0	script	#book_russia	HIDDEN_NPC,{
 		mes "The letters are in disarray and";
 		mes "some of them, I can't understand.";
 		mes "The comments by Baba Yaga";
-		mes "help me read some of them.-";
+		mes "help me read some deles.-";
 		next;
 		mes "-Ok, time to read it.-";
 		next;
@@ -6737,7 +6737,7 @@ mosk_dun01,45,259,0	script	Wall#rus04	HIDDEN_NPC,{
 			mes "[Girl's Voice]";
 			mes "What do you think? I can open a portal to the cave Do you want to go there now?";
 			next;
-			if(select("Not yet...:Open the portal!") == 1) {
+			if(select("Not ainda...:Open the portal!") == 1) {
 				mes "[Girl's Voice]";
 				mes "... When you're ready, just tell me.";
 				close;
@@ -6751,7 +6751,7 @@ mosk_dun01,45,259,0	script	Wall#rus04	HIDDEN_NPC,{
 		mes "Have you.. got the key?";
 		next;
 		mes "["+ strcharinfo(0) +"]";
-		mes "Not yet... Give me a second.";
+		mes "Not ainda... Give me a second.";
 		next;
 		mes "[Girl's Voice]";
 		mes "If you gather all the necessary things, go to Moscovia and find the keymaker. Do me this favor, please.";
@@ -6769,7 +6769,7 @@ mosk_dun01,45,259,0	script	Wall#rus04	HIDDEN_NPC,{
 			close;
 		}
 		mes "["+ strcharinfo(0) +"]";
-		mes "Not yet... Give me a second.";
+		mes "Not ainda... Give me a second.";
 		next;
 		mes "[Girl's Voice]";
 		mes "If you gather all the things necessary, go to Moscovia and find the keymaker. Do me this favor, please.";
@@ -9892,7 +9892,7 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 		mes "[Baba Yaga]";
 		mes "Oh, you are back. What can I do for you?";
 		next;
-		switch(select("Condensed Red Potion:Condensed Yellow Potion:Cancel")) {
+		switch(select("Condensed Red Potion:Condensed Yellow Potion:Cancelar")) {
 		case 1:
 			.@item = 545;
 			.@zeny_req = 20;
@@ -10655,15 +10655,15 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	HIDDEN_NPC,{
 			cutin "",255;
 			switch( .@rucard_game01 ) {
 			case 1:
-				cutin "Æ÷¸µÄ«µå",4; // Poring Card
+				cutin "ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",4; // Poring Card
 				.@win_string$ = "You are good. Can you do it next time?";
 				break;
 			case 2:
-				cutin "¿£Á©¸µÄ«µå",4; // Angeling Card
+				cutin "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½",4; // Angeling Card
 				.@win_string$ = "You are pretty good at this. Ok, but can you do it again?";
 				break;
 			case 3:
-				cutin "°í½ºÆ®¸µÄ«µå",4; // Ghostring Card
+				cutin "ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½Ä«ï¿½ï¿½",4; // Ghostring Card
 				.@win_string$ = "You are pretty good at this. Ok, but can you do it again?";
 				break;
 			}
@@ -11095,7 +11095,7 @@ mosk_dun01,3,3,3	script	Koshei GlobalVar#admin	4_F_RUSCHILD,{
 		mes "[Koshei GlobalVar]";
 		mes "What would you like to set the GlobalVar to?";
 		next;
-		switch(select("0:1:Cancel")) {
+		switch(select("0:1:Cancelar")) {
 		case 1:
 			mes "[Koshei GlobalVar]";
 			mes "GlobalVar $@rus_req02 will now be set to '0'";

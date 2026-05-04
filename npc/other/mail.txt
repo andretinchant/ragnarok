@@ -6,7 +6,7 @@
 //= 1.8
 //===== Compatible With: =====================================
 //= rAthena Project
-//===== Description: ========================================= 
+//===== Description: =========================================
 //= [Official Conversion]
 //= Pickup and write mail from/to players in game.
 //===== Additional Comments: =================================
@@ -26,27 +26,27 @@
 //============================================================
 -	script	Mailbox#dummy::MailBox	-1,{
 	mes "[Mailbox]";
-	mes "To use the mailbox service,";
-	mes "you are required to pay 130 zeny.";
-	mes "Would you like to use the service?";
+	mes "Para usar o servico de correio,";
+	mes "voce precisa pagar 130 zeny.";
+	mes "Gostaria de usar o servico?";
 	next;
-	switch(select("Yes.:No.")) {
+	switch(select("Sim.:Nao.")) {
 	case 1:
 		mes "[Mailbox]";
 		if (Zeny < 130) {
-			mes "I am sorry, but you do not have enough money.";
-			mes "To use the mailbox service,";
-			mes "you are required to pay 130 zeny.";
+			mes "Desculpe, mas voce nao tem dinheiro suficiente.";
+			mes "Para usar o servico de correio,";
+			mes "voce precisa pagar 130 zeny.";
 			close;
 		}
-		mes "Thank you, please come again.";
+		mes "Obrigado, volte sempre.";
 		set Zeny, Zeny - 130;
 		close2;
 		openmail;
 		end;
 	case 2:
 		mes "[Mailbox]";
-		mes "Thank you, please come again.";
+		mes "Obrigado, volte sempre.";
 		close;
 	}
 }

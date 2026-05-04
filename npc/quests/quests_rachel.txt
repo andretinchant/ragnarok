@@ -178,7 +178,7 @@ ra_in01,384,246,3	script	Vincent#ra_in01	47,{
 		mes "suffer from lower class status,";
 		mes "and usually do the hard, blue";
 		mes "collar work in the city. Jenny,";
-		mes "Phobe's mother, is one of them.";
+		mes "Phobe's mother, is one deles.";
 		next;
 		mes "[Vincent]";
 		mes "It's taboo for me to love her,";
@@ -3878,7 +3878,7 @@ ra_temple,116,174,3	script	Nemma#ra_temple	920,{
 			mes "of 50,000 zeny, and we can only";
 			mes "accept up to 150,000 zeny at once. It's a bit complicated, I know...";
 			next;
-			switch(select("50,000z - 1 Lottery Ticket:100,000z - 2 Lottery Ticket:150,000z - 3 Lottery Ticket:Cancel")) {
+			switch(select("50,000z - 1 Lottery Ticket:100,000z - 2 Lottery Ticket:150,000z - 3 Lottery Ticket:Cancelar")) {
 			case 1:
 				callsub S_Donate,1,"50,000";
 				break;
@@ -3919,7 +3919,7 @@ ra_temple,116,174,3	script	Nemma#ra_temple	920,{
 				mes "accept donations in increments of";
 				mes "50,000 zeny up to 150,000 zeny.";
 				next;
-				switch(select("50,000z - 1 Lottery Ticket:100,000z - 2 Lottery Ticket:150,000z - 3 Lottery Ticket:Cancel")) {
+				switch(select("50,000z - 1 Lottery Ticket:100,000z - 2 Lottery Ticket:150,000z - 3 Lottery Ticket:Cancelar")) {
 				case 1:
 					callsub S_Donate,1,"50,000";
 					break;
@@ -4519,7 +4519,7 @@ OnTouch:
 		mes "enter the temple";
 		mes "through this window?^000000";
 		next;
-		if(select("Enter:Cancel") == 1) {
+		if(select("Enter:Cancelar") == 1) {
 			close2;
 			warp "que_rachel",62,82;
 			end;
@@ -5556,7 +5556,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 				mes "recently demoted, I just don't";
 				mes "have access to much information";
 				mes "about the hard-liners. However,";
-				mes "there may still be hope yet...";
+				mes "there may still be hope ainda...";
 				next;
 				mes "[High Priest Zhed]";
 				mes "War would be bad for all";
@@ -5735,7 +5735,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 					mes "Don't you think it's worth";
 					mes "checking out for now?";
 					next;
-					if (select("Yes:No") == 2) {
+					if (select("Sim:Nao") == 2) {
 						mes "[High Priest Zhed]";
 						mes "Well, you never know";
 						mes "until you ask. Besides,";
@@ -5949,7 +5949,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 					mes "her full support. Will";
 					mes "you help me to do this?";
 					next;
-					if (select("Yes:No") == 2) {
+					if (select("Sim:Nao") == 2) {
 						mes "Well... Asking for the";
 						mes "pope's support is the only";
 						mes "solution I've been able to";
@@ -6317,7 +6317,7 @@ ra_temin,170,46,3	script	Panno#rachel	920,{
 		mes "Have you come to";
 		mes "redeem Lottery Tickets?";
 		next;
-		if (select("Yes:No") == 1) goto L_Lottery;
+		if (select("Sim:Nao") == 1) goto L_Lottery;
 		if (ra_tem_q == 12) {
 			cutin "ra_fano01",2;
 			mes "[Priestess Panno]";
@@ -6346,7 +6346,7 @@ ra_temin,170,46,3	script	Panno#rachel	920,{
 			mes "know, in case you were saving";
 			mes "them for some weird reason.";
 			next;
-			if (select("Yes:No") == 1) goto L_Lottery;
+			if (select("Sim:Nao") == 1) goto L_Lottery;
 			cutin "ra_fano03",2;
 			mes "[Priestess Panno]";
 			mes "You can redeem your";
@@ -6428,7 +6428,7 @@ ra_temin,170,46,3	script	Panno#rachel	920,{
 			mes "know, in case you were saving";
 			mes "them for some weird reason.";
 			next;
-			if (select("Yes:No") == 1) goto L_Lottery;
+			if (select("Sim:Nao") == 1) goto L_Lottery;
 			mes "[Priestess Panno]";
 			mes "You can redeem your";
 			mes "Lottery Tickets at any";

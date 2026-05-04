@@ -23,7 +23,7 @@
 geffen,203,116,0	script	Guide#gef::GefGuide	705,{
 	cutin "gef_soldier",2;
 	mes "[Geffen Guide]";
-	mes "Welcome to Geffen,";
+	mes "Bem-vindo a Geffen,";
 	mes "the City of Magic. If you";
 	mes "need any guidance around";
 	mes "the city, feel free to ask me";
@@ -31,25 +31,25 @@ geffen,203,116,0	script	Guide#gef::GefGuide	705,{
 	set .@loop1,1;
 	while (.@loop1) {
 		next;
-		switch(select("City Guide:Remove Marks from Mini-Map:Notice.:Cancel")) {
+		switch(select("City Guide:Remover Marcas do Mini-Mapa:Notice.:Cancelar")) {
 		case 1:
 			mes "[Geffen Guide]";
-			mes "Please select";
-			mes "a location from";
-			mes "the following menu.";
+			mes "Por favor selecione";
+			mes "um local do";
+			mes "menu a seguir.";
 			if (compass_check == 0) {
-				mes "Would you like me";
-				mes "to mark locations";
-				mes "on your Mini-Map?";
+				mes "Gostaria que eu";
+				mes "marcasse locais";
+				mes "no seu Mini-Mapa?";
 				next;
-				if (select("Yes:No") == 1) set .@compass_check,1;
+				if (select("Sim:Nao") == 1) set .@compass_check,1;
 			}
 			set .@loop2,1;
 			while (.@loop2) {
 				if (.@wait_button_chk == 0) set .@wait_button_chk,1;
 				else next;
 //				next;
-				switch(select("^FF0000Magic Acedemy^000000:Forge Shop:Weapon Shop:Tool Shop:Pub:Inn:Geffen Tower:Cancel")) {
+				switch(select("^FF0000Magic Acedemy^000000:Forge Shop:Loja de Armas:Loja de Ferramentas:Pub:Inn:Geffen Tower:Cancelar")) {
 				case 1:
 					mes "[Geffen Guide]";
 					mes "The Magic Academy in";
@@ -68,8 +68,8 @@ geffen,203,116,0	script	Guide#gef::GefGuide	705,{
 					break;
 				case 3:
 					mes "[Geffen Guide]";
-					mes "The Weapon Shop";
-					mes "can be found northwest";
+					mes "A Loja de Armas";
+					mes "pode ser encontrado northwest";
 					mes "from the center of Geffen.";
 					if (.@compass_check)
 						viewpoint 1,99,140,4,0xFF00FF;
@@ -117,7 +117,7 @@ geffen,203,116,0	script	Guide#gef::GefGuide	705,{
 					mes "Marks from Mini-Map'' if you";
 					mes "no longer wish to have the";
 					mes "location marks displayed";
-					mes "on your Mini-Map.";
+					mes "no seu Mini-Mapa.";
 					set .@loop2,0;
 					break;
 				}
@@ -159,7 +159,7 @@ geffen,203,116,0	script	Guide#gef::GefGuide	705,{
 			break;
 		case 4:
 			mes "[Geffen Guide]";
-			mes "Alright, adventurer.";
+			mes "Certo, aventureiro.";
 			mes "I wish you safety on";
 			mes "your journeys through";
 			mes "the lands you may travel...";

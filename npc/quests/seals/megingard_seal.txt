@@ -3289,7 +3289,7 @@ niflheim,109,254,0	script	Egnigem	796,{
 				mes "[Egnigem]";
 				mes "I see. If you better understand Niflheim's layout, you have a greater chance of surviving and escaping.";
 				next;
-				switch(select("Witch's Castle:Tool Shop:Weapon Shop:Tavern:Cancel")) {
+				switch(select("Witch's Castle:Tool Shop:Weapon Shop:Tavern:Cancelar")) {
 				case 1:
 					mes "[Egnigem]";
 					mes "The witch of Niflheim...";
@@ -3369,7 +3369,7 @@ niflheim,109,254,0	script	Egnigem	796,{
 			mes "[Egnigem]";
 			mes "...I see. Now, let me introduce you all buildings in Niflheim!";
 			next;
-			switch(select("Witch's Castle:Tool Shop:Weapon Shop:Tavern:Cancel")) {
+			switch(select("Witch's Castle:Tool Shop:Weapon Shop:Tavern:Cancelar")) {
 			case 1:
 				mes "[Egnigem]";
 				mes "The witch of Niflheim...";

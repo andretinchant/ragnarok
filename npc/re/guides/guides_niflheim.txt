@@ -27,9 +27,9 @@ niflheim,201,187,3	script	Niflheim Guide#01nif	849,{
 	}
 	while (1) {
 		next;
-		switch(select("[ Tool Shop ]:[ Pub ]:[ Weapon Shop ]:[ Witch's Castle ]:Remove Marks from Mini-Map:Cancel")) {
+		switch(select("[ Tool Shop ]:[ Pub ]:[ Weapon Shop ]:[ Witch's Castle ]:Remover Marcas do Mini-Mapa:Cancelar")) {
 		case 1:
-			callsub L_Mark, F_Navi("Tool Shop","niflheim,218,196","^0000FF");
+			callsub L_Mark, F_Navi("Loja de Ferramentas","niflheim,218,196","^0000FF");
 			viewpoint 1,218,196,0,0x0A82FF;
 			break;
 		case 2:
@@ -37,7 +37,7 @@ niflheim,201,187,3	script	Niflheim Guide#01nif	849,{
 			viewpoint 1,189,208,1,0xAAFF00;
 			break;
 		case 3:
-			callsub L_Mark, F_Navi("Weapon Shop","niflheim,218,170","^800080");
+			callsub L_Mark, F_Navi("Loja de Armas","niflheim,218,170","^800080");
 			viewpoint 1,218,170,2,0xDA70D6;
 			break;
 		case 4:
@@ -55,16 +55,16 @@ niflheim,201,187,3	script	Niflheim Guide#01nif	849,{
 			break;
 		case 6:
 			mes "[Niflheim Guide]";
-			mes "......Bye~!..";
+			mes "......Tchau~!..";
 			close;
 		}
 	}
 	end;
 L_Mark:
 	mes "[Niflheim Guide]";
-	mes "Let me mark the location of the";
+	mes "Deixe-me marcar the location of the";
 	mes getarg(0)+"^000000...";
-	mes "on your mini-map.";
-	mes "Would you like to check any other locations?";
+	mes "no seu mini-mapa.";
+	mes "Gostaria de verificar outros locais?";
 	return;
 }

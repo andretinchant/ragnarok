@@ -849,7 +849,7 @@ yuno,261,99,4	script	Sage Yklah#juno	735,{
 				mes "Well, if you already know a little bit about Juno, you'd know that Juno consists of 3 islands that represent propsperity, knowledge and honor.";
 				next;
 				mes "[Yklah]";
-				mes "The 3 sages described in the song represent each island. By now, you've probably guessed that I am one of them.";
+				mes "The 3 sages described in the song represent each island. By now, you've probably guessed that I am one deles.";
 				next;
 				mes "[Yklah]";
 				mes "There is a Juno tradition in which the three best Sages are chosen to represent each of Juno's islands.";

@@ -23,7 +23,7 @@
 	mes "I wish all of you joy";
 	mes "and Christmas cheer!";
 	next;
-	switch(select("Info about Lutie:Move to 'Lutie':Cancel")) {
+	switch(select("Info about Lutie:Move to 'Lutie':Cancelar")) {
 	case 1:
 		mes "[Mr. Claus]";
 		mes "^3355FFLutie^000000, the fantastic Christmas Town! Always filled with the spirit of giving, Lutie is filled with appetizing cakes, tiny toy soldiers, and all sorts of wonderful things~!";
@@ -90,7 +90,7 @@ xmas_in,167,173,4	script	Duffle	711,{
 	if (xmas_npc == 1) {
 		mes "[Duffle]";
 		mes "Merry Christmas!";
-		mes "Welcome to Lutie!";
+		mes "Bem-vindo a Lutie!";
 		next;
 		mes "[Duffle]";
 		mes "You got a present";
@@ -164,7 +164,7 @@ xmas_in,27,103,4	script	Lenient Aunt	701,{
 		mes "Hmmm~?";
 		mes "You want to know";
 		mes "about ^3355FFSnowysnow^000000?";
-		mes "Oh. Yes, yes, I see...";
+		mes "Oh. Yes, yes, Entendo...";
 		next;
 		mes "[Thachentze]";
 		mes "Well, I can't just let anyone know something so important about Snowysnow. Hmmm...";
@@ -178,7 +178,7 @@ xmas_in,27,103,4	script	Lenient Aunt	701,{
 		mes "[Thachentze]";
 		mes "Now be a dear";
 		mes "and hurry up.";
-		mes "Come back quickly~";
+		mes "Volte quickly~";
 		set xmas_npc,6;
 		close;
 	case 6:
@@ -208,14 +208,14 @@ xmas_in,27,103,4	script	Lenient Aunt	701,{
 		mes "[Thachentze]";
 		mes "Hohohohoh hohohohoho !";
 		mes "Let's see, let's see...";
-		mes "Thank you dear,Thank you.";
+		mes "Obrigado dear,Obrigado.";
 		next;
 		set xmas_npc,8;
 		mes "^3355FFYou gave her the";
 		mes "roughest salt in the world.^000000";
 		next;
 		mes "[Thachentze]";
-		mes "Now I am able to pickle my cabbages properly. Thank you, my dear. Thank you...";
+		mes "Now I am able to pickle my cabbages properly. Obrigado, my dear. Obrigado...";
 		next;
 		mes "...";
 		next;
@@ -223,10 +223,10 @@ xmas_in,27,103,4	script	Lenient Aunt	701,{
 		mes "......";
 		next;
 		mes "[Thachentze]";
-		mes "Oh yes, I'm sorry. I almost forgot what I promised you. You asked me about Snowysnow's magical gift bag, didn't you?";
+		mes "Oh yes, Sinto muito. I almost forgot what I promised you. You asked me about Snowysnow's magical gift bag, didn't you?";
 		next;
 		mes "[Thachentze]";
-		mes "If you already met Uncle Cantata, you must know by now that Snowysnow has been made out of some mysterious snow that covered a thick field of magical flowers.";
+		mes "If you already met Uncle Cantata, you must know by now that Snowysnow has been made out of some misterioso snow that covered a thick field of magical flowers.";
 		next;
 		mes "[Thachentze]";
 		mes "I can't tell you how, but when Snowysnow was revived, there was a reaction between the Alchemist's materials and the energies of Snowysnow's snow.";
@@ -235,10 +235,10 @@ xmas_in,27,103,4	script	Lenient Aunt	701,{
 		mes "For some reason, Snowysnow's gift bag can now create as many presents as Snowysnow wants, just like Santa Claus.";
 		next;
 		mes "[Thachentze]";
-		mes "Of course, if this power were to fall into the hands of evil, we would all be in trouble.";
+		mes "Claro, if this power were to fall into the hands of evil, we would all be in trouble.";
 		next;
 		mes "[Thachentze]";
-		mes "However, everyone knows that Snowysnow is kind and loving towards others. So we're never worried about Snowysnow's powers.";
+		mes "Porem, everyone knows that Snowysnow is kind and loving towards others. So we're never worried about Snowysnow's powers.";
 		next;
 		mes "[Thachentze]";
 		mes "Oh, and I've just heard some shocking news from ^3355FFHashokii^000000 the clown. It's quite an interesting story, actually. Why don't you ask him more about it?";
@@ -260,7 +260,7 @@ xmas_in,27,103,4	script	Lenient Aunt	701,{
 		mes "I figured something out a few days ago. In the Christmas dungeon, you'll run into creatures that are similar to those outside of town.";
 		next;
 		mes "[Thachentze]";
-		mes "I'm guessing that monsters wandered here from outside of town, and were changed by the cold weather here. So monsters adapted to live in this environment.";
+		mes "I'm guessing that monstros wandered here from outside of town, and were changed by the cold weather here. So monstros adapted to live in this environment.";
 		next;
 		mes "[Thachentze]";
 		mes "...";
@@ -279,7 +279,7 @@ xmas,117,304,4	script	Poze	713,{
 		mes "mentioned me?";
 		next;
 		mes "[Poze]";
-		mes "Oh I see...";
+		mes "Oh Entendo...";
 		mes "He's a snowman that doesn't have any legs. No wonder he hasn't come to visit me. What a shame, what a shame. I guess I better go visit him instead.";
 		next;
 		mes "[Poze]";
@@ -289,7 +289,7 @@ xmas,117,304,4	script	Poze	713,{
 		mes "One day when apprentice of the great alchemist visited Lutie, I came to listen in on a conversation between him and Uncle Hairy.";
 		next;
 		mes "[Poze]";
-		mes "Long ago, a great alchemist came by Snowysnow's hometown and happened to meet Snowysnow dying, melting down into water. However, Snowysnow was miraculously revived by that Alchemist.";
+		mes "Long ago, a great alchemist came by Snowysnow's hometown and happened to meet Snowysnow dying, melting down into water. Porem, Snowysnow was miraculously revived by that Alchemist.";
 		next;
 		mes "[Poze]";
 		mes "But that's pretty much all I know. For the actual details, you should ask ^3355FFUncle Hairy Cantata^000000.";
@@ -297,7 +297,7 @@ xmas,117,304,4	script	Poze	713,{
 		close;
 	} else {
 		mes "[Poze]";
-		mes "Welcome to Lutie,";
+		mes "Bem-vindo a Lutie,";
 		mes "the town which blesses";
 		mes "all of its visitors with";
 		mes "the spirit of Christmas!";
@@ -341,7 +341,7 @@ xmas,176,236,4	script	Uncle Hairy	712,{
 			mes "He was always foremost in the research of alchemy and needed rare materials to conduct his studies. Because of that, he had to travel the world in search of materials containing magical energies...";
 			next;
 			mes "[Cantata]";
-			mes "One day, his travels brought him to a northern village known for its freezing weather. But when he arrived, he was welcomed by a smouldering town that had recently been destroyed.";
+			mes "One day, his travels brought him to a northern village known for its freezing weather. But when he arrived, he was welcomed by a smouldering town that had recentemente been destroyed.";
 			next;
 			mes "[Cantata]";
 			mes "It was a grim sight: People were lying at the roadside, groaning in agony. As Varsez walked by, each villager would beg, 'K-Kill me...' and plead for him to put them out of their misery.";
@@ -360,10 +360,10 @@ xmas,176,236,4	script	Uncle Hairy	712,{
 			mes "Varsez was touched, and was determined to save the life of this snowman with his alchemy. He would then transport him here to Lutie, the safest place in the world.";
 			next;
 			mes "[Cantata]";
-			mes "Of course, there was another rumor that, in addition to the mercy from that Alchemist, Snowysnow was able to survive due to the special properties of his snow.";
+			mes "Claro, there was another rumor that, in addition to the mercy from that Alchemist, Snowysnow was able to survive due to the special properties of his snow.";
 			next;
 			mes "[Cantata]";
-			mes "It's believed that Snowysnow's snow used to cover a mysterious field that would be filled with the bloom of magical flowers.";
+			mes "It's believed that Snowysnow's snow used to cover a misterioso field that would be filled with the bloom of magical flowers.";
 			next;
 			mes "[Cantata]";
 			mes "Muhahaha~";
@@ -411,14 +411,14 @@ xmas,176,236,4	script	Uncle Hairy	712,{
 	else {
 		mes "[Cantata]";
 		mes "Merry Christmas!";
-		mes "Welcome to Lutie!";
+		mes "Bem-vindo a Lutie!";
 		next;
 		mes "[Cantata]";
 		mes "It looks like the cold has brought a rosiness to your cheeks.";
 		mes "Haw haw haw!";
 		next;
 		mes "[Cantata]";
-		mes "Be careful, it wouldn't be good for you to catch the Lutie Flu.";
+		mes "Tome cuidado, it wouldn't be good for you to catch the Lutie Flu.";
 		mes "...";
 		next;
 		mes "[Cantata]";
@@ -470,7 +470,7 @@ xmas,134,112,4	script	Snowman	710,{
 	mes "On the same spot...";
 	mes "Day after day after day after day after day after day after day after day after day after day...";
 	next;
-	switch(select("^3355FFSnowysnow?^000000:Info about the Christmas dungeon:Quit this conversation")) {
+	switch(select("^3355FFSnowysnow?^000000:Info about the Christmas dungeon:Sair this conversation")) {
 	case 1:
 		if (xmas_npc < 2) {
 			cutin "rutie_snownow01.bmp",2;
@@ -518,7 +518,7 @@ xmas,134,112,4	script	Snowman	710,{
 				mes "stops by and says 'hi...'";
 				next;
 				mes "[Snowysnow]";
-				mes "It's weird that the people of Lutie call me a mysterious, magical snowman. I mean, inside, aren't I just the same as regular people?";
+				mes "It's weird that the people of Lutie call me a misterioso, magical snowman. I mean, inside, aren't I just the same as regular people?";
 				next;
 				mes "[Snowysnow]";
 				mes "*Sniff* S-sometimes,";
@@ -531,7 +531,7 @@ xmas,134,112,4	script	Snowman	710,{
 				mes "But then fate played its cruel joke on me once again, and I realized that I had no legs to visit him with.";
 				next;
 				mes "[Snowysnow]";
-				mes "How did I ever get to this town? And how in the world am I able to talk?! I-It's not natural, is it? Does... Does that make me a monster?";
+				mes "How did I ever get to this town? And how in the world am I able to talk?! I-It's not natural, is it? Does... Does that make me a monstro?";
 				next;
 				mes "^3355FFSnowysnow is immersed in his deep thoughts, and seems^000000";
 				mes "^3355FFfixated on Poze's memento.^000000";
@@ -583,7 +583,7 @@ xmas,134,112,4	script	Snowman	710,{
 				mes "Sure, he has a loud voice, doesn't take showers and smells like rotting food. But he's a funny guy with a warm heart. Everybody loves him!";
 				next;
 				mes "[Snowysnow]";
-				mes "Of course, he still enjoys drinking strange things. They say it's a miracle that he doesn't have a tummyache. Hee hee~! Oh, I love that guy!";
+				mes "Claro, he still enjoys drinking strange things. They say it's a miracle that he doesn't have a tummyache. Hee hee~! Oh, I love that guy!";
 				close2;
 				cutin "",255;
 				end;
@@ -639,7 +639,7 @@ xmas,134,112,4	script	Snowman	710,{
 			case 10:
 				cutin "rutie_snownow01.bmp",2;
 				mes "[Snowysnow]";
-				mes "Thank you for listening to me so far. I really appreciate that you try to understand me, even though you're a stranger here.";
+				mes "Obrigado por listening to me so far. I really appreciate that you try to understand me, even though you're a stranger here.";
 				next;
 				mes "[Snowysnow]";
 				mes "Now, you know me better than anyone else in this town. So, in return, I want to give you a small present.";
@@ -744,7 +744,7 @@ xmas,134,112,4	script	Snowman	710,{
 			mes "Around this wonderful town, eternally blessed with Christmas, there is a horrible dungeon, eternally cursed with Christmas.";
 			next;
 			mes "[Snowysnow]";
-			mes "I've heard that it's well decorated and looks just like a Toy Factory inside, where everything is so cute and pretty. They are Toy Soldiers and Gift Boxes as far as the eye can see!";
+			mes "I've heard that it's well decorated and looks just like a Toy Fabrica inside, where everything is so cute and pretty. They are Toy Soldiers and Gift Boxes as far as the eye can see!";
 			next;
 			cutin "rutie_snownow01.bmp",2;
 			mes "[Snowysnow]";
@@ -756,7 +756,7 @@ xmas,134,112,4	script	Snowman	710,{
 			cutin "rutie_snownow03.bmp",2;
 			mes "[Snowysnow]";
 			mes "Bye bye, friend~!";
-			mes "Thank you for listening to me~";
+			mes "Obrigado por listening to me~";
 			mes "I'll see you again, someday! You'll always be in my heart~";
 			close2;
 			cutin "",255;
@@ -770,7 +770,7 @@ xmas,146,136,4	script	Hashokii	715,{
 	mes "La La La~!";
 	mes "Dum di Dum di Dum!";
 	next;
-	switch(select("Yo Clown boy, what's up?:About Snowysnow:Quit conversation")) {
+	switch(select("Yo Clown boy, what's up?:Sobre Snowysnow:Sair conversation")) {
 	case 1:
 		mes "[Hashokii]";
 		mes "La La La~!";
@@ -812,7 +812,7 @@ xmas,146,136,4	script	Hashokii	715,{
 		} else {
 			mes "[Hashokii]";
 			mes "Ah... ^3355FFSnowysnow^000000?";
-			mes "Of course I know him! Anyone who doesn't know Snowysnow is a total stranger around here! Sometimes, he and I share a nice chat...";
+			mes "Claro I know him! Anyone who doesn't know Snowysnow is a total stranger around here! Sometimes, he and I share a nice chat...";
 			next;
 			mes "[Hashokii]";
 			mes "He makes such a good audience for my show. But to be honest, I'm not sure if he really likes it or not. Most people don't seem to care for my jokes.";
@@ -886,7 +886,7 @@ xmas,208,168,4	script	Little Girl	703,{
 		case 9:
 			mes "[Marcell]";
 			mes "You mean Snowysnow?";
-			mes "Of course I know him!";
+			mes "Claro I know him!";
 			next;
 			mes "[Marcell]";
 			mes "He's a nice and funny guy!";
@@ -912,7 +912,7 @@ xmas,208,168,4	script	Little Girl	703,{
 			next;
 			mes "[Marcell]";
 			mes "Oh, now I see . . . . .";
-			mes "You wanna learn all about Snowysnow because you want to become his friend! He'll be so happy to know that! Ooh! Maybe he'll give you a present! Good luck!";
+			mes "You wanna learn all about Snowysnow because you want to become his friend! He'll be so happy to know that! Ooh! Maybe he'll give you a present! Boa sorte!";
 			set xmas_npc,10;
 			close;
 		case 10:

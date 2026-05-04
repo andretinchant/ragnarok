@@ -24,7 +24,7 @@
 alberta,23,238,4	script	Guide#alb::AlbGuide	105,{
 	cutin "prt_soldier",2;
 	mes "[Alberta Guide]";
-	mes "Welcome to Alberta,";
+	mes "Bem-vindo a Alberta,";
 	mes "the Port City. Feel free";
 	mes "to ask me if you're having";
 	mes "trouble finding anything in";
@@ -33,25 +33,25 @@ alberta,23,238,4	script	Guide#alb::AlbGuide	105,{
 	set .@loop1,1;
 	while (.@loop1) {
 		next;
-		switch(select("City Guide:Remove Marks from Mini-Map:Notice:Cancel")) {
+		switch(select("City Guide:Remover Marcas do Mini-Mapa:Aviso:Cancelar")) {
 		case 1:
 			mes "[Alberta Guide]";
-			mes "Please select";
-			mes "a location from";
-			mes "the following menu.";
+			mes "Por favor selecione";
+			mes "um local do";
+			mes "menu a seguir.";
 			if (.@compass_check == 0) {
-				mes "Would you like me";
-				mes "to mark locations";
-				mes "on your Mini-Map?";
+				mes "Gostaria que eu";
+				mes "marcasse locais";
+				mes "no seu Mini-Mapa?";
 				next;
-				if (select("Yes:No") == 1) set .@compass_check,1;
+				if (select("Sim:Nao") == 1) set .@compass_check,1;
 			}
 			set .@loop2,1;
 			while (.@loop2) {
 				if (.@wait_button_chk == 0) set .@wait_button_chk,1;
 				else next;
 				
-				switch(select("^FF0000Merchant Guild^000000:Weapon Shop:Tool Shop:Inn:Forge:Cancel")) {
+				switch(select("^FF0000Merchant Guild^000000:Loja de Armas:Loja de Ferramentas:Inn:Forge:Cancelar")) {
 				case 1:
 					mes "[Alberta Guide]";
 					mes "The Merchant Guild";
@@ -65,15 +65,15 @@ alberta,23,238,4	script	Guide#alb::AlbGuide	105,{
 					break;
 				case 2:
 					mes "[Alberta Guide]";
-					mes "The Weapon Shop";
-					mes "can be found in the";
+					mes "A Loja de Armas";
+					mes "pode ser encontrado in the";
 					mes "southern end of Alberta.";
 					if (.@compass_check)
 						viewpoint 1,117,37,3,0xFF00FF;
 					break;
 				case 3:
 					mes "[Alberta Guide]";
-					mes "The Tool Shop";
+					mes "A Loja de Ferramentas";
 					mes "is kind of close";
 					mes "to the center of";
 					mes "Alberta. It shouldn't";
@@ -105,7 +105,7 @@ alberta,23,238,4	script	Guide#alb::AlbGuide	105,{
 					mes "Marks from Mini-Map'' if you";
 					mes "no longer wish to have the";
 					mes "location marks displayed";
-					mes "on your Mini-Map.";
+					mes "no seu Mini-Mapa.";
 					set .@loop2,0;
 				}
 			}
@@ -144,7 +144,7 @@ alberta,23,238,4	script	Guide#alb::AlbGuide	105,{
 			break;
 		case 4:
 			mes "[Alberta Guide]";
-			mes "Be safe when you";
+			mes "Fique seguro quando";
 			mes "travel and don't hesitate";
 			mes "to ask me if you have any";
 			mes "questions about Alberta.";

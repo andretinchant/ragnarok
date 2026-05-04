@@ -9,38 +9,38 @@
 
 -	script	GuildWarehouse	-1,{
 	mes "[Warehouse Manager]";
-	mes "How are you? We are specialized in guild warehouses. This is our ^0000cdstory^000000:";
-	mes "Why can't guild members share a storage? We started off with that simple question.";
+	mes "Como vai? Nos somos especializados em armazens de guilda. Essa e a nossa ^0000cdhistoria^000000:";
+	mes "Por que os membros da guilda nao podem compartilhar um armazem? Comecamos com essa simples pergunta.";
 	next;
 	mes "[Warehouse Manager]";
-	mes "You can open the warehouse for 1000 Zeny or look up the usage history of the guild.";
-	mes "How can I help you?";
+	mes "Voce pode abrir o armazem por 1000 Zeny ou consultar o historico de uso da guilda.";
+	mes "Como posso te ajudar?";
 	next;
-	if( select( "Open guild warehouse:View warehouse usage history" ) == 1 ){
+	if( select( "Abrir armazem da guilda:Ver historico de uso do armazem" ) == 1 ){
 		.@guildid = getcharid( 2 );
 
 		if( .@guildid == 0 ){
 			mes "[Warehouse Manager]";
-			mes "The guild storage is only available for guild members.";
+			mes "O armazem da guilda so esta disponivel para membros de guilda.";
 			close;
 		}
 
 		if( getgdskilllv( .@guildid, "GD_GUILD_STORAGE" ) == 0 || !guild_has_permission( GUILD_PERM_STORAGE ) ){
 			mes "[Warehouse Manager]";
-			mes "It seems that it is not yet possible for your guild to use the guild warehouse or you do not have access permissions for the warehouse.";
-			mes "Please come back after checking the guild skill and the permission to access the warehouse.";
+			mes "Parece que ainda nao e possivel para sua guilda usar o armazem da guilda ou voce nao tem permissoes de acesso ao armazem.";
+			mes "Por favor, volte apos verificar a habilidade da guilda e a permissao de acesso ao armazem.";
 			close;
 		}
 
 		if( Zeny < 1000 ){
 			mes "[Warehouse Manager]";
-			mes "I am afraid you do not have enough money to settle the fee.";
-			mes "The fee is 1000 Zeny.";
+			mes "Receio que voce nao tenha dinheiro suficiente para pagar a taxa.";
+			mes "A taxa e de 1000 Zeny.";
 			close;
 		}
 
 		mes "[Warehouse Manager]";
-		mes "I will open the guild storage for you then. Have a memorable time!";
+		mes "Vou abrir o armazem da guilda pra voce entao. Tenha um momento memoravel!";
 		close2;
 
 		if( Zeny < 1000 ){
@@ -53,8 +53,8 @@
 			end;
 		}else{
 			mes "[Warehouse Manager]";
-			mes "I am afraid someone else is using the warehouse right now.";
-			mes "Please try again after a while.";
+			mes "Receio que outra pessoa esteja usando o armazem agora.";
+			mes "Por favor, tente novamente depois de um tempo.";
 			close;
 		}
 	}else{
@@ -62,20 +62,20 @@
 
 		if( .@guildid == 0 ){
 			mes "[Warehouse Manager]";
-			mes "The guild storage is only available for guild members.";
+			mes "O armazem da guilda so esta disponivel para membros de guilda.";
 			close;
 		}
 
 		if( getgdskilllv( .@guildid, "GD_GUILD_STORAGE" ) == 0 || !guild_has_permission( GUILD_PERM_STORAGE ) ){
 			mes "[Warehouse Manager]";
-			mes "It seems that it is not yet possible for your guild to use the guild warehouse or you do not have access permissions for the warehouse.";
-			mes "Please come back after checking the guild skill and the permission to access the warehouse.";
+			mes "Parece que ainda nao e possivel para sua guilda usar o armazem da guilda ou voce nao tem permissoes de acesso ao armazem.";
+			mes "Por favor, volte apos verificar a habilidade da guilda e a permissao de acesso ao armazem.";
 			close;
 		}
 
 		mes "[Warehouse Manager]";
-		mes "I will show you the usage history of the warehouse. Usage history will be retained for up to 3 months.";
-		mes "Have a memorable time!";
+		mes "Vou te mostrar o historico de uso do armazem. O historico de uso sera mantido por ate 3 meses.";
+		mes "Tenha um momento memoravel!";
 		close2;
 		guildopenstorage_log();
 		end;

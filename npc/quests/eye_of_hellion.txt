@@ -2411,7 +2411,7 @@ gef_fild09,296,59,0	script	Hidden Cave#hellion	111,3,3,{
 			mes "sweet release I crave...''^000000";
 			next;
 			mes "^4D4DFF''Brave hero, I beg of";
-			mes "you. Please kill me and";
+			mes "you. Por favor, mate me and";
 			mes "bring salvation to my soul.";
 			mes "Please release me so that";
 			mes "I can finally join my friends.";

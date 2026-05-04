@@ -11,16 +11,16 @@
 
 moro_vol,91,105,1	script	Eclage Teleporter#143_1	PORTAL,{
 	mes "[Dophe]";
-	mes "This teleporter is connected to Eclage.";
-	mes "It'll be destroyed once our operation is over, but for now it's something we cannot live without.";
+	mes "Este teleporter is connected to Eclage.";
+	mes "It'll be destroyed umum vez nosso operation is sobre, mas fou agorum e algo we nao pode live sem.";
 	next;
-	mes "Use the teleporter to move to Eclage.";
+	mes "Usar o teleporter to mover to Eclage.";
 	next;
-	if (select( "Move to Eclage.", "Cancel." ) == 2) {
-		mes "Do not use the teleporter.";
+	if (select( "Mover to Eclage.", "Cancelar." ) == 2) {
+		mes "Do nao usar o teleporter.";
 		close;
 	}
-	mes "Move to Eclage.";
+	mes "Mover to Eclage.";
 	close2;
 	warp "ecl_in01",38,96;
 	end;
@@ -29,18 +29,18 @@ moro_vol,91,105,1	script	Eclage Teleporter#143_1	PORTAL,{
 ecl_in01,38,98,1	script	Interdimensional Device#ecl	PORTAL,{
 	if (ep14_3_newerabs < 10) {
 		mes "[Eclage Guard]";
-		mes "This teleporter is connected to the recently discovered hideout of the Demon God.";
-		mes "Only those allowed to enter the hideout can use this teleporter.";
+		mes "Este teleporter is connected to o recentemente descobriu hideout of o Demon God.";
+		mes "Apenas esses allowed to entrar o hideout cum usar este teleporter.";
 		close;
 	}
-	mes "This teleporter is connected to the recently discovered hideout of the Demon God.";
-	mes "Do you want to use it?";
+	mes "Este teleporter is connected to o recentemente descobriu hideout of o Demon God.";
+	mes "Do voce quer to usar it?";
 	next;
-	if (select( "Move to the Demon God's hideout.", "Quit." ) == 2) {
-		mes "Do not use the teleporter.";
+	if (select( "Mover to o Demon God's hideout.", "Quit." ) == 2) {
+		mes "Do nao usar o teleporter.";
 		close;
 	}
-	mes "Use the teleporter to move to the Demon God's hideout.";
+	mes "Usar o teleporter to mover to o Demon God's hideout.";
 	close2;
 	warp "moro_vol",91,102;
 	end;
@@ -48,43 +48,43 @@ ecl_in01,38,98,1	script	Interdimensional Device#ecl	PORTAL,{
 
 ecl_in01,40,96,3	script	Eclage Guard#143_6	4_M_FAIRYSOLDIER,{
 	mes "[Eclage Guard]";
-	mes "How may I help you?";
+	mes "How may I ajudar you?";
 	next;
-	switch( select( "What's that teleporter?", "Why is it so crowded in here?", "Demon God's hideout?", "Goodbye." ) ) {
+	switch( select( "O que e esse teleporter?", "Pou que it entao crowded in aqui?", "Demon God's hideout?", "Adeus." ) ) {
 	case 1:
 		mes "[Eclage Guard]";
-		mes "It's connected to the recently discovered hideout the of Demon God.";
-		mes "It's scientifically designed to send its user directly to the Dimensional Crack where his hideout is.";
+		mes "E connected to o recentemente descobriu hideout o of Demon God.";
+		mes "E scientifically designed to send seu user directly to o Dimensional Crack where o hideout is.";
 		next;
 		mes "[Eclage Guard]";
-		mes "Many a warrior already left to the hideout.";
-		mes "So long as Morocc exists, Yggdrasil is not safe. I'm going to join the Expedition.";
+		mes "Many um guerreiro jum left to o hideout.";
+		mes "Entao long as Morocc existe, Yggdrasil is nao seguro. Eu sou vai join o Expedition.";
 		close;
 	case 2:
 		mes "[Eclage Guard]";
-		mes "It turns out Demon God ran from Morocc to hide out in our dimension.";
-		mes "He has to be dealt with, either banished back to his realm or destroyed.";
+		mes "It turns out Demon God rum de Morocc to hide out in nosso dimension.";
+		mes "He has to be dealt com, eita banished back to o realm ou destroyed.";
 		next;
 		mes "[Eclage Guard]";
-		mes "If you want to join the Expedition to defeat the Demon God, then use this teleporter.";
-		mes "It'll send you directly to the Expedition Camp.";
+		mes "Se voce quer to join o Expedition to defeat o Demon God, entao usar este teleporter.";
+		mes "It'll send you directly to o Expedition Camp.";
 		close;
 	case 3:
 		mes "[Eclage Guard]";
-		mes "You know the Dimensional Crack, don't you? Recently it's been revealed that the Crack is made up of dimensional passageways.";
-		mes "We can now use those passageways to explore inside the Crack.";
+		mes "Voce sabe o Dimensional Crack, voce nao? Recently e been revealed esse o Crack is made up of dimensional passageways.";
+		mes "Nos podemos agorum usar esses passageways to explorar dentro o Crack.";
 		next;
 		mes "[Eclage Guard]";
-		mes "Originally the Crack was created by the Demon God to aid in his escape,";
-		mes "so it'd been thought investigating the Crack could locate him.";
+		mes "Originally o Crack was criou by o Demon God to aid in o escape,";
+		mes "entao it'd been pensou investigating o Crack could locate him.";
 		next;
 		mes "[Eclage Guard]";
-		mes "And it was; finally his hideout has been discovered.";
-		mes "His traces and his demon soldiers are sighted mainly around the giant hill in the center.";
+		mes "E it was; finalmente o hideout tem sido descobriu.";
+		mes "O traces e o demon soldados are sighted mainly ao redou o giant hill in o center.";
 		next;
 		mes "[Eclage Guard]";
-		mes "If you want more details, then you should visit the actual site.";
-		mes "Just use the teleporter over there.";
+		mes "Se voce quer mais detalhes, entao voce deverium visit o actual site.";
+		mes "Apenas usar o teleporter sobre la.";
 		close;
 	case 4:
 		mes "[Eclage Guard]";
@@ -96,13 +96,13 @@ ecl_in01,40,96,3	script	Eclage Guard#143_6	4_M_FAIRYSOLDIER,{
 // Others
 ecl_in01,44,99,1	script	Combat Laphine#143_4	4_M_FAIRYSOLDIER2,{
 	mes "[Combat Laphine]";
-	mes "I'm nervous.";
+	mes "Eu sou nervous.";
 	close;
 }
 
 ecl_in01,46,99,1	script	Combat Laphine#143_5	4_M_FAIRYSOLDIER2,{
 	mes "[Combat Laphine]";
-	mes "I hope I can return in one piece.";
+	mes "I esperancum Eu consigo retornar in one piece.";
 	close;
 }
 
@@ -119,23 +119,23 @@ ecl_in01,44,97,1	script	Combat Laphine#143_7	4_F_FAIRYSOLDIER,{
 
 ecl_in01,46,97,1	script	Combat Laphine#143_8	4_F_FAIRYSOLDIER,{
 	mes "[Combat Laphine]";
-	mes "Mwa hah hah, it's time for me to shine!";
+	mes "Mwum hah hah, e tempo fou me to shine!";
 	close;
 }
 
 ecl_in01,48,97,1	script	Combat Laphine#143_9	4_F_FAIRYSOLDIER,{
 	mes "[Combat Laphine]";
-	mes "I must have been out of my mind when I decided to join the army. Sigh, why does the Door to Verities have to be so high up there?";
+	mes "I must tem sido out of meu mente when I decided to join o army. Sigh, why does o Portum to Verities tem que be entao high up la?";
 	close;
 }
 
 ecl_in01,46,102,3	script	Commander Laphine#143_1	4_M_FAIRYSOLDIER,5,5,{
 	mes "[Commander Laphine]";
-	mes "Evil must be nipped in the butt.";
-	mes "You're unexpected visitors from the Midgard Continent.";
+	mes "Evil deve ser nipped in o butt.";
+	mes "Voce e unexpected visitors de o Midgard Continent.";
 	next;
 	mes "[Commander Laphine]";
-	mes "If you  are the cause doom to ourselves OR Yggdrasil, then we won't hesitate to fight you.";
+	mes "Se you  are o cause doom to ourselves OR Yggdrasil, entao we nao vai hesitate to lutar you.";
 	close;
 
 OnTouch_:
@@ -171,62 +171,62 @@ OnTouch_:
 
 ecl_in01,37,90,3	script	Magic Scholar Lemony#14	4_F_FAIRY2,{
 	mes "[Lemony]";
-	mes "Did you read the latest issue of the Door to Verities magazine?";
-	mes "Was Avant's new teleporter really featured in it?";
+	mes "Voce read o latest issue of o Portum to Verities magazine?";
+	mes "Was Avant's novo teleporter realmente featured in it?";
 	next;
 	mes "[Armandi]";
-	mes "Yes, just the basic principles and the information relevant to the Humans.";
-	mes "I didn't quite understand it all.";
+	mes "Yes, apenas o basic principles e o informacao relevant to o Humans.";
+	mes "I nao quite underste it todos.";
 	next;
 	mes "[Lemony]";
-	mes "I wonder if this means Avant has finally decided to pursue his interest in research activities.";
+	mes "I imaginar se este significum Avant has finalmente decided to pursue o interest in research activities.";
 	next;
 	mes "[Lemony]";
 	mes "Hey, Human.";
-	mes "Were you eavesdropping on us? Well, though it wasn't like we're discussing secrets.";
+	mes "Were you eavesdropping on us? Bem, though it nao erum like nos estamos discussing secrets.";
 	next;
 	mes "[Lemony]";
-	mes "Oh, right. Are you too going there?";
-	mes "You know, the hideout of the Demon God who created some of the Space Time Dimensional Cracks has recently been discovered.";
+	mes "Oh, certo. Voce e tambem indo la?";
+	mes "Voce sabe, o hideout of o Demon God who criou alguns of o Space Tempo Dimensional Cracks has recentemente been descobriu.";
 	next;
 	mes "[Lemony]";
-	mes "If you're curious, then use that teleporter to the hideout over there.";
-	mes "There will be quite a spectacle to watch.";
-	mes "Oh, just so you know, you might be throwing away your life. *Giggle*";
+	mes "Se voce e curioso, entao usar esse teleporter to o hideout sobre la.";
+	mes "There sera quite um spectacle to observar.";
+	mes "Oh, apenas entao voce sabe, voce pode be throwing emborum seu vida. *Giggle*";
 	next;
 	mes "[Armandi]";
-	mes "Lemony, you really need to work on improving your personality.";
+	mes "Lemony, you realmente precisar to trabalhar on improving seu personality.";
 	mes "Tsk, tsk.";
 	close;
 }
 
 ecl_in01,35,89,6	script	Magic Scholar Armandi#1	4_M_FAIRYKID6,{
 	mes "[Armandi]";
-	mes "I hope the Interdimensional Device won't take a heavy toll on the world.";
-	mes "By the way, Avant never fails to amaze me.";
+	mes "I esperancum o Interdimensional Device nao vai pegar um heavy toll on o mundo.";
+	mes "By o caminho, Avant nuncum fails to amaze me.";
 	next;
 	mes "[Lemony]";
-	mes "Ack, I hate that guy.";
+	mes "Ack, I odio esse guy.";
 	next;
 	mes "[Armandi]";
-	mes "Avant may be repulsive,";
-	mes "but he's the best at what he does.";
+	mes "Avant pode ser repulsive,";
+	mes "mas he's o best at what he does.";
 	next;
 	mes "[Lemony]";
 	mes "That, I agree.";
-	mes "Only he could pull off this kind of teleporter.";
-	mes "Why is he helping the Mayor, anyway?";
+	mes "Apenas he could pull off este kind of teleporter.";
+	mes "Pou que he ajudando o Prefeito, anyway?";
 	next;
 	mes "[Armandi]";
-	mes "When I asked him, he mumbled something about repentance.";
-	mes "I can only guess it has something to do with the Mayor's birth.";
+	mes "When I perguntou him, he mumbled algo sobre repentance.";
+	mes "Eu consigo apenas guess it has algo to do com o Prefeito's birth.";
 	next;
 	mes "[Armandi]";
-	mes "I wanted to ask more, but he looked down his nose at me.";
-	mes "Sigh, it's unfair such a jerk is considered the best in magical science.";
+	mes "I wanted to ask mais, mas he looked down o nose at me.";
+	mes "Sigh, e unfair such um jerk is considered o best in magical science.";
 	next;
 	mes "[Lemony]";
-	mes "You can always study hard to beat him.";
+	mes "Voce pode sempre study dificil to beat him.";
 	close;
 }
 

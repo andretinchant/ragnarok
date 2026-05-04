@@ -2078,7 +2078,7 @@ morocc,132,111,3	script	Little Girl#Jorti	703,{
 		mes "Um, I don't remember my daddy, but mommy lives far away, somewhere near the sky. That's what Uncle Kino says.";
 		next;
 		mes "[Jorti]";
-		mes "U-Uncle Kino says we can't go see her yet because there are no flying boats yet...";
+		mes "U-Uncle Kino says we can't go see her yet because there are no flying boats ainda...";
 		close;
 
 	} else if (gef_bard_q == 30) {
@@ -2107,7 +2107,7 @@ morocc,132,111,3	script	Little Girl#Jorti	703,{
 		mes "Um, I don't remember my daddy, but mommy lives far away, somewhere near the sky. That's what Uncle Kino says.";
 		next;
 		mes "[Jorti]";
-		mes "U-Uncle Kino says we can't go see her yet because there are no flying boats yet...";
+		mes "U-Uncle Kino says we can't go see her yet because there are no flying boats ainda...";
 		close;
 
 	} else {

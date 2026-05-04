@@ -7,440 +7,440 @@
 //===== Compatible With: =====================================
 //= rAthena Project
 //===== Description: =========================================
-//= [Official Conversion]
+//= [Official Conrsion]
 //= Veins Town Npcs
 //===== Additional Comments: =================================
-//= 1.0 First version [L0ne_W0lf]
+//= 1.0 First rsion [L0ne_W0lf]
 //= 1.1 Updated to match AEGIS script. [Kisuka]
 //============================================================
 
 // Veins
 //============================================================
-veins,162,34,5	script	Towner#ve1	943,{
+ins,162,34,5	script	Towner#1	943,{
 	mes "[Towner]";
-	mes "I love cacti. They're";
-	mes "the most beautiful plants";
-	mes "in the desert. Sometimes,";
-	mes "they're the only signs of";
-	mes "life in a barren land.";
+	mes "Eu amo cactos. Eles're";
+	mes "as plantas mais bonitas";
+	mes "do deserto. As zes,";
+	mes "eles sao os unicos sinais de";
+	mes "vida em uma terra arida.";
 	next;
 	mes "[Towner]";
-	mes "If you feel a stirring";
-	mes "in your heart when you";
-	mes "look at a cactus, you";
-	mes "must appreciate the";
-	mes "desert's true beauty.";
+	mes "Se voce sentir uma emocao";
+	mes "no seu coracao quando";
+	mes "olhar para um cacto, voce";
+	mes "de apreciar a";
+	mes "rdadeira beleza do deserto.";
 	next;
 	mes "[Towner]";
-	mes "Well, I don't know if";
-	mes "I can find anyone that";
-	mes "finds the desert as";
-	mes "wonderful and enchanting";
-	mes "as I do. It's a pity, really.";
+	mes "Bom, nao sei se";
+	mes "consigo encontrar alguem que";
+	mes "ache o deserto tao";
+	mes "maravilhoso e encantador";
+	mes "quanto eu. E uma pena, de rdade.";
 	close;
 }
 
-veins,148,41,3	script	Towner#ve2	940,{
+ins,148,41,3	script	Towner#2	940,{
 	mes "[Towner]";
-	mes "Welcome to Veins, the";
-	mes "town near the Temple of";
-	mes "Cheshrumnir. You may think";
-	mes "this is a dreary desert town,";
-	mes "but you'll find that it's as";
-	mes "lively as any other place.";
+	mes "Bem-vindo a Veins, the";
+	mes "cidade perto do Templo de";
+	mes "Cheshrumnir. Voce pode achar";
+	mes "que e uma cidade deserta e sombria,";
+	mes "mas vai descobrir que e tao";
+	mes "animada quanto qualquer outro lugar.";
 	next;
 	mes "[Towner]";
-	mes "Sure, there are a few";
-	mes "characters in town, like";
-	mes "that cactus loving loony";
-	mes "over there, but not everyone's";
-	mes "like him. There's lots of nice,";
-	mes "kind people that you can meet.";
+	mes "Claro, tem uns poucos";
+	mes "personagens na cidade, como";
+	mes "aquele maluco amante de cactos";
+	mes "ali, mas nem todo mundo e";
+	mes "como ele. Tem muitas pessoas legais,";
+	mes "gentis que voce pode conhecer.";
 	next;
 	mes "[Towner]";
-	mes "Well then, I hope that";
-	mes "you enjoy your stay~";
+	mes "Bom, espero que";
+	mes "voce aproite sua estadia~";
 	close;
 }
 
-veins,137,179,5	script	Towner#ve3	943,{
+ins,137,179,5	script	Towner#3	943,{
 	mes "[Towner]";
-	mes "Geez, why is our weapon";
-	mes "shop so boring? Nothing";
-	mes "there but the same ol'";
-	mes "regular junk. Sad to say,";
-	mes "there's nothing special.";
+	mes "Puxa, por que nossa loja";
+	mes "de armas e tao chata? Nada";
+	mes "la alem das mesmas";
+	mes "tranqueiras de sempre. Triste dizer,";
+	mes "nao tem nada de especial.";
 	next;
 	mes "[Towner]";
-	mes "Wouldn't it be great";
-	mes "if there was a shop that";
-	mes "sold the legendary godly";
-	mes "weapons? Of course, that's";
+	mes "Nao seria otimo";
+	mes "se housse uma loja que";
+	mes "ndesse as lendarias armas";
+	mes "weapons? Claro, that's";
 	mes "asking a bit too much.";
 	close;
 }
 
-veins,166,91,5	script	Towner#ve4	946,{
+ins,166,91,5	script	Towner#4	946,{
 	mes "[Towner]";
-	mes "Though we're in the";
-	mes "middle of the desert,";
-	mes "our enemies continue";
-	mes "to threaten us. Fools!";
-	mes "Goddess Freya will";
-	mes "always protect us!";
+	mes "Embora estejamos no";
+	mes "meio do deserto,";
+	mes "nossos inimigos continuam";
+	mes "a nos ameacar. Tolos!";
+	mes "A Deusa Freya sempre";
+	mes "nos protegera!";
 	next;
 	mes "[Towner]";
-	mes "So long as we continue to";
-	mes "train, Freya will watch over";
-	mes "us and bless us with victory";
-	mes "over our foes. That, friend,";
-	mes "is the power of faith.";
+	mes "Enquanto continuarmos a";
+	mes "treinar, Freya cuidara de";
+	mes "nos e nos abencoara com vitoria";
+	mes "sobre nossos inimigos. Isso, amigo,";
+	mes "e o poder da fe.";
 	close;
 }
 
-veins,138,71,5	script	Kid#ve1	941,{
+ins,138,71,5	script	Kid#1	941,{
 	mes "[Kid]";
-	mes "Whoa, get out of here!";
-	mes "Can't you see that I'm";
-	mes "playing hide and go seek?!";
-	mes "Move before they find me!";
+	mes "Ei, sai daqui!";
+	mes "Nao  que eu estou";
+	mes "brincando de esconde-esconde?!";
+	mes "Sai antes que me encontrem!";
 	close;
 }
 
-veins,253,133,3	script	Kid#ve2	944,{
+ins,253,133,3	script	Kid#2	944,{
 	mes "[Kid]";
-	mes "Gosh, where could she";
-	mes "be hiding? I hate being";
-	mes "it... There's so many places";
-	mes "to hide around here. There";
-	mes "must be someplace I haven't";
-	mes "checked yet... Let's see...";
+	mes "Puxa, onde ela pode";
+	mes "estar escondida? Odeio ser";
+	mes "o pegador... Tem tantos lugares";
+	mes "pra se esconder por aqui. De";
+	mes "ter algum lugar que eu nao";
+	mes "rifiquei ainda... Deixa eu r...";
 	close;
 }
 
-veins,270,164,5	script	Old Man#ve1	945,{
+ins,270,164,5	script	Old Man#1	945,{
 	mes "[Old Man]";
-	mes "Praise be to Freya";
-	mes "for blessing me with";
-	mes "long life, but I wonder";
-	mes "if I've fully lived life.";
+	mes "Louvada seja Freya";
+	mes "por me abencoar com";
+	mes "longa vida, mas eu me pergunto";
+	mes "se eu vivi a vida plenamente.";
 	next;
 	mes "[Old Man]";
-	mes "I don't have any regrets";
-	mes "or doubts, but maybe there";
-	mes "are a few things I missed";
-	mes "out on. I guess an old man";
-	mes "can't help but think about";
-	mes "these sorts of things...";
+	mes "Nao tenho nenhum arrependimento";
+	mes "ou duvida, mas talz existam";
+	mes "algumas coisas que eu perdi";
+	mes "por ai. Acho que um lho";
+	mes "nao pode deixar de pensar";
+	mes "nesse tipo de coisa...";
 	close;
 }
 
-veins,310,195,1	script	Towner#ve5	946,{
+ins,310,195,1	script	Towner#5	946,{
 	mes "[Towner]";
-	mes "Cacti are wonderful,";
-	mes "they're the most beautiful";
-	mes "plants in the desert. Yes, we";
-	mes "must cherish and nurture them~";
+	mes "Cactos sao maravilhosos,";
+	mes "eles sao as mais bonitas";
+	mes "plantas do deserto. Sim, nos";
+	mes "demos cuidar e nutri-los~";
 	next;
 	mes "[Towner]";
-	mes "Regular cacti are ";
-	mes "pretty uncommon, but";
-	mes "I hear there's a kind of";
-	mes "cactus that roams the desert";
-	mes "and makes loud, obnoxious";
-	mes "noises. How can that be true?";
+	mes "Cactos normais sao ";
+	mes "bem incomuns, mas";
+	mes "ouvi dizer que ha um tipo de";
+	mes "cacto que vaga pelo deserto";
+	mes "e faz barulhos altos e irritantes.";
+	mes "Como isso pode ser rdade?";
 	close;
 }
 
-veins,320,254,5	script	Towner#ve6	943,{
+ins,320,254,5	script	Towner#6	943,{
 	mes "[Towner]";
-	mes "What do you want?";
-	mes "Sorry, but I'm just";
-	mes "a normal guy with normal";
-	mes "problems. Nothing that";
-	mes "I can't solve on my own.";
+	mes "O que voce quer?";
+	mes "Desculpe, mas eu sou apenas";
+	mes "um cara normal com problemas";
+	mes "normais. Nada que";
+	mes "eu nao possa resolr sozinho.";
 	next;
 	mes "[Towner]";
-	mes "Unless... You can do my";
-	mes "taxes? Pay off my mortgage?";
-	mes "No? Heh. Didn't think so.";
+	mes "A menos que... Voce pode fazer meu";
+	mes "imposto? Pagar minha hipoteca?";
+	mes "Nao? Heh. Ja imaginava.";
 	close;
 }
 
-veins,333,318,3	script	Towner#ve7	940,{
+ins,333,318,3	script	Towner#7	940,{
 	mes "[Towner]";
-	mes "What's an adventurer";
-	mes "doing here in such an";
-	mes "isolated, dreary town?";
-	mes "Shouldn't you be looking";
-	mes "for adventures? Take it from";
-	mes "me, this place if bo-ring.";
+	mes "O que um antureiro";
+	mes "esta fazendo aqui em uma";
+	mes "cidade tao isolada e sombria?";
+	mes "Voce nao deria estar procurando";
+	mes "por anturas? Acredite em mim,";
+	mes "esse lugar e cha-to.";
 	close;
 }
 
-veins,218,323,1	script	Towner#ve8	945,{
+ins,218,323,1	script	Towner#8	945,{
 	mes "[Towner]";
-	mes "Whoa, it's been a while";
-	mes "seen I've seen tourists";
-	mes "in town. You might think";
-	mes "there's nothing here, but";
-	mes "take a closer look. You";
-	mes "might learn something.";
+	mes "Uau, faz um tempo";
+	mes "que nao jo turistas";
+	mes "na cidade. Voce pode achar";
+	mes "que nao tem nada aqui, mas";
+	mes "olhe mais de perto. Voce";
+	mes "pode aprender algo.";
 	next;
 	mes "[Towner]";
-	mes "Just like people, you";
-	mes "can't know everything about";
-	mes "a place with only a glance.";
-	mes "If you give it a chance, I'm";
-	mes "sure you'll find something";
-	mes "to like about this town.";
-	mes "and try to find things that mind interest you?";
+	mes "Assim como pessoas, voce";
+	mes "nao pode saber tudo sobre";
+	mes "um lugar com apenas um olhar.";
+	mes "Se voce der uma chance, tenho";
+	mes "certeza que vai encontrar algo";
+	mes "pra gostar nesta cidade.";
+	mes "e tente encontrar coisas que possam te interessar?";
 	next;
 	mes "[Towner]";
-	mes "What do I mean by ''a";
-	mes "closer look?'' Heh, you'll";
-	mes "see... Maybe. Hahahaha!";
-	mes "Oh, forget it, it's not";
-	mes "that important anyway.";
-	mes "May Freya bless you~";
+	mes "O que eu quero dizer com ''um";
+	mes "olhar mais de perto''? Heh, voce";
+	mes "vai r... Talz. Hahahaha!";
+	mes "Ah, esquece, nao e";
+	mes "tao importante assim.";
+	mes "Que Freya te abencoe~";
 	close;
 }
 
-veins,206,275,3	script	Kid#ve3	941,{
+ins,206,275,3	script	Kid#3	941,{
 	mes "[Kid]";
-	mes "I really want to look";
-	mes "inside the temple, but";
-	mes "it looks so scary from";
-	mes "the outside! I wonder";
-	mes "why it's like that?";
+	mes "Eu realmente quero olhar";
+	mes "dentro do templo, mas";
+	mes "parece tao assustador de";
+	mes "fora! Eu me pergunto";
+	mes "por que e assim?";
 	close;
 }
 
-veins,171,256,3	script	Towner#ve9	943,{
+ins,171,256,3	script	Towner#9	943,{
 	mes "[Towner]";
-	mes "Don't get me wrong:";
-	mes "I'd give my life in Freya's";
-	mes "name, but that so-called";
-	mes "temple just looks so strange";
-	mes "and suspicious. How can it";
-	mes "be a place of worship?";
+	mes "Nao me entenda mal:";
+	mes "Eu daria minha vida em nome de";
+	mes "Freya, mas esse tal";
+	mes "templo parece tao estranho";
+	mes "e suspeito. Como pode";
+	mes "ser um lugar de adoracao?";
 	close;
 }
 
-veins,197,219,5	script	Towner#ve10	943,{
+ins,197,219,5	script	Towner#10	943,{
 	mes "[Towner]";
-	mes "I guess you can tell";
-	mes "from this withered tree";
-	mes "that our town is short";
-	mes "on water. I guess that's";
-	mes "a natural consequence of";
-	mes "living here in the desert...";
+	mes "Acho que da pra perceber";
+	mes "por essa arvore murcha";
+	mes "que nossa cidade esta com";
+	mes "falta de agua. Acho que essa e";
+	mes "uma consequencia natural de";
+	mes "vir aqui no deserto...";
 	close;
 }
 
-veins,232,169,5	script	Old lady#ve1	942,{
+ins,232,169,5	script	Old lady#1	942,{
 	mes "[Old Lady]";
-	mes "When I look down on";
-	mes "Veins from here, I've";
-	mes "come to realize many things.";
-	mes "I don't think you'd understand";
-	mes "no matter how much I explained.";
-	next;
-	mes "[Old Lady]";
-	mes "I suppose it's one of those";
-	mes "things that you learn with age.";
-	mes "Yes, there's no substitute for";
-	mes "experience when it comes to";
-	mes "some things. You'll see.";
-	mes "^FFFFFFYes, like secret knowledge.^000000";
-	close;
-}
-
-veins,121,199,3	script	Old Man#ve2	945,{
-	mes "[Old Man]";
-	mes "This isn't good.";
-	mes "The elderly outnumber";
-	mes "the youth here in Veins.";
-	mes "We're too close to becoming";
-	mes "something of a retirement";
-	mes "community. You see it, right?";
-	next;
-	mes "[Old Man]";
-	mes "I guess the young people";
-	mes "aren't content living here";
-	mes "since we lack a lot of the";
-	mes "material excitement of other";
-	mes "towns. They can't appreciate";
-	mes "what's really special here...";
-	close;
-}
-
-veins,111,50,3	script	Towner#ve11	943,{
-	mes "[Towner]";
-	mes "People cherish water";
-	mes "around here, but I've";
-	mes "something even more";
-	mes "precious to me. Yes, even";
-	mes "more precious than water...";
-	mes "You guessed it--true love.";
-	next;
-	mes "[Towner]";
-	mes "We actually started dating";
-	mes "here, so this place really";
-	mes "means a lot to me. It's my";
-	mes "favorite spot for spending";
-	mes "time with my girl. Hahaha~";
-	close;
-}
-
-veins,112,51,3	script	Towner#ve12	940,{
-	mes "[Towner]";
-	mes "Well, I'm actually";
-	mes "a little tired of coming";
-	mes "here all the time. I kind";
-	mes "of want to try someplace";
-	mes "else, but I also know he";
-	mes "really loves coming here.";
-	next;
-	mes "[Towner]";
-	mes "It would actually be";
-	mes "kind of sad if we stopped";
-	mes "coming here altogether.";
-	mes "I'm just happy so long";
-	mes "as he's with me~ Hoho~";
-	close;
-}
-
-veins,191,134,3	script	Old Man#ve3	945,{
-	mes "[Old Man]";
-	mes "Why don't you take";
-	mes "a look at my goods?";
-	mes "I've got many things";
-	mes "that might interest you~";
-	next;
-	mes "[Old Man]";
-	mes "Praise be to Freya,";
-	mes "who watches over us,";
-	mes "and blesses us with";
-	mes "food and drink. Don't";
-	mes "you think that's great,";
-	mes "young adventurer?";
-	close;
-}
-
-veins,177,147,3	script	Old Lady#ve2	942,{
-	mes "[Old Lady]";
-	mes "Owning a lot of stuff";
-	mes "might seem great, but";
-	mes "many things aren't that";
-	mes "valuable when you think";
-	mes "of them in terms of";
-	mes "real emotional value.";
+	mes "Quando eu olho pra baixo em";
+	mes "Veins daqui, eu acabei";
+	mes "percebendo muitas coisas.";
+	mes "Nao acho que voce entenderia";
+	mes "nao importa o quanto eu explicasse.";
 	next;
 	mes "[Old Lady]";
-	mes "Well, that might have been";
-	mes "a dangerous remark when";
-	mes "I'm trying to sell things to";
-	mes "customers. Still, I wish";
-	mes "I could carry a wider";
-	mes "selection of goods.";
+	mes "Eu acho que e uma daquelas";
+	mes "coisas que voce aprende com a idade.";
+	mes "Sim, nao ha substituto para";
+	mes "a experiencia quando se trata de";
+	mes "algumas coisas. Voce vai r.";
+	mes "^FFFFFFSim, como conhecimento secreto.^000000";
+	close;
+}
+
+ins,121,199,3	script	Old Man#2	945,{
+	mes "[Old Man]";
+	mes "Isso nao e bom.";
+	mes "Os idosos superam em numero";
+	mes "os jons aqui em Veins.";
+	mes "Estamos muito perto de nos tornar";
+	mes "algo como uma comunidade";
+	mes "de aposentados. Voce  isso, ne?";
+	next;
+	mes "[Old Man]";
+	mes "Acho que os jons";
+	mes "nao estao contentes morando aqui";
+	mes "ja que nos falta muito da";
+	mes "empolgacao material de outras";
+	mes "cidades. Eles nao conseguem apreciar";
+	mes "o que e realmente especial aqui...";
+	close;
+}
+
+ins,111,50,3	script	Towner#11	943,{
+	mes "[Towner]";
+	mes "As pessoas valorizam a agua";
+	mes "por aqui, mas eu tenho";
+	mes "algo ainda mais";
+	mes "precioso pra mim. Sim, ainda";
+	mes "mais precioso que agua...";
+	mes "Voce adivinhou--amor rdadeiro.";
+	next;
+	mes "[Towner]";
+	mes "Na rdade comecamos a namorar";
+	mes "aqui, entao esse lugar realmente";
+	mes "significa muito pra mim. E meu";
+	mes "lugar favorito pra passar";
+	mes "tempo com minha garota. Hahaha~";
+	close;
+}
+
+ins,112,51,3	script	Towner#12	940,{
+	mes "[Towner]";
+	mes "Bom, na rdade estou";
+	mes "um pouco cansada de vir";
+	mes "aqui o tempo todo. Eu meio";
+	mes "que quero tentar outro";
+	mes "lugar, mas eu tambem sei que ele";
+	mes "adora vir aqui.";
+	next;
+	mes "[Towner]";
+	mes "Na rdade seria";
+	mes "meio triste se parassemos";
+	mes "de vir aqui de z.";
+	mes "Eu so fico feliz enquanto";
+	mes "ele estir comigo~ Hoho~";
+	close;
+}
+
+ins,191,134,3	script	Old Man#3	945,{
+	mes "[Old Man]";
+	mes "Por que voce nao da";
+	mes "uma olhada nas minhas mercadorias?";
+	mes "Tenho muitas coisas";
+	mes "que podem te interessar~";
+	next;
+	mes "[Old Man]";
+	mes "Louvada seja Freya,";
+	mes "que cuida de nos,";
+	mes "e nos abencoa com";
+	mes "comida e bebida. Voce nao";
+	mes "acha isso otimo,";
+	mes "jom antureiro?";
+	close;
+}
+
+ins,177,147,3	script	Old Lady#2	942,{
+	mes "[Old Lady]";
+	mes "Ter muitas coisas";
+	mes "pode parecer otimo, mas";
+	mes "muitas coisas nao sao tao";
+	mes "valiosas quando voce pensa";
+	mes "nelas em termos de";
+	mes "valor emocional real.";
 	next;
 	mes "[Old Lady]";
-	mes "Of course, we're here";
-	mes "in the middle of the desert,";
-	mes "so maybe I'm asking too much.";
+	mes "Bom, isso pode ter sido";
+	mes "um comentario perigoso quando";
+	mes "estou tentando nder coisas para";
+	mes "clientes. Ainda assim, queria";
+	mes "poder ter uma selecao";
+	mes "maior de mercadorias.";
+	next;
+	mes "[Old Lady]";
+	mes "Claro, estamos aqui";
+	mes "in the meio do deserto,";
+	mes "entao talz eu esteja pedindo demais.";
 	close;
 }
 
-veins,223,165,5	script	Kid#ve4	944,{
+ins,223,165,5	script	Kid#4	944,{
 	mes "[Kid]";
-	mes "Hey! Do you think";
-	mes "I can reach the bridge";
-	mes "over there if I jump";
-	mes "from over here? Do";
-	mes "you think you can try it?";
+	mes "Ei! Voce acha";
+	mes "que eu consigo alcancar a ponte";
+	mes "ali se eu pular";
+	mes "daqui? Voce";
+	mes "acha que consegue tentar?";
 	next;
 	mes "[Kid]";
-	mes "What?! You can't do it?";
-	mes "Well, I'm gonna be different";
-	mes "when I grow up! I'm gonna";
-	mes "be the world's best jumper!";
-	mes "I'm gonna be able to jump";
-	mes "all the way to the mooooon!";
+	mes "O que?! Voce nao consegue?";
+	mes "Bom, eu vou ser diferente";
+	mes "quando crescer! Eu vou";
+	mes "ser o melhor saltador do mundo!";
+	mes "Vou conseguir pular";
+	mes "ate a luuuuua!";
 	close;
 }
 
-veins,263,153,5	script	Towner#ve13	943,{
+ins,263,153,5	script	Towner#13	943,{
 	mes "[Towner]";
-	mes "The clothes we make here";
-	mes "are high, airy, and sewn";
-	mes "with high quality fabric.";
-	mes "Of course, we need to wear";
-	mes "stuff like this since the";
-	mes "weather is unbearably hot.";
+	mes "As roupas que fazemos aqui";
+	mes "sao les, arejadas e costuradas";
+	mes "com tecido de alta qualidade.";
+	mes "Claro, precisamos usar";
+	mes "coisas assim ja que o";
+	mes "clima e insuportalmente quente.";
 	next;
 	mes "[Towner]";
-	mes "The fabric? Well,";
-	mes "I'll give you a hint.";
-	mes "It's made of something";
-	mes "related to camels. Heh!";
-	mes "I'll leave you to figure it";
-	mes "out on your own. Haha!";
+	mes "O tecido? Bom,";
+	mes "vou te dar uma dica.";
+	mes "E feito de algo";
+	mes "relacionado a camelos. Heh!";
+	mes "Vou deixar voce descobrir";
+	mes "por conta propria. Haha!";
 	close;
 }
 
-veins,296,184,3	script	Towner#ve14	940,{
+ins,296,184,3	script	Towner#14	940,{
 	mes "[Towner]";
-	mes "Let me tell you a secret.";
-	mes "But promise not to tell";
-	mes "anyone else about it, okay?";
+	mes "Deixa eu te contar um segredo.";
+	mes "Mas prometa nao contar";
+	mes "pra mais ninguem, ta?";
 	next;
 	mes "[Towner]";
-	mes "When the time comes,";
-	mes "the Temple of Cheshrumnir";
-	mes "will open up and the giant";
-	mes "Freya robot will launch!";
-	mes "It'll destroy every country";
-	mes "except Arunafeltz!";
+	mes "Quando chegar a hora,";
+	mes "o Templo de Cheshrumnir";
+	mes "vai se abrir e o gigante";
+	mes "robo de Freya vai ser lancado!";
+	mes "Ele vai destruir todos os paises";
+	mes "exceto Arunafeltz!";
 	next;
 	mes "[Towner]";
-	mes "That robot can blow";
-	mes "hurricanes from its mouth,";
-	mes "and shoot lightning from";
-	mes "its horns, and it can fire";
-	mes "its fists away, and its";
-	mes "chest is a flame thrower!";
+	mes "Esse robo pode soprar";
+	mes "furacoes pela boca,";
+	mes "e disparar relampagos dos";
+	mes "seus chifres, e pode lancar";
+	mes "seus punhos, e seu";
+	mes "peito e um lanca-chamas!";
 	next;
 	mes "[Towner]";
 	mes "..............................";
-	mes "You don't believe me, either.";
-	mes "What did you just say? Zinger?";
-	mes "Amazing Z? The hell's that?";
+	mes "Voce tambem nao acredita em mim.";
+	mes "O que voce disse? Zinger?";
+	mes "Amazing Z? Que diabos e isso?";
 	close;
 }
 
-veins,291,205,3	script	Kid#ve5	944,{
+ins,291,205,3	script	Kid#5	944,{
 	mes "[Kid]";
-	mes "Argh! I'm a war god";
-	mes "protecting Goddess Freya";
-	mes "and Arunafeltz! Ahhhhh!";
-	mes "Death to all our enemies!";
+	mes "Argh! Eu sou um deus da guerra";
+	mes "protegendo a Deusa Freya";
+	mes "e Arunafeltz! Ahhhhh!";
+	mes "Morte a todos os nossos inimigos!";
 	next;
 	mes "[Kid]";
-	mes "Burn, heretics, buuurn!";
-	mes "Destroy your homes, your";
-	mes "families, and build a new";
-	mes "perfect world for Freya!";
+	mes "Queimem, hereges, queeeimem!";
+	mes "Destruam seus lares, suas";
+	mes "familias, e construam um novo";
+	mes "mundo perfeito para Freya!";
 	next;
 	mes "[Kid]";
-	mes "Hee hee! Doesn't that";
-	mes "sound wonderful! When";
-	mes "I grow up, I wanna be";
-	mes "that kind of hero!";
+	mes "Hee hee! Isso nao";
+	mes "parece maravilhoso! Quando";
+	mes "eu crescer, quero ser";
+	mes "esse tipo de heroi!";
 	close;
 }
 
-veins,291,259,3	script	Old Man#ve4	945,{
+ins,291,259,3	script	Old Man#4	945,{
 	mes "[Old Man]";
 	mes "Fr... Fr...";
 	next;
@@ -448,362 +448,362 @@ veins,291,259,3	script	Old Man#ve4	945,{
 	mes "Fr...";
 	next;
 	mes "[Old Man]";
-	mes "Praise Freya! ^333333*Keck*^000000";
-	mes "^333333*Cough cough*^000000 Fre...";
-	mes "^333333*Cough*^000000 Praise Freya!";
-	mes "Freya! Conquer those";
-	mes "that blaspheme you! Let";
-	mes "me see it before I die!";
+	mes "Louvada Freya! ^333333*Tossida*^000000";
+	mes "^333333*Tosse tosse*^000000 Fre...";
+	mes "^333333*Tosse*^000000 Louvada Freya!";
+	mes "Freya! Conquiste aqueles";
+	mes "que te blasfemam! Deixe-me";
+	mes "r isso antes de morrer!";
 	next;
 	mes "[Old Man]";
-	mes "I have never regretted";
-	mes "^333333*Cough*^000000 my faith in you,";
-	mes "my goddess! ^333333*Keck*^000000 May";
-	mes "the suffering of all our";
-	mes "enemies drive them to";
-	mes "madness before death!";
+	mes "Eu nunca me arrependi";
+	mes "^333333*Tosse*^000000 da minha fe em voce,";
+	mes "minha deusa! ^333333*Tossida*^000000 Que";
+	mes "o sofrimento de todos os nossos";
+	mes "inimigos os le a";
+	mes "loucura antes da morte!";
 	close;
 }
 
-veins,291,284,3	script	Old Lady#ve3	942,{
+ins,291,284,3	script	Old Lady#3	942,{
 	mes "[Old Lady]";
-	mes "I wonder what my";
-	mes "standing with Freya";
-	mes "is like. Hopefully, she";
-	mes "will take mercy upon me";
-	mes "when I leave this world.";
-	mes "My days here are numbered...";
+	mes "Me pergunto qual e minha";
+	mes "posicao com Freya.";
+	mes "Espero que ela";
+	mes "tenha piedade de mim";
+	mes "quando eu deixar este mundo.";
+	mes "Meus dias aqui estao contados...";
 	close;
 }
 
-veins,248,301,3	script	Kid#ve6	944,{
+ins,248,301,3	script	Kid#6	944,{
 	mes "[Kid]";
-	mes "Huh? You don't live here.";
-	mes "Are you... Are you a traveler?";
-	mes "You musta been to so many";
-	mes "other places, huh? What";
-	mes "do they look like? I want to";
-	mes "travel too when I grow up~";
+	mes "Huh? Voce nao mora aqui.";
+	mes "Voce e... Voce e um viajante?";
+	mes "Voce de ter ido a tantos";
+	mes "outros lugares, ne? Como";
+	mes "eles sao? Eu quero";
+	mes "viajar tambem quando crescer~";
 	next;
 	mes "[Kid]";
-	mes "I like this town, but I want";
-	mes "to see how other people live.";
-	mes "The grown-ups think it's a bad";
-	mes "idea, though. They say Freya";
-	mes "hates it. Is it that bad that";
-	mes "I can't stop wondering?";
+	mes "Eu gosto desta cidade, mas quero";
+	mes "r como outras pessoas vim.";
+	mes "Os adultos acham que e uma'ma";
+	mes "ideia, no entanto. Eles dizem que Freya";
+	mes "odeia isso. E tao ruim assim que";
+	mes "eu nao consigo parar de imaginar?";
 	close;
 }
 
-veins,161,63,3	script	Old Man#ve5	945,{
+ins,161,63,3	script	Old Man#5	945,{
 	mes "[Old Man]";
-	mes "Oh. You must be";
-	mes "sightseeing. Um,";
-	mes "Veins is a small town,";
-	mes "visit Cheshrumnir Temple?";
+	mes "Ah. Voce de estar";
+	mes "passeando. Hmm,";
+	mes "Veins e uma cidade pequena,";
+	mes "visite o Templo de Cheshrumnir?";
 	next;
 	mes "[Old Man]";
-	mes "I hope you enjoy";
-	mes "your stay. Now if";
-	mes "you'll excuse me, I'd";
-	mes "like to continue with";
-	mes "my prayers to Freya.";
+	mes "Espero que aproite";
+	mes "sua estadia. Agora se";
+	mes "me da licenca, eu gostaria";
+	mes "de continuar com";
+	mes "minhas oracoes a Freya.";
 	next;
 	mes "[Old Man]";
-	mes "Oh, gracious Freya, your";
-	mes "servant humbly beseeches";
-	mes "you on bended knee...";
-	mes "Heal me of this infirmity!";
-	mes "The body is droopingly limp,";
-	mes "but the spirit is willing...!";
-	mes "must be... Cheshrumnir Temple.";
+	mes "Oh, graciosa Freya, seu";
+	mes "servo humildemente suplica";
+	mes "a voce de joelhos...";
+	mes "Cure-me desta enfermidade!";
+	mes "O corpo esta caindo de fraqueza,";
+	mes "mas o espirito esta disposto...!";
+	mes "de ser... Templo de Cheshrumnir.";
 	close;
 }
 
-veins,157,123,3	script	Towner#ve15	946,{
+ins,157,123,3	script	Towner#15	946,{
 	mes "[Towner]";
-	mes "You know what's good";
-	mes "about the desert? No?";
+	mes "Sabe o que e bom";
+	mes "no deserto? Nao?";
 	next;
 	mes "[Towner]";
-	mes "The desert makes you";
-	mes "stronger. Understand";
-	mes "what I mean? Heh, you'll";
-	mes "know as you spend more";
-	mes "time here in the desert.";
+	mes "O deserto te torna";
+	mes "mais forte. Entende";
+	mes "o que eu quero dizer? Heh, voce vai";
+	mes "saber conforme passar mais";
+	mes "tempo aqui no deserto.";
 	close;
 }
 
 // Inside Veins
 //============================================================
-ve_in,119,386,3	script	Prisoner#ve1	946,{
+_in,119,386,3	script	Prisoner#1	946,{
 	mes "[Prisoner]";
-	mes "Unbelievable!";
-	mes "What kind of country";
-	mes "is this?! How can you";
-	mes "lock me up just because";
-	mes "I don't believe in Freya?!";
+	mes "Inacredital!";
+	mes "Que tipo de pais";
+	mes "e esse?! Como podem";
+	mes "me prender so porque";
+	mes "eu nao acredito em Freya?!";
 	next;
 	mes "[Prisoner]";
-	mes "This isn't civilized!";
-	mes "You're a bunch of savages";
-	mes "if you can't respect my";
-	mes "beliefs, you know that?";
-	mes "Someone, someone help!";
+	mes "Isso nao e civilizado!";
+	mes "Voces sao um bando de selvagens";
+	mes "se nao conseguem respeitar minhas";
+	mes "crencas, sabiam disso?";
+	mes "Alguem, alguem me ajude!";
 	close;
 }
 
-ve_in,111,379,8	script	Ward#ve1	946,{
+_in,111,379,8	script	Ward#1	946,{
 	mes "[Ward]";
-	mes "This place ensures that";
-	mes "dangerous criminals aren't";
+	mes "Este lugar garante que";
+	mes "criminosos perigosos nao't";
 	mes "threatening the publi--";
-	mes "Wait. Why are you even";
-	mes "here?! This place isn't";
-	mes "safe for you! Leave!";
+	mes "Espere. Por que voce esta";
+	mes "aqui?! Este lugar nao e";
+	mes "seguro pra voce! Saia!";
 	close;
 }
 
-ve_in,126,378,3	script	Ward#ve2	946,{
+_in,126,378,3	script	Ward#2	946,{
 	mes "[Ward]";
-	mes "I'm grateful that our";
-	mes "town is relatively peaceful.";
-	mes "If it were any other place,";
-	mes "that tiny cell would be";
-	mes "crammed full of criminals.";
+	mes "Sou grato que nossa";
+	mes "cidade e relativamente pacifica.";
+	mes "Se fosse qualquer outro lugar,";
+	mes "aquela cela minuscula estaria";
+	mes "abarrotada de criminosos.";
 	next;
 	mes "[Ward]";
-	mes "Thank Freya that I've";
-	mes "been assigned to such";
-	mes "a peaceful, quiet place.";
+	mes "Gracas a Freya que eu'";
+	mes "fui designado para um";
+	mes "lugar tao pacifico e tranquilo.";
 	close;
 }
 
-ve_in,101,314,1	script	Towner#ve16	943,{
+_in,101,314,1	script	Towner#16	943,{
 	mes "[Towner]";
-	mes "^333333*Pant Pant*^000000";
-	mes "I must study as hard as I can";
-	mes "for the grace of Goddess Freya.";
+	mes "^333333*Ofegante*^000000";
+	mes "Devo estudar o maximo que puder";
+	mes "pela graca da Deusa Freya.";
 	next;
 	mes "[Towner]";
-	mes "I really believe that";
-	mes "I can serve Freya one of";
-	mes "these days if I can just";
-	mes "expand my knowledge.";
+	mes "I really belie that";
+	mes "I can ser Freya one of";
+	mes "dia desses se eu apenas";
+	mes "expandir meu conhecimento.";
 	close;
 }
 
-ve_in,90,298,3	script	Towner#ve17	849,{
+_in,90,298,3	script	Towner#17	849,{
 	mes "[Towner]";
-	mes "It's too hot...";
+	mes "Esta quente demais...";
 	next;
 	mes "[Towner]";
-	mes "So sweaty...";
+	mes "Tao suado...";
 	close;
 }
 
-ve_in,361,243,5	script	Towner#ve18	849,{
-	mes "[Towner]";
-	mes "...............";
-	mes "...............";
-	mes "...............";
-	next;
+_in,361,243,5	script	Towner#18	849,{
 	mes "[Towner]";
 	mes "...............";
 	mes "...............";
 	mes "...............";
 	next;
 	mes "[Towner]";
-	mes "Tricked you!";
-	mes "Thought I was dead,";
-	mes "didn't you? Hahaha~";
+	mes "...............";
+	mes "...............";
+	mes "...............";
+	next;
+	mes "[Towner]";
+	mes "Te enganei!";
+	mes "Achou que eu estava morto,";
+	mes "ne? Hahaha~";
 	close;
 }
 
-ve_in,242,124,3	script	Towner#ve19	849,{
+_in,242,124,3	script	Towner#19	849,{
 	mes "[Towner]";
-	mes "The drinks in this";
-	mes "town are so... They're...";
-	mes "They're so damn strong!";
+	mes "As bebidas desta";
+	mes "cidade sao tao... Sao...";
+	mes "Sao absurdamente fortes!";
 	next;
 	mes "[Towner]";
 	mes "Why...";
-	mes "Why does the ground";
-	mes "keep wobbling?! It's...";
-	mes "It's like it's trying to";
-	mes "betray me! Every time!";
+	mes "Por que o chao";
+	mes "fica balancando?! E...";
+	mes "Parece que esta tentando";
+	mes "betray me! Ery time!";
 	next;
 	mes "[Towner]";
-	mes "^333333*Hiccup*^000000";
+	mes "^333333*Soluco*^000000";
 	close;
 }
 
-ve_in,180,232,5	script	Towner#ve20	946,{
+_in,180,232,5	script	Towner#20	946,{
 	mes "[Towner]";
-	mes "It's nice when a town";
-	mes "is peaceful and quiet...";
-	mes "But it's lame when a";
-	mes "tavern is dead like this.";
+	mes "E legal quando uma cidade";
+	mes "e pacifica e tranquila...";
+	mes "Mas e chato quando uma";
+	mes "tarn is dead like this.";
 	next;
 	mes "[Towner]";
-	mes "Well, there's good";
-	mes "and bad points to";
-	mes "everything. Hopefully";
-	mes "things will pick up";
-	mes "around here as more of";
-	mes "you adventurers come visit.";
+	mes "Bom, tem pontos";
+	mes "bons e ruins em";
+	mes "erything. Hopefully";
+	mes "as coisas melhorem";
+	mes "por aqui conforme mais";
+	mes "you antureiros come visit.";
 	close;
 }
 
-ve_in,163,212,3	script	Towner#ve21	940,{
+_in,163,212,3	script	Towner#21	940,{
 	mes "[Towner]";
-	mes "There's nothing but";
-	mes "old people and children";
-	mes "in this town. Where's a";
-	mes "decent man worth marrying?";
-	mes "There's a few bachelors that";
-	mes "are my age, but... Well...";
+	mes "Nao tem nada alem de";
+	mes "velhos e criancas";
+	mes "nesta cidade. Onde esta um";
+	mes "homem decente que vale a pena casar?";
+	mes "Tem uns solteiros que";
+	mes "tem minha idade, mas... Bom...";
 	next;
 	mes "[Towner]";
-	mes "They're all too hairy or";
-	mes "too muscular. I don't think";
-	mes "I'll be able to get married";
-	mes "anytime soon! Oh, the misery!";
+	mes "Sao todos peludos demais ou";
+	mes "musculosos demais. Nao acho";
+	mes "que vou conseguir casar";
+	mes "tao cedo! Ah, que miseria!";
 	close;
 }
 
-ve_in,190,215,3	script	Towner#ve22	946,{
+_in,190,215,3	script	Towner#22	946,{
 	mes "[Towner]";
-	mes "Well, our town doesn't";
-	mes "have a choice but to";
-	mes "defend itself in dangerous";
-	mes "times. The young men we";
-	mes "have here are all buff and";
-	mes "tough to protect us.";
+	mes "Bom, nossa cidade nao";
+	mes "ha a choice but to";
+	mes "se defender em tempos";
+	mes "perigosos. Os rapazes que";
+	mes "ha here are all buff and";
+	mes "duroes pra nos proteger.";
 	next;
 	mes "[Town]";
-	mes "They may not be beautiful,";
-	mes "but they have kind and";
-	mes "gentle hearts. It's a pity";
-	mes "that the women here";
-	mes "are more concerned";
-	mes "with appearances.";
+	mes "Eles podem nao ser bonitos,";
+	mes "but they ha kind and";
+	mes "bondosos. E uma pena";
+	mes "que as mulheres aqui";
+	mes "estao mais preocupadas";
+	mes "com aparencias.";
 	next;
 	mes "[Towner]";
-	mes "Don't judge a book";
-	mes "by its cover, but";
-	mes "by its contents.";
+	mes "Nao julgue um livro";
+	mes "by its cor, but";
+	mes "pelo seu conteudo.";
 	close;
 }
 
-ve_in,318,121,3	script	Towner#ve23	943,{
+_in,318,121,3	script	Towner#23	943,{
 	mes "[Towner]";
-	mes "This storage solely";
-	mes "exists for serious drinkers.";
-	mes "If it's ever shut down,";
-	mes "I think everyone in town";
-	mes "will riot. Crazy, huh?";
+	mes "Este deposito existe";
+	mes "exclusivamente para bebedores serios.";
+	mes "If it's er shut down,";
+	mes "I think eryone in town";
+	mes "vai se revoltar. Loucura, ne?";
 	next;
 	mes "[Towner]";
-	mes "Veins is famous for its";
-	mes "wide variety of delicious,";
-	mes "irresistible liquor. Just one";
-	mes "sip's enough to hook you.";
+	mes "Veins e famosa pela sua";
+	mes "grande variedade de deliciosas";
+	mes "e irresistiveis bebidas. So um";
+	mes "gole e o suficiente pra te fisgar.";
 	next;
 	mes "[Towner]";
-	mes "Praise Freya for";
-	mes "blessing us with the";
-	mes "gift of awesome liquor.";
-	mes "Her graciousness, her";
-	mes "compassion, her liquor";
-	mes "is limitless. Let us pray.";
+	mes "Louvada Freya por";
+	mes "nos abencoar com o";
+	mes "dom de bebida incrivel.";
+	mes "Sua generosidade, sua";
+	mes "compaixao, sua bebida";
+	mes "e ilimitada. Vamos rezar.";
 	close;
 }
 
-ve_in,222,125,5	script	Towner#ve24	943,{
+_in,222,125,5	script	Towner#24	943,{
 	mes "[Towner]";
-	mes "I really want to";
-	mes "ask out the woman";
-	mes "right in front of me.";
-	mes "Do you think she'll...?";
+	mes "Eu realmente quero";
+	mes "convidar a mulher";
+	mes "bem na minha frente pra sair.";
+	mes "Voce acha que ela vai...?";
 	next;
 	mes "[Towner]";
-	mes "Crap! Did I say that";
-	mes "out loud? I-I-I really";
-	mes "didn't want her to hear!";
+	mes "Droga! Eu disse isso";
+	mes "em voz alta? E-e-eu realmente";
+	mes "nao queria que ela ouvisse!";
 	close;
 }
 
-ve_in,222,122,1	script	Towner#ve25	940,{
+_in,222,122,1	script	Towner#25	940,{
 	mes "[Towner]";
-	mes "I heard all that...";
-	mes "Gosh, he's so clueless.";
-	mes "I don't hate him, but he";
-	mes "should show a bit more";
-	mes "backbone if he wants";
-	mes "to impress me. Hmmm...";
+	mes "Eu ouvi tudo...";
+	mes "Puxa, ele e tao desligado.";
+	mes "Nao o odeio, mas ele";
+	mes "deveria mostrar um pouco mais";
+	mes "de coragem se quiser";
+	mes "me impressionar. Hmmm...";
 	close;
 }
 
-ve_in,232,135,5	script	Towner#ve26	946,{
+_in,232,135,5	script	Towner#26	946,{
 	mes "[Towner]";
-	mes "If you enjoy a good,";
-	mes "stiff drink, then you have";
-	mes "to stop by Veins Tavern~";
+	mes "Se voce gosta de uma boa";
+	mes "stiff drink, then you ha";
+	mes "parar na Taverna de Veins~";
 	next;
 	mes "[Towner]";
-	mes "If you don't love";
-	mes "drinking, then Veins";
-	mes "Tavern is the perfect";
-	mes "place to learn! ...To";
-	mes "love... drinking...";
+	mes "If you don't lo";
+	mes "beber, entao a";
+	mes "Taverna de Veins e o lugar";
+	mes "perfeito pra aprender! ...A";
+	mes "lo... drinking...";
 	close;
 }
 
-ve_in,239,135,5	script	Towner#ve27	946,{
+_in,239,135,5	script	Towner#27	946,{
 	mes "[Towner]";
-	mes "Isn't the sun so hot?";
-	mes "Doesn't it make you feel";
-	mes "so thirsty? Well, you may";
-	mes "want to consider quenching";
-	mes "that nasty thirst with liquor!";
+	mes "O sol nao esta muito quente?";
+	mes "Isso nao te faz sentir";
+	mes "muita sede? Bom, voce pode";
+	mes "querer considerar matar";
+	mes "essa sede maldita com bebida!";
 	next;
 	mes "[Towner]";
-	mes "My job is to serve";
-	mes "delicious, life giving";
-	mes "liquor to my customers to";
-	mes "relieve their parched throats.";
-	mes "Seeing their drunken smiles";
-	mes "really makes my day~";
+	mes "My job is to ser";
+	mes "bebida deliciosa e revigorante";
+	mes "para meus clientes para";
+	mes "relie their parched throats.";
+	mes "Ver seus sorrisos bebados";
+	mes "realmente alegra meu dia~";
 	close;
 }
 
-ve_in,232,124,5	script	Towner#ve28	943,{
+_in,232,124,5	script	Towner#28	943,{
 	mes "[Towner]";
-	mes "A lone wolf of the desert.";
-	mes "That's me. Well, that's why";
-	mes "I'm drinking here alone.";
+	mes "Um lobo solitario do deserto.";
+	mes "Esse sou eu. Bom, e por isso que";
+	mes "estou bebendo aqui sozinho.";
 	next;
 	mes "[Towner]";
-	mes "Sweet Freya, these";
-	mes "drinks are so good.";
-	mes "I could drink all day.";
+	mes "Doce Freya, essas";
+	mes "bebidas sao tao boas.";
+	mes "Eu poderia beber o dia todo.";
 	close;
 }
 
-ve_in,234,105,3	script	Towner#ve29	946,{
+_in,234,105,3	script	Towner#29	946,{
 	mes "[Towner]";
-	mes "Man, the world is just...";
-	mes "It's just desires...!";
-	mes "Faith? It helps, you";
-	mes "know? Cuz-cuz desires";
-	mes "are all just nothing!";
-	mes "They're nooooooothing!";
+	mes "Cara, o mundo e apenas...";
+	mes "Sao apenas desejos...!";
+	mes "Fe? Ajuda, sabe?";
+	mes "Porque-porque desejos";
+	mes "sao todos nada!";
+	mes "Sao naaaaaada!";
 	next;
 	mes "[Towner]";
-	mes "Argh! What is life?!";
-	mes "I don't know what to";
-	mes "believe anymore! Freya!";
-	mes "Freya looooves you!";
+	mes "Argh! O que e a vida?!";
+	mes "Nao sei em que";
+	mes "belie anymore! Freya!";
+	mes "Freya loooos you!";
 	close;
 }

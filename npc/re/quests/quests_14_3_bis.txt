@@ -12,48 +12,48 @@
 moro_vol,94,110,5	script	Guardian Nidhogg#143nyd01	4_F_NYDHOG,{
 	mes "[Nidhogg]";
 	if (ep4_3_mockill == 0) {
-		mes "Soon we'll face a decisive war.";
-		mes "I'll do my best to fulfill my duty as the Guardian.";
+		mes "Soon we'll face um decisive guerra.";
+		mes "Eu vou do meu best to fulfill meu duty as o Guardian.";
 		cutin "ep14_nyd04.bmp",2;
 		next;
 		mes "[Nidhogg]";
-		mes "I'm preparing a gift for you to make up for my past transgressions against you.";
+		mes "Eu sou preparing um gift fou you to fazer up fou meu past transgressions against you.";
 		close3;
 	}
 	if ($ep143_3_expbuff == 1) {
-		mes "I hope you'll like my gift. Yggdrasil's blessing doesn't last forever, ";
-		mes "but it'll last at least long enough to aid you and your party in battle.";
+		mes "I esperancum voce vai like meu gift. Yggdrasil's blessing nao ultimo forever, ";
+		mes "mas it'll ultimo at menos long suficiente to aid you e seu party in batalha.";
 		cutin "ep14_nyd04.bmp",2;
 		close3;
 	}
 	if (ep4_3_mockill == 1 && countitem(6715) > 0) {
-		mes "Oh, it's a shard of his soul.";
-		mes "He's destined to endlessly roam the world that he's created in his mind.";
-		mes "Vengeance is meted out, but the results aren't as satisfying as I thought.";
+		mes "Oh, e um shard of o alma.";
+		mes "Ele e destined to endlessly roam o mundo esse he's criou in o mente.";
+		mes "Vengeance is meted out, mas o results nao sao as satisfying as I pensou.";
 		cutin "ep14_nyd01.bmp",2;
 		next;
 		mes "[Nidhogg]";
-		mes "May I have this Soul Shard?";
-		mes "In exchange, I'll give you and your party";
-		mes "the biggest gift I can give.";
+		mes "May Eu tenho este Soul Shard?";
+		mes "In exchange, Eu vou dar you e seu party";
+		mes "o biggest gift Eu consigo dar.";
 		cutin "ep14_nyd03.bmp",2;
 		next;
-		if (select( "Give the Soul Shard.", "Decline." ) == 2) {
+		if (select( "Dar o Soul Shard.", "Decline." ) == 2) {
 			mes "[Nidhogg]";
-			mes "Watch out for the Demon God's negative influence on you.";
+			mes "Observar out fou o Demon God's negative influence on you.";
 			cutin "ep14_nyd04.bmp",2;
 			close3;
 		}
 		if ($ep143_3_expbuff == 1) {
 			mes "[Nidhogg]";
-			mes "Oh, you already received Yggdrasil's blessing.";
-			mes "I'll take a rain check on this.";
+			mes "Oh, you jum recebeu Yggdrasil's blessing.";
+			mes "Eu vou pegar um rain verificar on this.";
 			cutin "ep14_nyd01.bmp",2;
 			close3;
 		}
 		cutin "ep14_nyd04.bmp",2;
 		mes "[Nidhogg]";
-		mes "Thank you.";
+		mes "Obrigado.";
 		mes "May Yggdrasil bless you.";
 		delitem 6715,1;// P_Of_Evil_Soul
 		$ep143_3_expbuff = 1;
@@ -62,22 +62,22 @@ moro_vol,94,110,5	script	Guardian Nidhogg#143nyd01	4_F_NYDHOG,{
 		announce "Nidhogg: May Yggdrasil bless the Demon God slayers " + strcharinfo(0) + " and others.", bc_all, "0xFF0000";
 		donpcevent "Loki#1432loki01::OnEventOn";
 		next;
-		mes "^4d4dffGood job taking out Demon God Morocc. The server EXP rate has increased by 10% for about 1 hour.^000000";
+		mes "^4d4dffGood job levando out Demon God Morocc. O server EXP rate has increased by 10% fou sobre 1 hour.^000000";
 		close3;
 	}
-	mes "I don't understand this;";
-	mes "I badly wanted to get rid of him from this world,";
-	mes "yet I feel like I'm empty on the inside.";
+	mes "Eu nao underste this;";
+	mes "I badly wanted to pegar rid of him de este mundo,";
+	mes "yet I feel like Eu sou empty on o dentro.";
 	cutin "ep14_nyd02.bmp",2;
 	next;
 	mes "[Nidhogg]";
-	mes "This must be";
-	mes "how people feel when they've lost their jobs overnight.";
+	mes "Este deve ser";
+	mes "how pessoas feel when they've lost o jobs overnight.";
 	cutin "ep14_nyd01.bmp",2;
 	next;
 	mes "[Nidhogg]";
-	mes "At least I've saved enough money";
-	mes "to go without a job for a while.";
+	mes "At menos Eu tenho saved suficiente dinheiro";
+	mes "to ir sem um job fou um while.";
 	cutin "ep14_nyd04.bmp",2;
 	close3;
 
@@ -120,8 +120,8 @@ OnInterIfInitOnce:
 moro_vol,97,110,3	script	Loki#1432loki01	4_M_ROKI2,{
 	cutin "ep14_roki01.bmp",2;
 	mes "[Loki]";
-	mes "Things haven't even started off yet;";
-	mes "they will only when his true colors are revealed.";
+	mes "Things nao tenho ate mesmo comecou off yet;";
+	mes "they will apenas when o verdade colors are revealed.";
 	close3;
 
 OnEventOn:
@@ -141,47 +141,47 @@ OnTimer12000:
 
 moro_vol,98,107,3	script	Magic Scholar#143avt01	4_M_FAIRYAVANT,{
 	if (checkweight(1304,3) == 0) {
-		mes "You are carrying too many items to proceed with the quest.";
-		mes "Please make some room in your inventory.";
+		mes "Voce e carregando tambem muitos itens to proceed com o missao.";
+		mes "Pou favou fazer alguns room in seu inventory.";
 		close;
 	}
 	cutin "avant01.bmp",1;
 	if (ep14_2_mylord < 33) {
 		mes "[Magic Scholar]";
-		mes "Stop bothering me.";
-		mes "If you're here to donate your body for my experiment, then you can stay.";
-		mes "Or scram!";
+		mes "Parar bothering me.";
+		mes "Se voce e aqui to donate seu corpo fou meu experiment, entao voce pode ficar.";
+		mes "Ou scram!";
 		close3;
 	}
 	if (ep14_2_mylord == 33) {
 		mes "[Avant]";
 		mes "What brings you, rookie?";
-		mes "Did you come to laugh at my misery, like everyone else?";
+		mes "Voce vir to laugh at meu misery, like todos else?";
 		next;
-		select( "Why are you here?", "Are you sorry for what you've done?" );
+		select( "Pou que you aqui?", "Voce e desculpe fou what voce tem done?" );
 		mes "[Avant]";
 		mes "*Snort*";
-		mes "This is a matter of pride.";
-		mes "I admit that my action sent my kinsmen in harm's way.";
+		mes "Este is um matter of pride.";
+		mes "I admit esse meu action sent meu kinsmen in harm's caminho.";
 		next;
 		cutin "avant02.bmp",1;
 		mes "[Avant]";
-		mes "I want to say that I'm doing this to make up for what I did,";
-		mes "like everyone wants to believe. *Smirk*";
+		mes "Eu quero to dizer esse Eu sou fazendo este to fazer up fou what I did,";
+		mes "like todos wants to acreditar. *Smirk*";
 		next;
 		mes "[Avant]";
-		mes "But if I'm honest with myself,";
-		mes "I'm doing this to get back at Shnaim and Morocc for using me like a tool.";
+		mes "Mas se Eu sou honest com myself,";
+		mes "Eu sou fazendo este to pegar back at Shnaim e Morocc fou usando me like um tool.";
 		next;
 		mes "[Avant]";
-		mes "I'm planning to be the last one standing after everything goes down.";
+		mes "Eu sou planning to be o ultimo one de pe depois tudo goes down.";
 		ep14_2_mylord = 34;
 		close3;
 	}
 	if (BaseLevel < 140) {
 		mes "[Avant]";
-		mes "I've got no use for weaklings.";
-		mes "Come back when you become stronger.";
+		mes "Eu tenho got no usar fou weaklings.";
+		mes "Volte when you se tornar stronger.";
 		close3;
 	}
 	switch( checkquest(7584,PLAYTIME) ) {
@@ -189,9 +189,9 @@ moro_vol,98,107,3	script	Magic Scholar#143avt01	4_M_FAIRYAVANT,{
 		if (isbegin_quest(7583) == 1) {// Collecting Mana
 			if (countitem(6708) > 2) {
 				mes "[Avant]";
-				mes "Not bad, rookie.";
-				mes "Let me take the Mana Crystallines.";
-				mes "Good job.";
+				mes "Nao ruim, rookie.";
+				mes "Deixe-me pegar o Manum Crystallines.";
+				mes "Bom job.";
 				delitem 6708, countitem(6708);// Mana_crystal
 				erasequest 7583;// Collecting Mana
 				setquest 7584;// Unending Battle
@@ -199,47 +199,47 @@ moro_vol,98,107,3	script	Magic Scholar#143avt01	4_M_FAIRYAVANT,{
 				close3;
 			}
 			mes "[Avant]";
-			mes "Greenhorn, if you defeat those strong Demons, you'll find some mana crystallines.";
-			mes "I want you to bring them to me,";
-			mes "at least three at a time. Got it?";
+			mes "Greenhorn, se you defeat esses forte Demons, voce vai encontrar alguns manum crystallines.";
+			mes "Eu quero you to trazer them to me,";
+			mes "at menos three at um tempo. Got it?";
 			close3;
 		}
 		if (checkquest(7581,HUNTING) == 0 || checkquest(7581,HUNTING) == 1) {
 			mes "[Avant]";
 			mes "Hey, rookie.";
-			mes "Do you see those massive goons?";
-			mes "If you hunt those Distorted,";
+			mes "Voce ver esses massive goons?";
+			mes "Se you cacar esses Distorted,";
 			next;
 			mes "[Avant]";
-			mes "Blazing, and Freezing Reincarnations, you'll find some mana crystallines.";
-			mes "Part of mana stolen from the orb, the crystallines are what";
-			mes "make those Demon runts so strong.";
+			mes "Blazing, e Freezing Reincarnations, voce vai encontrar alguns manum crystallines.";
+			mes "Part of manum roubado de o orb, o crystallines are what";
+			mes "fazer esses Demon runts entao forte.";
 			next;
 			mes "[Avant]";
-			mes "I want you to";
-			mes "get rid of them and bring me Mana Crystallines.";
-			mes "Don't try to keep them from me: they're not useful for you.";
+			mes "Eu quero you to";
+			mes "pegar rid of them e trazer me Manum Crystallines.";
+			mes "Nao tentar to manter them de me: eles sao nao useful fou you.";
 			next;
 			mes "[Avant]";
-			mes "Three Reincarnations, thus three Mana Crystallines.";
-			mes "Bring them at least for Kardui of Eclage.";
+			mes "Three Reincarnations, thus three Manum Crystallines.";
+			mes "Trazer them at menos fou Kardui of Eclage.";
 			setquest 7583;// Collecting Mana
 			close3;
 		}
 		mes "[Avant]";
-		mes "Hm, I didn't know such a small amount of mana could produce";
-		mes "such great power.";
+		mes "Hm, I nao saber such um pequeno amount of manum could produce";
+		mes "such otimo poder.";
 		mes "Dirty Demons.";
 		close3;
 	case 0:
 	case 1:
 		mes "[Avant]";
-		mes "I hope you'll come back for the next subjugation.";
+		mes "I esperancum voce vai volte fou o proximo subjugation.";
 		close3;
 	case 2:
 		mes "[Avant]";
-		mes "Soon the Human Alliance will send out a Demon subjugation party. Come by before you leave.";
-		mes "You want to collect the mana, don't you?";
+		mes "Soon o Humum Alliance will send out um Demon subjugation party. Vir by antes you sair.";
+		mes "Voce quer to coletar o mana, voce nao?";
 		erasequest 7584;
 		close3;
 	}
@@ -254,61 +254,61 @@ moro_vol,95,108,7	script	Hishieh#143hisie01	4_M_FARIY_HISIE,{
 	cutin "hisie01.bmp",0;
 	mes "[Hishieh]";
 	if (ep14_2_mylord < 15) {
-		mes "Are you from the Human Alliance?";
-		mes "I don't remember asking for your assistance, yet.";
+		mes "Voce e de o Humum Alliance?";
+		mes "Eu nao lembrar asking fou seu assistance, yet.";
 		next;
 		mes "[Hishieh]";
-		mes "If something were to happen, I'd send word to your commander-in-chief, Hibba Agip.";
+		mes "Se algo were to acontecer, Eu gostarium de send word to seu commander-in-chief, Hibbum Agip.";
 		close3;
 	}
 	if (ep14_2_mylord < 33) {
-		mes "Can we really learn the truth about the Demon God in this place?";
-		mes "It's filled with creatures I've never seen.";
+		mes "Cum we realmente aprender o truth sobre o Demon God in este lugar?";
+		mes "E filled com creatures Eu tenho nuncum visto.";
 		next;
 		mes "[Hishieh]";
 		mes "Creepy...";
 		close3;
 	}
 	if (ep14_2_mylord == 33) {
-		mes "The instigator of all the bad things is really hiding out in here, huh?";
+		mes "O instigatou of todos o ruim coisas is realmente hiding out in aqui, huh?";
 		mes "How exciting!";
 		next;
 		mes "[Hishieh]";
-		mes "Oh, why am I here?";
+		mes "Oh, why am I aqui?";
 		mes "I came on Kar's behalf.";
-		mes "He can't leave Eclage while supplying it with mana that the orb can't.";
+		mes "He nao pode sair Eclage while supplying it com manum esse o orb nao pode.";
 		next;
 		mes "[Hishieh]";
-		mes "Our priorities lie with Yggdrasil and her Guardian.";
-		mes "Plus, we really can't afford to lose the newborn Mayor.";
+		mes "Nosso priorities lie com Yggdrasil e a Guardian.";
+		mes "Plus, we realmente nao pode afford to lose o newborn Prefeito.";
 		next;
 		cutin "hisie04.bmp",0;
 		mes "[Hishieh]";
-		mes "I was able to persuade the Elders to let me command the army,";
-		mes "but I'm still a commander in name only.";
+		mes "Eu estavum capaz de persuade o Elders to deixe-me comme o army,";
+		mes "mas Eu sou aindum um commander in name apenas.";
 		next;
-		select("What happened to Avant?");
+		select("O que aconteceu to Avant?");
 		cutin "hisie02.bmp",0;
 		mes "[Hishieh]";
 		mes "Hm...";
-		mes "We're using his knowledge.";
-		mes "We could have killed him, but that would've been too easy.";
+		mes "Nos estamos usando o knowledge.";
+		mes "We could have killed him, mas esse would've been tambem facil.";
 		next;
 		mes "[Hishieh]";
-		mes "It's a kind of revenge I guess, huh.";
-		mes "After all, his only transgression is that he loves his science too much.";
+		mes "E um kind of revenge I guess, huh.";
+		mes "Depois todos, o apenas transgression isentao e he loves o science tambem muito.";
 		next;
 		mes "[Hishieh]";
-		mes "Even the Elders acknowledged his talent and decided to save his life.";
-		mes "Above all...";
+		mes "Even o Elders acknowledged o talent e decided to salvar o vida.";
+		mes "Above todos...";
 		next;
 		mes "[Hishieh]";
-		mes "(Lowering his voice)";
-		mes "No one else knows the orb's mana has been stolen.";
-		mes "As far as others know, Avant's only responsible for me and Kar.";
+		mes "(Lowering o voice)";
+		mes "Ninguem else knows o orb's manum tem sido roubado.";
+		mes "As longe as others saber, Avant's apenas responsible fou me e Kar.";
 		next;
 		mes "[Hishieh]";
-		mes "Avant's over there. You can ask him questions if you'd like.";
+		mes "Avant's sobre la. Voce pode ask him questions se you'd like.";
 		mes "Hah hah. ";
 		close3;
 	}
@@ -317,75 +317,75 @@ moro_vol,95,108,7	script	Hishieh#143hisie01	4_M_FARIY_HISIE,{
 		switch( checkquest(7595,HUNTING) ) {
 		case -1:
 			if (isbegin_quest(7593) == 1) {
-				mes "The Temple of the Demon God, huh? Okay, well if you find stray mana from the orb in there, could you take care of it?";
-				mes "I don't know what kind of shape the mana is taking at the moment, but you won't mistake it for anything else.";
+				mes "O Templo of o Demon God, huh? Okay, bem se you encontrar stray manum de o orb in la, voce poderium se cuide of it?";
+				mes "Eu nao saber what kind of shape o manum is levando at o moment, mas you nao vai mistake it fou anything else.";
 				next;
 				mes "[Hishieh]";
-				mes "If you find stray mana from the orb, then please hit and disperse it.";
-				mes "It'll find its way back to Yggdrasil and the orb.";
-				mes "Can you do that for us?";
+				mes "Se you encontrar stray manum de o orb, entao pou favou hit e disperse it.";
+				mes "It'll encontrar seu caminho back to Yggdrasil e o orb.";
+				mes "Voce pode do esse fou us?";
 				next;
-				if (select( "Gladly.", "Sorry." ) == 2) {
+				if (select( "Gladly.", "Desculpe." ) == 2) {
 					cutin "hisie02.bmp",0;
 					mes "[Hishieh]";
 					mes "No worries.";
-					mes "I'll ask someone else.";
-					mes "We're good.";
+					mes "Eu vou ask alguem else.";
+					mes "Nos estamos bom.";
 					close3;
 				}
 				mes "[Hishieh]";
-				mes "I owe you so much,";
-				mes "I don't know how to repay you.";
-				mes "Thank you.";
+				mes "I owe you entao muito,";
+				mes "Eu nao saber how to repay you.";
+				mes "Obrigado.";
 				next;
 				mes "[Hishieh]";
-				mes "Please release 3 Brilliant Manas, 3 Life Manas, and 3 Earth Manas.";
-				mes "I'll be counting on you.";
-				mes "Come back safely, you hear?";
+				mes "Pou favou release 3 Brilliant Manas, 3 Vidum Manas, e 3 Terrum Manas.";
+				mes "Eu vou be counting on you.";
+				mes "Volte safely, you ouvir?";
 				setquest 7595;// Wandering Orb Magic
 				close3;
 			}
-			mes "Avant knows about the orb's mana better than anyone else.";
-			mes "Even Kar and I can barely stand Avant, but he really needs your help.";
+			mes "Avant knows sobre o orb's manum better que anyone else.";
+			mes "Even Kar e Eu consigo barely ste Avant, mas he realmente needs seu ajudar.";
 			next;
 			mes "[Hishieh]";
-			mes "This isn't just about collecting the orb's mana, but also has to do with the Demon God.";
-			mes "Most of my kinsmen don't know yet the orb's core mana has been stolen.";
+			mes "Este nao e apenas sobre coletando o orb's mana, mas tambem has to do com o Demon God.";
+			mes "Most of meu kinsmen nao saber yet o orb's core manum tem sido roubado.";
 			next;
 			cutin "hisie02.bmp",0;
 			mes "[Hishieh]";
-			mes "And I want to keep it that way.";
-			mes "Please help us.";
-			mes "Kar and I really need you.";
+			mes "E Eu quero to manter it esse caminho.";
+			mes "Pou favou ajudar us.";
+			mes "Kar e I realmente precisar you.";
 			close3;
 		case 0:
 		case 1:
-			mes "All you have to do is just hit and disperse the moving globes of mana in the Temple of the Demon God.";
-			mes "Then the mana will be returned to Yggdrasil.";
+			mes "Todos you tem que do is apenas hit e disperse o movendo globes of manum in o Templo of o Demon God.";
+			mes "Entao o manum sera returned to Yggdrasil.";
 			next;
 			mes "[Hishieh]";
-			mes "If you find solidified, immobile mana, just absorb them";
+			mes "Se you encontrar solidified, immobile mana, apenas absorb them";
 			mes "by touching it.";
 			next;
 			mes "[Hishieh]";
-			mes "It's no longer useful for us, but this is for you";
-			mes "to fight the Demons.";
+			mes "E no longer useful fou us, mas este is fou you";
+			mes "to lutar o Demons.";
 			close3;
 		case 2:
 			cutin "hisie04.bmp",0;
-			mes "Good job!";
-			mes "I've felt the mana returning.";
-			mes "You did great. Kar will be excited!";
+			mes "Bom job!";
+			mes "Eu tenho felt o manum returning.";
+			mes "You did otimo. Kar sera excited!";
 			next;
 			cutin "hisie01.bmp",0;
 			mes "[Hishieh]";
-			mes "This isn't much, but I want you to have it.";
-			mes "Hope you'll like it.";
-			mes "A substantial amount of mana has been leaked out of the orb.";
+			mes "Este nao e muito, mas Eu quero you to have it.";
+			mes "Hope voce vai like it.";
+			mes "A substantial amount of manum tem sido leaked out of o orb.";
 			next;
 			mes "[Hishieh]";
-			mes "If you're planning to reenter the Temple of the Demon God, then please look for more mana globes.";
-			mes "You should go rest for now.";
+			mes "Se voce e planning to reenter o Templo of o Demon God, entao pou favou olhar fou mais manum globes.";
+			mes "Voce deverium ir rest fou agora.";
 			erasequest 7595;// Wandering Orb Magic
 			setquest 7600;// Promising Tomorrow
 			getitem 22567,1;// Squad_Prize
@@ -394,18 +394,18 @@ moro_vol,95,108,7	script	Hishieh#143hisie01	4_M_FARIY_HISIE,{
 		}
 	case 0:
 	case 1:
-		mes "Not all the stray globes of mana from the orb have been retrieved,";
-		mes "though we're making progress.";
-		mes "I'll appreciate if you can come back tomorrow and help us again.";
+		mes "Nao todos o stray globes of manum de o orb tem sido retrieved,";
+		mes "though nos estamos fazendo progress.";
+		mes "Eu vou appreciate se voce pode volte amanhum e ajudar us novamente.";
 		close3;
 	case 2:
 		erasequest 7600;// Promising Tomorrow
-		mes "If you're planning to reenter the Temple of the Demon God, then I'd like to ask you a favor.";
-		mes "Yes, it's the same thing I asked you before:";
-		mes "return the mana.";
+		mes "Se voce e planning to reenter o Templo of o Demon God, entao Eu gostarium de like to ask you um favor.";
+		mes "Yes, e o mesmo coisum I perguntou you antes:";
+		mes "retornar o mana.";
 		next;
 		mes "[Hishieh]";
-		mes "Talk to me again if you want to help us.";
+		mes "Conversar to me novamente se voce quer to ajudar us.";
 		close3;
 	}
 	end;
@@ -419,55 +419,55 @@ moro_vol,108,88,5	script	Commander Hibba Agip#14301	4_M_REDSWORD,{
 	cutin "ep13_captin_edq.bmp",2;
 	mes "[Hibba Agip]";
 	if (ep14_3_mors01 == 0 || BaseLevel < 160) {
-		mes "This place is bizarre beyond comprehension.";
-		mes "Morocc is here somewhere.";
+		mes "Este lugar is bizarre beyond comprehension.";
+		mes "Morocc is aqui algum lugar.";
 		next;
 		mes "[Hibba Agip]";
-		mes "This definitely looks abysmal enough for someone like him to hang around.";
-		mes "Those must have been dragged in from the Morocc Desert, then contaminated by his evil energy.";
+		mes "Este definitivamente looks abysmal suficiente fou alguem like him to hang ao redor.";
+		mes "Esses must tem sido dragged in de o Morocc Desert, entao contaminated by o evil energy.";
 		next;
 		mes "[Hibba Agip]";
 		mes "Sigh...";
-		mes "We have a long and winding load ahead of us.";
+		mes "Nos temos um long e winding load ahead of us.";
 		mes "...";
 		next;
 		mes "[Hibba Agip]";
 		mes "Sigh.";
-		mes "I'll call you when I need you.";
-		mes "Till then, focus on staying alive.";
+		mes "Eu vou call you when Eu precientao de you.";
+		mes "Till entao, focus on staying vivo.";
 		close3;
 	}
 	if (ep4_3_mockill == 0) {
 		if (isbegin_quest(7597) == 1) {
-			mes "Ah, our hero is back!";
-			mes "Mwah hah hah, finally we've reached the end of our expedition!";
-			mes "Good job!";
-			mes "I thank you on behalf of the entire humankind.";
+			mes "Ah, nosso heroi is back!";
+			mes "Mwah hah hah, finalmente nos temos reached o end of nosso expedition!";
+			mes "Bom job!";
+			mes "I obrigado on behalf of o entire humankind.";
 			next;
 			mes "[Adjutant Abidal]";
-			mes "You're incredible!";
-			mes "You've saved the world!";
-			mes "After this, I'm going to go back home...";
+			mes "Voce e incredible!";
+			mes "Voce tem saved o mundo!";
+			mes "Depois this, Eu sou vai ir back home...";
 			next;
 			mes "[Hiva Agip]";
-			mes "Abidal, enough!";
-			mes "Are you trying to raise a red flag?!";
+			mes "Abidal, suficiente!";
+			mes "Voce e tentando to raise um red flag?!";
 			next;
 			mes "[Hiva Agip]";
-			mes "This isn't much, but I want you to have it.";
-			mes "Thank you for your service.";
+			mes "Este nao e muito, mas Eu quero you to have it.";
+			mes "Obrigado fou seu service.";
 			mes "Hah hah.";
-			mes "Finally I can sleep!";
+			mes "Finalmente Eu consigo sleep!";
 			next;
 			mes "[Hiva Agip]";
-			mes "Wait, I sense something ominous around you...";
-			mes "Oh gods, what is this?!";
-			mes "Are you trying to have your soul devoured by the Demon God?!";
+			mes "Esperar, I sense algo ominous ao redou you...";
+			mes "Oh gods, o que e this?!";
+			mes "Voce e tentando to have seu almum devoured by o Demon God?!";
 			next;
 			mes "[Hiva Agip]";
-			mes "Give it to me, and I'll crystallize it for you.";
-			mes "And I want you to meet that Guardian lady at the Laphine camp.";
-			mes "She might know about this.";
+			mes "Dar it to me, e Eu vou crystallize it fou you.";
+			mes "E Eu quero you to meet esse Guardium lady at o Laphine camp.";
+			mes "She might saber sobre this.";
 			ep4_3_mockill = 1;
 			erasequest 7597;// Fall of the False God
 			setquest 7598;// Caged God
@@ -477,63 +477,63 @@ moro_vol,108,88,5	script	Commander Hibba Agip#14301	4_M_REDSWORD,{
 			close3;
 		}
 		if (isbegin_quest(7593) == 1) {
-			mes "The Temple of the Demon God is discovered inside the cave in the central hill.";
-			mes "A tree is blocking the entry to the temple.";
+			mes "O Templo of o Demon God is descobriu dentro o cavernum in o central hill.";
+			mes "A tree is blocking o entry to o templo.";
 			next;
 			mes "[Hibba Agip]";
-			mes "That purple lady called the Guardian said she'd go there soon.";
-			mes "You should find her.";
+			mes "Esse purple lady chamado o Guardium disse she'd ir lum soon.";
+			mes "Voce deverium encontrar her.";
 			close3;
 		}
-		mes "Well-met.";
-		mes "I've heard a path has been cleared in that dark cave.";
-		mes "Sometimes I think this condemned basin is alive.";
+		mes "Bem-met.";
+		mes "Eu tenho ouviu um caminho tem sido cleared in esse escuro caverna.";
+		mes "Sometimes Eu acho este condemned basin is vivo.";
 		next;
 		mes "[Hibba Agip]";
-		mes "You're smart and capable. I don't have to explain why I'm telling you this, do I?";
-		mes "Don't worry. I've sent out an advance party.";
+		mes "Voce e smart e capable. Eu nao tem que explain why Eu sou dizendo you this, do I?";
+		mes "Nao preocupar. Eu tenho sent out um advance party.";
 		next;
 		mes "[Hibba Agip]";
 		mes "Be joyous, comrade!";
-		mes "It won't be long before our perilous journey is over!";
-		mes "And you'll be the one to end it.";
+		mes "It nao vai be long antes nosso perilous journey is sobre!";
+		mes "E voce vai be o one to end it.";
 		next;
 		mes "[Hibba Agip]";
-		mes "We've decided to call the newly discovered place the Temple of the Demon God.";
-		mes "Actually the first scout named it, and the name stuck.";
+		mes "Nos temos decided to call o newly descobriu lugar o Templo of o Demon God.";
+		mes "Num verdade o primeiro scout named it, e o name stuck.";
 		next;
 		mes "[Hibba Agip]";
-		mes "I'd like to put you on a subjugation mission in the Temple of the Demon God.";
-		mes "This is not an order, but a request;";
-		mes "you decide to take the mission at your own risk.";
+		mes "Eu gostarium de like to colocar you on um subjugation missao in o Templo of o Demon God.";
+		mes "Este is nao um order, mas um request;";
+		mes "you decide to pegar o missao at seu own risk.";
 		next;
-		if (select( "I'll do it.", "No." ) == 2) {
+		if (select( "Eu vou do it.", "Nao." ) == 2) {
 			mes "[Hibba Agip]";
-			mes "I understand";
-			mes "you don't want to risk your life for the world peace.";
-			mes "Enjoy living until the end of the world.";
+			mes "I entender";
+			mes "voce nao querer to risk seu vidum fou o mundo paz.";
+			mes "Enjoy vivendo ate o end of o mundo.";
 			close3;
 		}
 		mes "[Hibba Agip]";
-		mes "I knew I chose the right person for the job.";
-		mes "Loki said the Demon God hadn't fully recovered from";
-		mes "the damage received upon the break of his seal.";
+		mes "I sabium I chose o certo pessoum fou o job.";
+		mes "Loki disse o Demon God nao tinhum fully recovered de";
+		mes "o damage recebeu upon o quebrar of o seal.";
 		next;
 		mes "[Hibba Agip]";
-		mes "He's still licking his wounds,";
-		mes "which gives us a perfect opportunity to get at him.";
-		mes "Good luck.";
+		mes "Ele e aindum licking o wounds,";
+		mes "which gives us um perfect opportunity to pegar at him.";
+		mes "Boum sorte.";
 		setquest 7593;// Demon God Subjugation
 		close3;
 	}
 	if (isbegin_quest(7597) == 1) {
-		mes "*Whistle* Good work!";
-		mes "How's the Temple of the Demon God?";
-		mes "Still the same?";
+		mes "*Whistle* Bom trabalhar!";
+		mes "How's o Templo of o Demon God?";
+		mes "Aindum o mesmo?";
 		next;
 		mes "[Hiva Agip]";
-		mes "Take your reward.";
-		mes "See you again.";
+		mes "Pegar seu recompensa.";
+		mes "Ver you novamente.";
 		erasequest 7597;// Fall of the False God
 		setquest 7598;// Caged God
 		getitem 22567,1;// Squad_Prize
@@ -542,53 +542,53 @@ moro_vol,108,88,5	script	Commander Hibba Agip#14301	4_M_REDSWORD,{
 	}
 	switch( checkquest(7598,PLAYTIME) ) {
 	case -1:
-		mes "For the life of me, I can't figure out what's happening.";
-		mes "This place has gone to the dogs since that monster proclaimed that he would replace God.";
+		mes "Fou o vidum of me, Eu nao consigo figure out o que e happening.";
+		mes "Este lugar has gone to o dogs desde esse monstro proclaimed esse he would replace God.";
 		next;
 		mes "[Hiva Agip]";
-		mes "I'm afraid once warped, dimensions can never be the same.";
-		mes "Could you go back to the Temple of the Demon God once more?";
+		mes "Eu sou afraid umum vez warped, dimensions cum nuncum be o mesmo.";
+		mes "Voce poderium ir back to o Templo of o Demon God umum vez mais?";
 		next;
-		if (select( "Sure.", "No." ) == 2) {
+		if (select( "Sure.", "Nao." ) == 2) {
 			mes "[Hiva Agip]";
-			mes "I understand.";
-			mes "You've done enough already.";
-			mes "I'll send someone else.";
+			mes "I entender.";
+			mes "Voce tem done suficiente ja.";
+			mes "Eu vou send alguem else.";
 			close3;
 		}
 		mes "[Hiva Agip]";
-		mes "The Temple of the Demon God is stuck in a perpetual time loop,";
-		mes "just like all the other Dimensional Cracks.";
+		mes "O Templo of o Demon God is stuck in um perpetual tempo loop,";
+		mes "apenas like todos o outro Dimensional Cracks.";
 		next;
 		mes "[Hiva Agip]";
-		mes "He tried desperately to escape from this world, but all to no avail.";
-		mes "That world of his is now filled with nothing but hellish memories that repeat themselves over and over.";
+		mes "He tentou desperately to escape de este mundo, mas todos to no avail.";
+		mes "Esse mundo of o is agorum filled com nadum mas hellish memorias esse repeat themselves sobre e sobre.";
 		next;
 		mes "[Hiva Agip]";
-		mes "Good luck exploring the temple. If you see Morocc again, don't hesitate to kill the Demon God again.";
-		mes "He doesn't deserve commiseration.";
+		mes "Boum sorte exploring o templo. Se you ver Morocc novamente, nao hesitate to matar o Demon God novamente.";
+		mes "He nao deserve commiseration.";
 		mes "Godspeed.";
 		if (isbegin_quest(7593) == 0)
 			setquest 7593;// Demon God Subjugation
 		close3;
 	case 0:
 	case 1:
-		mes "Now that we've taken care of the main body, we can take things slow.";
-		mes "Why don't you go rest for now?";
-		mes "Leave the rest to us.";
+		mes "Agorum esse nos temos taken care of o main corpo, nos podemos pegar coisas slow.";
+		mes "Why voce nao ir rest fou agora?";
+		mes "Sair o rest to us.";
 		close3;
 	case 2:
 		erasequest 7598;// Caged God
-		mes "I wouldn't believe you had an intense battle yesterday if I didn't already know about it.";
-		mes "Are you ready for another battle?";
+		mes "I nao irium acreditar you had um intense batalhum ontem se I nao jum saber sobre it.";
+		mes "Voce e pronto fou outro batalha?";
 		next;
 		mes "[Hiva Agip]";
-		mes "Let me know when you're ready.";
-		mes "Morocc is gone, yet his temple stands.";
-		mes "It might have something to do with the Dimensional Crack.";
+		mes "Deixe-me saber when voce e pronto.";
+		mes "Morocc is gone, yet o templo stands.";
+		mes "It might have algo to do com o Dimensional Crack.";
 		next;
 		mes "[Hiva Agip]";
-		mes "Oh, don't worry. I'm not thinking to send you out there.";
+		mes "Oh, nao preocupar. Eu sou nao pensando to send you out la.";
 		mes "Hah hah hah!";
 		close3;
 	}
@@ -607,58 +607,58 @@ moro_vol,110,90,3	script	Adjutant Abidal#14302	4_M_SAGE_C,{
 		case -1:
 			if (isbegin_quest(7593) == 1) {
 				mes "[Abidal]";
-				mes "Are you on the quest to subjugate the Temple of the Demon God?";
-				mes "Then please do me a favor.";
-				mes "Our scouts have reported on the presence of a Frost Spider and a Fire Wolf that have tasted the Frost of Genesis.";
+				mes "Voce e on o missao to subjugate o Templo of o Demon God?";
+				mes "Entao pou favou do me um favor.";
+				mes "Nosso scouts have reported on o presence of um Frost Spider e um Fogo Wolf esse have tasted o Frost of Genesis.";
 				next;
 				mes "[Abidal]";
-				mes "They're just as evil as their master Morocc.";
-				mes "Please exterminate the Frost Spider and Fire Wolf.";
+				mes "Eles sao apenas as evil as o master Morocc.";
+				mes "Pou favou exterminate o Frost Spider e Fogo Wolf.";
 				next;
 				if (select( "Accept.", "Decline." ) == 2) {
 					mes "[Abidal]";
-					mes "Are you afraid you can't handle them?";
-					mes "I understand.";
-					mes "They're formidable enemies.";
+					mes "Voce e afraid voce nao pode handle them?";
+					mes "I entender.";
+					mes "Eles sao formidable inimigos.";
 					close;
 				}
 				mes "[Abidal]";
-				mes "Thank you.";
-				mes "The Fire Spider is called Brinaranea; the Fire Wolf, Muspellskoll.";
-				mes "Please exterminate those creatures of the Demon God.";
-				mes "Good luck.";
+				mes "Obrigado.";
+				mes "O Fogo Spider is chamado Brinaranea; o Fogo Wolf, Muspellskoll.";
+				mes "Pou favou exterminate esses creatures of o Demon God.";
+				mes "Boum sorte.";
 				setquest 7594;// Frost Spider and Fire Wolf
 				close;
 			}
 			mes "[Abidal]";
-			mes "Did you come to help us subjugate the Demon God?";
-			mes "Please be careful; the environment of this place keeps changing without any warning.";
+			mes "Voce vir to ajudar us subjugate o Demon God?";
+			mes "Pou favou tenhum cuidado; o environment of este lugar keeps mudando sem any aviso.";
 			close;
 		case 0:
 		case 1:
 			mes "[Abidal]";
-			mes "According to my intel, the Demon God has several henchmen.";
-			mes "I'd like you to eliminate the biggest threat among them.";
+			mes "According to meu intel, o Demon God has several henchmen.";
+			mes "Eu gostarium de like you to eliminate o biggest threat among them.";
 			next;
 			mes "[Abidal]";
-			mes "It won't be easy, but I have faith in you.";
-			mes "The future of Midgard rests on your shoulders.";
+			mes "It nao vai be facil, mas Eu tenho faith in you.";
+			mes "O future of Midgard rests on seu shoulders.";
 			close;
 		case 2:
 			mes "[Abidal]";
 			mes "You did it!";
-			mes "I knew you would!";
+			mes "I sabium you would!";
 			mes "Congratulations!";
 			next;
 			mes "[Abidal]";
-			mes "But I'm afraid this is not over yet.";
-			mes "I have this nagging sense of misgiving.";
-			mes "I'm sorry. Maybe I'm thinking irrationally.";
+			mes "Mas Eu sou afraid este is nao sobre yet.";
+			mes "Eu tenho este nagging sense of misgiving.";
+			mes "Eu sou desculpe. Talvez Eu sou pensando irrationally.";
 			next;
 			mes "[Abidal]";
-			mes "I've prepared a small token of appreciation for you.";
-			mes "I'm sorry this is the best I can do.";
-			mes "Thank you for your hard work.";
+			mes "Eu tenho preparado um pequeno token of appreciation fou you.";
+			mes "Eu sou desculpe este is o best Eu consigo do.";
+			mes "Obrigado fou seu dificil trabalhar.";
 			erasequest 7594;// Frost Spider and Fire Wolf
 			setquest 7599;// Unending Hunt
 			getitem 22567,1;// Squad_Prize
@@ -667,18 +667,18 @@ moro_vol,110,90,3	script	Adjutant Abidal#14302	4_M_SAGE_C,{
 	case 0:
 	case 1:
 		mes "[Abidal]";
-		mes "You did great. You should go rest.";
+		mes "You did otimo. Voce deverium ir rest.";
 		close;
 	case 2:
 		erasequest 7599;// Unending Hunt
 		mes "[Abidal]";
-		mes "Are you well rested?";
-		mes "You look like you are.";
-		mes "That's great because we're worried about the Temple of the Demon God. We can't seem to close it.";
+		mes "Voce e bem rested?";
+		mes "Voce parece like you are.";
+		mes "That's otimo porque nos estamos preocupado sobre o Templo of o Demon God. We nao pode parecer to fechar it.";
 		next;
 		mes "[Abidal]";
-		mes "I might ask you again to exterminate Frost Spiders and Fire Wolves.";
-		mes "Why wouldn't the Temple of the Demon God disappear?";
+		mes "I might ask you novamente to exterminate Frost Spiders e Fogo Wolves.";
+		mes "Why nao irium o Templo of o Demon God desaparecer?";
 		close;
 	}
 	end;
@@ -692,9 +692,9 @@ moro_vol,111,87,1	script	 Instructor Igrid#14303	4_M_CRU,{
 	if (BaseLevel < 140) {
 		mes "[Instructor Igrid]";
 		mes "You.";
-		mes "(Shaking her head) You won't do.";
-		mes "You're too weak to fight these Demons.";
-		mes "Go back and train some more.";
+		mes "(Shaking a cabeca) You nao vai do.";
+		mes "Voce e tambem fraco to lutar estes Demons.";
+		mes "Ir back e train alguns mais.";
 		close;
 	}
 	switch( checkquest(7582,PLAYTIME) ) {
@@ -702,55 +702,55 @@ moro_vol,111,87,1	script	 Instructor Igrid#14303	4_M_CRU,{
 		switch( checkquest(7581,HUNTING) ) {
 		case -1:
 			mes "[Instructor Igrid]";
-			mes "Hey, well-met.";
-			mes "I need your help.";
-			mes "Some of those Demons pouring out of the Flaming Basin are a real pain in the neck.";
+			mes "Hey, bem-met.";
+			mes "Eu precientao de seu ajudar.";
+			mes "Alguns of esses Demons pouring out of o Flaming Basin are um real dor in o neck.";
 			next;
 			mes "[Instructor Igrid]";
-			mes "Morocc Reincarnations have invaded here just as well, and some of them are noticeably strong.";
-			mes "I want you to get rid of them.";
+			mes "Morocc Reincarnations have invaded aqui apenas as bem, e alguns of them are noticeably forte.";
+			mes "Eu quero you to pegar rid of them.";
 			next;
 			if (select( "Why me?", "Sure." ) == 1) {
 				mes "[Instructor Igrid]";
-				mes "Um, this is unexpected.";
-				mes "I thought you came to protect the peace and prosperity of Midgard. Did you not?";
+				mes "Um, este is unexpected.";
+				mes "I pensou you came to proteger o paz e prosperity of Midgard. Voce not?";
 				next;
 				mes "[Instructor Igrid]";
-				mes "Maybe I gave you too much credit.";
-				mes "All right, I'll ask someone else.";
-				mes "I'm really disappointed in you.";
+				mes "Talvez I gave you tambem muito credit.";
+				mes "Todos certo, Eu vou ask alguem else.";
+				mes "Eu sou realmente disappointed in you.";
 				close;
 			}
 			mes "[Instructor Igrid]";
-			mes "You don't disappoint me.";
-			mes "Listen, in the center of the basin is a high hill.";
-			mes "In four directions from the center roams a strong Demon.";
+			mes "Voce nao disappoint me.";
+			mes "Ouvir, in o center of o basin is um high hill.";
+			mes "In fnosso directions de o center roams um forte Demon.";
 			next;
 			mes "[Instructor Igrid]";
-			mes "They look just like those Reincarnations that attacked Morocc City,";
-			mes "but bigger and stronger.";
+			mes "They olhar apenas like esses Reincarnations esse attacked Morocc Cidade,";
+			mes "mas bigger e stronger.";
 			next;
 			mes "[Instructor Igrid]";
-			mes "For the smooth operation of the subjugation mission,";
-			mes "please ^4d4dffeliminate Distorted Morocc Reincarnation, Blazing Morocc Reincarnation, and Freezing Morocc Reincarnation.^000000";
-			mes "I'll be counting on you.";
+			mes "Fou o smooth operation of o subjugation missao,";
+			mes "pou favou ^4d4dffeliminate Distorted Morocc Reincarnation, Blazing Morocc Reincarnation, e Freezing Morocc Reincarnation.^000000";
+			mes "Eu vou be counting on you.";
 			setquest 7581;// Eliminating Risks
 			close;
 		case 0:
 		case 1:
 			mes "[Instructor Igrid]";
-			mes "Please ^4d4dffeliminate Distorted Morocc Reincarnation, Blazing Morocc Reincarnation, and Freezing Morocc Reincarnation.^000000";
-			mes "You can find them stationed in four directions from the center of the basin.";
+			mes "Pou favou ^4d4dffeliminate Distorted Morocc Reincarnation, Blazing Morocc Reincarnation, e Freezing Morocc Reincarnation.^000000";
+			mes "Voce pode encontrar them stationed in fnosso directions de o center of o basin.";
 			close;
 		case 2:
 			mes "[Instructor Igrid]";
-			mes "You really took out those strong Demons.";
-			mes "That should be enough to break the spirit of the rest.";
-			mes "Good job.";
+			mes "You realmente took out esses forte Demons.";
+			mes "Esse deveria ser suficiente to quebrar o espirito of o rest.";
+			mes "Bom job.";
 			next;
 			mes "[Instructor Igrid]";
-			mes "I hope you'll come back to help me again.";
-			mes "Let's go back home together, yeah?";
+			mes "I esperancum voce vai volte to me ajude novamente.";
+			mes "Vamos ir back home juntos, yeah?";
 			erasequest 7581;// Eliminating Risks
 			setquest 7582;// Daily Cleaning
 			getexp 1000000,800000;
@@ -760,16 +760,16 @@ moro_vol,111,87,1	script	 Instructor Igrid#14303	4_M_CRU,{
 	case 1:
 		mes "[Instructor Igrid]";
 		mes "You.";
-		mes "Do you mean those giant reincarnations?";
-		mes "I've assigned some more adventurers to take care of them.";
+		mes "Voce significum esses giant reincarnations?";
+		mes "Eu tenho assigned alguns mais aventureiros to se cuide of them.";
 		next;
 		mes "[Instructor Igrid]";
-		mes "You should rest for the day. Come back to hunt tomorrow.";
+		mes "Voce deverium rest fou o dia. Volte to cacar amanha.";
 		close;
 	case 2:
 		mes "[Instructor Igrid]";
-		mes "It's almost time for a Demon hunt.";
-		mes "Aren't you excited? Because I am! Hah hah!";
+		mes "E almost tempo fou um Demon cacar.";
+		mes "Voce nao e excited? Porque I am! Hah hah!";
 		erasequest 7582;// Daily Cleaning
 		close;
 	}
@@ -782,64 +782,64 @@ OnInit:
 
 moro_vol,136,84,3	script	Jeruth Hesranta#ep143	4_MAN_JERUTOO,{
 	if (checkweight(1304,3) == 0) {
-		mes "You are carrying too many items to proceed with the quest.";
-		mes "Please make some room in your inventory.";
+		mes "Voce e carregando tambem muitos itens to proceed com o missao.";
+		mes "Pou favou fazer alguns room in seu inventory.";
 		close;
 	}
 	cutin "ep13_heslanta.bmp",2;
 	mes "[Jeruth Hesranta]";
 	if (ep13_3_secret < 22) {
-		mes "I'm Hesranta, commander of the Sappha army.";
-		mes "It's my honor to fight beside you Humans.";
+		mes "Eu sou Hesranta, commander of o Sapphum army.";
+		mes "E meu honou to lutar beside you Humans.";
 		close3;
 	}
 	if (ep13_3_secret < 24) {// custom translation
-		mes "I didn't expect to see you here!";
-		mes "... although a lot of things happened, I'm still waiting for you to complete the first thing I asked!";
+		mes "I nao expect to ver you aqui!";
+		mes "... emborum um lot of coisas aconteceu, Eu sou aindum waiting fou you to completar o primeiro coisum I perguntou!";
 		next;
 		mes "[Jeruth Hesranta]";
-		mes "Please come back to help me!";
+		mes "Pou favou volte to me ajude!";
 		close3;
 	}
 	if (ep13_3_secret == 24) {
-		mes "Long time, no see.";
-		mes "Do you remember me?";
-		mes "We had an important discussion together back in Diel.";
+		mes "Long tempo, no ver.";
+		mes "Voce lembrar me?";
+		mes "We had um importante discussion juntos back in Diel.";
 		next;
-		select("Why are you here?");
+		select("Pou que you aqui?");
 		mes "[Jeruth Hesranta]";
-		mes "I persuaded the Elders to let me bring an army here.";
-		mes "As you suspected, Ahat isn't a Sappha.";
-		next;
-		mes "[Jeruth Hesranta]";
-		mes "Only I'm aware of that knowledge at the moment.";
-		mes "Everyone else has pretty much forgotten he ever existed.";
+		mes "I persuaded o Elders to deixe-me trazer um armeu aqui.";
+		mes "As you suspected, Ahat nao e um Sappha.";
 		next;
 		mes "[Jeruth Hesranta]";
-		mes "My undying suspicion about him kept me safe from Ahat's hypnosis.";
-		mes "He used the unspeakable talent to disappear.";
+		mes "Apenas Eu sou aware of esse knowledge at o moment.";
+		mes "Todos else has pretty muito esquecido he ever existed.";
 		next;
 		mes "[Jeruth Hesranta]";
-		mes "After he disappeared, I persuaded the Elders that we must join the subjugation of the Demon God.";
-		mes "Other Sapphas were against me, for the safety of our kind,";
+		mes "Meu undying suspicion sobre him kept me seguro de Ahat's hypnosis.";
+		mes "He usou o unspeakable talent to desaparecer.";
 		next;
 		mes "[Jeruth Hesranta]";
-		mes "but it's in our nature to help our friends at all costs.";
-		mes "So I've brought our bravest Gartens to the battlefield.";
+		mes "Depois he disappeared, I persuaded o Elders esse we must join o subjugation of o Demon God.";
+		mes "Outro Sapphas were against me, fou o segurancum of nosso kind,";
 		next;
 		mes "[Jeruth Hesranta]";
-		mes "Long story short,";
-		mes "you no longer have to work for Ahat.";
-		mes "If you need the Contribution Certificate, do me a favor later and I'll give you one.";
+		mes "mas e in nosso nature to ajudar nosso amigos at todos costs.";
+		mes "Entao Eu tenho trouxe nosso bravest Gartens to o battlefield.";
 		next;
 		mes "[Jeruth Hesranta]";
-		mes "You know Chesher, don't you?";
+		mes "Long historium short,";
+		mes "you no longer tem que trabalhar fou Ahat.";
+		mes "Se voce precisum o Contribution Certificate, do me um favou later e Eu vou dar you one.";
+		next;
+		mes "[Jeruth Hesranta]";
+		mes "Voce sabe Chesher, voce nao?";
 		mes "When it comes to him,";
-		mes "I can't trust anyone else.";
+		mes "Eu nao consigo confiancum anyone else.";
 		next;
 		mes "[Jeruth Hesranta]";
-		mes "I want to collect information about him first before I proceed with my plan.";
-		mes "Please stay safe until I talk to you again.";
+		mes "Eu quero to coletar informacao sobre him primeiro antes I proceed com meu plan.";
+		mes "Pou favou ficar seguro ate I conversar to you novamente.";
 		ep13_3_secret = 25;
 		ep13_3_ahtdayq = 0;
 		if (isbegin_quest(7200) > 0)
@@ -854,47 +854,47 @@ moro_vol,136,84,3	script	Jeruth Hesranta#ep143	4_MAN_JERUTOO,{
 	}
 	if (ep13_3_secret == 25) {
 		if (BaseLevel < 140) {// custom translation
-			mes "Do you remember that we talked about Chesher?";
-			mes "He's a sensitive issue, so I can't talk to other Sapphas about him.";
+			mes "Voce lembrar esse we talked sobre Chesher?";
+			mes "Ele e um sensitive issue, entao Eu nao consigo conversar to outro Sapphas sobre him.";
 			next;
 			mes "[Jeruth Hesranta]";
-			mes "But... it does not seem to please you,";
-			mes "go back and train some more.";
+			mes "But... it does nao parecer to pou favou you,";
+			mes "ir back e train alguns mais.";
 			close3;
 		}
-		mes "Do you remember that we talked about Chesher?";
-		mes "He's a sensitive issue, so I can't talk to other Sapphas about him.";
-		mes "And I was thinking...";
+		mes "Voce lembrar esse we talked sobre Chesher?";
+		mes "Ele e um sensitive issue, entao Eu nao consigo conversar to outro Sapphas sobre him.";
+		mes "E Eu estavum pensando...";
 		next;
 		mes "[Jeruth Hesranta]";
-		mes "Maybe you could help me confirm my suspicion.";
+		mes "Talvez you could me ajude confirm meu suspicion.";
 		next;
 		select("What suspicion?");
 		mes "[Jeruth Hesranta]";
-		mes "There are some things that don't seem to belong to this Flaming Basin.";
-		mes "They're boxes of some kind.";
+		mes "Hum alguns coisas esse nao parecer to pertencer to este Flaming Basin.";
+		mes "Eles sao boxes of alguns kind.";
 		next;
 		mes "[Jeruth Hesranta]";
-		mes "Animated by the Demon God's evil energy, those boxes are running amok about the basin.";
-		mes "Now I'm concerned...";
+		mes "Animated by o Demon God's evil energy, esses boxes are correndo amok sobre o basin.";
+		mes "Agorum Eu sou concerned...";
 		next;
-		select("You're concerned?");
+		select("Voce e concerned?");
 		mes "[Jeruth Hesranta]";
-		mes "They're the spitting images of Bradium Boxes in Dicastes.";
-		mes "Could you exterminate them and help me determine their identity?";
-		next;
-		mes "[Jeruth Hesranta]";
-		mes "They really could be the Bradium Boxes that Chesher stole from Dicastes.";
-		mes "If so, I can use the boxes to replenish my army.";
-		next;
-		select("And retrieve the stolen Bradiums as well.");
-		mes "[Jeruth Hesranta]";
-		mes "Correct. My army isn't getting much support, since this expedition has been solely my idea.";
-		mes "It's just wishful thinking; we won't know until we have the boxes.";
+		mes "Eles sao o spitting images of Bradium Boxes in Dicastes.";
+		mes "Voce poderium exterminate them e me ajude determine o identity?";
 		next;
 		mes "[Jeruth Hesranta]";
-		mes "For now please hunt one box and let me know what you find from it.";
-		mes "I'll be waiting.";
+		mes "They realmente poderia ser o Bradium Boxes esse Chesa stole de Dicastes.";
+		mes "Se so, Eu consigo usar o boxes to replenish meu army.";
+		next;
+		select("E retrieve o roubado Bradiums as bem.");
+		mes "[Jeruth Hesranta]";
+		mes "Correct. Meu armeu nao e ficando muito support, desde este expedition tem sido solely meu idea.";
+		mes "E apenas wishful pensando; we nao vai saber ate we have o boxes.";
+		next;
+		mes "[Jeruth Hesranta]";
+		mes "Fou agorum pou favou cacar one box e deixe-me saber what you encontrar de it.";
+		mes "Eu vou be waiting.";
 		setquest 7578;// Rampaging Box
 		ep13_3_secret = 26;
 		close3;
@@ -903,38 +903,38 @@ moro_vol,136,84,3	script	Jeruth Hesranta#ep143	4_MAN_JERUTOO,{
 		if (checkquest(7578,HUNTING) != 2) {
 			cutin "ep13_heslanta.bmp",2;
 			mes "[Jeruth Hesranta]";
-			mes "Just hunt 1 ^4d4dffRampaging Box^000000 and bring me what you find inside it.";
+			mes "Apenas cacar 1 ^4d4dffRampaging Box^000000 e trazer me what you encontrar dentro it.";
 			if (isbegin_quest(7578) == 0)
 				setquest 7578;
 			close3;
 		}
 		if (countitem(6392) < 1) {// Bradium_Box
-			mes "I see that you've subjugated a Rampaging Box,";
-			mes "but my real objective was to check its contents.";
-			mes "^4d4dffPlease exterminate a box and bring me the item you've found from it.^000000";
+			mes "I ver esse voce tem subjugated um Rampaging Box,";
+			mes "mas meu real objective was to verificar seu contents.";
+			mes "^4d4dffPlease exterminate um box e trazer me o item voce tem encontrou de it.^000000";
 			close3;
 		}
-		mes "I was right.";
-		mes "It's amazing how such an animate object can move on its own.";
-		mes "It must be enchanted, don't you think?";
+		mes "Eu estavum certo.";
+		mes "E incrivel how such um animate object cum mover on seu own.";
+		mes "It deve ser enchanted, voce nao pensar?";
 		next;
 		mes "[Jeruth Hesranta]";
-		mes "This confirms my suspicion:";
-		mes "those boxes in the Flaming Basin are Bradium Boxes from El Dicastes.";
+		mes "Este confirms meu suspicion:";
+		mes "esses boxes in o Flaming Basin are Bradium Boxes de El Dicastes.";
 		next;
 		mes "[Jeruth Hesranta]";
-		mes "I don't want to impose on your kindness, but I hope you'll continue to hunt these boxes.";
-		mes "You're the only one I can trust with this, at least for now.";
-		mes "Gartens are brave, but they'll want to understand why Bradium Boxes are found in this place.";
+		mes "Eu nao querer to impose on seu kindness, mas I esperancum voce vai continue to cacar estes boxes.";
+		mes "Voce e o apenas one Eu consigo confiancum com this, at menos fou agora.";
+		mes "Gartens are brave, mas they'll querer to underste why Bradium Boxes are encontrou in este lugar.";
 		next;
 		mes "[Jeruth Hesranta]";
-		mes "Then I'll have to tell them everything,";
-		mes "starting with Ahat, and that most Sapphas have forgotten about him will make things really complicated.";
+		mes "Entao Eu vou tem que tell them tudo,";
+		mes "starting com Ahat, e esse mais Sapphas have esquecido sobre him will fazer coisas realmente complicated.";
 		next;
-		select("When do I start?");
+		select("Quando I comecar?");
 		mes "[Jeruth Hesranta]";
-		mes "How about now?";
-		mes "^4d4dffPlease hunt those Rampaging Boxes and collect 10 Bradium Boxes.^000000";
+		mes "Que tal agora?";
+		mes "^4d4dffPlease cacar esses Rampaging Boxes e coletar 10 Bradium Boxes.^000000";
 		delitem 6392,1;// Bradium_Box
 		completequest 7578;// Rampaging Box
 		setquest 7579;// Collecting Bradiums
@@ -948,32 +948,32 @@ moro_vol,136,84,3	script	Jeruth Hesranta#ep143	4_MAN_JERUTOO,{
 		case 0:
 			cutin "ep13_heslanta.bmp",2;
 			mes "[Jeruth Hesranta]";
-			mes "Welcome back.";
-			mes "Are you ready for the day?";
+			mes "Bem-vindo back.";
+			mes "Voce e pronto fou o dia?";
 			break;
 		case 1:
 			cutin "ep13_heslanta.bmp",2;
 			mes "[Jeruth Hesranta]";
-			mes "Rampaging Boxes themselves aren't threatening, but they're surrounded by dangerous monsters. Please be careful.";
+			mes "Rampaging Boxes themselves nao sao threatening, mas eles sao surrounded by perigoentao monstros. Pou favou tenhum cuidado.";
 			next;
 			mes "[Jeruth Hesranta]";
-			mes "Happy hunting!";
+			mes "Feliz cacando!";
 			close3;
 		case 2:
 			if (countitem(6392) < 10) {
-				mes "It's amazing how those ore-filled boxes are moving on their own.";
-				mes "Maybe that's how the Demon God is recruiting his soldiers.";
+				mes "E incrivel how esses ore-filled boxes are movendo on o own.";
+				mes "Talvez that's how o Demon God is recruiting o soldados.";
 				close3;
 			}
 			cutin "ep13_heslanta.bmp",2;
 			mes "[Jeruth Hesranta]";
-			mes "Good job.";
-			mes "I can't thank you enough.";
-			mes "Let me take all the Bradium Boxes.";
+			mes "Bom job.";
+			mes "Eu nao consigo obrigado suficiente.";
+			mes "Deixe-me pegar todos o Bradium Boxes.";
 			next;
 			mes "[Jeruth Hesranta]";
-			mes "I can feel other people's eyes on us. Hah hah.";
-			mes "See you again.";
+			mes "Eu consigo feel outro pessoas's olhos on us. Hah hah.";
+			mes "Ver you novamente.";
 			delitem 6392, countitem(6392);// Bradium_Box
 			erasequest 7579;// Collecting Bradiums
 			setquest 7580;// Collecting Every Day
@@ -984,34 +984,34 @@ moro_vol,136,84,3	script	Jeruth Hesranta#ep143	4_MAN_JERUTOO,{
 		break;
 	case 0:
 	case 1:
-		mes "Hah hah, we're not in a hurry at the moment.";
-		mes "I wonder if Chesher knows we're stealing back his Bradium Boxes.";
+		mes "Hah hah, nos estamos nao in um hurry at o moment.";
+		mes "I imaginar se Chesa knows nos estamos stealing back o Bradium Boxes.";
 		next;
 		mes "[Jeruth Hesranta]";
-		mes "What should I feed the poor cat later?";
-		mes "Oh, keep up the good work collecting Bradium Boxes.";
+		mes "What should I feed o poou cat later?";
+		mes "Oh, manter up o bom trabalhar coletando Bradium Boxes.";
 		break;
 	case 2:
 		cutin "ep13_heslanta.bmp",2;
 		mes "[Jeruth Hesranta]";
-		mes "It's time to collect Bradium Boxes.";
+		mes "E tempo to coletar Bradium Boxes.";
 		erasequest 7580;// Collecting Every Day
 		break;
 	}
 	next;
-	if (select( "I'll get on with it.", "I'll come back later." ) == 2) {
+	if (select( "Eu vou pegar on com it.", "Eu vou volte later." ) == 2) {
 		mes "[Jeruth Hesranta]";
-		mes "No problem.";
-		mes "Come back whenever you can.";
+		mes "No problema.";
+		mes "Volte whenever you can.";
 		next;
 		mes "[Jeruth Hesranta]";
-		mes "I'm sorry that";
-		mes "I can't stop asking you for favors.";
+		mes "Eu sou desculpe that";
+		mes "Eu nao consigo parar asking you fou favors.";
 		close3;
 	}
 	mes "[Jeruth Hesranta]";
-	mes "That's the spirit!";
-	mes "hunt Rampaging Boxes and collect Bradiums.";
+	mes "That's o espirito!";
+	mes "cacar Rampaging Boxes e coletar Bradiums.";
 	setquest 7579;// Collecting Bradiums
 	close3;
 
@@ -1037,45 +1037,45 @@ function	script	kick_mob	{
 
 moro_vol,88,107,5	script	Magic Scholar Dophe#143vol01	4_F_FAIRYKID5,{
  	mes "[Dophe]";
- 	mes "A Human, I see.";
- 	mes "Looking at you, I can't help but muse on our situation.";
- 	mes "You and I are having conversation.";
+ 	mes "A Human, I ver.";
+ 	mes "Looking at you, Eu nao consigo ajudar mas muse on nosso situation.";
+ 	mes "You e I are having conversation.";
  	next;
  	mes "[Dophe]";
- 	mes "This so-called Dimensional Crack, where the Demon God has taken up residence, falls into Bifrost's jurisdiction.";
+ 	mes "Este so-chamado Dimensional Crack, where o Demon God has taken up residence, falls parum dentro Bifrost's jurisdiction.";
  	next;
 	mes "[Dophe]";
-	mes "He and us are like two sides of the coin, or above and below the waterline.";
+	mes "He e us are like two sides of o coin, ou acimum e abaixo o waterline.";
 	next;
 	mes "[Dophe]";
-	mes "He and us aren't exactly running parallel to each other, but maybe standing in a universe parallel to each other's.";
+	mes "He e us nao sao exatamente correndo parallel to each outro, mas talvez de pe in um universe parallel to each outro's.";
 	next;
 	mes "[Dophe]";
 	mes "...";
 	next;
 	mes "[Dophe]";
-	mes "My point is:";
-	mes "he could be under our nose, and we're unable to see him.";
-	mes "If his lair is located somewhere in Bifrost's territory,";
+	mes "Meu point is:";
+	mes "he poderia ser debaixo nosso nose, e nos estamos uncapaz de ver him.";
+	mes "Se o lair is located algum lugar in Bifrost's territory,";
 	next;
 	mes "[Dophe]";
-	mes "the only possible scenario for us is";
+	mes "o apenas possivel scenario fou us is";
 	mes "obliteration.";
 	close;
 }
 
 moro_vol,87,104,5	script	Magic Scholar Konpana#143vol02	4_M_FAIRYKID5,{
 	mes "[Konpana]";
-	mes "This place is nothing like I've imagined.";
-	mes "No grassy field or forest, really?";
+	mes "Este lugar is nadum like Eu tenho imagined.";
+	mes "No grassy field ou floresta, realmente?";
 	close;
 }
 
 moro_vol,88,102,6	script	Magic Scholar Makia#143vol03	4_M_FAIRYKID3,{
 	mes "[Makia]";
-	mes "This place is overrun with strange creatures.";
-	mes "Everywhere is burning with fire, yet the air isn't suffocating.";
-	mes "Amazing.";
+	mes "Este lugar is overrun com estranho creatures.";
+	mes "Everyonde estum burning com fogo, yet o air nao e suffocating.";
+	mes "Incrivel.";
 	close;
 }
 
@@ -1091,8 +1091,8 @@ moro_vol,108,105,0	duplicate(Combat Laphine#sol01)	Combat Laphine#sol09	4_M_FAIR
 
 moro_vol,106,111,3	script	Battle Commander#sol10	4_M_FAIRYSOLDIER,3,3,{
 	mes "[Commander Laphine]";
-	mes "We're in the process of regrouping for the upcoming battle.";
-	mes "Please don't bother us.";
+	mes "Nos estamos in o process of regrouping fou o upcoming batalha.";
+	mes "Pou favou nao bota us.";
 	close;
 
 OnTouch:
@@ -1296,16 +1296,16 @@ moro_vol,110,117,7	duplicate(Combat Laphine#line16)	Combat Laphine#line18	4_M_FA
 
 moro_vol,104,86,3	script	Ryoson#14304	4_M_ALCHE_A,{
 	mes "[Ryoson]";
-	mes "Of course I'm nervous. You don't have to ask me that.";
-	mes "Why the Administrative Officer put me in charge of the knights is beyond me.";
+	mes "E claro Eu sou nervous. Voce nao tem que ask me that.";
+	mes "Why o Administrative Officer colocar me in charge of o knights is beyond me.";
 	next;
 	mes "[Ryoson]";
-	mes "They're not knights-in-training, or even apprentice knights. They're freaking Rune Knights.";
-	mes "Ah, I'm too inexperienced and powerless to do anything with them.";
+	mes "Eles sao nao knights-in-training, ou ate mesmo apprentice knights. Eles sao freaking Rune Knights.";
+	mes "Ah, Eu sou tambem inexperienced e powerless to do anything com them.";
 	next;
 	mes "[Ryoson]";
-	mes "At least my safety is guaranteed so long as the three knights are with me.";
-	mes "I hope.";
+	mes "At menos meu segurancum is guaranteed entao long as o three knights are com me.";
+	mes "I esperanca.";
 	close;
 }
 
@@ -1356,20 +1356,20 @@ moro_vol,103,83,1	script	Rune-Midgarts Knight#mid03	4_M_KNIGHT_SILVER,{
 
 moro_vol,110,83,3	script	Hugh#14305	4_M_LGTGUARD,{
 	mes "[Hugh]";
-	mes "We're here at last.";
-	mes "At first, I couldn't believe all those rumors about the Demon God's hideout and stronghold.";
+	mes "Nos estamos aqui at ultimo.";
+	mes "At primeiro, I nao conseguiu acreditar todos esses rumors sobre o Demon God's hideout e stronghold.";
 	next;
 	mes "[Hugh]";
-	mes "As things stand, I have no hope of going back to the mainland any time soon.";
+	mes "As coisas stand, Eu tenho no esperancum of indo back to o mainle any tempo soon.";
 	next;
 	mes "[Hugh]";
-	mes "Gosh, I'm tired of those guys.";
-	mes "I'd better find the Demon God quickly.";
+	mes "Gosh, Eu sou cansado of esses guys.";
+	mes "Eu gostarium de better encontrar o Demon God rapidamente.";
 	next;
 	mes "[Hugh]";
-	mes "Have I thought about losing?";
-	mes "I have, but I try not to.";
-	mes "I'll never going to win if I let myself believe I'll lose.";
+	mes "Have I pensou sobre perdendo?";
+	mes "I have, mas I tentar nao to.";
+	mes "Eu vou nuncum vai win se I let myself acreditar Eu vou lose.";
 	next;
 	mes "[Hugh]";
 	mes "We Schwarzwaldians are born to win.";
@@ -1424,11 +1424,11 @@ moro_vol,113,81,3	script	Schwarzwald Elite#sch03	4_M_EIN_SOLDIER,{
 
 moro_vol,118,86,5	script	Henjinne#14306	4_M_RACHMAN1,{
 	mes "[Henjinne]";
-	mes "This place is much more exciting than I imagined!";
-	mes "Where's the Demon God anyway?";
+	mes "Este lugar is muito mais exciting que I imagined!";
+	mes "Onde estum o Demon God anyway?";
 	next;
 	mes "[Henjinne]";
-	mes "Neither hide nor hair of him is to be seen.";
+	mes "Neita hide nou hair of him is to be visto.";
 	mes "Mwah hah hah!";
 	close;
 }
@@ -1480,15 +1480,15 @@ moro_vol,121,84,1	script	Arunafeltz Crusader#aru03	4_F_TRAINEE,{
 
 moro_vol,119,106,3	script	Instructor Jakken#h_sol01	4_M_YOUNGKNIGHT,3,3,{
 	mes "[Instructor Jakken]";
-	mes "When I volunteered for the Ash-Bakum Expedition, I knew this day would come.";
+	mes "When I volunteered fou o Ash-Bakum Expedition, I sabium este dium would vir.";
 	next;
 	mes "[Instructor Jakken]";
-	mes "I'm ready.";
-	mes "I'm going to fight to the death for the peace of the Midgard Continent.";
+	mes "Eu sou pronto.";
+	mes "Eu sou vai lutar to o morte fou o paz of o Midgard Continent.";
 	next;
 	mes "[Instructor Jakken]";
-	mes "But I'm nervous all the same.";
-	mes "I really need to work on my emotional control. I don't want to scare anyone else.";
+	mes "Mas Eu sou nervous todos o mesmo.";
+	mes "I realmente precisar to trabalhar on meu emotional control. Eu nao querer to scare anyone else.";
 	close;
 
 OnTouch:
@@ -1565,35 +1565,35 @@ moro_vol,121,98,1	duplicate(Combat Laphine#sol01)	Midgard Alliance Soldier#h_sol
 
 moro_vol,105,97,3	script	Expedition Assassin#ass01	4_M_ACROSS,{
 	mes "[Expedition Assassin]";
-	mes "A new mission will be announced soon.";
-	mes "Our objective is to locate the Demon God.";
+	mes "A novo missao sera announced soon.";
+	mes "Nosso objective is to locate o Demon God.";
 	next;
 	mes "[Expedition Assassin]";
-	mes "Let me check the intel our predecessors have left for us.";
+	mes "Deixe-me verificar o intel nosso predecessors have left fou us.";
 	next;
 	mes "[Expedition Assassin]";
 	mes "...";
-	mes "It's rude to eavesdrop on others, even if they're your colleagues.";
+	mes "E rude to eavesdrop on others, ate mesmo se eles sao seu colleagues.";
 	close;
 }
 
 moro_vol,103,96,5	script	Expedition Assassin#ass02	4_F_ACROSS,{
 	mes "[Expedition Assassin]";
-	mes "This area... Well,";
-	mes "I'll check it out later.";
+	mes "Este area... Bem,";
+	mes "Eu vou verificar it out later.";
 	next;
 	mes "[Expedition Assassin]";
 	mes "Sigh.";
-	mes "Can't you see we're having a meeting? Please leave.";
+	mes "Nao pode you ver nos estamos having um encontrando? Pou favou sair.";
 	close;
 }
 
 moro_vol,105,95,1	script	Expedition Assassin#ass03	4_TOWER_15,{
 	mes "[Expedition Assassin]";
 	mes "... ";
-	mes "Well, I'm at the bottom of the food chain.";
-	mes "I just watch what my seniors do.";
-	mes "That's all.";
+	mes "Bem, Eu sou at o bottom of o food chain.";
+	mes "I apenas observar what meu seniors do.";
+	mes "That's todos.";
 	close;
 }
 
@@ -1822,67 +1822,67 @@ moro_vol,138,108,7	script	Midgard Alliance Soldier#line38	4_DST_SOLDIER,{
 
 moro_vol,134,83,5	script	Jeruth Vehanus#ep143	4_MAN_JERUTOO,{
 	mes "[Vehanus]";
-	mes "You came here, too.";
-	mes "You can communicate with me without the ring, I see.";
+	mes "You came aqui, tambem.";
+	mes "Voce pode communicate com me sem o ring, I ver.";
 	next;
 	mes "[Vehanus]";
-	mes "Now I wonder how far Bifrost's grace reaches.";
-	mes "Maybe I should use this opportunity to get to know the Laphines.";
+	mes "Agorum I imaginar how longe Bifrost's grace reaches.";
+	mes "Talvez I should usar este opportunity to pegar to saber o Laphines.";
 	next;
 	mes "[Vehanus]";
 	mes "I admire Hesranta's bravery.";
-	mes "He's come to the battlefield, willing to ally with our enemy Laphines.";
+	mes "Ele e vir to o battlefield, willing to ally com nosso inimigo Laphines.";
 	next;
 	mes "[Vehanus]";
-	mes "I really hope we won't have to fight Laphines in here.";
+	mes "I realmente esperancum we nao vai tem que lutar Laphines in aqui.";
 	close;
 }
 
 moro_vol,138,84,3	script	Adjutant Tiera#ep143	4_MAN_NITT,{
 	mes "[Tiera]";
-	mes "The Jeruths and Nits in Dicastes Diel may have acquiesced Hesranta's plea,";
+	mes "O Jeruths e Nseu in Dicastes Diel may have acquiesced Hesranta's plea,";
 	next;
 	mes "[Tiera]";
-	mes "but I'm completely with him on this.";
-	mes "Our enemies are our friends in the face of a common enemy: Demon God.";
+	mes "mas Eu sou completely com him on this.";
+	mes "Nosso inimigos are nosso amigos in o face of um common inimigo: Demon God.";
 	next;
 	mes "[Tiera]";
-	mes "We can be cowards and let others fight the fight for us, sure,";
-	mes "but what if they lose? We'll go down with them, and that'll be on us.";
+	mes "Nos podemos be cowards e let others lutar o lutar fou us, sure,";
+	mes "mas what se they lose? Nos vamos ir down com them, e that'll be on us.";
 	next;
 	mes "[Tiera]";
-	mes "The same goes for you, Humans.";
-	mes "We fight this fight to win.";
+	mes "O mesmo goes fou you, Humans.";
+	mes "We lutar este lutar to win.";
 	close;
 }
 
 moro_vol,134,87,1	script	Advance Captain Avaranc#ep143	4_MAN_GALTUN,{
 	mes "[Avaranche]";
-	mes "My unit consists of the best of the best Gartens.";
-	mes "Human warrior,";
-	mes "I've waited for this day to fight beside you.";
+	mes "Meu unit consists of o best of o best Gartens.";
+	mes "Humum guerreiro,";
+	mes "Eu tenho waited fou este dium to lutar beside you.";
 	next;
 	mes "[Avaranche]";
-	mes "I swear on my life that I won't stop fighting until the Demon God is defeated!";
+	mes "I swear on meu vidum esse I nao vai parar lutando ate o Demon God is defeated!";
 	close;
 }
 
 moro_vol,131,86,1	script	Dicastes Garten#gal01	4_MAN_GALTUN1,{
 	mes "[Dicastes Garten]";
-	mes "When can we fight?";
+	mes "When cum we lutar?";
 	mes "When?";
 	next;
 	mes "[Dicastes Garten]";
-	mes "I can't believe I have to fight alongside those accursed Laphines.";
-	mes "I still remember what they did to us in the last battle.";
+	mes "Eu nao consigo acreditar Eu tenho to lutar alongside esses accursed Laphines.";
+	mes "I aindum lembrar what they did to us in o ultimo batalha.";
 	close;
 }
 
 moro_vol,138,87,7	script	Dicastes Garten#gal02	4_MAN_GALTUN1,{
 	mes "[Dicastes Garten]";
-	mes "My duty is to protect Jeruth Hesranta.";
-	mes "You'd better step back,";
-	mes "or I'll consider you my enemy.";
+	mes "Meu duty is to proteger Jeruth Hesranta.";
+	mes "Voce deverium better step back,";
+	mes "ou Eu vou consider you meu inimigo.";
 	close;
 }
 
@@ -2063,26 +2063,26 @@ OnTouchNPC:
 // Dimensional Travel Quest
 morocc,138,238,4	script	Piled Rags#ep14bs	4_M_DIEMAN,{
 	if (BaseLevel < 140) {
-		mes "- There is a pile of dirty rags. -";
+		mes "- Hum um pile of dirty rags. -";
 		close;
 	}
 	if (checkweight(1119,3) == 0) {
-		mes "- You are carrying too many items to proceed with the quest. -";
+		mes "- Voce e carregando tambem muitos itens to proceed com o missao. -";
 		close;
 	}
 	if (ep14_3_newerabs == 0) {
-		mes "- There is a pile of dirty rags. -";
+		mes "- Hum um pile of dirty rags. -";
 		next;
-		if (select( "Leave it.", "Remove it." ) == 1) {
-			mes "- You left the pile of dirty rags where it is. -";
+		if (select( "Sair it.", "Remove it." ) == 1) {
+			mes "- You left o pile of dirty rags where it is. -";
 			close;
 		}
 		mes "[???]";
 		mes "Ugh...";
 		next;
-		mes "- A moan is heard underneath the pile of rags. -";
+		mes "- A moum is ouviu underneath o pile of rags. -";
 		next;
-		if (select( "Run.", "Shake the rags." ) == 1) {
+		if (select( "Correr.", "Shake o rags." ) == 1) {
 			mes "- Startled, you ran. -";
 			close;
 		}
@@ -2094,15 +2094,15 @@ morocc,138,238,4	script	Piled Rags#ep14bs	4_M_DIEMAN,{
 		mes "Ugh...";
 		next;
 		mes "[" + strcharinfo(0) + "]";
-		mes "Are you all right?";
+		mes "Voce e todos certo?";
 		next;
 		mes "[???]";
 		mes "Ugh...";
-		mes "I n-need food...";
-		mes "I could even eat ^0000FFMonster's Feed^000000. Please...";
+		mes "I n-precisar food...";
+		mes "I could ate mesmo eat ^0000FFMonster's Feed^000000. Pou favor...";
 		next;
-		mes "- Again he lost consciousness, exhausted just from talking.";
-		mes "You should feed him ^0000FFMonster's Feed^000000. -";
+		mes "- Novamente he lost consciousness, exhausted apenas de conversando.";
+		mes "Voce deverium feed him ^0000FFMonster's Feed^000000. -";
 		setquest 11349;// Dimensional Travel
 		ep14_3_newerabs = 1;
 		close;
@@ -2110,16 +2110,16 @@ morocc,138,238,4	script	Piled Rags#ep14bs	4_M_DIEMAN,{
 	if (ep14_3_newerabs < 5) {
 		if (ep14_3_newerabs == 1) {
 			if (countitem(528) < 1) {
-				mes "- Again he lost consciousness, exhausted just from talking.";
-				mes "You should feed him ^0000FFMonster's Feed^000000. -";
+				mes "- Novamente he lost consciousness, exhausted apenas de conversando.";
+				mes "Voce deverium feed him ^0000FFMonster's Feed^000000. -";
 				close;
 			}
 			mes "[???]";
 			mes "Ugh...";
 			next;
-			if (select( "Leave it.", "Give Monster's Feed." ) == 1) {
+			if (select( "Sair it.", "Dar Monstro's Feed." ) == 1) {
 				mes "[???]";
-				mes "Ugh... H-help...";
+				mes "Ugh... H-ajudar...";
 				close;
 			}
 			mes "[???]";
@@ -2141,63 +2141,63 @@ morocc,138,238,4	script	Piled Rags#ep14bs	4_M_DIEMAN,{
 		}
 		if (ep14_3_newerabs == 2) {
 			mes "[" + strcharinfo(0) + "]";
-			mes "Are you all right?";
+			mes "Voce e todos certo?";
 			next;
 			mes "[???]";
-			mes "*Retch* Oh, yes, thanks to you.";
+			mes "*Retch* Oh, yes, obrigado to you.";
 			mes "*Retch*";
 			cutin "ep143_tadir.bmp",2;
 			next;
 			mes "[???]";
-			mes "I thought I was going to die. I'm lucky to be alive.";
+			mes "I pensou Eu estavum vai morrer. Eu sou lucky to be vivo.";
 			next;
 			mes "[???]";
-			mes "I've been having nothing but bad luck lately.";
+			mes "Eu tenho been having nadum mas ruim luck lately.";
 			next;
 			mes "[???]";
-			mes "I got sucked into some strange place, separated from the rest of my party. The place I arrived was terrible. There was no sign of Human habitation.";
+			mes "Eu tenho sucked parum dentro alguns estranho lugar, separated de o rest of meu party. O lugar I arrived was terrivel. There was no sign of Humum habitation.";
 			next;
 			mes "[???]";
-			mes "It's a miracle that I'm here.";
+			mes "E um miracle esse Eu sou aqui.";
 			next;
 			mes "[???]";
 			mes "I lucked out.";
-			mes "Still alive.";
+			mes "Aindum vivo.";
 			mes "Hah hah hah!";
 			next;
 			mes "[???]";
 			mes "Oh!";
-			mes "Where are my manners? I forgot to thank you properly.";
+			mes "Onde estao meu manners? I forgot to obrigado properly.";
 			next;
 			mes "[???]";
-			mes "Thank you";
-			mes "for feeding me, though the feed tasted horrible.";
+			mes "Obrigado";
+			mes "fou feeding me, though o feed tasted horrible.";
 			next;
 			mes "[???]";
-			mes "I'm glad I didn't die on the street. The world is still a beautiful place.";
-			mes "I'm moved.";
+			mes "Eu sou glad I nao morrer on o street. O mundo is aindum um bonito lugar.";
+			mes "Eu sou moved.";
 			next;
 			mes "[Tamarin]";
-			mes "My name is ^0000FFTamarin^000000.";
-			mes "I'm an adventurer, and no, this isn't my preferred attire.";
+			mes "Meu name is ^0000FFTamarin^000000.";
+			mes "Eu sou um aventureiro, e no, este nao e meu preferred attire.";
 			next;
 			select("Introduce yourself.");
 			mes "[Tamarin]";
-			mes "" + strcharinfo(0) + ", huh? That's a good name.";
+			mes "" + strcharinfo(0) + ", huh? That's um bom name.";
 			next;
 		}
 		if (ep14_3_newerabs <= 3) {
 			mes "[Tamarin]";
 			mes "Ah,";
-			mes "I'd better do something before people start asking if I'm homeless.";
+			mes "Eu gostarium de better do algo antes pessoas comecar asking se Eu sou homeless.";
 			cutin "ep143_tadir.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "Do you know a place where I can wash myself?";
+			mes "Do voce sabe um lugar where Eu consigo wash myself?";
 			next;
-			if (select( "Tell him the place.", "Say you don't know." ) == 2) {
+			if (select( "Tell him o lugar.", "Dizer voce nao saber." ) == 2) {
 				mes "[Tamarin]";
-				mes "Water is scarce in the desert, huh?";
+				mes "Aguum is scarce in o desert, huh?";
 				ep14_3_newerabs = 3;
 				close3;
 			}
@@ -2205,38 +2205,38 @@ morocc,138,238,4	script	Piled Rags#ep14bs	4_M_DIEMAN,{
 		if (ep14_3_newerabs <= 4) {
 			mes "[Tamarin]";
 			mes "Ah,";
-			mes "do you mean the ^0000FFoasis near the northwestern sphinx^000000?";
+			mes "voce significum o ^0000FFoasis perto o northwestern sphinx^000000?";
 			cutin "ep143_tadir.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "I've been in Morocc, but this is my first time inside the village.";
-			mes "I remember hearing that the place holds special water.";
+			mes "Eu tenho been in Morocc, mas este is meu primeiro tempo dentro o vila.";
+			mes "I lembrar ouvindo esse o lugar holds especial agua.";
 			next;
 			mes "[Tamarin]";
-			mes "I feel excited to wash myself with the special water!";
-			mes "I'm going to the oasis now. Could you wait for me?";
+			mes "I feel excited to wash myself com o especial agua!";
+			mes "Eu sou vai o oasis agora. Voce poderium esperar fou me?";
 			next;
 			mes "[Tamarin]";
-			mes "It'll take a while before I feel strong again, but at least I can walk on my own.";
+			mes "It'll pegar um while antes I feel forte novamente, mas at menos Eu consigo andar on meu own.";
 			mes "Hah hah hah!";
 			next;
-			if (select( "Watch him.", "Accompany him." ) == 1) {
+			if (select( "Observar him.", "Accompany him." ) == 1) {
 				mes "[Tamarin]";
-				mes "(Braces himself and inhales.)";
-				mes "Wait, wait.";
-				mes "I can stand up on my own.";
+				mes "(Braces himself e inhales.)";
+				mes "Esperar, esperar.";
+				mes "Eu consigo ste up on meu own.";
 				next;
 				mes "[Tamarin]";
-				mes "Wait, wait!";
+				mes "Esperar, esperar!";
 				ep14_3_newerabs = 4;
 				close3;
 			}
 			mes "[Tamarin]";
 			mes "How kind of you!";
-			mes "The world is still an okay place to live.";
+			mes "O mundo is aindum um okay lugar to live.";
 			next;
 			mes "[Tamarin]";
-			mes "Then, let's go to the ^0000FFoasis near the northwestern sphinx^000000.";
+			mes "Entao, vamos ir to o ^0000FFoasis perto o northwestern sphinx^000000.";
 			changequest 11350,11351;
 			ep14_3_newerabs = 5;
 			close3;
@@ -2245,14 +2245,14 @@ morocc,138,238,4	script	Piled Rags#ep14bs	4_M_DIEMAN,{
 	if (ep14_3_newerabs == 5) {
 		mes "[Tamarin]";
 		mes "How kind of you!";
-		mes "The world is still an okay place to live.";
+		mes "O mundo is aindum um okay lugar to live.";
 		cutin "ep143_tadir.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "Then, let's go to the ^0000FFoasis near the northwestern sphinx^000000.";
+		mes "Entao, vamos ir to o ^0000FFoasis perto o northwestern sphinx^000000.";
 		close3;
 	}
-	mes "- There is a pile of dirty rags. -";
+	mes "- Hum um pile of dirty rags. -";
 	close;
 
 OnInit:
@@ -2265,40 +2265,40 @@ moc_ruins,106,140,4	script	Tamarin#ep14bs_ru	4_M_TAMARIN,{
 		if (ep14_3_newerabs == 5) {
 			mes "[Tamarin]";
 			mes "Pah!";
-			mes "This feels great!";
+			mes "Este feels otimo!";
 			cutin "ep143_tasmi.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "The water feels too warm for my liking, but beggars can't be choosers.";
+			mes "O aguum feels tambem warm fou meu liking, mas beggars nao pode be choosers.";
 			cutin "ep143_tasta.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "You saved me from starvation, and took me to this great place. I must have been a great person in the past life";
+			mes "You saved me de starvation, e took me to este otimo lugar. I must tem sido um otimo pessoum in o past vida";
 			mes "to deserve such kindness.";
 			cutin "ep143_tahuk.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "I want to repay you, fellow adventurer.";
-			mes "I lost all my belongings when I fell into that strange hole and got separated from my party,";
+			mes "Eu quero to repay you, fellow aventureiro.";
+			mes "I lost todos meu belongings when I fell parum dentro esse estranho hole e got separated de meu party,";
 			cutin "ep143_tasta.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "but at least I can tell you an ^0000FFinteresting story^000000.";
+			mes "mas at menos Eu consigo tell you um ^0000FFinteresting historia^000000.";
 			cutin "ep143_tasmi.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "It's about the strange place I've been to.";
+			mes "E sobre o estranho lugar Eu tenho been to.";
 			cutin "ep143_tahuk.bmp",2;
 			next;
-			if (select( "Not interested.", "I'm listening." ) == 1) {
+			if (select( "Nao interessado.", "Eu sou listening." ) == 1) {
 				mes "[Tamarin]";
-				mes "All right, then.";
-				mes "I thought you were serious about adventuring.";
+				mes "Todos certo, entao.";
+				mes "I pensou you were serious sobre adventuring.";
 				cutin "ep143_tahuk.bmp",2;
 				next;
 				mes "[Tamarin]";
-				mes "Then";
-				mes "do you want your Monster's Feed back?";
+				mes "Entao";
+				mes "do voce quer seu Monstro's Feed back?";
 				cutin "ep143_tasta.bmp",2;
 				next;
 				mes "[Tamarin]";
@@ -2307,100 +2307,100 @@ moc_ruins,106,140,4	script	Tamarin#ep14bs_ru	4_M_TAMARIN,{
 				close3;
 			}
 			mes "[Tamarin]";
-			mes "I knew you'd be interested!";
-			mes "Nothing piques adventurers' interest like the story of a strange place, right?";
+			mes "I sabium you'd be interessado!";
+			mes "Nadum piques aventureiros' interest like o historium of um estranho lugar, certo?";
 			cutin "ep143_tasmi.bmp",2;
 			next;
 			mes "[Tamarin]";
 			mes "Ahem.";
-			mes "The story begins with my journey to the ^0000FFOther World^000000, the latest hot spot for adventurers.";
+			mes "O historium begins com meu journey to o ^0000FFOta Mundo^000000, o latest hot spot fou aventureiros.";
 			cutin "ep143_tahuk.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "Adventurer Tamarin and his party went on a journey to the land of the unknown, Other World.";
+			mes "Aventureiro Tamarin e o party went on um journey to o le of o unknown, Outro Mundo.";
 			cutin "ep143_tasmi.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "Their journey was perilous, but they bravely moved forward.";
+			mes "Their journey was perilous, mas they bravely moved forward.";
 			cutin "ep143_taang.bmp",2;
 			next;
 			mes "[Tamarin]";
 			mes "Oh,";
-			mes "why am I speaking in the third-person perspective?";
+			mes "why am I speaking in o third-pessoum perspective?";
 			cutin "ep143_tahuk.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "My original inspiration was Bard, but then I became a Hunter because my friends thought that suited me better.";
+			mes "Meu original inspiration was Bard, mas entao I se tornou um Cacadou porque meu amigos pensou esse suited me better.";
 			cutin "ep143_tasmi.bmp",2;
 			next;
-			select("Ask him to be more straightforward.");
+			select("Ask him to be mais straightforward.");
 			mes "[Tamarin]";
-			mes "Yes.";
+			mes "Sim.";
 			cutin "ep143_tahuk.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "A while ago, my friends and I decided to explore the Other World together.";
+			mes "A while ago, meu amigos e I decided to explorar o Outro Mundo juntos.";
 			cutin "ep143_tasta.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "Since it'd be our first visit to the Other World, we wanted to go to a more popular spot, but one of us wouldn't have it--he was so excited that he started acting out of control.";
+			mes "Since it'd be nosso primeiro visit to o Outro Mundo, we wanted to ir to um mais popular spot, mas one of us nao irium have it--he was entao excited esse he comecou acting out of control.";
 			cutin "ep143_taang.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "When I came back to my senses, I was alone in a strange place.";
+			mes "When I came back to meu senses, Eu estavum sozinho in um estranho lugar.";
 			cutin "ep143_tahuk.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "The ^0000FFland was burning with perpetual flames^000000 that weren't too hot to touch, and ^0000FFstrange-looking plants and insects^000000 were crawling all over the place.";
+			mes "O ^0000FFle was burning com perpetual flames^000000 esse nao eram tambem hot to touch, e ^0000FFstrange-procurando plants e insects^000000 were crawling todos sobre o lugar.";
 			next;
 			mes "[Tamarin]";
-			mes "At first I yelled for help and moved around hoping to find others, but all to no avail.";
+			mes "At primeiro I yelled fou ajudar e moved ao redou hoping to encontrar others, mas todos to no avail.";
 			next;
 			mes "[Tamarin]";
-			mes "After a few days of having nothing to eat, I started to eat anything I saw off the ground, and I had the worst diarrhea ever.";
+			mes "Depois um few days of having nadum to eat, I comecou to eat anything I saw off o ground, e Eu tinhum o worst diarrheum ever.";
 			cutin "ep143_taang.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "I didn't know how many days had passed before I saw a group of some entities that I thought were men at a glance.";
+			mes "I nao saber quantos days had passed antes I saw um grupo of alguns entities esse I pensou were men at um glance.";
 			cutin "ep143_tahuk.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "But ^0000FFthey looked too strange to pass as human^000000.";
-			mes "I couldn't talk to them, so I just jumped into the Crack that they came through.";
+			mes "Mas ^0000FFthey looked tambem estranho to pass as human^000000.";
+			mes "I nao conseguiu conversar to them, entao I apenas jumped parum dentro o Crack esse they came atraves.";
 			next;
 			mes "[Tamarin]";
-			mes "My knees gave way and I rolled on my side. When I looked around, I was back at the ^0000FFDimensional Crack^000000 where my friends and I first arrived.";
+			mes "Meu knees gave caminho e I rolled on meu side. When I looked ao redor, Eu estavum back at o ^0000FFDimensional Crack^000000 where meu amigos e I primeiro arrived.";
 			next;
 			mes "[Tamarin]";
-			mes "I came out through the ^0000FFMorocc Dimensional Teleporter^000000 and used every ounce of my energy to get to Morocc.";
+			mes "I came out atraves o ^0000FFMorocc Dimensional Teleporter^000000 e usou cadum ounce of meu energy to pegar to Morocc.";
 			next;
 			mes "[Tamarin]";
 			mes "Sigh...";
-			mes "I wonder if my friends are safe.";
+			mes "I imaginar se meu amigos are seguro.";
 			cutin "ep143_tasta.bmp",2;
 			next;
 		}
 		mes "[Tamarin]";
 		mes "I should seek them out,";
-		mes "but first I want to go back to that strange place when I get my full strength back. Not many people have a chance to see such a special place, you know.";
+		mes "mas primeiro Eu quero to ir back to esse estranho lugar when I pegar meu full forcum back. Nao muitos pessoas have um chance to ver such um especial lugar, voce sabe.";
 		cutin "ep143_tasmi.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "Fortunately for me, with the ^0000FFMorocc restoration work^000000 underway, I shouldn't have a problem making money through some part-time jobs.";
+		mes "Fortunately fou me, com o ^0000FFMorocc restoration trabalhar^000000 underway, I nao deverium have um problemum fazendo dinheiro atraves alguns part-tempo jobs.";
 		next;
-		if (select( "Tell him have safe travel.", "Tell him you want to tag along." ) == 1) {
+		if (select( "Tell him have seguro travel.", "Tell him voce quer to tag ao longo." ) == 1) {
 			mes "[Tamarin]";
 			mes "I will.";
-			mes "Thank you for saving me.";
+			mes "Obrigado fou saving me.";
 			cutin "ep143_tahuk.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "This is the beauty of adventuring:";
-			mes "making new friends!";
+			mes "Este is o beauty of adventuring:";
+			mes "fazendo novo amigos!";
 			cutin "ep143_tasmi.bmp",2;
 			next;
 			mes "[Tamarin]";
-			mes "I'll be in Morocc for a while, making some money and getting ready for another adventure. I hope I can see you again before I leave.";
+			mes "Eu vou be in Morocc fou um while, fazendo alguns dinheiro e ficando pronto fou outro adventure. I esperancum Eu consigo ver you novamente antes I sair.";
 			ep14_3_newerabs = 6;
 			close3;
 		}
@@ -2409,19 +2409,19 @@ moc_ruins,106,140,4	script	Tamarin#ep14bs_ru	4_M_TAMARIN,{
 		cutin "ep143_tahuk.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "Do you mean it?";
+		mes "Voce significum it?";
 		next;
 		mes "[Tamarin]";
-		mes "By the gods I'm a lucky bastard!";
+		mes "By o gods Eu sou um lucky bastard!";
 		mes "*Sob*";
 		cutin "ep143_taang.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "Then meet me at the ^0000FFDimensional Crack^000000. I need to replenish myself first.";
+		mes "Entao meet me at o ^0000FFDimensional Crack^000000. Eu precientao de to replenish myself primeiro.";
 		cutin "ep143_tasta.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "It may take a while for me to get everything packed, so get your other business done in the meantime.";
+		mes "It may pegar um while fou me to pegar tudo packed, entao pegar seu outro business done in o meantime.";
 		erasequest 11351;// Dimensional Travel
 		setquest 11352;// Dimensional Travel
 		ep14_3_newerabs = 7;
@@ -2429,16 +2429,16 @@ moc_ruins,106,140,4	script	Tamarin#ep14bs_ru	4_M_TAMARIN,{
 	}
 	if (ep14_3_newerabs == 7) {
 		mes "[Tamarin]";
-		mes "Then meet me at the ^0000FFDimensional Crack^000000. I need to replenish myself first.";
+		mes "Entao meet me at o ^0000FFDimensional Crack^000000. Eu precientao de to replenish myself primeiro.";
 		cutin "ep143_tasta.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "It may take a while for me to get everything packed, so get your other business done in the meantime.";
+		mes "It may pegar um while fou me to pegar tudo packed, entao pegar seu outro business done in o meantime.";
 		close3;
 	}
 	mes "[Tamarin]";
 	mes "Pah!";
-	mes "This feels great!";
+	mes "Este feels otimo!";
 	cutin "ep143_tasmi.bmp",2;
 	close3;
 }
@@ -2446,26 +2446,26 @@ moc_ruins,106,140,4	script	Tamarin#ep14bs_ru	4_M_TAMARIN,{
 dali,112,69,4	script	Tamarin#ep14bs_cha	4_M_TAMARIN,{
 	if (ep14_3_newerabs == 7) {
 		mes "[Tamarin]";
-		mes "" + strcharinfo(0) + ", over here!";
-		mes "You're early.";
+		mes "" + strcharinfo(0) + ", sobre aqui!";
+		mes "Voce e early.";
 		cutin "ep143_tasta.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "(Glancing around surreptitiously)";
-		mes "I hope no one's watching us.";
+		mes "(Glancing ao redou surreptitiously)";
+		mes "I esperancum ninguem's watching us.";
 		cutin "ep143_tahuk.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "I've hidden the opening to that place: I didn't want anyone to get there before me.";
+		mes "Eu tenho hidden o abrindo to esse lugar: I nao querer anyone to pegar lum antes me.";
 		cutin "ep143_tasmi.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "At that time, I was too distracted to remember where the opening was, but I think it's definitely ^0000FFsomewhere on the 2nd floor^000000.";
+		mes "At esse tempo, Eu estavum tambem distracted to lembrar where o abrindo was, mas Eu acho e definitivamente ^0000FFsomewhere on o 2nd floor^000000.";
 		cutin "ep143_tasta.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "Meet me in front of the ^0000FFHidden Crack^000000. Make sure no one follows you there.";
-		mes "I've ^0000FFcovered the opening with dirt^000000. I hope no one dug it open.";
+		mes "Meet me in front of o ^0000FFHidden Crack^000000. Fazer sure ninguem follows you la.";
+		mes "Eu tenho ^0000FFcovered o abrindo com dirt^000000. I esperancum ninguem dug it abrir.";
 		erasequest 11352;// Dimensional Travel
 		setquest 11353;// Dimensional Travel
 		ep14_3_newerabs = 8;
@@ -2473,62 +2473,62 @@ dali,112,69,4	script	Tamarin#ep14bs_cha	4_M_TAMARIN,{
 	}
 	if (ep14_3_newerabs == 8) {
 		mes "[Tamarin]";
-		mes "I've hidden the opening to that place: I didn't want anyone to get there before me.";
+		mes "Eu tenho hidden o abrindo to esse lugar: I nao querer anyone to pegar lum antes me.";
 		cutin "ep143_tasmi.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "At that time, I was too distracted to remember where the opening was, but I think it's definitely ^0000FFsomewhere on the 2nd floor^000000.";
+		mes "At esse tempo, Eu estavum tambem distracted to lembrar where o abrindo was, mas Eu acho e definitivamente ^0000FFsomewhere on o 2nd floor^000000.";
 		cutin "ep143_tasta.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "Meet me in front of the ^0000FFHidden Crack^000000. Make sure no one follows you there.";
-		mes "I've ^0000FFcovered the opening with dirt^000000. I hope no one dug it open.";
+		mes "Meet me in front of o ^0000FFHidden Crack^000000. Fazer sure ninguem follows you la.";
+		mes "Eu tenho ^0000FFcovered o abrindo com dirt^000000. I esperancum ninguem dug it abrir.";
 		close3;
 	}
 	mes "[Tamarin]";
-	mes "Hm, my mark had better stay where I left it.";
+	mes "Hm, meu mark had better ficar where I left it.";
 	cutin "ep143_tahuk.bmp",2;
 	close3;
 }
 
 dali02,90,62,0	script	Sand Mound#ep14bs	4_SOIL,{
 	if (ep14_3_newerabs < 8) {
-		mes "- A mound of sand stands awkwardly, looking out of place. -";
+		mes "- A mound of se stands awkwardly, procurando out of lugar. -";
 		close;
 	}
 	if (ep14_3_newerabs == 8) {
-		mes "- A mound of sand stands awkwardly, looking out of place. -";
+		mes "- A mound of se stands awkwardly, procurando out of lugar. -";
 		next;
 		mes "[Tamarin]";
 		mes "Whew!";
-		mes "I'm glad you've found me.";
+		mes "Eu sou glad voce tem encontrou me.";
 		cutin "ep143_tasmi.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "Let me clear the dirt...";
-		mes "Be mindful of the opening. It's quite narrow.";
+		mes "Deixe-me clear o dirt...";
+		mes "Be mindful of o abrindo. E quite narrow.";
 		cutin "ep143_tasta.bmp",2;
 		next;
-		if (select( "Enter.", "Quit." ) == 2) {
+		if (select( "Entrar.", "Quit." ) == 2) {
 			mes "[Tamarin]";
-			mes "Aren't you going in?";
+			mes "Voce nao e indo in?";
 			cutin "ep143_tahuk.bmp",2;
 			close3;
 		}
-		mes "- The passage is barely wide enough to contain one person. -";
+		mes "- O passage is barely wide suficiente to contain one pessoa. -";
 		completequest 11353;// Dimensional Travel
 		ep14_3_newerabs = 9;
 		close2;
 		warp "moro_vol",136,135;
 		end;
 	}
-	mes "- A mound of sand stands awkwardly, looking out of place. -";
+	mes "- A mound of se stands awkwardly, procurando out of lugar. -";
 	next;
-	if (select( "Enter.", "Quit." ) == 2) {
-		mes "You decided not to enter.";
+	if (select( "Entrar.", "Quit." ) == 2) {
+		mes "You decided nao to entrar.";
 		close;
 	}
-	mes "- The passage is barely wide enough to contain one person. -";
+	mes "- O passage is barely wide suficiente to contain one pessoa. -";
 	close2;
 	warp "moro_vol",136,135;
 	end;
@@ -2536,16 +2536,16 @@ dali02,90,62,0	script	Sand Mound#ep14bs	4_SOIL,{
 
 moro_vol,137,136,0	script	Sand Mound#ep14bs_	4_SOIL,{
 	if (ep14_3_newerabs < 9) {
-		mes "- A mound of sand stands awkwardly, looking out of place. -";
+		mes "- A mound of se stands awkwardly, procurando out of lugar. -";
 		close;
 	}
-	mes "- A mound of sand stands awkwardly, looking out of place. -";
+	mes "- A mound of se stands awkwardly, procurando out of lugar. -";
 	next;
-	if (select( "Return to the Dimensional Crack.", "Quit." ) == 2) {
-		mes "You decided not to enter.";
+	if (select( "Retornar to o Dimensional Crack.", "Quit." ) == 2) {
+		mes "You decided nao to entrar.";
 		close;
 	}
-	mes "- The passage is barely wide enough to contain one person. -";
+	mes "- O passage is barely wide suficiente to contain one pessoa. -";
 	close2;
 	warp "dali02",91,63;
 	end;
@@ -2555,27 +2555,27 @@ moro_vol,132,140,4	script	Tamarin#ep14bs_ju	4_M_TAMARIN,{
 	if (ep14_3_newerabs == 9) {
 		mes "[Tamarin]";
 		mes "Whoa!";
-		mes "I didn't expect to see so many people.";
+		mes "I nao expect to ver entao muitos pessoas.";
 		cutin "ep143_tahuk.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "I'm disappointed that I'm not the first one to discover the place, and am glad that I'm not alone in this dismal place.";
+		mes "Eu sou disappointed esse Eu sou nao o primeiro one to descobrir o lugar, e am glad esse Eu sou nao sozinho in este dismal lugar.";
 		cutin "ep143_taang.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "I see more of those entities that look sort of like men.";
-		mes "This place might be much more than I thought it was!";
+		mes "I ver mais of esses entities esse olhar sort of like men.";
+		mes "Este lugar pode ser muito mais que I pensou it was!";
 		cutin "ep143_tasmi.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "Look!";
+		mes "Olhar!";
 		mes "Walking trees!";
 		mes "Grrr-!";
 		cutin "ep143_tahuk.bmp",2;
 		next;
 		mes "[Barget Tiblack]";
 		mes "HEY!";
-		mes "What the hell do you think you're doing?!";
+		mes "What o hell voce pensar voce e fazendo?!";
 		cutin "",255;
 		setquest 11354;// Specimen Collection
 		ep14_3_newerabs = 15;
@@ -2583,31 +2583,31 @@ moro_vol,132,140,4	script	Tamarin#ep14bs_ju	4_M_TAMARIN,{
 	}
 	if (ep14_3_newerabs == 15) {
 		mes "[Tamarin]";
-		mes "Look!";
+		mes "Olhar!";
 		mes "Walking trees!";
 		mes "Grrr-!";
 		cutin "ep143_tahuk.bmp",2;
 		next;
 		mes "[Barget Tiblack]";
 		mes "HEY!";
-		mes "What the hell do you think you're doing?!";
+		mes "What o hell voce pensar voce e fazendo?!";
 		cutin "",255;
 		close;
 	}
 	if (ep14_3_newerabs == 16) {
 		mes "[Tamarin]";
-		mes "They might kick us out if they know we sneaked in.";
-		mes "Let's do what they ask for now, yeah?";
+		mes "They might kick us out se they saber we sneaked in.";
+		mes "Vamos do what they ask fou agora, yeah?";
 		cutin "ep143_taang.bmp",2;
 		close3;
 	}
 	if (ep14_3_newerabs == 17 || ep14_3_newerabs == 18) {
 		mes "[Tamarin]";
-		mes "Collecting the plant specimens doesn't sound too difficult. We can split them between us.";
+		mes "Collecting o plant specimens nao sound tambem dificil. Nos podemos split them entre us.";
 		cutin "ep143_tasta.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "^0000FFWhen you collect 25 Sonia stems, meet me by the big rock in the center of this place^000000.";
+		mes "^0000FFWhen you coletar 25 Sonium stems, meet me by o grande rock in o center of este lugar^000000.";
 		if (ep14_3_newerabs == 17) {
 			erasequest 11356;// Specimen Collection
 			setquest 11357;// Specimen Collection
@@ -2619,66 +2619,66 @@ moro_vol,132,140,4	script	Tamarin#ep14bs_ju	4_M_TAMARIN,{
 		if (countitem(6690) < 25) {// YummyStem
 			mes "[Tamarin]";
 			mes "Ooh! (Wincing)";
-			mes "You don't have enough stems.";
-			mes "Get more and take them to Barget.";
+			mes "Voce nao have suficiente stems.";
+			mes "Pegar mais e pegar them to Barget.";
 			cutin "ep143_tahuk.bmp",2;
 			close3;
 		}
 		mes "[Tamarin]";
-		mes "Let's report to Barget first.";
+		mes "Vamos relatorio to Barget primeiro.";
 		cutin "ep143_tahuk.bmp",2;
 		close3;
 	}
 	if (ep14_3_newerabs == 21 || ep14_3_newerabs == 22) {
 		mes "[Tamarin]";
-		mes "Come on,";
-		mes "hurry over to ^0000FFInstructor Rugen^000000!";
+		mes "Vir on,";
+		mes "hurry sobre to ^0000FFInstructou Rugen^000000!";
 		cutin "ep143_tahuk.bmp",2;
 		close3;
 	}
 	if (ep14_3_newerabs == 23) {
 		mes "[Tamarin]";
-		mes "Thank the gods, who knew that thing I ate out of hunger would save me?";
-		mes "Let's report to Barget.";
+		mes "Thank o gods, who sabium esse coisum I ate out of hunger would salvar me?";
+		mes "Vamos relatorio to Barget.";
 		cutin "ep143_tahuk.bmp",2;
 		close3;
 	}
 	if (ep14_3_newerabs == 24) {
 		mes "[Tamarin]";
 		mes "Arrgh!";
-		mes "" + strcharinfo(0) + " Get in the cave before everyone else explores it!";
+		mes "" + strcharinfo(0) + " Pegar in o cavernum antes todos else explores it!";
 		cutin "ep143_tahuk.bmp",2;
 		close3;
 	}
 	mes "[Tamarin]";
 	mes "Ugh...";
-	mes "I was the first to come to this place!";
+	mes "Eu estavum o primeiro to vir to este lugar!";
 	cutin "ep143_taang.bmp",2;
 	close3;
 }
 
 moro_vol,142,131,5	script	Barget Tiblack#ep14bs	4_M_ALCHE_D,{
 	if (checkweight(1119,3) == 0) {
-		mes "- You are carrying too many items to proceed with the quest. -";
+		mes "- Voce e carregando tambem muitos itens to proceed com o missao. -";
 		close;
 	}
 	if (ep14_3_newerabs < 15) {
 		mes "[Barget Tiblack]";
-		mes "Ugh, I'm exhausted.";
-		mes "I understand the urgency, but that doesn't mean I like being bossed around.";
+		mes "Ugh, Eu sou exhausted.";
+		mes "I underste o urgency, mas esse nao significum I like being bossed ao redor.";
 		close;
 	}
 	if (ep14_3_newerabs == 15) {
 		mes "[Barget Tiblack]";
-		mes "You've ruined my precious samples!";
-		mes "I've asked people of your ilk to steer clear of my work zone. Didn't your superiors tell you that?";
+		mes "Voce tem ruined meu precious samples!";
+		mes "Eu tenho perguntou pessoas of seu ilk to steer clear of meu trabalhar zone. Nao seu superiors tell you that?";
 		next;
 		mes "[Barget Tiblack]";
-		mes "I haven't even finished the research at the camp, and they dragged me away for yet another burdening project.";
+		mes "I nao tenho ate mesmo terminou o research at o camp, e they dragged me emborum fou yet outro burdening project.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "I demand an assistant!";
-		mes "Enough with that budget problem!";
+		mes "I deme um assistant!";
+		mes "Suficiente com esse budget problema!";
 		mes "Argh!";
 		next;
 		mes "[Barget Tiblack]";
@@ -2686,26 +2686,26 @@ moro_vol,142,131,5	script	Barget Tiblack#ep14bs	4_M_ALCHE_D,{
 		mes "...";
 		next;
 		mes "[Barget Tiblack]";
-		mes "All right.";
-		mes "You two over there!";
-		mes "You must have too much time on your hands, loitering about aimlessly. Make yourself useful and help me collect samples.";
+		mes "Todos certo.";
+		mes "You two sobre la!";
+		mes "Voce deve have tambem muito tempo on seu hands, loitering sobre aimlessly. Fazer yourself useful e me ajude coletar samples.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "You've ruined my existing samples, after all.";
+		mes "Voce tem ruined meu existing samples, depois todos.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "First, I want to collect animal specimens.";
-		mes "It's not uncommon to see mutant animals around here. Recently, one of them was confirmed as a ^0000FFcompletely new species^000000.";
+		mes "Primeiro, Eu quero to coletar animal specimens.";
+		mes "E nao uncommon to ver mutant animals ao redou aqui. Recently, one of them was confirmed as um ^0000FFcompletely novo species^000000.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "^0000FFThis new species of insect is called the Firebugs because they're surrounded by flames and live in fire pits like that over there^000000.";
+		mes "^0000FFEste novo species of insect is chamado o Firebugs porque eles sao surrounded by flames e live in fogo pseu like esse sobre la^000000.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "Firebugs that crawl out of their pits die soon after.";
+		mes "Firebugs esse crawl out of o pseu morrer soon depois.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "Please investigate ^0000FF20 fire pits and collect 50 Burning Insect Shells from Firebugs^000000.";
-		mes "Be careful not to burn yourself in the process.";
+		mes "Pou favou investigar ^0000FF20 fogo pseu e coletar 50 Burning Insect Shells de Firebugs^000000.";
+		mes "Tenhum cuidado nao to burn yourself in o process.";
 		erasequest 11354;// Specimen Collection
 		setquest 11355;// Specimen Collection
 		ep14_3_newerabs = 16;
@@ -2715,24 +2715,24 @@ moro_vol,142,131,5	script	Barget Tiblack#ep14bs	4_M_ALCHE_D,{
 		if (ep14_3_newerabs == 16) {
 			if (countitem(6689) < 50 || checkquest(11355,HUNTING) != 2) {
 				mes "[Barget Tiblack]";
-				mes "First, I want to collect animal specimens.";
-				mes "It's not uncommon to see mutant animals around here. Recently, one of them was confirmed as a ^0000FFcompletely new species^000000.";
+				mes "Primeiro, Eu quero to coletar animal specimens.";
+				mes "E nao uncommon to ver mutant animals ao redou aqui. Recently, one of them was confirmed as um ^0000FFcompletely novo species^000000.";
 				next;
 				mes "[Barget Tiblack]";
-				mes "^0000FFThis new species of insect is called the Firebugs because they're surrounded by flames and live in fire pits like that over there^000000.";
+				mes "^0000FFEste novo species of insect is chamado o Firebugs porque eles sao surrounded by flames e live in fogo pseu like esse sobre la^000000.";
 				next;
 				mes "[Barget Tiblack]";
-				mes "Firebugs that crawl out of their pits die soon after.";
+				mes "Firebugs esse crawl out of o pseu morrer soon depois.";
 				next;
 				mes "[Barget Tiblack]";
-				mes "Please investigate ^0000FF20 fire pits and collect 50 Burning Insect Shells from Firebugs^000000.";
-				mes "Be careful not to burn yourself in the process.";
+				mes "Pou favou investigar ^0000FF20 fogo pseu e coletar 50 Burning Insect Shells de Firebugs^000000.";
+				mes "Tenhum cuidado nao to burn yourself in o process.";
 				close;
 			}
 			mes "[Barget Tiblack]";
 			mes "Oh,";
-			mes "well done!";
-			mes "You finished your task more quickly than I anticipated.";
+			mes "bem done!";
+			mes "You terminou seu task mais rapidamente que I anticipated.";
 			delitem 6689,50;// BurningSkin
 			erasequest 11355;// Specimen Collection
 			setquest 11356;// Specimen Collection
@@ -2741,86 +2741,86 @@ moro_vol,142,131,5	script	Barget Tiblack#ep14bs	4_M_ALCHE_D,{
 			mes "[Barget Tiblack]";
 			mes "Ouch, HOT!";
 			mes "*Huffing Puffing*";
-			mes "Let me bottle them before they get cold, and send them to the lab.";
+			mes "Deixe-me bottle them antes they pegar cold, e send them to o lab.";
 			next;
 		}
 		mes "[Barget Tiblack]";
-		mes "Now, it's time for plant specimens.";
-		mes "Our target plant is called Sonia, a very primitive type of plant.";
+		mes "Agora, e tempo fou plant specimens.";
+		mes "Nosso target plant is chamado Sonia, um muito primitive type of plant.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "At a glance, Sonias look like plastic tubes, but their structure is very minimal.";
+		mes "At um glance, Sonias olhar like plastic tubes, mas o structure is muito minimal.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "They're not difficult to gather. Please ^0000FFpick 50 Sonias and bring me 50 stems^000000.";
+		mes "Eles sao nao dificil to reunir. Pou favou ^0000FFpick 50 Sonias e trazer me 50 stems^000000.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "Sonia specimens are the last of my specimen collection. If you happen to ^0000FFsee peculiar Sonias^000000, please don't hesitate to let me know.";
+		mes "Sonium specimens are o ultimo of meu specimen collection. Se you acontecer to ^0000FFsee peculiar Sonias^000000, pou favou nao hesitate to deixe-me saber.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "Try not to stray too far away from the base. It's too dangerous out there.";
-		mes "Come back safely.";
+		mes "Tentar nao to stray tambem longe emborum de o base. E tambem perigoentao out la.";
+		mes "Volte safely.";
 		next;
 		mes "[Tamarin]";
 		mes "Hm...";
-		mes "" + strcharinfo(0) + ", wait!";
+		mes "" + strcharinfo(0) + ", esperar!";
 		cutin "ep143_tahuk.bmp",2;
 		close3;
 	}
 	if (ep14_3_newerabs == 19) {
 		if (countitem(6690) < 25) {
 			mes "[Barget Tiblack]";
-			mes "How are you doing with collecting Sonias?";
+			mes "Como estao you fazendo com coletando Sonias?";
 			close;
 		}
 		mes "[Barget Tiblack]";
 		mes "Ah,";
-		mes "welcome back!";
-		mes "I forgot to tell you ^0000FFnot to go near the rock in the center of this place^000000.";
+		mes "bem-vindo back!";
+		mes "I forgot to tell you ^0000FFnao to ir perto o rock in o center of este lugar^000000.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "When I realized my mistake, I called a rescue party, so worried for your safety. I'm glad you're back unscathed.";
+		mes "When I realized meu mistake, I chamado um rescue party, entao preocupado fou seu seguranca. Eu sou glad voce e back unscathed.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "I apologize for being a total jerk.";
-		mes "I was stressed out about my heavy workload.";
+		mes "I apologize fou being um total jerk.";
+		mes "Eu estavum stressed out sobre meu heavy workload.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "I still have so many things to do... Sigh...";
+		mes "I aindum have entao muitos coisas to do... Sigh...";
 		next;
-		select("Tell her about the central rock.");
+		select("Tell a sobre o central rock.");
 		mes "[Barget Tiblack]";
-		mes "Say WHAT?!";
-		mes "You went there?!";
-		mes "And you came back unscathed? How?";
-		next;
-		mes "[Barget Tiblack]";
-		mes "Everyone else who went there ^0000FFfell into a coma due to the noxious gas released from the rock^000000.";
+		mes "Dizer WHAT?!";
+		mes "You went la?!";
+		mes "E you came back unscathed? How?";
 		next;
 		mes "[Barget Tiblack]";
-		mes "What did you do?";
-		mes "This is a great discovery!";
+		mes "Todos else who went lum ^0000FFfell parum dentro um comum due to o noxious gas released de o rock^000000.";
 		next;
-		select("Relay what happened.");
 		mes "[Barget Tiblack]";
-		mes "You ate a Sonia stem.";
-		mes "Okay, I've known the stem is nontoxic, but I haven't finished its substance research yet. Did you experience any side effect?";
+		mes "O que you do?";
+		mes "Este is um otimo discovery!";
+		next;
+		select("Relay o que aconteceu.");
+		mes "[Barget Tiblack]";
+		mes "You ate um Sonium stem.";
+		mes "Okay, Eu tenho known o stem is nontoxic, mas I nao tenho terminou seu substance research yet. Voce experiencium any side effect?";
 		next;
 		mes "[Barget Tiblack]";
 		mes "Wow!";
-		mes "This really is a great discovery!";
+		mes "Este realmente is um otimo discovery!";
 		next;
 		mes "[Barget Tiblack]";
-		mes "I'd better get back to the research...";
-		mes "No, we first must ^0000FFtreat those patients who need Sonia stems. Please bring them to me.^000000";
+		mes "Eu gostarium de better pegar back to o research...";
+		mes "No, we primeiro must ^0000FFtreat esses patients who precisar Sonium stems. Pou favou trazer them to me.^000000";
 		next;
 		mes "[Barget Tiblack]";
-		mes "^0000FFInstructor Rugen manages them^000000, so you can bring them to him.";
-		mes "Please hand me the document. I'll sign it for you.";
+		mes "^0000FFInstructou Rugen manages them^000000, entao voce pode trazer them to him.";
+		mes "Pou favou he me o document. Eu vou sign it fou you.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "I'd better get back to my stem research. I'll ask someone else for assistance.";
-		mes "You lucked out this time. Better not make a habit of eating things off the ground.";
+		mes "Eu gostarium de better pegar back to meu stem research. Eu vou ask alguem else fou assistance.";
+		mes "You lucked out este tempo. Better nao fazer um habit of comendo coisas off o ground.";
 		erasequest 11358;// Specimen Collection
 		setquest 11359;// Antidote
 		ep14_3_newerabs = 20;
@@ -2828,60 +2828,60 @@ moro_vol,142,131,5	script	Barget Tiblack#ep14bs	4_M_ALCHE_D,{
 	}
 	if (ep14_3_newerabs == 20) {
 		mes "[Barget Tiblack]";
-		mes "I'd better get back to the research...";
-		mes "No, we first must ^0000FFtreat those patients who need Sonia stems. Please bring them to me.^000000";
+		mes "Eu gostarium de better pegar back to o research...";
+		mes "No, we primeiro must ^0000FFtreat esses patients who precisar Sonium stems. Pou favou trazer them to me.^000000";
 		next;
 		mes "[Barget Tiblack]";
-		mes "^0000FFInstructor Rugen manages them^000000, so you can bring them to him.";
-		mes "Please hand me the document. I'll sign it for you.";
+		mes "^0000FFInstructou Rugen manages them^000000, entao voce pode trazer them to him.";
+		mes "Pou favou he me o document. Eu vou sign it fou you.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "I'd better get back to my stem research. I'll ask someone else for assistance.";
-		mes "You lucked out this time. Better not make a habit of eating things off the ground.";
+		mes "Eu gostarium de better pegar back to meu stem research. Eu vou ask alguem else fou assistance.";
+		mes "You lucked out este tempo. Better nao fazer um habit of comendo coisas off o ground.";
 		close;
 	}
 	if (ep14_3_newerabs < 23) {
 		mes "[Barget Tiblack]";
-		mes "Did you see Instructor Rugen?";
+		mes "Voce ver Instructou Rugen?";
 		close;
 	}
 	if (ep14_3_newerabs == 23) {
 		mes "[Barget Tiblack]";
 		mes "Hah hah hah!";
-		mes "How did it go?";
-		mes "They worked, didn't they?";
+		mes "How did it ir?";
+		mes "They worked, nao they?";
 		next;
 		mes "[Barget Tiblack]";
-		mes "I have high hopes for my research.";
-		mes "Your seemingly reckless decision has saved many lives.";
+		mes "Eu tenho high hopes fou meu research.";
+		mes "Seu seemingly reckless decision has saved muitos lives.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "With this, we'll soon be able to investigate that ^0000FFsuspicious cave^000000 from the inside out!";
+		mes "With this, we'll soon be capaz de investigar esse ^0000FFsuspicious caverna^000000 de o dentro out!";
 		next;
-		select("What cave?");
+		select("What caverna?");
 		mes "[Barget Tiblack]";
-		mes "Oh, the cave that releases the noxious gas.";
-		mes "The gas is ^0000FFso thick in the air, you can't see the cave entrance clearly^000000.";
-		next;
-		mes "[Barget Tiblack]";
-		mes "Those who we gave the first batch of the vaccine already left to the cave.";
-		mes "We haven't heard from them yet. I'd like to believe it's a good sign.";
+		mes "Oh, o cavernum esse releases o noxious gas.";
+		mes "O gas is ^0000FFentao thick in o air, voce nao pode ver o cavernum entrance clearly^000000.";
 		next;
 		mes "[Barget Tiblack]";
-		mes "If it weren't two of you, I could have pulled all my hair out in frustration.";
-		mes "Good job, you guys!";
+		mes "Esses who we gave o primeiro batch of o vaccine jum left to o caverna.";
+		mes "We nao tenho ouviu de them yet. Eu gostarium de like to acreditar e um bom sign.";
+		next;
+		mes "[Barget Tiblack]";
+		mes "Se it nao eram two of you, I could have pulled todos meu hair out in frustration.";
+		mes "Bom job, you guys!";
 		getexp 0,1500000;
 		completequest 11362;// Antidote
 		ep14_3_newerabs = 24;
 		close;
 	}
 	mes "[Barget Tiblack]";
-	mes "Those who we gave the first batch of the vaccine already left to the cave.";
-	mes "We haven't heard from them yet. I'd like to believe it's a good sign.";
+	mes "Esses who we gave o primeiro batch of o vaccine jum left to o caverna.";
+	mes "We nao tenho ouviu de them yet. Eu gostarium de like to acreditar e um bom sign.";
 	next;
 	mes "[Barget Tiblack]";
-	mes "If it weren't two of you, I could have pulled all my hair out in frustration.";
-	mes "Good job, you guys!";
+	mes "Se it nao eram two of you, I could have pulled todos meu hair out in frustration.";
+	mes "Bom job, you guys!";
 	close;
 }
 
@@ -2889,49 +2889,49 @@ moro_vol,198,179,4	script	Tamarin#ep14bs_st	4_M_TAMARIN,{
 	if (ep14_3_newerabs < 18) {
 		mes "[Tamarin]";
 		mes "Hm...";
-		mes "We don't have time for this!";
+		mes "Nos nao have tempo fou this!";
 		cutin "ep143_taang.bmp",2;
 		close3;
 	}
 	if (ep14_3_newerabs == 18) {
 		if (countitem(6690) < 25 || checkquest(11357,HUNTING) != 2) {
 			mes "[Tamarin]";
-			mes "^0000FFWhen you collect 25 Sonia stems, meet me here^000000.";
+			mes "^0000FFWhen you coletar 25 Sonium stems, meet me aqui^000000.";
 			cutin "ep143_tasta.bmp",2;
 			close3;
 		}
 		mes "[Tamarin]";
-		mes "I don't remember this rock was so big.";
-		mes "Or seeing these strange things around it.";
-		mes "I also smell ^0000FFsmoke^000000.";
+		mes "Eu nao lembrar este rock was entao grande.";
+		mes "Ou vendo estes estranho coisas ao redou it.";
+		mes "I tambem smell ^0000FFsmoke^000000.";
 		cutin "ep143_tahuk.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "Again,";
-		mes "I don't remember seeing ^0000FFso many strange animals and plants^000000 either.";
-		mes "These are Sonias, right? They weren't so many before.";
+		mes "Novamente,";
+		mes "Eu nao lembrar vendo ^0000FFentao muitos estranho animals e plants^000000 either.";
+		mes "Estes are Sonias, certo? They nao eram entao muitos antes.";
 		next;
 		mes "[Tamarin]";
-		mes "If they were, I wouldn't have had to starve.";
-		mes "Sonias were the most delicious and least toxic among all the plants I tried.";
+		mes "Se they were, I nao irium have teve que starve.";
+		mes "Sonias were o mais delicioso e menos toxic among todos o plants I tentou.";
 		cutin "ep143_taang.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "" + strcharinfo(0) + ", do you want to taste it?";
-		mes "I brought a few stems for memories' sake.";
+		mes "" + strcharinfo(0) + ", do voce quer to taste it?";
+		mes "I trouxe um few stems fou memorias' sake.";
 		cutin "ep143_tasmi.bmp",2;
 		next;
 		cutin "",255;
-		mes "- Taste of Sonia -";
-		mes "Its thick, tongue-warming sap fills your mouth with delicious aroma.";
+		mes "- Taste of Sonium -";
+		mes "Its thick, tongue-warming sap fills seu mouth com delicioso aroma.";
 		next;
 		mes "[Tamarin]";
-		mes "What do you think?";
+		mes "O que you pensar?";
 		mes "Delicious, huh?";
 		cutin "ep143_tahuk.bmp",2;
 		next;
 		mes "[Tamarin]";
-		mes "I've got only a few left. Let's take turns to gather some more.";
+		mes "Eu tenho got apenas um few left. Vamos pegar turns to reunir alguns mais.";
 		cutin "ep143_tasmi.bmp",2;
 		erasequest 11357;// Specimen Collection
 		setquest 11358;// Specimen Collection
@@ -2940,37 +2940,37 @@ moro_vol,198,179,4	script	Tamarin#ep14bs_st	4_M_TAMARIN,{
 	}
 	if (ep14_3_newerabs == 19) {
 		mes "[Tamarin]";
-		mes "I've got only a few left. Let's take turns to gather some more.";
+		mes "Eu tenho got apenas um few left. Vamos pegar turns to reunir alguns mais.";
 		cutin "ep143_tasmi.bmp",2;
 		close3;
 	}
 	if (ep14_3_newerabs < 23) {
 		mes "[Tamarin]";
-		mes "Come on,";
-		mes "hurry over to ^0000FFInstructor Rugen^000000!";
+		mes "Vir on,";
+		mes "hurry sobre to ^0000FFInstructou Rugen^000000!";
 		cutin "ep143_tahuk.bmp",2;
 		close3;
 	}
 	if (ep14_3_newerabs == 23) {
 		mes "[Tamarin]";
-		mes "Thank the gods, who knew that thing I ate out of hunger would save me?";
-		mes "Let's report to Barget.";
+		mes "Thank o gods, who sabium esse coisum I ate out of hunger would salvar me?";
+		mes "Vamos relatorio to Barget.";
 		cutin "ep143_tahuk.bmp",2;
 		close3;
 	}
 	mes "[Tamarin]";
 	mes "Arrgh!";
-	mes "" + strcharinfo(0) + " get in there before everyone else explores it!";
+	mes "" + strcharinfo(0) + " pegar in lum antes todos else explores it!";
 	cutin "ep143_tahuk.bmp",2;
 	next;
-	if (select( "Enter.", "Quit." ) == 2) {
+	if (select( "Entrar.", "Quit." ) == 2) {
 		mes "[Tamarin]";
 		mes "Ah...";
 		cutin "ep143_taang.bmp",2;
 		close3;
 	}
 	mes "[Tamarin]";
-	mes "The floor is dark. Watch your step!";
+	mes "O floou is escuro. Observar seu step!";
 	close2;
 	warp "moro_cav",40,50;
 	end;
@@ -2980,43 +2980,43 @@ moro_vol,105,71,5	script	Instructor Rugen#ep14bs	4_M_YOUNGKNIGHT,{
 	if (ep14_3_newerabs < 20) {
 		mes "[Instructor Rugen]";
 		mes "Phew...";
-		mes "Why were you so reckless?";
+		mes "Why were you entao reckless?";
 		next;
 		mes "[Instructor Rugen]";
-		mes "Is this worth it?";
+		mes "Isentao e worth it?";
 		mes "...";
 		close;
 	}
 	if (ep14_3_newerabs == 20) {
 		mes "[Instructor Rugen]";
 		mes "Phew...";
-		mes "Why were you so reckless?";
+		mes "Why were you entao reckless?";
 		next;
 		mes "[Instructor Rugen]";
-		mes "Is this worth it?";
+		mes "Isentao e worth it?";
 		mes "...";
 		next;
-		if (select( "Talk to him.", "No, he looks too upset to talk." ) == 2) {
+		if (select( "Conversar to him.", "No, he looks tambem chateado to conversar." ) == 2) {
 			mes "[Instructor Rugen]";
 			mes "Sigh...";
-			mes "This is just...";
+			mes "Este is apenas...";
 			close;
 		}
 		mes "[Instructor Rugen]";
-		mes "How may I help you?";
-		mes "If you're seeking medical assistance, then please describe your symptoms at the reception desk and wait until help arrives.";
+		mes "How may I ajudar you?";
+		mes "Se voce e seeking medical assistance, entao pou favou describe seu symptoms at o reception desk e esperar ate ajudar arrives.";
 		next;
-		select("Give Sonia stems.");
+		select("Dar Sonium stems.");
 		if (countitem(6690) < 25) {
 			mes "[Instructor Rugen]";
-			mes "These aren't enough.";
-			mes "Could you check the number of your Sonia stems?";
+			mes "Estes nao sao suficiente.";
+			mes "Voce poderium verificar o number of seu Sonium stems?";
 			close;
 		}
 		mes "[Instructor Rugen]";
-		mes "Are you serious?";
-		mes "Dr. Tiblack sent you, so I should believe you.";
-		mes "I'll feed these to the patients.";
+		mes "Voce e serious?";
+		mes "Dr. Tiblack sent you, entao I should acreditar you.";
+		mes "Eu vou feed estes to o patients.";
 		delitem 6690,25;// YummyStem
 		erasequest 11359;// Antidote
 		setquest 11360;// Antidote
@@ -3025,16 +3025,16 @@ moro_vol,105,71,5	script	Instructor Rugen#ep14bs	4_M_YOUNGKNIGHT,{
 	}
 	if (ep14_3_newerabs == 21) {
 		mes "[Instructor Rugen]";
-		mes "Are you serious?";
-		mes "Dr. Tiblack sent you, so I should believe you.";
-		mes "I'll feed these to the patients.";
+		mes "Voce e serious?";
+		mes "Dr. Tiblack sent you, entao I should acreditar you.";
+		mes "Eu vou feed estes to o patients.";
 		close;
 	}
 	if (ep14_3_newerabs == 22) {
 		mes "[Instructor Rugen]";
 		mes "Oh!";
 		mes "Otto!";
-		mes "Can you see me?";
+		mes "Voce pode ver me?";
 		next;
 		mes "[Otto]";
 		mes "Ugh...";
@@ -3044,11 +3044,11 @@ moro_vol,105,71,5	script	Instructor Rugen#ep14bs	4_M_YOUNGKNIGHT,{
 		mes "It worked!";
 		next;
 		mes "[Instructor Rugen]";
-		mes "The patients are showing remarkable improvements, though they need to stay in bed for now.";
-		mes "I'll feed the stems to the most critical patients, and wait for Dr. Tiblack to finish her research.";
+		mes "O patients are mostrando remarkable improvements, though they precisar to ficar in bed fou agora.";
+		mes "Eu vou feed o stems to o mais critical patients, e esperar fou Dr. Tiblack to terminar a research.";
 		next;
 		mes "[Instructor Rugen]";
-		mes "I'll give you a report on the patients' responses to the stem. Please bring the report to ^0000FFDr. Tiblack^000000.";
+		mes "Eu vou dar you um relatorio on o patients' responses to o stem. Pou favou trazer o relatorio to ^0000FFDr. Tiblack^000000.";
 		mes "Hah hah.";
 		mes "It worked!";
 		erasequest 11361;// Antidote
@@ -3058,18 +3058,18 @@ moro_vol,105,71,5	script	Instructor Rugen#ep14bs	4_M_YOUNGKNIGHT,{
 	}
 	if (ep14_3_newerabs == 23) {
 		mes "[Instructor Rugen]";
-		mes "The patients are showing remarkable improvements, though they need to stay in bed for now.";
-		mes "I'll feed the stems to the most critical patients, and wait for Dr. Tiblack to finish her research.";
+		mes "O patients are mostrando remarkable improvements, though they precisar to ficar in bed fou agora.";
+		mes "Eu vou feed o stems to o mais critical patients, e esperar fou Dr. Tiblack to terminar a research.";
 		next;
 		mes "[Instructor Rugen]";
-		mes "I'll give you a report on the patients' responses to the stem. Please bring the report to ^0000FFDr. Tiblack^000000.";
+		mes "Eu vou dar you um relatorio on o patients' responses to o stem. Pou favou trazer o relatorio to ^0000FFDr. Tiblack^000000.";
 		mes "Hah hah.";
 		mes "It worked!";
 		close;
 	}
 	mes "[Instructor Rugen]";
-	mes "I'm glad that the research resulted in our favor.";
-	mes "My comrades are well on their way to a full recovery.";
+	mes "Eu sou glad esse o research resulted in nosso favor.";
+	mes "Meu comrades are bem on o caminho to um full recovery.";
 	mes "Thank to you.";
 	close;
 }
@@ -3079,7 +3079,7 @@ moro_vol,104,70,4	script	Intoxicated Patient#ep14bs	4_M_LIEMAN,{
 		mes "[Poisoned Patient]";
 		mes "Ugh...";
 		next;
-		mes "- You feed him a Sonia stem. The color instantly returns to his face. -";
+		mes "- You feed him um Sonium stem. O colou instantly returns to o face. -";
 		erasequest 11360;// Antidote
 		setquest 11361;// Antidote
 		ep14_3_newerabs = 22;
@@ -3089,8 +3089,8 @@ moro_vol,104,70,4	script	Intoxicated Patient#ep14bs	4_M_LIEMAN,{
 		mes "[Poisoned Patient]";
 		mes "Ugh...";
 		next;
-		mes "- You feed him a Sonia stem. The color instantly returns to his face. -";
-		mes "- Talk to Instructor Rugen. -";
+		mes "- You feed him um Sonium stem. O colou instantly returns to o face. -";
+		mes "- Conversar to Instructou Rugen. -";
 		close;
 	}
 	mes "[Poisoned Patient]";
@@ -3218,25 +3218,25 @@ moro_vol,86,167,7	script	Advance Base Defender#1	4_M_CRU_HEAD,3,3,{
 	mes "[Advance Base Defender]";
 	.@num = atoi(strnpcinfo(2));
 	if (.@num == 1 || .@num == 11)
-		mes "This place is too dangerous. Return to the base, now!";
+		mes "Este lugar is tambem perigoso. Retornar to o base, agora!";
 	else if (.@num == 2 || .@num == 12)
-		mes "I'll see that no monster sneak into the base.";
+		mes "Eu vou ver esse no monstro sneak parum dentro o base.";
 	else if (.@num == 3 || .@num == 13)
-		mes "Sigh, how long do I have to do this?";
+		mes "Sigh, how long do Eu tenho to do this?";
 	else if (.@num == 4 || .@num == 14)
-		mes "Don't worry. I'm here to protect you.";
+		mes "Nao preocupar. Eu sou aqui to proteger you.";
 	else if (.@num == 5 || .@num == 15)
-		mes "We're in the middle of the battlefield. I can't talk for too long.";
+		mes "Nos estamos in o middle of o battlefield. Eu nao consigo conversar fou tambem long.";
 	else if (.@num == 6 || .@num == 16)
-		mes "Please step aside. You're blocking my vision.";
+		mes "Pou favou step aside. Voce e blocking meu vision.";
 	else if (.@num == 7 || .@num == 17)
-		mes "If you have time for chit-chat, then kill one more enemy instead.";
+		mes "Se you have tempo fou chit-chat, entao matar one mais inimigo ao inves.";
 	else if (.@num == 8 || .@num == 18)
-		mes "Bah, I'm cold and hungry... Oh, I was just talking to myself.";
+		mes "Bah, Eu sou cold e com fome... Oh, Eu estavum apenas conversando to myself.";
 	else if (.@num == 9 || .@num == 19)
-		mes "Be careful: this place is overrun with dangerous monsters.";
+		mes "Tenhum cuidado: este lugar is overrun com perigoentao monstros.";
 	else if (.@num == 10 || .@num == 20)
-		mes "For every monster I kill, one or more appear to take its place.";
+		mes "Fou cadum monstro I matar, one ou mais aparecer to pegar seu lugar.";
 	close;
 
 OnTouch:
@@ -3291,77 +3291,77 @@ moro_vol,191,81,6	duplicate(Advance Base Defender#1)	Advance Base Defender#20	4_
 // gef_fild02,106,225,4	script	Base Investigator#bl	4_M_KY_HEAD,{
 moro_vol,131,103,3	script	Base Investigator#bl	4_M_KY_HEAD,{
 	if (checkweight(1301,3) == 0) {
-		mes "- Cannot progress with the dialogue because you have too many items. -";
+		mes "- Nao pode progress com o dialogue porque you have tambem muitos itens. -";
 		close;
 	}
 	if (BaseLevel < 150) {
 		mes "[Base Investigator]";
-		mes "You look super weak!";
-		mes "Why are you here??";
+		mes "Voce parece super fraco!";
+		mes "Pou que you aqui??";
 		next;
 		mes "[Base Investigator]";
-		mes "Well, there are not enough people!";
-		mes "But we will wait until you reach level 150.";
-		mes "Please come back later!";
+		mes "Bem, hum nao suficiente pessoas!";
+		mes "Mas we will esperar ate you reach nivel 150.";
+		mes "Pou favou volte later!";
 		close;
 	}
 	if (ep14_3_fall_bless == 0) {
 		mes "[Base Investigator]";
-		mes "Have you noticed it, too?";
-		mes "Yes, the monsters in this area are really quite strange.";
+		mes "Voce jum noticed it, tambem?";
+		mes "Yes, o monstros in este areum are realmente quite estranho.";
 		next;
 		mes "[Base Investigator]";
-		mes "They appear to be mutant versions of Midgard monsters";
+		mes "They aparecer to be mutant versions of Midgard monstros";
 		next;
 		mes "[Base Investigator]";
-		mes "Worse still, their number has been rapidly increasing.";
-		mes "We must keep an eye on them.";
+		mes "Worse ainda, o number tem sido rapidly aumentando.";
+		mes "We must manter um olho on them.";
 		next;
 		mes "[Base Investigator]";
-		mes "To my regret, everyone seems so busy that I can't ask them for help, despite the seriousness of the investigation.";
-		mes "This is not a safe environment.";
+		mes "To meu regret, todos parece entao ocupado esse Eu nao consigo ask them fou ajudar, despite o seriousness of o investigation.";
+		mes "Este is nao um seguro environment.";
 		next;
-		switch( select( "What's going on?", "Why can't you do it yourself?", "Do you want me to do it?" ) ) {
+		switch( select( "O que e indo on?", "Why nao pode you do it yourself?", "Do voce quer me to do it?" ) ) {
 		case 1:
 			mes "[Base Investigator]";
-			mes "The environmental characteristics of this area are making the investigation too difficult.";
-			mes "The scenery looks familiar, yet in a way... strange.";
-			mes "The place looks like it's on the verge of utter collapse but.. I can see bursts of vibrant growth.";
+			mes "O environmental characteristics of este areum are fazendo o investigation tambem dificil.";
+			mes "O scenery looks familiar, yet in um caminho... estranho.";
+			mes "O lugar looks like e on o verge of utter collapse but.. Eu consigo ver bursts of vibrant growth.";
 			next;
 			mes "[Base Investigator]";
-			mes "What is this place?";
+			mes "O que e este lugar?";
 			close;
 		case 2:
 			mes "[Base Investigator]";
-			mes "Like everyone else from a noble background,";
-			mes "I only know how to command others.";
+			mes "Like todos else de um noble background,";
+			mes "I apenas saber how to comme others.";
 			emotion 4, playerattached();
 			close;
 		case 3:
 			mes "[Base Investigator]";
-			mes "Of all those monsters,";
-			mes "^0000FFFire Condors^000000 look most dangerous.";
-			mes "Those birds with burning tails charge headlong toward everyone they see. You may be able to run from them, but you will always get singed.";
+			mes "Of todos esses monstros,";
+			mes "^0000FFFire Condors^000000 olhar mais perigoso.";
+			mes "Esses birds com burning tails charge headlong toward todos they ver. Voce pode be capaz de correr de them, mas you will sempre pegar singed.";
 			next;
-			select("Do you want me to hunt Fire Condors?");
+			select("Do voce quer me to cacar Fogo Condors?");
 			mes "[Base Investigator]";
-			mes "No, I have no one to dispose their carcasses.";
-			mes "My purpose is, after all, an investigation.";
-			mes "Just bring me";
+			mes "No, Eu tenho ninguem to dispose o carcasses.";
+			mes "Meu purpose is, depois todos, um investigation.";
+			mes "Apenas trazer me";
 			mes "15 ^FF0000Burning Feathers^000000";
-			mes "from ^0000FFFire Condors^000000.";
+			mes "de ^0000FFFire Condors^000000.";
 			next;
-			if (select( "I'm as busy as you!", "Got it." ) == 1) {
+			if (select( "Eu sou as ocupado as you!", "Got it." ) == 1) {
 				mes "[Base Investigator]";
-				mes "You acted as if you'd help me.";
-				mes "Were you messing with me?";
+				mes "You acted as se you'd me ajude.";
+				mes "Were you messing com me?";
 				close;
 			}
 			mes "[Base Investigator]";
-			mes "Bring me";
+			mes "Trazer me";
 			mes "^FF000015 Burning Feathers^000000";
-			mes "from ^0000FFFire Condors^000000.";
-			mes "Hurry before more people fall victim to those vicious birds!";
+			mes "de ^0000FFFire Condors^000000.";
+			mes "Hurry antes mais pessoas fall vitimum to esses vicious birds!";
 			setquest 1264;	// Flaming Basin and Doom Prayers
 			ep14_3_fall_bless = 1;
 			close;
@@ -3370,51 +3370,51 @@ moro_vol,131,103,3	script	Base Investigator#bl	4_M_KY_HEAD,{
 	if (ep14_3_fall_bless == 1) {
 		if (countitem(6691) < 15) {
 			mes "[Base Investigator]";
-			mes "I thought you'd be hard at work by now,";
+			mes "I pensou you'd be dificil at trabalhar by agora,";
 			mes "gathering ^FF000015 Burning Feathers^000000";
-			mes "from ^0000FFFire Condors^000000,";
-			mes "so I called an emergency meeting of";
-			mes "my investigators.";
+			mes "de ^0000FFFire Condors^000000,";
+			mes "entao I chamado um emergency encontrando of";
+			mes "meu investigators.";
 			next;
 			mes "[Base Investigator]";
-			mes "And you're still in town,";
-			mes "enjoying a leisurely walk.";
+			mes "E voce e aindum in cidade,";
+			mes "enjoying um leisurely andar.";
 			close;
 		}
 		mes "[Base Investigator]";
-		mes "You brought";
-		mes "all the ^FF000015 Burning Feathers^000000.";
-		mes "Thank you. Now I can";
-		mes "proceed with my investigation.";
+		mes "You trouxe";
+		mes "todos o ^FF000015 Burning Feathers^000000.";
+		mes "Obrigado. Agorum I can";
+		mes "proceed com meu investigation.";
 		next;
 		mes "[Base Investigator]";
-		mes "Most of all, I can finally enjoy the warmth of a fire!";
+		mes "Most of todos, Eu consigo finalmente enjoy o warmth of um fogo!";
 		emotion 21;
 		next;
 		mes "[Base Investigator]";
-		mes "Did you notice the worrisome expression on my face?";
+		mes "Voce aviso o worrisome expression on meu face?";
 		next;
-		if (select( "Nope. Never.", "I did, instantly." ) == 1) {
+		if (select( "Nope. Nunca.", "I did, instantly." ) == 1) {
 			mes "[Base Investigator]";
-			mes "That's not the answer I expected,";
-			mes "but I'll continue with the spiel";
-			mes "I've prepared.";
+			mes "That's nao o respostum I expected,";
+			mes "mas Eu vou continue com o spiel";
+			mes "Eu tenho preparado.";
 			mes "Sigh...";
 			next;
 			mes "[Base Investigator]";
-			mes "A scout hasn't returned";
-			mes "from the Flaming Basin.";
-			mes "I want you to go check";
-			mes "what happened to him.";
+			mes "A scout nao tem returned";
+			mes "de o Flaming Basin.";
+			mes "Eu quero you to ir verificar";
+			mes "o que aconteceu to him.";
 			next;
-			if (select( "No can do.", "Sure." ) == 1) {
+			if (select( "No cum do.", "Sure." ) == 1) {
 				mes "[Base Investigator]";
-				mes "I know you'll do it anyway!";
+				mes "Eu sei voce vai do it anyway!";
 				close;
 			}
 			mes "[Base Investigator]";
-			mes "The scout headed for the area teeming with monsters.";
-			mes "Keep your eyes peeled for him.";
+			mes "O scout headed fou o areum teeming com monstros.";
+			mes "Manter seu olhos peeled fou him.";
 			delitem 6691,15;// BurningFeather
 			completequest 1264;	// Flaming Basin and Doom Prayers
 			setquest 1265;	// Flaming Basin and Doom Prayers
@@ -3423,23 +3423,23 @@ moro_vol,131,103,3	script	Base Investigator#bl	4_M_KY_HEAD,{
 		}
 		mes "[Base Investigator]";
 		// google translate..
-		mes "Not bad! You guys....";
-		mes "Please eat three bowls of gongs!";
+		mes "Nao ruim! You guys....";
+		mes "Pou favou eat three bowls of gongs!";
 		next;
 		mes "[Base Investigator]";
-		mes "A scout hasn't returned";
-		mes "from the Flaming Basin.";
-		mes "I want you to go check";
-		mes "what happened to him.";
+		mes "A scout nao tem returned";
+		mes "de o Flaming Basin.";
+		mes "Eu quero you to ir verificar";
+		mes "o que aconteceu to him.";
 		next;
-		if (select( "No can do.", "Sure." ) == 1) {
+		if (select( "No cum do.", "Sure." ) == 1) {
 			mes "[Base Investigator]";
-			mes "I know you'll do it anyway!";
+			mes "Eu sei voce vai do it anyway!";
 			close;
 		}
 		mes "[Base Investigator]";
-		mes "The scout headed for the area teeming with monsters.";
-		mes "Keep your eyes peeled for him.";
+		mes "O scout headed fou o areum teeming com monstros.";
+		mes "Manter seu olhos peeled fou him.";
 		delitem 6691,15;// BurningFeather
 		completequest 1264;	// Flaming Basin and Doom Prayers
 		setquest 1265;	// Flaming Basin and Doom Prayers
@@ -3448,68 +3448,68 @@ moro_vol,131,103,3	script	Base Investigator#bl	4_M_KY_HEAD,{
 	}
 	if (ep14_3_fall_bless < 4) {
 		mes "[Base Investigator]";
-		mes "I sent you out to look for the scout.";
-		mes "Did you come back or haven't you left at all?";
+		mes "I sent you out to olhar fou o scout.";
+		mes "Voce volte ou nao tenho you left at todos?";
 		next;
 		mes "[Base Investigator]";
-		mes "Go look for the scout in the place teeming with monsters!";
+		mes "Ir olhar fou o scout in o lugar teeming com monstros!";
 		close;
 	}
 	if (ep14_3_fall_bless == 4) {
 		mes "[Base Investigator]";
-		mes "Did you find the scout?";
-		mes "He's resting and rewriting his scout journal?";
+		mes "Voce encontrar o scout?";
+		mes "Ele e resting e rewriting o scout journal?";
 		next;
 		mes "[Base Investigator]";
-		mes "He does not disappoint me.";
-		mes "He's a good soldier!";
+		mes "He does nao disappoint me.";
+		mes "Ele e um bom soldado!";
 		emotion 21;
 		emotion 4, playerattached();
 		next;
 		mes "[Base Investigator]";
-		mes "Now that we've found the missing scout,";
-		mes "I want you to move on to the next mission.";
+		mes "Agorum esse nos temos encontrou o missing scout,";
+		mes "Eu quero you to mover on to o proximo missao.";
 		next;
 		mes "[Base Investigator]";
-		mes "You know the number of mysterious monsters";
-		mes "in this Flaming Basin has been continuously increasing.";
+		mes "Voce sabe o number of mysterious monstros";
+		mes "in este Flaming Basin tem sido continuously aumentando.";
 		next;
-		select("I know.");
+		select("I saber.");
 		mes "[Base Investigator]";
-		mes "Things could quickly go out of control";
-		mes "if they expand to the outside world.";
-		mes "If they encounter other monsters in Midgard or the Other World,";
-		mes "they could go on a rampage,";
+		mes "Things could rapidamente ir out of control";
+		mes "se they expe to o forum mundo.";
+		mes "Se they encounter outro monstros in Midgard ou o Outro Mundo,";
+		mes "they could ir on um rampage,";
 		next;
 		mes "[Base Investigator]";
 		mes "could spread deadly virus,";
-		mes "could procreate powerful mutants,";
-		mes "or worse.";
+		mes "could procreate poderoentao mutants,";
+		mes "ou worse.";
 		next;
 		mes "[Base Investigator]";
-		mes "For now, the best solution would be";
-		mes "a large cull, and I want you to do it.";
+		mes "Fou agora, o best solution seria";
+		mes "um large cull, e Eu quero you to do it.";
 		next;
 		mes "[Base Investigator]";
-		mes "Please exterminate";
+		mes "Pou favou exterminate";
 		mes "20 ^0000FFFire Sandmen^000000";
-		mes "and ^0000FFFire Frilldoras^000000.";
+		mes "e ^0000FFFire Frilldoras^000000.";
 		next;
-		if (select( "Do it yourself!", "I'll do my best." ) == 1) {
+		if (select( "Do it yourself!", "Eu vou do meu best." ) == 1) {
 			mes "[Base Investigator]";
-			mes "I hate to repeat myself,";
-			mes "but like everyone else from a noble background,";
-			mes "I only know how to command others.";
+			mes "I odio to repeat myself,";
+			mes "mas like todos else de um noble background,";
+			mes "I apenas saber how to comme others.";
 			emotion 19, playerattached();
 			close;
 		}
 		mes "[Base Investigator]";
-		mes "Hurry, those monsters are breeding even as we speak.";
+		mes "Hurry, esses monstros are breeding ate mesmo as we falar.";
 		next;
 		mes "[Base Investigator]";
-		mes "Please exterminate";
+		mes "Pou favou exterminate";
 		mes "20 ^0000FFFire Sandmen^000000";
-		mes "and 20 ^0000FFFire Frilldoras^000000.";
+		mes "e 20 ^0000FFFire Frilldoras^000000.";
 		completequest 1267;	// Flaming Basin and Doom Prayers
 		setquest 1268;	// Flaming Basin and Doom Prayers
 		setquest 1269;	// Flaming Basin and Doom Prayers
@@ -3521,13 +3521,13 @@ moro_vol,131,103,3	script	Base Investigator#bl	4_M_KY_HEAD,{
 			mes "[Base Investigator]";
 			mes "You exterminated";
 			mes "20 ^0000FFFire Sandmen^000000";
-			mes "and 20 ^0000FFFire Frilldoras^000000 as I ordered.";
+			mes "e 20 ^0000FFFire Frilldoras^000000 as I ordered.";
 			next;
 			mes "[Base Investigator]";
-			mes "Thanks to you we've found an effective wayto deal with the monsters.";
+			mes "Obrigado to you nos temos encontrou um effective wayto deal com o monstros.";
 			next;
 			mes "[Base Investigator]";
-			mes "From this moment on, my soldiers will take over.";
+			mes "From este moment on, meu soldados will pegar sobre.";
 			completequest 1268;	// Flaming Basin and Doom Prayers
 			completequest 1269;	// Flaming Basin and Doom Prayers
 			setquest 1297;	// Flaming Basin and Doom Prayers
@@ -3536,22 +3536,22 @@ moro_vol,131,103,3	script	Base Investigator#bl	4_M_KY_HEAD,{
 			close;
 		}
 		mes "[Base Investigator]";
-		mes "Hurry, those monsters are";
-		mes "multiplying themselves even as we speak.";
+		mes "Hurry, esses monstros are";
+		mes "multiplying themselves ate mesmo as we falar.";
 		next;
 		mes "[Base Investigator]";
-		mes "Please exterminate";
+		mes "Pou favou exterminate";
 		mes "20 ^0000FFFire Sandmen^000000";
-		mes "and 20 ^0000FFFire Frilldoras^000000.";
+		mes "e 20 ^0000FFFire Frilldoras^000000.";
 		close;
 	}
 	mes "[Base Investigator]";
-	mes "So leave it to us to take care of this area, and you go ahead and head north.";
-	mes "I want you to do something about that strange group of people over there.";
+	mes "Entao sair it to us to se cuide of este area, e you vum em frente e cabecum norte.";
+	mes "Eu quero you to do algo sobre esse estranho grupo of pessoas sobre la.";
 	next;
 	mes "[Base Investigator]";
-	mes "They've appeared out of nowhere.";
-	mes "doing everything they can to pester us.";
+	mes "Eles tem appeared out of nenhum lugar.";
+	mes "fazendo tudo they cum to pester us.";
 	emotion 28;
 	close;
 
@@ -3563,75 +3563,75 @@ OnInit:
 //gef_fild02,106,225,4	script	Scout#bl	4_M_CRU_SOLD,{
 moro_vol,234,301,3	script	Scout#bl	4_M_CRU_SOLD,{
 	if (checkweight(1301,3) == 0) {
-		mes "- Cannot progress with the dialogue because you have too many items. -";
+		mes "- Nao pode progress com o dialogue porque you have tambem muitos itens. -";
 		close;
 	}
 	if (ep14_3_fall_bless == 0) {
 		mes "[Scout]";
-		mes "I was sent to investigate these monsters.";
-		mes "It's unfair that I'm alone";
-		mes "in this dangerous place with no backup!";
+		mes "Eu estavum sent to investigar estes monstros.";
+		mes "E unfair esse Eu sou sozinho";
+		mes "in este perigoentao lugar com no backup!";
 		close;
 	}
 	if (ep14_3_fall_bless == 1) {
 		mes "[Scout]";
-		mes "I was sent to investigate these monsters.";
-		mes "It's unfair that I'm alone";
-		mes "in this dangerous place with no backup!";
+		mes "Eu estavum sent to investigar estes monstros.";
+		mes "E unfair esse Eu sou sozinho";
+		mes "in este perigoentao lugar com no backup!";
 		next;
 		mes "[Scout]";
-		mes "Argh, I'm just gonna go AWOL!";
+		mes "Argh, Eu sou apenas gonnum ir AWOL!";
 		close;
 	}
 	if (ep14_3_fall_bless == 2) {
 		mes "[Scout]";
-		mes "Welcome!";
-		mes "I'm in dire need of help!";
+		mes "Bem-vindo!";
+		mes "Eu sou in dire precisar of ajudar!";
 		next;
 		mes "[Scout]";
-		mes "I came here alone on a recon mission.";
-		mes "A horde of monsters surrounded me, keeping me from leaving,";
-		mes "so I had no choice but to hang around.";
+		mes "I came aqui sozinho on um recon missao.";
+		mes "A horde of monstros surrounded me, mantendo me de leaving,";
+		mes "entao Eu tinhum no choice mas to hang ao redor.";
 		next;
-		if (select("Stay chilling then.", "Let's go back with me.") == 1) {
+		if (select("Ficar chilling entao.", "Vamos ir back com me.") == 1) {
 			mes "[Scout]";
-			mes "You're afraid I might ask for help,";
-			mes "I see.";
+			mes "Voce e afraid I might ask fou ajudar,";
+			mes "I ver.";
 			close;
 		}
 		mes "[Scout]";
-		mes "I'm not injured, save a few scrapes,";
-		mes "but ^0000FFFire Sandmen^000000 stole";
-		mes "my ^FF0000scout journal^000000.";
+		mes "Eu sou nao injured, salvar um few scrapes,";
+		mes "mas ^0000FFFire Sandmen^000000 stole";
+		mes "meu ^FF0000scout journal^000000.";
 		next;
 		mes "[Scout]";
-		mes "Without the ^FF0000scout journal^000000, I can't go back.";
-		mes "I'll be lucky";
-		mes "if my superiors don't court-martial me.";
+		mes "Sem o ^FF0000scout journal^000000, Eu nao consigo ir back.";
+		mes "Eu vou be lucky";
+		mes "se meu superiors nao court-martial me.";
 		next;
 		mes "[Scout]";
-		mes "Don't I sound pitiful?";
-		mes "Doesn't it inspire you to help me?";
+		mes "Nao I sound pitiful?";
+		mes "Nao it inspire you to me ajude?";
 		next;
 		if (select("Neh.", "It does.") == 1) {
 			mes "[Scout]";
-			mes "All right, then I'll just have to";
-			mes "stay here and chill until help arrives.";
+			mes "Todos certo, entao Eu vou apenas tem que";
+			mes "ficar aqui e chill ate ajudar arrives.";
 			close;
 		}
 		mes "[Scout]";
-		mes "Okay, here's what you can do to help:";
-		mes "Please bring ^FF0000Scout Journals^000000";
-		mes "from ^0000FFFire Sandmen^000000.";
+		mes "Okay, aqui's what voce pode do to ajudar:";
+		mes "Pou favou trazer ^FF0000Scout Journals^000000";
+		mes "de ^0000FFFire Sandmen^000000.";
 		next;
 		mes "[Scout]";
-		mes "The journal could have been separated into pages, snapped at by those feral monsters.";
-		mes "I don't care; I still need them to show to my superiors.";
-		mes "Please bring me";
+		mes "O journal could tem sido separated parum dentro pages, snapped at by esses feral monstros.";
+		mes "Eu nao care; I aindum precisar them to show to meu superiors.";
+		mes "Pou favou trazer me";
 		mes "20 ^FF0000Scout Journals^000000.";
 		next;
 		mes "[Scout]";
-		mes "Be careful--they can ambush you and snatch away ^FF0000Scout Journals^000000 before you know it.";
+		mes "Tenhum cuidado--they cum ambush you e snatch emborum ^FF0000Scout Journals^000000 antes voce sabe it.";
 		completequest 1265;	// Flaming Basin and Doom Prayers
 		setquest 1266;	// Flaming Basin and Doom Prayers
 		ep14_3_fall_bless = 3;
@@ -3640,27 +3640,27 @@ moro_vol,234,301,3	script	Scout#bl	4_M_CRU_SOLD,{
 	if (ep14_3_fall_bless == 3) {
 		if (countitem(6692) < 20) {
 			mes "[Scout]";
-			mes "Please bring 20 ^FF0000Scout Journals^000000";
-			mes "from ^0000FFFire Sandmen^000000.";
+			mes "Pou favou trazer 20 ^FF0000Scout Journals^000000";
+			mes "de ^0000FFFire Sandmen^000000.";
 			next;
 			mes "[Scout]";
-			mes "Be careful--they can ambush you and snatch away ^FF0000Scout Journals^000000 before you know it.";
+			mes "Tenhum cuidado--they cum ambush you e snatch emborum ^FF0000Scout Journals^000000 antes voce sabe it.";
 			close;
 		}
 		mes "[Scout]";
-		mes "Did you already find";
+		mes "Voce jum encontrar";
 		mes "20 ^FF0000Scout Journals^000000?";
-		mes "If I knew you're so fast, I would have asked you for 100 pages instead.";
+		mes "Se I sabium voce e entao fast, Eu gostarium de have perguntou you fou 100 pages ao inves.";
 		next;
 		mes "[Scout]";
-		mes "My wounds are throbbing from the thought of punishment";
-		mes "that might await me at the base.";
+		mes "Meu wounds are throbbing de o pensou of punishment";
+		mes "esse might await me at o base.";
 		next;
 		mes "[Scout]";
-		mes "I'll follow you as soon as I'm done reorganizing these pages.";
-		mes "Please report to the Investigator";
-		mes "and put in a good word";
-		mes "for me.";
+		mes "Eu vou seguir you as soon as Eu sou done reorganizing estes pages.";
+		mes "Pou favou relatorio to o Investigator";
+		mes "e colocar in um bom word";
+		mes "fou me.";
 		delitem 6692,20;// PatrolLog
 		completequest 1266;	// Flaming Basin and Doom Prayers
 		setquest 1267;	// Flaming Basin and Doom Prayers
@@ -3669,16 +3669,16 @@ moro_vol,234,301,3	script	Scout#bl	4_M_CRU_SOLD,{
 	}
 	if (ep14_3_fall_bless == 4) {
 		mes "[Scout]";
-		mes "I'll follow you as soon as I'm done reorganizing these pages.";
-		mes "Please report to the Investigator";
-		mes "and put in a good word";
-		mes "for me.";
+		mes "Eu vou seguir you as soon as Eu sou done reorganizing estes pages.";
+		mes "Pou favou relatorio to o Investigator";
+		mes "e colocar in um bom word";
+		mes "fou me.";
 		close;
 	}
 	mes "[Scout]";
-	mes "I was sent to investigate these monsters.";
-	mes "It's unfair that I'm alone";
-	mes "in this dangerous place with no backup!";
+	mes "Eu estavum sent to investigar estes monstros.";
+	mes "E unfair esse Eu sou sozinho";
+	mes "in este perigoentao lugar com no backup!";
 	close;
 }
 
@@ -3698,7 +3698,7 @@ OnTouch:
 	else
 		.@count = 2;
 	if (countitem(6692) >= .@count) {
-		mes "You have been ambushed by Fire Sandmen!";
+		mes "Voce tem been ambushed by Fogo Sandmen!";
 		delitem 6692, .@count;// PatrolLog
 		monster "moro_vol",.@x,(.@y-2)," ",3021,1;
 		monster "moro_vol",.@x,(.@y-1)," ",3021,1;
@@ -3721,29 +3721,29 @@ moro_vol,232,266,0	duplicate(#bg1)	#bg10	HIDDEN_WARP_NPC,2,2
 // moro_vol,104,141,3	script	Doom Prayers Leader#bl	4_M_BELIEVER01,{
 moro_vol,91,197,3	script	Doom Prayers Leader#bl	4_M_BELIEVER01,{
 	if (checkweight(1301,3) == 0) {
-		mes "- Cannot progress with the dialogue because you have too many items. -";
+		mes "- Nao pode progress com o dialogue porque you have tambem muitos itens. -";
 		close;
 	}
 	if (ep14_3_fall_bless < 6) {
 		mes "[Doom Prayers Leader]";
-		mes "Finally, doomsday has come!";
-		mes "Destruction is a blessing!";
+		mes "Finalmente, doomsday has vir!";
+		mes "Destruction is um blessing!";
 		next;
 		mes "[Doom Prayers Leader]";
-		mes "Guide us to the inside!";
-		mes "We're chosen by the gods!";
-		mes "The day when the destruction of the world begins.";
+		mes "Guide us to o dentro!";
+		mes "Nos estamos chosen by o gods!";
+		mes "O dium when o destruction of o mundo begins.";
 		next;
 		mes "[Doom Prayers Leader]";
-		mes "Blood for the blood go~~";
-		mes "I mean destruction is good!";
-		mes "Destruction is a blessing!";
+		mes "Blood fou o sangue ir~~";
+		mes "I significum destruction is bom!";
+		mes "Destruction is um blessing!";
 		close;
 	}
 	if (ep14_3_fall_bless == 6) {
 		mes "[Doom Prayers Leader]";
-		mes "Finally, doomsday has come!";
-		mes "Destruction is a blessing!";
+		mes "Finalmente, doomsday has vir!";
+		mes "Destruction is um blessing!";
 		next;
 		mes "[Doom Prayers]";
 		mes "Destruction! Is! A! Blessing!";
@@ -3751,94 +3751,94 @@ moro_vol,91,197,3	script	Doom Prayers Leader#bl	4_M_BELIEVER01,{
 		next;
 		mes "[Doom Prayers]";
 		mes "Destruction! Blessing!";
-		mes "We are the chosen ones!";
+		mes "Nos estamos o chosen ones!";
 		next;
 		mes "[Doom Prayers Leader]";
-		mes "Guide us to the inside!";
-		mes "We're chosen by the gods!";
-		mes "The day when the destruction of the world begins,";
+		mes "Guide us to o dentro!";
+		mes "Nos estamos chosen by o gods!";
+		mes "O dium when o destruction of o mundo begins,";
 		next;
 		mes "[Doom Prayers Leader]";
-		mes "The gun is good!";
-		mes "The HODE is evil!";
+		mes "O gun is bom!";
+		mes "O HODE is evil!";
 		next;
-		switch( select( "What god do you serve?", "Who are you?", "Go back!" ) ) {
+		switch( select( "What god voce serve?", "Quem sao you?", "Ir back!" ) ) {
 		case 1:
 			mes "[Doom Prayers Leader]";
-			mes "We serve the God of Destruction!";
-			mes "He oversees the destruction of everything--from the destruction of a star to that of an entire galaxy,";
-			mes "and from the spoilage of my breakfast to that of my dinner.";
+			mes "We serve o God of Destruction!";
+			mes "He oversees o destruction of tudo--de o destruction of um star to esse of um entire galaxy,";
+			mes "e de o spoilage of meu breakfast to esse of meu dinner.";
 			close;
 		case 2:
 			mes "[Doom Prayers Leader]";
-			mes "We're the Doom Prayers!";
-			mes "We serve the God of Destruction,";
-			mes "and pray to him to bless us with the end of the world.";
+			mes "Nos estamos o Doom Prayers!";
+			mes "We serve o God of Destruction,";
+			mes "e pray to him to bless us com o end of o mundo.";
 			next;
 			mes "[Doom Prayers Leader]";
-			mes "Only after everything else is destroyed,";
-			mes "we can be truly blessed.";
+			mes "Apenas depois tudo else is destroyed,";
+			mes "nos podemos be truly blessed.";
 			next;
 			mes "[Doom Prayers Leader]";
-			mes "Those sudden cracks";
-			mes "in the ground.";
-			mes "Those talking Cats.";
-			mes "Those green giants.";
+			mes "Esses sudden cracks";
+			mes "in o ground.";
+			mes "Esses conversando Cats.";
+			mes "Esses green giants.";
 			next;
 			mes "[Doom Prayers Leader]";
-			mes "They prove the end is near!";
+			mes "They prove o end is perto!";
 			mes "Oh, doomsday has arrived!";
-			mes "Destruction is a blessing!";
+			mes "Destruction is um blessing!";
 			close;
 		case 3:
 			mes "[Doom Prayers Leader]";
-			mes "No, we won't!";
-			mes "Finally, doomsday has arrived!";
-			mes "We've been dying for the blessing!";
-			mes "I want to be there before everyone else!";
+			mes "No, we nao vai!";
+			mes "Finalmente, doomsday has arrived!";
+			mes "Nos temos been morrendo fou o blessing!";
+			mes "Eu quero to be lum antes todos else!";
 			next;
 			mes "[Doom Prayers Leader]";
-			mes "Hell no, we won't go!";
-			mes "Let us in there!";
-			mes "We've been chosen by the God of Destruction.";
-			mes "Unlike you, we're invincible!";
+			mes "Hell no, we nao vai ir!";
+			mes "Let us in la!";
+			mes "Nos temos been chosen by o God of Destruction.";
+			mes "Unlike you, nos estamos invincible!";
 			next;
-			select("Can you prove it?");
+			select("Voce pode prove it?");
 			mes "[Doom Prayers Leader]";
-			mes "How dare you challenge me?!";
-			mes "All right, I'll prove it to you!";
-			next;
-			mes "[Doom Prayers Leader]";
-			mes "Search this Doomsland and find ^FF000040 Blessing Stones^000000.";
-			mes "Throw them at us, and you'll see.";
+			mes "How dvoce e challenge me?!";
+			mes "Todos certo, Eu vou prove it to you!";
 			next;
 			mes "[Doom Prayers Leader]";
-			mes "The moment they hit our bodies,";
-			mes "they'll turn into flower petals with a loud pop!";
-			mes "Destruction is a blessing!";
+			mes "Procurar este Doomsle e encontrar ^FF000040 Blessing Stones^000000.";
+			mes "Throw them at us, e voce vai ver.";
+			next;
+			mes "[Doom Prayers Leader]";
+			mes "O moment they hit nosso bodies,";
+			mes "they'll turn parum dentro flower petals com um loud pop!";
+			mes "Destruction is um blessing!";
 			next;
 			select("Doomsland?");
 			mes "[Guard]";
-			mes "That's what those crazy people call this Flaming Basin.";
+			mes "That's what esses louco pessoas call este Flaming Basin.";
 			next;
 			mes "[Guard]";
-			mes "And what they call ^FF0000Blessing Stones^000000 are simply the debris fell off ^0000FFFire Golems^000000.";
+			mes "E what they call ^FF0000Blessing Stones^000000 are simply o debris fell off ^0000FFFire Golems^000000.";
 			next;
-			mes "The only way to send away these crazy people must be prove them they're wrong.";
-			mes "Do you want to hunt ^0000FFFire Golems^000000";
-			mes "and collect 40 ^FF0000Blessing Stones^000000?";
+			mes "O apenas caminho to send emborum estes louco pessoas deve ser prove them eles sao errado.";
+			mes "Do voce quer to cacar ^0000FFFire Golems^000000";
+			mes "e coletar 40 ^FF0000Blessing Stones^000000?";
 			next;
-			if (select( "No, I couldn't care less!", "I'll collect the stones." ) == 1) {
+			if (select( "No, I nao conseguiu care menos!", "Eu vou coletar o stones." ) == 1) {
 				mes "[Doom Prayers Leader]";
-				mes "I see you're afraid of witnessing the grace of our god lest that might change your mind.";
-				mes "Stop bothering me and scram!";
-				mes "Destruction is a blessing!";
+				mes "I ver voce e afraid of witnessing o grace of nosso god lest esse might mudar seu mente.";
+				mes "Parar bothering me e scram!";
+				mes "Destruction is um blessing!";
 				close;
 			}
 			mes "[Doom Prayers Leader]";
-			mes "Go ahead, bring ^FF0000Blessing Stones^000000 and throw them at us!";
-			mes "You'll see those stones turning into falling flower petals!";
-			mes "Then you'll cry and beg me to let you join us.";
+			mes "Vum em frente, trazer ^FF0000Blessing Stones^000000 e throw them at us!";
+			mes "Voce vai ver esses stones virando parum dentro caindo flower petals!";
+			mes "Entao voce vai cry e beg me to let you join us.";
 			completequest 1297;	// Flaming Basin and Doom Prayers
 			setquest 1270;	// Flaming Basin and Doom Prayers
 			ep14_3_fall_bless = 7;
@@ -3848,25 +3848,25 @@ moro_vol,91,197,3	script	Doom Prayers Leader#bl	4_M_BELIEVER01,{
 	if (ep14_3_fall_bless == 7) {
 		if (countitem(6693) < 39) {	// Stone_Of_Blessing
 			mes "[Doom Prayers Leader]";
-			mes "Search this Doomsland and find ^FF000040 Blessing Stones^000000.";
-			mes "Throw them at us, and you'll see.";
+			mes "Procurar este Doomsle e encontrar ^FF000040 Blessing Stones^000000.";
+			mes "Throw them at us, e voce vai ver.";
 			next;
 			mes "[Doom Prayers Leader]";
-			mes "The moment they hit our bodies, they'll turn into flower petals with a loud pop!";
-			mes "Destruction is a blessing!";
+			mes "O moment they hit nosso bodies, they'll turn parum dentro flower petals com um loud pop!";
+			mes "Destruction is um blessing!";
 			next;
-			mes "Hunt ^0000FFFire Golems^000000 and collect 40 ^FF0000Blessing Stones^000000.";
+			mes "Cacar ^0000FFFire Golems^000000 e coletar 40 ^FF0000Blessing Stones^000000.";
 			close;
 		}
 		mes "[Doom Prayers Leader]";
-		mes "You brought 40 ^FF0000Blessing Stones^000000.";
-		mes "Okay, we're ready.";
-		mes "Throw the stones at us!";
+		mes "You trouxe 40 ^FF0000Blessing Stones^000000.";
+		mes "Okay, nos estamos pronto.";
+		mes "Throw o stones at us!";
 		next;
 		mes "[Doom Prayers Leader]";
-		mes "Be prepared for the miracle!";
-		mes "Come on, hit us hard!";
-		mes "Destruction is a blessing!";
+		mes "Estejum preparado fou o miracle!";
+		mes "Vir on, hit us dificil!";
+		mes "Destruction is um blessing!";
 		next;
 		mes "*Whiz*";
 		mes "*WHIZZ*";
@@ -3918,13 +3918,13 @@ moro_vol,91,197,3	script	Doom Prayers Leader#bl	4_M_BELIEVER01,{
 		emotion 19, getnpcid(0, "Doom Prayer#bl12");
 		next;
 		mes "[Doom Prayers Leader]";
-		mes "That hurts!";
-		mes "That hurts like hell!";
-		mes "STOP! Stop hitting me in the face!";
+		mes "Esse hurts!";
+		mes "Esse hurts like hell!";
+		mes "STOP! Parar hitting me in o face!";
 		next;
-		if (select( "Keep throwing.", "Stop throwing.") == 2) {
-			mes "Instead of turning into flower petals, the stones inflicted immense pain on those who got hit.";
-			mes "You decided to stop throwing the stones.";
+		if (select( "Manter throwing.", "Parar throwing.") == 2) {
+			mes "Ao inves of virando parum dentro flower petals, o stones inflicted immense dor on esses who got hit.";
+			mes "You decided to parar throwing o stones.";
 			delitem 6693,40;// Stone_Of_Blessing
 			completequest 1270;	// Flaming Basin and Doom Prayers
 			setquest 1271;	// Flaming Basin and Doom Prayers
@@ -3933,7 +3933,7 @@ moro_vol,91,197,3	script	Doom Prayers Leader#bl	4_M_BELIEVER01,{
 		}
 		mes "[Doom Prayers]";
 		mes "Yelp!";
-		mes "My head!";
+		mes "Meu cabeca!";
 		mes "Aww! Kyaaooh-!";
 		emotion 19;
 		emotion 19, getnpcid(0, "Doom Prayers Second-in-command#bl");
@@ -3944,7 +3944,7 @@ moro_vol,91,197,3	script	Doom Prayers Leader#bl	4_M_BELIEVER01,{
 		next;
 		mes "[Doom Prayers]";
 		mes "Kyaah-!";
-		mes "My nose!";
+		mes "Meu nose!";
 		mes "Kyaah-! Kyaarrr-!";
 		emotion 19;
 		emotion 19, getnpcid(0, "Doom Prayers Second-in-command#bl");
@@ -3964,17 +3964,17 @@ moro_vol,91,197,3	script	Doom Prayers Leader#bl	4_M_BELIEVER01,{
 		mes "[Doom Prayers Leader]";
 		mes "Hurt!";
 		mes "Hurt like hell!";
-		mes "I wasn't ready!";
-		mes "Stop! Let's do over!";
+		mes "I nao erum pronto!";
+		mes "Parar! Vamos do sobre!";
 		close;
 	}
 	if (ep14_3_fall_bless == 8) {
 		mes "[Doom Prayers Leader]";
-		mes "Brothers and sisters, calm down!";
-		mes "That heretic has fooled us with the wrong stones!";
+		mes "Brothers e sisters, calm down!";
+		mes "Esse heretic has fooled us com o errado stones!";
 		next;
 		mes "[Doom Prayers]";
-		mes "I knew it!";
+		mes "I sabium it!";
 		next;
 		mes "[Doom Prayers]";
 		mes "Boo!";
@@ -3995,40 +3995,40 @@ moro_vol,91,197,3	script	Doom Prayers Leader#bl	4_M_BELIEVER01,{
 		emotion 6, getnpcid(0, "Doom Prayer#bl12");
 		next;
 		mes "[Doom Prayers]";
-		mes "Destruction is a blessing!";
-		mes "Destruction is a blessing!";
+		mes "Destruction is um blessing!";
+		mes "Destruction is um blessing!";
 		next;
 		mes "[Doom Prayers Leader]";
-		mes "You're a coward!";
-		mes "I command you again.";
+		mes "Voce e um coward!";
+		mes "I comme you novamente.";
 		next;
 		mes "[Doom Prayers Leader]";
-		mes "Bring the blood of the monsters that roam Doomsland.";
-		mes "I shall drink it and levitate to guide you all to the true faith!";
+		mes "Trazer o sangue of o monstros esse roam Doomsland.";
+		mes "I shall drink it e levitate to guide you todos to o verdade faith!";
 		next;
 		mes "[Guard]";
-		mes "He means the ^FF0000Monster Bloods^000000";
-		mes "from ^0000FFFire Frilldoras^000000 and and ^0000FFFire Sandmen^000000.";
+		mes "He significum o ^FF0000Monster Bloods^000000";
+		mes "de ^0000FFFire Frilldoras^000000 e e ^0000FFFire Sandmen^000000.";
 		mes "I presume 30 bottles should suffice.";
 		next;
-		if (select( "No, I couldn't care less!", "I'll collect Monster Bloods.") == 1) {
+		if (select( "No, I nao conseguiu care menos!", "Eu vou coletar Monstro Bloods.") == 1) {
 			mes "[Doom Prayers Leader]";
-			mes "I knew you'd say yes!";
-			mes "I can sense your fear about the possibility of witnessing the grace of the God of Destruction.";
+			mes "I sabium you'd dizer yes!";
+			mes "Eu consigo sense seu medo sobre o possibility of witnessing o grace of o God of Destruction.";
 			next;
 			mes "[Doom Prayers Leader]";
-			mes "Stop bothering me and scram!";
-			mes "Destruction is a blessing!";
+			mes "Parar bothering me e scram!";
+			mes "Destruction is um blessing!";
 			close;
 		}
 		mes "[Doom Prayers Leader]";
-		mes "Now go bring me Monster Bloods!";
-		mes "Hunt those heinous ^0000FFFire Frilldoras^000000 and and ^0000FFFire Sandmen^000000, and bring me 30 ^FF0000Monster Bloods^000000.";
+		mes "Agorum ir trazer me Monstro Bloods!";
+		mes "Cacar esses heinous ^0000FFFire Frilldoras^000000 e e ^0000FFFire Sandmen^000000, e trazer me 30 ^FF0000Monster Bloods^000000.";
 		next;
 		mes "[Doom Prayers Leader]";
-		mes "This is a perilous task.";
-		mes "I'll understand if you want to run.";
-		mes "If you really want to do this against my advice, then do as you wish.";
+		mes "Este is um perilous task.";
+		mes "Eu vou underste se voce quer to correr.";
+		mes "Se you realmente querer to do este against meu advice, entao do as you wish.";
 		mes "Mwah hah hah!";
 		completequest 1271;	// Flaming Basin and Doom Prayers
 		setquest 1272;	// Flaming Basin and Doom Prayers
@@ -4038,22 +4038,22 @@ moro_vol,91,197,3	script	Doom Prayers Leader#bl	4_M_BELIEVER01,{
 	if (ep14_3_fall_bless == 9) {
 		if (countitem(6694) < 29) {
 			mes "[Doom Prayers Leader]";
-			mes "Now go bring me Monster Bloods!";
-			mes "Hunt those heinous ^0000FFFire Frilldoras^000000 and and ^0000FFFire Sandmen^000000, and bring me 30 ^FF0000Monster Bloods^000000.";
+			mes "Agorum ir trazer me Monstro Bloods!";
+			mes "Cacar esses heinous ^0000FFFire Frilldoras^000000 e e ^0000FFFire Sandmen^000000, e trazer me 30 ^FF0000Monster Bloods^000000.";
 			next;
 			mes "[Doom Prayers Leader]";
-			mes "This is a perilous task.";
-			mes "I'll understand if you want to run.";
-			mes "If you really want to do this against my advice, then do as you wish.";
+			mes "Este is um perilous task.";
+			mes "Eu vou underste se voce quer to correr.";
+			mes "Se you realmente querer to do este against meu advice, entao do as you wish.";
 			mes "Mwah hah hah!";
 			close;
 		}
 		mes "[Doom Prayers Leader]";
-		mes "You must have too much time on your hands, heretic: you really brought all the ^FF0000Monster Bloods^000000.";
+		mes "Voce deve have tambem muito tempo on seu hands, heretic: you realmente trouxe todos o ^FF0000Monster Bloods^000000.";
 		next;
 		mes "[Doom Prayers Leader]";
-		mes "Lo and behold!";
-		mes "I'll drink this and levitate myself with its power!";
+		mes "Lo e behold!";
+		mes "Eu vou drink este e levitate myself com seu poder!";
 		next;
 		mes "[Doom Prayers Leader]";
 		mes "*Gulp Gulp*";
@@ -4075,10 +4075,10 @@ moro_vol,91,197,3	script	Doom Prayers Leader#bl	4_M_BELIEVER01,{
 		mes "Ugh...";
 		emotion 4;
 		next;
-		mes "The color drains from his face.";
-		mes "You catch a whiff of what smells like diarrhea.";
+		mes "O colou drains de o face.";
+		mes "You catch um whiff of what smells like diarrhea.";
 		next;
-		mes "His lips thin in silent embarrassment.";
+		mes "O lips thin in silent embarrassment.";
 		emotion 28;
 		delitem 6694,30;// Monster_Blood
 		completequest 1272;	// Flaming Basin and Doom Prayers
@@ -4087,39 +4087,39 @@ moro_vol,91,197,3	script	Doom Prayers Leader#bl	4_M_BELIEVER01,{
 		close;
 	}
 	if (ep14_3_fall_bless < 12) {
-		mes "Enveloped in a cloud of vile stink, he remains silent.";
+		mes "Enveloped in um cloud of vile stink, he remains silent.";
 		next;
-		mes "His second-in-command is angrily pointing his finger at you.";
-		mes "You should talk to him.";
+		mes "O second-in-comme is angrily pointing o finger at you.";
+		mes "Voce deverium conversar to him.";
 		close;
 	}
 	if (ep14_3_fall_bless == 12) {
 		mes "[Doom Prayers Leader]";
-		mes "Sigh, the world hasn't ended, again.";
-		mes "What I wouldn't give to go back home now and change to some fresh underwear...";
+		mes "Sigh, o mundo nao tem ended, novamente.";
+		mes "What I nao irium dar to ir back home agorum e mudar to alguns fresh underwear...";
 		next;
 		mes "[Doom Prayers Leader]";
-		mes "I'll wait for the next natural disaster and gather more followers to call forth the God of Destruction!";
+		mes "Eu vou esperar fou o proximo natural disaster e reunir mais followers to call forth o God of Destruction!";
 		next;
 		mes "[Doom Prayers Leader]";
-		mes "Thanks to you, though, that whether accident has shocked everyone and put them in their place.";
+		mes "Obrigado to you, though, esse wheta accident has shocked todos e colocar them in o lugar.";
 		next;
 		mes "[Doom Prayers Leader]";
-		mes "My followers have been doubting their faith in me, and haven't paid their memberships for months.";
-		mes "I should reward you for your help.";
+		mes "Meu followers tem sido doubting o faith in me, e nao tenho pago o memberships fou months.";
+		mes "I should recompensum you fou seu ajudar.";
 		next;
 		mes "[Doom Prayers Leader]";
-		mes "I hope you'll come to our next gathering and work your whether miracle again.";
+		mes "I esperancum voce vai vir to nosso proximo gathering e trabalhar seu wheta miracle novamente.";
 		completequest 1275;	// Flaming Basin and Doom Prayers
 		ep14_3_fall_bless = 13;
 		getexp 2000000,0;
 		close;
 	}
 	mes "[Doom Prayers Leader]";
-	mes "Thanks to you, that whether accident has shocked everyone and put them in their place.";
+	mes "Obrigado to you, esse wheta accident has shocked todos e colocar them in o lugar.";
 	next;
 	mes "[Doom Prayers Leader]";
-	mes "I hope you'll come to our next gathering and work your whether miracle again.";
+	mes "I esperancum voce vai vir to nosso proximo gathering e trabalhar seu wheta miracle novamente.";
 	close;
 
 OnInit:
@@ -4129,7 +4129,7 @@ OnInit:
 
 moro_vol,95,195,3	script	Doom Prayers Second-in-command#bl	4_F_BELIEVER01,{
 	if (checkweight(1301,3) == 0) {
-		mes "- Cannot progress with the dialogue because you have too many items. -";
+		mes "- Nao pode progress com o dialogue porque you have tambem muitos itens. -";
 		close;
 	}
 	if (ep14_3_fall_bless < 10) {
@@ -4145,14 +4145,14 @@ moro_vol,95,195,3	script	Doom Prayers Second-in-command#bl	4_F_BELIEVER01,{
 	}
 	if (ep14_3_fall_bless == 10) {
 		mes "[Doom Prayers Second-in-command]";
-		mes "Doom Prayers, don't panic! Stay calm!";
+		mes "Doom Prayers, nao panic! Ficar calm!";
 		next;
 		mes "[Doom Prayers Second-in-command]";
-		mes "Soon the judgment will begin and we'll be blessed.";
-		mes "We'll want for nothing!";
+		mes "Soon o judgment seragin e we'll be blessed.";
+		mes "Nos vamos querer fou nada!";
 		next;
 		mes "[Doom Prayers Second-in-command]";
-		mes "Let's pray together and raise the Blessing Gate!";
+		mes "Vamos pray juntos e raise o Blessing Gate!";
 		mes "Destruction! Blessing!";
 		next;
 		mes "[Doom Prayers]";
@@ -4160,42 +4160,42 @@ moro_vol,95,195,3	script	Doom Prayers Second-in-command#bl	4_F_BELIEVER01,{
 		mes "Destruction! Blessing!";
 		next;
 		mes "[Doom Prayers Second-in-command]";
-		mes "Oh, I see a light!";
-		mes "If only I can hold 30 ^FF0000Fire Golem's Stone Teeth^000000 and 30 ^FF0000Fire Frilldora's Napes^000000 in my hands!";
+		mes "Oh, I ver um luz!";
+		mes "Se apenas Eu consigo hold 30 ^FF0000Fire Golem's Stone Teeth^000000 e 30 ^FF0000Fire Frilldora's Napes^000000 in meu hands!";
 		next;
 		mes "[Doom Prayers Second-in-command]";
-		mes "The tall Blessing Gate will appear itself before us, wide open for us!";
+		mes "O tall Blessing Gate will aparecer itself antes us, wide abrir fou us!";
 		next;
 		mes "[Doom Prayers]";
 		mes "Oh!";
 		next;
 		mes "[Doom Prayers Second-in-command]";
-		mes "Doom Prayers, charge forward, break everything in your path, and fearlessly swing your bare hands at those dangerous monsters!";
+		mes "Doom Prayers, charge forward, quebrar tudo in seu caminho, e fearlessly swing seu bare hands at esses perigoentao monstros!";
 		next;
 		mes "[Doom Prayers Second-in-command]";
-		mes "Bring me 30 ^FF0000Fire Golem's Stone Teeth^000000 and 30 ^FF0000Fire Frilldora's Napes^000000.";
+		mes "Trazer me 30 ^FF0000Fire Golem's Stone Teeth^000000 e 30 ^FF0000Fire Frilldora's Napes^000000.";
 		next;
-		if (select( "No, I couldn't care less!", "I'll bring them." ) == 1) {
+		if (select( "No, I nao conseguiu care menos!", "Eu vou trazer them." ) == 1) {
 			mes "[Doom Prayers Second-in-command]";
-			mes "Listen up, Doom Prayers!";
-			mes "That heartless heretic couldn't care less about us.";
-			mes "What a relief!";
+			mes "Ouvir up, Doom Prayers!";
+			mes "Esse heartless heretic nao conseguiu care menos sobre us.";
+			mes "What um relief!";
 			next;
 			mes "[Doom Prayers Second-in-command]";
-			mes "Now, hunt those heinous monsters with your bare hands and get me the materials!";
+			mes "Agora, cacar esses heinous monstros com seu bare hands e pegar me o materiais!";
 			next;
 			mes "[Doom Prayers Second-in-command]";
-			mes "Don't be afraid if you can't fight even Porings;";
-			mes "I know in your mind, you're as strong as Baphomet!";
+			mes "Nao be afraid se voce nao pode lutar ate mesmo Porings;";
+			mes "Eu sei in seu mente, voce e as forte as Baphomet!";
 			emotion 19, playerattached();
 			close;
 		}
 		mes "[Doom Prayers Second-in-command]";
-		mes "All right, Doom Prayers!";
-		mes "Let's give this heretic one more chance at the blessing!";
+		mes "Todos certo, Doom Prayers!";
+		mes "Vamos dar este heretic one mais chance at o blessing!";
 		next;
 		mes "[Doom Prayers Second-in-command]";
-		mes "Now go bring me 30 ^FF0000Fire Golem's Stone Teeth^000000 and 30 ^FF0000Fire Frilldora's Napes^000000.";
+		mes "Agorum ir trazer me 30 ^FF0000Fire Golem's Stone Teeth^000000 e 30 ^FF0000Fire Frilldora's Napes^000000.";
 		completequest 1273;	// Flaming Basin and Doom Prayers
 		setquest 1274;	// Flaming Basin and Doom Prayers
 		ep14_3_fall_bless = 11;
@@ -4204,23 +4204,23 @@ moro_vol,95,195,3	script	Doom Prayers Second-in-command#bl	4_F_BELIEVER01,{
 	if (ep14_3_fall_bless == 11) {
 		if (countitem(6695) < 30 || countitem(6696) < 30) {
 			mes "[Doom Prayers Second-in-command]";
-			mes "Now go bring me 30 ^FF0000Fire Golem's Stone Teeth^000000 and 30 ^FF0000Fire Frilldora's Napes^000000.";
+			mes "Agorum ir trazer me 30 ^FF0000Fire Golem's Stone Teeth^000000 e 30 ^FF0000Fire Frilldora's Napes^000000.";
 			close;
 		}
 		mes "[Doom Prayers Second-in-command]";
-		mes "Oh Doom Prayers, be joyous--finally we have all the materials!";
+		mes "Oh Doom Prayers, be joyous--finalmente we tem quedos o materiais!";
 		mes "Destruction! Blessing!";
 		next;
 		mes "[Doom Prayers]";
-		mes "Destruction is a blessing!";
-		mes "Destruction is a blessing!";
+		mes "Destruction is um blessing!";
+		mes "Destruction is um blessing!";
 		next;
 		mes "[Doom Prayers Second-in-command]";
-		mes "Let's pray together and raise the Blessing Gate!";
+		mes "Vamos pray juntos e raise o Blessing Gate!";
 		next;
 		mes "[Doom Prayers]";
-		mes "Destruction is a blessing!";
-		mes "Destruction is a blessing!";
+		mes "Destruction is um blessing!";
+		mes "Destruction is um blessing!";
 		next;
 		mes "[Doom Prayers]";
 		mes "...";
@@ -4248,8 +4248,8 @@ moro_vol,95,195,3	script	Doom Prayers Second-in-command#bl	4_F_BELIEVER01,{
 		next;
 		mes "[Doom Prayers]";
 		mes "Kyaah-!";
-		mes "It really is the end of the world!";
-		mes "We're going to die! Kyaah-!";
+		mes "It realmente is o end of o mundo!";
+		mes "Nos estamos vai morrer! Kyaah-!";
 		specialeffect EF_SUI_EXPLOSION, AREA, "Doom Prayers Leader#bl";
 		specialeffect EF_SUI_EXPLOSION;
 		specialeffect EF_SUI_EXPLOSION, AREA, "Doom Prayer#bl1";
@@ -4265,8 +4265,8 @@ moro_vol,95,195,3	script	Doom Prayers Second-in-command#bl	4_F_BELIEVER01,{
 		specialeffect EF_SUI_EXPLOSION, AREA, "Doom Prayer#bl11";
 		specialeffect EF_SUI_EXPLOSION, AREA, "Doom Prayer#bl12";
 		next;
-		mes "Whether the God of Destruction really exists or not, this small group of fanatics aren't as special as they'd like to believe.";
-		mes "You should talk to Doom Prayers Leader again.";
+		mes "Wheta o God of Destruction realmente existe ou not, este pequeno grupo of fanatics nao sao as especial as they'd like to acreditar.";
+		mes "Voce deverium conversar to Doom Prayers Lider novamente.";
 		delitem 6695,30;// ToothOfFlameGolem
 		delitem 6696,30;// ToothOfFlameFrilldora
 		completequest 1274;	// Flaming Basin and Doom Prayers
@@ -4275,16 +4275,16 @@ moro_vol,95,195,3	script	Doom Prayers Second-in-command#bl	4_F_BELIEVER01,{
 		close;
 	}
 	mes "[Doom Prayers Second-in-command]";
-	mes "Aww... I'm scared...";
-	mes "I could have run already if only I were alone.";
-	mes "This is just too scary. I'm gonna cry a little more...";
+	mes "Aww... Eu sou assustado...";
+	mes "I could have correr jum se apenas I were sozinho.";
+	mes "Este is apenas tambem assustador. Eu sou gonnum cry um pequeno mais...";
 	close;
 }
 
 moro_vol,100,183,1	script	Base Sentry#bl	4_M_KY_SOLD,{
 	mes "[Base Sentry]";
-	mes "This area is dangerous.";
-	mes "Please refrain from exploring it alone.";
+	mes "Este areum is perigoso.";
+	mes "Pou favou refrain de exploring it sozinho.";
 	close;
 }
 moro_vol,102,188,1	duplicate(Base Sentry#bl)	Base Sentry#bl1	4_M_KY_SOLD
@@ -4295,13 +4295,13 @@ moro_vol,90,181,7	duplicate(Base Sentry#bl)	Base Sentry#bl4	4_M_KY_SOLD
 moro_vol,85,196,7	script	Doom Prayer#bl1	4_M_BELIEVER02,{
 	if (ep14_3_fall_bless < 12) {
 		mes "[Doom Prayer]";
-		mes "Destruction is a blessing!";
-		mes "Destruction is a blessing!";
+		mes "Destruction is um blessing!";
+		mes "Destruction is um blessing!";
 		close;
 	}
 	mes "[Doom Prayer]";
-	mes "Aww, scary!";
-	mes "I really want to go home!";
+	mes "Aww, assustador!";
+	mes "I realmente querer to ir home!";
 	close;
 }
 
@@ -4309,28 +4309,28 @@ moro_vol,87,193,7	script	Doom Prayer#bl2	4_M_BELIEVER02,{
 	if (ep14_3_fall_bless < 12) {
 		mes "[Doom Prayer]";
 		mes "Destruction! Blessing!";
-		mes "We are the chosen ones!";
+		mes "Nos estamos o chosen ones!";
 		close;
 	}
 	mes "[Doom Prayer]";
 	mes "How terrifying!";
-	mes "I'm gonna run first chance I get!";
+	mes "Eu sou gonnum correr primeiro chance I pegar!";
 	close;
 }
 
 moro_vol,90,191,7	script	Doom Prayer#bl3	4_M_BELIEVER02,{
 	if (ep14_3_fall_bless < 12) {
 		mes "[Doom Prayer]";
-		mes "Destruction is a blessing!";
-		mes "Destruction is a blessing!";
+		mes "Destruction is um blessing!";
+		mes "Destruction is um blessing!";
 		close;
 	}
 	mes "[Doom Prayer]";
-	mes "I've relinquished everything I had to the Leader, but for what?!";
+	mes "Eu tenho relinquished tudo Eu tinhum to o Lider, mas fou what?!";
 	next;
 	mes "[Doom Prayer]";
 	mes "...";
-	mes "Maybe I didn't pray hard enough.";
+	mes "Talvez I nao pray dificil suficiente.";
 	close;
 }
 
@@ -4338,38 +4338,38 @@ moro_vol,93,189,7	script	Doom Prayer#bl4	4_M_BELIEVER02,{
 	if (ep14_3_fall_bless < 12) {
 		mes "[Doom Prayer]";
 		mes "Destruction! Blessing!";
-		mes "We are the chosen ones!";
+		mes "Nos estamos o chosen ones!";
 		close;
 	}
 	mes "[Doom Prayer]";
-	mes "Aww, scary!";
-	mes "I really want to go home!";
+	mes "Aww, assustador!";
+	mes "I realmente querer to ir home!";
 	close;
 }
 
 moro_vol,83,193,7	script	Doom Prayer#bl5	4_M_BELIEVER02,{
 	if (ep14_3_fall_bless < 12) {
 		mes "[Doom Prayer]";
-		mes "Destruction is a blessing!";
-		mes "Destruction is a blessing!";
+		mes "Destruction is um blessing!";
+		mes "Destruction is um blessing!";
 		close;
 	}
 	mes "[Doom Prayer]";
 	mes "*Wail*";
-	mes "Argh, I'm scared!";
+	mes "Argh, Eu sou assustado!";
 	close;
 }
 
 moro_vol,86,190,7	script	Doom Prayer#bl6	4_M_BELIEVER02,{
 	if (ep14_3_fall_bless < 12) {
 		mes "[Doom Prayer]";
-		mes "Destruction is a blessing!";
-		mes "Destruction is a blessing!";
+		mes "Destruction is um blessing!";
+		mes "Destruction is um blessing!";
 		close;
 	}
 	mes "[Doom Prayer]";
-	mes "Aww, scary!";
-	mes "I really want to go home!";
+	mes "Aww, assustador!";
+	mes "I realmente querer to ir home!";
 	close;
 }
 
@@ -4377,26 +4377,26 @@ moro_vol,89,188,7	script	Doom Prayer#bl7	4_M_BELIEVER02,{
 	if (ep14_3_fall_bless < 12) {
 		mes "[Doom Prayer]";
 		mes "Destruction! Blessing!";
-		mes "We are the chosen ones!";
+		mes "Nos estamos o chosen ones!";
 		close;
 	}
 	mes "[Doom Prayer]";
-	mes "Err, I'm scared!";
-	mes "I shouldn't have come!";
+	mes "Err, Eu sou assustado!";
+	mes "I nao deverium have vir!";
 	close;
 }
 
 moro_vol,93,185,7	script	Doom Prayer#bl8	4_M_BELIEVER02,{
 	if (ep14_3_fall_bless < 12) {
 		mes "[Doom Prayer]";
-		mes "Destruction is a blessing!";
-		mes "Destruction is a blessing!";
+		mes "Destruction is um blessing!";
+		mes "Destruction is um blessing!";
 		close;
 	}
 	mes "[Doom Prayer]";
-	mes "Aww, scary!";
-	mes "I really want to go home!";
-	mes "I hate the Leader!";
+	mes "Aww, assustador!";
+	mes "I realmente querer to ir home!";
+	mes "I odio o Lider!";
 	close;
 }
 
@@ -4404,25 +4404,25 @@ moro_vol,81,197,7	script	Doom Prayer#bl9	4_M_BELIEVER02,{
 	if (ep14_3_fall_bless < 12) {
 		mes "[Doom Prayer]";
 		mes "Destruction! Blessing!";
-		mes "We are the chosen ones!";
+		mes "Nos estamos o chosen ones!";
 		close;
 	}
 	mes "[Doom Prayer]";
-	mes "I can't believe the Leader anymore!";
-	mes "I'll probably make a better leader than him!";
+	mes "Eu nao consigo acreditar o Lider mais!";
+	mes "Eu vou provavelmente fazer um better lider que him!";
 	close;
 }
 
 moro_vol,84,201,5	script	Doom Prayer#bl0	4_M_BELIEVER02,{
 	if (ep14_3_fall_bless < 12) {
 		mes "[Doom Prayer]";
-		mes "Destruction is a blessing!";
-		mes "Destruction is a blessing!";
+		mes "Destruction is um blessing!";
+		mes "Destruction is um blessing!";
 		close;
 	}
 	mes "[Doom Prayer]";
-	mes "Aww, scary!";
-	mes "So scary, I'm gonna wet my pants!";
+	mes "Aww, assustador!";
+	mes "Entao assustador, Eu sou gonnum wet meu pants!";
 	close;
 }
 
@@ -4430,13 +4430,13 @@ moro_vol,97,187,5	script	Doom Prayer#bl11	4_M_BELIEVER02,{
 	if (ep14_3_fall_bless < 12) {
 		mes "[Doom Prayer]";
 		mes "Destruction! Blessing!";
-		mes "We are the chosen ones!";
+		mes "Nos estamos o chosen ones!";
 		close;
 	}
 	mes "[Doom Prayer]";
-	mes "This is all too terrifying...";
-	mes "Maybe my faith isn't deep enough...";
-	mes "I'd better offer more money!";
+	mes "Este is todos tambem terrifying...";
+	mes "Talvez meu faith nao e deep suficiente...";
+	mes "Eu gostarium de better offer mais dinheiro!";
 	close;
 }
 
@@ -4444,14 +4444,14 @@ moro_vol,82,189,7	script	Doom Prayer#bl12	4_M_BELIEVER02,{
 	if (ep14_3_fall_bless < 12) {
 		mes "[Doom Prayer]";
 		mes "Oh, God of Destruction!";
-		mes "Let your wrath fall unto this world!";
-		mes "Let me be the sole benefactor of your blessing!";
+		mes "Let seu wrath fall unto este mundo!";
+		mes "Deixe-me be o sole benefactou of seu blessing!";
 		close;
 	}
 	mes "[Doom Prayer]";
-	mes "This is all too terrifying...";
-	mes "Maybe my faith isn't deep enough...";
-	mes "I'd better offer more money!";
+	mes "Este is todos tambem terrifying...";
+	mes "Talvez meu faith nao e deep suficiente...";
+	mes "Eu gostarium de better offer mais dinheiro!";
 	close;
 }
 
@@ -4475,11 +4475,11 @@ moro_vol,5,1,3	script	#timemaster	CLEAR_NPC,{
 		end;
 	mes "Current server experience status: " + $ep143_3_expbuff;
 	mes "Currently elapsed: " + $ep143_3_exptime;
-	mes "What do you want to do?";
+	mes "O que voce quer to do?";
 	next;
-	switch( select( "Adjust the timer", "Pause timer", "Restart timer", "Initialization" ) ) {
+	switch( select( "Adjust o timer", "Pause timer", "Restart timer", "Initialization" ) ) {
 	case 1:
-		mes "Please enter the timer.";
+		mes "Pou favou entrar o timer.";
 		next;
 		input .@input,0,9999;
 		mes "Time is set to " + .@input;
@@ -4490,7 +4490,7 @@ moro_vol,5,1,3	script	#timemaster	CLEAR_NPC,{
 		stopnpctimer "Guardian Nidhogg#143nyd01";
 		close;
 	case 3:
-		mes "Restart the clock.";
+		mes "Restart o clock.";
 		initnpctimer "Guardian Nidhogg#143nyd01";
 		close;
 	case 4:
@@ -4507,8 +4507,8 @@ moro_vol,1,3,4	script	Perishing Blessing Assistant#bl	4_FROG,{
 		close;
 	}
 	mes "[Perishing Blessing Assistant]";
-	mes "What do you want?";
-	mes "Speak out loud!";
+	mes "O que you querer?";
+	mes "Falar out loud!";
 	next;
 	switch( select(
 		"Task initialization", "Flame feather 15", "Patrol log 20", "Before hunting",

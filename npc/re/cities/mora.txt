@@ -41,7 +41,7 @@ mora,160,123,3	script	Nemnem#p	517,{
 		close;
 	case 2:
 		mes "[Nemnem]";
-		mes "If not, never mind!";
+		mes "If not, deixa pra la!";
 		emotion ET_PROFUSELY_SWEAT, playerattached();
 		close;
 	}
@@ -159,7 +159,7 @@ mora,155,72,3	script	Visitor to Mora#podo2	513,{
 
 mora,184,169,5	script	Worker#mo1	516,{
 	mes "[Worker]";
-	mes "I heard that somebody made it out of the Labyrinth Forest alive.";
+	mes "Ouvi dizer que somebody made it out of the Labyrinth Forest alive.";
 	mes "Whoever it is, I want to meet this person myself.";
 	close;
 }
@@ -256,7 +256,7 @@ mora,113,185,4	script	Reading Raffle#ep14_1	516,{
 		next;
 		mes "[Reading Rafflesia]";
 		mes "but he also hoped to see";
-		mes "his beautiful sister, Seiren.";
+		mes "his bonito sister, Seiren.";
 		mes "Seiren knocked on Eremes's door";
 		mes "with his heart pounding.";
 		next;
@@ -277,7 +277,7 @@ mora,113,185,4	script	Reading Raffle#ep14_1	516,{
 		mes "No answer again. Is there nobody home?";
 		mes "He knew it was rude to do that,";
 		mes "but he decided to enter anyway";
-		mes "and wait for Eremes to come back home.";
+		mes "and wait for Eremes to volte home.";
 		next;
 		mes "[Reading Rafflesia]";
 		mes "Seiren opened the front door";
@@ -333,7 +333,7 @@ mora,99,65,6	script	Banana Rafflesia#ep14_1	516,{
 	mes "[Banana Rafflesia]";
 	mes "You want a banana?";
 	next;
-	switch(select("Yes, I do.:No, thanks.")) {
+	switch(select("Yes, I do.:Nao, obrigado.")) {
 	case 1:
 		mes "[Banana Rafflesia]";
 		mes "Take it if you can.";
@@ -380,7 +380,7 @@ mora,43,113,4	script	Wounded Rafflesia#ep14_1	517,{
 	mes "[Wounded Raffle]";
 	mes "Ugghh... What was it";
 	mes "that was in the bath... Arrrghh...";
-	mes "To attack suddenly like that... Be careful...";
+	mes "To attack suddenly like that... Tome cuidado...";
 	mes "Whatever it is in there, it's very aggressive.";
 	close;
 }
@@ -673,7 +673,7 @@ mora,140,186,3	script	Raffle Philosopher	517,{
 		mes "- Osho Rajneesh -";
 		break;
 	case 35:
-		mes "The best and most beautiful things in the world";
+		mes "The best and most bonito things in the world";
 		mes "cannot be seen or even touched -";
 		mes "they must be felt with the heart.";
 		mes "- Helen Keller -";
@@ -1093,7 +1093,7 @@ mora,134,183,1	script	Mora Villager#sleep9	522,{
 
 mora,43,127,3	script	Innkeeper#mora_inn	522,{
 	mes "[Innkeeper]";
-	mes "Oh~ looks like we have another adventurer.";
+	mes "Oh~ looks like we have another aventureiro.";
 	mes "Where are you from?";
 	next;
 	switch(select("Just save the game.:I'd like to get some rest.:The place I used to live is called...:How can I use the warehouse?")) {
@@ -1112,7 +1112,7 @@ mora,43,127,3	script	Innkeeper#mora_inn	522,{
 		mes "My my, I need some rest also.";
 		mes "The rate is 5000 zeny. Do you want a room?";
 		next;
-		switch(select("Yes:No")) {
+		switch(select("Yes:Nao")) {
 		case 1:
 			if (Zeny < 5000) {
 				mes "[Innkeeper]";
@@ -1145,13 +1145,13 @@ mora,43,127,3	script	Innkeeper#mora_inn	522,{
 			mes "I heard there's an old tower where horrible witches put Savages in a giant cauldron and cast evil spells on them, right?";
 			next;
 			mes "[Innkeeper]";
-			mes "What's worse is that whoever takes medicine made out of Savages will come back for more!";
+			mes "What's worse is that whoever takes medicine made out of Savages will volte for more!";
 			mes "And he will wander around looking for the tower, and eventually turn into an enormous Savage!";
 			emotion ET_STARE_ABOUT, playerattached();
 			next;
 		} else {
 			mes "[Innkeeper]";
-			mes "I heard that there are creeps there who won't get up at all even if it rains or snows, or their sweethearts or parents call them!";
+			mes "Ouvi dizer que there are creeps there who won't get up at all even if it rains or snows, or their sweethearts or parents call them!";
 			mes "And that black clouds hover over them all the time, causing a storm!";
 			next;
 		}

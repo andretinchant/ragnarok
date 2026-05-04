@@ -16,7 +16,7 @@
 gonryun,163,60,4	script	Kunlun Guide#gon	780,{
 	mes "[He Yuen Zhe]";
 	mes "Ni Hao!";
-	mes "Welcome to Kunlun~";
+	mes "Bem-vindo a Kunlun~";
 	mes "Take a walk around and experience";
 	mes "the ancient history and tradition";
 	mes "of our breath taking city.";

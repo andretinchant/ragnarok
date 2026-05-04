@@ -10,21 +10,21 @@
 prontera,154,187,4	script	Guide#01prontera::GuideProntera	105,{
 	cutin "prt_soldier",2;
 	mes "[Prontera Guide]";
-	mes "Welcome to ^8B4513Prontera^000000,";
-	mes "the beautiful capital of the";
-	mes "Rune-Midgarts Kingdom.";
-	mes "Do you need help navigating the city?";
+	mes "Bem-vindo a ^8B4513Prontera^000000,";
+	mes "a bela capital do";
+	mes "Reino de Rune-Midgarts.";
+	mes "Precisa de ajuda para navegar pela cidade?";
 	F_Navi("[Prontera Guide]");
 	next;
-	set .@str$,"Would you like to check any other locations?";
+	set .@str$,"Gostaria de verificar outros locais?";
 	while (1) {
-		switch(select("[ Main Facilities ]:[ Merchants & Helpers ]:Remove Marks from Mini-Map:Cancel")) {
+		switch(select("[ Main Facilities ]:[ Comerciantes e Ajudantes ]:Remover Marcas do Mini-Mapa:Cancelar")) {
 		case 1:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ Tool Shop ]:[ Weapon & Armor Shop ]:[ Forge ]:[ Sanctuary ]:[ Chivalry Office ]:[ Inn ]:[ Tavern ]:[ Library ]:[ Prontera Castle ]:[ Job Agency ]:[ City Hall ]:Previous Menu")) {
+				switch(select("[ Tool Shop ]:[ Weapon & Armor Shop ]:[ Forge ]:[ Sanctuary ]:[ Chivalry Office ]:[ Inn ]:[ Tavern ]:[ Library ]:[ Prontera Castle ]:[ Job Agency ]:[ City Hall ]:Menu Anterior")) {
 				case 1:
-					callsub L_Mark, F_Navi("Tool Shop","prontera,134,221","^B9062F");
+					callsub L_Mark, F_Navi("Loja de Ferramentas","prontera,134,221","^B9062F");
 					mes .@str$;
 					viewpoint 1,134,221,0,0xFF0000;
 					next;
@@ -46,7 +46,7 @@ prontera,154,187,4	script	Guide#01prontera::GuideProntera	105,{
 					mes "The "+F_Navi("Prontera Sanctuary","prontera,236,316","^006400")+" is";
 					mes "where you can change your job to Acolyte,";
 					mes "its located in the far northeast of Prontera.";
-					mes "Let me mark the location on your mini-map.";
+					mes "Deixe-me marcar the location no seu mini-mapa.";
 					mes .@str$;
 					viewpoint 1,236,316,3,0xAAFF00;
 					next;
@@ -91,7 +91,7 @@ prontera,154,187,4	script	Guide#01prontera::GuideProntera	105,{
 					mes "The "+F_Navi("Prontera Castle","prontera,156,360","^FF5400")+" is north from here,";
 					mes "and its rear gate is connected to";
 					mes "the northern Prontera Fields.";
-					mes "Let me mark the castle on your mini-map.";
+					mes "Deixe-me marcar the castle no seu mini-mapa.";
 					mes .@str$;
 					viewpoint 1,156,360,10,0xFFB400;
 					next;
@@ -104,8 +104,8 @@ prontera,154,187,4	script	Guide#01prontera::GuideProntera	105,{
 					break;
 				case 11:
 					mes "[Prontera Guide]";
-					mes "Let me mark the location of "+F_Navi("City Hall","prontera,75,91","^7F3300");
-					mes "on your mini-map.";
+					mes "Deixe-me marcar the location of "+F_Navi("City Hall","prontera,75,91","^7F3300");
+					mes "no seu mini-mapa.";
 					mes "There's a hairstylist";
 					mes "there that can change your hair color.";
 					mes .@str$;
@@ -121,7 +121,7 @@ prontera,154,187,4	script	Guide#01prontera::GuideProntera	105,{
 		case 2:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ Eden Teleport Officer ]:[ Peco Peco Breeder ]:[ Riding Creature Master ]:[ Magic Gear Master ]:[ Peco Peco Remover ]:[ Trading Merchants ]:[ Mercenary Guildsman ]:[ Hypnotist ]:[ Kafra Employee ]:[ Leablem ]:[ Apprentice Craftsman ]:[ Pet Groomer ]:Previous Menu")) {
+				switch(select("[ Eden Teleport Officer ]:[ Peco Peco Breeder ]:[ Riding Creature Master ]:[ Magic Gear Master ]:[ Peco Peco Remover ]:[ Trading Merchants ]:[ Mercenary Guildsman ]:[ Hypnotist ]:[ Kafra Employee ]:[ Leablem ]:[ Apprentice Craftsman ]:[ Pet Groomer ]:Menu Anterior")) {
 				case 1:
 					callsub L_Mark, F_Navi("Eden Teleport Officer","prontera,124,76","^800080"),1;
 					mes .@str$;
@@ -141,8 +141,8 @@ prontera,154,187,4	script	Guide#01prontera::GuideProntera	105,{
 					mes "[Prontera Guide]";
 					mes "The "+F_Navi("Riding Creature Master","prontera,131,213","^FF5400")+" provides services for";
 					mes "^FF5400Rune Knights^000000 and ^FF5400Royal Guards^000000.";
-					mes "Let me mark his location";
-					mes "on your mini-map.";
+					mes "Deixe-me marcar his location";
+					mes "no seu mini-mapa.";
 					mes .@str$;
 					viewpoint 1,131,213,16,0xFFB400;
 					next;
@@ -152,8 +152,8 @@ prontera,154,187,4	script	Guide#01prontera::GuideProntera	105,{
 					mes "The "+F_Navi("Magic Gear Master","prontera,163,178","^006400");
 					mes "provides services for";
 					mes "^006400Mechanics^000000.";
-					mes "Let me mark his location";
-					mes "on your mini-map.";
+					mes "Deixe-me marcar his location";
+					mes "no seu mini-mapa.";
 					mes .@str$;
 					viewpoint 1,163,178,17,0xAAFF00;
 					next;
@@ -172,7 +172,7 @@ prontera,154,187,4	script	Guide#01prontera::GuideProntera	105,{
 					mes "[Prontera Guide]";
 					mes "The Rune Merchant, Amatsu Trader, and other";
 					mes F_Navi("Trading Merchants","prontera,178,244","^800080")+" have been marked";
-					mes "on your mini-map.";
+					mes "no seu mini-mapa.";
 					mes .@str$;
 					viewpoint 1,178,244,19,0xDA70D6;
 					next;
@@ -189,7 +189,7 @@ prontera,154,187,4	script	Guide#01prontera::GuideProntera	105,{
 					mes "helps beginner adventurers";
 					mes "to reset their skills.";
 					mes "He has moved to Izlude, Prontera's satellite town to the southeast.";
-					mes "Would you like to check any other locations?";
+					mes "Gostaria de verificar outros locais?";
 					mes .@str$;
 					//viewpoint 1,146,232,21,0xFFB400;
 					next;
@@ -281,11 +281,11 @@ prontera,154,187,4	script	Guide#01prontera::GuideProntera	105,{
 L_Mark:
 	mes "[Prontera Guide]";
 	if (getarg(1,0)) {
-		mes "Let me mark the location of the";
+		mes "Deixe-me marcar the location of the";
 		mes getarg(0);
 	} else
-		mes "Let me mark the location of the "+getarg(0);
-	mes "on your mini-map.";
+		mes "Deixe-me marcar the location of the "+getarg(0);
+	mes "no seu mini-mapa.";
 	return;
 }
 prontera,282,208,2	duplicate(GuideProntera)	Guide#02prontera	105

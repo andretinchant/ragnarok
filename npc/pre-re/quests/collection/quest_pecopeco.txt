@@ -18,39 +18,39 @@ moc_fild02,74,329,3	script	Gregor#PecoPeco_Hunt	97,{
 	if (checkquest(60101) != -1) {
 		if (checkquest(60101,HUNTING) != 2 ) {
 			mes "[Gregor]";
-			mes "Have you finished hunting the 50 Peco Pecos?";
+			mes "Voce ja terminou de cacar os 50 Peco Pecos?";
 			next;
-			switch(select("Yes:No:I want to quit")) {
+			switch(select("Sim:Nao:Quero desistir")) {
 			case 1:
 				mes "[Gregor]";
-				mes "Hmm, I don't think you've hunted 50 yet...";
+				mes "Hmm, acho que voce ainda nao cacou 50 ainda...";
 				close;
 			case 2:
 				mes "[Gregor]";
-				mes "Please hurry and kill 50 of those tasty err pesky Peco Pecos.";
+				mes "Por favor, se apresse e mate 50 daqueles saborosos, digo, chatos Peco Pecos.";
 				close;
 			case 3:
 				mes "[Gregor]";
-				mes "Are you sure that you want to stop hunting?";
-				mes "Any progress that you've made will be erased";
+				mes "Tem certeza que quer parar de cacar?";
+				mes "Todo o progresso que voce fez sera apagado";
 				next;
-				switch(select("Yes:No")) {
+				switch(select("Sim:Nao")) {
 				case 1:
 					mes "[Gregor]";
-					mes "Ok then, well come back here if you change your mind.";
+					mes "Tudo bem entao, volte aqui se mudar de ideia.";
 					erasequest 60101;
 					close;
 				case 2:
 					mes "[Gregor]";
-					mes "Please hurry and kill 50 of those tasty err pesky Peco Pecos.";
+					mes "Por favor, se apresse e mate 50 daqueles saborosos, digo, chatos Peco Pecos.";
 					close;
 				}
 			}
 		}
 		else {
 			mes "[Gregor]";
-			mes "Oh thank you so much!";
-			mes "I think that I can rest easily now.";
+			mes "Oh, muito obrigado!";
+			mes "Acho que posso descansar tranquilo agora.";
 			getexp 4000,2000;
 			erasequest 60101;
 			close;
@@ -59,39 +59,39 @@ moc_fild02,74,329,3	script	Gregor#PecoPeco_Hunt	97,{
 	if (checkquest(60102) != -1) {
 		if (checkquest(60102,HUNTING) != 2 ) {
 			mes "[Gregor]";
-			mes "Have you finished hunting the 50 Peco Pecos?";
+			mes "Voce ja terminou de cacar os 50 Peco Pecos?";
 			next;
-			switch(select("Yes:No:I want to quit")) {
+			switch(select("Sim:Nao:Quero desistir")) {
 			case 1:
 				mes "[Gregor]";
-				mes "Hmm, I don't think you've hunted 100 yet...";
+				mes "Hmm, acho que voce ainda nao cacou 100 ainda...";
 				close;
 			case 2:
 				mes "[Gregor]";
-				mes "Please hurry and kill 100 of those tasty err pesky Peco Pecos.";
+				mes "Por favor, se apresse e mate 100 daqueles saborosos, digo, chatos Peco Pecos.";
 				close;
 			case 3:
 				mes "[Gregor]";
-				mes "Are you sure that you want to stop hunting?";
-				mes "Any progress that you've made will be erased";
+				mes "Tem certeza que quer parar de cacar?";
+				mes "Todo o progresso que voce fez sera apagado";
 				next;
-				switch(select("Yes:No")) {
+				switch(select("Sim:Nao")) {
 				case 1:
 					mes "[Gregor]";
-					mes "Ok then, well come back here if you change your mind.";
+					mes "Tudo bem entao, volte aqui se mudar de ideia.";
 					erasequest 60102;
 					close;
 				case 2:
 					mes "[Gregor]";
-					mes "Please hurry and kill 100 of those tasty err pesky Peco Pecos.";
+					mes "Por favor, se apresse e mate 100 daqueles saborosos, digo, chatos Peco Pecos.";
 					close;
 				}
 			}
 		}
 		else {
 			mes "[Gregor]";
-			mes "Oh thank you so much!";
-			mes "I think that I can rest easily now.";
+			mes "Oh, muito obrigado!";
+			mes "Acho que posso descansar tranquilo agora.";
 			getexp 4000,2000;
 			getexp 4000,2000;
 			erasequest 60102;
@@ -101,39 +101,39 @@ moc_fild02,74,329,3	script	Gregor#PecoPeco_Hunt	97,{
 	if (checkquest(60103) != -1) {
 		if (checkquest(60103,HUNTING) != 2 ) {
 			mes "[Gregor]";
-			mes "Have you finished hunting the 150 Peco Pecos?";
+			mes "Voce ja terminou de cacar os 150 Peco Pecos?";
 			next;
-			switch(select("Yes:No:I want to quit")) {
+			switch(select("Sim:Nao:Quero desistir")) {
 			case 1:
 				mes "[Gregor]";
-				mes "Hmm, I don't think you've hunted 150 yet...";
+				mes "Hmm, acho que voce ainda nao cacou 150 ainda...";
 				close;
 			case 2:
 				mes "[Gregor]";
-				mes "Please hurry and kill 150 of those tasty err pesky Peco Pecos.";
+				mes "Por favor, se apresse e mate 150 daqueles saborosos, digo, chatos Peco Pecos.";
 				close;
 			case 3:
 				mes "[Gregor]";
-				mes "Are you sure that you want to stop hunting?";
-				mes "Any progress that you've made will be erased";
+				mes "Tem certeza que quer parar de cacar?";
+				mes "Todo o progresso que voce fez sera apagado";
 				next;
-				switch(select("Yes:No")) {
+				switch(select("Sim:Nao")) {
 				case 1:
 					mes "[Gregor]";
-					mes "Ok then, well come back here if you change your mind.";
+					mes "Tudo bem entao, volte aqui se mudar de ideia.";
 					erasequest 60103;
 					close;
 				case 2:
 					mes "[Gregor]";
-					mes "Please hurry and kill 150 of those tasty err pesky Peco Pecos.";
+					mes "Por favor, se apresse e mate 150 daqueles saborosos, digo, chatos Peco Pecos.";
 					close;
 				}
 			}
 		}
 		else {
 			mes "[Gregor]";
-			mes "Oh thank you so much!";
-			mes "I think that I can rest easily now.";
+			mes "Oh, muito obrigado!";
+			mes "Acho que posso descansar tranquilo agora.";
 			getexp 4000,2000;
 			getexp 4000,2000;
 			getexp 4000,2000;
@@ -146,106 +146,106 @@ moc_fild02,74,329,3	script	Gregor#PecoPeco_Hunt	97,{
 		//for maximum level
 		if (BaseLevel < 31) {
 			mes "[Gregor]";
-			mes "Peco Pecos are fascinating.";
-			mes "I am still doing my, uh, research...";
-			mes "But now it is of a different nature.";
+			mes "Peco Pecos sao fascinantes.";
+			mes "Ainda estou fazendo minha, uh, pesquisa...";
+			mes "Mas agora e de uma natureza diferente.";
 			next;
 			mes "[Gregor]";
-			mes "You see I've been uh, ''researching''";
-			mes "these animals by collecting their";
-			mes "Bill of Birds but lately they seem";
-			mes "to have become hostile towards me.";
+			mes "Sabe, eu tenho, uh, ''pesquisado''";
+			mes "esses animais coletando seus";
+			mes "Bill of Birds mas ultimamente eles parecem";
+			mes "terem se tornado hostis comigo.";
 			next;
 			mes "[Gregor]";
-			mes "Can you do me a favor please?";
+			mes "Voce pode me fazer um favor, por favor?";
 			next;
 			switch(select("What kind of favor?:No")) {
 			case 1:
 				mes "[Gregor]";
-				mes "I am so afraid that these Peco Pecos will hurt me for my, uh, researching activities.";
+				mes "Tenho tanto medo que esses Peco Pecos me machuquem por minhas, uh, atividades de pesquisa.";
 				next;
 				mes "[Gregor]";
-				mes "Can you help protect me by killing them?";
-				mes "I think I'll feel safer...";
-				mes "Please...";
+				mes "Voce pode me proteger matando eles?";
+				mes "Acho que vou me sentir mais seguro...";
+				mes "Por favor...";
 				next;
-				switch(select("Gather Items:Hunt Peco Pecos:Cancel")) {
+				switch(select("Coletar Itens:Cacar Peco Pecos:Cancelar")) {
 				case 1:
 					// Item turn in
 					mes "[Gregor]";
-					mes "I need some ^FF0000Bill of Birds^000000 for my, uh, research...";
+					mes "Eu preciso de alguns ^FF0000Bill of Birds^000000 para minha, uh, pesquisa...";
 					next;
 					switch(select("I have some Bill of Birds:What did you need?")) {
 					case 1:
 						if (countitem(925) > 24) {
 							mes "[Gregor]";
-							mes "Thank you so much.";
+							mes "Muito obrigado.";
 							delitem 925,25; //Bill_Of_Birds
 							getexp 4000,2000;
 							next;
 							mes "[Gregor]";
-							mes "This is gonna be delicious!";
+							mes "Isso vai ser delicioso!";
 							close;
 						}
 						else {
 							mes "[Gregor]";
-							mes "It doesn't look like you have enough.";
+							mes "Parece que voce nao tem o suficiente.";
 							next;
 							mes "[Gregor]";
-							mes "Can you help me out and bring me ^FF000025 Bill of Birds^000000?";
+							mes "Voce pode me ajudar e trazer ^FF000025 Bill of Birds^000000?";
 							close;
 						}
 					case 2:
 						mes "[Gregor]";
-						mes "Can you help me out and bring me ^FF000025 Bill of Birds^000000?";
+						mes "Voce pode me ajudar e trazer ^FF000025 Bill of Birds^000000?";
 						close;
 					}
 				case 2:
 					// Kill Count Quest
 					mes "[Gregor]";
-					mes "Ah, ok I think you can help me out by hunting some Peco Pecos.";
-					mes "How many would you like to hunt?";
+					mes "Ah, ok, acho que voce pode me ajudar cacando alguns Peco Pecos.";
+					mes "Quantos voce gostaria de cacar?";
 					next;
 					switch(select("50 Peco Pecos:100 Peco Pecos:150 Peco Pecos")) {
 					case 1:
 						mes "[Gregor]";
-						mes "Come back when you've finished your task and I will give you a small reward.";
+						mes "Volte quando terminar sua tarefa e eu te darei uma pequena recompensa.";
 						setquest 60101;
 						close;
 					case 2:
 						mes "[Gregor]";
-						mes "Come back when you've finished your task and I will give you a small reward.";
+						mes "Volte quando terminar sua tarefa e eu te darei uma pequena recompensa.";
 						setquest 60102;
 						close;
 					case 3:
 						mes "[Gregor]";
-						mes "Come back when you've finished your task and I will give you a small reward.";
+						mes "Volte quando terminar sua tarefa e eu te darei uma pequena recompensa.";
 						setquest 60103;
 						close;
 					}
 				case 3:
 					mes "[Gregor]";
-					mes "If you change your mind, please come back.";
+					mes "Se mudar de ideia, por favor volte.";
 					close;
 				}
 			case 2:
 				mes "[Gregor]";
-				mes "If you change your mind, please come back.";
+				mes "Se mudar de ideia, por favor volte.";
 				close;
 			}
 		}
 		else {
 			mes "[Gregor]";
-			mes "Hmmm... you seem to be too strong to be fighting over here.";
+			mes "Hmmm... voce parece ser forte demais para estar lutando por aqui.";
 			close;
 		}
 	}
 	else {
 		mes "[Gregor]";
-		mes "Hi there.";
+		mes "Oi.";
 		next;
 		mes "[Gregor]";
-		mes "Those picky's over there seem to be about your speed.";
+		mes "Aqueles Pickys ali parecem ser do seu nivel.";
 		close;
 	}
 }

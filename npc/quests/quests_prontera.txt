@@ -170,7 +170,7 @@ prt_in,38,108,4	script	Teacher	53,{
 		mes "Oh...";
 		mes "Those Flowers in your hand are...";
 		next;
-		switch(select("Show Flowers:Present Flowers:Cancel")) {
+		switch(select("Show Flowers:Present Flowers:Cancelar")) {
 		case 1:
 			mes "[Teacher]";
 			mes "Ah...";
@@ -3054,7 +3054,7 @@ prt_church,23,89,3	script	Father Biscuss#tomb	60,{
 	mes "Are you ready to";
 	mes "head back upstairs?";
 	next;
-	if (select("Yes:No") == 1) {
+	if (select("Sim:Nao") == 1) {
 		mes "[Father Biscuss]";
 		mes "Please follow me.";
 		next;

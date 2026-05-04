@@ -49,7 +49,7 @@ comodo,171,137,1	script	Haith#um	92,{
 	mes "................";
 	next;
 	mes "[La Ed]";
-	mes "By the way...do you think he";
+	mes "A proposito...do you think he";
 	mes "would tell us about such a";
 	mes "great treasure so easily?";
 	emotion ET_SCRATCH;
@@ -84,7 +84,7 @@ comodo,171,137,1	script	Haith#um	92,{
 			next;
 			mes "[La Ed]";
 			mes "Okay, not too long ago, a famous";
-			mes "adventurer named Niels came back from his travels.";
+			mes "aventureiro named Niels came back from his travels.";
 			next;
 			mes "[Haith]";
 			mes "*Whispers*";
@@ -93,7 +93,7 @@ comodo,171,137,1	script	Haith#um	92,{
 			mes "[La Ed]";
 			mes "Also, he came back in the middle";
 			mes "of the night without telling";
-			mes "anyone. So, of course he's got";
+			mes "anyone. So, claro he's got";
 			mes "some secret, don't you think?";
 			next;
 			mes "[Haith]";
@@ -124,7 +124,7 @@ comodo,171,137,1	script	Haith#um	92,{
 			mes "we expect that you pay us back!";
 			next;
 			mes "[La Ed, Haith]";
-			mes "Good luck!";
+			mes "Boa sorte!";
 			close;
 		}
 		mes "[La Ed]";
@@ -219,7 +219,7 @@ cmd_in01,164,115,1	script	Niels#um	731,{
 	mes "surprise.";
 	next;
 	mes "[Niels]";
-	mes "If you're a real adventurer,";
+	mes "If you're a real aventureiro,";
 	mes "I expect you to scream at the";
 	mes "top of your lungs...";
 	next;
@@ -234,7 +234,7 @@ cmd_in01,164,115,1	script	Niels#um	731,{
 	mes "out! Will this place be a totally";
 	mes "new world, or will it be a trap";
 	mes "to hell?! Go forth, meet your";
-	mes "destiny, adventurer!";
+	mes "destiny, aventureiro!";
 	close;
 }
 
@@ -251,7 +251,7 @@ umbala,70,106,3	script	Utan Kid#um	781,{
 		next;
 		mes "[Haatan]";
 		mes "...*Sigh*";
-		mes "I am sorry, but I cannot play with";
+		mes "Sinto muito, but I cannot play with";
 		mes "you right now. My parent's house";
 		mes "was struck by lightning yesterday";
 		mes "and it burned down our roof...";
@@ -273,7 +273,7 @@ umbala,70,106,3	script	Utan Kid#um	781,{
 			mes "[Haatan]";
 			mes "Whoaaaa!!";
 			mes "You the man~!";
-			mes "Thank you so much, yay~!";
+			mes "Obrigado so much, yay~!";
 			if (Zeny > 1000) {
 				set Zeny, Zeny-1000;
 				if (checkweight(517,1)) {
@@ -293,7 +293,7 @@ umbala,70,106,3	script	Utan Kid#um	781,{
 			}
 			next;
 			mes "[Haatan]";
-			mes "Thank you so much!";
+			mes "Obrigado so much!";
 			emotion ET_SMILE;
 			close;
 		}
@@ -489,9 +489,9 @@ umbala,177,153,3	script	Pasto#um	97,{
 	mes "of facial expression.";
 	next;
 	mes "[Pasto]";
-	mes "Of course, there are some";
-	mes "similarities. However, you might";
-	mes "want to be careful about certain";
+	mes "Claro, there are some";
+	mes "similarities. Porem, you might";
+	mes "want to tome cuidado about certain";
 	mes "issues.";
 	next;
 	mes "[Pasto]";
@@ -567,7 +567,7 @@ umbala,80,146,4	script	Yuwooki#um	753,{
 umbala,140,157,6	script	Utan Man#1	785,{
 	if (event_umbala >= 3) {
 		mes "[Jertan]";
-		mes "Bungee jumping can be dangerous,";
+		mes "Bungee jumping can be perigoso,";
 		mes "and you can risk your life doing";
 		mes "it. We Utans have consider";
 		mes "bungee jumping an important";
@@ -840,7 +840,7 @@ umbala,194,104,4	script	Utan Kid#2	787,{
 			close;
 		}
 		mes "[Boorkatan]";
-		mes "Er, I see...";
+		mes "Er, Entendo...";
 		mes "As part of the ceremony of";
 		mes "adulthood, all Utans have to do";
 		mes "a bungee jump. When I grow up,";
@@ -900,7 +900,7 @@ umbala,139,205,4	script	Utan Man#5	785,{
 		mes "[Jooltan]";
 		mes "It's been a long time since I last";
 		mes "saw a Rune-Midgartsian~!";
-		mes "Welcome, stranger.";
+		mes "Bem-vindo, stranger.";
 		next;
 		mes "[Jooltan]";
 		mes "We Utans use this place for";
@@ -919,7 +919,7 @@ umbala,139,205,4	script	Utan Man#5	785,{
 		next;
 		mes "[Jooltan]";
 		mes "So...";
-		mes "Be careful when you walk around,";
+		mes "Tome cuidado when you walk around,";
 		mes "You don't want to fall off.";
 		mes "And if you want to try a bungee";
 		mes "jump, you should get yourself ready.";

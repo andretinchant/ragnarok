@@ -18,38 +18,38 @@ um_fild01,34,281,5	script	Lilla#Dryad_Hunt	724,{
 	if (checkquest(60131) != -1) {
 		if (checkquest(60131,HUNTING) != 2 ) {
 			mes "[Lilla]";
-			mes "Have you finished hunting the 50 Dryads?";
+			mes "Voce ja terminou de cacar os 50 Dryads?";
 			next;
-			switch(select("Yes:No:I want to quit")) {
+			switch(select("Sim:Nao:Quero desistir")) {
 			case 1:
 				mes "[Lilla]";
-				mes "Hmm, I don't think you've hunted 50 yet...";
+				mes "Hmm, acho que voce ainda nao cacou 50 ainda...";
 				close;
 			case 2:
 				mes "[Lilla]";
-				mes "Remember, I need help hunting Dryads so go and hunt 50 of them.";
+				mes "Lembre-se, preciso de ajuda cacando Dryads entao va e cace 50 deles.";
 				close;
 			case 3:
 				mes "[Lilla]";
-				mes "Are you sure that you want to stop hunting?";
-				mes "Any progress that you've made will be erased";
+				mes "Tem certeza que quer parar de cacar?";
+				mes "Todo o progresso que voce fez sera apagado";
 				next;
-				switch(select("Yes:No")) {
+				switch(select("Sim:Nao")) {
 				case 1:
 					mes "[Lilla]";
-					mes "Ok then, well come back here if you change your mind.";
+					mes "Tudo bem entao, volte aqui se mudar de ideia.";
 					erasequest 60131;
 					close;
 				case 2:
 					mes "[Lilla]";
-					mes "Please kill 50 Dryads.";
+					mes "Por favor, mate 50 Dryads.";
 					close;
 				}
 			}
 		}
 		else {
 			mes "[Lilla]";
-			mes "Amazing, you did that with speed.";
+			mes "Incrivel, voce fez isso rapidamente.";
 			getexp 262485,141835;
 			erasequest 60131;
 			close;
@@ -58,38 +58,38 @@ um_fild01,34,281,5	script	Lilla#Dryad_Hunt	724,{
 	if (checkquest(60132) != -1) {
 		if (checkquest(60132,HUNTING) != 2 ) {
 			mes "[Lilla]";
-			mes "Have you finished hunting the 50 Dryads?";
+			mes "Voce ja terminou de cacar os 50 Dryads?";
 			next;
-			switch(select("Yes:No:I want to quit")) {
+			switch(select("Sim:Nao:Quero desistir")) {
 			case 1:
 				mes "[Lilla]";
-				mes "Hmm, I don't think you've hunted 100 yet...";
+				mes "Hmm, acho que voce ainda nao cacou 100 ainda...";
 				close;
 			case 2:
 				mes "[Lilla]";
-				mes "Remember, I need help hunting Dryads so go and hunt 100 of them.";
+				mes "Lembre-se, preciso de ajuda cacando Dryads entao va e cace 100 deles.";
 				close;
 			case 3:
 				mes "[Lilla]";
-				mes "Are you sure that you want to stop hunting?";
-				mes "Any progress that you've made will be erased";
+				mes "Tem certeza que quer parar de cacar?";
+				mes "Todo o progresso que voce fez sera apagado";
 				next;
-				switch(select("Yes:No")) {
+				switch(select("Sim:Nao")) {
 				case 1:
 					mes "[Lilla]";
-					mes "Ok then, well come back here if you change your mind.";
+					mes "Tudo bem entao, volte aqui se mudar de ideia.";
 					erasequest 60132;
 					close;
 				case 2:
 					mes "[Lilla]";
-					mes "Please kill 100 Dryads.";
+					mes "Por favor, mate 100 Dryads.";
 					close;
 				}
 			}
 		}
 		else {
 			mes "[Lilla]";
-			mes "Amazing, you did that with speed.";
+			mes "Incrivel, voce fez isso rapidamente.";
 			getexp 262485,141835;
 			getexp 262485,141835;
 			erasequest 60132;
@@ -99,38 +99,38 @@ um_fild01,34,281,5	script	Lilla#Dryad_Hunt	724,{
 	if (checkquest(60133) != -1) {
 		if (checkquest(60133,HUNTING) != 2 ) {
 			mes "[Lilla]";
-			mes "Have you finished hunting the 150 Dryads?";
+			mes "Voce ja terminou de cacar os 150 Dryads?";
 			next;
-			switch(select("Yes:No:I want to quit")) {
+			switch(select("Sim:Nao:Quero desistir")) {
 			case 1:
 				mes "[Lilla]";
-				mes "Hmm, I don't think you've hunted 150 yet...";
+				mes "Hmm, acho que voce ainda nao cacou 150 ainda...";
 				close;
 			case 2:
 				mes "[Lilla]";
-				mes "Remember, I need help hunting Dryads so go and hunt 150 of them.";
+				mes "Lembre-se, preciso de ajuda cacando Dryads entao va e cace 150 deles.";
 				close;
 			case 3:
 				mes "[Lilla]";
-				mes "Are you sure that you want to stop hunting?";
-				mes "Any progress that you've made will be erased";
+				mes "Tem certeza que quer parar de cacar?";
+				mes "Todo o progresso que voce fez sera apagado";
 				next;
-				switch(select("Yes:No")) {
+				switch(select("Sim:Nao")) {
 				case 1:
 					mes "[Lilla]";
-					mes "Ok then, well come back here if you change your mind.";
+					mes "Tudo bem entao, volte aqui se mudar de ideia.";
 					erasequest 60133;
 					close;
 				case 2:
 					mes "[Lilla]";
-					mes "Please kill 150 Dryads.";
+					mes "Por favor, mate 150 Dryads.";
 					close;
 				}
 			}
 		}
 		else {
 			mes "[Lilla]";
-			mes "Amazing, you did that with speed.";
+			mes "Incrivel, voce fez isso rapidamente.";
 			getexp 262485,141835;
 			getexp 262485,141835;
 			getexp 262485,141835;
@@ -143,41 +143,41 @@ um_fild01,34,281,5	script	Lilla#Dryad_Hunt	724,{
 		//for maximum level
 		if (BaseLevel < 86) {
 			mes "[Lilla]";
-			mes "Why hello!";
-			mes "You look like someone who is willing to help a lil thing like myself out.";
+			mes "Ora, ola!";
+			mes "Voce parece alguem disposto a ajudar uma coisinha como eu.";
 			next;
-			switch(select("Sure:No")) {
+			switch(select("Claro:Nao")) {
 			case 1:
 				mes "[Lilla]";
-				mes "Really?!";
-				mes "That's great!";
+				mes "Serio?!";
+				mes "Que otimo!";
 				next;
-				switch(select("Gather Items:Hunt Dryads:Cancel")) {
+				switch(select("Coletar Itens:Cacar Dryads:Cancelar")) {
 				case 1:
 					// Item turn in
 					mes "[Lilla]";
-					mes "I really need to gather ^00CE0050 Sharp Leafs^000000 for my garden tea party.";
-					mes "Do you have any?";
+					mes "Eu realmente preciso juntar ^00CE0050 Sharp Leafs^000000 para minha festa do cha no jardim.";
+					mes "Voce tem algum?";
 					next;
 					switch(select("I have some Sharp Leafs:What did you need?")) {
 					case 1:
 						/*
 						if (checkweight(504,10) == 0) {
 							mes "[Lilla]";
-							mes "Hey, it looks like that the weight on";
-							mes "your back will crush you. Come back";
-							mes "after you have lost some weight.";
+							mes "Ei, parece que o peso nas";
+							mes "suas costas vai te esmagar. Volte";
+							mes "depois de perder um pouco de peso.";
 							close;
 						}
 						*/
 						if (countitem(7100) > 49) {
 							mes "[Lilla]";
-							mes "Hey, your a sweet little thing.";
-							mes "Thanks so much for helping me!";
+							mes "Ei, voce e uma coisinha doce.";
+							mes "Muito obrigado por me ajudar!";
 							next;
 							mes "[Lilla]";
-							mes "Oh, I almost forgot. I have something for you ^_^";
-							mes "Thank you so much again for your help.";
+							mes "Oh, quase esqueci. Tenho algo para voce ^_^";
+							mes "Muito obrigado novamente pela sua ajuda.";
 							delitem 7100,50; //Sharp_Leaf
 							getexp 262485,141835;
 							//getitem 504,10; //White_Potion
@@ -185,58 +185,58 @@ um_fild01,34,281,5	script	Lilla#Dryad_Hunt	724,{
 						}
 						else {
 							mes "[Lilla]";
-							mes "Why, I may look cute and silly but please don't play games with me.";
+							mes "Olha, eu posso parecer fofo e bobo, mas por favor nao brinque comigo.";
 							close;
 						}
 					case 2:
 						mes "[Lilla]";
-						mes "I need ^00CE0050 Sharp Leafs^000000.";
+						mes "Eu preciso de ^00CE0050 Sharp Leafs^000000.";
 						close;
 					}
 				case 2:
 					// Kill Count Quest
 					mes "[Lilla]";
-					mes "Ah, ok I think you can help me out by hunting some Dryads.";
-					mes "How many would you like to hunt?";
+					mes "Ah, ok, acho que voce pode me ajudar cacando alguns Dryads.";
+					mes "Quantos voce gostaria de cacar?";
 					next;
 					switch(select("50 Dryads:100 Dryads:150 Dryads")) {
 					case 1:
 						mes "[Lilla]";
-						mes "Come back when you've finished your task and I will give you a small reward.";
+						mes "Volte quando terminar sua tarefa e eu te darei uma pequena recompensa.";
 						setquest 60131;
 						close;
 					case 2:
 						mes "[Lilla]";
-						mes "Come back when you've finished your task and I will give you a small reward.";
+						mes "Volte quando terminar sua tarefa e eu te darei uma pequena recompensa.";
 						setquest 60132;
 						close;
 					case 3:
 						mes "[Lilla]";
-						mes "Come back when you've finished your task and I will give you a small reward.";
+						mes "Volte quando terminar sua tarefa e eu te darei uma pequena recompensa.";
 						setquest 60133;
 						close;
 					}
 				case 3:
 					mes "[Lilla]";
-					mes "If you change your mind, please come back.";
+					mes "Se mudar de ideia, por favor volte.";
 					close;
 				}
 			case 2:
 				mes "[Lilla]";
-				mes "If you change your mind, please come back.";
+				mes "Se mudar de ideia, por favor volte.";
 				close;
 			}
 		}
 		else {
 			mes "[Lilla]";
-			mes "Sorry but you are a little too old and scary to talk to!";
+			mes "Desculpe, mas voce e um pouco velho e assustador demais para conversar!";
 			close;
 		}
 	}
 	else {
 		mes "[Lilla]";
-		mes "You are way too tiny to be helping me.";
-		mes "Thank you for your offer though.";
+		mes "Voce e muito pequeno para me ajudar.";
+		mes "Obrigado pela oferta mesmo assim.";
 		close;
 	}
 }

@@ -20,7 +20,7 @@
 dicastes01,194,159,5	script	Excited Galten#a	492,{
 	mes "[Excited Galten]";
 	if (isequipped(2782)) {
-		mes "I can't get beautiful";
+		mes "I can't get bonito";
 		mes "Ahat's image out of my head.";
 		emotion ET_THROB;
 		mes "As long as we have him,";
@@ -28,11 +28,11 @@ dicastes01,194,159,5	script	Excited Galten#a	492,{
 		mes "will rule this land.";
 		close; 
 	}
-	mes "ก๘ขฒขฃ กะ ก๒ก๐ก๐";
-	mes "ก๗ก๘ก๑ กü กü";
-	mes "ก๙ขฒขณ ขฒ";
-	mes "ก๓ก๕ก๔ ขฃ กะก๛กü ก๒ ก๐ก๖ขฃ";
-	mes "ขคก๕กþ ก๗ ก๑";
+	mes "ยกรธยขยฒยขยฃ ยกร ยกรฒยกรฐยกรฐ";
+	mes "ยกรทยกรธยกรฑ ยกรผ ยกรผ";
+	mes "ยกรนยขยฒยขยณ ยขยฒ";
+	mes "ยกรณยกรตยกรด ยขยฃ ยกรยกรปยกรผ ยกรฒ ยกรฐยกรถยขยฃ";
+	mes "ยขยคยกรตยกรพ ยกรท ยกรฑ";
 	close;
 }
 
@@ -51,15 +51,15 @@ dicastes01,202,86,3	script	Sentinel#a	4_MAN_GALTUN,{
 		mes "Hey, you are an outsider!";
 		close; 
 	}
-	mes "ก๔ขฑขฑ ก๛ ก๓กะก๑ ขฃ ขคก๚";
-	mes "ก๘ก๓ขฒ ขค ";
-	mes "ก๕ก๓กะ ขณ กะก๕ขฃ ก๛ ก๚ก๏";
+	mes "ยกรดยขยฑยขยฑ ยกรป ยกรณยกรยกรฑ ยขยฃ ยขยคยกรบ";
+	mes "ยกรธยกรณยขยฒ ยขยค ";
+	mes "ยกรตยกรณยกร ยขยณ ยกรยกรตยขยฃ ยกรป ยกรบยกรฏ";
 	next;
 	mes "[Sentinel]";
-	mes "ก๙";
+	mes "ยกรน";
 	next;
 	mes "[Sentinel]";
-	mes "ก๑ก๖ก๏ ก๚ ก๓ขณก๔";
+	mes "ยกรฑยกรถยกรฏ ยกรบ ยกรณยขยณยกรด";
 	close;	
 }
 
@@ -71,9 +71,9 @@ dicastes01,194,95,5	script	Sentinel#b	450,{
 		mes "you won't know what hit you. Beware!";
 		close; 
 	}
-	mes "ก๘ก๔กü ก๘ ก๓";
-	mes "ก๘ก๏ก๛ ก๓ ก๛ขคขฒ ก๗ ขฃ";
-	mes "ขคก๔ก๘ ขณ ก๗ก๛ก๖ ก๕ ก๘";
+	mes "ยกรธยกรดยกรผ ยกรธ ยกรณ";
+	mes "ยกรธยกรฏยกรป ยกรณ ยกรปยขยคยขยฒ ยกรท ยขยฃ";
+	mes "ยขยคยกรดยกรธ ยขยณ ยกรทยกรปยกรถ ยกรต ยกรธ";
 	close;
 }
 
@@ -84,8 +84,8 @@ dicastes01,234,158,0	script	Training Galten#a	450,{
 		mes "if I keep up with my training every day.";
 		close;
 	}
-	mes "ก๘ก๔กü ก๘ ก๘ก๔กü ก๘";
-	mes "ก๔ ก๘";
+	mes "ยกรธยกรดยกรผ ยกรธ ยกรธยกรดยกรผ ยกรธ";
+	mes "ยกรด ยกรธ";
 	next;
 	mes "Don't know what it means.";
 	close;
@@ -98,8 +98,8 @@ dicastes01,244,166,0	script	Training Galten#b	450,{
 		mes "hard I am training.";
 		close; 
 	}
-	mes "ก๘ก๔กü ก๘";
-	mes "ก๘ก๔กü ก๘ ก๘ก๔กü ก๘ ก๘ก๔กü ก๘";
+	mes "ยกรธยกรดยกรผ ยกรธ";
+	mes "ยกรธยกรดยกรผ ยกรธ ยกรธยกรดยกรผ ยกรธ ยกรธยกรดยกรผ ยกรธ";
 	next;
 	mes "Don't know what it means.";
 	close;
@@ -113,8 +113,8 @@ dicastes01,272,166,0	script	Training Galten#c	450,{
 		mes "I am never lazy with my training.";
 		close;
 	}
-	mes "ก๘ก๔กü ก๘ ก๘ก๔กü ก๘";
-	mes "ก๘ก๔กü ก๘";
+	mes "ยกรธยกรดยกรผ ยกรธ ยกรธยกรดยกรผ ยกรธ";
+	mes "ยกรธยกรดยกรผ ยกรธ";
 	next;
 	mes "Don't know what it means.";
 	close;
@@ -129,8 +129,8 @@ dicastes01,248,129,0	script	Training Galten#d	450,{
 		mes "for trainees like me.";
 		close; 
 	}
-	mes "ก๘ก๔กü ก๘ ก๘ก๔กü";
-	mes "ก๘ก๔กü ก๘ ก๘ก๔กü ก๘";
+	mes "ยกรธยกรดยกรผ ยกรธ ยกรธยกรดยกรผ";
+	mes "ยกรธยกรดยกรผ ยกรธ ยกรธยกรดยกรผ ยกรธ";
 	next;
 	mes "Don't know what it means.";
 	close;
@@ -144,8 +144,8 @@ dicastes01,271,152,0	script	Training Galten#e	450,{
 		mes "if I do my best, right?";
 		close;
 	}
-	mes "ก๘ขฒก๛ ก๔ ขฃขณก๔";
-	mes "กüก๔";
+	mes "ยกรธยขยฒยกรป ยกรด ยขยฃยขยณยกรด";
+	mes "ยกรผยกรด";
 	close;
 }
 */
@@ -157,9 +157,9 @@ dic_in01,349,282,4	script	Waiting Galten#in_1	492,{
 		mes "We are all tensed up to be ready for action.";
 		close;	 
 	}
-	mes "[ขฒกะก๛ ก๙ กะ]";
-	mes "ก๑ก๕กü ขฃ ก๓";
-	mes "ขคก๓ก๕ ขฃ ขฃก๒ก๔ ก๖ ก๚ขคก๚ ขค ก๒ก๖ก๕ ขค ";
+	mes "[ยขยฒยกรยกรป ยกรน ยกร]";
+	mes "ยกรฑยกรตยกรผ ยขยฃ ยกรณ";
+	mes "ยขยคยกรณยกรต ยขยฃ ยขยฃยกรฒยกรด ยกรถ ยกรบยขยคยกรบ ยขยค ยกรฒยกรถยกรต ยขยค ";
 	close;
 }
 
@@ -169,8 +169,8 @@ dic_in01,370,261,1	script	Waiting Galten#in_2	492,{
 		mes "Boring.";
 		close; 
 	}
-	mes "[ขฒกะก๛ ก๙ กะ]";
-	mes "ก๙ขคขฑ";
+	mes "[ยขยฒยกรยกรป ยกรน ยกร]";
+	mes "ยกรนยขยคยขยฑ";
 	close;
 }
 
@@ -180,8 +180,8 @@ dic_in01,381,261,1	script	Waiting Galten#in_3	492,{
 		mes "Zzzzz...";
 		close; 
 	}
-	mes "[ขฒกะก๛ ก๙ กะ]";
-	mes "ก๚ก๔";
+	mes "[ยขยฒยกรยกรป ยกรน ยกร]";
+	mes "ยกรบยกรด";
 	close;
 }
 
@@ -191,8 +191,8 @@ dic_in01,370,282,4	script	Waiting Galten#in_4	492,{
 		mes "El Dicastes is the most peaceful place in this world as long as I am here.";
 		close; 
 	}
-	mes "[ขฒกะก๛ ก๙ กะ]";
-	mes "ก๏ก๏ขณ กþ ก๖ขณขฃ ขฑ ขณก๛ก๕ ก๘ กþก๏ก๏ ก๘ ก๛";
+	mes "[ยขยฒยกรยกรป ยกรน ยกร]";
+	mes "ยกรฏยกรฏยขยณ ยกรพ ยกรถยขยณยขยฃ ยขยฑ ยขยณยกรปยกรต ยกรธ ยกรพยกรฏยกรฏ ยกรธ ยกรป";
 	close;
 }
 
@@ -202,8 +202,8 @@ dic_in01,354,219,4	script	Resting Galten#in_5	492,{
 		mes "Resting is always so sweet.";
 		close; 
 	}
-	mes "[ก๕ก๘ก๒ กü ขค]";
-	mes "ก๏ก๕ก๙ ก๖ ก๒ก๐ขฒ ขณ ก๖";
+	mes "[ยกรตยกรธยกรฒ ยกรผ ยขยค]";
+	mes "ยกรฏยกรตยกรน ยกรถ ยกรฒยกรฐยขยฒ ยขยณ ยกรถ";
 	close;
 }
 
@@ -216,9 +216,9 @@ dic_in01,365,197,1	script	Resting Galten#in_6	492,{
 		mes "You say I don't look like I'm resting? But I'm already used to this.";
 		close; 
 	}
-	mes "[ก๕ก๘ก๒ กü ขค]";
-	mes "ก๔ก๏ขค ก๖ ก๙ก๐ก๑ กü ก๓ก๛ก๛";
-	mes "ก๏ขฃก๓ ก๙ ขณก๔ก๐ ขฃ กะก๛ก๔ ก๔ กะก๚ก๙ ก๔ ก๓";
+	mes "[ยกรตยกรธยกรฒ ยกรผ ยขยค]";
+	mes "ยกรดยกรฏยขยค ยกรถ ยกรนยกรฐยกรฑ ยกรผ ยกรณยกรปยกรป";
+	mes "ยกรฏยขยฃยกรณ ยกรน ยขยณยกรดยกรฐ ยขยฃ ยกรยกรปยกรด ยกรด ยกรยกรบยกรน ยกรด ยกรณ";
 	close;
 }
 
@@ -232,20 +232,20 @@ dic_in01,29,119,4	script	Resting Piom#04	489,{
 		mes "Why is it so noisy when I'm trying to get rest?";
 		close; 
 	}
-	mes "[ขฃก๙ก๒ ขค ก๙]";
-	mes "กüขฒก๐ กะ ก๒ก๘ขฒ ก๔ ขฒก๕";
+	mes "[ยขยฃยกรนยกรฒ ยขยค ยกรน]";
+	mes "ยกรผยขยฒยกรฐ ยกร ยกรฒยกรธยขยฒ ยกรด ยขยฒยกรต";
 	close;
 }
 
 dic_in01,91,113,5	script	Suspicious Piom#a	489,{
 	mes "[Suspicious Piom]";
 	if (isequipped(2782)) {
-		mes "Have you heard of the";
+		mes "Voce ja ouviu falar of the";
 		mes "rumor about Ahat?";
 		next;
 		if(select("Nope!:You first.") == 1) {
 			mes "[Suspicious Piom]";
-			mes "Never mind.";
+			mes "Deixa pra la.";
 			close; 
 		}
 		mes "[Suspicious Piom]";
@@ -264,8 +264,8 @@ dic_in01,91,113,5	script	Suspicious Piom#a	489,{
 		mes "I am not going to say anything, either!";
 		close; 
 	}
-	mes "ก๓ขณก๓ ก๓ ก๓กþก๖";
-	mes "ก๕ ขณขฒก๗ ก๓ก๓";
+	mes "ยกรณยขยณยกรณ ยกรณ ยกรณยกรพยกรถ";
+	mes "ยกรต ยขยณยขยฒยกรท ยกรณยกรณ";
 	next;
 	if(select("Can't tell what it means:Is it a curse??") == 2) {
 		mes "[Suspicious Piom]";
@@ -284,13 +284,13 @@ dic_in01,168,116,5	script	Tired Piom#c	491,{
 		mes "If you need any";
 		mes "information, you'd have better";
 		mes "luck with the Cat Merchant than wandering around here.";
-		mes "But of course you'll have to pay the price.";
+		mes "But claro you'll have to pay the price.";
 		close; 
 	}
-	mes "กþก๕ก๐ ขณ ขณกþ";
-	mes "กþก๘ก๐ ก๖ ก๑ก๚ก๐ ก๒";
-	mes "ก๏ก๑ก๚ ก๔ ก๖ก๖ก๒ ก๛ ก๓ขคก๘ ก๘ ขฒ ก๘";
-	mes "ขคขฒก๘ ก๒ ก๚ก๓ขฑ";
+	mes "ยกรพยกรตยกรฐ ยขยณ ยขยณยกรพ";
+	mes "ยกรพยกรธยกรฐ ยกรถ ยกรฑยกรบยกรฐ ยกรฒ";
+	mes "ยกรฏยกรฑยกรบ ยกรด ยกรถยกรถยกรฒ ยกรป ยกรณยขยคยกรธ ยกรธ ยขยฒ ยกรธ";
+	mes "ยขยคยขยฒยกรธ ยกรฒ ยกรบยกรณยขยฑ";
 	close;
 }
 
@@ -304,10 +304,10 @@ dic_in01,149,104,5	script	Tired Piom#b	455,{
 		emotion ET_QUESTION;
 		close; 
 	}
-	mes "ก๐กะก๚ ก๘ ขฒ";
-	mes "ก๖ก๕ก๓ ขค ก๒ก๒ขณ ก๔ ก๔ก๓ก๑";
-	mes "ขฃก๑กþ กü ขฒก๛ก๓ ก๒ ก๐กþ";
-	mes "ก๖ก๚ก๑ ขณ";
+	mes "ยกรฐยกรยกรบ ยกรธ ยขยฒ";
+	mes "ยกรถยกรตยกรณ ยขยค ยกรฒยกรฒยขยณ ยกรด ยกรดยกรณยกรฑ";
+	mes "ยขยฃยกรฑยกรพ ยกรผ ยขยฒยกรปยกรณ ยกรฒ ยกรฐยกรพ";
+	mes "ยกรถยกรบยกรฑ ยขยณ";
 	emotion ET_QUESTION;
 	close;
 }
@@ -329,17 +329,17 @@ dic_in01,341,113,3	script	Tired Piom#a	491,{
 		mes "I'll be rejected again, right?";
 		close; 
 	}
-	mes "ก๗ก๒ก๛ ก๓ ก๓กะขฑ";
-	mes "ก๓ก๕ก๙ กþ ก๒ขฑก๑ ก๕ ขฃ";
-	mes "กüก๐ขค ก๙ ก๒ก๔ก๕ ก๒ ก๑";
-	mes "ขณก๚ขณ กะ ก๑ก๕ก๙ ก๗ ก๗ขฑ";
+	mes "ยกรทยกรฒยกรป ยกรณ ยกรณยกรยขยฑ";
+	mes "ยกรณยกรตยกรน ยกรพ ยกรฒยขยฑยกรฑ ยกรต ยขยฃ";
+	mes "ยกรผยกรฐยขยค ยกรน ยกรฒยกรดยกรต ยกรฒ ยกรฑ";
+	mes "ยขยณยกรบยขยณ ยกร ยกรฑยกรตยกรน ยกรท ยกรทยขยฑ";
 	next;
 	mes "[Tired Piom]";
-	mes "กþ";
+	mes "ยกรพ";
 	next;
 	emotion ET_SWEAT;
 	mes "[Tired Piom]";
-	mes "ก๘ก๚ก๘ ขฑ ก๖ก๒";
+	mes "ยกรธยกรบยกรธ ยขยฑ ยกรถยกรฒ";
 	close;
 }
 
@@ -363,12 +363,12 @@ dic_in01,32,54,5	script	Venknick#el_01	449,{
 	if (isequipped(2782)) {
 		mes "[Venknick]";
 		mes "Oh feels so refreshed.";
-		mes "The refined Bradium was the best ever. Do you want to try some?";
+		mes "The refined Bradium was the best ever. Voce quer try some?";
 		close; 
 	}
-	mes "[ก๓ก๒ก๐]";
-	mes "ก๙ก๓ขค ขฑ ขฃ";
-	mes "ก๕กþก๏ ขฃ ก๗ก๗ขค ก๚ ก๓ก๑ก๖ ขฒ กþขฒขค ขฒ ขฃ?";
+	mes "[ยกรณยกรฒยกรฐ]";
+	mes "ยกรนยกรณยขยค ยขยฑ ยขยฃ";
+	mes "ยกรตยกรพยกรฏ ยขยฃ ยกรทยกรทยขยค ยกรบ ยกรณยกรฑยกรถ ยขยฒ ยกรพยขยฒยขยค ยขยฒ ยขยฃ?";
 	close;
 }
 
@@ -388,17 +388,17 @@ dic_in01,372,116,3	script	Thrilled Piom#a	490,{
 		mes "blessing?";
 		close;
 	}
-	mes "ก๒ก๕ขณ ก๕ ก๔";
-	mes "ขฃก๓ก๘ ขฒ ก๔ก๗";
-	mes "ก๒ก๔ขณ ก๙ ขฑก๓ขฑ ก๕";
-	mes "ก๓กüกะ ก๘ ขฒกüกะ ก๕ ก๏";
+	mes "ยกรฒยกรตยขยณ ยกรต ยกรด";
+	mes "ยขยฃยกรณยกรธ ยขยฒ ยกรดยกรท";
+	mes "ยกรฒยกรดยขยณ ยกรน ยขยฑยกรณยขยฑ ยกรต";
+	mes "ยกรณยกรผยกร ยกรธ ยขยฒยกรผยกร ยกรต ยกรฏ";
 	next;
 	mes "[Thrilled Piom]";
-	mes "ขฃ";
+	mes "ยขยฃ";
 	next;
 	mes "[Thrilled Piom]";
-	mes "กะขคก๙ ขฃ ก๓ก๓";
-	mes "ก๙ก๓ก๗ ก๛ กþก๔";
+	mes "ยกรยขยคยกรน ยขยฃ ยกรณยกรณ";
+	mes "ยกรนยกรณยกรท ยกรป ยกรพยกรด";
 	close;
 }
 
@@ -410,9 +410,9 @@ dic_in01,360,125,5	script	Serious Venknicka	449,{
 		mes "I will have to get more factory lines running.";
 		close; 
 	}
-	mes "ก๛ก๕ก๑ ขฒ ขฒขคกะ ขฒ กüก๑ก๕";
-	mes "กþก๓ก๖ ขฒ";
-	mes "ก๖ก๗ก๛ ก๚ ก๗กะขณ ขณ";
+	mes "ยกรปยกรตยกรฑ ยขยฒ ยขยฒยขยคยกร ยขยฒ ยกรผยกรฑยกรต";
+	mes "ยกรพยกรณยกรถ ยขยฒ";
+	mes "ยกรถยกรทยกรป ยกรบ ยกรทยกรยขยณ ยขยณ";
 	close;
 }
 
@@ -432,7 +432,7 @@ dic_in01,42,250,5	script	Guide#diel_1	489,{
 			mes "The Archive Room is in the lower level where you can obtain a vast amount of information.";
 			next;
 			mes "[Guide]";
-			mes "By the way, you may use the elevator in the back to go to the other floors.";
+			mes "A proposito, you may use the elevator in the back to go to the other floors.";
 			next;
 			mes "[Guide]";
 			mes "Oh, you didn't ask?";
@@ -442,24 +442,24 @@ dic_in01,42,250,5	script	Guide#diel_1	489,{
 		mes "- The guide looks at you with an alert expression. -";
 		close;
 	}
-	mes "[ขณก๑]";
-	mes "ก๕ขฃก๓ กะ ก๕ก๑ก๒ ขค ก๘ก๘ขฃ ขฑ ขฒขณก๗ ขฑ";
-	mes "ก๖ก๒ก๐ ก๓ ก๔ก๔?";
+	mes "[ยขยณยกรฑ]";
+	mes "ยกรตยขยฃยกรณ ยกร ยกรตยกรฑยกรฒ ยขยค ยกรธยกรธยขยฃ ยขยฑ ยขยฒยขยณยกรท ยขยฑ";
+	mes "ยกรถยกรฒยกรฐ ยกรณ ยกรดยกรด?";
 	next;
-	mes "[ขณก๑]";
-	mes "กะก๙ก๓ ก๙ กüขฒกะ ขฑ ก๗ก๖กþ";
-	mes "ก๑กþขฒ ก๘ ก๓ก๏ก๏ ก๙ ก๐ก๑กะ ก๙ ขณก๒กþ ก๙ ก๘ก๐ก๕ ก๕ ขค";
+	mes "[ยขยณยกรฑ]";
+	mes "ยกรยกรนยกรณ ยกรน ยกรผยขยฒยกร ยขยฑ ยกรทยกรถยกรพ";
+	mes "ยกรฑยกรพยขยฒ ยกรธ ยกรณยกรฏยกรฏ ยกรน ยกรฐยกรฑยกร ยกรน ยขยณยกรฒยกรพ ยกรน ยกรธยกรฐยกรต ยกรต ยขยค";
 	next;
-	mes "[ขณก๑]";
-	mes "ก๛ก๙ก๔ ก๘ ก๐กþก๗ ขณ กþก๙ก๑ ก๚ กüขคก๒ ก๚ ก๔ขฃ";
-	mes "ก๗ก๒ขค ก๘ ก๛ขณ";
+	mes "[ยขยณยกรฑ]";
+	mes "ยกรปยกรนยกรด ยกรธ ยกรฐยกรพยกรท ยขยณ ยกรพยกรนยกรฑ ยกรบ ยกรผยขยคยกรฒ ยกรบ ยกรดยขยฃ";
+	mes "ยกรทยกรฒยขยค ยกรธ ยกรปยขยณ";
 	next;
-	mes "[ขณก๑]";
-	mes "ก๔ก๐ก๑ ขค ก๓ก๗ขณ กþ ก๓ก๕ก๗ ก๖ ก๓ ก๖";
+	mes "[ยขยณยกรฑ]";
+	mes "ยกรดยกรฐยกรฑ ยขยค ยกรณยกรทยขยณ ยกรพ ยกรณยกรตยกรท ยกรถ ยกรณ ยกรถ";
 	next;
-	mes "[ขณก๑]";
-	mes "ก๒ก๔ก๘ ก๗ ก๕ก๘ก๐ ก๓ ขคกะก๔ ก๘ ก๑ก๑ก๑ ก๘ ก๚ก๖ก๘ กü";
-	mes "ก๏ขณก๐ ขค ก๐ก๖ขฃ ขฑ ก๔ก๘";
+	mes "[ยขยณยกรฑ]";
+	mes "ยกรฒยกรดยกรธ ยกรท ยกรตยกรธยกรฐ ยกรณ ยขยคยกรยกรด ยกรธ ยกรฑยกรฑยกรฑ ยกรธ ยกรบยกรถยกรธ ยกรผ";
+	mes "ยกรฏยขยณยกรฐ ยขยค ยกรฐยกรถยขยฃ ยขยฑ ยกรดยกรธ";
 	close;
 }
 
@@ -474,12 +474,12 @@ dic_in01,335,34,5	script	Talkative Piom#a	490,{
 		mes "here too.";
 		close; 
 	}
-	mes "กüก๙ขฑ ขณ";
-	mes "ก๗ก๘ก๏ กþ ก๓ก๓";
-	mes "ก๑ก๕ก๒ ก๓ ก๗กüก๙ ก๖";
-	mes "ก๑ก๘กü ก๚ ก๔";
-	mes "กþก๚ก๒ ขฑ ก๛ก๒ก๒ ก๙ ก๗";
-	mes "ขณก๒ก๒ ก๙ ขฑขฃก๒";
+	mes "ยกรผยกรนยขยฑ ยขยณ";
+	mes "ยกรทยกรธยกรฏ ยกรพ ยกรณยกรณ";
+	mes "ยกรฑยกรตยกรฒ ยกรณ ยกรทยกรผยกรน ยกรถ";
+	mes "ยกรฑยกรธยกรผ ยกรบ ยกรด";
+	mes "ยกรพยกรบยกรฒ ยขยฑ ยกรปยกรฒยกรฒ ยกรน ยกรท";
+	mes "ยขยณยกรฒยกรฒ ยกรน ยขยฑยขยฃยกรฒ";
 	close;
 }
 
@@ -490,8 +490,8 @@ dic_in01,387,30,1	script	Manuk Piom#a	454,{
 		mes "I've come to pick up the weapon I ordered.";
 		close; 
 	}
-	mes "กüก๓กþ ก๓ ก๏ก๐ขค กü ก๐ขฑ";
-	mes "ก๙ก๔ก๏ ก๚ ก๑ก๙ขณ ก๓ ก๒ก๖ก๓ ก๔ก๔";
+	mes "ยกรผยกรณยกรพ ยกรณ ยกรฏยกรฐยขยค ยกรผ ยกรฐยขยฑ";
+	mes "ยกรนยกรดยกรฏ ยกรบ ยกรฑยกรนยขยณ ยกรณ ยกรฒยกรถยกรณ ยกรดยกรด";
 	close;
 }
 
@@ -505,11 +505,11 @@ dicastes01,282,210,4	script	Free Knit#a	453,{
 		mes "which is short.";
 		close; 
 	}
-	mes "ก๑กþก๐ ก๓ กüก๒ก๖ ก๗";
-	mes "ขณก๐ก๏ ขฃ ก๙ก๔ก๒ ก๔ ก๓กþก๑ ขฒ ก๑ก๛ขฃ ขฒ";
-	mes "ก๔ก๓ก๐ กþ ขฃก๐ขค ก๕ ก๛ขณกü";
-	mes "ก๓ขณก๒ ขฑ ก๔ขฃขฒ ก๗ ก๗ก๑";
-	mes "ก๒ขฒก๏ ขฃ ก๖ก๖";
+	mes "ยกรฑยกรพยกรฐ ยกรณ ยกรผยกรฒยกรถ ยกรท";
+	mes "ยขยณยกรฐยกรฏ ยขยฃ ยกรนยกรดยกรฒ ยกรด ยกรณยกรพยกรฑ ยขยฒ ยกรฑยกรปยขยฃ ยขยฒ";
+	mes "ยกรดยกรณยกรฐ ยกรพ ยขยฃยกรฐยขยค ยกรต ยกรปยขยณยกรผ";
+	mes "ยกรณยขยณยกรฒ ยขยฑ ยกรดยขยฃยขยฒ ยกรท ยกรทยกรฑ";
+	mes "ยกรฒยขยฒยกรฏ ยขยฃ ยกรถยกรถ";
 	close;
 }
 
@@ -529,17 +529,17 @@ dicastes01,246,210,3	script	Free Venknick#a	449,{
 		mes "but why are you interested in it?";
 		close; 
 	}
-	mes "ก๔ก๏ขฃ ขค ก๗ก๕ขฑ กü ก๑ก๕";
-	mes "กüขณ";
-	mes "ก๖ก๙ขค ขฒ ก๙ก๓ก๔";
-	mes "กüขฃขณ ก๘ ก๛ก๐กü ก๕";
+	mes "ยกรดยกรฏยขยฃ ยขยค ยกรทยกรตยขยฑ ยกรผ ยกรฑยกรต";
+	mes "ยกรผยขยณ";
+	mes "ยกรถยกรนยขยค ยขยฒ ยกรนยกรณยกรด";
+	mes "ยกรผยขยฃยขยณ ยกรธ ยกรปยกรฐยกรผ ยกรต";
 	next;
 	mes "[Free Venknick]";
-	mes "ก๙";
+	mes "ยกรน";
 	next;
 	mes "[Free Venknick]";
-	mes "กþขคขฃ ขฑ ก๓ก๒ขณ กü ก๑ก๐";
-	mes "ขฑก๛ขฃ ก๖ กüก๒ก๗ ก๛ ก๕ก๒ก๗ ขฒขฒ";
+	mes "ยกรพยขยคยขยฃ ยขยฑ ยกรณยกรฒยขยณ ยกรผ ยกรฑยกรฐ";
+	mes "ยขยฑยกรปยขยฃ ยกรถ ยกรผยกรฒยกรท ยกรป ยกรตยกรฒยกรท ยขยฒยขยฒ";
 	close;
 }
 
@@ -552,9 +552,9 @@ dicastes01,235,245,4	script	Excited Piom#a	490,{
 		close; 
 	}
 	mes "[Excited Piom]";
-	mes "ก๚กþก๓ ขณ กüขฒก๑ ขฑ";
+	mes "ยกรบยกรพยกรณ ยขยณ ยกรผยขยฒยกรฑ ยขยฑ";
 	emotion ET_DELIGHT;
-	mes "ขณก๓ก๑ ก๕ ก๐ก๔กþ ก๗ ก๚ก๒ก๕ ก๘ ขฒ ก๘";
+	mes "ยขยณยกรณยกรฑ ยกรต ยกรฐยกรดยกรพ ยกรท ยกรบยกรฒยกรต ยกรธ ยขยฒ ยกรธ";
 	close;
 }
 
@@ -568,11 +568,11 @@ dicastes01,284,262,3	script	Favorable Knit#a	453,{
 		mes "We never have any quarrels between classes.";
 		close; 
 	}
-	mes "ก๔ขฑก๓ ก๕ ก๚ก๗กะ ก๕";
-	mes "กüก๏กะ ก๕ ก๔ก๓กü ก๓ ขณ";
-	mes "ก๑ก๔กü กþ ขคก๑ขค ก๔ ก๛ก๏ก๙";
-	mes "ก๚ก๖ก๔ ก๓ ขฃก๚กþ ก๘ ก๘ก๒";
-	mes "ขฒขณก๛ ขค ก๚ก๑ก๙ ก๛ ขณก๒ก๘ ก๕ก๕";
+	mes "ยกรดยขยฑยกรณ ยกรต ยกรบยกรทยกร ยกรต";
+	mes "ยกรผยกรฏยกร ยกรต ยกรดยกรณยกรผ ยกรณ ยขยณ";
+	mes "ยกรฑยกรดยกรผ ยกรพ ยขยคยกรฑยขยค ยกรด ยกรปยกรฏยกรน";
+	mes "ยกรบยกรถยกรด ยกรณ ยขยฃยกรบยกรพ ยกรธ ยกรธยกรฒ";
+	mes "ยขยฒยขยณยกรป ยขยค ยกรบยกรฑยกรน ยกรป ยขยณยกรฒยกรธ ยกรตยกรต";
 	close;
 }
 
@@ -587,11 +587,11 @@ dicastes01,164,180,4	script	Limpy Piom#a	489,{
 		emotion ET_THINK;
 		close; 
 	}
-	mes "ขฒก๔กþ ก๙ ก๕กะ";
-	mes "ขณก๔ก๛ ก๚ ก๘";
-	mes "ขณกþขค ก๓ ก๕ก๗กะ";
-	mes "ก๑ก๒กü กü ก๙กþขฑ";
-	mes "ขคก๒กþ ขค ขฃก๑ ขค ขฃก๑";
+	mes "ยขยฒยกรดยกรพ ยกรน ยกรตยกร";
+	mes "ยขยณยกรดยกรป ยกรบ ยกรธ";
+	mes "ยขยณยกรพยขยค ยกรณ ยกรตยกรทยกร";
+	mes "ยกรฑยกรฒยกรผ ยกรผ ยกรนยกรพยขยฑ";
+	mes "ยขยคยกรฒยกรพ ยขยค ยขยฃยกรฑ ยขยค ยขยฃยกรฑ";
 	emotion ET_THINK;
 	close;
 }
@@ -606,7 +606,7 @@ dicastes01,191,202,4	script	Complaining Galten#fihs	450,{
 		mes "Have you ever talked";
 		mes "to him?";
 		next;
-		if(select("No:Yes") == 1) {
+		if(select("Nao:Sim") == 1) {
 			mes "[Complaining Galten]";
 			mes "Then you don't know about the legend behind the statue?";
 			mes "Then, I don't know what to talk about with you.";
@@ -617,20 +617,20 @@ dicastes01,191,202,4	script	Complaining Galten#fihs	450,{
 		mes "You also fell for that crazy man.";
 		next;
 		mes "[" + strcharinfo(0) + "]";
-		mes "Yes";
+		mes "Sim";
 		emotion ET_CRY, playerattached();
 		next;
 		mes "[Complaining Galten]";
 		mes "Just forget about it quickly for your own good.";
 		close;
 	}
-	mes "[ก๕ขฃก๖ ก๚ ]";
-	mes "ก๕ก๒ก๛ ก๒ ขฃก๛ก๗ ก๗ ";
-	mes "ก๛ก๙ก๛ ก๗ กüกþก๛ ขณ ก๓";
+	mes "[ยกรตยขยฃยกรถ ยกรบ ]";
+	mes "ยกรตยกรฒยกรป ยกรฒ ยขยฃยกรปยกรท ยกรท ";
+	mes "ยกรปยกรนยกรป ยกรท ยกรผยกรพยกรป ยขยณ ยกรณ";
 	next;
-	mes "[ก๕ขฃก๖ ก๚ ]";
-	mes "ก๐ขฑกü ก๛ ก๕ก๗ขค";
-	mes "ขคกþก๘ ขฒ ก๗";
+	mes "[ยกรตยขยฃยกรถ ยกรบ ]";
+	mes "ยกรฐยขยฑยกรผ ยกรป ยกรตยกรทยขยค";
+	mes "ยขยคยกรพยกรธ ยขยฒ ยกรท";
 	next;
 	mes "Don't know what it means.";
 	close;
@@ -644,7 +644,7 @@ dicastes01,202,197,4	script	Crazy Venknick#fihsing1	449,{
 		next;
 		if(select("Give 5000 Zeny.:Don't give 5000 Zeny.") == 2) {
 			mes "[Crazy Venknick]";
-			mes "Don't come back with regrets.";
+			mes "Don't volte with regrets.";
 			close; 
 		}
 		if (Zeny < 5000) {
@@ -678,9 +678,9 @@ dicastes01,202,197,4	script	Crazy Venknick#fihsing1	449,{
 		mes "You feel outraged at being tricked.";
 		close; 
 	}
-	mes "[ก๖ก๚ก๙ ขณ ]";
-	mes "ขฒก๛ก๓ ก๓ ก๙ขคก๘";
-	mes "ขคก๐ขฒ ขฑ ก๑ก๖ขฒ ก๘ ก๏ก๖กü";
+	mes "[ยกรถยกรบยกรน ยขยณ ]";
+	mes "ยขยฒยกรปยกรณ ยกรณ ยกรนยขยคยกรธ";
+	mes "ยขยคยกรฐยขยฒ ยขยฑ ยกรฑยกรถยขยฒ ยกรธ ยกรฏยกรถยกรผ";
 	next;
 	mes "Don't know what it means.";
 	close;
@@ -695,9 +695,9 @@ dic_in01,98,110,5	script	Worried Piom#a	489,{
 		close;
 	}
 	mes "[Worried Piom]";
-	mes "ก๛ขฑก๗ ขฒ ก๏กþก๒ กü ก๏ก๛ขฒ";
-	mes "ก๏ก๗ขค กะ ก๏ก๏กะ ขค ขฃ";
-	mes "ก๗กþก๐ ก๓ ก๑";
+	mes "ยกรปยขยฑยกรท ยขยฒ ยกรฏยกรพยกรฒ ยกรผ ยกรฏยกรปยขยฒ";
+	mes "ยกรฏยกรทยขยค ยกร ยกรฏยกรฏยกร ยขยค ยขยฃ";
+	mes "ยกรทยกรพยกรฐ ยกรณ ยกรฑ";
 	close;
 }
 
@@ -710,8 +710,8 @@ dic_in01,98,96,3	script	Lost Galten#a	492,{
 		close;
 	}
 	mes "[Lost Galten]";
-	mes "ก๓ก๔ก๏ ก๛ ขณก๚";
-	mes "กüก๘ก๑ ขฃ ";
-	mes "ก๖ก๏ขฒ ก๛ ก๖ก๓";
+	mes "ยกรณยกรดยกรฏ ยกรป ยขยณยกรบ";
+	mes "ยกรผยกรธยกรฑ ยขยฃ ";
+	mes "ยกรถยกรฏยขยฒ ยกรป ยกรถยกรณ";
 	close;
 }

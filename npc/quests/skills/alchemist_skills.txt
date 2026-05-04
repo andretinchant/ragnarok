@@ -1964,7 +1964,7 @@ lhz_in01,204,138,5	script	Keshibien#qsk_al	750,{
 	mes "over there are pretty";
 	mes "skilled. I wonder if I'll";
 	mes "ever get the chance to";
-	mes "collaborate with any of them...";
+	mes "collaborate with any deles...";
 	close;
 }
 

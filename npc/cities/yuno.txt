@@ -29,7 +29,7 @@
 yuno,184,173,4	script	Freidrich#juno	729,{
 	if (rand(1,5) == 1) {
 		mes "[Freidrich]";
-		mes "^3355FFJuno^000000 is kept aloft in the air by an ancient and mysterious force.";
+		mes "^3355FFJuno^000000 is kept aloft in the air by an ancient and misterioso force.";
 		next;
 		mes "[Freidrich]";
 		mes "This power is said to come from a relic from an ancient civilization called ^3355FFJuperos^000000 which existed here long before Juno.";
@@ -102,10 +102,10 @@ yuno,337,227,4	script	Juno Granny#juno	103,{
 		mes "I am an old Sage granny who foresees everything...";
 		next;
 		mes "[Granny]";
-		mes "Have you heard of a boss monster that has been around Juno for a long time? It's known only as the ^FF3355Lord of the Dead^000000.";
+		mes "Voce ja ouviu falar of a boss monstro that has been around Juno for a long time? It's known only as the ^FF3355Lord of the Dead^000000.";
 		next;
 		mes "[Granny]";
-		mes "It is rumored to be from the realm of the dead. It brings many undead monsters with it, intending to lead living creatures to its cold and icy realm.";
+		mes "It is rumored to be from the realm of the dead. It brings many undead monstros with it, intending to lead living creatures to its cold and icy realm.";
 		next;
 		mes "[Granny]";
 		mes "You have already chosen whether or not you will challenge the Lord of the Dead. All you need to do right now is understand why you made the decision.";
@@ -147,7 +147,7 @@ yuno,343,68,4	script	Juno Despot#juno	730,{
 	mes "He was rumored to be a high sorcerer that used his power to curse innocents. It is said that he is still around, placing his curses on people.";
 	next;
 	mes "[Ninno]";
-	mes "As an adventurer, it's possible that you may see him in your travels. Be careful...";
+	mes "As an aventureiro, it's possible that you may see him in your travels. Tome cuidado...";
 	close;
 }
 
@@ -184,7 +184,7 @@ yuno,165,111,4	script	Juno Sage#juno	123,,{
 			end;
 		}
 		else {
-			mes "Hmm. I'm sorry to say you just missed a fortunate chance. However, I can tell you don't have enough wealth to bring this fortune to fruition.";
+			mes "Hmm. I'm sorry to say you just missed a fortunate chance. Porem, I can tell you don't have enough wealth to bring this fortune to fruition.";
 			close;
 		}
 	}
@@ -193,7 +193,7 @@ yuno,165,111,4	script	Juno Sage#juno	123,,{
 		mes "It is the name of an android that used to guard Juno long ago.";
 		next;
 		mes "[Le Morpheus]";
-		mes "Because its artificial intelligence has corrupted over the years, it can no longer distinguish comrades from enemies. Sadly, that android is nothing but a mindless monster now.";
+		mes "Because its artificial intelligence has corrupted over the years, it can no longer distinguish comrades from enemies. Sadly, that android is nothing but a mindless monstro now.";
 		close;
 	}
 }
@@ -205,7 +205,7 @@ yuno,157,205,4	script	Juno Artisan#juno	54,{
 	mes "[Artisan]";
 	mes "Oh, hello there. Let me introduce myself. I am an artisan who tries to succeed the rights and duties of item makers in Juno.";
 	next;
-	switch(select("About Powerful Equipment:About Unique Items:About Authentic Food:End Conversation")) {
+	switch(select("Sobre Powerful Equipment:Sobre Unique Items:Sobre Authentic Food:Encerrar conversa")) {
 	case 1:
 		mes "[Artisan]";
 		mes "Let me suggest the ^3355FFHoly Guard^000000 and ^3355FFHoly Avenger^000000 which are special items for Crusaders.";
@@ -214,14 +214,14 @@ yuno,157,205,4	script	Juno Artisan#juno	54,{
 		mes "These pieces of equipment are very light and have sufficient abilities. They also happen to possess holy power.";
 		next;
 		mes "[Artisan]";
-		mes "Therefore, this equipment is more powerful over some kinds of monsters such as Ghosts or the Undead.";
+		mes "Therefore, this equipment is more powerful over some kinds of monstros such as Ghosts or the Undead.";
 		next;
 		mes "[Artisan]";
 		mes "However it is rumored that only a few chosen Crusaders are able to obtain those items due of their rarity.";
 		close;
 	case 2:
 		mes "[Artisan]";
-		mes "It looks like a simple scroll marked with concentric circles and a star. Although the ^FF3355Worn-Out Magic Scroll^000000 is very old, it's wanted by many Sages for research purposes.";
+		mes "It looks like a simple scroll marked with concentric circles and a star. Embora the ^FF3355Worn-Out Magic Scroll^000000 is very old, it's wanted by many Sages for research purposes.";
 		next;
 		mes "[Artisan]";
 		mes "It seems you can use that item when you chant a high-level magic spell.";
@@ -236,48 +236,48 @@ yuno,157,205,4	script	Juno Artisan#juno	54,{
 		close;
 	case 4:
 		mes "[Artisan]";
-		mes "Although Juno is known as a city of Sages, I hope you understand that ordinary people live and prosper here as well. Please enjoy the unique atmosphere that Juno has to offer.";
+		mes "Embora Juno is known as a city of Sages, I hope you understand that ordinary people live and prosper here as well. Please enjoy the unique atmosphere that Juno has to offer.";
 		close;
 	}
 }
 
 -	script	::JunoSoldier1	-1,{
 	mes "[Juno Soldier]";
-	mes "Welcome to Juno, the city of noble-mindedness.";
+	mes "Bem-vindo a Juno, the city of noble-mindedness.";
 	next;
 	mes "[Juno Soldier]";
-	mes "There is a monster near here known as Lava Golem. This golem is made from a stone heart whose power happened to be amplified with magic power when it was swept away by molten rock.";
+	mes "There is a monstro near here known as Lava Golem. This golem is made from a stone heart whose power happened to be amplified with magic power when it was swept away by molten rock.";
 	next;
 	mes "[Juno Soldier]";
 	mes "The lava dripping from its body is so hot that it can melt down armor and weapons made out of high quality steel.";
 	next;
 	mes "[Juno Soldier]";
-	mes "You'd better be careful when you encounter this monster. It will damage armor and weapons in the twinkling of an eye.";
+	mes "You'd better tome cuidado when you encounter this monstro. It will damage armor and weapons in the twinkling of an eye.";
 	close;
 }
 
 -	script	::JunoSoldier2	-1,{
 	mes "[Juno Soldier]";
-	mes "Welcome to Juno, the city of noble-mindedness.";
+	mes "Bem-vindo a Juno, the city of noble-mindedness.";
 	next;
 	mes "[Juno Soldier]";
 	mes "Geographer...";
-	mes "That monster looks like a flower blooming from the ground.";
+	mes "That monstro looks like a flower blooming from the ground.";
 	next;
 	mes "[Juno Soldier]";
 	mes "Strangely, it can extend its body a long distance. Even if you're far away from it, it can still pose a threat.";
 	next;
 	mes "[Juno Soldier]";
-	mes "The name of this monster originated from a story about a poor geographer who, unfortunately, was eaten by this monster while he was immersed in his studies.";
+	mes "The name of this monstro originated from a story about a poor geographer who, unfortunately, was eaten by this monstro while he was immersed in his studies.";
 	close;
 }
 
 -	script	::JunoSoldier3	-1,{
 	mes "[Juno Soldier]";
-	mes "Welcome to Juno, the city of noble-mindedness.";
+	mes "Bem-vindo a Juno, the city of noble-mindedness.";
 	next;
 	mes "[Juno Soldier]";
-	mes "Near Juno, there exists a fallen angel named 'False Angel.' It feigns innocence, pretending to bless adventurers and then stabbing them in the back without any warning.";
+	mes "Near Juno, there exists a fallen angel named 'False Angel.' It feigns innocence, pretending to bless aventureiros and then stabbing them in the back without any warning.";
 	next;
 	mes "[Juno Soldier]";
 	mes "Don't be fooled by its appearance, or you'll find yourself in trouble.";
@@ -286,10 +286,10 @@ yuno,157,205,4	script	Juno Artisan#juno	54,{
 
 -	script	::JunoSoldier4	-1,{
 	mes "[Juno Soldier]";
-	mes "Welcome to Juno, the city of noble-mindedness.";
+	mes "Bem-vindo a Juno, the city of noble-mindedness.";
 	next;
 	mes "[Juno Soldier]";
-	mes "'Goat' is a monster that was an antelope living in the high mountains that was somehow turned into a monster.";
+	mes "'Goat' is a monstro that was an antelope living in the high mountains that was somehow turned into a monstro.";
 	next;
 	mes "[Juno Soldier]";
 	mes "Even if you manage to dodge to its horns, you still need to be wary of its powerful legs.";
@@ -301,7 +301,7 @@ yuno,157,205,4	script	Juno Artisan#juno	54,{
 
 -	script	::JunoSoldier5	-1,{
 	mes "[Juno Soldier]";
-	mes "Welcome to Juno, the city of noble-mindedness.";
+	mes "Bem-vindo a Juno, the city of noble-mindedness.";
 	next;
 	mes "[Juno Soldier]";
 	mes "Have you ever";
@@ -317,7 +317,7 @@ yuno,157,205,4	script	Juno Artisan#juno	54,{
 
 -	script	::JunoSoldier6	-1,{
 	mes "[Juno Soldier]";
-	mes "Welcome to Juno, the city of noble-mindedness.";
+	mes "Bem-vindo a Juno, the city of noble-mindedness.";
 	next;
 	mes "[Juno Soldier]";
 	mes "Among the Sage's weapons, there is a 'Dagger of Counter.'";
@@ -329,26 +329,26 @@ yuno,157,205,4	script	Juno Artisan#juno	54,{
 
 -	script	::JunoSoldier7	-1,{
 	mes "[Juno Soldier]";
-	mes "Welcome to Juno, the city of noble-mindedness.";
+	mes "Bem-vindo a Juno, the city of noble-mindedness.";
 	next;
 	mes "[Juno Soldier]";
 	mes "There is a holy shield named 'Sacred Mission' which can only be used by Crusaders.";
 	next;
 	mes "[Juno Soldier]";
-	mes "It's a long and narrow shield with an angel wing engraved in the center of the front side. Against Devil and Undead monsters, it is especially powerful.";
+	mes "It's a long and narrow shield with an angel wing engraved in the center of the front side. Against Devil and Undead monstros, it is especially powerful.";
 	close;
 }
 
 yuno,142,183,5	script	Airship Representative	100,{
 	mes "[Airship Representative]";
-	mes "Good day, I am here to inform you";
+	mes "Bom dia, I am here to inform you";
 	mes "about the Juno Airship which";
 	mes "we plan to operate in the near future.";
 	next;
 	mes "[Air ship Representative]";
 	mes "Unfortunately, it is still in";
 	mes "development, and we've yet";
-	mes "to complete testing. However,";
+	mes "to complete testing. Porem,";
 	mes "we feel the need to let our";
 	mes "eager customers know of our";
 	mes "progress.";
@@ -367,7 +367,7 @@ yuno,142,183,5	script	Airship Representative	100,{
 	mes "[Airship Representative]";
 	mes "The teleport fee is 1,800 zeny, regardless of where you want to go. Please let me know your desired destination.";
 	next;
-	switch(select("Prontera:Izlude:Geffen:Morocc:Payon:Alberta:Comodo:Cancel")) {
+	switch(select("Prontera:Izlude:Geffen:Morocc:Payon:Alberta:Comodo:Cancelar")) {
 		case 1: callsub S_Warp,"prontera",116,72;
 		case 2: if (checkre(0)) callsub S_Warp,"izlude",128,98; else callsub S_Warp,"izlude",94,103;
 		case 3: callsub S_Warp,"geffen",120,39;

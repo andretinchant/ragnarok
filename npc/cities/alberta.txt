@@ -22,91 +22,91 @@
 
 alberta,97,51,0	script	Fabian	84,{
 	mes "[Fabian]";
-	mes "Man... When you travel all around the world, you'll hear of some crazy things.";
+	mes "Cara... Quando voce viaja pelo mundo todo, acaba ouvindo umas coisas malucas.";
 	next;
 	mes "[Fabian]";
-	mes "Once, I heard that there are Cards which contain the power of monsters. If someone happens to get their hands on a card, they'll be able to use that monster's power.";
+	mes "Uma vez, eu ouvi que existem Cartas que contem o poder dos monstros. Se alguem conseguir uma carta, vai poder usar o poder daquele monstro.";
 	next;
 	mes "[Fabian]";
-	mes "I'm guessing it's some sort of fad or scam, where they make you collect all the cards or whatever. I mean, how can a card really hold the power of a monster?!";
+	mes "Eu acho que e algum tipo de moda ou golpe, onde te fazem colecionar todas as cartas ou sei la. Quer dizer, como uma carta pode realmente conter o poder de um monstro?!";
 	next;
 	mes "[Fabian]";
-	mes "Seriously...";
+	mes "Serio...";
 	close;
 }
 
 alberta,53,39,0	script	Steiner	100,{
 	mes "[Steiner]";
 	mes "Oh...!";
-	mes "Welcome to Alberta,";
-	mes "young adventurer!";
+	mes "Bem-vindo a Alberta,";
+	mes "jovem aventureiro!";
 	next;
 	mes "[Steiner]";
-	mes "Pardon me if I seem distracted. I'm milling about, trying to make a plan. You see, I hear that there is a store in Geffen that sells armor that is resistant to magic.";
+	mes "Desculpe se pareco distraido. Estou andando por ai, tentando fazer um plano. Sabe, eu ouvi que tem uma loja em Geffen que vende armaduras resistentes a magia.";
 	next;
 	mes "[Steiner]";
-	mes "If I buy a lot of them in bulk, and then resell them here for a higher price...";
+	mes "Se eu comprar varias em grande quantidade e depois revender aqui por um preco mais alto...";
 	close;
 }
 
 alberta_in,20,183,0	script	Chad	1_M_03,{
 	mes "[Chad]";
-	mes "People say the legendary weapon Gungnir never misses its target. I wonder if it's possibly true...";
+	mes "Dizem que a arma lendaria Gungnir nunca erra o alvo. Sera que e verdade...";
 	next;
 	mes "[Chad]";
-	mes "People also say that babies are assembled by the storks before delivery, girls dig guys who act like jerks, and that Santa Claus exists! But only in Lutie.";
+	mes "Tambem dizem que bebes sao montados pelas cegonhas antes da entrega, que garotas gostam de caras que agem como babacas, e que o Papai Noel existe! Mas so em Lutie.";
 	next;
 	mes "[Chad]";
-	mes "I wonder...";
-	mes "If any of that";
-	mes "is possibly";
-	mes "true...";
+	mes "Eu me pergunto...";
+	mes "Se algo disso";
+	mes "e realmente";
+	mes "verdade...";
 	close;
 }
 
 alberta,131,139,2	script	Drunken Old Man	1_M_JOBGUIDER,{
 	mes "[Deagle]";
-	mes "^666666*Hiccup*^000000";
-	mes "Wh-what are you";
-	mes "staring at? Get lost!!";
+	mes "^666666*Hic*^000000";
+	mes "Q-que que voce ta";
+	mes "olhando? Vai embora!!";
 	next;
-	switch(select("Say nothing.","Leave him alone.")) {
+	switch(select("Nao dizer nada.","Deixar ele em paz.")) {
 	case 1:
 		mes "[Deagle]";
-		mes "Hahahaha ^666666*hiccup*^000000... You've got some nerve. I may look worthless now, but I used to be a sailor on the 'Going Mary.'";
+		mes "Hahahaha ^666666*hic*^000000... Voce tem coragem. Posso parecer um inutil agora, mas eu era um marinheiro no 'Going Mary.'";
 		next;
-		switch(select("Never heard of it.","Really? No kidding!")) {
+		switch(select("Nunca ouvi falar.","Serio? Sem brincadeira!")) {
 		case 1:
 			mes "[Deagle]";
-			mes "Never heard of it?! Everybody knows th'notorious pirate ship 'Going Mary!' ^666666*Hiccup~*^000000";
+			mes "Nunca ouviu falar?! Todo mundo conhece o notorio navio pirata 'Going Mary!' ^666666*Hic~*^000000";
 			next;
 			mes "[Deagle]";
-			mes "Ah~ The ol'days. If only... If only we hadn't run into that STORM...^666666*hiccup*^000000";
+			mes "Ah~ Os velhos tempos. Se ao menos... Se ao menos nao tivessemos encontrado aquela TEMPESTADE...^666666*hic*^000000";
 			next;
 			mes "[Deagle]";
-			mes "AH~ Captain. I miss our cap'n more than anything... No foe survived before cap'n's sword.";
+			mes "AH~ Capitao. Sinto mais falta do nosso capitao do que de qualquer coisa... Nenhum inimigo sobrevivia diante da espada do capitao.";
 			close;
 		case 2:
 			mes "[Deagle]";
-			mes "That's right! NOBODY meshes with the crew of the 'Going Mary!' And nobody can beat out cap'n in a sword fight!";
+			mes "Isso ai! NINGUEM mexe com a tripulacao do 'Going Mary!' E ninguem consegue vencer o capitao numa luta de espadas!";
 			next;
 			mes "[Deagle]";
-			mes "CAPTAIN~!!! ^666666*HICCUP~*^000000 He would swing his sword like this, then... THEN!!";
+			mes "CAPITAO~!!! ^666666*HIC~*^000000 Ele balancava a espada assim, e entao... ENTAO!!";
 			next;
 			mes "[Deagle]";
-			mes "The bastard the captain was fighting, and anyone of his friends near him, were surrounded in flame!";
+			mes "O desgraçado contra quem o capitao lutava, e qualquer amigo dele por perto, eram envolvidos em chamas!";
 			next;
 			mes "[Deagle]";
-			mes "Man, that sword must have had some sort of mysterious power, or the captain was just that good...!";
+			mes "Cara, aquela espada devia ter algum tipo de poder misterioso, ou o capitao era simplesmente bom demais...!";
 			next;
 			mes "[Deagle]";
-			mes "Phew~~ ^666666*Sob* *Sob...*^000000 God, I miss everyone! Now I'm depressed! Please, go away now.";
+			mes "Puxa~~ ^666666*Snif* *Snif...*^000000 Droga, sinto falta de todos! Agora to deprimido! Por favor, va embora.";
 			close;
 		}
 	case 2:
 		mes "[Deagle]";
-		mes "That's right!";
-		mes "Go AWAY~";
+		mes "Isso mesmo!";
+		mes "Vai EMBORA~";
 		close;
 	}
 }
@@ -114,26 +114,26 @@ alberta,131,139,2	script	Drunken Old Man	1_M_JOBGUIDER,{
 alberta,58,80,2	script	Shakir	99,{
 	mes "[Shakir]";
 	if (rand(2)) {
-		mes "We Merchants have our own negotiating skill when we sell goods. This skill can get us more money than when other people sell goods.";
+		mes "Nos Mercadores temos nossa propria habilidade de negociacao quando vendemos mercadorias. Essa habilidade nos permite ganhar mais dinheiro do que quando outras pessoas vendem.";
 		next;
 		mes "[Shakir]";
-		mes "It's more than just yelling 'You'll have to give more money please!' You need to have charisma, and master rhetoric!";
+		mes "E mais do que simplesmente gritar 'Voce vai ter que pagar mais!' Voce precisa ter carisma e dominar a retorica!";
 		next;
 		mes "[Shakir]";
-		mes "We can get up to 24 % more zeny with this incredible skill. But remember to train hard to acquire it!!";
+		mes "Podemos conseguir ate 24% mais zeny com essa habilidade incrivel. Mas lembre-se de treinar bastante para adquiri-la!!";
 	} else {
-		mes "We Merchants can";
-		mes "open roadside stands";
-		mes "to do business.";
+		mes "Nos Mercadores podemos";
+		mes "abrir barracas na estrada";
+		mes "para fazer negocios.";
 		next;
 		mes "[Shakir]";
-		mes "With the Discount skill, we can buy goods really cheap from the stores in towns and load them into the cart we rent.";
+		mes "Com a habilidade Desconto, podemos comprar mercadorias bem baratas nas lojas das cidades e carrega-las no carrinho que alugamos.";
 		next;
 		mes "[Shakir]";
-		mes "Then afterwards, we can travel anywhere, and sells our goods to make a profit!";
+		mes "Depois, podemos viajar para qualquer lugar e vender nossas mercadorias para ter lucro!";
 		next;
 		mes "[Shakir]";
-		mes "This way, business is more convenient and safe. Don't fall asleep, although it's too easy to do that.";
+		mes "Assim, o negocio e mais conveniente e seguro. Nao va dormir, embora seja facil demais fazer isso.";
 	}
 	close;
 }
@@ -142,70 +142,70 @@ alberta,62,156,2	script	Sonya	102,{
 	mes "[Sonya]";
 	switch(rand(3)){
 	case 0:
-		mes "Hey, you know, this one time I was walking through the forest and I saw this little green stem moving around.";
+		mes "Ei, sabe, uma vez eu estava andando pela floresta e vi um caule verde se mexendo.";
 		next;
 		mes "[Sonya]";
-		mes "I went to see what it was and when I went to touch it. The stem actually slapped my hand!";
+		mes "Fui ver o que era e quando tentei tocar, o caule me deu um tapa na mao!";
 		next;
 		mes "[Sonya]";
-		mes "It startled me, so I jumped back a bit and then I realized it wasn't a stem, but a very small animal.";
+		mes "Me assustei e dei um pulo pra tras, ai percebi que nao era um caule, mas um animal bem pequeno.";
 		next;
 		mes "[Sonya]";
-		mes "I was lucky I didn't upset it. Even the smallest animal can be dangerous if angered.";
+		mes "Tive sorte de nao ter irritado ele. Ate o menor animal pode ser perigoso se ficar com raiva.";
 		close;
 	case 1:
-		mes "You know those lazy looking bears that live in the forest on the way to Payon?";
+		mes "Sabe aqueles ursos preguicosos que vivem na floresta no caminho pra Payon?";
 		next;
 		mes "[Sonya]";
-		mes "Just for fun, I threw a rock at it and all of sudden it rushed at me! I was sooooo scared, I started to run away, then BAM!!!";
+		mes "So de brincadeira, joguei uma pedra nele e de repente ele correu atras de mim! Fiquei taaao assustada que comecei a correr, e entao BAM!!!";
 		next;
 		mes "[Sonya]";
-		mes "It ran into a low tree branch and knocked itself out! I swear, I'll never provoke an animal for fun again!";
+		mes "Ele bateu num galho baixo de arvore e se nocauteou! Juro, nunca mais vou provocar um animal por diversao!";
 		close;
 	case 2:
-		mes "I once saw a pack of wolves take on one of those huge, lazy bears!";
+		mes "Uma vez vi uma matilha de lobos enfrentando um daqueles ursos enormes e preguicosos!";
 		next;
 		mes "[Sonya]";
-		mes "Wolves are much more cooperative than they may seem. If one of them is attacked, then any nearby wolves will run to help.";
+		mes "Lobos sao muito mais cooperativos do que parecem. Se um deles e atacado, os lobos proximos correm pra ajudar.";
 		next;
 		mes "[Sonya]";
-		mes "I'd think twice if you ever want to fight one when others of its kind are around. Be careful: don't get ganged up on!";
+		mes "Eu pensaria duas vezes se voce quiser lutar com um quando outros da mesma especie estiverem por perto. Cuidado: nao deixe eles te cercarem!";
 		close;
 	}
 }
 
 alberta,93,174,2	script	Grandmother Alma	103,{
 	mes "[Grandmother Alma]";
-	mes "Some time ago,";
-	mes "a derelict ship";
-	mes "drifted into";
-	mes "Alberta harbour.";
+	mes "Ha algum tempo,";
+	mes "um navio abandonado";
+	mes "chegou flutuando";
+	mes "ao porto de Alberta.";
 	next;
 	mes "[Grandmother Alma]";
-	mes "Hoping to save any survivors, some of the townspeople ventured into the ship. However, they all ran out terrified, saying that corpses were walking around inside the ship.";
+	mes "Esperando salvar sobreviventes, alguns moradores entraram no navio. Porem, todos sairam correndo apavorados, dizendo que cadaveres estavam andando dentro do navio.";
 	next;
 	mes "[Grandmother Alma]";
-	mes "The ship was also packed with dangerous marine organisms, and they couldn't get inside, even if they wanted to.";
+	mes "O navio tambem estava cheio de organismos marinhos perigosos, e nao conseguiam entrar, mesmo que quisessem.";
 	next;
 	mes "[Grandmother Alma]";
-	mes "We couldn't do anything about that ominous looking ship, and just left it as it was. Nowadays, exploration teams try to enter that ship and wipe out its monsters.";
+	mes "Nao podiamos fazer nada sobre aquele navio sinistro e o deixamos como estava. Hoje em dia, equipes de exploracao tentam entrar no navio e eliminar seus monstros.";
 	next;
 	mes "[Grandmother Alma]";
-	mes "So it might be a good experience for a young person like yourself to be a recruit. But, it's still not worth risking your life if you're not strong enough.";
+	mes "Entao pode ser uma boa experiencia para uma pessoa jovem como voce se alistar. Mas ainda nao vale a pena arriscar sua vida se voce nao for forte o suficiente.";
 	close;
 }
 
 alberta,189,151,5	script	Fisk	4W_SAILOR,{
 	mes "[Fisk]";
-	mes "Ahoy mate,";
-	mes "where'd ya";
-	mes "wanna go?";
+	mes "Ahoy parceiro,";
+	mes "pra onde voce";
+	mes "quer ir?";
 	next;
-	switch(select("Sunken Ship -> 250 zeny.","Izlude Marina -> 500 zeny.","Never mind.")) {
+	switch(select("Navio Afundado -> 250 zeny.","Marina de Izlude -> 500 zeny.","Deixa pra la.")) {
 	case 1:
 		if (Zeny < 250) {
 			mes "[Fisk]";
-			mes "Hey now, don't try to cheat me! I said 250 zeny!";
+			mes "Ei, nao tente me enganar! Eu disse 250 zeny!";
 			close;
 		}
 		Zeny = Zeny - 250;
@@ -214,7 +214,7 @@ alberta,189,151,5	script	Fisk	4W_SAILOR,{
 	case 2:
 		if (Zeny < 500) {
 			mes "[Fisk]";
-			mes "Ain't no way yer getting there without the 500 zeny first!";
+			mes "Nem pensar que voce vai chegar la sem os 500 zeny primeiro!";
 			close;
 		}
 		Zeny = Zeny - 500;
@@ -225,44 +225,44 @@ alberta,189,151,5	script	Fisk	4W_SAILOR,{
 		end;
 	case 3:
 		mes "[Fisk]";
-		mes "Alright...";
-		mes "Landlubber.";
+		mes "Tudo bem...";
+		mes "Marujo de terra firme.";
 		close;
 	}
 }
 
 alb2trea,39,50,6	script	Fisk#a2t	4W_SAILOR,{
 	mes "[Fisk]";
-	mes "So you wanna head back to the mainland in Alberta, eh?";
+	mes "Entao voce quer voltar pro continente em Alberta, ne?";
 	next;
-	if (select("Yes please.","I changed my mind.") == 1)
+	if (select("Sim, por favor.","Mudei de ideia.") == 1)
 		warp "alberta",192,169;
 	close;
 }
 
 alberta,195,151,2	script	Paul	4_M_04,{
 	mes "[Paul]";
-	mes "Good day~";
-	mes "Would you like";
-	mes "to join the";
-	mes "exploration team";
-	mes "of the Sunken Ship?";
+	mes "Bom dia~";
+	mes "Gostaria de";
+	mes "se juntar a";
+	mes "equipe de exploracao";
+	mes "do Navio Afundado?";
 	next;
 	mes "[Paul]";
-	mes "Oh! Before you join, I must warn you. If you're not that strong, you may not want to go.";
+	mes "Ah! Antes de entrar, devo avisar. Se voce nao for muito forte, talvez nao queira ir.";
 	next;
 	mes "[Paul]";
-	mes "So, want";
-	mes "to sign up?";
-	mes "The admission";
-	mes "fee is only";
-	mes "200 Zeny.";
+	mes "Entao, quer";
+	mes "se inscrever?";
+	mes "A taxa de";
+	mes "inscricao e de";
+	mes "apenas 200 Zeny.";
 	next;
-	switch(select("Sign me up!","Uh, no thanks.")) {
+	switch(select("Me inscreva!","Ah, nao obrigado.")) {
 	case 1:
 		if (Zeny < 200) {
 			mes "[Paul]";
-			mes "It seems you don't have the money, my friend. But please come back when you're able to pay.";
+			mes "Parece que voce nao tem o dinheiro, meu amigo. Mas por favor volte quando puder pagar.";
 			close;
 		}
 		Zeny = Zeny - 200;
@@ -270,10 +270,10 @@ alberta,195,151,2	script	Paul	4_M_04,{
 		close;
 	case 2:
 		mes "[Paul]";
-		mes "Alright, well...";
-		mes "I'll be around";
-		mes "if you change";
-		mes "your mind.";
+		mes "Tudo bem, bom...";
+		mes "Estarei por aqui";
+		mes "se voce mudar";
+		mes "de ideia.";
 		close;
 	}
 }
@@ -281,67 +281,67 @@ alberta,195,151,2	script	Paul	4_M_04,{
 alberta,190,173,4	script	Phelix	4_M_03,{
 	mes "[Phelix]";
 	if ((MaxWeight - Weight) < 10000) {
-		mes "Wait a moment!!";
-		mes "You have brought too many things!";
-		mes "You cannot accept any more items!";
-		mes "Please reduce the amount of items,";
-		mes "then come see me again.";
+		mes "Espere um momento!!";
+		mes "Voce trouxe coisas demais!";
+		mes "Voce nao pode aceitar mais itens!";
+		mes "Por favor reduza a quantidade de itens,";
+		mes "e depois venha me ver de novo.";
 		close;
 	}
 	if (@event_zelopy == 0) {
-		mes "The hell are you doing here?";
-		mes "There is nothing you can get for free on this ship, if you want somethin', work for it!!";
+		mes "Que diabos voce ta fazendo aqui?";
+		mes "Nao tem nada de graca nesse navio, se voce quer alguma coisa, trabalhe por isso!!";
 		next;
 		mes "[Phelix]";
-		mes "Hmm, so why don't you bring me 10 Jellopies and I will give 1 potion. How's that sound?";
-		mes "Or if that's too hard for your pansy ass, 3 Jellopies for 1 Carrot.";
+		mes "Hmm, entao por que voce nao me traz 10 Jellopies e eu te dou 1 pocao. Que tal?";
+		mes "Ou se isso for dificil demais pra voce, 3 Jellopies por 1 Cenoura.";
 		next;
 		mes "[Phelix]";
-		mes "If you're interested in my offer, get me the stuff I mentioned.";
+		mes "Se voce estiver interessado na minha oferta, me traga o que eu mencionei.";
 		@event_zelopy = 1;
 		close;
 	}
-	mes "Hmm.. you want to exchange Jellopies for Red Potions or some Carrots eh? Well.. which one?";
+	mes "Hmm.. quer trocar Jellopies por Red Potions ou umas Cenouras, ne? Bom.. qual deles?";
 	next;
-	switch(select("Red Potions please.","Carrots please.")) {
+	switch(select("Red Potions, por favor.","Cenouras, por favor.")) {
 	case 1:
 		mes "[Phelix]";
-		mes "Alright...";
-		mes "Let's see";
-		mes "what'cha got...";
+		mes "Beleza...";
+		mes "Deixa eu ver";
+		mes "o que voce tem...";
 		next;
 		mes "[Phelix]";
 		if (countitem(909) < 10) {
-			mes "Hey! Weren't you listening? I said 10 Jellopies for 1 Red Potion.. are ya deaf?";
+			mes "Ei! Voce nao tava ouvindo? Eu disse 10 Jellopies por 1 Red Potion.. ta surdo?";
 			close;
 		} else {
 			.@max = countitem(909)/10;
-			mes "Hmm, not bad...";
-			mes "How many potions";
-			mes "do you want to get?";
+			mes "Hmm, nada mal...";
+			mes "Quantas pocoes";
+			mes "voce quer receber?";
 			next;
-			switch(select("As many as I can, please.","I want this many.","Never mind, I like my jellopy.")) {
+			switch(select("O maximo que eu puder, por favor.","Eu quero essa quantidade.","Deixa pra la, eu gosto das minhas jellopy.")) {
 			case 1:
 				delitem 909,.@max*10;// Jellopy
 				getitem 501,.@max;// Red_Potion
 				break;
 			case 2:
 				mes "[Phelix]";
-				mes "I'm not giving you more than 100 at a time so don't bother, OK? If you don't want any, just say '0'.";
-				mes "Right now, the most you can get is " + .@max + " but remember, 100 at most, you want to break my back?.";
+				mes "Nao vou te dar mais de 100 de uma vez, entao nem tente, ok? Se nao quiser nenhuma, so diga '0'.";
+				mes "Agora, o maximo que voce pode receber e " + .@max + " mas lembre-se, 100 no maximo, quer quebrar minhas costas?.";
 				input .@amount;
 				next;
 				mes "[Phelix]";
 				if (.@amount <= 0) {
-					mes "Much obliged, come again anytime.";
+					mes "Obrigado, volte sempre.";
 					close;
 				}
 				if (.@amount > 100) {
-					mes "Hey, what'd I say? 100 at a time at most, you're trying to kill me aren't you!";
+					mes "Ei, o que eu disse? 100 de cada vez no maximo, ta tentando me matar, ne!";
 					close;
 				}
 				if (countitem(909) < .@amount*10) {
-					mes "Hmm, it looks like you don't have enough. Go get more Jellopies if you want anything else from me.";
+					mes "Hmm, parece que voce nao tem o suficiente. Va buscar mais Jellopies se quiser mais alguma coisa de mim.";
 					close;
 				}
 				delitem 909,.@amount*10;// Jellopy
@@ -349,48 +349,48 @@ alberta,190,173,4	script	Phelix	4_M_03,{
 				break;
 			case 3:
 				mes "[Phelix]";
-				mes "No problem,";
-				mes "see you next time.";
+				mes "Sem problema,";
+				mes "ate a proxima.";
 				close;
 			}
 			mes "[Phelix]";
-			mes "There you go! As I promised. Don't go suckin' them all down at once.";
+			mes "Aqui esta! Como prometido. Nao va tomar todas de uma vez so.";
 			close;
 		}
 	case 2:
 		mes "[Phelix]";
-		mes "Alright, let's see what ya got...";
+		mes "Beleza, deixa eu ver o que voce tem...";
 		next;
 		mes "[Phelix]";
 		if (countitem(909) < 3) {
-			mes "Hmm, look pansy ass, I said 3 Jellopies for 1 Carrot.. got it?";
+			mes "Hmm, olha so, eu disse 3 Jellopies por 1 Cenoura.. entendeu?";
 			close;
 		}
 		.@max = countitem(909)/3;
-		mes "Not too bad pansy...";
-		mes "How many do you want?";
+		mes "Nada mal...";
+		mes "Quantas voce quer?";
 		next;
-		switch(select("As many as I can get, please","I want this many.","Never mind, I like my jellopy.")) {
+		switch(select("O maximo que eu puder, por favor","Eu quero essa quantidade.","Deixa pra la, eu gosto das minhas jellopy.")) {
 		case 1:
 			delitem 909,.@max*3;// Jellopy
 			getitem 515,.@max;// Carrot
 			break;
 		case 2:
 			mes "[Phelix]";
-			mes "Right I'm not giving you more than 100 at a time so don't bother, okay? If you don't want any, just say '0'.";
+			mes "Certo, nao vou te dar mais de 100 de uma vez, entao nem tente, ta? Se nao quiser nenhuma, so diga '0'.";
 			input .@amount;
 			next;
 			mes "[Phelix]";
 			if (.@amount == 0) {
-				mes "Alright then, see you next time.";
+				mes "Tudo bem entao, ate a proxima.";
 				close;
 			}
 			if (.@amount > 100) {
-				mes "Hey pansy ass, I said 100 at most, no more than that! I'm not going to break my back for the likes of you!";
+				mes "Ei, eu disse 100 no maximo, nao mais que isso! Nao vou quebrar minhas costas por causa de voce!";
 				close;
 			}
 			if (countitem(909) < .@amount*3) {
-				mes "Seems you don't have enough. Go get some more if you want anything else.";
+				mes "Parece que voce nao tem o suficiente. Va buscar mais se quiser mais alguma coisa.";
 				close;
 			}
 			delitem 909,.@amount*3;// Jellopy
@@ -398,11 +398,11 @@ alberta,190,173,4	script	Phelix	4_M_03,{
 			break;
 		case 3:
 			mes "[Phelix]";
-			mes "Catch'ya later.";
+			mes "Ate mais.";
 			close;
 		}
 		mes "[Phelix]";
-		mes "There you go~! As I promised. Try not to stuff yer face.";
+		mes "Aqui esta~! Como prometido. Tente nao enfiar tudo na boca de uma vez.";
 		close;
 	}
 }

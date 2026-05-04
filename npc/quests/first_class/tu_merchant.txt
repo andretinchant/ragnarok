@@ -623,7 +623,7 @@ L_Potions:
 	mes "[Sagle]";
 	mes "I will sell you 10 Red Potions for ^871F78"+ .@cost +" zeny^000000. You'd better get them now while they're still here!";
 	next;
-	switch(select("Buy:Cancel")){
+	switch(select("Buy:Cancelar")){
 	case 1:
 		mes "[Sagle]";
 		mes "Excellent!";
@@ -689,7 +689,7 @@ L_Potions:
 	mes "10 Red Potions for "+ .@cost +" Zeny.";
 	mes "Would you like some?";
 	next;
-	switch(select("Buy:Cancel")){
+	switch(select("Buy:Cancelar")){
 	case 1:
 		mes "[Kellion]";
 		mes "Good choice~";
@@ -749,7 +749,7 @@ L_Potions:
 	mes "to buy 10 Red Potions";
 	mes "for "+ .@cost +" Zeny, kind adventurer?";
 	next;
-	switch(select("Buy:Cancel")){
+	switch(select("Buy:Cancelar")){
 	case 1:
 		mes "[Aigie]";
 		mes "Thank you so much.";
@@ -806,7 +806,7 @@ L_Potions:
 	.@cost = getarg(0);
 	mes "If you've checked out the market for Red Potions, you know that my price is the best. I'm offering 10 Red Potions for only "+ .@cost +" Zeny!";
 	next;
-	switch(select("Buy:Cancel")){
+	switch(select("Buy:Cancelar")){
 	case 1:
 		mes "[Jayon]";
 		mes "Heh heh...!";
@@ -878,7 +878,7 @@ L_Potions:
 	mes "I'll sell them to you";
 	mes "for the low price of "+ .@cost +" Zeny~";
 	next;
-	switch(select("Buy:Cancel")){
+	switch(select("Buy:Cancelar")){
 	case 1:
 		mes "[Maos]";
 		mes "Excellent choice!";

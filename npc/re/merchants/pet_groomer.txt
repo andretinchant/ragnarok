@@ -10,26 +10,26 @@
 
 -	script	#PetGroomer	HIDDEN_NPC,{
 	mes "[Pet Groomer]";
-	mes "Hello! Do you need some Q-Pet food?";
-	mes "Or maybe some accessories to decorate your Q-Pet?";
-	mes "There is also a Q-Pet taming item!";
+	mes "Ola! Voce precisa de comida para Q-Pet?";
+	mes "Ou talvez alguns acessorios para decorar seu Q-Pet?";
+	mes "Tambem temos itens para domar Q-Pet!";
 	next;
-	switch( select( "Buy Pet Food.", "Exchange Q-Pet Related Supplies.", "I'll come next time" )) {
+	switch( select( "Comprar Comida de Pet.", "Trocar Suprimentos de Q-Pet.", "Volto na proxima vez" )) {
 		case 1:
 			mes "[Pet Groomer]";
-			mes "Okay, please buy it yourself.";
+			mes "Certo, por favor compre voce mesmo.";
 			close2;
 			callshop "Pet_Items", 1;
 			end;
 		case 2:
 			mes "[Pet Groomer]";
-			mes "Okay, let's barter.";
+			mes "Certo, vamos fazer a troca.";
 			close2;
 			callshop "barter_Pet_Groomer";
 			end;
 		case 3:
 			mes "[Pet Groomer]";
-			mes "Okay, come back whenever you want.";
+			mes "Certo, volte quando quiser.";
 			close;
 	}
 }

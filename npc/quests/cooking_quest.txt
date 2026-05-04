@@ -1242,7 +1242,7 @@
 				mes "my Level 1 Cookbooks.";
 				if (countitem(535) > 9) {
 					next;
-					if (select("Give 10 Pumpkins and Current Cookbook:Cancel") == 1) {
+					if (select("Give 10 Pumpkins and Current Cookbook:Cancelar") == 1) {
 						cutin "orleans_6",0;
 						mes "[Charles Orleans]";
 						mes "Perfect, you've brought";
@@ -1273,7 +1273,7 @@
 				mes "to borrow my Level 2 Cookbook.";
 				if (countitem(538) > 4) {
 					next;
-					if (select("Give Cookies and Current Cookbook:Cancel") == 1) {
+					if (select("Give Cookies and Current Cookbook:Cancelar") == 1) {
 						cutin "orleans_6",0;
 						mes "[Charles Orleans]";
 						mes "Oh, you brought these";
@@ -1307,7 +1307,7 @@
 				mes "Level 3 Cookbook, okay?";
 				if (countitem(551) > 4) {
 					next;
-					if (select("Give Sushi and Current Cookbook:Cancel")) {
+					if (select("Give Sushi and Current Cookbook:Cancelar")) {
 						cutin "orleans_6",0;
 						mes "[Charles Orleans]";
 						mes "Ooh, these look so fresh!";
@@ -1339,7 +1339,7 @@
 				mes "borrow my Level 4 Cookbook.";
 				if (countitem(553) > 4) {
 					next;
-					if (select("Give Bao and Current Cookbook:Cancel") == 1) {
+					if (select("Give Bao and Current Cookbook:Cancelar") == 1) {
 						cutin "orleans_6",0;
 						mes "[Charles Orleans]";
 						mes "Great, you actually";

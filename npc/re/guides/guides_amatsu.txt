@@ -17,7 +17,7 @@
 
 amatsu,202,91,3	script	Amatsu Guide#amatsu	758,{
 	mes "[Amachang]";
-	mes "Welcome to ^8B4513Amatsu^000000,";
+	mes "Bem-vindo a ^8B4513Amatsu^000000,";
 	mes "the town of kind towners";
 	mes "and beautiful cherry blossoms.";
 	next;
@@ -31,7 +31,7 @@ amatsu,202,91,3	script	Amatsu Guide#amatsu	758,{
 	F_Navi("[Amachang]");
 	while (1) {
 		next;
-		switch(select("[ Kafra Employee ]:[ Bar ]:[ Weapon Dealer ]:[ Tool Dealer ]:[ Amatsu Palace ]:[ Chef Assistant ]:[ Ninja Guild Building ]:[ Sea Captain ]:Remove Marks from Mini-Map:Cancel")) {
+		switch(select("[ Kafra Employee ]:[ Bar ]:[ Weapon Dealer ]:[ Tool Dealer ]:[ Amatsu Palace ]:[ Chef Assistant ]:[ Ninja Guild Building ]:[ Sea Captain ]:Remover Marcas do Mini-Mapa:Cancelar")) {
 		case 1:
 			callsub L_Mark, "^0000FFKafra Employee^000000";
 			viewpoint 1,102,149,0,0x0A82FF;
@@ -87,7 +87,7 @@ amatsu,202,91,3	script	Amatsu Guide#amatsu	758,{
 L_Mark:
 	mes "[Amachang]";
 	mes "The "+getarg(0)+" is";
-	mes "marked on your mini-map.";
+	mes "marked no seu mini-mapa.";
 	mes "Is there anything else I can do for you?";
 	return;
 }

@@ -2829,7 +2829,7 @@ OnTouch_:
 		{
 			mes "[" + strcharinfo(0) + "]";
 			mes "I can't go back to";
-			mes "Lin yet... I still need";
+			mes "Lin ainda... I still need";
 			mes "to fully investigate";
 			mes "Thanatos Tower...";
 			close2;
@@ -5262,7 +5262,7 @@ que_job01,91,83,3	script	Kidd#hall	884,{
 		mes "Did you learn anything about";
 		mes "Raiyan Moore or Satan Morocc?";
 		next;
-		switch( select( "Yes, I did.","No, not yet..." ) )
+		switch( select( "Yes, I did.","No, not ainda..." ) )
 		{
 			case 1:
 				if(thana_quest > 1)
@@ -5366,7 +5366,7 @@ que_job01,91,83,3	script	Kidd#hall	884,{
 		mes "searching places where";
 		mes "the children might have";
 		mes "been hidden, but there's";
-		mes "just so many of them. We";
+		mes "just so many deles. We";
 		mes "really got to think of ou--";
 		next;
 		cutin "mocseal_kid01.bmp",255;

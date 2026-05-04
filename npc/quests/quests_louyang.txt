@@ -1206,7 +1206,7 @@ lou_in02,265,69,5	script	Doctor#lyang	814,{
 	else if (ch_par < 4) {
 		mes "[Hua Tuo]";
 		mes "You haven't gotten";
-		mes "the medicine yet...?";
+		mes "the medicine ainda...?";
 		mes "I hope you can get it";
 		mes "as soon as you can...";
 		close;

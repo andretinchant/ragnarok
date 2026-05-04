@@ -73,7 +73,7 @@ morocc,202,110,0	script	Volunteer - Morocc#03	730,{
 	mes "We're still unable to estimate the overall damage.";
 	next;
 	mes "[Morocc Volunteer]";
-	mes "Adventurers' Union and Prontera Kingdom are putting their efforts on restorations as well as restraints of the original cause of the disaster.";
+	mes "Aventureiros' Union and Prontera Kingdom are putting their efforts on restorations as well as restraints of the original cause of the disaster.";
 	next;
 	mes "[Morocc Volunteer]";
 	mes "Unless we settle the original cause, the damage will even spread out of Morocc. The only thing left is to get worse.";
@@ -121,7 +121,7 @@ morocc,223,102,0	script	Volunteer - Morocc#06::MocVolunteer	741,{
 	next;
 	mes "[Morocc Volunteer]";
 	mes "My stupid button men are useless,";
-	mes "Against those adventurers,";
+	mes "Against those aventureiros,";
 	mes "This time I must revive,";
 	mes "Cracking the time and the space,";
 	mes "Will be saved for the last~~~";
@@ -131,7 +131,7 @@ morocc,223,102,0	script	Volunteer - Morocc#06::MocVolunteer	741,{
 	specialeffect EF_HIT2,AREA,"Volunteer - Morocc#06";
 	next;
 	mes "[Morocc Volunteer]";
-	mes "Heyyy, you're being too harsh, Señorita. Your fist may be as fragile as you are, but it sure can hurt somebody.";
+	mes "Heyyy, you're being too harsh, SeÃ±orita. Your fist may be as fragile as you are, but it sure can hurt somebody.";
 	next;
 	mes "[Ringing Voice]";
 	mes "Anyways, isn't that a crib? I think I heard something like that before..";
@@ -154,16 +154,16 @@ moc_ruins,123,154,0	script	Young Man#moc01	99,{
 	mes "Those things have been around here for thousands and thousands of years. No one knows when and why they were built, or who built them.";
 	next;
 	mes "[Young Man]";
-	mes "All we know is that tons of monsters live inside those weird buildings. You might wanna stay away from those really dangerous places.";
+	mes "All we know is that tons of monstros live inside those weird buildings. You might wanna stay away from those really perigoso places.";
 	next;
 	mes "[Young Man]";
-	mes "Those monsters in the Pyramid would be very, very sensitive to sweet flash smell of people....";
+	mes "Those monstros in the Pyramid would be very, very sensitive to sweet flash smell of people....";
 	close;
 }
 
 moc_ruins,128,153,0	script	Grampa#moc	61,{
 	mes "[Old Scholar]";
-	mes "I've devoted my life to researching the mysterious pyramids near Morocc. I haven't been able to concretely confirm anything yet, but...";
+	mes "I've devoted my life to researching the misterioso pyramids near Morocc. I haven't been able to concretely confirm anything yet, but...";
 	next;
 	mes "[Old Scholar]";
 	mes "I'm sure that the largest pyramid contains the tomb of the ancient king, Osiris! I'm willing to stake my life on it!";
@@ -179,7 +179,7 @@ moc_ruins,132,144,0	script	Wolf Young Man#moc	85,{
 	mes "Those things are so mean and vicious..";
 	next;
 	mes "[Young Man]";
-	mes "But the thing is that.. I even kinda feel those merciless cold-blooded monsters are nothing to be afraid of, compared to what has happened in Morocc. Morocc is already a hell.";
+	mes "But the thing is that.. I even kinda feel those merciless cold-blooded monstros are nothing to be afraid of, compared to what has happened in Morocc. Morocc is already a hell.";
 	close;
 }
 
@@ -197,8 +197,8 @@ moc_ruins,115,144,3	script	Muka Young Man#moc	83,{
 	mes "Like this one time, while I was in the middle of the desert, I got so thirsty that I caught a cactus.. but before I was able to cut it, it slapped me! Then it shot me in the arse with all these needles...";
 	next;
 	mes "[Young Man]";
-	mes "Later, I learned that it wasn't a normal cactus I found, but the monster we call 'Muka.'";
-	mes "Now I come to think of it, it was fun as much as dangerous.";
+	mes "Later, I learned that it wasn't a normal cactus I found, but the monstro we call 'Muka.'";
+	mes "Now I come to think of it, it was fun as much as perigoso.";
 	close;
 }
 
@@ -222,8 +222,8 @@ moc_ruins,109,138,0	script	Diamond Young Man#moc	99,{
 
 morocc,54,251,0	script	Young Man#moc02	89,{
 	mes "[Drunken Young Man]";
-	mes "Wait a second..! Are you perhaps an adventurer? Welcome! How's your trip?";
-	mes "Heh heh~ Let me tell you a story. You know I just got out of that Tavern, there, huh?";
+	mes "Wait a second..! Are you perhaps an aventureiro? Bem-vindo! How's your trip?";
+	mes "Heh heh~ Let me tell you a story. You know I just got out of that Taberna, there, huh?";
 	next;
 	mes "[Drunken Young Man]";
 	mes "I heard the Satan Morocc has revived. It just got out of cracking the time and the space blar... hic~";
@@ -272,7 +272,7 @@ moc_ruins,115,82,0	script	Little Girl#moc	703,{
 	mes "Please stop crying, Eliese... You could even faint if you cry all day long, you know...";
 	next;
 	mes "[Little Girl]";
-	mes "No! No... Mommy... Daddy....";
+	mes "No! Nao... Mommy... Daddy....";
 	close;
 }
 
@@ -287,7 +287,7 @@ moc_ruins,118,82,1	script	Little Boy#moc	706,{
 	mes "Mom and Dad are now...";
 	next;
 	mes "[Little Girl]";
-	mes "No...... noooooo...";
+	mes "Nao...... noooooo...";
 	next;
 	mes "[Little Boy]";
 	mes "Right, you love ice-cream, don't you? I.. I can get you an ice-cream if you stop crying. Don't cry, Eliese, please.. Ok? Don't...";
@@ -296,26 +296,26 @@ moc_ruins,118,82,1	script	Little Boy#moc	706,{
 
 moc_ruins,121,116,4	script	Picky Lady#moc	66,{
 	mes "[Syvia]";
-	mes "The fields of Rune-Midgarts are infested with wild and dangerous monsters..But, you've got to admit a bunch of them are soooo cute!";
+	mes "The fields of Rune-Midgarts are infested with wild and perigoso monstros..But, you've got to admit a bunch of them are soooo cute!";
 	mes "You know, like how Spore sticks out its tongue after you kill it..";
 	next;
 	mes "[Syvia]";
 	mes "Or, how little Picky wears that tiny egg shell sometimes?..";
 	next;
 	mes "[Syvia]";
-	mes "I can't believe what just has happened.. Our town used to be the one with those cute little monsters, not that kinda of vicious dreadful Evil sleeping in! Whew...";
+	mes "I can't believe what just has happened.. Our town used to be the one with those cute little monstros, not that kinda of vicious dreadful Evil sleeping in! Whew...";
 	next;
 	mes "[Syvia]";
 	mes "I'm so scared... I just wanna ease my mind watching over those cute little Porings...";
 	next;
-	switch(select("What about Angeling?:How about Ghostring?:Quit Conversation")) {
+	switch(select("What about Angeling?:How about Ghostring?:Sair Conversation")) {
 	case 1:
 		mes "[Syvia]";
-		mes "Ooh! Angeling is just like Poring, except it has angel wings! Of course, I don't know if they can actually fly..";
+		mes "Ooh! Angeling is just like Poring, except it has angel wings! Claro, I don't know if they can actually fly..";
 		next;
 		mes "[Syvia]";
 		mes "Angelings are rarely seen, but can be found among large groups of Porings living in one of the fields south of Prontera.";
-		mes "Angeling is a high level monster with Holy property, so it's immune to most magic, aside from spells that have Neutral or Shadow attack properties.";
+		mes "Angeling is a high level monstro with Holy property, so it's immune to most magic, aside from spells that have Neutral or Shadow attack properties.";
 		next;
 		mes "[Syvia]";
 		mes "Hehe~ Don't you think I know a lot about Porings? I love them soooo much";
@@ -328,7 +328,7 @@ moc_ruins,121,116,4	script	Picky Lady#moc	66,{
 		mes "Ghostring is an evil ghost Poring. It's rarely seen, but can be found among mass groups of Porings living in one of the fields south of Prontera.";
 		next;
 		mes "[Syvia]";
-		mes "Ghostring is a high-leveled monster with the Ghost property, so it can withstand all physical attacks.";
+		mes "Ghostring is a high-leveled monstro with the Ghost property, so it can withstand all physical attacks.";
 		mes "Damage can only be caused to Ghostring through magic spells or weapons with an a specific property.";
 		next;
 		mes "[Syvia]";
@@ -357,10 +357,10 @@ moc_ruins,155,107,4	script	Ant Man#moc	47,{
 	mes "[Akira]";
 	mes "I'm really wondered how those entrances are after the horrible destruction, but I can't go out.. If you ever hear anything about it, please get me informed.";
 	next;
-	switch(select("About 'Ant Hell':About Ants:End Conversation")) {
+	switch(select("Sobre 'Ant Hell':Sobre Ants:Encerrar conversa")) {
 	case 1:
 		mes "[Akira]";
-		mes "That cave is sure a dangerous hell, sticky and all... There are 2 underground levels.";
+		mes "That cave is sure a perigoso hell, sticky and all... There are 2 underground levels.";
 		mes "Just head East till you see the bridge which connects to the Payon Forest.";
 		next;
 		mes "[Akira]";
@@ -368,7 +368,7 @@ moc_ruins,155,107,4	script	Ant Man#moc	47,{
 		close;
 	case 2:
 		mes "[Akira]";
-		mes "Ant Hell is swarming with Ant monsters. You'll notice that they all classed with different names...";
+		mes "Ant Hell is swarming with Ant monstros. You'll notice that they all classed with different names...";
 		next;
 		mes "[Akira]";
 		mes "Andre is the weakest, Piere is comparatively average, and Deniro is the strongest Ant. Keep that in mind so you can fight the Ants suitable to your level.";
@@ -388,7 +388,7 @@ moc_ruins,155,107,4	script	Ant Man#moc	47,{
 		mes "There's also an old man called Guias, the spirit of the earth. He's pretty hard to deal with.";
 		next;
 		mes "[Akira]";
-		mes "Sharp teeth and strong jaws of the ants would be something that you should be careful of, but the shovelling skills of that old grandpa is very strong that you should watch out.";
+		mes "Sharp teeth and strong jaws of the ants would be something that you should tome cuidado of, but the shovelling skills of that old grandpa is very strong that you should watch out.";
 		next;
 		mes "[Akira]";
 		mes "...Well, what am I talking about? What is left to be afraid when the Satan of Morocc is revived? Huh..huhhuh...";
@@ -403,7 +403,7 @@ moc_ruins,143,43,4	script	Assassin Boy#moc	118,{
 	mes "[Slayer Kid]";
 	mes "But what did they do when this destruction happened in Morocc!!!";
 	next;
-	switch(select("?????:Where I can find the Assassin clan?:End Conversation")) {
+	switch(select("?????:Where I can find the Assassin clan?:Encerrar conversa")) {
 	case 1:
 		mes "[Slayer Kid]";
 		mes "I hear Assassins practice killing people, quietly and stealthfully..";
@@ -453,7 +453,7 @@ moc_ruins,173,141,4	script	Dimitri#moc	49,{
 	mes "[Dimitri]";
 	mes "The desert of Morocc has the highest average temperature in Midgard. You might as well think twice before you sit on the sand in the middle of the desert, cause your ass will be toasted.";
 	next;
-	switch(select("About the desert sands:About the remedy for Fatigue:End Conversation")) {
+	switch(select("Sobre the desert sands:Sobre the remedy for Fatigue:Encerrar conversa")) {
 	case 1:
 		mes "[Dimitri]";
 		mes "......What I mean is that...";
@@ -515,7 +515,7 @@ moc_ruins,174,120,4	script	Fly Man#moc	54,{
 		next;
 		mes "[Armani]";
 		mes "Anyways, don't you think the Satan Morocc is so cruel?";
-		mes "They may not be the same kind, but still isn't it cruel to take that monster's soul with a single blow?";
+		mes "They may not be the same kind, but still isn't it cruel to take that monstro's soul with a single blow?";
 		next;
 		mes "[Armani]";
 		mes "What should we do when this dreadful evil has come to life again!";
@@ -531,7 +531,7 @@ moc_ruins,173,70,4	script	Uncle Morocc#moc	48,{
 	mes "[Phlanette]";
 	mes "I have a hunch that this hot and dry climate in Morocc is because of that Satan sealed deeper underground for so long.";
 	next;
-	switch(select("Tell me about the desert.:Quit Conversation")) {
+	switch(select("Tell me about the desert.:Sair Conversation")) {
 	case 1:
 		mes "[Phlanette]";
 		mes "Um.. I'll briefly tell ya about the desert if you want to know.";
@@ -541,11 +541,11 @@ moc_ruins,173,70,4	script	Uncle Morocc#moc	48,{
 		mes "Nonetheless, there are a few hardy plants that can survive and grow in the desert.";
 		next;
 		mes "[Phlanette]";
-		mes "Unfortunately some of those plants growing around Morocc have been mutated into monsters.";
+		mes "Unfortunately some of those plants growing around Morocc have been mutated into monstros.";
 		mes "One of those is Muka, the mutated cactus..";
 		next;
 		mes "[Phlanette]";
-		mes "However, now that the Satan has revived, no one's sure of what changes would be made in the life cycles of Morocc.";
+		mes "Porem, now that the Satan has revived, no one's sure of what changes would be made in the life cycles of Morocc.";
 		close;
 	case 2:
 		mes "[Phlanette]";
@@ -573,7 +573,7 @@ moc_fild16,199,212,4	script	 Uncle Assassin#moc	55,{
 	mes "we never";
 	mes "look our targets in the eye.";
 	next;
-	switch(select("Notion of Assassin:Quit Conversation")) {
+	switch(select("Notion of Assassin:Sair Conversation")) {
 	case 1:
 		mes "[Hashisid]";
 		mes "Well, then..";
@@ -601,8 +601,8 @@ moc_fild16,199,212,4	script	 Uncle Assassin#moc	55,{
 		mes "our ancestors would";
 		mes "smoke tobacco called 'Hashish'";
 		mes "before performing their duties.";
-		mes "However, we no longer do so,";
-		mes "since insect or animal monsters are";
+		mes "Porem, we no longer do so,";
+		mes "since insect or animal monstros are";
 		mes "very sensitive to the smell.";
 		next;
 		mes "[Hashisid]";
@@ -633,7 +633,7 @@ moc_fild16,211,254,4	script	Assassin#07rhea_30	118,{
 	mes "They may either wield dual daggers,";
 	mes "or fight with a set of Katars!";
 	next;
-	switch(select("Specialty of Katar:Specialty of Dual Daggers:Quit Conversation")) {
+	switch(select("Specialty of Katar:Specialty of Dual Daggers:Sair Conversation")) {
 	case 1:
 		mes "[La Conte]";
 		mes "A set of Katars is";
@@ -642,7 +642,7 @@ moc_fild16,211,254,4	script	Assassin#07rhea_30	118,{
 		mes "to quickly slash their enemies.";
 		mes "Anyone can buy a basic set of Katars";
 		mes "in Morocc somewhere.";
-		mes "Of course, only Assassins can use them.";
+		mes "Claro, only Assassins can use them.";
 		next;
 		mes "[La Conte]";
 		mes "The right Katar";
@@ -675,7 +675,7 @@ moc_fild16,211,254,4	script	Assassin#07rhea_30	118,{
 		mes "enables you to equip";
 		mes "2 different kinds of Daggers";
 		mes "at the same time.";
-		mes "Of course,";
+		mes "Claro,";
 		mes "there are other weapons you can equip";
 		mes "aside from daggers,";
 		next;
@@ -761,7 +761,7 @@ morocc_in,166,76,3	script	Bartender#02	46,{
 moc_fild16,195,281,4	script	Assassin Guardian#1::SinGuard	707,{
 	mes "[Assassin Guardian]";
 	if(BaseJob == Job_Assassin) {
-		mes "Welcome.";
+		mes "Bem-vindo.";
 		close;
 	}
 	set .@temp, rand(1,4);

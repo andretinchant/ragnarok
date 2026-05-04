@@ -13,11 +13,11 @@ rachel,142,155,3	script	Carbonated Water Vending Machine#ra	4_VENDING_MACHINE2,{
 	.@item_name$ = getitemname(1000374);
 
 	mes "[Carbonated Water Vending Machine]";
-	mes "<font color = 2ECCFA>Clean</font> through your <font color = DF0101>cramped</font> stomach with a glass of <i>refreshing</i> <b>" + .@item_name$ + "</b>!";
-	mes "It has an <b>excellent effect</b> on urgency, overeating and indigestion.";
+	mes "<font colou = 2ECCFA>Clean</font> atraves seu <font colou = DF0101>cramped</font> stomach com um glass of <i>refreshing</i> <b>" + .@item_name$ + "</b>!";
+	mes "It has um <b>excellent effect</b> on urgency, overeating e indigestion.";
 	next;
 	mes "[Carbonated Water Vending Machine]";
-	mes "<font size = 10, color = DF0101>Caution: There is a report that excessive consumption of the product in a state of accumulated fatigue due to its strong carbonation effect may cause temporary memory loss.</font>";
+	mes "<font size = 10, colou = DF0101>Caution: Hum um relatorio esse excessive consumption of o product in um state of accumulated fatigue due to seu forte carbonation effect may cause temporary memorium loss.</font>";
 	next;
 	callshop "market_soda";
 	end;
@@ -33,7 +33,7 @@ lighthalzen,173,108,3	duplicate(Carbonated Water Vending Machine#ra)	Carbonated 
 
 function	script	F_Brilliant_Soda	{
 	next;
-	switch( select( "Level 70-79", "Level 80-89", "Level 90+", "Cancel" ) ) {
+	switch( select( "Nivel 70-79", "Nivel 80-89", "Nivel 90+", "Cancelar" ) ) {
 	case 1:
 		callsub( S_Menu,
 			70, "Einbroch Northeast Field", "ein_fild06", 253,351,
@@ -94,7 +94,7 @@ S_Menu:
 		return;
 	.@s = .@s * 5;
 	if (BaseLevel < getarg(.@s)) {
-		mes " - Available only for levels higher than " + getarg(.@s) + " - ";
+		mes " - Available apenas fou levels higa que " + getarg(.@s) + " - ";
 		close;
 	}
 	delitem 1000374,1;	// Brilliant_Soda
@@ -108,66 +108,66 @@ rachel,142,152,5	script	Assistant Mumuz#ra	4_M_CRU_HEAD,{
 
 	if (isbegin_quest(16547) == 0) {
 		mes .@npc_name$;
-		mes "Would you like to participate in the monster subjugation event hosted by the Juno Monster Society?";
-		mes "We will take you directly to your desired location!";
+		mes "Voce gostarium de like to participate in o monstro subjugation event hosted by o Juno Monstro Society?";
+		mes "Nos vamos pegar you directly to seu desired location!";
 		next;
 		mes .@npc_name$;
-		mes "I'm Mumuz, Assistant Superintendent of the Juno Monster Society.";
-		mes "I'm here to promote the monster subjugation event to you.";
+		mes "Eu sou Mumuz, Assistant Superintendent of o Juno Monstro Society.";
+		mes "Eu sou aqui to promote o monstro subjugation event to you.";
 		next;
-		select( "Monster subjugation?", "Juno Monster Society?" );	// note: same text
+		select( "Monstro subjugation?", "Juno Monstro Society?" );	// note: same text
 		mes .@npc_name$;
-		mes "The Juno Monster Society is literally a conference that researches and studies monsters with Juno as a base.";
-		mes "These days, some local monsters have become overly ferocious or have a large number.";
-		next;
-		mes .@npc_name$;
-		mes "That's why we're dispatching Map Examiners to various places to subdue monsters.";
+		mes "O Juno Monstro Society is literally um conference esse researches e studies monstros com Juno as um base.";
+		mes "Estes days, alguns local monstros have se tornar overly ferocious ou have um large number.";
 		next;
 		mes .@npc_name$;
-		mes "I was tasked with assisting Map Examiners in promoting the Monster Society in the city and managing " + .@item_name$ + " vending machines.";
-		mes "Yes, I can take you to the inspector's place";
+		mes "That's why nos estamos dispatching Map Examiners to various places to subdue monstros.";
+		next;
+		mes .@npc_name$;
+		mes "Eu estavum tasked com assisting Map Examiners in promoting o Monstro Society in o cidade e managing " + .@item_name$ + " vending machines.";
+		mes "Yes, Eu consigo pegar you to o inspector's lugar";
 		setquest 16547;
 		completequest 16547;
 		next;
 	}
 	mes .@npc_name$;
-	mes "Hey, I'm Mumuz, the assistant of the Juno Monster Society.";
-	mes "How can I help you?";
+	mes "Hey, Eu sou Mumuz, o assistant of o Juno Monstro Society.";
+	mes "Como pode I ajudar you?";
 	next;
-	if (select( "Guide to the Map Examiner's place.", "Listen to the work of the Juno Monster Association." ) == 2) {
+	if (select( "Guide to o Map Examiner's lugar.", "Ouvir to o trabalhar of o Juno Monstro Association." ) == 2) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is literally a monster research facility in Juno.";
+		mes "O Juno Monstro Society is literally um monstro research facility in Juno.";
 		next;
 		mes .@npc_name$;
-		mes "The Society has recently determined that some regional monsters have become excessively ferocious or have increased their numbers.";
-		mes "That's why we're dispatching Map Examiners to various places to subdue monsters.";
+		mes "O Society has recentemente determined esse alguns regional monstros have se tornar excessively ferocious ou have increased o numbers.";
+		mes "That's why nos estamos dispatching Map Examiners to various places to subdue monstros.";
 		next;
 		mes .@npc_name$;
-		mes "I promote the work of the Monster Society in the city to assist Map Examiners...";
-		mes "I'm in charge of managing the Carbonated Water Vending Machine or guiding you to the place where the inspector is.";
+		mes "I promote o trabalhar of o Monstro Society in o cidade to assist Map Examiners...";
+		mes "Eu sou in charge of managing o Carbonated Aguum Vending Machine ou guiding you to o lugar where o inspectou is.";
 		close;
 	}
 	mes .@npc_name$;
-	mes "Well, it's just a little difficult...";
-	mes "Yes, if you buy me a bottle of " + .@item_name$ + ", I will warp it in a cool and refreshing way.";
+	mes "Bem, e apenas um pequeno dificil...";
+	mes "Yes, se you comprar me um bottle of " + .@item_name$ + ", Eu vou warp it in um cool e refreshing caminho.";
 	next;
-	if (select( "Give me a bottle of " + .@item_name$ + ".", "I refuse." ) == 2) {
+	if (select( "Me de um bottle of " + .@item_name$ + ".", "I recusar." ) == 2) {
 		mes .@npc_name$;
-		mes "You're not going? Heck, I'm sorry..";
+		mes "Voce e nao indo? Heck, Eu sou desculpe..";
 		close;
 	}
 	if (countitem(1000374) < 1) {
 		mes .@npc_name$;
-		mes "You seem to have finished drinking the " + .@item_name$ + "?";
-		mes "Jaja, you can purchase more " + .@item_name$ + " by using this vending machine right next to me.";
+		mes "Voce parece to have terminou bebendo o " + .@item_name$ + "?";
+		mes "Jaja, voce pode purchase mais " + .@item_name$ + " by usando este vending machine certo proximo to me.";
 		close;
 	}
 	mes .@npc_name$;
 	mes "Wooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo fresh!";
-	mes "Now, where shall we take you?";
+	mes "Agora, where shall we pegar you?";
 	callfunc( "F_Brilliant_Soda" );
 	mes .@npc_name$;
-	mes "You're not going? Heuk, I'll give you back the " + .@item_name$ + ". You haven't drank it yet.";
+	mes "Voce e nao indo? Heuk, Eu vou dar you back o " + .@item_name$ + ". You nao tenho drank it yet.";
 	close;
 
 OnInit:
@@ -181,67 +181,67 @@ alberta,124,59,5	script	Assistant Dunea#alb	4_M_CRU_HEAD,{
 
 	if (isbegin_quest(16547) == 0) {
 		mes .@npc_name$;
-		mes "Would you like to participate in the monster subjugation event hosted by the Juno Monster Society?";
-		mes "We will take you directly to your desired location!";
+		mes "Voce gostarium de like to participate in o monstro subjugation event hosted by o Juno Monstro Society?";
+		mes "Nos vamos pegar you directly to seu desired location!";
 		next;
 		mes .@npc_name$;
-		mes "I'm Dunea, Assistant Superintendent of the Juno Monster Society.";
-		mes "I'm here to promote the monster subjugation event to you.";
+		mes "Eu sou Dunea, Assistant Superintendent of o Juno Monstro Society.";
+		mes "Eu sou aqui to promote o monstro subjugation event to you.";
 		next;
-		select( "Monster subjugation?", "Juno Monster Society?" );	// note: same text
+		select( "Monstro subjugation?", "Juno Monstro Society?" );	// note: same text
 		mes .@npc_name$;
-		mes "The Juno Monster Society is literally a conference that researches and studies monsters with Juno as a base.";
-		mes "These days, some local monsters have become overly ferocious or have a large number.";
-		next;
-		mes .@npc_name$;
-		mes "That's why we're dispatching Map Examiners to various places to subdue monsters.";
+		mes "O Juno Monstro Society is literally um conference esse researches e studies monstros com Juno as um base.";
+		mes "Estes days, alguns local monstros have se tornar overly ferocious ou have um large number.";
 		next;
 		mes .@npc_name$;
-		mes "I was tasked with assisting Map Examiners in promoting the Monster Society in the city and managing " + .@item_name$ + " vending machines.";
-		mes "Yes, I can take you to the inspector's place";
+		mes "That's why nos estamos dispatching Map Examiners to various places to subdue monstros.";
+		next;
+		mes .@npc_name$;
+		mes "Eu estavum tasked com assisting Map Examiners in promoting o Monstro Society in o cidade e managing " + .@item_name$ + " vending machines.";
+		mes "Yes, Eu consigo pegar you to o inspector's lugar";
 		setquest 16547;
 		completequest 16547;
 		next;
 	}
 	mes .@npc_name$;
-	mes "I, Dunea, assistant to the Juno Monster Society!";
-	mes "I will assist adventurers for the sake of the world.";
+	mes "I, Dunea, assistant to o Juno Monstro Society!";
+	mes "Eu vou assist aventureiros fou o sake of o mundo.";
 	next;
-	if (select( "Guide to the Map Examiner's place.", "Listen to the work of the Juno Monster Association." ) == 2) {
+	if (select( "Guide to o Map Examiner's lugar.", "Ouvir to o trabalhar of o Juno Monstro Association." ) == 2) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is literally a conference that researches and studies monsters with Juno as a base.";
-		mes "These days, some local monsters have become overly ferocious or have a large number.";
+		mes "O Juno Monstro Society is literally um conference esse researches e studies monstros com Juno as um base.";
+		mes "Estes days, alguns local monstros have se tornar overly ferocious ou have um large number.";
 		next;
 		mes .@npc_name$;
-		mes "That's why we're dispatching Map Examiners to various places to subdue monsters.";
+		mes "That's why nos estamos dispatching Map Examiners to various places to subdue monstros.";
 		next;
 		mes .@npc_name$;
-		mes "I was tasked with assisting Map Examiners in promoting the Monster Society in the city and managing " + .@item_name$ + " vending machines.";
-		mes "Yes, I can take you to the inspector's place";
+		mes "Eu estavum tasked com assisting Map Examiners in promoting o Monstro Society in o cidade e managing " + .@item_name$ + " vending machines.";
+		mes "Yes, Eu consigo pegar you to o inspector's lugar";
 		close;
 	}
 	mes .@npc_name$;
-	mes "Um, I'd like to pick you up right away, but I'm a little underwhelmed.";
-	mes "Can I drink a bottle of " + .@item_name$ + "?";
+	mes "Um, Eu gostarium de like to pick you up certo embora, mas Eu sou um pequeno underwhelmed.";
+	mes "Cum I drink um bottle of " + .@item_name$ + "?";
 	next;
-	if (select( "Give me a bottle of " + .@item_name$ + ".", "I refuse." ) == 2) {
+	if (select( "Me de um bottle of " + .@item_name$ + ".", "I recusar." ) == 2) {
 		mes .@npc_name$;
-		mes "It's for the world, don't you go?";
+		mes "E fou o mundo, voce nao ir?";
 		close;
 	}
 	if (countitem(1000374) < 1) {
 		mes .@npc_name$;
-		mes "You don't have " + .@item_name$ + ".";
-		mes "Here is a vending machine for soda water! You can refill it here!";
+		mes "Voce nao have " + .@item_name$ + ".";
+		mes "Aqui is um vending machine fou sodum agua! Voce pode refill it aqui!";
 		close;
 	}
 	mes .@npc_name$;
-	mes "I feel refreshed just by receiving " + .@item_name$ + ".";
-	mes "Where can I take you?";
+	mes "I feel refreshed apenas by recebendo " + .@item_name$ + ".";
+	mes "Where cum I pegar you?";
 	callfunc( "F_Brilliant_Soda" );
 	mes .@npc_name$;
-	mes "It's for the world, don't you go?";
-	mes "I can't help it. I'll return the " + .@item_name$ + " here.";
+	mes "E fou o mundo, voce nao ir?";
+	mes "Eu nao consigo ajudar it. Eu vou retornar o " + .@item_name$ + " aqui.";
 	close;
 
 OnInit:
@@ -255,67 +255,67 @@ einbroch,246,186,5	script	Assistant Remain#ein	4_M_CRU_HEAD,{
 
 	if (isbegin_quest(16547) == 0) {
 		mes .@npc_name$;
-		mes "Would you like to participate in the monster subjugation event hosted by the Juno Monster Society?";
-		mes "We will take you directly to your desired location!";
+		mes "Voce gostarium de like to participate in o monstro subjugation event hosted by o Juno Monstro Society?";
+		mes "Nos vamos pegar you directly to seu desired location!";
 		next;
 		mes .@npc_name$;
-		mes "I'm Remain, Assistant Superintendent of the Juno Monster Society.";
-		mes "I'm here to promote the monster subjugation event to you.";
+		mes "Eu sou Remain, Assistant Superintendent of o Juno Monstro Society.";
+		mes "Eu sou aqui to promote o monstro subjugation event to you.";
 		next;
-		select( "Monster subjugation?", "Juno Monster Society?" );	// note: same text
+		select( "Monstro subjugation?", "Juno Monstro Society?" );	// note: same text
 		mes .@npc_name$;
-		mes "The Juno Monster Society is literally a conference that researches and studies monsters with Juno as a base.";
-		mes "These days, some local monsters have become overly ferocious or have a large number.";
-		next;
-		mes .@npc_name$;
-		mes "That's why we're dispatching Map Examiners to various places to subdue monsters.";
+		mes "O Juno Monstro Society is literally um conference esse researches e studies monstros com Juno as um base.";
+		mes "Estes days, alguns local monstros have se tornar overly ferocious ou have um large number.";
 		next;
 		mes .@npc_name$;
-		mes "I was tasked with assisting Map Examiners in promoting the Monster Society in the city and managing " + .@item_name$ + " vending machines.";
-		mes "Yes, I can take you to the inspector's place";
+		mes "That's why nos estamos dispatching Map Examiners to various places to subdue monstros.";
+		next;
+		mes .@npc_name$;
+		mes "Eu estavum tasked com assisting Map Examiners in promoting o Monstro Society in o cidade e managing " + .@item_name$ + " vending machines.";
+		mes "Yes, Eu consigo pegar you to o inspector's lugar";
 		setquest 16547;
 		completequest 16547;
 		next;
 	}
 	mes .@npc_name$;
-	mes "This is Remain, the assistant of the Juno Monster Society!";
-	mes "How can I help you?";
+	mes "Este is Remain, o assistant of o Juno Monstro Society!";
+	mes "Como pode I ajudar you?";
 	next;
-	if (select( "Guide to the Map Examiner's place.", "Listen to the work of the Juno Monster Association." ) == 2) {
+	if (select( "Guide to o Map Examiner's lugar.", "Ouvir to o trabalhar of o Juno Monstro Association." ) == 2) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is literally a monster research facility in Juno.";
-		mes "According to recent investigations, it has been found that some regional monsters have become excessively ferocious or have increased their numbers.";
+		mes "O Juno Monstro Society is literally um monstro research facility in Juno.";
+		mes "According to recent investigations, it tem sido encontrou esse alguns regional monstros have se tornar excessively ferocious ou have increased o numbers.";
 		next;
 		mes .@npc_name$;
-		mes "That's why we're sending Map Examiners to such an area to subdue monsters.";
-		mes "I'm Lemaine, the assistant to the Map Examiners!";
+		mes "That's why nos estamos enviando Map Examiners to such um areum to subdue monstros.";
+		mes "Eu sou Lemaine, o assistant to o Map Examiners!";
 		next;
 		mes .@npc_name$;
-		mes "Promoting the work of the Juno Monster Society for righteous people like this from the city...";
-		mes "I will promote the Carbonated Water Vending Machineor guide you to the place where the inspector is!";
+		mes "Promoting o trabalhar of o Juno Monstro Society fou righteous pessoas like este de o cidade...";
+		mes "Eu vou promote o Carbonated Aguum Vending Machineou guide you to o lugar where o inspectou is!";
 		close;
 	}
 	mes .@npc_name$;
-	mes "It's a bit difficult to just send... I can't get any money.";
-	mes "Yes, give me a bottle of " + .@item_name$ + " and I'll give you a warp service!";
+	mes "E um bit dificil to apenas send... Eu nao consigo pegar any dinheiro.";
+	mes "Yes, me de um bottle of " + .@item_name$ + " e Eu vou dar you um warp service!";
 	next;
-	if (select( "Give me a bottle of " + .@item_name$ + ".", "I refuse." ) == 2) {
+	if (select( "Me de um bottle of " + .@item_name$ + ".", "I recusar." ) == 2) {
 		mes .@npc_name$;
-		mes "Uh, you're not going now? Then you won't be serving " + .@item_name$ + ". I'm sorry.";
+		mes "Uh, voce e nao indo agora? Entao you nao vai be serving " + .@item_name$ + ". Eu sou desculpe.";
 		close;
 	}
 	if (countitem(1000374) < 1) {
 		mes .@npc_name$;
-		mes "" + .@item_name$ + " is sold at this vending machine that looks cool and refreshing.";
-		mes "You just need to buy some cool " + .@item_name$ + " and give it to me.";
+		mes "" + .@item_name$ + " is sold at este vending machine esse looks cool e refreshing.";
+		mes "You apenas precisar to comprar alguns cool " + .@item_name$ + " e dar it to me.";
 		close;
 	}
 	mes .@npc_name$;
-	mes "Wow! Thank you. A bottle of this " + .@item_name$ + " will take away your fatigue.";
-	mes "Where shall we take you then?";
+	mes "Wow! Obrigado. A bottle of este " + .@item_name$ + " will pegar emborum seu fatigue.";
+	mes "Where shall we pegar you entao?";
 	callfunc( "F_Brilliant_Soda" );
 	mes .@npc_name$;
-	mes "Oh, you're not going now? Then I'll return the " + .@item_name$ + ".";
+	mes "Oh, voce e nao indo agora? Entao Eu vou retornar o " + .@item_name$ + ".";
 	close;
 
 OnInit:
@@ -329,67 +329,67 @@ geffen,151,68,5	script	Assistant Kihana#gef	4_M_CRU_HEAD,{
 
 	if (isbegin_quest(16547) == 0) {
 		mes .@npc_name$;
-		mes "Would you like to participate in the monster subjugation event hosted by the Juno Monster Society?";
-		mes "We will take you directly to your desired location!";
+		mes "Voce gostarium de like to participate in o monstro subjugation event hosted by o Juno Monstro Society?";
+		mes "Nos vamos pegar you directly to seu desired location!";
 		next;
 		mes .@npc_name$;
-		mes "I'm Kihana, Assistant Superintendent of the Juno Monster Society.";
-		mes "I'm here to promote the monster subjugation event to you.";
+		mes "Eu sou Kihana, Assistant Superintendent of o Juno Monstro Society.";
+		mes "Eu sou aqui to promote o monstro subjugation event to you.";
 		next;
-		select( "Monster subjugation?", "Juno Monster Society?" );	// note: same text
+		select( "Monstro subjugation?", "Juno Monstro Society?" );	// note: same text
 		mes .@npc_name$;
-		mes "The Juno Monster Society is literally a conference that researches and studies monsters with Juno as a base.";
-		mes "These days, some local monsters have become overly ferocious or have a large number.";
-		next;
-		mes .@npc_name$;
-		mes "That's why we're dispatching Map Examiners to various places to subdue monsters.";
+		mes "O Juno Monstro Society is literally um conference esse researches e studies monstros com Juno as um base.";
+		mes "Estes days, alguns local monstros have se tornar overly ferocious ou have um large number.";
 		next;
 		mes .@npc_name$;
-		mes "I was tasked with assisting Map Examiners in promoting the Monster Society in the city and managing " + .@item_name$ + " vending machines.";
-		mes "Yes, I can take you to the inspector's place";
+		mes "That's why nos estamos dispatching Map Examiners to various places to subdue monstros.";
+		next;
+		mes .@npc_name$;
+		mes "Eu estavum tasked com assisting Map Examiners in promoting o Monstro Society in o cidade e managing " + .@item_name$ + " vending machines.";
+		mes "Yes, Eu consigo pegar you to o inspector's lugar";
 		setquest 16547;
 		completequest 16547;
 		next;
 	}
 	mes .@npc_name$;
-	mes "I, Kihana, an assistant to the Juno Monster Society!";
-	mes "Nice to meet you. How can I help you?";
+	mes "I, Kihana, um assistant to o Juno Monstro Society!";
+	mes "Nice to meet you. Como pode I ajudar you?";
 	next;
-	if (select( "Guide to the Map Examiner's place.", "Listen to the work of the Juno Monster Association." ) == 2) {
+	if (select( "Guide to o Map Examiner's lugar.", "Ouvir to o trabalhar of o Juno Monstro Association." ) == 2) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is literally a conference that researches and studies monsters with Juno as a base.";
-		mes "These days, some local monsters have become overly ferocious or have a large number.";
+		mes "O Juno Monstro Society is literally um conference esse researches e studies monstros com Juno as um base.";
+		mes "Estes days, alguns local monstros have se tornar overly ferocious ou have um large number.";
 		next;
 		mes .@npc_name$;
-		mes "That's why we're dispatching Map Examiners to various places to subdue monsters.";
+		mes "That's why nos estamos dispatching Map Examiners to various places to subdue monstros.";
 		next;
 		mes .@npc_name$;
-		mes "I was tasked with assisting Map Examiners in promoting the Monster Society in the city and managing " + .@item_name$ + " vending machines.";
-		mes "Yes, I can take you to the inspector's place";
+		mes "Eu estavum tasked com assisting Map Examiners in promoting o Monstro Society in o cidade e managing " + .@item_name$ + " vending machines.";
+		mes "Yes, Eu consigo pegar you to o inspector's lugar";
 		close;
 	}
 	mes .@npc_name$;
-	mes "Gee, I just can't send it!";
-	mes "If you give me a bottle of " + .@item_name$ + ", I will provide you with a warp!";
+	mes "Gee, I apenas nao pode send it!";
+	mes "Se you me de um bottle of " + .@item_name$ + ", Eu vou provide you com um warp!";
 	next;
-	if (select( "Give me a bottle of " + .@item_name$ + ".", "I refuse." ) == 2) {
+	if (select( "Me de um bottle of " + .@item_name$ + ".", "I recusar." ) == 2) {
 		mes .@npc_name$;
-		mes "You mean you're not going? Hmm, then there's nothing you can do!";
+		mes "You significum voce e nao indo? Hmm, entao hum nadum voce pode do!";
 		close;
 	}
 	if (countitem(1000374) < 1) {
 		mes .@npc_name$;
-		mes "You don't have " + .@item_name$ + " in your bag!";
-		mes "Please use the Carbonated Water Vending Machine next to me!";
+		mes "Voce nao have " + .@item_name$ + " in seu bag!";
+		mes "Pou favou usar o Carbonated Aguum Vending Machine proximo to me!";
 		close;
 	}
 	mes .@npc_name$;
-	mes "Ahaha, a bottle of " + .@item_name$ + ", well received!";
-	mes "Where can I take you?";
+	mes "Ahaha, um bottle of " + .@item_name$ + ", bem recebeu!";
+	mes "Where cum I pegar you?";
 	callfunc( "F_Brilliant_Soda" );
 	mes .@npc_name$;
-	mes "Are you saying you won't go without giving me " + .@item_name$ + "?";
-	mes "Hmm, then you can't take this!";
+	mes "Voce e dizendo you nao vai ir sem dando me " + .@item_name$ + "?";
+	mes "Hmm, entao voce nao pode pegar this!";
 	close;
 
 OnInit:
@@ -403,67 +403,67 @@ yuno,177,179,3	script	Assistant Avery#yu	4_M_CRU_HEAD,{
 
 	if (isbegin_quest(16547) == 0) {
 		mes .@npc_name$;
-		mes "Would you like to participate in the monster subjugation event hosted by the Juno Monster Society?";
-		mes "We will take you directly to your desired location!";
+		mes "Voce gostarium de like to participate in o monstro subjugation event hosted by o Juno Monstro Society?";
+		mes "Nos vamos pegar you directly to seu desired location!";
 		next;
 		mes .@npc_name$;
-		mes "I'm Avery, Assistant Superintendent of the Juno Monster Society.";
-		mes "I'm here to promote the monster subjugation event to you.";
+		mes "Eu sou Avery, Assistant Superintendent of o Juno Monstro Society.";
+		mes "Eu sou aqui to promote o monstro subjugation event to you.";
 		next;
-		select( "Monster subjugation?", "Juno Monster Society?" );	// note: same text
+		select( "Monstro subjugation?", "Juno Monstro Society?" );	// note: same text
 		mes .@npc_name$;
-		mes "The Juno Monster Society is literally a conference that researches and studies monsters with Juno as a base.";
-		mes "These days, some local monsters have become overly ferocious or have a large number.";
-		next;
-		mes .@npc_name$;
-		mes "That's why we're dispatching Map Examiners to various places to subdue monsters.";
+		mes "O Juno Monstro Society is literally um conference esse researches e studies monstros com Juno as um base.";
+		mes "Estes days, alguns local monstros have se tornar overly ferocious ou have um large number.";
 		next;
 		mes .@npc_name$;
-		mes "I was tasked with assisting Map Examiners in promoting the Monster Society in the city and managing " + .@item_name$ + " vending machines.";
-		mes "Yes, I can take you to the inspector's place";
+		mes "That's why nos estamos dispatching Map Examiners to various places to subdue monstros.";
+		next;
+		mes .@npc_name$;
+		mes "Eu estavum tasked com assisting Map Examiners in promoting o Monstro Society in o cidade e managing " + .@item_name$ + " vending machines.";
+		mes "Yes, Eu consigo pegar you to o inspector's lugar";
 		setquest 16547;
 		completequest 16547;
 		next;
 	}
 	mes .@npc_name$;
-	mes "This is Avery, the assistant of the Juno Monster Society!";
-	mes "Hey, how can I help you?";
+	mes "Este is Avery, o assistant of o Juno Monstro Society!";
+	mes "Hey, como pode I ajudar you?";
 	next;
-	if (select( "Guide to the Map Examiner's place.", "Listen to the work of the Juno Monster Association." ) == 2) {
+	if (select( "Guide to o Map Examiner's lugar.", "Ouvir to o trabalhar of o Juno Monstro Association." ) == 2) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is literally a conference that researches and studies monsters with Juno as a base.";
-		mes "These days, some local monsters have become overly ferocious or have a large number.";
+		mes "O Juno Monstro Society is literally um conference esse researches e studies monstros com Juno as um base.";
+		mes "Estes days, alguns local monstros have se tornar overly ferocious ou have um large number.";
 		next;
 		mes .@npc_name$;
-		mes "That's why we're dispatching Map Examiners to various places to subdue monsters.";
+		mes "That's why nos estamos dispatching Map Examiners to various places to subdue monstros.";
 		next;
 		mes .@npc_name$;
-		mes "I was tasked with assisting Map Examiners in promoting the Monster Society in the city and managing " + .@item_name$ + " vending machines.";
-		mes "Yes, I can take you to the inspector's place";
+		mes "Eu estavum tasked com assisting Map Examiners in promoting o Monstro Society in o cidade e managing " + .@item_name$ + " vending machines.";
+		mes "Yes, Eu consigo pegar you to o inspector's lugar";
 		close;
 	}
 	mes .@npc_name$;
-	mes "Oh, sorry. It's not free...";
-	mes "Okay, can you give me a bottle of " + .@item_name$ + "? Then I'll warp you!";
+	mes "Oh, desculpe. E nao gratis...";
+	mes "Okay, voce pode me de um bottle of " + .@item_name$ + "? Entao Eu vou warp you!";
 	next;
-	if (select( "Give me a bottle of " + .@item_name$ + ".", "I refuse." ) == 2) {
+	if (select( "Me de um bottle of " + .@item_name$ + ".", "I recusar." ) == 2) {
 		mes .@npc_name$;
-		mes "Aren't you going? It's for the public good!";
+		mes "Voce nao e indo? E fou o public bom!";
 		close;
 	}
 	if (countitem(1000374) < 1) {
 		mes .@npc_name$;
-		mes "You don't have " + .@item_name$ + " in your bag.";
-		mes "If you need more, please use the refreshing Carbonated Water Vending Machine here.";
+		mes "Voce nao have " + .@item_name$ + " in seu bag.";
+		mes "Se voce precisum mais, pou favou usar o refreshing Carbonated Aguum Vending Machine aqui.";
 		close;
 	}
 	mes .@npc_name$;
-	mes "Ah! Fresh and cool " + .@item_name$ + "!";
-	mes "You should drink it sparingly... Huh, where should I take you?";
+	mes "Ah! Fresh e cool " + .@item_name$ + "!";
+	mes "Voce deverium drink it sparingly... Huh, where should I pegar you?";
 	callfunc( "F_Brilliant_Soda" );
 	mes .@npc_name$;
-	mes "Aren't you going? It's for the public good!";
-	mes "Ugh... I'll return the " + .@item_name$ + "...";
+	mes "Voce nao e indo? E fou o public bom!";
+	mes "Ugh... Eu vou retornar o " + .@item_name$ + "...";
 	close;
 
 OnInit:
@@ -477,67 +477,67 @@ veins,215,122,5	script	Assistant Eureka#ve	4_M_CRU_HEAD,{
 
 	if (isbegin_quest(16547) == 0) {
 		mes .@npc_name$;
-		mes "Would you like to participate in the monster subjugation event hosted by the Juno Monster Society?";
-		mes "We will take you directly to your desired location!";
+		mes "Voce gostarium de like to participate in o monstro subjugation event hosted by o Juno Monstro Society?";
+		mes "Nos vamos pegar you directly to seu desired location!";
 		next;
 		mes .@npc_name$;
-		mes "I'm Eureka, Assistant Superintendent of the Juno Monster Society.";
-		mes "I'm here to promote the monster subjugation event to you.";
+		mes "Eu sou Eureka, Assistant Superintendent of o Juno Monstro Society.";
+		mes "Eu sou aqui to promote o monstro subjugation event to you.";
 		next;
-		select( "Monster subjugation?", "Juno Monster Society?" );	// note: same text
+		select( "Monstro subjugation?", "Juno Monstro Society?" );	// note: same text
 		mes .@npc_name$;
-		mes "The Juno Monster Society is literally a conference that researches and studies monsters with Juno as a base.";
-		mes "These days, some local monsters have become overly ferocious or have a large number.";
-		next;
-		mes .@npc_name$;
-		mes "That's why we're dispatching Map Examiners to various places to subdue monsters.";
+		mes "O Juno Monstro Society is literally um conference esse researches e studies monstros com Juno as um base.";
+		mes "Estes days, alguns local monstros have se tornar overly ferocious ou have um large number.";
 		next;
 		mes .@npc_name$;
-		mes "I was tasked with assisting Map Examiners in promoting the Monster Society in the city and managing " + .@item_name$ + " vending machines.";
-		mes "Yes, I can take you to the inspector's place";
+		mes "That's why nos estamos dispatching Map Examiners to various places to subdue monstros.";
+		next;
+		mes .@npc_name$;
+		mes "Eu estavum tasked com assisting Map Examiners in promoting o Monstro Society in o cidade e managing " + .@item_name$ + " vending machines.";
+		mes "Yes, Eu consigo pegar you to o inspector's lugar";
 		setquest 16547;
 		completequest 16547;
 		next;
 	}
 	mes .@npc_name$;
-	mes "This is Eureka, an assistant to the Juno Monster Society.";
-	mes "How can I help you?";
+	mes "Este is Eureka, um assistant to o Juno Monstro Society.";
+	mes "Como pode I ajudar you?";
 	next;
-	if (select( "Guide to the Map Examiner's place.", "Listen to the work of the Juno Monster Association." ) == 2) {
+	if (select( "Guide to o Map Examiner's lugar.", "Ouvir to o trabalhar of o Juno Monstro Association." ) == 2) {
 		mes .@npc_name$;
-		mes "These days, some local monsters have become overly ferocious or have increased numbers.";
-		mes "So we came to the Juno Monster Society to coordinate this.";
+		mes "Estes days, alguns local monstros have se tornar overly ferocious ou have increased numbers.";
+		mes "Entao we came to o Juno Monstro Society to coordinate this.";
 		next;
 		mes .@npc_name$;
-		mes "Juno Monster Society is a monster research facility based in Juno.";
-		mes "We are dispatching Map Examiners to various places to subdue monsters.";
+		mes "Juno Monstro Society is um monstro research facility based in Juno.";
+		mes "Nos estamos dispatching Map Examiners to various places to subdue monstros.";
 		next;
 		mes .@npc_name$;
-		mes "How are you? Are you interested?";
-		mes "I am responsible for promoting the work of the Juno Monster Society, managing the " + .@item_name$ + " vending machines, and guiding you to the places where the Map Examiners connect.";
+		mes "Como estao you? Voce e interessado?";
+		mes "Eu sou responsible fou promoting o trabalhar of o Juno Monstro Society, managing o " + .@item_name$ + " vending machines, e guiding you to o places where o Map Examiners connect.";
 		close;
 	}
 	mes .@npc_name$;
-	mes "It's hard for me to just send it, but I can't even get money...";
-	mes "Okay, can you give me a glass of " + .@item_name$ + "? I'll warp it right away.";
+	mes "E dificil fou me to apenas send it, mas Eu nao consigo ate mesmo pegar dinheiro...";
+	mes "Okay, voce pode me de um glass of " + .@item_name$ + "? Eu vou warp it certo embora.";
 	next;
-	if (select( "Give me a bottle of " + .@item_name$ + ".", "I refuse." ) == 2) {
+	if (select( "Me de um bottle of " + .@item_name$ + ".", "I recusar." ) == 2) {
 		mes .@npc_name$;
-		mes "Aren't you going?";
+		mes "Voce nao e indo?";
 		close;
 	}
 	if (countitem(1000374) < 1) {
 		mes .@npc_name$;
-		mes "I manage the " + .@item_name$ + " vending machine.";
-		mes "WKi, you can purchase as many as you like by using the Carbonated Water Vending Machine next to me.";
+		mes "I manage o " + .@item_name$ + " vending machine.";
+		mes "WKi, voce pode purchase as muitos as you like by usando o Carbonated Aguum Vending Machine proximo to me.";
 		close;
 	}
 	mes .@npc_name$;
-	mes "Ah, it's refreshing, cool, and really nice.";
-	mes "Now, where shall we take you?";
+	mes "Ah, e refreshing, cool, e realmente nice.";
+	mes "Agora, where shall we pegar you?";
 	callfunc( "F_Brilliant_Soda" );
 	mes .@npc_name$;
-	mes "Aren't you going? Then, the " + .@item_name$ + "... Here, I'll return it.";
+	mes "Voce nao e indo? Entao, o " + .@item_name$ + "... Aqui, Eu vou retornar it.";
 	close;
 
 OnInit:
@@ -551,70 +551,70 @@ lighthalzen,171,106,5	script	Assistant Staff#lig	4_M_CRU_HEAD,{
 
 	if (isbegin_quest(16547) == 0) {
 		mes .@npc_name$;
-		mes "Would you like to participate in the monster subjugation event hosted by the Juno Monster Society?";
-		mes "We will take you directly to your desired location!";
+		mes "Voce gostarium de like to participate in o monstro subjugation event hosted by o Juno Monstro Society?";
+		mes "Nos vamos pegar you directly to seu desired location!";
 		next;
 		mes .@npc_name$;
-		mes "I'm Staff, Assistant Superintendent of the Juno Monster Society.";
-		mes "I'm here to promote the monster subjugation event to you.";
+		mes "Eu sou Staff, Assistant Superintendent of o Juno Monstro Society.";
+		mes "Eu sou aqui to promote o monstro subjugation event to you.";
 		next;
-		select( "Monster subjugation?", "Juno Monster Society?" );	// note: same text
+		select( "Monstro subjugation?", "Juno Monstro Society?" );	// note: same text
 		mes .@npc_name$;
-		mes "The Juno Monster Society is literally a conference that researches and studies monsters with Juno as a base.";
-		mes "These days, some local monsters have become overly ferocious or have a large number.";
-		next;
-		mes .@npc_name$;
-		mes "That's why we're dispatching Map Examiners to various places to subdue monsters.";
+		mes "O Juno Monstro Society is literally um conference esse researches e studies monstros com Juno as um base.";
+		mes "Estes days, alguns local monstros have se tornar overly ferocious ou have um large number.";
 		next;
 		mes .@npc_name$;
-		mes "I was tasked with assisting Map Examiners in promoting the Monster Society in the city and managing " + .@item_name$ + " vending machines.";
-		mes "Yes, I can take you to the inspector's place";
+		mes "That's why nos estamos dispatching Map Examiners to various places to subdue monstros.";
+		next;
+		mes .@npc_name$;
+		mes "Eu estavum tasked com assisting Map Examiners in promoting o Monstro Society in o cidade e managing " + .@item_name$ + " vending machines.";
+		mes "Yes, Eu consigo pegar you to o inspector's lugar";
 		setquest 16547;
 		completequest 16547;
 		next;
 	}
 	mes .@npc_name$;
-	mes "Staff, the assistant of the Juno Monster Society!!!";
-	mes "Do you need my help!!!";
+	mes "Staff, o assistant of o Juno Monstro Society!!!";
+	mes "Do voce precisum meu ajudar!!!";
 	next;
-	if (select( "Guide to the Map Examiner's place.", "Listen to the work of the Juno Monster Association." ) == 2) {
+	if (select( "Guide to o Map Examiner's lugar.", "Ouvir to o trabalhar of o Juno Monstro Association." ) == 2) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is literally a conference that studies monsters!!!";
-		mes "...and in Juno.";
+		mes "O Juno Monstro Society is literally um conference esse studies monstros!!!";
+		mes "...e in Juno.";
 		next;
-		mes "Recently, some local monsters have become excessively ferocious or their numbers have increased!!!";
-		mes "That's why Map Examiners dispatched to different places are giving adventurers a quest to subdue monsters!!!";
-		next;
-		mes .@npc_name$;
-		mes "I'm your assistant, Staff!!";
+		mes "Recently, alguns local monstros have se tornar excessively ferocious ou o numbers have increased!!!";
+		mes "That's why Map Examiners dispatched to diferente places are dando aventureiros um missao to subdue monstros!!!";
 		next;
 		mes .@npc_name$;
-		mes "Promoting the work of the Monster Society in the city, gathering adventurers...";
-		mes "And, we warp the adventurers who came to the place where the Map Examiner is!!!";
+		mes "Eu sou seu assistant, Staff!!";
+		next;
+		mes .@npc_name$;
+		mes "Promoting o trabalhar of o Monstro Society in o cidade, gathering aventureiros...";
+		mes "And, we warp o aventureiros who came to o lugar where o Map Examiner is!!!";
 		close;
 	}
 	mes .@npc_name$;
-	mes "Okay!!! The price is a bottle of " + .@item_name$ + "!!!";
-	mes "You didn't think I'd warp you for nothing!!!";
+	mes "Okay!!! O preco is um bottle of " + .@item_name$ + "!!!";
+	mes "You nao pensar Eu gostarium de warp you fou nada!!!";
 	next;
-	if (select( "Give me a bottle of " + .@item_name$ + ".", "I refuse." ) == 2) {
+	if (select( "Me de um bottle of " + .@item_name$ + ".", "I recusar." ) == 2) {
 		mes .@npc_name$;
-		mes "What...? I'm not going to subjugate!!!";
+		mes "What...? Eu sou nao vai subjugate!!!";
 		close;
 	}
 	if (countitem(1000374) < 1) {
 		mes .@npc_name$;
-		mes "If you need " + .@item_name$ + ", face this vending machine that I manage!!!";
-		mes "Pay the price and win!!!";
+		mes "Se voce precisum " + .@item_name$ + ", face este vending machine esse I manage!!!";
+		mes "Pagar o preco e win!!!";
 		close;
 	}
 	mes .@npc_name$;
-	mes "Your " + .@item_name$ + ", I gladly received it!!!";
-	mes "Now, where do you want to dive into monster subjugation!!!";
+	mes "Seu " + .@item_name$ + ", I gladly recebeu it!!!";
+	mes "Agora, onde voce quer to dive parum dentro monstro subjugation!!!";
 	callfunc( "F_Brilliant_Soda" );
 	mes .@npc_name$;
-	mes "What...? I'm not going to subjugate!!!";
-	mes "Don't say two words with one mouth!!! ...I'll give you back the " + .@item_name$ + ".";
+	mes "What...? Eu sou nao vai subjugate!!!";
+	mes "Nao dizer two words com one mouth!!! ...Eu vou dar you back o " + .@item_name$ + ".";
 	close;
 
 OnInit:
@@ -628,67 +628,67 @@ prontera,168,125,5	script	Assistant Alonzo#prt	4_M_CRU_HEAD,{
 
 	if (isbegin_quest(16547) == 0) {
 		mes .@npc_name$;
-		mes "Would you like to participate in the monster subjugation event hosted by the Juno Monster Society?";
-		mes "We will take you directly to your desired location!";
+		mes "Voce gostarium de like to participate in o monstro subjugation event hosted by o Juno Monstro Society?";
+		mes "Nos vamos pegar you directly to seu desired location!";
 		next;
 		mes .@npc_name$;
-		mes "I'm Alonzo, Assistant Superintendent of the Juno Monster Society.";
-		mes "I'm here to promote the monster subjugation event to you.";
+		mes "Eu sou Alonzo, Assistant Superintendent of o Juno Monstro Society.";
+		mes "Eu sou aqui to promote o monstro subjugation event to you.";
 		next;
-		select( "Monster subjugation?", "Juno Monster Society?" );	// note: same text
+		select( "Monstro subjugation?", "Juno Monstro Society?" );	// note: same text
 		mes .@npc_name$;
-		mes "The Juno Monster Society is literally a conference that researches and studies monsters with Juno as a base.";
-		mes "These days, some local monsters have become overly ferocious or have a large number.";
-		next;
-		mes .@npc_name$;
-		mes "That's why we're dispatching Map Examiners to various places to subdue monsters.";
+		mes "O Juno Monstro Society is literally um conference esse researches e studies monstros com Juno as um base.";
+		mes "Estes days, alguns local monstros have se tornar overly ferocious ou have um large number.";
 		next;
 		mes .@npc_name$;
-		mes "I was tasked with assisting Map Examiners in promoting the Monster Society in the city and managing " + .@item_name$ + " vending machines.";
-		mes "Yes, I can take you to the inspector's place";
+		mes "That's why nos estamos dispatching Map Examiners to various places to subdue monstros.";
+		next;
+		mes .@npc_name$;
+		mes "Eu estavum tasked com assisting Map Examiners in promoting o Monstro Society in o cidade e managing " + .@item_name$ + " vending machines.";
+		mes "Yes, Eu consigo pegar you to o inspector's lugar";
 		setquest 16547;
 		completequest 16547;
 		next;
 	}
 	mes .@npc_name$;
-	mes "This is Alonzo, assistant to the Juno Monster Society!";
-	mes "How can I help you?";
+	mes "Este is Alonzo, assistant to o Juno Monstro Society!";
+	mes "Como pode I ajudar you?";
 	next;
-	if (select( "Guide to the Map Examiner's place.", "Listen to the work of the Juno Monster Association." ) == 2) {
+	if (select( "Guide to o Map Examiner's lugar.", "Ouvir to o trabalhar of o Juno Monstro Association." ) == 2) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is literally a conference that researches and studies monsters with Juno as a base.";
-		mes "These days, some local monsters have become overly ferocious or have a large number.";
+		mes "O Juno Monstro Society is literally um conference esse researches e studies monstros com Juno as um base.";
+		mes "Estes days, alguns local monstros have se tornar overly ferocious ou have um large number.";
 		next;
 		mes .@npc_name$;
-		mes "That's why we're dispatching Map Examiners to various places to subdue monsters.";
+		mes "That's why nos estamos dispatching Map Examiners to various places to subdue monstros.";
 		next;
 		mes .@npc_name$;
-		mes "I was tasked with assisting Map Examiners in promoting the Monster Society in the city and managing " + .@item_name$ + " vending machines.";
-		mes "Yes, I can take you to the inspector's place";
+		mes "Eu estavum tasked com assisting Map Examiners in promoting o Monstro Society in o cidade e managing " + .@item_name$ + " vending machines.";
+		mes "Yes, Eu consigo pegar you to o inspector's lugar";
 		close;
 	}
 	mes .@npc_name$;
-	mes "It's a bit difficult to just send it. I'm tired too.";
-	mes "Can you give me a bottle of " + .@item_name$ + "? That will give me energy.";
+	mes "E um bit dificil to apenas send it. Eu sou cansado tambem.";
+	mes "Voce pode me de um bottle of " + .@item_name$ + "? Esse will me de energy.";
 	next;
-	if (select( "Give me a bottle of " + .@item_name$ + ".", "I refuse." ) == 2) {
+	if (select( "Me de um bottle of " + .@item_name$ + ".", "I recusar." ) == 2) {
 		mes .@npc_name$;
-		mes "Oh, aren't you going?";
+		mes "Oh, voce nao e indo?";
 		close;
 	}
 	if (countitem(1000374) < 1) {
 		mes .@npc_name$;
-		mes "If you do not have " + .@item_name$ + ", you can purchase it.";
-		mes "Please use the Carbonated Water Vending Machine here.";
+		mes "Se you do nao have " + .@item_name$ + ", voce pode purchase it.";
+		mes "Pou favou usar o Carbonated Aguum Vending Machine aqui.";
 		close;
 	}
 	mes .@npc_name$;
-	mes "Okay, " + .@item_name$ + " will definitely give you energy.";
-	mes "Where can I take you?";
+	mes "Okay, " + .@item_name$ + " will definitivamente dar you energy.";
+	mes "Where cum I pegar you?";
 	callfunc( "F_Brilliant_Soda" );
 	mes .@npc_name$;
-	mes "Oh, aren't you going?";
-	mes "Then I will return the " + .@item_name$ + ".";
+	mes "Oh, voce nao e indo?";
+	mes "Entao Eu vou retornar o " + .@item_name$ + ".";
 	close;
 
 OnInit:
@@ -705,7 +705,7 @@ ein_fild06,257,351,4	script	Map Examiner Bast#yma	4_F_CHNDRESS1,{
 
 	if (BaseLevel < 70) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(5917,PLAYTIME) ) {
@@ -714,38 +714,38 @@ ein_fild06,257,351,4	script	Map Examiner Bast#yma	4_F_CHNDRESS1,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "BNP is tired from overwork, so please come tomorrow. Subjugation quests can only be made once a day.";
+		mes "BNP is cansado de overwork, entao pou favou vir amanha. Subjugation missoes cum apenas be made umum vez um dia.";
 		next;
-		switch( select( "You look tired. Would you like a drink?", "Teleport to a nearby city." ) ) {
+		switch( select( "Voce parece cansado. Voce gostarium de like um drink?", "Teleport to um nearby cidade." ) ) {
 		case 1:
 			if (countitem(1000374) < 3) {
 				mes .@npc_name$;
-				mes "Where is the " + .@item_name$ + "? Hing- It's good. I thought I'd get about three.";
+				mes "Onde estum o " + .@item_name$ + "? Hing- E bom. I pensou Eu gostarium de pegar sobre three.";
 				close;
 			}
 			delitem 1000374,3;	// Brilliant_Soda
 			erasequest 5917;
 			mes .@npc_name$;
-			mes "Thank you. I was tired but it worked out.";
+			mes "Obrigado. Eu estavum cansado mas it worked out.";
 			next;
 			npctalk "gulp-gulp-", "", bc_self;
 			sleep2 500;
 			specialeffect EF_FLASHER;
 			mes .@npc_name$;
-			mes "Huh? I must have fallen asleep. Did I tell you about the subjugation quest, huh? Can you talk to me again after waking me up a bit?";
+			mes "Huh? I must have fallen asleep. Did I tell you sobre o subjugation missao, huh? Voce pode conversar to me novamente depois waking me up um bit?";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "Can I move it to Einbroch? Give me one " + mesitemlink( 1000374 ) + " and I can teleport you.";
+			mes "Cum I mover it to Einbroch? Me de one " + mesitemlink( 1000374 ) + " e Eu consigo teleport you.";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "You don't have " + .@item_name$ + ", but why did the Juno Monster Society ask you to get this? It's just a drink.";
+				mes "Voce nao have " + .@item_name$ + ", mas why did o Juno Monstro Society ask you to pegar this? E apenas um drink.";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Bye-bye~ See you next time.";
+			mes "Bye-bye~ Ver you proximo tempo.";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "einbroch",239,197;
@@ -755,73 +755,73 @@ ein_fild06,257,351,4	script	Map Examiner Bast#yma	4_F_CHNDRESS1,{
 	case 2:
 		erasequest 5917;
 		mes .@npc_name$;
-		mes "You can proceed with the subjugation quest again.";
+		mes "Voce pode proceed com o subjugation missao novamente.";
 		close;
 	}
 	switch( checkquest(5916,HUNTING) ) {
 	case -1:
 		mes .@npc_name$;
-		mes "Hello~ Adventurer~ I'm an INPU from the Juno Monster Society.";
+		mes "Ola~ Aventureiro~ Eu sou um INPU de o Juno Monstro Society.";
 		next;
-		switch( select( "Receive a subjugation quest.", "Subjugation quest?", "Teleport to a nearby city.", "Greetings." ) ) {
+		switch( select( "Receive um subjugation missao.", "Subjugation missao?", "Teleport to um nearby cidade.", "Greetings." ) ) {
 		case 1:
 			setquest 5916;
 			mes .@npc_name$;
-			mes "Wow! Really? The quest is simple. It's about catching 80 monsters here in Einbroch Field.";
+			mes "Wow! Realmente? O missao is simple. E sobre catching 80 monstros aqui in Einbroch Field.";
 			next;
 			mes .@npc_name$;
-			mes "If you are an adventurer, you can easily solve it and come back? I'm looking forward to it.";
+			mes "Se you are um aventureiro, voce pode easily solve it e volte? Eu sou procurando forward to it.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "Recently, we have detected an expansion of the monster colony.";
+			mes "Recently, we have detected um expansion of o monstro colony.";
 			next;
 			mes .@npc_name$;
-			mes "I think it's because the number of monsters has increased, but I think it's because I haven't been subjugating monsters as much as I used to.";
+			mes "Eu acho e porque o number of monstros has increased, mas Eu acho e porque I nao tenho been subjugating monstros as muito as I usou to.";
 			next;
 			mes .@npc_name$;
-			mes "In order to prevent further expansion of the monster colony, the Juno Monster Society is planning a massive subjugation.";
+			mes "In order to prevent furta expansion of o monstro colony, o Juno Monstro Society is planning um massive subjugation.";
 			next;
 			mes .@npc_name$;
-			mes "If colonies with increased population collide, it can cause damage to nearby residents.";
+			mes "Se colonies com increased population collide, it cum cause damage to nearby residents.";
 			close;
 		case 3:
 			mes .@npc_name$;
-			mes "Can I move it to Einbroch? Give me one " + mesitemlink( 1000374 ) + " and I can teleport you.";
+			mes "Cum I mover it to Einbroch? Me de one " + mesitemlink( 1000374 ) + " e Eu consigo teleport you.";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "You don't have " + .@item_name$ + ", but why did the Juno Monster Society ask you to get this? It's just a drink.";
+				mes "Voce nao have " + .@item_name$ + ", mas why did o Juno Monstro Society ask you to pegar this? E apenas um drink.";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Bye-bye~ See you next time.";
+			mes "Bye-bye~ Ver you proximo tempo.";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "einbroch",239,197;
 			end;
 		case 4:
 			mes .@npc_name$;
-			mes "Nice to meet you. Do you think it would be more pleasant if you Accept the subjugation quest?";
+			mes "Nice to meet you. Voce pensar it seria mais pleasant se you Accept o subjugation missao?";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "All you have to do is catch 80 monsters here in Einbroch Field. After you catch them all, come back to me and get your reward.";
+		mes "Todos you tem que do is catch 80 monstros aqui in Einbroch Field. Depois you catch them todos, volte to me e pegar seu recompensa.";
 		close;
 	case 2:
 		getexp 121320,110520;
 		erasequest 5916;
 		setquest 5917;
 		mes .@npc_name$;
-		mes "Thank you and you worked hard.";
-		mes "These days, they criticize me for not being able to perform well. It's exhausting and hard to come out of this desolate place.";
+		mes "Obrigado e you worked dificil.";
+		mes "Estes days, they criticize me fou nao being capaz de perform bem. E exhausting e dificil to vir out of este desolate lugar.";
 		next;
 		mes .@npc_name$;
-		mes "I'm sorry. Thank you so much, I tried to complain for a while. If you help me tomorrow, I'll be twice as grateful, please take care of me.";
+		mes "Eu sou desculpe. Obrigado entao muito, I tentou to complain fou um while. Se you me ajude amanha, Eu vou be duas vezes as grateful, pou favou se cuide of me.";
 		close;
 	}
 	end;
@@ -842,7 +842,7 @@ gef_fild06,209,31,6	script	Map Examiner Gefil#yma	4_M_MIDDLE,{
 
 	if (BaseLevel < 71) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(5921,PLAYTIME) ) {
@@ -851,37 +851,37 @@ gef_fild06,209,31,6	script	Map Examiner Gefil#yma	4_M_MIDDLE,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "You can carry out the subjugation quest again tomorrow. You must be tired, so return to the city and rest.";
+		mes "Voce pode carregar out o subjugation missao novamente amanha. Voce deve be cansado, entao retornar to o cidade e rest.";
 		next;
-		switch( select( "You look tired. Would you like a drink?", "Teleport to a nearby city." ) ) {
+		switch( select( "Voce parece cansado. Voce gostarium de like um drink?", "Teleport to um nearby cidade." ) ) {
 		case 1:
 			if (countitem(1000374) < 3) {
 				mes .@npc_name$;
-				mes "You don't have " + .@item_name$ + ". Only three drinks.";
+				mes "Voce nao have " + .@item_name$ + ". Apenas three drinks.";
 				close;
 			}
 			delitem 1000374,3;	// Brilliant_Soda
 			erasequest 5921;
 			mes .@npc_name$;
-			mes "Ah! Is this " + .@item_name$ + " popular these days? I'll drink it well.";
+			mes "Ah! Isentao e " + .@item_name$ + " popular estes days? Eu vou drink it bem.";
 			next;
 			npctalk "gulp-gulp-", "", bc_self;
 			specialeffect EF_FLASHER;
 			mes .@npc_name$;
-			mes "Huh?! Where are you? Ah! Did you fall asleep? You have a guest.";
+			mes "Huh?! Onde estao you? Ah! Voce fall asleep? Voce tem um guest.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "Give me 1 " + mesitemlink( 1000374 ) + " and I can teleport you to Geffen.";
+			mes "Me de 1 " + mesitemlink( 1000374 ) + " e Eu consigo teleport you to Geffen.";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "You don't have " + .@item_name$ + ". It's just a drink.";
+				mes "Voce nao have " + .@item_name$ + ". E apenas um drink.";
 				close;
 			}
 			mes .@npc_name$;
-			mes "I'll see you next time. Have a nice trip..";
+			mes "Eu vou ver you proximo tempo. Have um nice trip..";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "geffen",119,37;
@@ -890,66 +890,66 @@ gef_fild06,209,31,6	script	Map Examiner Gefil#yma	4_M_MIDDLE,{
 	case 2:
 		erasequest 5921;
 		mes .@npc_name$;
-		mes "You can proceed with the subjugation quest again.";
+		mes "Voce pode proceed com o subjugation missao novamente.";
 		close;
 	}
 	switch( checkquest(5920,HUNTING) ) {
 	case -1:
 		mes .@npc_name$;
-		mes "The Juno Monster Society is looking for people to submit subjugation quests.";
+		mes "O Juno Monstro Society is procurando fou pessoas to submit subjugation missoes.";
 		next;
-		switch( select( "Receive a subjugation quest.", "Subjugation quest?", "Teleport to a nearby city.", "You seem to be able to afford it?" ) ) {
+		switch( select( "Receive um subjugation missao.", "Subjugation missao?", "Teleport to um nearby cidade.", "Voce parece to be capaz de afford it?" ) ) {
 		case 1:
 			setquest 5920;
 			mes .@npc_name$;
-			mes "Thank you. All you have to do is catch 80 monsters here in Geffen Field. If you catch them all, please come and report to me.";
+			mes "Obrigado. Todos you tem que do is catch 80 monstros aqui in Geffen Field. Se you catch them todos, pou favou vir e relatorio to me.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "Recently, the number of monsters is increasing.";
+			mes "Recently, o number of monstros is aumentando.";
 			next;
 			mes .@npc_name$;
-			mes "As the number of monsters increases, the colony expands, and if monsters collide for power, humans can avoid them.";
+			mes "As o number of monstros increases, o colony expands, e se monstros collide fou poder, humans cum avoid them.";
 			next;
 			mes .@npc_name$;
-			mes "It is a level of prevention in advance.";
+			mes "Isentao e um nivel of prevention in advance.";
 			close;
 		case 3:
 			mes .@npc_name$;
-			mes "Give me 1 " + mesitemlink( 1000374 ) + " and I can teleport you to Geffen.";
+			mes "Me de 1 " + mesitemlink( 1000374 ) + " e Eu consigo teleport you to Geffen.";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "You don't have " + .@item_name$ + ". It's just a drink.";
+				mes "Voce nao have " + .@item_name$ + ". E apenas um drink.";
 				close;
 			}
 			mes .@npc_name$;
-			mes "I'll see you next time. Have a nice trip..";
+			mes "Eu vou ver you proximo tempo. Have um nice trip..";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "geffen",119,37;
 			end;
 		case 4:
 			mes .@npc_name$;
-			mes "Ah! Do you see that? You're the type of person who is always tired. Maybe it's because you put everything down and Accepted your tiredness? What the hell am I talking about?";
+			mes "Ah! Voce ver that? Voce e o type of pessoum quem e sempre cansado. Talvez e porque you colocar tudo down e Accepted seu tiredness? What o hell am I conversando sobre?";
 			next;
 			mes .@npc_name$;
-			mes "I'm tired, so I say everything.";
+			mes "Eu sou cansado, entao I dizer tudo.";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Catch 80 monsters here in Geffen Field, then come and report to me.";
+		mes "Catch 80 monstros aqui in Geffen Field, entao vir e relatorio to me.";
 		close;
 	case 2:
 		getexp 64133,57253;
 		erasequest 5920;
 		setquest 5921;
 		mes .@npc_name$;
-		mes "You worked hard. I'm relieved again for a while. I can rest now. Subjugation quests are available again tomorrow, so if you have time, please drop by again.";
+		mes "You worked dificil. Eu sou relieved novamente fou um while. Eu consigo rest agora. Subjugation missoes are disponivel novamente amanha, entao se you have tempo, pou favou drop by novamente.";
 		close;
 	}
 	end;
@@ -970,7 +970,7 @@ lhz_fild01,240,107,4	script	Map Examiner Lipiri#yma	4_M_HUBOY,{
 
 	if (BaseLevel < 71) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(5919,PLAYTIME) ) {
@@ -979,38 +979,38 @@ lhz_fild01,240,107,4	script	Map Examiner Lipiri#yma	4_M_HUBOY,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "You can do the Lighthalzen Field subjugation quest again tomorrow. You must be tired, go in and rest. I'm a little tired too.";
+		mes "Voce pode do o Lighthalzen Field subjugation missao novamente amanha. Voce deve be cansado, ir in e rest. Eu sou um pequeno cansado tambem.";
 		next;
-		switch( select( "You look tired. Would you like a drink?", "Teleport to a nearby city." ) ) {
+		switch( select( "Voce parece cansado. Voce gostarium de like um drink?", "Teleport to um nearby cidade." ) ) {
 		case 1:
 			if (countitem(1000374) < 3) {
 				mes .@npc_name$;
-				mes "Wow... I'm still tired, so don't make fun of me. I think I'll be less tired if I drink three.";
+				mes "Wow... Eu sou aindum cansado, entao nao fazer fun of me. Eu acho Eu vou be menos cansado se I drink three.";
 				close;
 			}
 			delitem 1000374,3;	// Brilliant_Soda
 			erasequest 5919;
 			mes .@npc_name$;
-			mes "Really?! I've only heard of it, I've never tried it, but I heard that it works so well.";
+			mes "Realmente?! Eu tenho apenas ouviu of it, Eu tenho nuncum tentou it, mas Eu ouvi esse it works entao bem.";
 			next;
 			npctalk "Gulp- ??- Kyaa~", "", bc_self;
 			sleep2 500;
 			specialeffect EF_FLASHER;
 			mes .@npc_name$;
-			mes "Huh?! Oh, that's right. Were you working part-time? Ah! It's the Juno Monster Society. Welcome!";
+			mes "Huh?! Oh, that's certo. Were you funcionando part-tempo? Ah! E o Juno Monstro Society. Bem-vindo!";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "If it's a nearby city, it's Lighthalzen. Give me one " + mesitemlink( 1000374 ) + " and I can teleport you.";
+			mes "Se e um nearby cidade, e Lighthalzen. Me de one " + mesitemlink( 1000374 ) + " e Eu consigo teleport you.";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "Eh? Where is the " + .@item_name$ + "?";
+				mes "Eh? Onde estum o " + .@item_name$ + "?";
 				close;
 			}
 			mes .@npc_name$;
-			mes "See you next time~";
+			mes "Ver you proximo tempo~";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "lighthalzen",192,314;
@@ -1020,75 +1020,75 @@ lhz_fild01,240,107,4	script	Map Examiner Lipiri#yma	4_M_HUBOY,{
 	case 2:
 		erasequest 5919;
 		mes .@npc_name$;
-		mes "You can proceed with the subjugation quest again.";
+		mes "Voce pode proceed com o subjugation missao novamente.";
 		close;
 	}
 	switch( checkquest(5918,HUNTING) ) {
 	case -1:
 		mes .@npc_name$;
-		mes "This is the Juno Monster Society.";
+		mes "Este is o Juno Monstro Society.";
 		next;
-		switch( select( "Receive a subjugation quest.", "Subjugation quest?", "Teleport to a nearby city.", "Why are you so blunt?" ) ) {
+		switch( select( "Receive um subjugation missao.", "Subjugation missao?", "Teleport to um nearby cidade.", "Pou que you entao blunt?" ) ) {
 		case 1:
 			setquest 5918;
 			mes .@npc_name$;
-			mes "You just need to catch 80 monsters in the Lighthalzen Field here.";
+			mes "You apenas precisar to catch 80 monstros in o Lighthalzen Field aqui.";
 			next;
 			mes .@npc_name$;
-			mes "Thank you and thank you. It's working.";
+			mes "Obrigado e obrigado. E funcionando.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "I'm also on a part-time job. I don't know the details.";
+			mes "Eu sou tambem on um part-tempo job. Eu nao saber o detalhes.";
 			next;
 			mes .@npc_name$;
-			mes "I heard it when I started explaining about the monster colonies and the number of individuals...";
+			mes "Eu ouvi it when I comecou explaining sobre o monstro colonies e o number of individuals...";
 			next;
 			mes .@npc_name$;
-			mes "I get a little sleepy while listening to the explanation. It's too difficult to explain.";
+			mes "I pegar um pequeno sleepy while listening to o explanation. E tambem dificil to explain.";
 			next;
 			mes .@npc_name$;
-			mes "Isn't it important to catch monsters in Lighthalzen Field and get rewards?";
+			mes "Nao e it importante to catch monstros in Lighthalzen Field e pegar recompensas?";
 			close;
 		case 3:
 			mes .@npc_name$;
-			mes "If it's a nearby city, it's Lighthalzen. Give me one " + mesitemlink( 1000374 ) + " and I can teleport you.";
+			mes "Se e um nearby cidade, e Lighthalzen. Me de one " + mesitemlink( 1000374 ) + " e Eu consigo teleport you.";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "Eh? Where is the " + .@item_name$ + "?";
+				mes "Eh? Onde estum o " + .@item_name$ + "?";
 				close;
 			}
 			mes .@npc_name$;
-			mes "See you next time~";
+			mes "Ver you proximo tempo~";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "lighthalzen",192,314;
 			end;
 		case 4:
 			mes .@npc_name$;
-			mes "I'm sorry. I'm so sleepy. I got a part-time job because the pay was good";
+			mes "Eu sou desculpe. Eu sou entao sleepy. Eu tenho um part-tempo job porque o pagar was bom";
 			next;
 			mes .@npc_name$;
-			mes "Without a substitute.. I'm going to keep it up all day.. First, I'll work steadily and then I'll sue you after I quit.";
+			mes "Sem um substitute.. Eu sou vai manter it up todos dia.. Primeiro, Eu vou trabalhar steadily e entao Eu vou sue you depois I quit.";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "All you have to do is catch 80 monsters in Lighthalzen Field. If you catch them all, ask me to confirm and receive your reward.";
+		mes "Todos you tem que do is catch 80 monstros in Lighthalzen Field. Se you catch them todos, ask me to confirm e receber seu recompensa.";
 		close;
 	case 2:
 		getexp 81120,74560;
 		erasequest 5918;
 		setquest 5919;
 		mes .@npc_name$;
-		mes "You worked hard. Uh.. Due to the problem of the number of individuals, you can only do the subjugation quest once a day, so you can do it again tomorrow.";
+		mes "You worked dificil. Uh.. Due to o problemum of o number of individuals, voce pode apenas do o subjugation missao umum vez um dia, entao voce pode do it novamente amanha.";
 		next;
 		mes .@npc_name$;
-		mes "Oh, I'm so tired. I wish I could get some substitutes...";
+		mes "Oh, Eu sou entao cansado. I wish I could pegar alguns substitutes...";
 		close;
 	}
 	end;
@@ -1109,7 +1109,7 @@ mal_dun01,141,126,4	script	Map Examiner Mother One#yma	4_F_TAEKWON,{
 
 	if (BaseLevel < 75) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(5927,PLAYTIME) ) {
@@ -1118,38 +1118,38 @@ mal_dun01,141,126,4	script	Map Examiner Mother One#yma	4_F_TAEKWON,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Can you do the subjugation quest tomorrow? I'm tired, so please don't talk to me?";
+		mes "Voce pode do o subjugation missao amanha? Eu sou cansado, entao pou favou nao conversar to me?";
 		next;
-		switch( select( "You look tired. Would you like a drink?", "Teleport to a nearby city." ) ) {
+		switch( select( "Voce parece cansado. Voce gostarium de like um drink?", "Teleport to um nearby cidade." ) ) {
 		case 1:
 			if (countitem(1000374) < 3) {
 				mes .@npc_name$;
-				mes "What? Where did my 3 " + .@item_name$ + " go?";
+				mes "What? Where did meu 3 " + .@item_name$ + " ir?";
 				close;
 			}
 			delitem 1000374,3;	// Brilliant_Soda
 			erasequest 5927;
 			mes .@npc_name$;
-			mes "Really? Nothing else to say later?";
+			mes "Realmente? Nadum else to dizer later?";
 			next;
 			npctalk "Ugh~ Exciting..", "", bc_self;
 			sleep2 500;
 			specialeffect EF_FLASHER;
 			mes .@npc_name$;
-			mes "Ah! She... She says it again. Aye, what are you talking about?";
+			mes "Ah! She... She says it novamente. Aye, o que sao you conversando sobre?";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "Malangdo? If you want to go, give me one " + .@item_name$ + ". But isn't it better to walk from here?";
+			mes "Malangdo? Se voce quer to ir, me de one " + .@item_name$ + ". Mas nao e it better to andar de aqui?";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "One " + .@item_name$ + ". But I recommend just walking.";
+				mes "One " + .@item_name$ + ". Mas I recommend apenas andando.";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Good! Goodbye~ See you next time~";
+			mes "Bom! Adeus~ Ver you proximo tempo~";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "malangdo",141,118;
@@ -1158,73 +1158,73 @@ mal_dun01,141,126,4	script	Map Examiner Mother One#yma	4_F_TAEKWON,{
 	case 2:
 		erasequest 5927;
 		mes .@npc_name$;
-		mes "Ah! I can do the subjugation quest again. Is it time for me to work?";
+		mes "Ah! Eu consigo do o subjugation missao novamente. Is it tempo fou me to trabalhar?";
 		close;
 	}
 	switch( checkquest(5926,HUNTING) ) {
 	case -1:
 		mes .@npc_name$;
-		mes "Because I'm busy right now. Only those who want to make a subjugation quest talk to me.";
+		mes "Porque Eu sou ocupado agorum mesmo. Apenas esses who querer to fazer um subjugation missao conversar to me.";
 		next;
-		switch( select( "Receive a subjugation quest.", "Subjugation quest?", "Teleport to a nearby city.", "What are you doing?" ) ) {
+		switch( select( "Receive um subjugation missao.", "Subjugation missao?", "Teleport to um nearby cidade.", "O que sao you fazendo?" ) ) {
 		case 1:
 			setquest 5926;
 			mes .@npc_name$;
-			mes "Were you a guest? Then you should be kind.";
-			mes "All you have to do is catch 80 monsters in the Starlight Coral Zone, because even if you catch shellfish, crab, and ester, they don't count! You don't have to catch them. Then, hard work!!";
+			mes "Were you um guest? Entao voce deverium be kind.";
+			mes "Todos you tem que do is catch 80 monstros in o Starlight Coral Zone, porque ate mesmo se you catch shellfish, crab, e ester, they nao count! Voce nao tem que catch them. Entao, dificil trabalhar!!";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "Ah?! You're disturbing me like this again. You can still be a guest, so be kind.";
+			mes "Ah?! Voce e disturbing me like este novamente. Voce pode aindum be um guest, entao be kind.";
 			next;
 			mes .@npc_name$;
-			mes "This is a quest to catch monsters in the Starlight Coral to control the number of individuals.";
+			mes "Este is um missao to catch monstros in o Starlight Coral to control o number of individuals.";
 			next;
 			mes .@npc_name$;
-			mes "Clams, crabs, and esters do not need to be caught because there is no need to control the population.";
+			mes "Clams, crabs, e esters do nao precisar to be caught porque hum no precisar to control o population.";
 			next;
 			mes .@npc_name$;
-			mes "Don't ask why. I don't know because I work part-time. Customer!";
+			mes "Nao ask why. Eu nao saber porque I trabalhar part-tempo. Customer!";
 			close;
 		case 3:
 			mes .@npc_name$;
-			mes "Malangdo? If you want to go, give me one " + .@item_name$ + ". But isn't it better to walk from here?";
+			mes "Malangdo? Se voce quer to ir, me de one " + .@item_name$ + ". Mas nao e it better to andar de aqui?";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "One " + .@item_name$ + ". But I recommend just walking.";
+				mes "One " + .@item_name$ + ". Mas I recommend apenas andando.";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Okay! Goodbye~ See you next time~";
+			mes "Okay! Adeus~ Ver you proximo tempo~";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "malangdo",141,118;
 			end;
 		case 4:
 			mes .@npc_name$;
-			mes "Ahhh?! Really!! They are so disturbing. Do you see Esther standing over there? You must be able to speak, but when I talk to you, you don't answer?";
+			mes "Ahhh?! Realmente!! Eles sao entao disturbing. Voce ver Esta de pe sobre la? Voce deve be capaz de falar, mas when I conversar to you, voce nao resposta?";
 			next;
 			mes .@npc_name$;
-			mes "Obviously, when you see adventurers passing by, you seem to be having a conversation. Are you shy? Why don't you talk to me?";
+			mes "Obviously, when you ver aventureiros passando by, voce parece to be having um conversation. Voce e shy? Why voce nao conversar to me?";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "If you catch 80 monsters in the Starlight Coral Zone, talk to me.";
+		mes "Se you catch 80 monstros in o Starlight Coral Zone, conversar to me.";
 		next;
 		mes .@npc_name$;
-		mes "Clams, crabs, and esters are not counted even if you catch them, so don't come and ask them later.";
+		mes "Clams, crabs, e esters are nao counted ate mesmo se you catch them, entao nao vir e ask them later.";
 		close;
 	case 2:
 		getexp 90880,85440;
 		erasequest 5926;
 		setquest 5927;
 		mes .@npc_name$;
-		mes "Oh! You did a great job. Subjugation quests can be done tomorrow as well. Whether you come or not when you are free.";
+		mes "Oh! You did um otimo job. Subjugation missoes cum be done amanhum as bem. Wheta you vir ou nao when you are gratis.";
 		close;
 	}
 	end;
@@ -1245,7 +1245,7 @@ hu_fild01,133,157,6	script	Map Examiner Huf#yma	4_MAL_CAPTAIN,{
 
 	if (BaseLevel < 75) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(5925,PLAYTIME) ) {
@@ -1254,38 +1254,38 @@ hu_fild01,133,157,6	script	Map Examiner Huf#yma	4_MAL_CAPTAIN,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "I've been standing here alone for a few days, and I hope someone will come to take over tomorrow.";
+		mes "Eu tenho been de pe aqui sozinho fou um few days, e I esperancum alguem will vir to pegar sobre amanha.";
 		next;
-		switch( select( "You look tired. Would you like a drink?", "Teleport to a nearby city." ) ) {
+		switch( select( "Voce parece cansado. Voce gostarium de like um drink?", "Teleport to um nearby cidade." ) ) {
 		case 1:
 			if (countitem(1000374) < 3) {
 				mes .@npc_name$;
-				mes "Aren't you going to give me 3 " + .@item_name$ + "?";
+				mes "Voce nao e vai me de 3 " + .@item_name$ + "?";
 				close;
 			}
 			delitem 1000374,3;	// Brilliant_Soda
 			erasequest 5925;
 			mes .@npc_name$;
-			mes "Is this your first drink? It's always fun to try new flavors. Thank you.";
+			mes "Isentao e seu primeiro drink? E sempre fun to tentar novo flavors. Obrigado.";
 			next;
 			npctalk "Wow- oh! It's quite tasty..", "", bc_self;
 			sleep2 500;
 			specialeffect EF_FLASHER;
 			mes .@npc_name$;
-			mes "Huh?! A guest came in a moment's glance.";
+			mes "Huh?! A guest came in um moment's glance.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "Are you going home? Hugel is the nearest city. I need 1 piece of " + mesitemlink( 1000374 ) + ".";
+			mes "Voce e indo home? Hugel is o nearest cidade. Eu precientao de 1 piece of " + mesitemlink( 1000374 ) + ".";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
 				mes "Nearest cities require 1 " + .@item_name$ + ".";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Have a nice trip.";
+			mes "Have um nice trip.";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "hugel",97,154;
@@ -1295,72 +1295,72 @@ hu_fild01,133,157,6	script	Map Examiner Huf#yma	4_MAL_CAPTAIN,{
 	case 2:
 		erasequest 5925;
 		mes .@npc_name$;
-		mes "You can do the subjugation quest again.";
+		mes "Voce pode do o subjugation missao novamente.";
 		close;
 	}
 	switch( checkquest(5924,HUNTING) ) {
 	case -1:
 		mes .@npc_name$;
-		mes "The Juno Monster Society is conducting a subjugation quest.";
+		mes "O Juno Monstro Society is conducting um subjugation missao.";
 		next;
-		switch( select( "Receive a subjugation quest.", "Subjugation quest?", "Teleport to a nearby city.", "Are you from Port Malaya?" ) ) {
+		switch( select( "Receive um subjugation missao.", "Subjugation missao?", "Teleport to um nearby cidade.", "Voce e de Port Malaya?" ) ) {
 		case 1:
 			setquest 5924;
 			mes .@npc_name$;
-			mes "You can catch 80 monsters in the field in front of Thanatos Tower in this place. After you catch them all, report to me.";
+			mes "Voce pode catch 80 monstros in o field in front of Thanatos Torre in este lugar. Depois you catch them todos, relatorio to me.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "This is a subjugation quest to reduce the number of monsters in front of Thanatos.";
+			mes "Este is um subjugation missao to reduce o number of monstros in front of Thanatos.";
 			next;
 			mes .@npc_name$;
-			mes "The number of monsters may increase and damage may occur, so it seems to be intended to reduce the number of monsters in advance.";
+			mes "O number of monstros may increase e damage may occur, entao it parece to be intended to reduce o number of monstros in advance.";
 			next;
 			mes .@npc_name$;
-			mes "Before the part-time job, I thought that the Monster Society was just a game, but it seems to be working.";
+			mes "Antes o part-tempo job, I pensou esse o Monstro Society was apenas um game, mas it parece to be funcionando.";
 			close;
 		case 3:
 			mes .@npc_name$;
-			mes "Are you going home? Hugel is the nearest city. I need 1 piece of " + mesitemlink( 1000374 ) + ".";
+			mes "Voce e indo home? Hugel is o nearest cidade. Eu precientao de 1 piece of " + mesitemlink( 1000374 ) + ".";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
 				mes "Nearest cities require 1 " + .@item_name$ + ".";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Have a nice trip.";
+			mes "Have um nice trip.";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "hugel",97,154;
 			end;
 		case 4:
 			mes .@npc_name$;
-			mes "Hahaha.. Do you know Port Malaya? It's a great place.";
+			mes "Hahaha.. Do voce sabe Port Malaya? E um otimo lugar.";
 			next;
 			mes .@npc_name$;
-			mes "In case you misunderstood, I am not the captain of the port of Malaya.";
+			mes "In case you misunderstood, Eu sou nao o capitao of o port of Malaya.";
 			next;
 			mes .@npc_name$;
-			mes "This captain's outfit is so cool, so I wanted to wear it, but if I wear it there, it becomes an impersonation. I'm just leaving my hometown and wearing it.";
+			mes "Este capitao's outfit is entao cool, entao I wanted to wear it, mas se I wear it la, it becomes um impersonation. Eu sou apenas leaving meu hometown e vestindo it.";
 			next;
 			mes .@npc_name$;
-			mes "Ah .. I want to go home all of a sudden. When my mother left home, she said that she had a hard time, but it really was.";
+			mes "Ah .. Eu quero to ir home todos of um sudden. When meu mota left home, she disse esse she had um dificil tempo, mas it realmente was.";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Catch 80 monsters in front of Thanatos Tower and report it to me.";
+		mes "Catch 80 monstros in front of Thanatos Torre e relatorio it to me.";
 		close;
 	case 2:
 		getexp 110760,104040;
 		erasequest 5924;
 		setquest 5925;
 		mes .@npc_name$;
-		mes "You worked hard. Subjugation quests are available every day, so if you have time, please come again.";
+		mes "You worked dificil. Subjugation missoes are disponivel cadum dia, entao se you have tempo, pou favou volte novamente.";
 		close;
 	}
 	end;
@@ -1381,7 +1381,7 @@ tur_dun01,159,46,4	script	Map Examiner Tural#yma	4_M_BRZ_MAN1,{
 
 	if (BaseLevel < 75) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(5923,PLAYTIME) ) {
@@ -1390,37 +1390,37 @@ tur_dun01,159,46,4	script	Map Examiner Tural#yma	4_M_BRZ_MAN1,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "You can do the Turtle Island subjugation quest again tomorrow. When will I be able to return to being a chef?";
+		mes "Voce pode do o Turtle Ilhum subjugation missao novamente amanha. When will I be capaz de retornar to being um chef?";
 		next;
-		switch( select( "You look tired. Would you like a drink?", "Teleport to a nearby city." ) ) {
+		switch( select( "Voce parece cansado. Voce gostarium de like um drink?", "Teleport to um nearby cidade." ) ) {
 		case 1:
 			if (countitem(1000374) < 3) {
 				mes .@npc_name$;
-				mes "You don't have " + .@item_name$ + ". You'll have to give it three to get tired.";
+				mes "Voce nao have " + .@item_name$ + ". Voce vai tem que dar it three to pegar cansado.";
 				close;
 			}
 			delitem 1000374,3;	// Brilliant_Soda
 			erasequest 5923;
 			mes .@npc_name$;
-			mes "Oh! " + .@item_name$ + "?! I heard that the person who made this made a lot of money, I'll drink it well.";
+			mes "Oh! " + .@item_name$ + "?! Eu ouvi esse o pessoum who made este made um lot of dinheiro, Eu vou drink it bem.";
 			next;
 			npctalk "Wow.. it's thrilling.", "", bc_self;
 			specialeffect EF_FLASHER;
 			mes .@npc_name$;
-			mes "Heh heh.. I thought it was a monster. Why are you standing there without a sign?";
+			mes "Heh heh.. I pensou erum um monstro. Pou que you de pe lum sem um sign?";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "Give me one " + mesitemlink( 1000374 ) + " and I can teleport you to Alberta.";
+			mes "Me de one " + mesitemlink( 1000374 ) + " e Eu consigo teleport you to Alberta.";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "If you give me " + .@item_name$ + ", I will teleport you to Alberta.";
+				mes "Se you me de " + .@item_name$ + ", Eu vou teleport you to Alberta.";
 				close;
 			}
 			mes .@npc_name$;
-			mes "I want to go too. Goodbye then.";
+			mes "Eu quero to ir tambem. Adeus entao.";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "alberta",117,55;
@@ -1429,66 +1429,66 @@ tur_dun01,159,46,4	script	Map Examiner Tural#yma	4_M_BRZ_MAN1,{
 	case 2:
 		erasequest 5923;
 		mes .@npc_name$;
-		mes "You can do the Turtle Island subjugation quest again.";
+		mes "Voce pode do o Turtle Ilhum subjugation missao novamente.";
 		close;
 	}
 	switch( checkquest(5922,HUNTING) ) {
 	case -1:
 		mes .@npc_name$;
-		mes "Hey heh.. I thought it was a monster. Did you come to receive a subjugation quest?";
+		mes "Hey heh.. I pensou erum um monstro. Voce vir to receber um subjugation missao?";
 		next;
-		switch( select( "Receive a subjugation quest.", "Subjugation quest?", "Teleport to a nearby city.", "Are you not a cook?" ) ) {
+		switch( select( "Receive um subjugation missao.", "Subjugation missao?", "Teleport to um nearby cidade.", "Voce e nao um cook?" ) ) {
 		case 1:
 			setquest 5922;
 			mes .@npc_name$;
-			mes "Except for Tara Frog, you can catch 80 monsters on Turtle Island. If you catch them all, come to me and receive a reward.";
+			mes "Except fou Tarum Frog, voce pode catch 80 monstros on Turtle Ilha. Se you catch them todos, vir to me e receber um recompensa.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "This is a quest that requires you to catch 80 monsters on Turtle Island.";
+			mes "Este is um missao esse requires you to catch 80 monstros on Turtle Ilha.";
 			next;
 			mes .@npc_name$;
-			mes "Ah! By the way, even if you catch Tara Frog, it doesn't count. If you don't touch anything, it's a gentle monster, so you can avoid it.";
+			mes "Ah! By o caminho, ate mesmo se you catch Tarum Frog, it nao count. Se voce nao touch anything, e um gentle monstro, entao voce pode avoid it.";
 			close;
 		case 3:
 			mes .@npc_name$;
-			mes "Give me one " + mesitemlink( 1000374 ) + " and I can teleport you to Alberta.";
+			mes "Me de one " + mesitemlink( 1000374 ) + " e Eu consigo teleport you to Alberta.";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "If you give me " + .@item_name$ + ", I will teleport you to Alberta.";
+				mes "Se you me de " + .@item_name$ + ", Eu vou teleport you to Alberta.";
 				close;
 			}
 			mes .@npc_name$;
-			mes "I want to go too. Goodbye then.";
+			mes "Eu quero to ir tambem. Adeus entao.";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "alberta",117,55;
 			end;
 		case 4:
 			mes .@npc_name$;
-			mes "Yes, I am. I'm a cook. I'm tired from work I'm not used to right now, so I can't remember.";
+			mes "Yes, I am. Eu sou um cook. Eu sou cansado de trabalhar Eu sou nao usou to agorum mesmo, entao Eu nao consigo lembrar.";
 			next;
 			mes .@npc_name$;
-			mes "I feel like I wrote in the document that I was definitely looking for a part-time job as a kitchen assistant. When I woke up, somehow, I was working here as an Map Examiner for subjugation.";
+			mes "I feel like I wrote in o document esse Eu estavum definitivamente procurando fou um part-tempo job as um kitchen assistant. When I woke up, somehow, Eu estavum funcionando aqui as um Map Examiner fou subjugation.";
 			next;
 			mes .@npc_name$;
-			mes "Really why? I can't do this roughly, I'd be thrilled.";
+			mes "Realmente why? Eu nao consigo do este roughly, Eu gostarium de be thrilled.";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Other than Tara Frog, catch 80 monsters on Turtle Island and come to me to receive a reward.";
+		mes "Outro que Tarum Frog, catch 80 monstros on Turtle Ilhum e vir to me to receber um recompensa.";
 		close;
 	case 2:
 		getexp 86920,80660;
 		erasequest 5922;
 		setquest 5923;
 		mes .@npc_name$;
-		mes "This is the promised reward. The subjugation quest can be resumed tomorrow, so if you have time, please come.";
+		mes "Este is o promised recompensa. O subjugation missao cum be resumed amanha, entao se you have tempo, pou favou vir.";
 		close;
 	}
 	end;
@@ -1510,7 +1510,7 @@ ein_fild03,135,46,5	script	Map Examiner Tailing#tailing	1_M_YOUNGKNIGHT,{
 
 	if (BaseLevel < 76) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(3472,PLAYTIME) ) {
@@ -1519,12 +1519,12 @@ ein_fild03,135,46,5	script	Map Examiner Tailing#tailing	1_M_YOUNGKNIGHT,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Ah, that's enough for today's subjugation!";
+		mes "Ah, that's suficiente fou hoje's subjugation!";
 		next;
 		mes .@npc_name$;
-		mes "I would appreciate it if you come again tomorrow and help subdue monsters!!";
+		mes "Eu gostarium de appreciate it se you volte novamente amanhum e ajudar subdue monstros!!";
 		next;
-		if (select( "Send " + .@item_name$ + ".", "Do not pass." ) == 2)
+		if (select( "Send " + .@item_name$ + ".", "Do nao pass." ) == 2)
 			end;
 		if (countitem(1000374) < 3) {
 			mes " - Requires 3 " + .@item_name$ + ". - ";
@@ -1533,17 +1533,17 @@ ein_fild03,135,46,5	script	Map Examiner Tailing#tailing	1_M_YOUNGKNIGHT,{
 		delitem 1000374,3;	// Brilliant_Soda
 		erasequest 3472;
 		mes .@npc_name$;
-		mes "Ah~!! Thank you so much~ I was very thirsty at the time~";
+		mes "Ah~!! Obrigado entao muito~ Eu estavum muito thirsty at o tempo~";
 		next;
 		mes .@npc_name$;
 		mes "gulp~ gulp~~~";
 		next;
 		specialeffect EF_FLASHER;
 		mes .@npc_name$;
-		mes "Huh... this intense flavor...!";
+		mes "Huh... este intense flavor...!";
 		next;
 		mes .@npc_name$;
-		mes "Eh.. you're new to me, wait a minute. I'm going to drink some of this too, so can you talk to me after a minute?";
+		mes "Eh.. voce e novo to me, esperar um minute. Eu sou vai drink alguns of este tambem, entao voce pode conversar to me depois um minute?";
 		close;
 	case 2:
 		erasequest 3472;
@@ -1552,85 +1552,85 @@ ein_fild03,135,46,5	script	Map Examiner Tailing#tailing	1_M_YOUNGKNIGHT,{
 	switch( checkquest(3471,HUNTING) ) {
 	case -1:
 		mes .@npc_name$;
-		mes "Hello!! You're here again! This is Map Examiner Tailing from the Juno Monster Society!";
+		mes "Ola!! Voce e aqui novamente! Este is Map Examiner Tailing de o Juno Monstro Society!";
 		next;
-		switch( select( "Receive a subjugation quest.", "Teleport to a nearby city.", "Ask about a subjugation quest.", "Come next." ) ) {
+		switch( select( "Receive um subjugation missao.", "Teleport to um nearby cidade.", "Ask sobre um subjugation missao.", "Vir proximo." ) ) {
 		case 1:
 			mes .@npc_name$;
-			mes "Oh, would you like a commission?";
+			mes "Oh, voce gostarium de like um commission?";
 			next;
 			mes .@npc_name$;
-			mes "You just need to kill 80 monsters on this field where I am.";
+			mes "You apenas precisar to matar 80 monstros on este field where I am.";
 			next;
 			setquest 3471;
 			mes .@npc_name$;
-			mes "Then I'll be waiting for you, I hope you come back safely.";
+			mes "Entao Eu vou be waiting fou you, I esperancum you volte safely.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "The nearest city from here is Einbroch!";
+			mes "O nearest cidade de aqui is Einbroch!";
 			next;
 			mes .@npc_name$;
-			mes "If you give me one " + .@item_name$ + ", I will send it right away!";
+			mes "Se you me de one " + .@item_name$ + ", Eu vou send it certo embora!";
 			next;
-			if (select( "Move", "Do not move" ) == 2) {
+			if (select( "Mover", "Do nao mover" ) == 2) {
 				mes .@npc_name$;
-				mes "Yes, please tell me if you need teleportation!!";
+				mes "Yes, pou favou me digum se voce precisum teleportation!!";
 				close;
 			}
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "Hey, don't you have " + .@item_name$ + "~";
+				mes "Hey, voce nao have " + .@item_name$ + "~";
 				next;
 				mes .@npc_name$;
 				mes "Teleporting requires 1 " + .@item_name$ + ".";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Yes! Then we will move you!!";
+			mes "Yes! Entao we will mover you!!";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "einbroch",146,49;
 			end;
 		case 3:
 			mes .@npc_name$;
-			mes "Sometimes ago, the phenomenon of monster colonies expanding was discovered.";
+			mes "Sometimes ago, o phenomenon of monstro colonies expanding was descobriu.";
 			next;
 			mes .@npc_name$;
-			mes "At one time, subjugation was actively carried out, but these days, it can be seen as a result of a little neglect.";
+			mes "At one tempo, subjugation was actively carried out, mas estes days, it cum be visto as um result of um pequeno neglect.";
 			next;
 			mes .@npc_name$;
-			mes "If this phenomenon continues, it is dangerous, so the Juno Monster Society has decided to carry out a full-scale subjugation.";
+			mes "Se este phenomenon continues, it is perigoso, entao o Juno Monstro Society has decided to carregar out um full-scale subjugation.";
 			next;
 			mes .@npc_name$;
-			mes "This means that subjugation is proceeding by placing Map Examiners in each area that needs subjugation!";
+			mes "Este significum esse subjugation is proceeding by placing Map Examiners in each areum esse needs subjugation!";
 			close;
 		case 4:
 			mes .@npc_name$;
-			mes "Ah, where are you going?";
+			mes "Ah, onde estao you indo?";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "You just need to subdue 80 monsters of any type in this area.";
+		mes "You apenas precisar to subdue 80 monstros of any type in este area.";
 		next;
 		mes .@npc_name$;
-		mes "After subjugation, come to me and get your reward!!";
+		mes "Depois subjugation, vir to me e pegar seu recompensa!!";
 		close;
 	case 2:
 		getexp 146520,131880;
 		erasequest 3471;
 		setquest 3472;
 		mes .@npc_name$;
-		mes "You're back safely!";
+		mes "Voce e back safely!";
 		next;
 		mes .@npc_name$;
-		mes "I barely achieved today's goal like this...";
+		mes "I barely achieved hoje's goal like this...";
 		next;
 		mes .@npc_name$;
-		mes "If you can afford it tomorrow, please come again!!";
+		mes "Se voce pode afford it amanha, pou favou volte novamente!!";
 		close;
 	}
 	end;
@@ -1650,7 +1650,7 @@ lhz_fild03,167,344,3	script	Map Examiner Modaka#madaka	4_F_JOB_KNIGHT,{
 
 	if (BaseLevel < 77) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(3474,PLAYTIME) ) {
@@ -1659,12 +1659,12 @@ lhz_fild03,167,344,3	script	Map Examiner Modaka#madaka	4_F_JOB_KNIGHT,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Ah, that's enough for today's subjugation!";
+		mes "Ah, that's suficiente fou hoje's subjugation!";
 		next;
 		mes .@npc_name$;
-		mes "I would appreciate it if you come again tomorrow and help subdue monsters!!";
+		mes "Eu gostarium de appreciate it se you volte novamente amanhum e ajudar subdue monstros!!";
 		next;
-		if (select( "Send " + .@item_name$ + ".", "Do not pass." ) == 2)
+		if (select( "Send " + .@item_name$ + ".", "Do nao pass." ) == 2)
 			end;
 		if (countitem(1000374) < 3) {
 			mes " - Requires 3 " + .@item_name$ + ". - ";
@@ -1673,7 +1673,7 @@ lhz_fild03,167,344,3	script	Map Examiner Modaka#madaka	4_F_JOB_KNIGHT,{
 		delitem 1000374,3;	// Brilliant_Soda
 		erasequest 3474;
 		mes .@npc_name$;
-		mes "Ummm, thank you so much~ It's refreshing carbonated water~?";
+		mes "Ummm, obrigado entao muito~ E refreshing carbonated agua~?";
 		next;
 		mes .@npc_name$;
 		mes "Cuckoo~ Clap~";
@@ -1682,7 +1682,7 @@ lhz_fild03,167,344,3	script	Map Examiner Modaka#madaka	4_F_JOB_KNIGHT,{
 		mes "Ah, that's cool~!";
 		next;
 		mes .@npc_name$;
-		mes "Oh, adventurer, wait a minute~ Give me time to wrap this around my neck, please talk to me again after a while~";
+		mes "Oh, aventureiro, esperar um minute~ Me de tempo to wrap este ao redou meu neck, pou favou conversar to me novamente depois um while~";
 		close;
 	case 2:
 		erasequest 3474;
@@ -1691,85 +1691,85 @@ lhz_fild03,167,344,3	script	Map Examiner Modaka#madaka	4_F_JOB_KNIGHT,{
 	switch( checkquest(3473,HUNTING) ) {
 	case -1:
 		mes .@npc_name$;
-		mes "Hello!! You're here again! I'm Modaka, an Map Examiner dispatched from the Juno Monster Society!";
+		mes "Ola!! Voce e aqui novamente! Eu sou Modaka, um Map Examiner dispatched de o Juno Monstro Society!";
 		next;
-		switch( select( "Receive a subjugation quest.", "Teleport to a nearby city.", "Ask about a subjugation quest.", "Come next." ) ) {
+		switch( select( "Receive um subjugation missao.", "Teleport to um nearby cidade.", "Ask sobre um subjugation missao.", "Vir proximo." ) ) {
 		case 1:
 			mes .@npc_name$;
-			mes "Oh, would you like to take a quest?";
+			mes "Oh, voce gostarium de like to pegar um missao?";
 			next;
 			mes .@npc_name$;
-			mes "You just need to kill 80 monsters in this field where I am located~";
+			mes "You apenas precisar to matar 80 monstros in este field where Eu sou located~";
 			next;
 			setquest 3473;
 			mes .@npc_name$;
-			mes "Then I'll be waiting here, please be careful~!";
+			mes "Entao Eu vou be waiting aqui, pou favou tenhum cuidado~!";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "The nearest city from here is Lighthalzen~";
+			mes "O nearest cidade de aqui is Lighthalzen~";
 			next;
 			mes .@npc_name$;
-			mes "If you give me one " + .@item_name$ + ", I will send it right away!";
+			mes "Se you me de one " + .@item_name$ + ", Eu vou send it certo embora!";
 			next;
-			if (select( "Move", "Do not move" ) == 2) {
+			if (select( "Mover", "Do nao mover" ) == 2) {
 				mes .@npc_name$;
-				mes "Yes, if you need teleportation, please let me know!";
+				mes "Yes, se voce precisum teleportation, pou favou deixe-me saber!";
 				close;
 			}
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "Hey, don't you have " + .@item_name$ + "~";
+				mes "Hey, voce nao have " + .@item_name$ + "~";
 				next;
 				mes .@npc_name$;
 				mes "Teleporting requires 1 " + .@item_name$ + ".";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Yes, then I will move you!!";
+			mes "Yes, entao Eu vou mover you!!";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "lighthalzen",214,319;
 			end;
 		case 3:
 			mes .@npc_name$;
-			mes "Sometimes ago, the phenomenon of monster colonies expanding was discovered.";
+			mes "Sometimes ago, o phenomenon of monstro colonies expanding was descobriu.";
 			next;
 			mes .@npc_name$;
-			mes "At one time, subjugation was actively carried out, but these days, it can be seen as a result of a little neglect.";
+			mes "At one tempo, subjugation was actively carried out, mas estes days, it cum be visto as um result of um pequeno neglect.";
 			next;
 			mes .@npc_name$;
-			mes "If this phenomenon continues, it is dangerous, so the Juno Monster Society has decided to carry out a full-scale subjugation.";
+			mes "Se este phenomenon continues, it is perigoso, entao o Juno Monstro Society has decided to carregar out um full-scale subjugation.";
 			next;
 			mes .@npc_name$;
-			mes "This means that subjugation is proceeding by placing Map Examiners in each area that needs subjugation!";
+			mes "Este significum esse subjugation is proceeding by placing Map Examiners in each areum esse needs subjugation!";
 			close;
 		case 4:
 			mes .@npc_name$;
-			mes "Ah, where are you going?";
+			mes "Ah, onde estao you indo?";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "You just need to subdue 80 monsters in my area regardless of type~";
+		mes "You apenas precisar to subdue 80 monstros in meu areum regardless of type~";
 		next;
 		mes .@npc_name$;
-		mes "After subjugating, please come back to me~";
+		mes "Depois subjugating, pou favou volte to me~";
 		close;
 	case 2:
 		getexp 148560,140040;
 		erasequest 3473;
 		setquest 3474;
 		mes .@npc_name$;
-		mes "You're here~";
+		mes "Voce e aqui~";
 		next;
 		mes .@npc_name$;
-		mes "I think today's goal has been achieved. Thank you~";
+		mes "Eu acho hoje's goal tem sido achieved. Obrigado~";
 		next;
 		mes .@npc_name$;
-		mes "I hope you can come tomorrow too!!!";
+		mes "I esperancum voce pode vir amanhum tambem!!!";
 		close;
 	}
 	end;
@@ -1788,7 +1788,7 @@ tur_dun02,151,256,4	script	Map Examiner Tidun#yma	4_M_NINJA_BLUE,{
 
 	if (BaseLevel < 80) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(5929,PLAYTIME) ) {
@@ -1797,37 +1797,37 @@ tur_dun02,151,256,4	script	Map Examiner Tidun#yma	4_M_NINJA_BLUE,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "You can do the quest to subdue the Turtle Island dungeon again tomorrow. You must be tired, so go home and rest.";
+		mes "Voce pode do o missao to subdue o Turtle Ilhum masmorrum novamente amanha. Voce deve be cansado, entao ir home e rest.";
 		next;
-		switch( select( "You look tired. Would you like a drink?", "Teleport to a nearby city." ) ) {
+		switch( select( "Voce parece cansado. Voce gostarium de like um drink?", "Teleport to um nearby cidade." ) ) {
 		case 1:
 			if (countitem(1000374) < 3) {
 				mes .@npc_name$;
-				mes "I think I heard that they give you 3 " + .@item_name$ + ", but I must have heard it wrong.";
+				mes "Eu acho Eu ouvi esse they dar you 3 " + .@item_name$ + ", mas I must have ouviu it errado.";
 				close;
 			}
 			delitem 1000374,3;	// Brilliant_Soda
 			erasequest 5929;
 			mes .@npc_name$;
-			mes "Oh! Thank you. You are so kind. I'll drink.";
+			mes "Oh! Obrigado. Voce e entao kind. Eu vou drink.";
 			next;
 			npctalk "I feel engulfed in a sense of freshness.", "", bc_self;
 			specialeffect EF_FLASHER;
 			mes .@npc_name$;
-			mes "Hmm! I think a guest has arrived.";
+			mes "Hmm! Eu acho um guest has arrived.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "If you give me one " + mesitemlink( 1000374 ) + ", I can teleport you to the nearby city, Alberta.";
+			mes "Se you me de one " + mesitemlink( 1000374 ) + ", Eu consigo teleport you to o nearby cidade, Alberta.";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "Teleportation to a nearby city is receiving 1 " + .@item_name$ + ", so I just want to send it to you, but it's the official price..";
+				mes "Teleportation to um nearby cidade is recebendo 1 " + .@item_name$ + ", entao I apenas querer to send it to you, mas e o official preco..";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Have a nice trip.";
+			mes "Have um nice trip.";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "alberta",117,55;
@@ -1837,66 +1837,66 @@ tur_dun02,151,256,4	script	Map Examiner Tidun#yma	4_M_NINJA_BLUE,{
 	case 2:
 		erasequest 5929;
 		mes .@npc_name$;
-		mes "You can do the subjugation of the Turtle Island dungeon again.";
+		mes "Voce pode do o subjugation of o Turtle Ilhum masmorrum novamente.";
 		close;
 	}
 	switch( checkquest(5928,HUNTING) ) {
 	case -1:
 		mes .@npc_name$;
-		mes "The Juno Monster Society prepared a quest to subdue the Turtle Island dungeon. Do you have any thoughts?";
+		mes "O Juno Monstro Society preparado um missao to subdue o Turtle Ilhum masmorra. Voce have any thoughts?";
 		next;
-		switch( select( "Receive a subjugation quest.", "Subjugation quest?", "Teleport to a nearby city.", "third" ) ) {
+		switch( select( "Receive um subjugation missao.", "Subjugation missao?", "Teleport to um nearby cidade.", "third" ) ) {
 		case 1:
 			setquest 5928;
 			mes .@npc_name$;
-			mes "After catching 80 monsters in the Turtle Island dungeon, come and report to me. Then I wish you good luck.";
+			mes "Depois catching 80 monstros in o Turtle Ilhum masmorra, vir e relatorio to me. Entao I wish you boum sorte.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "I was looking for a quiet place, and I found a suitable job, so I applied as an Map Examiner.";
+			mes "Eu estavum procurando fou um quiet lugar, e I encontrou um suitable job, entao I applied as um Map Examiner.";
 			next;
 			mes .@npc_name$;
-			mes "The problem is that my stay is getting longer than I expected.";
+			mes "O problemum isentao e meu ficar is ficando longer que I expected.";
 			next;
 			mes .@npc_name$;
-			mes "I want to go home soon..";
+			mes "Eu quero to ir home soon..";
 			close;
 		case 3:
 			mes .@npc_name$;
-			mes "If you give me one " + mesitemlink( 1000374 ) + ", I can teleport you to the nearby city, Alberta.";
+			mes "Se you me de one " + mesitemlink( 1000374 ) + ", Eu consigo teleport you to o nearby cidade, Alberta.";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "Teleportation to a nearby city is receiving 1 " + .@item_name$ + ", so I just want to send it to you, but it's the official price..";
+				mes "Teleportation to um nearby cidade is recebendo 1 " + .@item_name$ + ", entao I apenas querer to send it to you, mas e o official preco..";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Have a nice trip.";
+			mes "Have um nice trip.";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "alberta",117,55;
 			end;
 		case 4:
 			mes .@npc_name$;
-			mes "I heard that a collision between colonies is predicted due to an increase in the number of monsters.";
+			mes "Eu ouvi esse um collision entre colonies is predicted due to um increase in o number of monstros.";
 			next;
 			mes .@npc_name$;
-			mes "If the monster colonies collide with each other, don't humans try to reduce the number of them in advance?";
+			mes "Se o monstro colonies collide com each outro, nao humans tentar to reduce o number of them in advance?";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "After catching 80 monsters in the Turtle Island dungeon, come and report to me. I'll be waiting for you.";
+		mes "Depois catching 80 monstros in o Turtle Ilhum masmorra, vir e relatorio to me. Eu vou be waiting fou you.";
 		close;
 	case 2:
 		getexp 95240,88580;
 		erasequest 5928;
 		setquest 5929;
 		mes .@npc_name$;
-		mes "You solved it quickly. It's great. I can do this subjugation quest again tomorrow, so I'll see you again if I have time.";
+		mes "You solved it rapidamente. E otimo. Eu consigo do este subjugation missao novamente amanha, entao Eu vou ver you novamente se Eu tenho tempo.";
 		close;
 	}
 	end;
@@ -1917,7 +1917,7 @@ tur_dun03,125,186,6	script	Map Examiner Tsensor#yma	4_M_SIT_NOVICE,{
 
 	if (BaseLevel < 80) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(5931,PLAYTIME) ) {
@@ -1926,37 +1926,37 @@ tur_dun03,125,186,6	script	Map Examiner Tsensor#yma	4_M_SIT_NOVICE,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "You don't have anything to do? You're coming tomorrow, so why are you talking to me again?";
+		mes "Voce nao have anything to do? Voce e vindo amanha, entao pou que you conversando to me novamente?";
 		next;
-		switch( select( "You look tired. Would you like a drink?", "Teleport to a nearby city." ) ) {
+		switch( select( "Voce parece cansado. Voce gostarium de like um drink?", "Teleport to um nearby cidade." ) ) {
 		case 1:
 			if (countitem(1000374) < 3) {
 				mes .@npc_name$;
-				mes "Haha.. How expensive is " + .@item_name$ + ", I can't give you three of them.";
+				mes "Haha.. How expensive is " + .@item_name$ + ", Eu nao consigo dar you three of them.";
 				close;
 			}
 			delitem 1000374,3;	// Brilliant_Soda
 			erasequest 5931;
 			mes .@npc_name$;
-			mes "Oh, you know something? I'll drink well. I wanted to try it, but I couldn't drink it because it was expensive.";
+			mes "Oh, voce sabe algo? Eu vou drink bem. I wanted to tentar it, mas I nao conseguiu drink it porque erum expensive.";
 			next;
 			npctalk "Wow, it tasted like this.", "", bc_self;
 			specialeffect EF_FLASHER;
 			mes .@npc_name$;
-			mes "Huh?! Friends, have we seen each other? Isn't it? It's like we're seeing each other for the first time...";
+			mes "Huh?! Friends, have we visto each outro? Nao e it? E like nos estamos vendo each outro fou o primeiro tempo...";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "Alberta Express 1 " + mesitemlink( 1000374 ) + ", left immediately.";
+			mes "Albertum Express 1 " + mesitemlink( 1000374 ) + ", left immediately.";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "Sorry. If you don't give me one " + .@item_name$ + ", I won't send it. Good work.";
+				mes "Desculpe. Se voce nao me de one " + .@item_name$ + ", I nao vai send it. Bom trabalhar.";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Alberta Express is departing. Good work~";
+			mes "Albertum Express is departing. Bom trabalhar~";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "alberta",117,55;
@@ -1966,66 +1966,66 @@ tur_dun03,125,186,6	script	Map Examiner Tsensor#yma	4_M_SIT_NOVICE,{
 	case 2:
 		erasequest 5931;
 		mes .@npc_name$;
-		mes "Woah~ I can do the subjugation quest again. Do you have any thoughts?";
+		mes "Woah~ Eu consigo do o subjugation missao novamente. Voce have any thoughts?";
 		close;
 	}
 	switch( checkquest(5930,HUNTING) ) {
 	case -1:
 		mes .@npc_name$;
-		mes "Come on! Do you have any intention of subjugating?";
+		mes "Vir on! Voce have any intention of subjugating?";
 		next;
-		switch( select( "Receive a subjugation quest.", "Subjugation quest?", "Teleport to a nearby city.", "Nobis?" ) ) {
+		switch( select( "Receive um subjugation missao.", "Subjugation missao?", "Teleport to um nearby cidade.", "Nobis?" ) ) {
 		case 1:
 			setquest 5930;
 			mes .@npc_name$;
-			mes "Yeah! Yeah! I tell you to go and catch 80 monsters in Yanggeochon here, and when you catch them all, they report and come to me.";
+			mes "Yeah! Yeah! I tell you to ir e catch 80 monstros in Yanggeochon aqui, e when you catch them todos, they relatorio e vir to me.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "What are you talking about? It's just a quest to catch monsters.";
+			mes "O que sao you conversando sobre? E apenas um missao to catch monstros.";
 			next;
 			mes .@npc_name$;
-			mes "But what! You received a request for 20 permuters and 20 freezers, and you got all the permuters, but there are still five freezers?";
+			mes "Mas what! You recebeu um request fou 20 permuters e 20 freezers, e you got todos o permuters, mas hum aindum five freezers?";
 			next;
 			mes .@npc_name$;
-			mes "How good is it to just kill all the monsters in this neighborhood so this doesn't happen? Isn't it?";
+			mes "How bom is it to apenas matar todos o monstros in este neighborhood entao este nao acontecer? Nao e it?";
 			close;
 		case 3:
 			mes .@npc_name$;
-			mes "Alberta Express 1 " + mesitemlink( 1000374 ) + ", left immediately.";
+			mes "Albertum Express 1 " + mesitemlink( 1000374 ) + ", left immediately.";
 			next;
-			select( "Give me 1 " + .@item_name$ + "." );
+			select( "Me de 1 " + .@item_name$ + "." );
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "Sorry. If you don't give me one " + .@item_name$ + ", I won't send it. Good work.";
+				mes "Desculpe. Se voce nao me de one " + .@item_name$ + ", I nao vai send it. Bom trabalhar.";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Alberta Express is departing. Good work~";
+			mes "Albertum Express is departing. Bom trabalhar~";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "alberta",117,55;
 			end;
 		case 4:
 			mes .@npc_name$;
-			mes "Huh? Is this your first time seeing Novice?";
+			mes "Huh? Isentao e seu primeiro tempo vendo Novice?";
 			next;
 			mes .@npc_name$;
-			mes "When I was a Novice, even though it was like a living dungeon, I just said that I went there. It's gum.";
+			mes "When Eu estavum um Novice, ate mesmo though erum like um vivendo masmorra, I apenas disse esse I went la. E gum.";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "What are you doing? Why don't you go and catch 80 monsters in Yanggeochon?";
+		mes "O que sao you fazendo? Why voce nao ir e catch 80 monstros in Yanggeochon?";
 		close;
 	case 2:
 		getexp 102260,96700;
 		erasequest 5930;
 		setquest 5931;
 		mes .@npc_name$;
-		mes "Well, I'm not as good as I am, but my skills aren't that bad. I'm going to stay here, even if I want to do a subjugation quest tomorrow as well.";
+		mes "Bem, Eu sou nao as bom as I am, mas meu habilidades nao sao esse ruim. Eu sou vai ficar aqui, ate mesmo se Eu quero to do um subjugation missao amanhum as bem.";
 		close;
 	}
 	end;
@@ -2047,7 +2047,7 @@ ra_fild12,50,219,1	script	Map Examiner Chakari#chakari	4_F_JOB_ASSASSIN,{
 
 	if (BaseLevel < 80) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(3476,PLAYTIME) ) {
@@ -2056,12 +2056,12 @@ ra_fild12,50,219,1	script	Map Examiner Chakari#chakari	4_F_JOB_ASSASSIN,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Today is fine now!!";
+		mes "Hoje is fine agora!!";
 		next;
 		mes .@npc_name$;
-		mes "If you want to do more subjugation, please come back tomorrow!!";
+		mes "Se voce quer to do mais subjugation, pou favou volte amanha!!";
 		next;
-		if (select( "Send " + .@item_name$ + ".", "Do not pass." ) == 2)
+		if (select( "Send " + .@item_name$ + ".", "Do nao pass." ) == 2)
 			end;
 		if (countitem(1000374) < 3) {
 			mes " - Requires 3 " + .@item_name$ + ". - ";
@@ -2070,17 +2070,17 @@ ra_fild12,50,219,1	script	Map Examiner Chakari#chakari	4_F_JOB_ASSASSIN,{
 		delitem 1000374,3;	// Brilliant_Soda
 		erasequest 3476;
 		mes .@npc_name$;
-		mes "Are you giving it to me~?? I'll drink it well!!";
+		mes "Voce e dando it to me~?? Eu vou drink it bem!!";
 		next;
 		mes .@npc_name$;
 		mes "Gulp~ Gulp~~~!!!!";
 		next;
 		specialeffect EF_FLASHER;
 		mes .@npc_name$;
-		mes "Ugh...?? What is this subtle taste...";
+		mes "Ugh...?? O que e este subtle taste...";
 		next;
 		mes .@npc_name$;
-		mes "Uh... I'm a bit hazy right now, but could you talk to me again after a while??";
+		mes "Uh... Eu sou um bit hazy agorum mesmo, mas voce poderium conversar to me novamente depois um while??";
 		close;
 	case 2:
 		erasequest 3476;
@@ -2089,82 +2089,82 @@ ra_fild12,50,219,1	script	Map Examiner Chakari#chakari	4_F_JOB_ASSASSIN,{
 	switch( checkquest(3475,HUNTING) ) {
 	case -1:
 		mes .@npc_name$;
-		mes "Hello! I'm Chakarina, an Map Examiner dispatched from the Juno Monster Society~!";
+		mes "Ola! Eu sou Chakarina, um Map Examiner dispatched de o Juno Monstro Society~!";
 		next;
-		switch( select( "Receive a subjugation quest.", "Teleport to a nearby city.", "Ask about a subjugation quest.", "Come next." ) ) {
+		switch( select( "Receive um subjugation missao.", "Teleport to um nearby cidade.", "Ask sobre um subjugation missao.", "Vir proximo." ) ) {
 		case 1:
 			mes .@npc_name$;
-			mes "Are you Accepting requests?!";
+			mes "Voce e Accepting requests?!";
 			next;
 			mes .@npc_name$;
-			mes "You just need to kill 80 monsters in this field where I am located!";
+			mes "You apenas precisar to matar 80 monstros in este field where Eu sou located!";
 			next;
 			setquest 3475;
 			mes .@npc_name$;
-			mes "I'll trust you to finish it quickly!!";
+			mes "Eu vou confiancum you to terminar it rapidamente!!";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "Rachel is the closest to here!!";
+			mes "Rachel is o closest to aqui!!";
 			next;
 			mes .@npc_name$;
-			mes "If you give me one " + .@item_name$ + ", I'll send it right away!";
+			mes "Se you me de one " + .@item_name$ + ", Eu vou send it certo embora!";
 			next;
-			if (select( "Move", "Do not move" ) == 2) {
+			if (select( "Mover", "Do nao mover" ) == 2) {
 				mes .@npc_name$;
-				mes "Yes, if you need teleportation, please let me know!!";
+				mes "Yes, se voce precisum teleportation, pou favou deixe-me saber!!";
 				close;
 			}
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "Huh? You don't have " + .@item_name$ + "!!";
+				mes "Huh? Voce nao have " + .@item_name$ + "!!";
 				next;
 				mes .@npc_name$;
-				mes "You need 1 " + .@item_name$ + " to teleport!";
+				mes "Voce precisum 1 " + .@item_name$ + " to teleport!";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Yes! Then get ready~!!";
+			mes "Yes! Entao pegar pronto~!!";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "rachel",130,30;
 			end;
 		case 3:
 			mes .@npc_name$;
-			mes "Have you ever heard of a monster colony expansion?";
+			mes "Voce jum ever ouviu of um monstro colony expansion?";
 			next;
 			mes .@npc_name$;
-			mes "It should have been a continuous subjugation, but I think it was on the verge of a dangerous situation due to a brief hiatus.";
+			mes "It should tem sido um continuous subjugation, mas Eu acho erum on o verge of um perigoentao situation due to um brief hiatus.";
 			next;
 			mes .@npc_name$;
-			mes "So the Juno Monster Society dispatched several Map Examiners, and that's why I came here.";
+			mes "Entao o Juno Monstro Society dispatched several Map Examiners, e that's why I came aqui.";
 			close;
 		case 4:
 			mes .@npc_name$;
-			mes "See you again!!";
+			mes "Ver you novamente!!";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "You just need to subdue 80 monsters of any type in this area.";
+		mes "You apenas precisar to subdue 80 monstros of any type in este area.";
 		next;
 		mes .@npc_name$;
-		mes "If you come after subjugating, I will give you a good reward~!!";
+		mes "Se you vir depois subjugating, Eu vou dar you um bom recompensa~!!";
 		close;
 	case 2:
 		getexp 155040,146520;
 		erasequest 3475;
 		setquest 3476;
 		mes .@npc_name$;
-		mes "After all, you came to finish quickly!!";
+		mes "Depois todos, you came to terminar rapidamente!!";
 		next;
 		mes .@npc_name$;
-		mes "I don't think there will be any problems with subjugation if only you have an adventurer...";
+		mes "Eu nao pensar lum sera any problemas com subjugation se apenas you have um aventureiro...";
 		next;
 		mes .@npc_name$;
-		mes "I hope you can come and help me tomorrow too...!";
+		mes "I esperancum voce pode vir e me ajude amanhum tambem...!";
 		close;
 	}
 	end;
@@ -2185,7 +2185,7 @@ ice_dun01,161,13,3	script	Map Examiner Dove#dove123	8_F_GIRL,{
 
 	if (BaseLevel < 85) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(3484,PLAYTIME) ) {
@@ -2194,12 +2194,12 @@ ice_dun01,161,13,3	script	Map Examiner Dove#dove123	8_F_GIRL,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Ah, that's enough for today's subjugation!";
+		mes "Ah, that's suficiente fou hoje's subjugation!";
 		next;
 		mes .@npc_name$;
-		mes "I would appreciate it if you come again tomorrow and help subdue monsters!!";
+		mes "Eu gostarium de appreciate it se you volte novamente amanhum e ajudar subdue monstros!!";
 		next;
-		if (select( "Send " + .@item_name$ + ".", "Do not pass." ) == 2)
+		if (select( "Send " + .@item_name$ + ".", "Do nao pass." ) == 2)
 			end;
 		if (countitem(1000374) < 3) {
 			mes " - Requires 3 " + .@item_name$ + ". - ";
@@ -2208,17 +2208,17 @@ ice_dun01,161,13,3	script	Map Examiner Dove#dove123	8_F_GIRL,{
 		delitem 1000374,3;	// Brilliant_Soda
 		erasequest 3484;
 		mes .@npc_name$;
-		mes "Ah~!! Thank you so much~ I was very thirsty at the time~";
+		mes "Ah~!! Obrigado entao muito~ Eu estavum muito thirsty at o tempo~";
 		next;
 		mes .@npc_name$;
 		mes "gulp~ gulp~~~";
 		next;
 		specialeffect EF_FLASHER;
 		mes .@npc_name$;
-		mes "Huh... this intense flavor...!";
+		mes "Huh... este intense flavor...!";
 		next;
 		mes .@npc_name$;
-		mes "Eh.. you're new to me, wait a minute. I'm going to drink some of this too, so can you talk to me after a minute?";
+		mes "Eh.. voce e novo to me, esperar um minute. Eu sou vai drink alguns of este tambem, entao voce pode conversar to me depois um minute?";
 		close;
 	case 2:
 		erasequest 3484;
@@ -2227,85 +2227,85 @@ ice_dun01,161,13,3	script	Map Examiner Dove#dove123	8_F_GIRL,{
 	switch( checkquest(3483,HUNTING) ) {
 	case -1:
 		mes .@npc_name$;
-		mes "Hello!! You're here again! I'm Dove, an Map Examiner dispatched from the Juno Monster Society!";
+		mes "Ola!! Voce e aqui novamente! Eu sou Dove, um Map Examiner dispatched de o Juno Monstro Society!";
 		next;
-		switch( select( "Receive a subjugation quest.", "Teleport to a nearby city.", "Ask about a subjugation quest.", "Come next." ) ) {
+		switch( select( "Receive um subjugation missao.", "Teleport to um nearby cidade.", "Ask sobre um subjugation missao.", "Vir proximo." ) ) {
 		case 1:
 			mes .@npc_name$;
-			mes "Oh, would you like a commission?";
+			mes "Oh, voce gostarium de like um commission?";
 			next;
 			mes .@npc_name$;
-			mes "You just need to kill 80 monsters on this field where I am.";
+			mes "You apenas precisar to matar 80 monstros on este field where I am.";
 			next;
 			setquest 3483;
 			mes .@npc_name$;
-			mes "Then I'll be waiting for you, I hope you come back safely.";
+			mes "Entao Eu vou be waiting fou you, I esperancum you volte safely.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "The nearest city from here is Einbroch!";
+			mes "O nearest cidade de aqui is Einbroch!";
 			next;
 			mes .@npc_name$;
-			mes "If you give me one " + .@item_name$ + ", I will send it right away!";
+			mes "Se you me de one " + .@item_name$ + ", Eu vou send it certo embora!";
 			next;
-			if (select( "Move", "Do not move" ) == 2) {
+			if (select( "Mover", "Do nao mover" ) == 2) {
 				mes .@npc_name$;
-				mes "Yes, please tell me if you need teleportation!!";
+				mes "Yes, pou favou me digum se voce precisum teleportation!!";
 				close;
 			}
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "Hey, don't you have " + .@item_name$ + "~";
+				mes "Hey, voce nao have " + .@item_name$ + "~";
 				next;
 				mes .@npc_name$;
 				mes "Teleporting requires 1 " + .@item_name$ + ".";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Yes! Then we will move you!!";
+			mes "Yes! Entao we will mover you!!";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "rachel",130,30;
 			end;
 		case 3:
 			mes .@npc_name$;
-			mes "Sometimes ago, the phenomenon of monster colonies expanding was discovered.";
+			mes "Sometimes ago, o phenomenon of monstro colonies expanding was descobriu.";
 			next;
 			mes .@npc_name$;
-			mes "At one time, subjugation was actively carried out, but these days, it can be seen as a result of a little neglect.";
+			mes "At one tempo, subjugation was actively carried out, mas estes days, it cum be visto as um result of um pequeno neglect.";
 			next;
 			mes .@npc_name$;
-			mes "If this phenomenon continues, it is dangerous, so the Juno Monster Society has decided to carry out a full-scale subjugation.";
+			mes "Se este phenomenon continues, it is perigoso, entao o Juno Monstro Society has decided to carregar out um full-scale subjugation.";
 			next;
 			mes .@npc_name$;
-			mes "This means that subjugation is proceeding by placing Map Examiners in each area that needs subjugation!";
+			mes "Este significum esse subjugation is proceeding by placing Map Examiners in each areum esse needs subjugation!";
 			close;
 		case 4:
 			mes .@npc_name$;
-			mes "Ah, where are you going?";
+			mes "Ah, onde estao you indo?";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "You just need to subdue 80 monsters of any type in this area.";
+		mes "You apenas precisar to subdue 80 monstros of any type in este area.";
 		next;
 		mes .@npc_name$;
-		mes "After subjugation, come to me and get your reward!!";
+		mes "Depois subjugation, vir to me e pegar seu recompensa!!";
 		close;
 	case 2:
 		getexp 140296,132912;
 		erasequest 3483;
 		setquest 3484;
 		mes .@npc_name$;
-		mes "You're back safely!";
+		mes "Voce e back safely!";
 		next;
 		mes .@npc_name$;
-		mes "I barely achieved today's goal like this...";
+		mes "I barely achieved hoje's goal like this...";
 		next;
 		mes .@npc_name$;
-		mes "If you can afford it tomorrow, please come again!!";
+		mes "Se voce pode afford it amanha, pou favou volte novamente!!";
 		close;
 	}
 	end;
@@ -2325,7 +2325,7 @@ ra_fild08,163,47,5	script	Map Examiner Lucia#rsia	4_F_04,{
 
 	if (BaseLevel < 85) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(3480,PLAYTIME) ) {
@@ -2334,12 +2334,12 @@ ra_fild08,163,47,5	script	Map Examiner Lucia#rsia	4_F_04,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Today, you're done.";
+		mes "Hoje, voce e done.";
 		next;
 		mes .@npc_name$;
-		mes "Please come back tomorrow.";
+		mes "Pou favou volte amanha.";
 		next;
-		if (select( "Send " + .@item_name$ + ".", "Do not pass." ) == 2)
+		if (select( "Send " + .@item_name$ + ".", "Do nao pass." ) == 2)
 			end;
 		if (countitem(1000374) < 3) {
 			mes " - Requires 3 " + .@item_name$ + ". - ";
@@ -2348,20 +2348,20 @@ ra_fild08,163,47,5	script	Map Examiner Lucia#rsia	4_F_04,{
 		delitem 1000374,3;	// Brilliant_Soda
 		erasequest 3480;
 		mes .@npc_name$;
-		mes "Um... I'm thirsty... is it okay to drink this?";
+		mes "Um... Eu sou thirsty... is it okay to drink this?";
 		next;
 		mes .@npc_name$;
 		mes "Clap.";
 		next;
 		specialeffect EF_FLASHER;
 		mes .@npc_name$;
-		mes "Ummm... I feel weird...!";
+		mes "Ummm... I feel estranho...!";
 		next;
 		mes "[Map Examiner Lucia]";
-		mes "Um... did you come to receive a request? Did you receive it...?";
+		mes "Um... voce vir to receber um request? Voce receber it...?";
 		next;
 		mes .@npc_name$;
-		mes "I'm a bit dazed right now, so please wait for a while and talk to me.";
+		mes "Eu sou um bit dazed agorum mesmo, entao pou favou esperar fou um while e conversar to me.";
 		close;
 	case 2:
 		erasequest 3480;
@@ -2370,85 +2370,85 @@ ra_fild08,163,47,5	script	Map Examiner Lucia#rsia	4_F_04,{
 	switch( checkquest(3479,HUNTING) ) {
 	case -1:
 		mes .@npc_name$;
-		mes "See you again, this is Lucia from the Juno Monster Society.";
+		mes "Ver you novamente, este is Lucium de o Juno Monstro Society.";
 		next;
-		switch( select( "Receive a subjugation quest.", "Teleport to a nearby city.", "Ask about a subjugation quest.", "Come next." ) ) {
+		switch( select( "Receive um subjugation missao.", "Teleport to um nearby cidade.", "Ask sobre um subjugation missao.", "Vir proximo." ) ) {
 		case 1:
 			mes .@npc_name$;
-			mes "I was desperate for a helping hand.";
+			mes "Eu estavum desperate fou um ajudando mao.";
 			next;
 			mes .@npc_name$;
-			mes "Please kill 80 monsters that inhabit this field.";
+			mes "Pou favou matar 80 monstros esse inhabit este field.";
 			next;
 			setquest 3479;
 			mes .@npc_name$;
-			mes "I hope you come back unharmed.";
+			mes "I esperancum you volte unharmed.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "Rachel is the closest.";
+			mes "Rachel is o closest.";
 			next;
 			mes .@npc_name$;
-			mes "If you give me one " + .@item_name$ + ", I will help.";
+			mes "Se you me de one " + .@item_name$ + ", Eu vou ajudar.";
 			next;
-			if (select( "Move", "Do not move" ) == 2) {
+			if (select( "Mover", "Do nao mover" ) == 2) {
 				mes .@npc_name$;
-				mes "Tell me back when you need it.";
+				mes "Me digum back when voce precisum it.";
 				close;
 			}
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "It seems you don't have " + .@item_name$ + ".";
+				mes "It parece voce nao have " + .@item_name$ + ".";
 				next;
 				mes .@npc_name$;
-				mes "You need 1 " + .@item_name$ + " to teleport.";
+				mes "Voce precisum 1 " + .@item_name$ + " to teleport.";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Then please prepare.";
+			mes "Entao pou favou preparar.";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "rachel",130,30;
 			end;
 		case 3:
 			mes .@npc_name$;
-			mes "Someday... It's been quite some time since I left the monsters increasing in number little by little.";
+			mes "Someday... E been quite alguns tempo desde I left o monstros aumentando in number pequeno by pequeno.";
 			next;
 			mes .@npc_name$;
-			mes "Now we have reached a critical level.";
+			mes "Agorum we have reached um critical nivel.";
 			next;
 			mes .@npc_name$;
-			mes "I had no choice but to move at the Juno Monster Society.";
+			mes "Eu tinhum no choice mas to mover at o Juno Monstro Society.";
 			next;
 			mes .@npc_name$;
-			mes "This is how we dispatched Map Examiners to each area in need of subjugation.";
+			mes "Este is how we dispatched Map Examiners to each areum in precisar of subjugation.";
 			close;
 		case 4:
 			mes .@npc_name$;
-			mes "Goodbye";
+			mes "Adeus";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Please kill 80 monsters that inhabit this field.";
+		mes "Pou favou matar 80 monstros esse inhabit este field.";
 		next;
 		mes .@npc_name$;
-		mes "Please come back to me when it's all over.";
+		mes "Pou favou volte to me when e todos sobre.";
 		close;
 	case 2:
 		getexp 166440,157920;
 		erasequest 3479;
 		setquest 3480;
 		mes .@npc_name$;
-		mes "I'm glad you came back unharmed.";
+		mes "Eu sou glad you came back unharmed.";
 		next;
 		mes .@npc_name$;
-		mes "I think it will be fine for a while.";
+		mes "Eu acho it sera fine fou um while.";
 		next;
 		mes .@npc_name$;
-		mes "I hope you can come tomorrow as well.";
+		mes "I esperancum voce pode vir amanhum as bem.";
 		close;
 	}
 	end;
@@ -2467,7 +2467,7 @@ ra_fild04,274,69,5	script	Map Examiner Sukumari#85	4_M_MOC_SOLDIER,{
 
 	if (BaseLevel < 86) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(8667,PLAYTIME) ) {
@@ -2477,39 +2477,39 @@ ra_fild04,274,69,5	script	Map Examiner Sukumari#85	4_M_MOC_SOLDIER,{
 	case 1:
 		if (countitem(1000374) < 3) {
 			mes .@npc_name$;
-			mes "In principle, subjugation quests are limited to once a day.";
-			mes "Today, rest for a while, next time...";
+			mes "In principle, subjugation missoes are limited to umum vez um dia.";
+			mes "Hoje, rest fou um while, proximo tempo...";
 			close;
 		}
 		mes .@npc_name$;
-		mes "In principle, subjugation quests are limited to once a day.";
-		mes "Today, rest for a while, next time...";
+		mes "In principle, subjugation missoes are limited to umum vez um dia.";
+		mes "Hoje, rest fou um while, proximo tempo...";
 		next;
-		if (select( "I recommend " + .@item_name$ + "", "See you tomorrow" ) == 2) {
+		if (select( "I recommend " + .@item_name$ + "", "Ver you amanha" ) == 2) {
 			mes .@npc_name$;
-			mes "Yes! See you tomorrow.";
+			mes "Yes! Ver you amanha.";
 			close;
 		}
 		delitem 1000374,3;	// Brilliant_Soda
 		erasequest 8667;
 		mes .@npc_name$;
-		mes "Oh, this is my favorite " + .@item_name$ + "!";
-		mes "Can I take this? Thank you!";
+		mes "Oh, este is meu favorite " + .@item_name$ + "!";
+		mes "Cum I pegar this? Obrigado!";
 		mes "Kick Knock Kick...";
 		next;
 		specialeffect EF_FLASHER;
 		mes .@npc_name$;
-		mes "It's refreshing!";
+		mes "E refreshing!";
 		mes "Kyaha~...";
 		mes "...";
-		mes "Ah! Adventurer!";
+		mes "Ah! Aventureiro!";
 		next;
 		mes .@npc_name$;
 		.@skip = true;
 		break;
 	case 2:
 		mes .@npc_name$;
-		mes "Hello. You came today!";
+		mes "Ola. You came hoje!";
 		erasequest 8667;
 		break;
 	}
@@ -2517,42 +2517,42 @@ ra_fild04,274,69,5	script	Map Examiner Sukumari#85	4_M_MOC_SOLDIER,{
 	case -1:
 		if (!.@skip) {
 			mes .@npc_name$;
-			mes "Hello. You came today!";
+			mes "Ola. You came hoje!";
 		}
-		mes "I'm sending a monster subjugation investigation request to the adventurers who pass by here, how about it?";
-		mes "Or, if you are nearby, we also support teleportation service.";
+		mes "Eu sou enviando um monstro subjugation investigation request to o aventureiros who pass by aqui, que tal it?";
+		mes "Or, se you are nearby, we tambem support teleportation service.";
 		next;
-		switch( select( "Subjugation Quest", "Move to a nearby city", "Stop" ) ) {
+		switch( select( "Subjugation Missao", "Mover to um nearby cidade", "Parar" ) ) {
 		case 1:
 			mes .@npc_name$;
-			mes "If you kill 80 monsters in this Audumla meadow, this field that I can see, our society will recognize your achievements and give you experience points.";
+			mes "Se you matar 80 monstros in este Audumlum meadow, este field esse Eu consigo ver, nosso society will recognize seu achievements e dar you experiencium points.";
 			next;
-			if (select( "Accept", "Refuse" ) == 2) {
+			if (select( "Aceitar", "Recusar" ) == 2) {
 				mes .@npc_name$;
-				mes "It's mutually beneficial, so why do you refuse...";
+				mes "E mutually beneficial, entao pou que you recusar...";
 				close;
 			}
 			setquest 8668;
 			mes .@npc_name$;
 			mes "I like it, I like it.";
-			mes "I'm going to check to see if there is enough population control here.";
+			mes "Eu sou vai verificar to ver se hum suficiente population control aqui.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "The nearest place here is ^0033FFRachel^000000,";
-			mes "If you have " + .@item_name$ + ", please give me one... and I'll teleport you.";
-			mes "Ha~ It's popular these days, but I can't go buy it.";
+			mes "O nearest lugar aqui is ^0033FFRachel^000000,";
+			mes "Se you have " + .@item_name$ + ", pou favou me de one... e Eu vou teleport you.";
+			mes "Ha~ E popular estes days, mas Eu nao consigo ir comprar it.";
 			next;
-			if (select( "Give me 1 " + .@item_name$ + ", Rachel", "No" ) == 2) {
+			if (select( "Me de 1 " + .@item_name$ + ", Rachel", "Nao" ) == 2) {
 				mes .@npc_name$;
-				mes "Ah... Then what can I do?";
-				mes "When will I try again...";
+				mes "Ah... Entao what cum I do?";
+				mes "When will I tentar novamente...";
 				close;
 			}
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "You don't seem to have " + .@item_name$ + "?";
-				mes "I'm standing... I'm sorry.";
+				mes "Voce nao parecer to have " + .@item_name$ + "?";
+				mes "Eu sou de pe... Eu sou desculpe.";
 				close;
 			}
 			delitem 1000374,1;	// Brilliant_Soda
@@ -2560,31 +2560,31 @@ ra_fild04,274,69,5	script	Map Examiner Sukumari#85	4_M_MOC_SOLDIER,{
 			end;
 		case 3:
 			mes .@npc_name$;
-			mes "It's mutually beneficial, so why do you refuse...";
+			mes "E mutually beneficial, entao pou que you recusar...";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Please kill 80 monsters around here.";
+		mes "Pou favou matar 80 monstros ao redou aqui.";
 		mes "...Yes? Mobility service?";
 		next;
 		mes .@npc_name$;
-		mes "The nearest place here is ^0033FFRachel^000000,";
-		mes "If you have " + .@item_name$ + ", please give me one... and I'll teleport you.";
-		mes "Ha~ It's popular these days, but I can't go buy it.";
+		mes "O nearest lugar aqui is ^0033FFRachel^000000,";
+		mes "Se you have " + .@item_name$ + ", pou favou me de one... e Eu vou teleport you.";
+		mes "Ha~ E popular estes days, mas Eu nao consigo ir comprar it.";
 		next;
-		if (select( "Give me 1 " + .@item_name$ + ", Rachel", "No" ) == 2) {
+		if (select( "Me de 1 " + .@item_name$ + ", Rachel", "Nao" ) == 2) {
 			mes .@npc_name$;
-			mes "Ah... Then what can I do?";
-			mes "When will I try again...";
+			mes "Ah... Entao what cum I do?";
+			mes "When will I tentar novamente...";
 			close;
 		}
 		if (countitem(1000374) < 1) {
 			mes .@npc_name$;
-			mes "You don't seem to have " + .@item_name$ + "?";
-			mes "I'm standing... I'm sorry.";
+			mes "Voce nao parecer to have " + .@item_name$ + "?";
+			mes "Eu sou de pe... Eu sou desculpe.";
 			close;
 		}
 		delitem 1000374,1;	// Brilliant_Soda
@@ -2592,10 +2592,10 @@ ra_fild04,274,69,5	script	Map Examiner Sukumari#85	4_M_MOC_SOLDIER,{
 		end;
 	case 2:
 		mes .@npc_name$;
-		mes "Ah, adventurer! I saw your performance well enough. Thank you for your hard work.";
+		mes "Ah, aventureiro! I saw seu performance bem suficiente. Obrigado fou seu dificil trabalhar.";
 		next;
 		mes .@npc_name$;
-		mes "I think the right amount is really important for anything, right?";
+		mes "Eu acho o certo amount is realmente importante fou anything, certo?";
 		getexp 171420,162480;
 		erasequest 8668;
 		setquest 8667;
@@ -2621,7 +2621,7 @@ ve_fild07,158,354,3	script	Map Examiner Shevko#chevco	2_M_DYEINGER,{
 
 	if (BaseLevel < 86) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(3478,PLAYTIME) ) {
@@ -2630,12 +2630,12 @@ ve_fild07,158,354,3	script	Map Examiner Shevko#chevco	2_M_DYEINGER,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Today's request is closed.";
+		mes "Hoje's request is closed.";
 		next;
 		mes .@npc_name$;
-		mes "I'll take it again tomorrow, so I'll see you then.";
+		mes "Eu vou pegar it novamente amanha, entao Eu vou ver you entao.";
 		next;
-		if (select( "Send " + .@item_name$ + ".", "Do not pass." ) == 2)
+		if (select( "Send " + .@item_name$ + ".", "Do nao pass." ) == 2)
 			end;
 		if (countitem(1000374) < 3) {
 			mes " - Requires 3 " + .@item_name$ + ". - ";
@@ -2644,20 +2644,20 @@ ve_fild07,158,354,3	script	Map Examiner Shevko#chevco	2_M_DYEINGER,{
 		delitem 1000374,3;	// Brilliant_Soda
 		erasequest 3478;
 		mes .@npc_name$;
-		mes "Um? What is this? I'll drink it first.";
+		mes "Um? O que e this? Eu vou drink it primeiro.";
 		next;
 		mes .@npc_name$;
 		mes "Woooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo~~~";
 		next;
 		specialeffect EF_FLASHER;
 		mes .@npc_name$;
-		mes "Hmm!!! It's a strange taste, but this is... er...";
+		mes "Hmm!!! E um estranho taste, mas este is... er...";
 		next;
 		mes .@npc_name$;
 		mes ".........";
 		next;
 		mes .@npc_name$;
-		mes "I'm sorry, I fell asleep for a while. I think I'll be able to come to my senses soon, so please wait for a while.";
+		mes "Eu sou desculpe, I fell asleep fou um while. Eu acho Eu vou be capaz de vir to meu senses soon, entao pou favou esperar fou um while.";
 		close;
 	case 2:
 		erasequest 3478;
@@ -2666,85 +2666,85 @@ ve_fild07,158,354,3	script	Map Examiner Shevko#chevco	2_M_DYEINGER,{
 	switch( checkquest(3477,HUNTING) ) {
 	case -1:
 		mes .@npc_name$;
-		mes "Nice to meet you, I'm Shevko, Map Examiner of the Juno Monster Society.";
+		mes "Nice to meet you, Eu sou Shevko, Map Examiner of o Juno Monstro Society.";
 		next;
-		switch( select( "Receive a subjugation quest.", "Teleport to a nearby city.", "Ask about a subjugation quest.", "Come next." ) ) {
+		switch( select( "Receive um subjugation missao.", "Teleport to um nearby cidade.", "Ask sobre um subjugation missao.", "Vir proximo." ) ) {
 		case 1:
 			mes .@npc_name$;
-			mes "Would you like to receive a subjugation quest?";
+			mes "Voce gostarium de like to receber um subjugation missao?";
 			next;
 			mes .@npc_name$;
-			mes "You just need to kill 80 monsters in this field where we are currently located.";
+			mes "You apenas precisar to matar 80 monstros in este field where we are currently located.";
 			next;
 			setquest 3477;
 			mes .@npc_name$;
-			mes "Then I wish you good luck.";
+			mes "Entao I wish you boum sorte.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "The nearest city to this is Veins.";
+			mes "O nearest cidade to este is Veins.";
 			next;
 			mes .@npc_name$;
-			mes "If you give me 1 " + .@item_name$ + ", I will move it right away.";
+			mes "Se you me de 1 " + .@item_name$ + ", Eu vou mover it certo embora.";
 			next;
-			if (select( "Move", "Do not move" ) == 2) {
+			if (select( "Mover", "Do nao mover" ) == 2) {
 				mes .@npc_name$;
-				mes "If you need anything, please let me know.";
+				mes "Se voce precisum anything, pou favou deixe-me saber.";
 				close;
 			}
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "You don't have " + .@item_name$ + ".";
+				mes "Voce nao have " + .@item_name$ + ".";
 				next;
 				mes .@npc_name$;
 				mes "Teleporting requires 1 " + .@item_name$ + ".";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Okay then, let's go.";
+			mes "Okay entao, vamos ir.";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "veins",146,32;
 			end;
 		case 3:
 			mes .@npc_name$;
-			mes "At some point the number of monsters inhabiting each field started to increase.";
+			mes "At alguns point o number of monstros inhabiting each field comecou to increase.";
 			next;
 			mes .@npc_name$;
-			mes "I knew that the number of monsters was gradually increasing, but it was a result of not taking it seriously.";
+			mes "I sabium esse o number of monstros was gradually aumentando, mas erum um result of nao levando it seriously.";
 			next;
 			mes .@npc_name$;
-			mes "In order to restore it back to its former state, the Juno Monster Society has dispatched Map Examiners to various places.";
+			mes "In order to restore it back to seu former state, o Juno Monstro Society has dispatched Map Examiners to various places.";
 			next;
 			mes .@npc_name$;
-			mes "I am one of those Map Examiners, and I am waiting for the subjugation of the brave adventurers.";
+			mes "Eu sou one of esses Map Examiners, e Eu sou waiting fou o subjugation of o brave aventureiros.";
 			close;
 		case 4:
 			mes .@npc_name$;
-			mes "Have a nice day";
+			mes "Have um nice dia";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "You just need to subdue 80 monsters of any type in this area.";
+		mes "You apenas precisar to subdue 80 monstros of any type in este area.";
 		next;
 		mes .@npc_name$;
-		mes "After subjugation, please do not forget and let me know.";
+		mes "Depois subjugation, pou favou do nao esquecer e deixe-me saber.";
 		close;
 	case 2:
 		getexp 148560,140040;
 		erasequest 3477;
 		setquest 3478;
 		mes .@npc_name$;
-		mes "You came back unscathed... You must have been a great person.";
+		mes "You came back unscathed... Voce deve tem sido um otimo pessoa.";
 		next;
 		mes .@npc_name$;
-		mes "Thanks to you, I was able to successfully achieve today's subjugation goal, thank you.";
+		mes "Obrigado to you, Eu estavum capaz de successfully achieve hoje's subjugation goal, obrigado.";
 		next;
 		mes .@npc_name$;
-		mes "I hope to see you again tomorrow if possible.";
+		mes "I esperancum to ver you novamente amanhum se possivel.";
 		close;
 	}
 	end;
@@ -2763,7 +2763,7 @@ ra_fild03,368,183,5	script	Map Examiner Lauren#85	4_M_MOC_SOLDIER,{
 
 	if (BaseLevel < 86) {
 		mes .@npc_name$;
-		mes "Juno MonsterThe Society is in the process of subjugation quests. But you still look a little weak to carry out the quest.";
+		mes "Juno MonsterO Society is in o process of subjugation missoes. Mas you aindum olhar um pequeno fraco to carregar out o missao.";
 		close;
 	}
 	switch( checkquest(8664,PLAYTIME) ) {
@@ -2773,24 +2773,24 @@ ra_fild03,368,183,5	script	Map Examiner Lauren#85	4_M_MOC_SOLDIER,{
 	case 1:
 		if (countitem(1000374) < 3) {
 			mes .@npc_name$;
-			mes "In principle, subjugation quests are limited to once a day.";
-			mes "Today, rest for a while, next time...";
+			mes "In principle, subjugation missoes are limited to umum vez um dia.";
+			mes "Hoje, rest fou um while, proximo tempo...";
 			close;
 		}
 		mes .@npc_name$;
-		mes "In principle, subjugation quests are limited to once a day.";
-		mes "Today, rest for a while, next time...";
+		mes "In principle, subjugation missoes are limited to umum vez um dia.";
+		mes "Hoje, rest fou um while, proximo tempo...";
 		next;
-		if (select( "I recommend " + .@item_name$ + "", "See you tomorrow" ) == 2) {
+		if (select( "I recommend " + .@item_name$ + "", "Ver you amanha" ) == 2) {
 			mes .@npc_name$;
-			mes "Yes! See you tomorrow.";
+			mes "Yes! Ver you amanha.";
 			close;
 		}
 		delitem 1000374,3;	// Brilliant_Soda
 		erasequest 8664;
 		mes .@npc_name$;
-		mes "Oh, this is my favorite " + .@item_name$ + "!";
-		mes "Can I take this? Thank you!";
+		mes "Oh, este is meu favorite " + .@item_name$ + "!";
+		mes "Cum I pegar this? Obrigado!";
 		mes "Kick Knock Kick...";
 		next;
 		specialeffect EF_FLASHER;
@@ -2800,7 +2800,7 @@ ra_fild03,368,183,5	script	Map Examiner Lauren#85	4_M_MOC_SOLDIER,{
 		mes "...";
 		next;
 		mes .@npc_name$;
-		mes "Ah, adventurer! I'm requesting a monster subjugation investigation, how about it?";
+		mes "Ah, aventureiro! Eu sou requesting um monstro subjugation investigation, que tal it?";
 		.@skip = true;
 		break;
 	case 2:
@@ -2811,40 +2811,40 @@ ra_fild03,368,183,5	script	Map Examiner Lauren#85	4_M_MOC_SOLDIER,{
 	case -1:
 		if (!.@skip) {
 			mes .@npc_name$;
-			mes "Hello. You came today!";
-			mes "I'm sending a monster subjugation investigation request to the adventurers who pass by here, how about it?";
+			mes "Ola. You came hoje!";
+			mes "Eu sou enviando um monstro subjugation investigation request to o aventureiros who pass by aqui, que tal it?";
 		}
-		mes "Or, if you are nearby, we also support teleportation service.";
+		mes "Or, se you are nearby, we tambem support teleportation service.";
 		next;
-		switch( select( "Subjugation Quest", "Move to a nearby city", "Stop" ) ) {
+		switch( select( "Subjugation Missao", "Mover to um nearby cidade", "Parar" ) ) {
 		case 1:
 			mes .@npc_name$;
-			mes "Iida Plain, if you kill 80 monsters within this field that I can see, our society will recognize your achievements and give you experience points.";
+			mes "Iidum Plain, se you matar 80 monstros within este field esse Eu consigo ver, nosso society will recognize seu achievements e dar you experiencium points.";
 			next;
-			if (select( "Accept", "Refuse" ) == 2) {
+			if (select( "Aceitar", "Recusar" ) == 2) {
 				mes .@npc_name$;
-				mes "If it can't be done...";
+				mes "Se it nao pode be done...";
 				close;
 			}
 			setquest 8665;
 			mes .@npc_name$;
 			mes "I like it, I like it.";
-			mes "I'm going to check to see if there is enough population control here.";
+			mes "Eu sou vai verificar to ver se hum suficiente population control aqui.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "The nearest place here is ^0033FFRachel^000000,";
-			mes "If you have " + .@item_name$ + ", please give me one... and I'll teleport you.";
-			mes "It's the saddest thing to be here.";
+			mes "O nearest lugar aqui is ^0033FFRachel^000000,";
+			mes "Se you have " + .@item_name$ + ", pou favou me de one... e Eu vou teleport you.";
+			mes "E o saddest coisum to be aqui.";
 			next;
-			if (select( "Give me 1 " + .@item_name$ + ", Rachel", "No" ) == 2) {
+			if (select( "Me de 1 " + .@item_name$ + ", Rachel", "Nao" ) == 2) {
 				mes .@npc_name$;
-				mes "Ah... Then what can I do?";
+				mes "Ah... Entao what cum I do?";
 				close;
 			}
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "You don't seem to have " + .@item_name$ + "?";
+				mes "Voce nao parecer to have " + .@item_name$ + "?";
 				close;
 			}
 			delitem 1000374,1;	// Brilliant_Soda
@@ -2852,30 +2852,30 @@ ra_fild03,368,183,5	script	Map Examiner Lauren#85	4_M_MOC_SOLDIER,{
 			end;
 		case 3:
 			mes .@npc_name$;
-			mes "It's mutually beneficial, so why do you refuse...";
+			mes "E mutually beneficial, entao pou que you recusar...";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Please kill 80 monsters around here.";
+		mes "Pou favou matar 80 monstros ao redou aqui.";
 		mes "...Yes? Mobility service?";
 		next;
 		mes .@npc_name$;
-		mes "The nearest place here is ^0033FFRachel^000000,";
-		mes "If you have " + .@item_name$ + ", please give me one... and I'll teleport you.";
-		mes "Ha~ It's popular these days, but I can't go buy it.";
+		mes "O nearest lugar aqui is ^0033FFRachel^000000,";
+		mes "Se you have " + .@item_name$ + ", pou favou me de one... e Eu vou teleport you.";
+		mes "Ha~ E popular estes days, mas Eu nao consigo ir comprar it.";
 		next;
-		if (select( "Give me 1 " + .@item_name$ + ", Rachel", "No" ) == 2) {
+		if (select( "Me de 1 " + .@item_name$ + ", Rachel", "Nao" ) == 2) {
 			mes .@npc_name$;
-			mes "Ah... Then what can I do?";
-			mes "When will I try again...";
+			mes "Ah... Entao what cum I do?";
+			mes "When will I tentar novamente...";
 			close;
 		}
 		if (countitem(1000374) < 1) {
 			mes .@npc_name$;
-			mes "You don't seem to have " + .@item_name$ + "?";
+			mes "Voce nao parecer to have " + .@item_name$ + "?";
 			close;
 		}
 		delitem 1000374,1;	// Brilliant_Soda
@@ -2883,10 +2883,10 @@ ra_fild03,368,183,5	script	Map Examiner Lauren#85	4_M_MOC_SOLDIER,{
 		end;
 	case 2:
 		mes .@npc_name$;
-		mes "Ah, adventurer! I saw your performance well enough. Thank you for your hard work.";
+		mes "Ah, aventureiro! I saw seu performance bem suficiente. Obrigado fou seu dificil trabalhar.";
 		next;
 		mes .@npc_name$;
-		mes "I think the right amount is really important for anything, right?";
+		mes "Eu acho o certo amount is realmente importante fou anything, certo?";
 		getexp 165480,156750;
 		erasequest 8665;
 		setquest 8664;
@@ -2911,7 +2911,7 @@ ra_fild05,48,356,5	script	Map Examiner Valenzela#85	4_M_MOC_SOLDIER,{
 
 	if (BaseLevel < 87) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(8670,PLAYTIME) ) {
@@ -2921,32 +2921,32 @@ ra_fild05,48,356,5	script	Map Examiner Valenzela#85	4_M_MOC_SOLDIER,{
 	case 1:
 		if (countitem(1000374) < 3) {
 			mes .@npc_name$;
-			mes "In principle, subjugation quests are limited to once a day.";
-			mes "Today, rest for a while, next time...";
+			mes "In principle, subjugation missoes are limited to umum vez um dia.";
+			mes "Hoje, rest fou um while, proximo tempo...";
 			close;
 		}
 		mes .@npc_name$;
-		mes "In principle, subjugation quests are limited to once a day.";
-		mes "Today, rest for a while, next time...";
+		mes "In principle, subjugation missoes are limited to umum vez um dia.";
+		mes "Hoje, rest fou um while, proximo tempo...";
 		next;
-		if (select( "I recommend " + .@item_name$ + "", "See you tomorrow" ) == 2) {
+		if (select( "I recommend " + .@item_name$ + "", "Ver you amanha" ) == 2) {
 			mes .@npc_name$;
-			mes "Yes! See you tomorrow.";
+			mes "Yes! Ver you amanha.";
 			close;
 		}
 		delitem 1000374,3;	// Brilliant_Soda
 		erasequest 8670;
 		mes .@npc_name$;
-		mes "Oh, this is my favorite " + .@item_name$ + "!";
-		mes "Can I take this? Thank you!";
+		mes "Oh, este is meu favorite " + .@item_name$ + "!";
+		mes "Cum I pegar this? Obrigado!";
 		mes "Kick Knock Kick...";
 		next;
 		specialeffect EF_FLASHER;
 		mes .@npc_name$;
-		mes "It's refreshing!";
+		mes "E refreshing!";
 		mes "Kyaha~...";
 		mes "...";
-		mes "Ah! Adventurer!";
+		mes "Ah! Aventureiro!";
 		next;
 		mes .@npc_name$;
 		.@skip = true;
@@ -2959,42 +2959,42 @@ ra_fild05,48,356,5	script	Map Examiner Valenzela#85	4_M_MOC_SOLDIER,{
 	case -1:
 		if (!.@skip) {
 			mes .@npc_name$;
-			mes "Hello. You came today!";
+			mes "Ola. You came hoje!";
 		}
-		mes "I'm sending a monster subjugation investigation request to the adventurers who pass by here, how about it?";
-		mes "Or, if you are nearby, we also support teleportation service.";
+		mes "Eu sou enviando um monstro subjugation investigation request to o aventureiros who pass by aqui, que tal it?";
+		mes "Or, se you are nearby, we tambem support teleportation service.";
 		next;
-		switch( select( "Subjugation Quest", "Move to a nearby city", "Stop" ) ) {
+		switch( select( "Subjugation Missao", "Mover to um nearby cidade", "Parar" ) ) {
 		case 1:
 			mes .@npc_name$;
-			mes "If you kill 80 monsters in this Audumla meadow, this field that I can see, our society will recognize your achievements and give you experience points.";
+			mes "Se you matar 80 monstros in este Audumlum meadow, este field esse Eu consigo ver, nosso society will recognize seu achievements e dar you experiencium points.";
 			next;
-			if (select( "Accept", "Refuse" ) == 2) {
+			if (select( "Aceitar", "Recusar" ) == 2) {
 				mes .@npc_name$;
-				mes "It's mutually beneficial, so why do you refuse...";
+				mes "E mutually beneficial, entao pou que you recusar...";
 				close;
 			}
 			setquest 8671;
 			mes .@npc_name$;
 			mes "I like it, I like it.";
-			mes "I'm going to check to see if there is enough population control here.";
+			mes "Eu sou vai verificar to ver se hum suficiente population control aqui.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "The nearest place here is ^0033FFRachel^000000,";
-			mes "If you have " + .@item_name$ + ", please give me one... and I'll teleport you.";
-			mes "Ha~ It's popular these days, but I can't go buy it.";
+			mes "O nearest lugar aqui is ^0033FFRachel^000000,";
+			mes "Se you have " + .@item_name$ + ", pou favou me de one... e Eu vou teleport you.";
+			mes "Ha~ E popular estes days, mas Eu nao consigo ir comprar it.";
 			next;
-			if (select( "Give me 1 " + .@item_name$ + ", Rachel", "No" ) == 2) {
+			if (select( "Me de 1 " + .@item_name$ + ", Rachel", "Nao" ) == 2) {
 				mes .@npc_name$;
-				mes "Ah... Then what can I do?";
-				mes "When will I try again...";
+				mes "Ah... Entao what cum I do?";
+				mes "When will I tentar novamente...";
 				close;
 			}
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "You don't seem to have " + .@item_name$ + "?";
-				mes "I'm standing... I'm sorry.";
+				mes "Voce nao parecer to have " + .@item_name$ + "?";
+				mes "Eu sou de pe... Eu sou desculpe.";
 				close;
 			}
 			delitem 1000374,1;	// Brilliant_Soda
@@ -3002,31 +3002,31 @@ ra_fild05,48,356,5	script	Map Examiner Valenzela#85	4_M_MOC_SOLDIER,{
 			end;
 		case 3:
 			mes .@npc_name$;
-			mes "It's mutually beneficial, so why do you refuse...";
+			mes "E mutually beneficial, entao pou que you recusar...";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Please kill 80 monsters around here.";
+		mes "Pou favou matar 80 monstros ao redou aqui.";
 		mes "...Yes? Mobility service?";
 		next;
 		mes .@npc_name$;
-		mes "The nearest place here is ^0033FFRachel^000000,";
-		mes "If you have " + .@item_name$ + ", please give me one... and I'll teleport you.";
-		mes "Ha~ It's popular these days, but I can't go buy it.";
+		mes "O nearest lugar aqui is ^0033FFRachel^000000,";
+		mes "Se you have " + .@item_name$ + ", pou favou me de one... e Eu vou teleport you.";
+		mes "Ha~ E popular estes days, mas Eu nao consigo ir comprar it.";
 		next;
-		if (select( "Give me 1 " + .@item_name$ + ", Rachel", "No" ) == 2) {
+		if (select( "Me de 1 " + .@item_name$ + ", Rachel", "Nao" ) == 2) {
 			mes .@npc_name$;
-			mes "Ah... Then what can I do?";
-			mes "When will I try again...";
+			mes "Ah... Entao what cum I do?";
+			mes "When will I tentar novamente...";
 			close;
 		}
 		if (countitem(1000374) < 1) {
 			mes .@npc_name$;
-			mes "You don't seem to have " + .@item_name$ + "?";
-			mes "I'm standing... I'm sorry.";
+			mes "Voce nao parecer to have " + .@item_name$ + "?";
+			mes "Eu sou de pe... Eu sou desculpe.";
 			close;
 		}
 		delitem 1000374,1;	// Brilliant_Soda
@@ -3034,10 +3034,10 @@ ra_fild05,48,356,5	script	Map Examiner Valenzela#85	4_M_MOC_SOLDIER,{
 		end;
 	case 2:
 		mes .@npc_name$;
-		mes "Ah, adventurer! I saw your performance well enough. Thank you for your hard work.";
+		mes "Ah, aventureiro! I saw seu performance bem suficiente. Obrigado fou seu dificil trabalhar.";
 		next;
 		mes .@npc_name$;
-		mes "I think the right amount is really important for anything, right?";
+		mes "Eu acho o certo amount is realmente importante fou anything, certo?";
 		getexp 187410,178020;
 		erasequest 8671;
 		setquest 8670;
@@ -3062,7 +3062,7 @@ ra_fild01,224,319,5	script	Map Examiner Ciara#85	4_M_MOC_SOLDIER,{
 
 	if (BaseLevel < 88) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(8661,PLAYTIME) ) {
@@ -3072,35 +3072,35 @@ ra_fild01,224,319,5	script	Map Examiner Ciara#85	4_M_MOC_SOLDIER,{
 	case 1:
 		if (countitem(1000374) < 3) {
 			mes .@npc_name$;
-			mes "Adventurer, it's dangerous here.";
-			mes "I don't know if my life is not worth it...";
+			mes "Aventureiro, e perigoentao aqui.";
+			mes "Eu nao saber se meu vidum is nao worth it...";
 			close;
 		}
 		mes .@npc_name$;
-		mes "In principle, subjugation quests are limited to once a day.";
-		mes "Today, rest for a while, next time...";
+		mes "In principle, subjugation missoes are limited to umum vez um dia.";
+		mes "Hoje, rest fou um while, proximo tempo...";
 		next;
-		if (select( "I recommend " + .@item_name$ + "", "See you tomorrow" ) == 2) {
+		if (select( "I recommend " + .@item_name$ + "", "Ver you amanha" ) == 2) {
 			mes .@npc_name$;
-			mes "Yes! See you tomorrow.";
+			mes "Yes! Ver you amanha.";
 			close;
 		}
 		delitem 1000374,3;	// Brilliant_Soda
 		erasequest 8661;
 		mes .@npc_name$;
-		mes "Oh, this is my favorite " + .@item_name$ + "!";
-		mes "Can I take this? Thank you!";
+		mes "Oh, este is meu favorite " + .@item_name$ + "!";
+		mes "Cum I pegar this? Obrigado!";
 		mes "Kick Knock Kick...";
 		next;
 		specialeffect EF_FLASHER;
 		mes .@npc_name$;
-		mes "It's refreshing!";
+		mes "E refreshing!";
 		mes "Kyaha~...";
 		mes "...";
-		mes "Ah! Adventurer!";
+		mes "Ah! Aventureiro!";
 		next;
 		mes .@npc_name$;
-		mes "It's really good. We're asking adventurers who pass by here to investigate monster subjugation, how about it?";
+		mes "E realmente bom. Nos estamos asking aventureiros who pass by aqui to investigar monstro subjugation, que tal it?";
 		.@skip = true;
 		break;
 	case 2:
@@ -3111,42 +3111,42 @@ ra_fild01,224,319,5	script	Map Examiner Ciara#85	4_M_MOC_SOLDIER,{
 	case -1:
 		if (!.@skip) {
 			mes .@npc_name$;
-			mes "Hello. You came today!";
-			mes "I'm sending a monster subjugation investigation request to the adventurers who pass by here, how about it?";
+			mes "Ola. You came hoje!";
+			mes "Eu sou enviando um monstro subjugation investigation request to o aventureiros who pass by aqui, que tal it?";
 		}
-		mes "Or, if you are nearby, we also support teleportation service.";
+		mes "Or, se you are nearby, we tambem support teleportation service.";
 		next;
-		switch( select( "Subjugation Quest", "Move to a nearby city", "Stop" ) ) {
+		switch( select( "Subjugation Missao", "Mover to um nearby cidade", "Parar" ) ) {
 		case 1:
 			mes .@npc_name$;
-			mes "If you kill 80 monsters in this Audumla meadow, this field that I can see, our society will recognize your achievements and give you experience points.";
+			mes "Se you matar 80 monstros in este Audumlum meadow, este field esse Eu consigo ver, nosso society will recognize seu achievements e dar you experiencium points.";
 			next;
-			if (select( "Accept", "Refuse" ) == 2) {
+			if (select( "Aceitar", "Recusar" ) == 2) {
 				mes .@npc_name$;
-				mes "It's mutually beneficial, so why do you refuse...";
+				mes "E mutually beneficial, entao pou que you recusar...";
 				close;
 			}
 			setquest 8662;
 			mes .@npc_name$;
 			mes "I like it, I like it.";
-			mes "I'm going to check to see if there is enough population control here.";
+			mes "Eu sou vai verificar to ver se hum suficiente population control aqui.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "The nearest place here is ^0033FFRachel^000000,";
-			mes "If you have " + .@item_name$ + ", please give me one... and I'll teleport you.";
-			mes "Ha~ It's popular these days, but I can't go buy it.";
+			mes "O nearest lugar aqui is ^0033FFRachel^000000,";
+			mes "Se you have " + .@item_name$ + ", pou favou me de one... e Eu vou teleport you.";
+			mes "Ha~ E popular estes days, mas Eu nao consigo ir comprar it.";
 			next;
-			if (select( "Give me 1 " + .@item_name$ + ", Rachel", "No" ) == 2) {
+			if (select( "Me de 1 " + .@item_name$ + ", Rachel", "Nao" ) == 2) {
 				mes .@npc_name$;
-				mes "Oh... Then what can I do?no.";
-				mes "When will I try again...";
+				mes "Oh... Entao what cum I do?no.";
+				mes "When will I tentar novamente...";
 				close;
 			}
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "You don't seem to have " + .@item_name$ + "?";
-				mes "I'm standing... I'm sorry.";
+				mes "Voce nao parecer to have " + .@item_name$ + "?";
+				mes "Eu sou de pe... Eu sou desculpe.";
 				close;
 			}
 			delitem 1000374,1;	// Brilliant_Soda
@@ -3154,31 +3154,31 @@ ra_fild01,224,319,5	script	Map Examiner Ciara#85	4_M_MOC_SOLDIER,{
 			end;
 		case 3:
 			mes .@npc_name$;
-			mes "It's mutually beneficial, so why do you refuse...";
+			mes "E mutually beneficial, entao pou que you recusar...";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Please kill 80 monsters around here.";
+		mes "Pou favou matar 80 monstros ao redou aqui.";
 		mes "...Yes? Mobility service?";
 		next;
 		mes .@npc_name$;
-		mes "The nearest place here is ^0033FFRachel^000000,";
-		mes "If you have " + .@item_name$ + ", please give me one... and I'll teleport you.";
-		mes "Ha~ It's popular these days, but I can't go buy it.";
+		mes "O nearest lugar aqui is ^0033FFRachel^000000,";
+		mes "Se you have " + .@item_name$ + ", pou favou me de one... e Eu vou teleport you.";
+		mes "Ha~ E popular estes days, mas Eu nao consigo ir comprar it.";
 		next;
-		if (select( "Give me 1 " + .@item_name$ + ", Rachel", "No" ) == 2) {
+		if (select( "Me de 1 " + .@item_name$ + ", Rachel", "Nao" ) == 2) {
 			mes .@npc_name$;
-			mes "Ah... Then what can I do?";
-			mes "When will I try again...";
+			mes "Ah... Entao what cum I do?";
+			mes "When will I tentar novamente...";
 			close;
 		}
 		if (countitem(1000374) < 1) {
 			mes .@npc_name$;
-			mes "You don't seem to have " + .@item_name$ + "?";
-			mes "I'm standing... I'm sorry.";
+			mes "Voce nao parecer to have " + .@item_name$ + "?";
+			mes "Eu sou de pe... Eu sou desculpe.";
 			close;
 		}
 		delitem 1000374,1;	// Brilliant_Soda
@@ -3186,10 +3186,10 @@ ra_fild01,224,319,5	script	Map Examiner Ciara#85	4_M_MOC_SOLDIER,{
 		end;
 	case 2:
 		mes .@npc_name$;
-		mes "Ah, adventurer! I saw your performance well enough. Thank you for your hard work.";
+		mes "Ah, aventureiro! I saw seu performance bem suficiente. Obrigado fou seu dificil trabalhar.";
 		next;
 		mes .@npc_name$;
-		mes "I think the right amount is really important for anything, right?";
+		mes "Eu acho o certo amount is realmente importante fou anything, certo?";
 		getexp 166760,157960;
 		erasequest 8662;
 		setquest 8661;
@@ -3215,7 +3215,7 @@ ve_fild01,354,280,3	script	Map Examiner Yirun Seo#suiroon	4_F_SISTER,{
 
 	if (BaseLevel < 90) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(3482,PLAYTIME) ) {
@@ -3224,12 +3224,12 @@ ve_fild01,354,280,3	script	Map Examiner Yirun Seo#suiroon	4_F_SISTER,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Ah, that's enough for today's subjugation!";
+		mes "Ah, that's suficiente fou hoje's subjugation!";
 		next;
 		mes .@npc_name$;
-		mes "I would appreciate it if you come again tomorrow and help subdue monsters!!";
+		mes "Eu gostarium de appreciate it se you volte novamente amanhum e ajudar subdue monstros!!";
 		next;
-		if (select( "Send " + .@item_name$ + ".", "Do not pass." ) == 2)
+		if (select( "Send " + .@item_name$ + ".", "Do nao pass." ) == 2)
 			end;
 		if (countitem(1000374) < 3) {
 			mes " - Requires 3 " + .@item_name$ + ". - ";
@@ -3238,17 +3238,17 @@ ve_fild01,354,280,3	script	Map Examiner Yirun Seo#suiroon	4_F_SISTER,{
 		delitem 1000374,3;	// Brilliant_Soda
 		erasequest 3482;
 		mes .@npc_name$;
-		mes "Ah~!! Thank you so much~ I was very thirsty at the time~";
+		mes "Ah~!! Obrigado entao muito~ Eu estavum muito thirsty at o tempo~";
 		next;
 		mes .@npc_name$;
 		mes "gulp~ gulp~~~";
 		next;
 		specialeffect EF_FLASHER;
 		mes .@npc_name$;
-		mes "Huh... this intense flavor...!";
+		mes "Huh... este intense flavor...!";
 		next;
 		mes .@npc_name$;
-		mes "Eh.. you're new to me, wait a minute. I'm going to drink some of this too, so can you talk to me after a minute?";
+		mes "Eh.. voce e novo to me, esperar um minute. Eu sou vai drink alguns of este tambem, entao voce pode conversar to me depois um minute?";
 		close;
 	case 2:
 		erasequest 3482;
@@ -3257,85 +3257,85 @@ ve_fild01,354,280,3	script	Map Examiner Yirun Seo#suiroon	4_F_SISTER,{
 	switch( checkquest(3481,HUNTING) ) {
 	case -1:
 		mes .@npc_name$;
-		mes "Hello!! My name is Irun Seo, an Map Examiner dispatched from the Juno Monster Society!";
+		mes "Ola!! Meu name is Irun Seo, um Map Examiner dispatched de o Juno Monstro Society!";
 		next;
-		switch( select( "Receive a subjugation quest.", "Teleport to a nearby city.", "Ask about a subjugation quest.", "Come next." ) ) {
+		switch( select( "Receive um subjugation missao.", "Teleport to um nearby cidade.", "Ask sobre um subjugation missao.", "Vir proximo." ) ) {
 		case 1:
 			mes .@npc_name$;
-			mes "Oh, would you like a commission?";
+			mes "Oh, voce gostarium de like um commission?";
 			next;
 			mes .@npc_name$;
-			mes "You just need to kill 80 monsters on this field where I am.";
+			mes "You apenas precisar to matar 80 monstros on este field where I am.";
 			next;
 			setquest 3481;
 			mes .@npc_name$;
-			mes "Then I'll be waiting for you, I hope you come back safely.";
+			mes "Entao Eu vou be waiting fou you, I esperancum you volte safely.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "The nearest city from here is Einbroch!";
+			mes "O nearest cidade de aqui is Einbroch!";
 			next;
 			mes .@npc_name$;
-			mes "If you give me one " + .@item_name$ + ", I will send it right away!";
+			mes "Se you me de one " + .@item_name$ + ", Eu vou send it certo embora!";
 			next;
-			if (select( "Move", "Do not move" ) == 2) {
+			if (select( "Mover", "Do nao mover" ) == 2) {
 				mes .@npc_name$;
-				mes "Yes, please tell me if you need teleportation!!";
+				mes "Yes, pou favou me digum se voce precisum teleportation!!";
 				close;
 			}
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "Hey, don't you have " + .@item_name$ + "~";
+				mes "Hey, voce nao have " + .@item_name$ + "~";
 				next;
 				mes .@npc_name$;
 				mes "Teleporting requires 1 " + .@item_name$ + ".";
 				close;
 			}
 			mes .@npc_name$;
-			mes "Yes! Then we will move you!!";
+			mes "Yes! Entao we will mover you!!";
 			close2;
 			delitem 1000374,1;	// Brilliant_Soda
 			warp "veins",146,32;
 			end;
 		case 3:
 			mes .@npc_name$;
-			mes "Sometimes ago, the phenomenon of monster colonies expanding was discovered.";
+			mes "Sometimes ago, o phenomenon of monstro colonies expanding was descobriu.";
 			next;
 			mes .@npc_name$;
-			mes "At one time, subjugation was actively carried out, but these days, it can be seen as a result of a little neglect.";
+			mes "At one tempo, subjugation was actively carried out, mas estes days, it cum be visto as um result of um pequeno neglect.";
 			next;
 			mes .@npc_name$;
-			mes "If this phenomenon continues, it is dangerous, so the Juno Monster Society has decided to carry out a full-scale subjugation.";
+			mes "Se este phenomenon continues, it is perigoso, entao o Juno Monstro Society has decided to carregar out um full-scale subjugation.";
 			next;
 			mes .@npc_name$;
-			mes "This means that subjugation is proceeding by placing Map Examiners in each area that needs subjugation!";
+			mes "Este significum esse subjugation is proceeding by placing Map Examiners in each areum esse needs subjugation!";
 			close;
 		case 4:
 			mes .@npc_name$;
-			mes "Ah, where are you going?";
+			mes "Ah, onde estao you indo?";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "You just need to subdue 80 monsters of any type in this area.";
+		mes "You apenas precisar to subdue 80 monstros of any type in este area.";
 		next;
 		mes .@npc_name$;
-		mes "After subjugation, come to me and get your reward!!";
+		mes "Depois subjugation, vir to me e pegar seu recompensa!!";
 		close;
 	case 2:
 		getexp 209440,157920;
 		erasequest 3481;
 		setquest 3482;
 		mes .@npc_name$;
-		mes "You're back safely!";
+		mes "Voce e back safely!";
 		next;
 		mes .@npc_name$;
-		mes "I barely achieved today's goal like this...";
+		mes "I barely achieved hoje's goal like this...";
 		next;
 		mes .@npc_name$;
-		mes "If you can afford it tomorrow, please come again!!";
+		mes "Se voce pode afford it amanha, pou favou volte novamente!!";
 		close;
 	}
 	end;
@@ -3357,8 +3357,8 @@ ve_fild04,52,242,5	script	Map Examiner Rana#85	4_M_MOC_SOLDIER,{
 
 	if (BaseLevel < 90) {
 		mes .@npc_name$;
-		mes "Adventurer, it's dangerous here.";
-		mes "I don't know if my life is not worth it...";
+		mes "Aventureiro, e perigoentao aqui.";
+		mes "Eu nao saber se meu vidum is nao worth it...";
 		close;
 	}
 	switch( checkquest(8676,PLAYTIME) ) {
@@ -3368,34 +3368,34 @@ ve_fild04,52,242,5	script	Map Examiner Rana#85	4_M_MOC_SOLDIER,{
 	case 1:
 		if (countitem(1000374) < 3) {
 			mes .@npc_name$;
-			mes "In principle, subjugation quests are limited to once a day.";
-			mes "Today, rest for a while, next time...";
+			mes "In principle, subjugation missoes are limited to umum vez um dia.";
+			mes "Hoje, rest fou um while, proximo tempo...";
 			close;
 		}
 		mes .@npc_name$;
-		mes "In principle, subjugation quests are limited to once a day.";
-		mes "Today, rest for a while, next time...";
+		mes "In principle, subjugation missoes are limited to umum vez um dia.";
+		mes "Hoje, rest fou um while, proximo tempo...";
 		next;
-		if (select( "I recommend " + .@item_name$ + "", "See you tomorrow" ) == 2) {
+		if (select( "I recommend " + .@item_name$ + "", "Ver you amanha" ) == 2) {
 			mes .@npc_name$;
-			mes "Yes! See you tomorrow.";
+			mes "Yes! Ver you amanha.";
 			close;
 		}
 		delitem 1000374,3;	// Brilliant_Soda
 		erasequest 8676;
 		mes .@npc_name$;
-		mes "Oh, this is my favorite " + .@item_name$ + "!";
-		mes "Can I take this? Thank you!";
+		mes "Oh, este is meu favorite " + .@item_name$ + "!";
+		mes "Cum I pegar this? Obrigado!";
 		mes "Kick Knock Kick...";
 		next;
 		specialeffect EF_FLASHER;
 		mes .@npc_name$;
-		mes "It's refreshing!";
+		mes "E refreshing!";
 		mes "...";
-		mes "Ah! Adventurer!";
+		mes "Ah! Aventureiro!";
 		next;
 		mes .@npc_name$;
-		mes "I'm sending a monster subjugation investigation request to the adventurers who pass by here, how about it?";
+		mes "Eu sou enviando um monstro subjugation investigation request to o aventureiros who pass by aqui, que tal it?";
 		callsub( S_Quest, 8677, 2 );	// no text
 	case 2:
 		erasequest 8676;
@@ -3408,13 +3408,13 @@ ve_fild04,52,242,5	script	Map Examiner Rana#85	4_M_MOC_SOLDIER,{
 		case 0:
 		case 1:
 			mes .@npc_name$;
-			mes "Please kill 80 monsters around here.";
+			mes "Pou favou matar 80 monstros ao redou aqui.";
 			mes "...Yes? Mobility service?";
 			next;
 			callsub( S_Warp );
 		case 2:
 			mes .@npc_name$;
-			mes "Ah, adventurer! I saw your performance well enough. Thank you for your hard work.";
+			mes "Ah, aventureiro! I saw seu performance bem suficiente. Obrigado fou seu dificil trabalhar.";
 			getexp 188600,173200;
 			completequest 8675;
 			setquest 8676;
@@ -3427,13 +3427,13 @@ ve_fild04,52,242,5	script	Map Examiner Rana#85	4_M_MOC_SOLDIER,{
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Please kill 80 monsters around here.";
+		mes "Pou favou matar 80 monstros ao redou aqui.";
 		mes "...Yes? Mobility service?";
 		next;
 		callsub( S_Warp );
 	case 2:
 		mes .@npc_name$;
-		mes "Ah, adventurer! I saw your performance well enough. Thank you for your hard work.";
+		mes "Ah, aventureiro! I saw seu performance bem suficiente. Obrigado fou seu dificil trabalhar.";
 		getexp 188600,173200;
 		erasequest 8677;
 		setquest 8676;
@@ -3448,52 +3448,52 @@ S_Quest:
 	switch( getarg(1) ) {
 	case 0:	// quest 8675
 		mes .@npc_name$;
-		mes "Hello. This is Ranya from the Juno Monster Society.";
-		mes "I am asking adventurers to investigate monster subjugation, how do you feel?";
+		mes "Ola. Este is Ranyum de o Juno Monstro Society.";
+		mes "Eu sou asking aventureiros to investigar monstro subjugation, como you feel?";
 		break;
 	case 1:	// quest 8677
 		mes .@npc_name$;
-		mes "Hello. You're here today!";
-		mes "I'm requesting monster subjugation investigations from adventurers passing by here. How is it?";
+		mes "Ola. Voce e aqui hoje!";
+		mes "Eu sou requesting monstro subjugation investigations de aventureiros passando by aqui. Como estum it?";
 		break;
 	case 2:	// quest 8677 but no text
 		break;
 	}
-	mes "Or, if you are nearby, we also support teleportation service.";
+	mes "Or, se you are nearby, we tambem support teleportation service.";
 	next;
-	switch( select( "Listen to the situation", "Move to a nearby city", "Stop" ) ) {
+	switch( select( "Ouvir to o situation", "Mover to um nearby cidade", "Parar" ) ) {
 	case 1:
 		if (.@quest_id == 8675) {
 			mes .@npc_name$;
-			mes "Recently, the number of monsters is increasing in some areas, including around this area.";
-			mes "I think the reason is that there are fewer people than before...";
+			mes "Recently, o number of monstros is aumentando in alguns areas, including ao redou este area.";
+			mes "Eu acho o razao isentao e hum fewer pessoas que antes...";
 			next;
 			mes .@npc_name$;
-			mes "It already means that you can't control the object naturally.";
-			mes "To prevent further colonization from expanding, our Juno Monster Society has planned a massive subjugation.";
+			mes "It jum significum esse voce nao pode control o object naturally.";
+			mes "To prevent furta colonization de expanding, nosso Juno Monstro Society has planned um massive subjugation.";
 			next;
 			mes .@npc_name$;
-			mes "No matter how many adventurers visit, it's a big deal if you come down to where people live...";
-			mes "So, can I ask you to subdue me?";
+			mes "No matter quantos aventureiros visit, e um grande deal se you vir down to where pessoas live...";
+			mes "So, cum I ask you to subdue me?";
 			next;
 		}
 		mes .@npc_name$;
-		mes "If you kill 80 monsters in this Veins Field, this field that I can see, our society will recognize your achievements and give you experience points.";
+		mes "Se you matar 80 monstros in este Veins Field, este field esse Eu consigo ver, nosso society will recognize seu achievements e dar you experiencium points.";
 		next;
-		if (select( "Accept", "Refuse" ) == 2) {
+		if (select( "Aceitar", "Recusar" ) == 2) {
 			mes .@npc_name$;
-			mes "It's mutually beneficial, so why do you refuse...";
+			mes "E mutually beneficial, entao pou que you recusar...";
 			close;
 		}
 		setquest .@quest_id;
 		mes .@npc_name$;
-		mes "Good. I'll wait here.";
+		mes "Bom. Eu vou esperar aqui.";
 		close;
 	case 2:
 		callsub( S_Warp );
 	case 3:
 		mes .@npc_name$;
-		mes "It's mutually beneficial, so why do you refuse...";
+		mes "E mutually beneficial, entao pou que you recusar...";
 		close;
 	}
 	end;
@@ -3503,17 +3503,17 @@ S_Warp:
 	.@item_name$ = getitemname(1000374);
 
 	mes .@npc_name$;
-	mes "The nearest place here is ^0033FFVeins^000000,";
-	mes "If you have " + .@item_name$ + ", please give me one... and I'll teleport you.";
+	mes "O nearest lugar aqui is ^0033FFVeins^000000,";
+	mes "Se you have " + .@item_name$ + ", pou favou me de one... e Eu vou teleport you.";
 	next;
-	if (select( "Give me 1 " + .@item_name$ + " with Veins", "No" ) == 2) {
+	if (select( "Me de 1 " + .@item_name$ + " com Veins", "Nao" ) == 2) {
 		mes .@npc_name$;
-		mes "Ah... Then what can I do?";
+		mes "Ah... Entao what cum I do?";
 		close;
 	}
 	if (countitem(1000374) < 1) {
 		mes .@npc_name$;
-		mes "You don't seem to have " + .@item_name$ + "?";
+		mes "Voce nao parecer to have " + .@item_name$ + "?";
 		close;
 	}
 	delitem 1000374,1;	// Brilliant_Soda
@@ -3539,7 +3539,7 @@ ra_fild06,292,39,5	script	Map Examiner Kantu#85	4_M_MOC_SOLDIER,{
 
 	if (BaseLevel < 93) {
 		mes .@npc_name$;
-		mes "The Juno Monster Society is in the process of subjugation quests. But you still seem a little weak to carry out the quests.";
+		mes "O Juno Monstro Society is in o process of subjugation missoes. Mas you aindum parecer um pequeno fraco to carregar out o missoes.";
 		close;
 	}
 	switch( checkquest(8673,PLAYTIME) ) {
@@ -3549,32 +3549,32 @@ ra_fild06,292,39,5	script	Map Examiner Kantu#85	4_M_MOC_SOLDIER,{
 	case 1:
 		if (countitem(1000374) < 3) {
 			mes .@npc_name$;
-			mes "In principle, subjugation quests are limited to once a day.";
-			mes "Today, rest for a while, next time...";
+			mes "In principle, subjugation missoes are limited to umum vez um dia.";
+			mes "Hoje, rest fou um while, proximo tempo...";
 			close;
 		}
 		mes .@npc_name$;
-		mes "In principle, subjugation quests are limited to once a day.";
-		mes "Today, rest for a while, next time...";
+		mes "In principle, subjugation missoes are limited to umum vez um dia.";
+		mes "Hoje, rest fou um while, proximo tempo...";
 		next;
-		if (select( "I recommend " + .@item_name$ + "", "See you tomorrow" ) == 2) {
+		if (select( "I recommend " + .@item_name$ + "", "Ver you amanha" ) == 2) {
 			mes .@npc_name$;
-			mes "Yes! See you tomorrow.";
+			mes "Yes! Ver you amanha.";
 			close;
 		}
 		delitem 1000374,3;	// Brilliant_Soda
 		erasequest 8673;
 		mes .@npc_name$;
-		mes "Oh, this is my favorite " + .@item_name$ + "!";
-		mes "Can I take this? Thank you!";
+		mes "Oh, este is meu favorite " + .@item_name$ + "!";
+		mes "Cum I pegar this? Obrigado!";
 		next;
 		specialeffect EF_FLASHER;
 		mes .@npc_name$;
-		mes "It's refreshing!";
+		mes "E refreshing!";
 		mes "Kyaha~...";
 		next;
 		mes .@npc_name$;
-		mes "Ah, adventurer. I'm taking a monster subjugation investigation request today, how is it?";
+		mes "Ah, aventureiro. Eu sou levando um monstro subjugation investigation request hoje, como estum it?";
 		.@skip = true;
 		break;
 	case 2:
@@ -3590,54 +3590,54 @@ ra_fild06,292,39,5	script	Map Examiner Kantu#85	4_M_MOC_SOLDIER,{
 	case -1:
 		if (!.@skip) {
 			mes .@npc_name$;
-			mes "Hello, adventurer! I'm Kantu from the Juno Monster Society.";
-			mes "I am asking adventurers to investigate monster subjugation, how do you feel?";
+			mes "Ola, aventureiro! Eu sou Kantu de o Juno Monstro Society.";
+			mes "Eu sou asking aventureiros to investigar monstro subjugation, como you feel?";
 			next;
 			mes .@npc_name$;
 		}
-		mes "Or, if you are nearby, we will support you with a teleportation service.";
+		mes "Or, se you are nearby, we will support you com um teleportation service.";
 		next;
-		switch( select( "Listen to the situation", "Move to a nearby city", "Stop" ) ) {
+		switch( select( "Ouvir to o situation", "Mover to um nearby cidade", "Parar" ) ) {
 		case 1:
 			if (.@quest_id == 8672) {
 				mes .@npc_name$;
-				mes "Recently, the number of monsters is increasing in some areas, including around this area.";
-				mes "It already means that you can't control the object naturally.";
+				mes "Recently, o number of monstros is aumentando in alguns areas, including ao redou este area.";
+				mes "It jum significum esse voce nao pode control o object naturally.";
 				next;
 				mes .@npc_name$;
-				mes "To prevent further colonization from expanding, our Juno Monster Society has planned a massive subjugation.";
-				mes "No matter how many adventurers visit, it's a big deal if you come down to where people live...";
+				mes "To prevent furta colonization de expanding, nosso Juno Monstro Society has planned um massive subjugation.";
+				mes "No matter quantos aventureiros visit, e um grande deal se you vir down to where pessoas live...";
 				next;
 			}
 			mes .@npc_name$;
-			mes "So, can I ask you to subdue me?";
-			mes "This Porto Luna, if you kill 80 monsters within this field that I can see, our society will recognize your achievements and give you experience points.";
+			mes "So, cum I ask you to subdue me?";
+			mes "Este Porto Luna, se you matar 80 monstros within este field esse Eu consigo ver, nosso society will recognize seu achievements e dar you experiencium points.";
 			next;
-			if (select( "Accept", "Refuse" ) == 2) {
+			if (select( "Aceitar", "Recusar" ) == 2) {
 				mes .@npc_name$;
-				mes "Ah... can you help us?";
+				mes "Ah... voce pode ajudar us?";
 				close;
 			}
 			setquest .@quest_id;
 			mes .@npc_name$;
-			mes "Yes, I have registered!";
-			mes "I'm going to check if the population is throttled here.";
+			mes "Yes, Eu tenho registered!";
+			mes "Eu sou vai verificar se o population is throttled aqui.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "The nearest place here is ^0033FFRachel^000000,";
-			mes "If you have " + .@item_name$ + ", please give me one... and I'll teleport you.";
-			mes "Ha~ It's popular these days, but I can't go buy it.";
+			mes "O nearest lugar aqui is ^0033FFRachel^000000,";
+			mes "Se you have " + .@item_name$ + ", pou favou me de one... e Eu vou teleport you.";
+			mes "Ha~ E popular estes days, mas Eu nao consigo ir comprar it.";
 			next;
-			if (select( "Give me 1 " + .@item_name$ + ", Rachel", "No" ) == 2) {
+			if (select( "Me de 1 " + .@item_name$ + ", Rachel", "Nao" ) == 2) {
 				mes .@npc_name$;
-				mes "I can't help it.";
+				mes "Eu nao consigo ajudar it.";
 				close;
 			}
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "You don't seem to have " + .@item_name$ + "?";
-				mes "I'm standing... I'm sorry.";
+				mes "Voce nao parecer to have " + .@item_name$ + "?";
+				mes "Eu sou de pe... Eu sou desculpe.";
 				close;
 			}
 			delitem 1000374,1;	// Brilliant_Soda
@@ -3645,29 +3645,29 @@ ra_fild06,292,39,5	script	Map Examiner Kantu#85	4_M_MOC_SOLDIER,{
 			end;
 		case 3:
 			mes .@npc_name$;
-			mes "Ah... Please help us...";
+			mes "Ah... Pou favou ajudar us...";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Please kill 80 monsters around here.";
+		mes "Pou favou matar 80 monstros ao redou aqui.";
 		mes "...Yes? Mobility service?";
 		next;
 		mes .@npc_name$;
-		mes "The nearest place here is ^0033FFRachel^000000,";
-		mes "If you have " + .@item_name$ + ", please give me one... and I'll teleport you.";
+		mes "O nearest lugar aqui is ^0033FFRachel^000000,";
+		mes "Se you have " + .@item_name$ + ", pou favou me de one... e Eu vou teleport you.";
 		next;
-		if (select( "Give me 1 " + .@item_name$ + ", Rachel", "No" ) == 2) {
+		if (select( "Me de 1 " + .@item_name$ + ", Rachel", "Nao" ) == 2) {
 			mes .@npc_name$;
-			mes "I can't help it.";
+			mes "Eu nao consigo ajudar it.";
 			close;
 		}
 		if (countitem(1000374) < 1) {
 			mes .@npc_name$;
-			mes "You don't seem to have " + .@item_name$ + "?";
-			mes "I'm standing... I'm sorry.";
+			mes "Voce nao parecer to have " + .@item_name$ + "?";
+			mes "Eu sou de pe... Eu sou desculpe.";
 			close;
 		}
 		delitem 1000374,1;	// Brilliant_Soda
@@ -3675,12 +3675,12 @@ ra_fild06,292,39,5	script	Map Examiner Kantu#85	4_M_MOC_SOLDIER,{
 		end;
 	case 2:
 		mes .@npc_name$;
-		mes "Hello, adventurer! I'm Kantu from the Juno Monster Society.";
-		mes "I am asking adventurers to investigate monster subjugation, how do you feel?";
+		mes "Ola, aventureiro! Eu sou Kantu de o Juno Monstro Society.";
+		mes "Eu sou asking aventureiros to investigar monstro subjugation, como you feel?";
 		next;
 		getexp 194712,185136;
 		mes .@npc_name$;
-		mes "Ah, adventurer! I saw your performance well enough. Thank you for your hard work.";
+		mes "Ah, aventureiro! I saw seu performance bem suficiente. Obrigado fou seu dificil trabalhar.";
 		if (.@quest_id == 8672)
 			completequest 8672;
 		else
@@ -3707,8 +3707,8 @@ ve_fild03,348,230,5	script	Map Examiner Dew#85	4_M_MOC_SOLDIER,{
 
 	if (BaseLevel < 95) {
 		mes .@npc_name$;
-		mes "Adventurer, it's dangerous here.";
-		mes "I don't know if my life is not worth it...";
+		mes "Aventureiro, e perigoentao aqui.";
+		mes "Eu nao saber se meu vidum is nao worth it...";
 		close;
 	}
 	switch( checkquest(8679,PLAYTIME) ) {
@@ -3718,33 +3718,33 @@ ve_fild03,348,230,5	script	Map Examiner Dew#85	4_M_MOC_SOLDIER,{
 	case 1:
 		if (countitem(1000374) < 3) {
 			mes .@npc_name$;
-			mes "In principle, subjugation quests are limited to once a day.";
-			mes "Today, rest for a while, next time...";
+			mes "In principle, subjugation missoes are limited to umum vez um dia.";
+			mes "Hoje, rest fou um while, proximo tempo...";
 			close;
 		}
 		mes .@npc_name$;
-		mes "In principle, subjugation quests are limited to once a day.";
-		mes "Today, rest for a while, next time...";
+		mes "In principle, subjugation missoes are limited to umum vez um dia.";
+		mes "Hoje, rest fou um while, proximo tempo...";
 		next;
-		if (select( "I recommend " + .@item_name$ + "", "See you tomorrow" ) == 2) {
+		if (select( "I recommend " + .@item_name$ + "", "Ver you amanha" ) == 2) {
 			mes .@npc_name$;
-			mes "Yes! See you tomorrow.";
+			mes "Yes! Ver you amanha.";
 			close;
 		}
 		delitem 1000374,3;	// Brilliant_Soda
 		erasequest 8679;
 		mes .@npc_name$;
-		mes "Oh, this is my favorite " + .@item_name$ + "!";
-		mes "Can I take this? Thank you!";
+		mes "Oh, este is meu favorite " + .@item_name$ + "!";
+		mes "Cum I pegar this? Obrigado!";
 		mes "Kick Knock Kick...";
 		next;
 		specialeffect EF_FLASHER;
 		mes .@npc_name$;
-		mes "It's refreshing!";
+		mes "E refreshing!";
 		mes "ļ~...";
 		next;
 		mes .@npc_name$;
-		mes "I am asking adventurers to investigate monster subjugation, how do you feel?";
+		mes "Eu sou asking aventureiros to investigar monstro subjugation, como you feel?";
 		.@skip = true;
 		break;
 	case 2:
@@ -3755,39 +3755,39 @@ ve_fild03,348,230,5	script	Map Examiner Dew#85	4_M_MOC_SOLDIER,{
 	case -1:
 		if (!.@skip) {
 			mes .@npc_name$;
-			mes "Hello. You came today!";
-			mes "I'm sending a monster subjugation investigation request to the adventurers who pass by here, how about it?";
+			mes "Ola. You came hoje!";
+			mes "Eu sou enviando um monstro subjugation investigation request to o aventureiros who pass by aqui, que tal it?";
 		}
-		mes "Or, if you are nearby, we also support teleportation service.";
+		mes "Or, se you are nearby, we tambem support teleportation service.";
 		next;
-		switch( select( "Subjugation Quest", "Move to a nearby city", "Stop" ) ) {
+		switch( select( "Subjugation Missao", "Mover to um nearby cidade", "Parar" ) ) {
 		case 1:
 			mes .@npc_name$;
-			mes "If you kill 80 monsters in this Veins Field, this field that I can see, our society will recognize your achievements and give you experience points.";
+			mes "Se you matar 80 monstros in este Veins Field, este field esse Eu consigo ver, nosso society will recognize seu achievements e dar you experiencium points.";
 			next;
-			if (select( "Accept", "Refuse" ) == 2) {
+			if (select( "Aceitar", "Recusar" ) == 2) {
 				mes .@npc_name$;
-				mes "I'm sorry";
+				mes "Eu sou desculpe";
 				close;
 			}
 			setquest 8680;
 			mes .@npc_name$;
-			mes "Good.";
-			mes "I'm checking to see if the population is being controlled here.";
+			mes "Bom.";
+			mes "Eu sou checking to ver se o population is being controlled aqui.";
 			close;
 		case 2:
 			mes .@npc_name$;
-			mes "The nearest place here is ^0033FF Veins^000000,";
-			mes "If you have " + .@item_name$ + ", please give me one... and I'll teleport you.";
+			mes "O nearest lugar aqui is ^0033FF Veins^000000,";
+			mes "Se you have " + .@item_name$ + ", pou favou me de one... e Eu vou teleport you.";
 			next;
-			if (select( "Give me 1 " + .@item_name$ + " with Veins", "No" ) == 2) {
+			if (select( "Me de 1 " + .@item_name$ + " com Veins", "Nao" ) == 2) {
 				mes .@npc_name$;
-				mes "Ah... Then what can I do?";
+				mes "Ah... Entao what cum I do?";
 				close;
 			}
 			if (countitem(1000374) < 1) {
 				mes .@npc_name$;
-				mes "You don't seem to have " + .@item_name$ + "?";
+				mes "Voce nao parecer to have " + .@item_name$ + "?";
 				close;
 			}
 			delitem 1000374,1;	// Brilliant_Soda
@@ -3795,29 +3795,29 @@ ve_fild03,348,230,5	script	Map Examiner Dew#85	4_M_MOC_SOLDIER,{
 			end;
 		case 3:
 			mes .@npc_name$;
-			mes "I'm sorry";
+			mes "Eu sou desculpe";
 			close;
 		}
 		end;
 	case 0:
 	case 1:
 		mes .@npc_name$;
-		mes "Please kill 80 monsters around here.";
+		mes "Pou favou matar 80 monstros ao redou aqui.";
 		mes "...Yes? Mobility service?";
 		next;
 		mes .@npc_name$;
-		mes "The nearest place here is ^0033FFVeins^000000,";
-		mes "If you have " + .@item_name$ + ", please give me one... and I'll teleport you.";
-		mes "Ha~ It's popular these days, but I can't go buy it.";
+		mes "O nearest lugar aqui is ^0033FFVeins^000000,";
+		mes "Se you have " + .@item_name$ + ", pou favou me de one... e Eu vou teleport you.";
+		mes "Ha~ E popular estes days, mas Eu nao consigo ir comprar it.";
 		next;
-		if (select( "Give me 1 " + .@item_name$ + " with Veins", "No" ) == 2) {
+		if (select( "Me de 1 " + .@item_name$ + " com Veins", "Nao" ) == 2) {
 			mes .@npc_name$;
-			mes "Ah... Then what can I do?";
+			mes "Ah... Entao what cum I do?";
 			close;
 		}
 		if (countitem(1000374) < 1) {
 			mes .@npc_name$;
-			mes "You don't seem to have " + .@item_name$ + "?";
+			mes "Voce nao parecer to have " + .@item_name$ + "?";
 			close;
 		}
 		delitem 1000374,1;	// Brilliant_Soda
@@ -3825,10 +3825,10 @@ ve_fild03,348,230,5	script	Map Examiner Dew#85	4_M_MOC_SOLDIER,{
 		end;
 	case 2:
 		mes .@npc_name$;
-		mes "Ah, adventurer! I saw your performance well enough. Thank you for your hard work.";
+		mes "Ah, aventureiro! I saw seu performance bem suficiente. Obrigado fou seu dificil trabalhar.";
 		next;
 		mes .@npc_name$;
-		mes "I think the right amount is really important for anything, right?";
+		mes "Eu acho o certo amount is realmente importante fou anything, certo?";
 		erasequest 8680;
 		setquest 8679;
 		getexp 209440,193440;

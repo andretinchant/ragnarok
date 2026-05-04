@@ -18,38 +18,38 @@ moc_fild11,57,138,0	script	Private Jeremy#hunt	707,{
 	if (checkquest(60140) != -1) {
 		if (checkquest(60140,HUNTING) != 2 ) {
 			mes "[Private Jeremy]";
-			mes "Have you finished hunting the 50 Golems?";
+			mes "Voce ja terminou de cacar os 50 Golems?";
 			next;
-			switch(select("Yes:No:I want to quit")) {
+			switch(select("Sim:Nao:Quero desistir")) {
 			case 1:
 				mes "[Private Jeremy]";
-				mes "Hmm, I don't think you've hunted 50 yet...";
+				mes "Hmm, acho que voce ainda nao cacou 50 ainda...";
 				close;
 			case 2:
 				mes "[Private Jeremy]";
-				mes "Remember, I need help hunting Golems so go and hunt 50 of them.";
+				mes "Lembre-se, preciso de ajuda cacando Golems entao va e cace 50 deles.";
 				close;
 			case 3:
 				mes "[Private Jeremy]";
-				mes "Are you sure that you want to stop hunting?";
-				mes "Any progress that you've made will be erased";
+				mes "Tem certeza que quer parar de cacar?";
+				mes "Todo o progresso que voce fez sera apagado";
 				next;
-				switch(select("Yes:No")) {
+				switch(select("Sim:Nao")) {
 				case 1:
 					mes "[Private Jeremy]";
-					mes "Ok then, well come back here if you change your mind.";
+					mes "Tudo bem entao, volte aqui se mudar de ideia.";
 					erasequest 60140;
 					close;
 				case 2:
 					mes "[Private Jeremy]";
-					mes "Please kill 50 Golems.";
+					mes "Por favor, mate 50 Golems.";
 					close;
 				}
 			}
 		}
 		else {
 			mes "[Private Jeremy]";
-			mes "Amazing, you did that with speed.";
+			mes "Incrivel, voce fez isso rapidamente.";
 			getexp 14000,9000;
 			erasequest 60140;
 			close;
@@ -58,38 +58,38 @@ moc_fild11,57,138,0	script	Private Jeremy#hunt	707,{
 	if (checkquest(60141) != -1) {
 		if (checkquest(60141,HUNTING) != 2 ) {
 			mes "[Private Jeremy]";
-			mes "Have you finished hunting the 50 Golems?";
+			mes "Voce ja terminou de cacar os 50 Golems?";
 			next;
-			switch(select("Yes:No:I want to quit")) {
+			switch(select("Sim:Nao:Quero desistir")) {
 			case 1:
 				mes "[Private Jeremy]";
-				mes "Hmm, I don't think you've hunted 100 yet...";
+				mes "Hmm, acho que voce ainda nao cacou 100 ainda...";
 				close;
 			case 2:
 				mes "[Private Jeremy]";
-				mes "Remember, I need help hunting Golems so go and hunt 100 of them.";
+				mes "Lembre-se, preciso de ajuda cacando Golems entao va e cace 100 deles.";
 				close;
 			case 3:
 				mes "[Private Jeremy]";
-				mes "Are you sure that you want to stop hunting?";
-				mes "Any progress that you've made will be erased";
+				mes "Tem certeza que quer parar de cacar?";
+				mes "Todo o progresso que voce fez sera apagado";
 				next;
-				switch(select("Yes:No")) {
+				switch(select("Sim:Nao")) {
 				case 1:
 					mes "[Private Jeremy]";
-					mes "Ok then, well come back here if you change your mind.";
+					mes "Tudo bem entao, volte aqui se mudar de ideia.";
 					erasequest 60141;
 					close;
 				case 2:
 					mes "[Private Jeremy]";
-					mes "Please kill 100 Golems.";
+					mes "Por favor, mate 100 Golems.";
 					close;
 				}
 			}
 		}
 		else {
 			mes "[Private Jeremy]";
-			mes "Amazing, you did that with speed.";
+			mes "Incrivel, voce fez isso rapidamente.";
 			getexp 14000,9000;
 			getexp 14000,9000;
 			erasequest 60141;
@@ -99,38 +99,38 @@ moc_fild11,57,138,0	script	Private Jeremy#hunt	707,{
 	if (checkquest(60142) != -1) {
 		if (checkquest(60142,HUNTING) != 2 ) {
 			mes "[Private Jeremy]";
-			mes "Have you finished hunting the 150 Golems?";
+			mes "Voce ja terminou de cacar os 150 Golems?";
 			next;
-			switch(select("Yes:No:I want to quit")) {
+			switch(select("Sim:Nao:Quero desistir")) {
 			case 1:
 				mes "[Private Jeremy]";
-				mes "Hmm, I don't think you've hunted 150 yet...";
+				mes "Hmm, acho que voce ainda nao cacou 150 ainda...";
 				close;
 			case 2:
 				mes "[Private Jeremy]";
-				mes "Remember, I need help hunting Golems so go and hunt 150 of them.";
+				mes "Lembre-se, preciso de ajuda cacando Golems entao va e cace 150 deles.";
 				close;
 			case 3:
 				mes "[Private Jeremy]";
-				mes "Are you sure that you want to stop hunting?";
-				mes "Any progress that you've made will be erased";
+				mes "Tem certeza que quer parar de cacar?";
+				mes "Todo o progresso que voce fez sera apagado";
 				next;
-				switch(select("Yes:No")) {
+				switch(select("Sim:Nao")) {
 				case 1:
 					mes "[Private Jeremy]";
-					mes "Ok then, well come back here if you change your mind.";
+					mes "Tudo bem entao, volte aqui se mudar de ideia.";
 					erasequest 60142;
 					close;
 				case 2:
 					mes "[Private Jeremy]";
-					mes "Please kill 150 Golems.";
+					mes "Por favor, mate 150 Golems.";
 					close;
 				}
 			}
 		}
 		else {
 			mes "[Private Jeremy]";
-			mes "Amazing, you did that with speed.";
+			mes "Incrivel, voce fez isso rapidamente.";
 			getexp 14000,9000;
 			getexp 14000,9000;
 			getexp 14000,9000;
@@ -143,88 +143,88 @@ moc_fild11,57,138,0	script	Private Jeremy#hunt	707,{
 		//for maximum level
 		if (BaseLevel < 61) {
 			mes "[Private Jeremy]";
-			mes "Greetings citizen!";
-			mes "Say, how would you like to help me?";
+			mes "Saudacoes cidadao!";
+			mes "Diga, voce gostaria de me ajudar?";
 			next;
-			switch(select("Sure:No")) {
+			switch(select("Claro:Nao")) {
 			case 1:
 				mes "[Private Jeremy]";
-				mes "Thanks! I really appreciate it.";
+				mes "Obrigado! Eu realmente agradeco.";
 				next;
-				switch(select("Gather Items:Hunt Golems:Cancel")) {
+				switch(select("Coletar Itens:Cacar Golems:Cancelar")) {
 				case 1:
 					// Item turn in
 					mes "[Private Jeremy]";
-					mes "The Morocc Guard needs ^FF0000Stone Hearts^000000 for our training regimen.";
+					mes "A Guarda de Morocc precisa de ^FF0000Stone Hearts^000000 para nosso treinamento.";
 					next;
 					switch(select("I have Stone Hearts:What did you need?")) {
 					case 1:
 						if (countitem(953) > 24) {
 							mes "[Private Jeremy]";
-							mes "The Morocc Guard thanks you, citizen.";
+							mes "A Guarda de Morocc agradece, cidadao.";
 							delitem 953,25; //Stone_Heart
 							getexp 14000,9000;
 							close;
 						}
 						else {
 							mes "[Private Jeremy]";
-							mes "It doesn't look like you have enough.";
+							mes "Parece que voce nao tem o suficiente.";
 							next;
 							mes "[Private Jeremy]";
-							mes "The Morocc Guard needs ^FF000025 Stone Hearts^000000, for our training regimen.";
+							mes "A Guarda de Morocc precisa de ^FF000025 Stone Hearts^000000, para nosso treinamento.";
 							close;
 						}
 					case 2:
 						mes "[Private Jeremy]";
-						mes "The Morocc Guard needs ^FF000025 Stone Hearts^000000, for our training regimen.";
+						mes "A Guarda de Morocc precisa de ^FF000025 Stone Hearts^000000, para nosso treinamento.";
 						close;
 					}
 				case 2:
 					// Kill Count Quest
 					mes "[Private Jeremy]";
-					mes "Ah, ok I think you can help me out by hunting some Golems.";
-					mes "How many would you like to hunt?";
+					mes "Ah, ok, acho que voce pode me ajudar cacando alguns Golems.";
+					mes "Quantos voce gostaria de cacar?";
 					next;
 					switch(select("50 Golems:100 Golems:150 Golems")) {
 					case 1:
 						mes "[Private Jeremy]";
-						mes "Come back when you've finished your task and I will give you a small reward.";
+						mes "Volte quando terminar sua tarefa e eu te darei uma pequena recompensa.";
 						setquest 60140;
 						close;
 					case 2:
 						mes "[Private Jeremy]";
-						mes "Come back when you've finished your task and I will give you a small reward.";
+						mes "Volte quando terminar sua tarefa e eu te darei uma pequena recompensa.";
 						setquest 60141;
 						close;
 					case 3:
 						mes "[Private Jeremy]";
-						mes "Come back when you've finished your task and I will give you a small reward.";
+						mes "Volte quando terminar sua tarefa e eu te darei uma pequena recompensa.";
 						setquest 60142;
 						close;
 					}
 				case 3:
 					mes "[Private Jeremy]";
-					mes "If you change your mind, please come back.";
+					mes "Se mudar de ideia, por favor volte.";
 					close;
 				}
 			case 2:
 				mes "[Private Jeremy]";
-				mes "If you change your mind, please come back.";
+				mes "Se mudar de ideia, por favor volte.";
 				close;
 			}
 		}
 		else {
 			mes "[Private Jeremy]";
-			mes "Greetings citizen!";
+			mes "Saudacoes cidadao!";
 			next;
 			mes "[Private Jeremy]";
-			mes "Please do not interrupt my mission for the Morocc Guard.";
+			mes "Por favor, nao interrompa minha missao para a Guarda de Morocc.";
 			close;
 		}
 	}
 	else {
 		mes "[Private Jeremy]";
-		mes "It is dangerous here citizen.";
+		mes "E perigoso aqui, cidadao.";
 		close;
 	}
 }

@@ -20,7 +20,7 @@
 //============================================================
 -	script	Guard#pront::prtguard	105,{
 	mes "[Prontera Guard]";
-	mes "Welcome to Prontera.";
+	mes "Bem-vindo a Prontera.";
 	close;
 }
 prontera,223,99,1	duplicate(prtguard)	Guard#2pront	105
@@ -35,10 +35,10 @@ prontera,101,288,3	script	Shuger#pront	98,{
 	mes "Though it's cute in appearance and does not actively harm people, Poring is known to absorb items that are on the ground into its own body.";
 	next;
 	mes "[Shuger]";
-	mes "So if there's something on the ground that you want to pick up, be careful lest it be consumed by a Poring. Then again... Porings are pretty weak...";
+	mes "So if there's something on the ground that you want to pick up, tome cuidado lest it be consumed by a Poring. Then again... Porings are pretty weak...";
 	next;
 	mes "[Shuger]";
-	mes "The green colored ^000077Poporing^000000 is tougher than Poring. Newbies generally make the mistake of attacking it without being aware of its power... So be careful!";
+	mes "The green colored ^000077Poporing^000000 is tougher than Poring. Newbies generally make the mistake of attacking it without being aware of its power... So tome cuidado!";
 	close;
 }
 
@@ -53,7 +53,7 @@ prontera,54,240,6	script	Tono#pront	97,{
 	mes "But before Fabres can become Creamys, they go into a pupa stage. When that happens, they turn into these dark purple cocoons we call Pupa. Simple, huh?";
 	next;
 	mes "[Tono]";
-	mes "There's another monster that goes through a really big change... Pickys.";
+	mes "There's another monstro that goes through a really big change... Pickys.";
 	next;
 	mes "[Tono]";
 	mes "Pickys are so cute when they're young, but when they grow up, they turn into those big, gawky looking Peco Pecos. Talk about awkward puberty.";
@@ -74,13 +74,13 @@ prontera,106,116,6	script	Merideth#pront	91,{
 
 prontera,160,133,2	script	YuPi#pront	102,{
 	mes "[YuPi]";
-	mes "Although many monsters may look the same, be careful! There are variations among monsters that have the same basic form.";
+	mes "Embora many monstros may look the same, tome cuidado! There are variations among monstros that have the same basic form.";
 	next;
 	mes "[YuPi]";
-	mes "One monster, that looks just like a peaceful and weak one that you've already encountered, may actually be wild and ferocious!";
+	mes "One monstro, that looks just like a peaceful and weak one that you've already encountered, may actually be wild and ferocious!";
 	next;
 	mes "[YuPi]";
-	mes "You can tell these kinds of monsters apart by their body color. Wilder and more powerful monsters have more dangerous looking colors.";
+	mes "You can tell these kinds of monstros apart by their body color. Wilder and more powerful monstros have more perigoso looking colors.";
 	close;
 }
 
@@ -170,7 +170,7 @@ prontera,216,70,2	script	Strife#pront	48,{
 			set event_prt_nov_dreamtalk,2;
 			getitem 2501,1; //Hood
 			mes "[Strife]";
-			mes "This is, well, for you to help you get even stronger. I guess I want to thank you for being such a good example.";
+			mes "This is, well, for you to help you get even stronger. I guess I want to obrigado for being such a good example.";
 			close;
 		}
 		else if (event_prt_nov_dreamtalk == 2) {
@@ -193,9 +193,9 @@ prontera,216,70,2	script	Strife#pront	48,{
 		mes "awesomest Knight around!";
 		mes "It's... It's my most precious dream.";
 		next;
-		if (select("Do your best.:Quit it, kid.") == 1) {
+		if (select("Do your best.:Sair it, kid.") == 1) {
 			mes "[Strife]";
-			mes "Yes, yes of course! Someday, I'll even be as strong as you! When that day comes, I hope that we can train together!";
+			mes "Yes, yes claro! Someday, I'll even be as strong as you! When that day comes, I hope that we can train together!";
 			close;
 		}
 		mes "[Strife]";
@@ -208,9 +208,9 @@ prontera,216,70,2	script	Strife#pront	48,{
 prontera,78,150,3	script	Dairenne#pront	90,{
 	mes "[Towngirl Dairenne]";
 	mes "Ahh...";
-	mes "The streets are too crowded these days. *Cough Cough* Look at all this dust, not everything about living in the capital city is good. Anyway, may I help you?";
+	mes "The streets are too crowded hoje em dia. *Cough Cough* Look at all this dust, not everything about living in the capital city is good. Anyway, may I help you?";
 	next;
-	if (select("Talk:Cancel") == 1) {
+	if (select("Talk:Cancelar") == 1) {
 		mes "[Towngirl Dairenne]";
 		mes "I wonder if you are interested in parties or dresses. Hehehe. These days, the hot topic is definitely the colorful, extravagant, magnificent dresses you can wear.";
 		next;
@@ -233,15 +233,15 @@ prontera,78,150,3	script	Dairenne#pront	90,{
 prt_in,178,92,0	script	Curator of Library#pront	57,{
 	mes "[Curator Guiss]";
 	mes "Here, in the Western branch of the Prontera Library, ";
-	mes "we keep records of monsters found in various dungeons scattered around the Rune-Midgarts Kingdom.";
+	mes "we keep records of monstros found in various dungeons scattered around the Rune-Midgarts Kingdom.";
 	next;
 	mes "[Curator Guiss]";
 	mes "You'll find that these Monster Encyclopedias are of great convenience,";
 	mes "as creatures are organized by the dungeon in which they reside.";
 	next;
 	mes "[Curator Guiss]";
-	mes "I must say, this is a most useful reference for you adventurers. When dealing with beasts, it's good to be informed and understand what you're up against.";
-	mes "If you would like to peruse monster records organized by their properties, please visit the Eastern branch of our library.";
+	mes "I must say, this is a most useful reference for you aventureiros. When dealing with beasts, it's good to be informed and understand what you're up against.";
+	mes "If you would like to peruse monstro records organized by their properties, please visit the Eastern branch of our library.";
 	close;
 }
 */
@@ -270,7 +270,7 @@ prt_in,26,31,0	script	An Old Man#2pront	54,{
 	mes "I've been training in the 3rd level for so long that there isn't anything that I don't know about in that area. But when I finally went to the 4th level...";
 	next;
 	mes "[Old Man]";
-	mes "There, I saw a shimmering light. I was completely captivated and went to approach it. It must have been some sort of beautiful fairy...";
+	mes "There, I saw a shimmering light. I was completely captivated and went to approach it. It must have been some sort of bonito fairy...";
 	next;
 	mes "[Old Man]";
 	mes "But when I got";
@@ -286,22 +286,22 @@ prt_in,26,31,0	script	An Old Man#2pront	54,{
 prt_in,180,20,2	script	Bartender#pront	61,{
 	mes "[Bartender]";
 	mes "Sigh...as more and more people coming into Prontera,";
-	mes "better and better my business has become nowadays. But...";
+	mes "better and better my business has become hoje em dia. But...";
 	mes "Well, I am having a hard time to keep a good stock of food ingredients.";
 	next;
 	mes "[Bartender]";
-	mes "As you see, the numbers of the monsters outside of town has been greatly increased and they have caused trouble to my suppliers to deliver the goods at a right time.";
+	mes "As you see, the numbers of the monstros outside of town has been greatly increased and they have caused trouble to my suppliers to deliver the goods at a right time.";
 	mes "I cannot make my ultra nice menus with common ingredients because they are super special!";
 	next;
 	mes "[Bartender]";
 	mes "So I have been contacting super heavy champion hunters for fresh and special ingredients.";
-	mes "But the demand has exceeded the supply in these days.";
+	mes "But the demand has exceeded the supply in hoje em dia.";
 	next;
 	mes "[Bartender]";
 	mes "I can't keep my business busy without my special menu 'Crunch Crunch Sour' and 'Savory Yum Yum'...*Sigh*";
 	while(1) {
 		next;
-		switch(select("'Crunch Crunch Sour'?:'Savory Yum Yum'?:Cancel.")) {
+		switch(select("'Crunch Crunch Sour'?:'Savory Yum Yum'?:Cancelarar.")) {
 		case 1:
 			mes "[Bartender]";
 			mes "The basic ingredients of my Crunch Crunch Sour are the ants roaming inside the Ant Hell in the desert.";
@@ -331,9 +331,9 @@ prt_in,180,20,2	script	Bartender#pront	61,{
 prt_in,173,24,2	script	Shevild#pront	85,{
 	mes "[Shevild]";
 	mes "Hey, come on over and let's drink! I have lots of interesting stories to tell!";
-	mes "I know lots of things about Prontera. I have seen many fine views and I also have explored some monster lairs around this city.";
+	mes "I know lots of things about Prontera. I have seen many fine views and I also have explored some monstro lairs around this city.";
 	next;
-	if (select("How could you enter monster lairs?:Cancel") == 1) {
+	if (select("How could you enter monster lairs?:Cancelar") == 1) {
 		mes "[Shevild]";
 		mes "I may appear to be a drunken man but I am more than meets the eye.";
 		mes "Well, I happened to enter the places for carrying weapons for hunters or for delivering stuffs and whatsoever.";
@@ -344,31 +344,31 @@ prt_in,173,24,2	script	Shevild#pront	85,{
 		mes "No matter how hard a work is, I am not afraid of doing that.";
 		next;
 		mes "[Shevild]";
-		mes "Anyways, that is how I have explored some strange places like monster lairs...";
+		mes "Anyways, that is how I have explored some strange places like monstro lairs...";
 		mes "That is also a reason why I keep my job.";
 		mes "Ah, I just recall being inside the maze and the spooky forest!";
 		next;
-		switch(select("The Maze?:The Spooky Forest?:Cancel")) {
+		switch(select("The Maze?:The Spooky Forest?:Cancelar")) {
 		case 1:
 			mes "[Shevild]";
-			mes "Yes. Few days ago, I have entered a mysterious maze following a group of hunters at the north of Prontera.";
+			mes "Sim. Few days ago, I have entered a misterioso maze following a group of hunters at the north of Prontera.";
 			next;
 			mes "[Shevild]";
-			mes "They said that they could get lots and lots of rare items from the maze even if the maze was filled with awfully strong monsters.";
+			mes "They said that they could get lots and lots of rare items from the maze even if the maze was filled with awfully strong monstros.";
 			mes "So we went there but as soon as we entered, we were just stuck inside the maze, you know.";
 			next;
 			mes "[Shevild]";
 			mes "We were just circling around and then we decided to leave the place. That was one hell of the maze.";
 			mes "But I made up my mind that I would successfully explore the maze one day.";
 			next;
-			if (select("How can I get there?:Cancel") == 1) {
+			if (select("How can I get there?:Cancelar") == 1) {
 				mes "[Shevild]";
 				mes "Err? Haven't you still toured the outside of Prontera?";
 				mes "The maze can be found inside a forest at the north of Prontera. Go check the north west side of the forest.";
 				close;
 			}
 			mes "[Shevild]";
-			mes "Yeap, be careful when you adventure alone~";
+			mes "Yeap, tome cuidado when you adventure alone~";
 			close;
 
 		case 2:
@@ -379,24 +379,24 @@ prt_in,173,24,2	script	Shevild#pront	85,{
 			mes "[Shevild]";
 			mes "Be forewarned that the forest is not a place to go on a picnic. If you drop something on the ground, the monkeys come out from nowhere and take away all of your possessions.";
 			next;
-			if (select("How can I get there?:Cancel") == 1) {
+			if (select("How can I get there?:Cancelar") == 1) {
 				mes "[Shevild]";
 				mes "There is no road directly leads to the ruins. But if you go north and keep heading to east, you will get there.";
-				mes "Oh, be careful on your way to the ruins because there are some weird plant things that assault passersby for no reason.";
+				mes "Oh, tome cuidado on your way to the ruins because there are some weird plant things that assault passersby for no reason.";
 				close;
 			}
 			mes "[Shevild]";
-			mes "Yeap, be careful when you adventure alone~";
+			mes "Yeap, tome cuidado when you adventure alone~";
 			close;
 
 		case 3:
 			mes "[Shevild]";
-			mes "Yeap, be careful when you adventure alone~";
+			mes "Yeap, tome cuidado when you adventure alone~";
 			close;
 		}
 	}
 	mes "[Shevild]";
-	mes "Come back any time~";
+	mes "Volte any time~";
 	close;
 }
 
@@ -405,7 +405,7 @@ prt_in,177,20,2	script	TenSue#pront	97,{
 	case 1:
 		mes "[TenSue]";
 		mes "What...?";
-		mes "Sick and tired of killing monsters on fields and in dungeons already? Come on...";
+		mes "Sick and tired of killing monstros on fields and in dungeons already? Come on...";
 		next;
 		mes "[TenSue]";
 		mes "Hahaha, it seems you're pretty confident of your strength, huh? Hmm... Why don't you go join a guild? I mean, all the tough guys are going it.";
@@ -419,10 +419,10 @@ prt_in,177,20,2	script	TenSue#pront	97,{
 
 	case 2:
 		mes "[TenSue]";
-		mes "One time I walked all the way to Al de Baran, instead of taking a warp. It was pretty dangerous with all those monsters!";
+		mes "One time I walked all the way to Al de Baran, instead of taking a warp. It was pretty perigoso with all those monstros!";
 		next;
 		mes "[TenSue]";
-		mes "I almost died! Some of those monsters just kept following me and trying to kill me, even though I did nothing to them! It was pretty crazy.";
+		mes "I almost died! Some of those monstros just kept following me and trying to kill me, even though I did nothing to them! It was pretty crazy.";
 		next;
 		mes "[TenSue]";
 		mes "Well, still, I feel that taking the scenic route was worth it. There were some pretty magnificent sights on the way.";
@@ -459,7 +459,7 @@ prt_in,177,20,2	script	TenSue#pront	97,{
 
 prt_in,177,18,2	script	Marvin#pront	80,{
 	mes "[Marvin]";
-	mes "Whether it's schmoozing with a member of the opposite sex, or battling monsters, I gotta say, it's all about ^333399skills^000000.";
+	mes "Whether it's schmoozing with a member of the opposite sex, or battling monstros, I gotta say, it's all about ^333399skills^000000.";
 	next;
 	mes "[Marvin]";
 	if (Sex == SEX_MALE)
@@ -490,13 +490,13 @@ prt_in,284,168,3	script	Ginedin Rephere#pront	55,{
 	mes "[Tailor Ginedin Rephere]";
 	mes "Oh! I didn't realize I had a guest. How may I help you?";
 	next;
-	switch(select("Talk:Dye Clothing:Cancel")) {
+	switch(select("Talk:Dye Clothing:Cancelar")) {
 	case 1:
 		mes "[Tailor Ginedin Rephere]";
-		mes "Life may have gotten a little better, but receiving all these orders? *Whew!* Young ladies these days must be very well off, so my services may no longer be a luxury.";
+		mes "Life may have gotten a little better, but receiving all these orders? *Whew!* Young ladies hoje em dia must be very well off, so my services may no longer be a luxury.";
 		next;
 		mes "[Tailor Ginedin Rephere]";
-		mes "Well, people like them probably further the pursuit of beauty and fashion. But, of course, that's only my opinion.";
+		mes "Well, people like them probably further the pursuit of beauty and fashion. But, claro, that's only my opinion.";
 		next;
 		mes "[Tailor Ginedin Rephere]";
 		mes "I believe for us humans, clothes are one of the few ways to show our personality, style, and beauty.";
@@ -518,11 +518,11 @@ prt_in,284,168,3	script	Ginedin Rephere#pront	55,{
 		mes "I don't have enough time to dye your clothes right now. I have so many orders that are still waiting to be done.";
 		next;
 		mes "[Tailor Ginedin Rephere]";
-		mes "I'm sorry for the inconvenience, but could you come back again next time?";
+		mes "I'm sorry for the inconvenience, but could you volte again next time?";
 		close;
 	case 3:
 		mes "[Tailor Ginedin Rephere]";
-		mes "Feel free to take your time and relax here. I apologize that I have nothing to serve you, though.";
+		mes "Fique a vontade para fique a vontade and relax here. I apologize that I have nothing to serve you, though.";
 		close;
 	}
 }
@@ -535,22 +535,22 @@ prt_church,103,76,0	script	Garnet#pront	67,{
 	mes "Are you interested in learning more about helping and supporting other people?";
 	next;
 	mes "[Garnet]";
-	mes "The Acolytes and Priests trained in this church can heal people, cure them of certain conditions, and even awaken the battle potential of other adventurers.";
+	mes "The Acolytes and Priests trained in this church can heal people, cure them of certain conditions, and even awaken the battle potential of other aventureiros.";
 	next;
 	mes "[Garnet]";
 	mes "Go and ahead and ask if you have any questions about skills for Acolytes and Priests.";
 	while(1) {
 		next;
-		switch(select("About Heal:About Cure:About Increase AGI:About Angelus:About Blessing:About Warp Portal:End Conversation")) {
+		switch(select("Sobre Heal:Sobre Cure:Sobre Increase AGI:Sobre Angelus:Sobre Blessing:Sobre Warp Portal:Encerrar conversa")) {
 		case 1:
 			mes "[Garnet]";
 			mes "You can recover your own HP with the ^6666CCHeal^000000 skill. Healing is one of the most important ways you can help your friends in battle.";
 			next;
 			mes "[Garnet]";
-			mes "Even though our powers are usually used to heal others, you can actually use the ^6666CCHeal^000000 skill to hurt Undead monsters.";
+			mes "Even though our powers are usually used to heal others, you can actually use the ^6666CCHeal^000000 skill to hurt Undead monstros.";
 			next;
 			mes "[Garnet]";
-			mes "Just remember to hold down the ^6666CCShift^000000 key when you use Cure or Heal on Undead monsters. Just be sure to hurt the monsters though, and don't use it to help monsters.";
+			mes "Just remember to hold down the ^6666CCShift^000000 key when you use Cure or Heal on Undead monstros. Just be sure to hurt the monstros though, and don't use it to help monstros.";
 			next;
 			mes "[Garnet]";
 			mes "Later, if you've learned ^6666CCHeal^000000 as an Acolyte, you can learn ^6666CCSanctuary^000000 if you become a Priest.";
@@ -567,7 +567,7 @@ prt_church,103,76,0	script	Garnet#pront	67,{
 			continue;
 		case 3:
 			mes "[Garnet]";
-			mes "Now, the ^6666CCIncrease AGI^000000 skill can be used on you or your friends. For a while your AGI stat is increased, making you attack faster and dodge monster attacks more easily.";
+			mes "Now, the ^6666CCIncrease AGI^000000 skill can be used on you or your friends. For a while your AGI stat is increased, making you attack faster and dodge monstro attacks more easily.";
 			next;
 			mes "[Garnet]";
 			mes "If you're an Acolyte that wants to learn ^6666CCIncrease AGI^000000, you need to learn ^6666CCLevel 3 Heal^000000 first.";
@@ -594,7 +594,7 @@ prt_church,103,76,0	script	Garnet#pront	67,{
 			mes "^6666CCWarp Portal^000000 is a pretty complex skill, and you need to know some other skills before you can learn it.";
 			next;
 			mes "[Garnet]";
-			mes "First, you need to learn ^6666CCRuwach^000000 which lets you see invisible monsters. After Ruwach, you will need to learn the ^6666CCTeleport^000000 skill.";
+			mes "First, you need to learn ^6666CCRuwach^000000 which lets you see invisible monstros. After Ruwach, you will need to learn the ^6666CCTeleport^000000 skill.";
 			next;
 			mes "[Garnet]";
 			mes "Once you learn ^6666CCWarp Portal^000000, the level of the Warp Portal skill will determine how many warp destinations, or Warp Points, you can memorize.";
@@ -629,7 +629,7 @@ prt_church,103,71,0	script	Henson#pront	120,{
 	mes "Did you have any questions about Acolyte and Priest skills?";
 	while(1) {
 		next;
-		switch(select("About Divine Protection:About Demon Bane:About Decrease AGI:About Signum Crusis :About Pneuma:About Ruwach:About Teleport:End conversation.")) {
+		switch(select("Sobre Divine Protection:Sobre Demon Bane:Sobre Decrease AGI:Sobre Signum Crusis :Sobre Pneuma:Sobre Ruwach:Sobre Teleport:Encerrar conversa.")) {
 		case 1:
 			mes "[Henson]";
 			mes "If you want to permanently improve your Defense against the Undead, learn ^6666CCDivine Protection^000000.";
@@ -651,35 +651,35 @@ prt_church,103,71,0	script	Henson#pront	120,{
 			mes "First, you'll need to learn ^6666CCLevel 3 Divine Protection^000000 to be able to learn Demon Bane, so keep that in mind.";
 			next;
 			mes "[Henson]";
-			mes "When you learn ^6666CCLevel 3 Demon Bane^000000, you will be able to learn ^6666CCSignum Crusis^000000, which lowers the Defense of Undead monsters, as well as monsters with the Dark property.";
+			mes "When you learn ^6666CCLevel 3 Demon Bane^000000, you will be able to learn ^6666CCSignum Crusis^000000, which lowers the Defense of Undead monstros, as well as monstros with the Dark property.";
 			continue;
 		case 3:
 			mes "[Henson]";
-			mes "Using ^6666CCDecrease AGI^000000 on monsters will slow their movement, attack speed, and the rate at which they can evade your own attacks. That way, you can maim them properly.";
+			mes "Using ^6666CCDecrease AGI^000000 on monstros will slow their movement, attack speed, and the rate at which they can evade your own attacks. That way, you can maim them properly.";
 			next;
 			mes "[Henson]";
 			mes "Remember, you must first learn ^6666CCLevel 2 Increase AGI^000000 if you want to be able to learn the Decrease AGI skill.";
 			continue;
 		case 4:
 			mes "[Henson]";
-			mes "The ^6666CCSignum Crusis^000000 skill lowers the Defense of monsters with the Undead or Dark properties. It has a wide range and can be quite powerful.";
+			mes "The ^6666CCSignum Crusis^000000 skill lowers the Defense of monstros with the Undead or Dark properties. It has a wide range and can be quite powerful.";
 			next;
 			mes "[Henson]";
-			mes "However, it's a very difficult skill to use, and it has a relatively low success rate. But, do not despair if this skill is not successful all the time.";
+			mes "Porem, it's a very difficult skill to use, and it has a relatively low success rate. But, do not despair if this skill is not successful all the time.";
 			next;
 			mes "[Henson]";
 			mes "When it does work, it will give you a great battle advantage. Remember, you will ^6666CCLevel 3 Demon Bane^000000 to acquire this skill.";
 			continue;
 		case 5:
 			mes "[Henson]";
-			mes "The ^6666CCPneuma^000000 allows you to generate a barrier that will block all long-range attacks in a certain range, creating a zone that will protect you from monsters that attack from a distance.";
+			mes "The ^6666CCPneuma^000000 allows you to generate a barrier that will block all long-range attacks in a certain range, creating a zone that will protect you from monstros that attack from a distance.";
 			next;
 			mes "[Henson]";
 			mes "In order to become ready to learn Pneuma, you must first completely master the ^6666CCWarp Portal^000000 skill.";
 			continue;
 		case 6:
 			mes "[Henson]";
-			mes "Nothing can escape the eyes of the Holy! ^6666CCRuwach^000000 allows you to see monsters, as well as other adventurers, that are hidden or invisible.";
+			mes "Nothing can escape the eyes of the Holy! ^6666CCRuwach^000000 allows you to see monstros, as well as other aventureiros, that are hidden or invisible.";
 			next;
 			mes "[Henson]";
 			mes "Once you learn Ruwach, you will be able to learn the ^6666CCTeleport^000000 skill.";
@@ -692,7 +692,7 @@ prt_church,103,71,0	script	Henson#pront	120,{
 			mes "The ^6666CCTeleport^000000 skill teleports you to a random location in the field or city which you are currently in. Teleport will prove useful for quick escapes, but where you may end up is... unpredictable.";
 			next;
 			mes "[Henson]";
-			mes "Once the Teleport skill is mastered, you can Teleport to the latest Save Point that you have made with a Kafra Employee. I do not know why it is that way, but the Lord works in mysterious ways.";
+			mes "Once the Teleport skill is mastered, you can Teleport to the latest Save Point that you have made with a Kafra Employee. I do not know why it is that way, but the Lord works in misterioso ways.";
 			next;
 			mes "[Henson]";
 			mes "When Teleport is mastered, you can also learn the ^6666CCWarp Portal^000000 skill. Ask Garnet if you wish to know more about Warp Portal.";
@@ -722,7 +722,7 @@ prt_maze02,100,69,0	script	Soldier#pront	105,{
 
 prt_maze02,110,69,0	script	Soldier#2pront	105,{
 	mes "[Soldier]";
-	mes "*Sigh...* The last guy that entered this place haven't come back at all. He didn't listen to me and went in to gather Herbs or something dumb like that...";
+	mes "*Sigh...* The last guy that entered this place haven't volte at all. He didn't listen to me and went in to gather Herbs or something dumb like that...";
 	next;
 	mes "[Soldier]";
 	mes "Whaaaat a stupid guy. Why would anyone want to throw his life away just to collect some silly Herbs?";

@@ -23,7 +23,7 @@ alberta_in,173,76,4	script	Monster Tamer#alb	125,{
 	mes "[Iwado]";
 	mes "This is the height of the era of Monster Taming! Don't you feel the need to gather monster items to be able to connect and to communicate with the Cute Monsters!?";
 	next;
-	switch(select("^3355FF' Monster Taming '^000000 ?:Order ^3355FF' Monster Juice '^000000:Order ^3355FF' Singing Flower '^000000:Order ^3355FF' Wild Flower '^000000:Cancel")) {
+	switch(select("^3355FF' Monster Taming '^000000 ?:Order ^3355FF' Monster Juice '^000000:Order ^3355FF' Singing Flower '^000000:Order ^3355FF' Wild Flower '^000000:Cancelar")) {
 	case 1:
 		mes "[Iwado]";
 		mes "These monster items, necessary to communicate with monsters, are a must have! We, the members of the Monster Tamer Guild, have a very reasonable offer.";
@@ -195,7 +195,7 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 	mes "I can make all sorts of neat things for your Cute Pet monster.";
 	mes "Just ask~";
 	next;
-	switch(select("^3355FF' Monster Taming '^000000?:Order ^3355FF' Skull Helm '^000000:Order ^3355FF' Monster Oxygen Mask '^000000:Order ^3355FF' Silk Ribbon '^000000:Order ^3355FF' Stellar Hairpin '^000000:Order ^3355FF' Tiny Egg Shell '^000000:Order ^3355FF' Rocker Glasses '^000000:Cancel")) {
+	switch(select("^3355FF' Monster Taming '^000000?:Order ^3355FF' Skull Helm '^000000:Order ^3355FF' Monster Oxygen Mask '^000000:Order ^3355FF' Silk Ribbon '^000000:Order ^3355FF' Stellar Hairpin '^000000:Order ^3355FF' Tiny Egg Shell '^000000:Order ^3355FF' Rocker Glasses '^000000:Cancelar")) {
 	case 1:
 		mes "[YuU]";
 		mes "The monster items that are";
@@ -425,7 +425,7 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 			mes "Oh! You have all the items necessary to make 1 Rocker Glasses! Good, good! With all my pride as a monster tamer, I will make it for you right away!";
 			next;
 			mes "[YuU]";
-			mes "Okay, now all I gotta do is take this Zargon and, um, make glasses lenses out of them. Somehow.";
+			mes "Okay, now all I gotta do is take this Zargon and, um, make glasses lenses out deles. Somehow.";
 			next;
 			mes "^3355FF*Squeak squeak crush snap*^000000";
 			next;
@@ -473,7 +473,7 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 	mes "We will gather items";
 	mes "for your Cute Pets.";
 	next;
-	switch(select("^3355FF' Monster Taming '^000000?:Order ^3355FF' Book of Devil '^000000:Order ^3355FF' No Recipient '^000000:Order ^3355FF' Orc Trophy '^000000:Cancel")) {
+	switch(select("^3355FF' Monster Taming '^000000?:Order ^3355FF' Book of Devil '^000000:Order ^3355FF' No Recipient '^000000:Order ^3355FF' Orc Trophy '^000000:Cancelar")) {
 	case 1:
 		mes "[Shogo]";
 		mes "The monster taming items are necessary to communicate with the monster of your choice! We Monster Tamer guild members have a very reasonable offer...";

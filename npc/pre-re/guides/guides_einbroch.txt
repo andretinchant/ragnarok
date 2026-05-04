@@ -32,13 +32,13 @@ einbroch,72,202,4	script	Guide#ein::EinGuide	852,{
 		switch(select("City Guide.:Remove Marks from Mini-Map.:Notice.:Cancel.")) {
 		case 1:
 			mes "[Einbroch Guide]";
-			mes "Please select";
-			mes "a location from";
-			mes "the following menu.";
+			mes "Por favor selecione";
+			mes "um local do";
+			mes "menu a seguir.";
 			if (.@compass_check == 0) {
-				mes "Would you like me";
-				mes "to mark locations";
-				mes "on your Mini-Map?";
+				mes "Gostaria que eu";
+				mes "marcasse locais";
+				mes "no seu Mini-Mapa?";
 				next;
 				if (select("Yes.:No.") == 1) set .@compass_check,1;
 			}
@@ -46,7 +46,7 @@ einbroch,72,202,4	script	Guide#ein::EinGuide	852,{
 			while(.@loop2) {
 				if (.@wait_button_chk == 0) set .@wait_button_chk,1;
 				else next;
-				switch(select("^FF0000Airport^000000:Train Station:Factory:Plaza:Hotel:Weapon Shop:Laboratory:Blacksmith Guild:Einbroch Tower:Cancel")) {
+				switch(select("^FF0000Airport^000000:Train Station:Factory:Plaza:Hotel:Loja de Armas:Laboratory:Blacksmith Guild:Einbroch Tower:Cancelar")) {
 				case 1:
 					mes "[Einbroch Guide]";
 					mes "The ^FF0000Airport^000000 is located";
@@ -109,7 +109,7 @@ einbroch,72,202,4	script	Guide#ein::EinGuide	852,{
 					mes "[Einbroch Guide]";
 					mes "The Laboratory is an";
 					mes "annex of the Factory and";
-					mes "is located in the southwest";
+					mes "esta localizado in the southwest";
 					mes "sector of Einbroch.";
 					if (.@compass_check)
 						viewpoint 1,36,49,8,0x00FF;
@@ -140,7 +140,7 @@ einbroch,72,202,4	script	Guide#ein::EinGuide	852,{
 					mes "Marks from Mini-Map'' if you";
 					mes "no longer wish to have the";
 					mes "location marks displayed";
-					mes "on your Mini-Map.";
+					mes "no seu Mini-Mapa.";
 					set .@loop2,0;
 				}
 			}
@@ -209,7 +209,7 @@ einbroch,162,317,4	duplicate(EinGuide)	Guide#3ein	852
 einbech,67,37,4	script	Guide#4ein::EinGuide2	852,{
 	cutin "ein_soldier",2;
 	mes "[Einbech Guide]";
-	mes "Welcome to Einbech,";
+	mes "Bem-vindo a Einbech,";
 	mes "the Mining Town. We're";
 	mes "here to assist tourists,";
 	mes "so if you have any questions,";
@@ -220,13 +220,13 @@ einbech,67,37,4	script	Guide#4ein::EinGuide2	852,{
 		switch(select("City Guide.:Remove Marks from Mini-Map.:Notice.:Cancel.")) {
 		case 1:
 			mes "[Einbech Guide]";
-			mes "Please select";
-			mes "a location from";
-			mes "the following menu.";
+			mes "Por favor selecione";
+			mes "um local do";
+			mes "menu a seguir.";
 			if (.@compass_check == 0) {
-				mes "Would you like me";
-				mes "to mark locations";
-				mes "on your Mini-Map?";
+				mes "Gostaria que eu";
+				mes "marcasse locais";
+				mes "no seu Mini-Mapa?";
 				next;
 				if (select("Yes.:No.") == 1) set .@compass_check,1;
 			}
@@ -234,7 +234,7 @@ einbech,67,37,4	script	Guide#4ein::EinGuide2	852,{
 			while (.@loop2) {
 				if (.@wait_button_chk == 0) set .@wait_button_chk,1;
 				else next;
-				switch(select("Train Station:Tavern:Tool Shop:Swordman Guild:Mine:Cancel")) {
+				switch(select("Train Station:Tavern:Loja de Ferramentas:Swordman Guild:Mine:Cancelar")) {
 				case 1:
 					mes "[Einbech Guide]";
 					mes "The Train Stations are";
@@ -267,7 +267,7 @@ einbech,67,37,4	script	Guide#4ein::EinGuide2	852,{
 				case 4:
 					mes "[Einbech Guide]";
 					mes "The Swordman Guild";
-					mes "is located in the eastern";
+					mes "esta localizado in the eastern";
 					mes "outskirts of Einbech. It's";
 					mes "under construction and they";
 					mes "haven't started accepting";
@@ -279,7 +279,7 @@ einbech,67,37,4	script	Guide#4ein::EinGuide2	852,{
 					mes "[Einbech Guide]";
 					mes "The Mine, which is";
 					mes "Einbech's major industry,";
-					mes "is located in the northern";
+					mes "esta localizado in the northern";
 					mes "part of this town. It's where";
 					mes "we get all our ores, although monsters get in the miners' way.";
 					if (.@compass_check)
@@ -291,7 +291,7 @@ einbech,67,37,4	script	Guide#4ein::EinGuide2	852,{
 					mes "Marks from Mini-Map'' if you";
 					mes "no longer wish to have the";
 					mes "location marks displayed";
-					mes "on your Mini-Map.";
+					mes "no seu Mini-Mapa.";
 					set .@loop2,0;
 				}
 			}

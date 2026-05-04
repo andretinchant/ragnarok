@@ -345,7 +345,7 @@ payon_in02,54,13,3	script	Master Kavaruk	1_M_JOBTESTER,{
 				mes "some specialized instruction to learn more about the Archer job?";
 			}
 			next;
-			switch(select("Yes:No")){
+			switch(select("Sim:Nao")){
 			case 1:
 				tu_archer01 = 1;
 				mes "[Master Kavaruk]";
@@ -724,7 +724,7 @@ pay_arche,103,165,5	script	Reidin Corse#tu	4_M_REIDIN_KURS,{
 					mes "Alright, Mandagora usually live around Geffen. I can send you to Geffen, so just travel north from there to find";
 				else
 					mes "Alright, Mandagora usually live around Mt. Mjolnir. I can send you to Prontera, so just travel north, then east from there to find";
-				mes "some of them.";
+				mes "some deles.";
 				next;
 				mes "[Reidin Corse]";
 				mes "Remember, the most";

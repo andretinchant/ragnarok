@@ -3354,7 +3354,7 @@ yuno_in01,99,101,4	script	Doctor#gnbs	744,{
 			mes "I wanted to go with you, but";
 			mes "I've been really busy.";
 			next;
-			if (select("Not yet...:Yes, Here.") == 1) {
+			if (select("Not ainda...:Yes, Here.") == 1) {
 				mes "[Cylrnel]";
 				mes "What! Why not!?";
 				mes "Hurry to her house!";

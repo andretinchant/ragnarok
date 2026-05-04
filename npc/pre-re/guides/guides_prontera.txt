@@ -26,83 +26,83 @@
 prontera,154,187,4	script	Guide#prt::PrtGuide	105,{
 	cutin "prt_soldier",2;
 	mes "[Prontera Guide]";
-	mes "Welcome to Prontera,";
-	mes "the beautiful capital of the";
-	mes "Rune-Midgarts Kingdom. If";
-	mes "you have questions or need help finding something in the city, don't hesitate to ask.";
+	mes "Bem-vindo a Prontera,";
+	mes "a bela capital do";
+	mes "Reino de Rune-Midgarts. Se";
+	mes "voce tiver perguntas ou precisar de ajuda para encontrar algo na cidade, nao hesite em perguntar.";
 	set .@loop1,1;
 	while (.@loop1) {
 		next;
-		switch(select("City Guide.:Remove Marks from Mini-Map:Notice:Cancel")) {
+		switch(select("City Guide.:Remover Marcas do Mini-Mapa:Aviso:Cancelar")) {
 		case 1:
 			mes "[Prontera Guide]";
-			mes "Please select";
-			mes "a location from";
-			mes "the following menu.";
+			mes "Por favor selecione";
+			mes "um local do";
+			mes "menu a seguir.";
 			if (.@compass_check == 0) {
-				mes "Would you like me";
-				mes "to mark locations";
-				mes "on your Mini-Map?";
+				mes "Gostaria que eu";
+				mes "marcasse locais";
+				mes "no seu Mini-Mapa?";
 				next;
-				if (select("Yes:No") == 1) set .@compass_check,1;
+				if (select("Sim:Nao") == 1) set .@compass_check,1;
 			}
 			set .@loop2,1;
 			while (.@loop2) {
 				if (.@wait_button_chk == 0) set .@wait_button_chk,1;
 				else next;
 
-				switch(select("Swordman Association:^0000FFSanctuary^000000:Prontera Chivalry:Weapon Shop:Tool Shop:Inn:Trading Post:Pub:Library:Job Agency:Prontera Castle:City Hall:Cancel")) {
+				switch(select("Swordman Association:^0000FFSanctuary^000000:Prontera Chivalry:Loja de Armas:Loja de Ferramentas:Inn:Trading Post:Pub:Library:Job Agency:Prontera Castle:City Hall:Cancelar")) {
 				case 1:
 					mes "[Prontera Guide]";
-					mes "The Swordman Association,";
-					mes "which handles Job Changes";
-					mes "to the Swordman class, has";
-					mes "moved to Izlude. This facility";
-					mes "is just an empty building now.";
+					mes "A Associacao de Espadachins,";
+					mes "que cuida das Mudancas de Classe";
+					mes "para a classe Espadachim,";
+					mes "se mudou para Izlude. Esta instalacao";
+					mes "e apenas um predio vazio agora.";
 					if (.@compass_check)
 						viewpoint 1,237,41,4,0x00FF00;
 					break;
 				case 2:
 					mes "[Prontera Guide]";
-					mes "The Prontera Sanctuary";
-					mes "handles Job Changes to";
-					mes "the Acolyte class, and can";
-					mes "be found in the northeast";
-					mes "corner of Prontera.";
+					mes "O Santuario de Prontera";
+					mes "cuida das Mudancas de Classe para";
+					mes "a classe Acolito, e pode";
+					mes "ser encontrado no canto";
+					mes "nordeste de Prontera.";
 					if (.@compass_check)
 						viewpoint 1,236,316,5,0xFF0000;
 					break;
 				case 3:
 					mes "[Prontera Guide]";
-					mes "The Prontera Chivralry,";
-					mes "which is responsible for";
-					mes "the safety of our capital, is";
-					mes "in Prontera's northwest corner.";
+					mes "A Cavalaria de Prontera,";
+					mes "que e responsavel pela";
+					mes "seguranca da nossa capital, fica";
+					mes "no canto noroeste de Prontera.";
 					if (.@compass_check)
 						viewpoint 1,46,345,6,0x00FF00;
 					break;
 				case 4:
 					mes "[Prontera Guide]";
-					mes "The Weapon Shop";
-					mes "is located northeast";
-					mes "of the central fountain.";
+					mes "A Loja de Armas";
+					mes "esta localizado northeast";
+					mes "da fonte central.";
 					if (.@compass_check)
 						viewpoint 1,175,220,7,0xFF00FF;
 					break;
 				case 5:
 					mes "[Prontera Guide]";
-					mes "The Tool Shop";
-					mes "is located northwest";
-					mes "of the central fountain.";
+					mes "A Loja de Ferramentas";
+					mes "esta localizado northwest";
+					mes "da fonte central.";
 					if (.@compass_check)
 						viewpoint 1,134,221,8,0xFF00FF;
 					break;
 				case 6:
 					mes "[Prontera Guide]";
-					mes "The Inns in Prontera are";
-					mes "located both to the east";
-					mes "and west of Prontera's";
-					mes "central fountain area.";
+					mes "As Hospedarias em Prontera ficam";
+					mes "localizadas tanto a leste";
+					mes "quanto a oeste da";
+					mes "area da fonte central de Prontera.";
 					if (.@compass_check) {
 						viewpoint 1,204,191,9,0xFF00FF;
 						viewpoint 1,107,192,10,0xFF00FF;
@@ -110,8 +110,8 @@ prontera,154,187,4	script	Guide#prt::PrtGuide	105,{
 					break;
 				case 7:
 					mes "[Prontera Guide]";
-					mes "The Trading Post";
-					mes "can be found southeast";
+					mes "O Posto de Troca";
+					mes "pode ser encontrado southeast";
 					mes "from the central fountain.";
 					if (.@compass_check)
 						viewpoint 1,179,184,11,0x00FF00;
@@ -119,7 +119,7 @@ prontera,154,187,4	script	Guide#prt::PrtGuide	105,{
 				case 8:
 					mes "[Prontera Guide]";
 					mes "The Pub is located";
-					mes "southeast of the fountain,";
+					mes "a sudeste de the fountain,";
 					mes "behind the Trading Post.";
 					if (.@compass_check)
 						viewpoint 1,208,154,12,0x00FF00;
@@ -141,7 +141,7 @@ prontera,154,187,4	script	Guide#prt::PrtGuide	105,{
 					mes "[Prontera Guide]";
 					mes "The Job Agency is";
 					mes "just southwest of the";
-					mes "central fountain area.";
+					mes "area da fonte central de Prontera.";
 					if (.@compass_check)
 						viewpoint 1,133,183,15,0x00FF00;
 					break;
@@ -159,7 +159,7 @@ prontera,154,187,4	script	Guide#prt::PrtGuide	105,{
 				case 12:
 					mes "[Prontera Guide]";
 					mes "The City Hall";
-					mes "is located in the";
+					mes "esta localizado in the";
 					mes "southwest corner";
 					mes "in our city of Prontera.";
 					if (.@compass_check)
@@ -171,7 +171,7 @@ prontera,154,187,4	script	Guide#prt::PrtGuide	105,{
 					mes "Marks from Mini-Map'' if you";
 					mes "no longer wish to have the";
 					mes "location marks displayed";
-					mes "on your Mini-Map.";
+					mes "no seu Mini-Mapa.";
 					set .@loop2,0;
 					break;
 				}

@@ -17,13 +17,13 @@
 
 xmas,140,137,3	script	Lutie Guide#xmas	717,{
 	mes "[Lutie Guide]";
-	mes "Welcome to ^8B4513Lutie^000000,";
+	mes "Bem-vindo a ^8B4513Lutie^000000,";
 	mes "the Snow Village.";
 	mes "Do you need help navigating the village?";
 	F_Navi("[Lutie Guide]");
 	while (1) {
 		next;
-		switch(select("[ Gift Shop ]:[ Church ]:[ Weapon & Armor Shop ]:[ Tool Shop ]:[ Santa's House ]:[ Toy Factory ]:Remove Marks from Mini-Map:Cancel")) {
+		switch(select("[ Gift Shop ]:[ Church ]:[ Weapon & Armor Shop ]:[ Tool Shop ]:[ Santa's House ]:[ Toy Factory ]:Remover Marcas do Mini-Mapa:Cancelar")) {
 		case 1:
 			callsub L_Mark, F_Navi("Gift Shop","xmas,172,131","^008080");
 			viewpoint 1,172,131,2,0x008080;
@@ -37,7 +37,7 @@ xmas,140,137,3	script	Lutie Guide#xmas	717,{
 			viewpoint 1,171,158,3,0xFF1493;
 			break;
 		case 4:
-			callsub L_Mark, F_Navi("Tool Shop","xmas,122,131","^8B4513");
+			callsub L_Mark, F_Navi("Loja de Ferramentas","xmas,122,131","^8B4513");
 			viewpoint 1,122,131,4,0x8B4513;
 			break;
 		case 5:
@@ -62,16 +62,16 @@ xmas,140,137,3	script	Lutie Guide#xmas	717,{
 			break;
 		case 8:
 			mes "[Lutie Guide]";
-			mes "Be safe on your travels.";
+			mes "Tenha uma viagem segura.";
 			close;
 		}
 	}
 	end;
 L_Mark:
 	mes "[Lutie Guide]";
-	mes "Let me mark the location of "+((getarg(1,0))?"":"the");
+	mes "Deixe-me marcar the location of "+((getarg(1,0))?"":"the");
 	mes getarg(0)+"^000000";
-	mes "on your mini-map.";
-	mes "Would you like to check any other locations?";
+	mes "no seu mini-mapa.";
+	mes "Gostaria de verificar outros locais?";
 	return;
 }
