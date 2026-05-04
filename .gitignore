@@ -150,5 +150,8 @@ Thumbs.db
 # CMakeFiles
 /CMakeFiles/
 
+# Claude Code (local tooling state, worktrees, sessions)
+.claude/
+
 # generated files
 generated
